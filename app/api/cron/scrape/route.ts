@@ -3,12 +3,10 @@ import { runAllScrapers } from '@/lib/scrapers';
 import { dedupe } from '@/lib/dedupe';
 import { filterActive } from '@/lib/filters';
 import { commitJobsFile } from '@/lib/github';
-import { readJobs } from '@/lib/jobs';
 import type { JobsFile } from '@/lib/types';
 
+export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
-export const maxDuration = 60;
-export const runtime = 'nodejs';
 
 const MAX_JOBS = 5000;
 
@@ -31,8 +29,7 @@ export async function GET(req: Request) {
     jobs: deduped,
   };
 
-  const prev = readJobs();
-  const commit = await commitJobsFile(file, prev);
+  const commit = await commitJobsFile(file);
 
   return NextResponse.json({
     ok: true,

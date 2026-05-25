@@ -23,7 +23,7 @@ export async function scrapeTheMuse(): Promise<JobNormalized[]> {
     try {
       const url = `https://www.themuse.com/api/public/jobs?category=Engineering&category=Data%20Science&category=Design%20%26%20UX&category=Product&page=${page}`;
       const res = await fetch(url, {
-        headers: { 'User-Agent': 'remotedev.work-bot/1.0' },
+        headers: { 'User-Agent': 'slateremote.com-bot/1.0' },
         next: { revalidate: 0 },
         signal: AbortSignal.timeout(10_000),
       });

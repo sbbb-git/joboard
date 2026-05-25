@@ -8,7 +8,7 @@ export function Header({ locale, path }: { locale: Locale; path: string }) {
     <header className="border-b border-line bg-cream">
       <div className="mx-auto max-w-6xl flex items-center justify-between px-5 py-4 gap-4 flex-wrap">
         <Link href={localePath(locale)} className="font-semibold tracking-tight text-lg">
-          remotedev<span className="text-accent">.work</span>
+          slateremote<span className="text-accent">.com</span>
         </Link>
         <nav className="flex items-center gap-4 md:gap-5 text-sm text-muted">
           <Link href={localePath(locale, 'jobs')} className="hover:text-ink">

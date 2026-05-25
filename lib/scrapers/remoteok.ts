@@ -20,7 +20,7 @@ interface RemoteOkJob {
 
 export async function scrapeRemoteOk(): Promise<JobNormalized[]> {
   const res = await fetch('https://remoteok.com/api', {
-    headers: { 'User-Agent': 'remotedev.work-bot/1.0 (+https://remotedev.work)' },
+    headers: { 'User-Agent': 'slateremote.com-bot/1.0 (+https://slateremote.com)' },
     next: { revalidate: 0 },
     signal: AbortSignal.timeout(10_000),
   });

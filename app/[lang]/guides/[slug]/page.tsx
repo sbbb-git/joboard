@@ -59,7 +59,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
     description: g.description,
     inLanguage: params.lang,
     url: absoluteUrl(`/${params.lang}/guides/${g.slug}`),
-    publisher: { '@type': 'Organization', name: 'remotedev.work' },
+    publisher: { '@type': 'Organization', name: 'slateremote.com' },
   };
 
   return (

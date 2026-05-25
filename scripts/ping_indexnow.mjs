@@ -3,7 +3,7 @@
 // or after a manual content push.
 //
 // Usage:
-//   INDEXNOW_KEY=xxx SITE_URL=https://remotedev.work node scripts/ping_indexnow.mjs url1 url2 ...
+//   INDEXNOW_KEY=xxx SITE_URL=https://slateremote.com node scripts/ping_indexnow.mjs url1 url2 ...
 //   echo "url1\nurl2" | node scripts/ping_indexnow.mjs
 
 const key = process.env.INDEXNOW_KEY;

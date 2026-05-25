@@ -22,7 +22,7 @@ interface HimalayasJob {
 
 export async function scrapeHimalayas(): Promise<JobNormalized[]> {
   const res = await fetch('https://himalayas.app/jobs/api', {
-    headers: { 'User-Agent': 'remotedev.work-bot/1.0' },
+    headers: { 'User-Agent': 'slateremote.com-bot/1.0' },
     next: { revalidate: 0 },
     signal: AbortSignal.timeout(10_000),
   });

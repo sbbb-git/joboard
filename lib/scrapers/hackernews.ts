@@ -20,7 +20,7 @@ export async function scrapeHackerNews(): Promise<JobNormalized[]> {
   const res = await fetch(
     `https://hn.algolia.com/api/v1/search?tags=comment,story_${storyId}&hitsPerPage=1000`,
     {
-      headers: { 'User-Agent': 'remotedev.work-bot/1.0' },
+      headers: { 'User-Agent': 'slateremote.com-bot/1.0' },
       next: { revalidate: 0 },
       signal: AbortSignal.timeout(10_000),
     },
@@ -42,7 +42,7 @@ async function findCurrentWhoIsHiringStory(): Promise<number | null> {
   const res = await fetch(
     'https://hn.algolia.com/api/v1/search?query=Ask+HN+Who+is+hiring&tags=story,author_whoishiring&hitsPerPage=3',
     {
-      headers: { 'User-Agent': 'remotedev.work-bot/1.0' },
+      headers: { 'User-Agent': 'slateremote.com-bot/1.0' },
       signal: AbortSignal.timeout(10_000),
     },
   );

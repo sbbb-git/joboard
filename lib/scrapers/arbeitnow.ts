@@ -17,7 +17,7 @@ interface ArbeitnowJob {
 
 export async function scrapeArbeitnow(): Promise<JobNormalized[]> {
   const res = await fetch('https://www.arbeitnow.com/api/job-board-api', {
-    headers: { 'User-Agent': 'remotedev.work-bot/1.0' },
+    headers: { 'User-Agent': 'slateremote.com-bot/1.0' },
     next: { revalidate: 0 },
     signal: AbortSignal.timeout(10_000),
   });

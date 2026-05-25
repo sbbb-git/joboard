@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { jobById } from '@/lib/jobs';
 
+export const runtime = 'edge';
 export const dynamic = 'force-static';
 
 export async function GET(_req: Request, { params }: { params: { id: string } }) {

@@ -4,8 +4,8 @@ export const dynamic = 'force-static';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'remotedev.work',
-    short_name: 'remotedev',
+    name: 'slateremote.com',
+    short_name: 'slateremote',
     description: 'Remote tech jobs from across the web, refreshed daily.',
     start_url: '/en',
     display: 'standalone',

@@ -25,7 +25,7 @@ export async function scrapeWeWorkRemotely(): Promise<JobNormalized[]> {
   for (const feed of FEEDS) {
     try {
       const res = await fetch(feed, {
-        headers: { 'User-Agent': 'remotedev.work-bot/1.0' },
+        headers: { 'User-Agent': 'slateremote.com-bot/1.0' },
         next: { revalidate: 0 },
         signal: AbortSignal.timeout(10_000),
       });

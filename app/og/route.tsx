@@ -33,7 +33,7 @@ export async function GET(req: Request) {
             }}
           />
           <span style={{ fontSize: 28, color: '#111113', fontWeight: 600 }}>
-            remotedev<span style={{ color: '#1f7a4d' }}>.work</span>
+            slateremote<span style={{ color: '#1f7a4d' }}>.com</span>
           </span>
         </div>
 
@@ -69,7 +69,7 @@ export async function GET(req: Request) {
 
         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 20, color: '#5b5b63' }}>
           <span>Remote tech jobs · refreshed every day</span>
-          <span>remotedev.work</span>
+          <span>slateremote.com</span>
         </div>
       </div>
     ),

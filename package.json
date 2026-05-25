@@ -1,5 +1,5 @@
 {
-  "name": "remotedev",
+  "name": "slateremote",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,12 +8,14 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "pages:dev": "wrangler pages dev .vercel/output/static",
+    "pages:deploy": "npx @cloudflare/next-on-pages && wrangler pages deploy .vercel/output/static --project-name=slateremote",
     "scrape:local": "tsx scripts/scrape_local.ts",
     "indexnow": "node scripts/ping_indexnow.mjs"
   },
   "dependencies": {
     "@octokit/rest": "^21.0.2",
-    "@vercel/analytics": "^1.4.1",
     "fast-xml-parser": "^4.5.1",
     "gray-matter": "^4.0.3",
     "next": "14.2.18",
@@ -21,6 +23,7 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.7",
     "@types/node": "^22.10.1",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
@@ -28,7 +31,8 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
     "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "wrangler": "^3.95.0"
   },
   "engines": {
     "node": ">=20"

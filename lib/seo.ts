@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import type { JobNormalized, Locale } from './types';
 import { LOCALES } from './types';
 
-export const SITE_URL = process.env.SITE_URL || 'https://remotedev.work';
-export const SITE_NAME = 'remotedev.work';
+export const SITE_URL = process.env.SITE_URL || 'https://slateremote.com';
+export const SITE_NAME = 'slateremote.com';
 
 export function absoluteUrl(path: string): string {
   const clean = path.startsWith('/') ? path : `/${path}`;

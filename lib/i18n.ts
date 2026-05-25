@@ -27,7 +27,7 @@ const en: Dict = {
   'label.updated': 'Updated',
   'list.empty': 'No jobs match this filter yet. Check back tomorrow.',
   'footer.disclaimer':
-    'remotedev.work indexes publicly listed jobs. Apply directly on the employer website.',
+    'slateremote.com indexes publicly listed jobs. Apply directly on the employer website.',
   'footer.refreshed': 'Index refreshed',
 };
 
@@ -50,7 +50,7 @@ const fr: Dict = {
   'label.updated': 'Mis à jour',
   'list.empty': "Aucune offre pour ce filtre pour l'instant. Revenez demain.",
   'footer.disclaimer':
-    "remotedev.work indexe des offres publiquement publiées. Postulez directement sur le site de l'employeur.",
+    "slateremote.com indexe des offres publiquement publiées. Postulez directement sur le site de l'employeur.",
   'footer.refreshed': 'Index actualisé',
 };
 
@@ -73,7 +73,7 @@ const es: Dict = {
   'label.updated': 'Actualizado',
   'list.empty': 'Aún no hay ofertas para este filtro. Vuelve mañana.',
   'footer.disclaimer':
-    'remotedev.work indexa empleos publicados públicamente. Postúlate directamente en el sitio del empleador.',
+    'slateremote.com indexa empleos publicados públicamente. Postúlate directamente en el sitio del empleador.',
   'footer.refreshed': 'Índice actualizado',
 };
 
@@ -96,7 +96,7 @@ const de: Dict = {
   'label.updated': 'Aktualisiert',
   'list.empty': 'Noch keine Stellen für diesen Filter. Morgen vorbeischauen.',
   'footer.disclaimer':
-    'remotedev.work indexiert öffentlich veröffentlichte Stellen. Bewerben Sie sich direkt auf der Arbeitgeberseite.',
+    'slateremote.com indexiert öffentlich veröffentlichte Stellen. Bewerben Sie sich direkt auf der Arbeitgeberseite.',
   'footer.refreshed': 'Index aktualisiert',
 };
 

@@ -14,31 +14,28 @@ export interface CommitResult {
   sha?: string;
 }
 
-export async function commitJobsFile(
-  data: JobsFile,
-  prev?: JobsFile | null,
-): Promise<CommitResult> {
+export async function commitJobsFile(data: JobsFile): Promise<CommitResult> {
   if (!TOKEN || !OWNER || !REPO) {
-    return {
-      committed: false,
-      added: 0,
-      removed: 0,
-      total: data.count,
-    };
+    return { committed: false, added: 0, removed: 0, total: data.count };
   }
   const octokit = new Octokit({ auth: TOKEN });
   const path = 'data/jobs.json';
-  const content = Buffer.from(JSON.stringify(data, null, 2) + '\n').toString('base64');
+  const newContent = JSON.stringify(data, null, 2) + '\n';
+  const content = btoa(unescape(encodeURIComponent(newContent)));
 
   let sha: string | undefined;
+  let prev: JobsFile | undefined;
   try {
-    const existing = await octokit.repos.getContent({
-      owner: OWNER,
-      repo: REPO,
-      path,
-      ref: BRANCH,
-    });
-    if (!Array.isArray(existing.data) && 'sha' in existing.data) sha = existing.data.sha;
+    const existing = await octokit.repos.getContent({ owner: OWNER, repo: REPO, path, ref: BRANCH });
+    if (!Array.isArray(existing.data) && 'sha' in existing.data && 'content' in existing.data) {
+      sha = existing.data.sha;
+      try {
+        const decoded = atob(existing.data.content.replace(/\s/g, ''));
+        prev = JSON.parse(decodeURIComponent(escape(decoded))) as JobsFile;
+      } catch {
+        prev = undefined;
+      }
+    }
   } catch (err: unknown) {
     if ((err as { status?: number }).status !== 404) throw err;
   }
@@ -61,11 +58,5 @@ export async function commitJobsFile(
     sha,
   });
 
-  return {
-    committed: true,
-    added,
-    removed,
-    total: data.count,
-    sha: res.data.commit.sha,
-  };
+  return { committed: true, added, removed, total: data.count, sha: res.data.commit.sha };
 }
