@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  background-color: #fafaf8;
+  color: #111113;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: inherit; }
+
+.prose-body p { margin-bottom: 0.9rem; }
+.prose-body ul { list-style: disc; padding-left: 1.25rem; margin-bottom: 0.9rem; }
+.prose-body h2 { font-weight: 600; font-size: 1.2rem; margin: 1.4rem 0 0.5rem; }
+.prose-body h3 { font-weight: 600; font-size: 1.05rem; margin: 1.2rem 0 0.4rem; }
