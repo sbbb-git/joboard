@@ -19,6 +19,12 @@ export const metadata: Metadata = {
     'A curated index of remote engineering, data, design and product jobs, aggregated from eight public job board APIs and refreshed every day.',
   applicationName: 'remotedev.work',
   formatDetection: { telephone: false, email: false, address: false },
+  alternates: {
+    types: {
+      'application/rss+xml': [{ url: '/feed.xml', title: 'remotedev.work jobs feed' }],
+    },
+  },
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { JobCard } from '@/components/JobCard';
 import { allJobs, paginate } from '@/lib/jobs';
 import { localePath, t } from '@/lib/i18n';
-import { buildMetadata } from '@/lib/seo';
+import { buildMetadata, itemListJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 
 export const dynamicParams = true;
@@ -29,8 +29,15 @@ export default function JobsList({
   const page = Number(searchParams.page) || 1;
   const all = allJobs();
   const { items, totalPages, page: current, total } = paginate(all, page, 30);
+  const itemList = itemListJsonLd(
+    items.map((j) => ({ name: `${j.title} at ${j.company}`, url: absoluteUrl(`/${locale}/job/${j.id}`) })),
+  );
   return (
     <div className="space-y-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}
+      />
       <header>
         <h1 className="text-2xl font-semibold">{t(locale, 'nav.jobs')}</h1>
         <p className="text-muted text-sm mt-1">{total.toLocaleString()} jobs</p>

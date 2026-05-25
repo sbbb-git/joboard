@@ -20,14 +20,23 @@ export function hreflangAlternates(pathWithoutLocale: string): Record<string, st
   return alternates;
 }
 
+export function ogImageUrl(opts: { title: string; subtitle?: string; tag?: string }): string {
+  const params = new URLSearchParams({ title: opts.title });
+  if (opts.subtitle) params.set('subtitle', opts.subtitle);
+  if (opts.tag) params.set('tag', opts.tag);
+  return `${SITE_URL}/og?${params.toString()}`;
+}
+
 export function buildMetadata(opts: {
   locale: Locale;
   path: string;
   title: string;
   description: string;
   index?: boolean;
+  ogTag?: string;
 }): Metadata {
   const url = absoluteUrl(`/${opts.locale}/${opts.path.replace(/^\/+/, '')}`);
+  const og = ogImageUrl({ title: opts.title, subtitle: opts.description.slice(0, 80), tag: opts.ogTag });
   return {
     title: opts.title,
     description: opts.description,
@@ -43,13 +52,28 @@ export function buildMetadata(opts: {
       siteName: SITE_NAME,
       locale: opts.locale,
       type: 'website',
+      images: [{ url: og, width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',
       title: opts.title,
       description: opts.description,
+      images: [og],
     },
     robots: opts.index === false ? { index: false, follow: true } : { index: true, follow: true },
+  };
+}
+
+export function itemListJsonLd(items: Array<{ name: string; url: string }>) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: items.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      url: item.url,
+    })),
   };
 }
 

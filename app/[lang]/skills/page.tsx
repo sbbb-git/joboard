@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { SKILLS, skillsByCategory } from '@/lib/skills';
-import { buildMetadata } from '@/lib/seo';
+import { buildMetadata, itemListJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 
 export const dynamicParams = false;
@@ -30,8 +30,18 @@ const CATEGORY_LABELS: Record<string, string> = {
 
 export default function SkillsIndex({ params }: { params: { lang: Locale } }) {
   const grouped = skillsByCategory();
+  const itemList = itemListJsonLd(
+    SKILLS.map((s) => ({
+      name: s.name,
+      url: absoluteUrl(`/${params.lang}/skills/${s.slug}`),
+    })),
+  );
   return (
     <div className="space-y-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}
+      />
       <header>
         <h1 className="text-2xl md:text-3xl font-semibold">Remote tech jobs by skill</h1>
         <p className="text-muted text-sm mt-2 max-w-prose">

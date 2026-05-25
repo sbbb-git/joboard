@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { GUIDES } from '@/lib/guides';
-import { buildMetadata } from '@/lib/seo';
+import { buildMetadata, itemListJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 
 export const dynamicParams = false;
@@ -28,8 +28,15 @@ const CATEGORIES: Array<{ id: string; label: string }> = [
 ];
 
 export default function GuidesIndex({ params }: { params: { lang: Locale } }) {
+  const itemList = itemListJsonLd(
+    GUIDES.map((g) => ({ name: g.title, url: absoluteUrl(`/${params.lang}/guides/${g.slug}`) })),
+  );
   return (
     <div className="space-y-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}
+      />
       <header>
         <h1 className="text-2xl md:text-3xl font-semibold">Guides for remote tech workers</h1>
         <p className="text-muted text-sm mt-2 max-w-prose">

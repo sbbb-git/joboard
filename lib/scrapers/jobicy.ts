@@ -21,7 +21,7 @@ interface JobicyJob {
 
 export async function scrapeJobicy(): Promise<JobNormalized[]> {
   const res = await fetch(
-    'https://jobicy.com/api/v2/remote-jobs?count=100&industry=tech',
+    'https://jobicy.com/api/v2/remote-jobs?count=100',
     {
       headers: { 'User-Agent': 'remotedev.work-bot/1.0' },
       next: { revalidate: 0 },

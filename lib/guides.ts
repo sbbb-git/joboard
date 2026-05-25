@@ -604,6 +604,247 @@ Most remote-mature teams now budget for periodic team gatherings. Engineers who 
   },
 ];
 
+GUIDES.push(
+  {
+    slug: 'ai-engineer-salary-2026',
+    title: 'AI engineer salary in 2026',
+    description: 'Current salary bands for remote AI and ML engineers in 2026.',
+    category: 'salary',
+    body: `AI engineering salaries have remained at premium levels through 2026 despite broader tech market softness.
+
+## Senior bands
+Senior AI engineers at well-funded US-headquartered remote companies sit at 220 to 320 thousand USD base, with total compensation between 300 and 500 thousand including equity.
+
+## Mid-level
+Mid-level AI engineers cluster between 150 and 220 thousand USD base on remote offers. The pay gap to general backend engineering at the same seniority is 30 to 50 percent.
+
+## LLM specialization
+Dedicated LLM engineering roles command an additional 10 to 20 percent above generalist AI engineering. Production fine-tuning and inference optimization experience drive the premium.
+
+## EU bands
+European employers pay 130 to 200 thousand EUR for senior AI engineering, with the gap to US bands persistent.`,
+    faqs: [
+      {
+        q: 'What is the median remote AI engineer salary in 2026?',
+        a: 'Median total compensation across remote AI engineering postings in 2026 is approximately 195 thousand USD base for mid to senior levels at well-funded US companies.',
+      },
+    ],
+  },
+  {
+    slug: 'remote-junior-developer-jobs',
+    title: 'Where to find remote junior developer jobs',
+    description:
+      'A practical guide to landing a first remote engineering job at the junior level in 2026.',
+    category: 'finding',
+    body: `Remote junior developer hiring has tightened since 2022. The companies still hiring fully remote at junior levels are a smaller subset of the broader remote-friendly market, but they exist.
+
+## Where they hire
+Remote-mature scale-ups with formal mentorship programs. Open source-adjacent companies (developer tools, infra, platforms). Some startups under 50 engineers.
+
+## Skills that matter
+Demonstrable async communication. Public portfolio with at least three substantial deployed projects. Written work (blog posts, technical READMEs, accepted PRs).
+
+## Path
+Many engineers who eventually work remotely at junior level get there via a six to twelve month stint at a local company, then transition. The talent friction at fully remote junior is high enough that going hybrid first is often faster.`,
+  },
+  {
+    slug: 'no-degree-remote-tech-jobs',
+    title: 'Remote tech jobs without a degree',
+    description:
+      'A realistic view of which remote tech roles still hire candidates without a four-year degree.',
+    category: 'finding',
+    body: `The "no degree required" trend in tech hiring softened slightly since 2022 but the underlying market remains accessible.
+
+## Roles where it does not matter
+Front-end engineering, full-stack at smaller companies, design, product management at startups. Track record substitutes for credentials at most of these roles.
+
+## Roles where it still matters
+ML and AI research roles. Many large enterprise companies retain degree requirements.
+
+## Substitutes
+Demonstrated open-source contributions. Substantial public deployed projects. Technical writing or speaking presence.
+
+## Verification
+Many companies have moved to "or equivalent experience" language explicitly. This is real, not boilerplate.`,
+  },
+  {
+    slug: 'best-cities-digital-nomad-2026',
+    title: 'Best cities for digital nomads in 2026',
+    description:
+      'A ranked guide to the top digital nomad destinations for remote tech workers in 2026.',
+    category: 'lifestyle',
+    body: `The digital nomad city rankings have stabilized somewhat since the post-pandemic shuffle. The top destinations now offer well-tested infrastructure for remote tech workers.
+
+## Tier 1 (well-established, full-service)
+Lisbon, Mexico City, Bali, Chiang Mai, Medellín. Each has dense remote tech expat communities, established co-working scenes, and well-documented visa pathways.
+
+## Tier 2 (growing fast)
+Tbilisi, Buenos Aires, Cape Town, Tallinn, Budapest. Lower costs, smaller communities, less mature infrastructure.
+
+## Choosing
+Match on timezone (most US-anchored remote workers prefer LatAm; EU-anchored prefer Mediterranean Europe). Then on cost of living and visa friction.`,
+  },
+  {
+    slug: 'remote-work-visa-comparison-2026',
+    title: 'Digital nomad visa comparison for tech workers in 2026',
+    description:
+      'A side-by-side look at the major digital nomad visas available to remote tech workers.',
+    category: 'visa',
+    body: `Dozens of countries now offer dedicated remote work visas. The trade-offs between them rarely come down to a single variable.
+
+## Income thresholds
+Portugal D8: ~3 280 EUR/month. Spain DNV: ~2 760 EUR/month. Mexico Temporary Resident: ~4 500 USD/month. Estonia DNV: ~3 504 EUR/month. UAE Remote: 3 500 USD/month. Greece DNV: ~3 500 EUR/month.
+
+## Length
+Portugal D8: 2 years renewable to 5, then permanent. Spain DNV: 3 years renewable. Mexico TR: 1 year renewable to 4. Estonia DNV: 1 year, no renewal. UAE Remote: 1 year renewable.
+
+## Tax pathway
+Portugal has the strongest preferential tax regime for the long term. Spain Beckham Law extension lasts 6 years. Mexico requires 183-day residency for tax effects.
+
+## Family
+Most allow spouse and dependents. Mexico, Spain, and Portugal are most family-friendly.`,
+  },
+  {
+    slug: 'best-time-to-look-for-remote-jobs',
+    title: 'Best time of year to look for a remote tech job',
+    description: 'When companies actually hire and when applications convert.',
+    category: 'finding',
+    body: `Remote hiring follows the broader engineering hiring cycle with minor differences.
+
+## Strongest months
+January and February. Companies hit new headcount budgets. Most new requisitions open in this window.
+
+## Second peak
+September and October. Post-summer back-to-business cycle. Strong for senior hiring.
+
+## Slow months
+Mid-July to mid-August (summer slowdown). Mid-December to early January (holidays).
+
+## Async hiring continues year-round
+Unlike traditional office hiring, fully remote hiring has less seasonality. Senior remote roles fill more evenly across the year because they require longer searches anyway.`,
+  },
+  {
+    slug: 'remote-tech-job-rejection-recovery',
+    title: 'How to recover from remote tech job rejection',
+    description:
+      'A practical playbook for handling rejection during a remote tech job search.',
+    category: 'finding',
+    body: `Most remote job searches involve multiple rejections. The differentiator between successful and unsuccessful searches is recovery speed, not initial fit.
+
+## The numbers
+A typical experienced remote engineering search runs 80 to 150 applications, 10 to 25 first-round interviews, 4 to 8 full loops, 1 to 3 offers.
+
+## After a rejection
+Ask for specific feedback. Most companies provide little, but the ones that do offer the highest-signal data points in the search.
+
+## Pattern recognition
+After every 10 rejections, audit. Are recruiter screens converting? Are technical rounds? Are final rounds? The bottleneck shifts.
+
+## Mental discipline
+The rejection rate is high enough that taking each one personally compounds into search-ending fatigue. Treat each as data, not verdict.`,
+  },
+  {
+    slug: 'remote-tech-jobs-with-stock-options',
+    title: 'Remote tech jobs with stock options',
+    description: 'Where to find remote tech roles that still meaningfully grant equity.',
+    category: 'salary',
+    body: `Equity grants on remote offers compressed in 2023-2024 and have partially recovered since. The companies that still grant meaningful equity remotely cluster in identifiable categories.
+
+## Pre-IPO scale-ups
+Series B through F companies remain the strongest source of meaningful equity grants for remote engineers. Senior equity grants at this stage typically vest over four years.
+
+## Public companies
+RSU grants at remote-friendly public companies are real income. Senior grants commonly cluster between 100 and 400 thousand USD per year vesting over four years.
+
+## Startups
+Pre-seed and seed equity grants for remote employees are typically too small to value meaningfully despite percentage figures.
+
+## Verification
+Always verify the strike price, total options outstanding, and current preferred share price before treating an equity grant as material compensation.`,
+  },
+  {
+    slug: 'best-resume-format-remote-tech',
+    title: 'Best resume format for remote tech applications',
+    description:
+      'The resume patterns that convert on remote tech applications in 2026.',
+    category: 'finding',
+    body: `Resume conventions for remote tech applications have converged on a clear set of practices.
+
+## Length
+One page for engineers under five years experience. Two pages maximum for senior and staff candidates.
+
+## Structure
+Reverse chronological work history. Skills section at the top or right column. Education at the bottom.
+
+## What to include
+Quantified impact lines on each role. Concrete technologies used. Public links (GitHub, portfolio).
+
+## What to remove
+Objective statements. References. Personal photos. Unrelated early-career roles for senior candidates.
+
+## Format
+PDF, not Word. Plain typography, dark on light. ATS-readable (no graphics, columns scan correctly).`,
+  },
+  {
+    slug: 'remote-tech-recruiter-outreach',
+    title: 'How to handle remote tech recruiter outreach',
+    description: 'Cold recruiter messages and how to convert them efficiently.',
+    category: 'finding',
+    body: `Recruiter outreach volume has stayed high through 2026 for mid-level and senior remote engineers. Filter and convert efficiently.
+
+## First filter
+Five-second check: is this a real company, a real role, and a real fit?
+
+## Reply patterns
+For real fits: short interested response with availability. For unclear fits: ask three questions (compensation band, team size, remote policy) before commitment.
+
+## When not to reply
+Generic "great opportunity" boilerplate without role specifics. Recruiters who refuse to name the client. Mass outreach with no personalization.
+
+## Building a recruiter pipeline
+A small number of recruiters who specialize in your stack and seniority become high-value relationships. Invest in 3 to 5 such relationships over a 12-month horizon.`,
+  },
+  {
+    slug: 'best-time-zones-for-remote-tech-workers',
+    title: 'Best time zones for remote tech workers',
+    description: 'Time zone selection trade-offs for remote engineering work.',
+    category: 'lifestyle',
+    body: `Time zone choice for remote engineers is more constrained than candidates often realize.
+
+## US-anchored companies
+Most US-headquartered remote-first companies require at least four hours of overlap with US Pacific or US Eastern. That maps to working hours from roughly UTC-8 to UTC+3 maximum.
+
+## EU-anchored companies
+EU-headquartered companies typically expect overlap with CET. UTC-4 to UTC+5 is the working range.
+
+## Asia-anchored companies
+Smaller pool. Singapore-based companies often accept candidates from UTC+5 to UTC+11.
+
+## Choosing a base
+If targeting US employers: stay west of UTC+3. If targeting EU: anywhere UTC-4 to UTC+5 works. Truly global hires (anywhere in the world) remain a minority of remote postings.`,
+  },
+  {
+    slug: 'remote-tech-portfolio-projects',
+    title: 'Portfolio projects that convert on remote tech applications',
+    description:
+      'Which kinds of public projects actually move response rates on remote applications.',
+    category: 'finding',
+    body: `Portfolio projects function as filters. The ones that lift response rate share characteristics that often are not the ones candidates intuit.
+
+## What converts
+Substantial deployments solving real problems, with documentation showing decision tradeoffs. Open source contributions to recognized projects. Technical writeups explaining work shipped at previous roles (within NDA limits).
+
+## What does not convert
+Tutorial clones (todo apps, weather apps). Personal blog with thin content. Side projects with no users.
+
+## Volume vs depth
+One substantial project (six months of work, real users) outperforms five tutorial clones consistently in screening data.
+
+## Public visibility
+The benefit of a portfolio is partly that it gets read. Projects buried on GitHub with no traffic generate less signal than the same projects with even modest visibility (a few hundred GitHub stars or active users).`,
+  },
+);
+
 export const GUIDE_MAP: Record<string, GuideEntry> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
 );

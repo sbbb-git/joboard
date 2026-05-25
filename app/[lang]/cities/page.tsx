@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { CITIES } from '@/lib/cities';
-import { buildMetadata } from '@/lib/seo';
+import { buildMetadata, itemListJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 
 export const dynamicParams = false;
@@ -17,8 +17,18 @@ export function generateMetadata({ params }: { params: { lang: Locale } }): Meta
 }
 
 export default function CitiesIndex({ params }: { params: { lang: Locale } }) {
+  const itemList = itemListJsonLd(
+    CITIES.map((c) => ({
+      name: `${c.name}, ${c.country}`,
+      url: absoluteUrl(`/${params.lang}/cities/${c.slug}`),
+    })),
+  );
   return (
     <div className="space-y-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}
+      />
       <header>
         <h1 className="text-2xl md:text-3xl font-semibold">Best cities for remote tech workers</h1>
         <p className="text-muted text-sm mt-2 max-w-prose">

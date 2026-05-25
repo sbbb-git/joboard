@@ -20,7 +20,7 @@ interface RssItem {
 }
 
 export async function scrapeWeWorkRemotely(): Promise<JobNormalized[]> {
-  const parser = new XMLParser({ ignoreAttributes: false });
+  const parser = new XMLParser({ ignoreAttributes: false, processEntities: false });
   const all: JobNormalized[] = [];
   for (const feed of FEEDS) {
     try {
