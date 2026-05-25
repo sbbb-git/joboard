@@ -5,7 +5,7 @@ import { ROLES, type Locale, type Role } from '@/lib/types';
 import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 export const revalidate = false;
 
 export function generateStaticParams() {

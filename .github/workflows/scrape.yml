@@ -1,13 +1,8 @@
 name: scrape
 
-# Daily cron at 04:00 UTC. Hits the deployed /api/cron/scrape endpoint with
-# the Bearer secret. The endpoint runs the 8 scrapers, dedupes, filters, and
-# commits the result to data/jobs.json via the GitHub API, which triggers
-# Cloudflare Pages to rebuild and redeploy.
-#
-# Required repo secrets:
-#   SITE_URL       e.g. https://slateremote.com
-#   CRON_SECRET    same value as the deployed env var
+# Daily cron at 04:00 UTC. Runs the scrapers in-process, writes data/jobs.json,
+# commits and pushes back to the repo. The commit triggers Cloudflare Pages to
+# rebuild and redeploy automatically.
 
 on:
   schedule:
@@ -17,16 +12,29 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
+    permissions:
+      contents: write
     steps:
-      - name: Hit cron endpoint
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npm run scrape:local
+      - name: Commit and push
         run: |
           set -euo pipefail
-          response=$(curl -sS -w "\n%{http_code}" \
-            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
-            "${{ secrets.SITE_URL }}/api/cron/scrape")
-          body=$(echo "$response" | head -n -1)
-          code=$(echo "$response" | tail -n 1)
-          echo "HTTP $code"
-          echo "$body" | head -c 4000
-          test "$code" = "200"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet data/jobs.json; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git add data/jobs.json
+          today=$(date -u +%F)
+          git commit -m "chore(jobs): refresh ${today}"
+          git push origin main

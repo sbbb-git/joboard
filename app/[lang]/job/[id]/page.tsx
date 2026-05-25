@@ -7,14 +7,11 @@ import { t } from '@/lib/i18n';
 import { buildMetadata, jobPostingJsonLd } from '@/lib/seo';
 import { isExpired } from '@/lib/filters';
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 export const revalidate = false;
 
 export function generateStaticParams() {
-  // Prerender top 300 most recent jobs only; the rest are ISR on-demand
-  return allJobs()
-    .slice(0, 300)
-    .map((j) => ({ id: j.id }));
+  return allJobs().map((j) => ({ id: j.id }));
 }
 
 export function generateMetadata({

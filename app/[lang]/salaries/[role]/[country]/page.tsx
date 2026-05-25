@@ -6,7 +6,7 @@ import { ROLES, type Locale, type Role } from '@/lib/types';
 import { LOCALES } from '@/lib/i18n';
 import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 export const revalidate = false;
 
 const TOP_COUNTRIES = [

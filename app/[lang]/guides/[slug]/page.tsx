@@ -6,7 +6,7 @@ import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { GUIDES, GUIDE_MAP } from '@/lib/guides';
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 export const revalidate = false;
 
 export function generateStaticParams() {

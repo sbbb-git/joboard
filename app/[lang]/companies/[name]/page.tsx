@@ -6,12 +6,12 @@ import { LOCALES } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 export const revalidate = false;
 
 export function generateStaticParams() {
-  const top = topCompanies(150).map((c) => c.slug);
-  return LOCALES.flatMap((lang) => top.map((name) => ({ lang, name })));
+  const all = topCompanies(10000).map((c) => c.slug);
+  return LOCALES.flatMap((lang) => all.map((name) => ({ lang, name })));
 }
 
 export function generateMetadata({

@@ -5,12 +5,12 @@ import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 export const revalidate = false;
 
 export function generateStaticParams() {
-  const top = topCountries(20).map((c) => c.slug);
-  return LOCALES.flatMap((lang) => top.map((country) => ({ lang, country })));
+  const all = topCountries(1000).map((c) => c.slug);
+  return LOCALES.flatMap((lang) => all.map((country) => ({ lang, country })));
 }
 
 export function generateMetadata({

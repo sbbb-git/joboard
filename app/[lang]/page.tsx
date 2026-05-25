@@ -9,7 +9,7 @@ import { SKILLS } from '@/lib/skills';
 import { CITIES } from '@/lib/cities';
 import { GUIDES } from '@/lib/guides';
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 export const revalidate = false;
 
 export function generateMetadata({ params }: { params: { lang: Locale } }): Metadata {

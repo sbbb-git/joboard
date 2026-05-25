@@ -5,7 +5,7 @@ import { localePath, t } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 
-export const dynamicParams = true;
+export const dynamicParams = false;
 export const revalidate = false;
 
 export function generateMetadata({ params }: { params: { lang: Locale } }): Metadata {
