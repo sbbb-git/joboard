@@ -1,0 +1,480 @@
+export interface CityEntry {
+  slug: string;
+  name: string;
+  country: string;
+  timezone: string;
+  costOfLivingUsd: number;
+  internetMbps: number;
+  visa?: string;
+  blurb: string;
+  bodyEn: string;
+}
+
+export const CITIES: CityEntry[] = [
+  {
+    slug: 'lisbon',
+    name: 'Lisbon',
+    country: 'Portugal',
+    timezone: 'WET (UTC+0/+1)',
+    costOfLivingUsd: 1800,
+    internetMbps: 200,
+    visa: 'D8 Digital Nomad Visa',
+    blurb: 'Top remote tech hub in Western Europe with the D8 nomad visa.',
+    bodyEn:
+      'Lisbon has cemented its position as the dominant remote tech hub in Western Europe. The D8 digital nomad visa, low cost of living relative to other capital cities, mild climate and strong fiber infrastructure make it the preferred base for remote engineers relocating from higher-cost markets. The startup ecosystem around the Beato Innovation District and Cais do Sodré has matured into a stable network of co-working spaces and meetups in 2026. Rents have risen sharply since 2022 but remain below Paris, Amsterdam or Dublin equivalents.',
+  },
+  {
+    slug: 'berlin',
+    name: 'Berlin',
+    country: 'Germany',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 2400,
+    internetMbps: 250,
+    visa: 'Freiberufler visa or Blue Card',
+    blurb: 'Largest remote-friendly tech city in continental Europe.',
+    bodyEn:
+      'Berlin remains the largest tech hub in continental Europe by remote engineering headcount. The Freiberufler visa for freelancers and the Blue Card for employed engineers give straightforward paths in. The cost of living is moderate compared to other major capitals, though rents have risen significantly. The local English-speaking startup scene is dense enough that day-to-day life as a remote worker without German is workable.',
+  },
+  {
+    slug: 'barcelona',
+    name: 'Barcelona',
+    country: 'Spain',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 2200,
+    internetMbps: 300,
+    visa: 'Spanish Digital Nomad Visa',
+    blurb: 'Mediterranean coast hub with the Spanish nomad visa.',
+    bodyEn:
+      'Barcelona combines coastal living with a substantial local tech ecosystem. The Spanish Digital Nomad Visa launched in 2023 has made the city a preferred destination for remote engineers from outside the EU. Cost of living is materially lower than Madrid, with rents around 25 to 35 percent below central Madrid.',
+  },
+  {
+    slug: 'madrid',
+    name: 'Madrid',
+    country: 'Spain',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 2300,
+    internetMbps: 400,
+    visa: 'Spanish Digital Nomad Visa',
+    blurb: 'Capital and largest tech market in Spain.',
+    bodyEn:
+      'Madrid is the larger of the two Spanish tech markets and the easier city for engineers needing a wider local job network alongside their remote role. Fiber connectivity is excellent, and the Spanish Digital Nomad Visa is widely used here.',
+  },
+  {
+    slug: 'mexico-city',
+    name: 'Mexico City',
+    country: 'Mexico',
+    timezone: 'CST (UTC-6)',
+    costOfLivingUsd: 1500,
+    internetMbps: 200,
+    visa: 'Temporary Resident visa',
+    blurb: 'Top Latin American hub with US-friendly timezone.',
+    bodyEn:
+      'Mexico City offers near-perfect timezone overlap with US-based remote employers, a substantial local engineering scene, and a cost of living roughly half that of comparable US cities. The Temporary Resident visa is straightforward for engineers with stable remote income. Neighborhoods like Roma, Condesa and Polanco concentrate the remote tech expat scene.',
+  },
+  {
+    slug: 'medellin',
+    name: 'Medellín',
+    country: 'Colombia',
+    timezone: 'COT (UTC-5)',
+    costOfLivingUsd: 1300,
+    internetMbps: 180,
+    visa: 'Colombia Digital Nomad Visa',
+    blurb: 'Year-round mild climate hub for remote engineers in LatAm.',
+    bodyEn:
+      'Medellín has become the second-most popular LatAm destination for remote engineers after Mexico City. The year-round mild climate (around 22 °C average), low cost of living and a dedicated Colombian Digital Nomad Visa launched in 2023 are the main draws.',
+  },
+  {
+    slug: 'austin',
+    name: 'Austin',
+    country: 'United States',
+    timezone: 'CST (UTC-6)',
+    costOfLivingUsd: 3600,
+    internetMbps: 1000,
+    blurb: 'Largest US remote-friendly tech city outside the coasts.',
+    bodyEn:
+      'Austin remains the largest non-coastal US city for remote-friendly tech employment. The combination of no state income tax, a deep local startup ecosystem and substantial out-of-state tech HQ presence makes it a default landing for US-based remote engineers.',
+  },
+  {
+    slug: 'london',
+    name: 'London',
+    country: 'United Kingdom',
+    timezone: 'GMT (UTC+0/+1)',
+    costOfLivingUsd: 4200,
+    internetMbps: 900,
+    visa: 'Global Talent visa or Skilled Worker visa',
+    blurb: 'Largest European tech market for remote and hybrid engineering.',
+    bodyEn:
+      'London remains the largest single tech labor market in Europe. Many UK remote postings are technically hybrid, requiring one to two days per week on site. The Global Talent visa offers a fast path for senior engineers and researchers.',
+  },
+  {
+    slug: 'amsterdam',
+    name: 'Amsterdam',
+    country: 'Netherlands',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 3100,
+    internetMbps: 500,
+    visa: 'DAFT or Highly Skilled Migrant',
+    blurb: 'Premier remote tech market in the Netherlands.',
+    bodyEn:
+      'Amsterdam attracts remote engineers via the Dutch-American Friendship Treaty (for US citizens starting a business) and the Highly Skilled Migrant program for employed engineers. The Dutch tech ecosystem is dense and English-friendly.',
+  },
+  {
+    slug: 'bali',
+    name: 'Bali',
+    country: 'Indonesia',
+    timezone: 'WITA (UTC+8)',
+    costOfLivingUsd: 1400,
+    internetMbps: 100,
+    visa: 'B211a or Second Home Visa',
+    blurb: 'Top Asian remote tech destination, particularly Canggu and Ubud.',
+    bodyEn:
+      'Bali, particularly the Canggu and Ubud areas, remains the largest concentration of remote tech workers in Southeast Asia. The 2023 Second Home Visa formalized longer-term stays. Internet quality has improved sharply in 2024-2026 with dedicated co-working fiber.',
+  },
+  {
+    slug: 'chiang-mai',
+    name: 'Chiang Mai',
+    country: 'Thailand',
+    timezone: 'ICT (UTC+7)',
+    costOfLivingUsd: 1100,
+    internetMbps: 150,
+    visa: 'LTR or DTV visa',
+    blurb: 'Long-standing low-cost remote tech base in Thailand.',
+    bodyEn:
+      'Chiang Mai has been a remote work destination since the early 2010s. The 2024 Destination Thailand Visa simplified longer stays for remote workers. Cost of living is among the lowest in any major remote tech hub.',
+  },
+  {
+    slug: 'singapore',
+    name: 'Singapore',
+    country: 'Singapore',
+    timezone: 'SGT (UTC+8)',
+    costOfLivingUsd: 4500,
+    internetMbps: 2000,
+    visa: 'Employment Pass or Tech.Pass',
+    blurb: 'Premier Asian tech hub with excellent infrastructure.',
+    bodyEn:
+      'Singapore offers world-class fiber, English-language operations, low corruption and an established Tech.Pass program for senior engineers. Cost of living is among the highest in Asia.',
+  },
+  {
+    slug: 'tokyo',
+    name: 'Tokyo',
+    country: 'Japan',
+    timezone: 'JST (UTC+9)',
+    costOfLivingUsd: 3200,
+    internetMbps: 1000,
+    visa: 'Highly Skilled Professional or Digital Nomad Visa',
+    blurb: 'Major Asian tech market with the new digital nomad visa.',
+    bodyEn:
+      'Tokyo launched its Digital Nomad Visa in 2024, opening shorter-term remote work options. The Highly Skilled Professional path remains the primary route for engineers relocating long-term.',
+  },
+  {
+    slug: 'dubai',
+    name: 'Dubai',
+    country: 'United Arab Emirates',
+    timezone: 'GST (UTC+4)',
+    costOfLivingUsd: 3800,
+    internetMbps: 500,
+    visa: 'UAE Remote Work Visa',
+    blurb: 'Tax-free remote tech base in the Middle East.',
+    bodyEn:
+      'Dubai offers a tax-free environment for remote engineers via its Remote Work Visa launched in 2021. Cost of living is high but with no income tax the net benefit can be substantial for senior earners.',
+  },
+  {
+    slug: 'cape-town',
+    name: 'Cape Town',
+    country: 'South Africa',
+    timezone: 'SAST (UTC+2)',
+    costOfLivingUsd: 1700,
+    internetMbps: 250,
+    visa: 'Remote Work Visa',
+    blurb: 'Top African remote tech base with EU-aligned timezone.',
+    bodyEn:
+      'Cape Town is the largest concentration of remote tech workers in Africa, helped by a timezone aligned with European working hours. The 2024 Remote Work Visa simplified longer stays.',
+  },
+  {
+    slug: 'tbilisi',
+    name: 'Tbilisi',
+    country: 'Georgia',
+    timezone: 'GET (UTC+4)',
+    costOfLivingUsd: 1200,
+    internetMbps: 100,
+    visa: 'One-year visa-free stay',
+    blurb: 'Low-cost remote tech base with one-year visa-free stay.',
+    bodyEn:
+      'Tbilisi offers a one-year visa-free stay for most passports, low cost of living and a growing English-speaking remote tech community. Banking and registration for individual entrepreneurs is straightforward.',
+  },
+  {
+    slug: 'warsaw',
+    name: 'Warsaw',
+    country: 'Poland',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 1900,
+    internetMbps: 400,
+    visa: 'Poland Business Harbour or Type D visa',
+    blurb: 'Largest EU remote tech market at moderate cost.',
+    bodyEn:
+      'Warsaw combines a sizable local tech ecosystem with EU mobility benefits and moderate cost of living. Poland Business Harbour streamlined relocation for engineers from select non-EU countries.',
+  },
+  {
+    slug: 'prague',
+    name: 'Prague',
+    country: 'Czech Republic',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 2100,
+    internetMbps: 500,
+    visa: 'Zivnostensky list',
+    blurb: 'EU tech base with the Zivno self-employment visa.',
+    bodyEn:
+      'Prague is a popular European base for freelance and contracted remote engineers, with the Zivnostensky list (trade license) providing a clear self-employment path.',
+  },
+  {
+    slug: 'budapest',
+    name: 'Budapest',
+    country: 'Hungary',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 1700,
+    internetMbps: 500,
+    visa: 'White Card',
+    blurb: 'Hungarian tech base with the White Card nomad visa.',
+    bodyEn:
+      'Budapest introduced the White Card digital nomad visa in 2022. Cost of living is among the lowest in EU capitals.',
+  },
+  {
+    slug: 'tallinn',
+    name: 'Tallinn',
+    country: 'Estonia',
+    timezone: 'EET (UTC+2/+3)',
+    costOfLivingUsd: 1900,
+    internetMbps: 500,
+    visa: 'Digital Nomad Visa or e-Residency',
+    blurb: 'Premier digital-native base with e-Residency.',
+    bodyEn:
+      'Estonia pioneered the e-Residency program and the Digital Nomad Visa. Tallinn remains the most digitally mature European capital for setting up a freelance business remotely.',
+  },
+  {
+    slug: 'buenos-aires',
+    name: 'Buenos Aires',
+    country: 'Argentina',
+    timezone: 'ART (UTC-3)',
+    costOfLivingUsd: 1400,
+    internetMbps: 150,
+    visa: 'Digital Nomad Visa',
+    blurb: 'LatAm base with strong tech talent pool.',
+    bodyEn:
+      'Buenos Aires has a substantial local tech talent pool and a Digital Nomad Visa launched in 2022. Cost of living for USD earners has been exceptionally low through 2024-2026 currency dynamics.',
+  },
+  {
+    slug: 'rio-de-janeiro',
+    name: 'Rio de Janeiro',
+    country: 'Brazil',
+    timezone: 'BRT (UTC-3)',
+    costOfLivingUsd: 1600,
+    internetMbps: 300,
+    visa: 'Brazil Digital Nomad Visa',
+    blurb: 'Coastal Brazilian base with the digital nomad visa.',
+    bodyEn:
+      'Rio de Janeiro pairs Atlantic coastal living with a tech ecosystem concentrated in the South Zone. The Brazilian Digital Nomad Visa launched in 2022 simplifies longer stays for remote engineers.',
+  },
+  {
+    slug: 'sao-paulo',
+    name: 'São Paulo',
+    country: 'Brazil',
+    timezone: 'BRT (UTC-3)',
+    costOfLivingUsd: 1900,
+    internetMbps: 400,
+    visa: 'Brazil Digital Nomad Visa',
+    blurb: 'Largest tech market in Latin America.',
+    bodyEn:
+      'São Paulo is the largest tech market in Latin America, with a deep local engineering ecosystem and a dense international company presence.',
+  },
+  {
+    slug: 'porto',
+    name: 'Porto',
+    country: 'Portugal',
+    timezone: 'WET (UTC+0/+1)',
+    costOfLivingUsd: 1500,
+    internetMbps: 200,
+    visa: 'D8 Digital Nomad Visa',
+    blurb: 'Smaller, lower-cost alternative to Lisbon.',
+    bodyEn:
+      'Porto offers the same D8 nomad visa pathway as Lisbon at materially lower cost of living. The tech scene is smaller but growing, and rents are 30 to 40 percent below Lisbon equivalents.',
+  },
+  {
+    slug: 'valencia',
+    name: 'Valencia',
+    country: 'Spain',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 1700,
+    internetMbps: 600,
+    visa: 'Spanish Digital Nomad Visa',
+    blurb: 'Lower-cost Mediterranean alternative to Barcelona.',
+    bodyEn:
+      'Valencia attracts remote engineers seeking the Mediterranean lifestyle at materially lower cost than Barcelona. Internet connectivity is among the best in the country.',
+  },
+  {
+    slug: 'malaga',
+    name: 'Málaga',
+    country: 'Spain',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 1800,
+    internetMbps: 600,
+    visa: 'Spanish Digital Nomad Visa',
+    blurb: 'Coastal Andalusian remote tech hub.',
+    bodyEn:
+      "Málaga has positioned itself as a 'tech coast' destination on the Costa del Sol, with growing co-working infrastructure and a Mediterranean climate.",
+  },
+  {
+    slug: 'paris',
+    name: 'Paris',
+    country: 'France',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 3400,
+    internetMbps: 1000,
+    visa: 'Passeport Talent',
+    blurb: 'Largest French tech market with strong AI ecosystem.',
+    bodyEn:
+      'Paris hosts the largest concentration of French tech employers and a strong AI research ecosystem around La Défense and Station F. The Passeport Talent program gives a clear path for senior engineers.',
+  },
+  {
+    slug: 'munich',
+    name: 'Munich',
+    country: 'Germany',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 3200,
+    internetMbps: 500,
+    visa: 'Blue Card',
+    blurb: 'Premium German tech market anchored by enterprise.',
+    bodyEn:
+      'Munich is the second German tech market after Berlin, anchored by enterprise and automotive employers. Salaries trend higher than Berlin but so do rents.',
+  },
+  {
+    slug: 'copenhagen',
+    name: 'Copenhagen',
+    country: 'Denmark',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 3700,
+    internetMbps: 1000,
+    visa: 'Pay Limit Scheme',
+    blurb: 'High-salary Nordic tech market with strong remote culture.',
+    bodyEn:
+      'Copenhagen offers a strong concentration of remote-friendly Nordic tech companies and consistently high salary bands. Cost of living is among the highest in Europe.',
+  },
+  {
+    slug: 'stockholm',
+    name: 'Stockholm',
+    country: 'Sweden',
+    timezone: 'CET (UTC+1/+2)',
+    costOfLivingUsd: 3000,
+    internetMbps: 1000,
+    visa: 'Work permit',
+    blurb: 'Largest Nordic tech market with English-friendly culture.',
+    bodyEn:
+      'Stockholm hosts the largest Nordic tech ecosystem, with English-friendly operations across most international companies and a long tradition of remote-friendly work culture.',
+  },
+  {
+    slug: 'helsinki',
+    name: 'Helsinki',
+    country: 'Finland',
+    timezone: 'EET (UTC+2/+3)',
+    costOfLivingUsd: 2700,
+    internetMbps: 1000,
+    visa: 'Specialist Residence Permit',
+    blurb: 'Nordic tech base with strong gaming and platform ecosystem.',
+    bodyEn:
+      'Helsinki has a particularly strong games industry and platform engineering ecosystem. Internet quality and English fluency are among the highest in Europe.',
+  },
+  {
+    slug: 'dublin',
+    name: 'Dublin',
+    country: 'Ireland',
+    timezone: 'GMT (UTC+0/+1)',
+    costOfLivingUsd: 3400,
+    internetMbps: 1000,
+    visa: 'Critical Skills Employment Permit',
+    blurb: 'EU base for many US tech HQs and remote-friendly subsidiaries.',
+    bodyEn:
+      'Dublin hosts the European HQ of many US tech companies, making it a frequent destination for engineers wanting EU residency with US-anchored work culture.',
+  },
+  {
+    slug: 'new-york',
+    name: 'New York',
+    country: 'United States',
+    timezone: 'EST (UTC-5/-4)',
+    costOfLivingUsd: 5200,
+    internetMbps: 1000,
+    blurb: 'Largest US East Coast tech market.',
+    bodyEn:
+      'New York remains the largest tech labor market on the US East Coast. Many remote postings in financial services and media are anchored here.',
+  },
+  {
+    slug: 'san-francisco',
+    name: 'San Francisco',
+    country: 'United States',
+    timezone: 'PST (UTC-8/-7)',
+    costOfLivingUsd: 5500,
+    internetMbps: 1000,
+    blurb: 'Highest US tech salary bands, increasingly hybrid.',
+    bodyEn:
+      'San Francisco retains the highest US tech salary bands. Most well-funded local companies have shifted from fully remote to hybrid since 2023.',
+  },
+  {
+    slug: 'seattle',
+    name: 'Seattle',
+    country: 'United States',
+    timezone: 'PST (UTC-8/-7)',
+    costOfLivingUsd: 4300,
+    internetMbps: 1000,
+    blurb: 'Major Pacific Northwest tech hub with no state income tax.',
+    bodyEn:
+      'Seattle combines major tech employer presence with no state income tax. Remote postings from local HQs are common, though many have shifted to hybrid for nearby engineers.',
+  },
+  {
+    slug: 'denver',
+    name: 'Denver',
+    country: 'United States',
+    timezone: 'MST (UTC-7/-6)',
+    costOfLivingUsd: 3300,
+    internetMbps: 1000,
+    blurb: 'Mid-mountain US tech hub popular with remote engineers.',
+    bodyEn:
+      'Denver has attracted significant remote tech worker inflows since 2020. Cost of living is moderate by US standards and outdoor lifestyle factors weigh heavily in relocation decisions.',
+  },
+  {
+    slug: 'miami',
+    name: 'Miami',
+    country: 'United States',
+    timezone: 'EST (UTC-5/-4)',
+    costOfLivingUsd: 4100,
+    internetMbps: 1000,
+    blurb: 'US East Coast crypto and remote tech hub, no state income tax.',
+    bodyEn:
+      'Miami became a notable remote tech destination during the 2020-2023 wave, particularly in crypto and fintech. No state income tax remains a long-term driver.',
+  },
+  {
+    slug: 'toronto',
+    name: 'Toronto',
+    country: 'Canada',
+    timezone: 'EST (UTC-5/-4)',
+    costOfLivingUsd: 3400,
+    internetMbps: 1000,
+    visa: 'Express Entry or Global Talent Stream',
+    blurb: 'Largest Canadian tech market with US-aligned timezone.',
+    bodyEn:
+      'Toronto is the largest tech labor market in Canada, with US-aligned timezone and the Global Talent Stream offering a 2-week processing path for senior engineers.',
+  },
+  {
+    slug: 'vancouver',
+    name: 'Vancouver',
+    country: 'Canada',
+    timezone: 'PST (UTC-8/-7)',
+    costOfLivingUsd: 3300,
+    internetMbps: 1000,
+    visa: 'Express Entry',
+    blurb: 'Pacific Canadian tech base with US Pacific timezone alignment.',
+    bodyEn:
+      'Vancouver shares its timezone with the US Pacific tech ecosystem and offers an alternative for engineers wanting Canadian residency while collaborating with US-based teams.',
+  },
+];
+
+export const CITY_MAP: Record<string, CityEntry> = Object.fromEntries(
+  CITIES.map((c) => [c.slug, c]),
+);

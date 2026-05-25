@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import type { JobNormalized, JobsFile, Role, Locale } from './types';
+import type { JobNormalized, JobsFile, Role } from './types';
 import { ROLES } from './types';
 
 const DATA_PATH = path.join(process.cwd(), 'data', 'jobs.json');
@@ -106,5 +106,3 @@ export function paginate<T>(items: T[], page: number, perPage = 30) {
   };
 }
 
-// Marker to keep Locale type usage in lib graph
-export type _LocaleExport = Locale;

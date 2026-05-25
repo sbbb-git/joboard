@@ -67,7 +67,7 @@ export default function SalaryPage({ params }: { params: { lang: Locale; role: s
         <p>
           We average the min and max of each posting that publishes a salary range. Percentile
           values come from the sorted distribution of those midpoints. Listings without a salary
-          are excluded. Currency conversion is not applied — each currency is computed in
+          are excluded. Currency conversion is not applied; each currency is computed in
           isolation. {t(params.lang, 'footer.refreshed')} daily.
         </p>
       </section>

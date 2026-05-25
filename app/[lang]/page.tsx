@@ -5,6 +5,9 @@ import { allJobs, rolesWithCounts, topCountries } from '@/lib/jobs';
 import { localePath, t } from '@/lib/i18n';
 import { buildMetadata, organizationJsonLd } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
+import { SKILLS } from '@/lib/skills';
+import { CITIES } from '@/lib/cities';
+import { GUIDES } from '@/lib/guides';
 
 export const dynamicParams = true;
 export const revalidate = false;
@@ -15,7 +18,7 @@ export function generateMetadata({ params }: { params: { lang: Locale } }): Meta
     path: '',
     title: 'Remote tech jobs from across the web, refreshed daily',
     description:
-      'Browse remote engineering, data, design and product jobs aggregated from eight public job board APIs. Updated every day.',
+      'Browse remote engineering, data, design and product jobs aggregated from eight public job board APIs. Updated every day. Skill, city and salary pages included.',
   });
 }
 
@@ -24,6 +27,9 @@ export default function Home({ params }: { params: { lang: Locale } }) {
   const jobs = allJobs().slice(0, 18);
   const roles = rolesWithCounts().filter((r) => r.count > 0).slice(0, 8);
   const countries = topCountries(8);
+  const featuredSkills = SKILLS.slice(0, 12);
+  const featuredCities = CITIES.slice(0, 8);
+  const featuredGuides = GUIDES.slice(0, 6);
 
   return (
     <div className="space-y-12">
@@ -37,15 +43,25 @@ export default function Home({ params }: { params: { lang: Locale } }) {
         </h1>
         <p className="mt-4 text-muted max-w-prose">{t(locale, 'site.intro')}</p>
         <div className="mt-6 flex flex-wrap gap-2">
-          {roles.map((r) => (
-            <Link
-              key={r.role}
-              href={localePath(locale, `jobs/${r.role}`)}
-              className="text-sm px-3 py-1.5 rounded-full border border-line hover:border-ink capitalize"
-            >
-              {r.role} <span className="text-muted">· {r.count}</span>
-            </Link>
-          ))}
+          {roles.length > 0
+            ? roles.map((r) => (
+                <Link
+                  key={r.role}
+                  href={localePath(locale, `jobs/${r.role}`)}
+                  className="text-sm px-3 py-1.5 rounded-full border border-line hover:border-ink capitalize"
+                >
+                  {r.role} <span className="text-muted">· {r.count}</span>
+                </Link>
+              ))
+            : ['developer', 'frontend', 'backend', 'fullstack', 'data', 'devops', 'ml-ai', 'design'].map((r) => (
+                <Link
+                  key={r}
+                  href={localePath(locale, `jobs/${r}`)}
+                  className="text-sm px-3 py-1.5 rounded-full border border-line hover:border-ink capitalize"
+                >
+                  {r.replace('-', ' ')}
+                </Link>
+              ))}
         </div>
       </section>
 
@@ -67,6 +83,50 @@ export default function Home({ params }: { params: { lang: Locale } }) {
         )}
       </section>
 
+      <section>
+        <div className="flex items-baseline justify-between mb-4">
+          <h2 className="text-xl font-semibold">Browse by skill</h2>
+          <Link href={localePath(locale, 'skills')} className="text-sm text-accent">
+            All {SKILLS.length} skills →
+          </Link>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          {featuredSkills.map((s) => (
+            <Link
+              key={s.slug}
+              href={localePath(locale, `skills/${s.slug}`)}
+              className="text-sm px-3 py-1.5 rounded-full border border-line hover:border-ink"
+            >
+              {s.name}
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <div className="flex items-baseline justify-between mb-4">
+          <h2 className="text-xl font-semibold">Top cities for remote tech workers</h2>
+          <Link href={localePath(locale, 'cities')} className="text-sm text-accent">
+            All {CITIES.length} cities →
+          </Link>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {featuredCities.map((c) => (
+            <Link
+              key={c.slug}
+              href={localePath(locale, `cities/${c.slug}`)}
+              className="block border border-line rounded-lg p-3 hover:border-ink bg-white"
+            >
+              <div className="font-medium text-sm">{c.name}</div>
+              <div className="text-xs text-muted mt-0.5">{c.country}</div>
+              <div className="text-xs text-muted mt-2">
+                ${c.costOfLivingUsd.toLocaleString()}/mo · {c.internetMbps} Mbps
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {countries.length > 0 && (
         <section>
           <h2 className="text-xl font-semibold mb-4">{t(locale, 'nav.locations')}</h2>
@@ -83,6 +143,27 @@ export default function Home({ params }: { params: { lang: Locale } }) {
           </div>
         </section>
       )}
+
+      <section>
+        <div className="flex items-baseline justify-between mb-4">
+          <h2 className="text-xl font-semibold">{t(locale, 'nav.guides')}</h2>
+          <Link href={localePath(locale, 'guides')} className="text-sm text-accent">
+            All {GUIDES.length} guides →
+          </Link>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-3">
+          {featuredGuides.map((g) => (
+            <Link
+              key={g.slug}
+              href={localePath(locale, `guides/${g.slug}`)}
+              className="block border border-line rounded-lg p-4 hover:border-ink"
+            >
+              <h3 className="font-medium text-ink">{g.title}</h3>
+              <p className="text-sm text-muted mt-1">{g.description}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

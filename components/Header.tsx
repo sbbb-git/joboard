@@ -6,21 +6,27 @@ import { LangSwitcher } from './LangSwitcher';
 export function Header({ locale, path }: { locale: Locale; path: string }) {
   return (
     <header className="border-b border-line bg-cream">
-      <div className="mx-auto max-w-6xl flex items-center justify-between px-5 py-4">
+      <div className="mx-auto max-w-6xl flex items-center justify-between px-5 py-4 gap-4 flex-wrap">
         <Link href={localePath(locale)} className="font-semibold tracking-tight text-lg">
           remotedev<span className="text-accent">.work</span>
         </Link>
-        <nav className="flex items-center gap-5 text-sm text-muted">
+        <nav className="flex items-center gap-4 md:gap-5 text-sm text-muted">
           <Link href={localePath(locale, 'jobs')} className="hover:text-ink">
             {t(locale, 'nav.jobs')}
           </Link>
-          <Link href={localePath(locale, 'salaries/developer')} className="hover:text-ink">
-            {t(locale, 'nav.salaries')}
+          <Link href={localePath(locale, 'skills')} className="hover:text-ink hidden sm:inline">
+            Skills
           </Link>
-          <Link href={localePath(locale, 'companies')} className="hover:text-ink">
+          <Link href={localePath(locale, 'cities')} className="hover:text-ink hidden sm:inline">
+            Cities
+          </Link>
+          <Link href={localePath(locale, 'companies')} className="hover:text-ink hidden md:inline">
             {t(locale, 'nav.companies')}
           </Link>
-          <Link href={localePath(locale, 'guides/finding-a-remote-tech-job')} className="hover:text-ink">
+          <Link href={localePath(locale, 'salaries/developer')} className="hover:text-ink hidden md:inline">
+            {t(locale, 'nav.salaries')}
+          </Link>
+          <Link href={localePath(locale, 'guides')} className="hover:text-ink">
             {t(locale, 'nav.guides')}
           </Link>
           <LangSwitcher current={locale} path={path} />

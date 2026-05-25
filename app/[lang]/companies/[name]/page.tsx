@@ -24,7 +24,7 @@ export function generateMetadata({
   return buildMetadata({
     locale: params.lang,
     path: `companies/${params.name}`,
-    title: `${companyName} — remote jobs`,
+    title: `${companyName} · remote jobs`,
     description: `Open remote positions at ${companyName}, refreshed daily.`,
   });
 }

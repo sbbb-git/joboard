@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL || 'https://remotedev.work'),
   title: {
-    default: 'remotedev.work — Remote tech jobs, refreshed daily',
+    default: 'remotedev.work · Remote tech jobs, refreshed daily',
     template: '%s · remotedev.work',
   },
   description:
