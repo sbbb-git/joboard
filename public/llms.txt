@@ -1,0 +1,155 @@
+# slateremote.com
+
+> A curated index of remote tech jobs aggregated daily from eight public job board APIs, with salary data computed live, city profiles, and long-form guides for remote engineers.
+
+slateremote.com indexes engineering, data, design and product jobs that are explicitly remote. The index refreshes every day from Remotive, RemoteOK, Arbeitnow, We Work Remotely, Himalayas, Jobicy, The Muse and the Hacker News "Who is hiring" thread. The site is free, has no signup, and links every listing directly to the employer's own application page. It is published in seven languages (English, French, Spanish, German, Portuguese, Italian, Polish) and is part of a small network with slowmadly.com (slow-travel country guides) and ai-by-job.com (AI tools curated by job role).
+
+## Primary indexes
+
+- [All remote tech jobs](https://slateremote.com/en/jobs): full filterable list (role, country, seniority, contract type, minimum salary)
+- [Salaries by role](https://slateremote.com/en/salaries/developer): median and percentile salary bands computed live from posted ranges
+- [Cities for remote tech workers](https://slateremote.com/en/cities): 49 cities profiled with cost, internet, visa, timezone
+- [Skills index](https://slateremote.com/en/skills): 60 languages, frameworks, clouds, data, AI/ML, mobile and web3 tags
+- [Companies](https://slateremote.com/en/companies): every company currently posting remote tech jobs, grouped by active openings
+- [Guides](https://slateremote.com/en/guides): 53 long-form guides on finding remote work, salary, visas, taxes, lifestyle and tools
+- [Compare](https://slateremote.com/en/compare): 16 head-to-head comparisons (remote vs hybrid, Lisbon vs Barcelona, Portugal D8 vs Spain DNV, etc.)
+- [Glossary](https://slateremote.com/en/glossary): 40 remote work terms (RTO, EOR, async, DNV, RSU, slowmad, etc.)
+
+## Guides
+
+- [How to find a remote tech job in 2026](https://slateremote.com/en/guides/finding-a-remote-tech-job): A practical walkthrough for landing a remote engineering, data or product role from scratch.
+- [Remote developer salary guide for 2026](https://slateremote.com/en/guides/remote-developer-salary-guide): How to read salary bands on remote job postings, and what numbers to expect by seniority.
+- [How to become a remote developer](https://slateremote.com/en/guides/how-to-become-a-remote-developer): A roadmap from first line of code to first remote engineering offer.
+- [How to become a remote data engineer](https://slateremote.com/en/guides/how-to-become-a-data-engineer): The skills and path that map to remote data engineering postings in 2026.
+- [How to become a remote ML engineer](https://slateremote.com/en/guides/how-to-become-an-ml-engineer): The path into remote ML engineering in 2026.
+- [How to become a remote DevOps or SRE](https://slateremote.com/en/guides/how-to-become-a-devops-engineer): The skill set and path into remote platform and reliability engineering.
+- [How to become a remote front-end developer](https://slateremote.com/en/guides/how-to-become-a-frontend-developer): The current state of the remote front-end labor market and how to enter it.
+- [How to become a remote backend developer](https://slateremote.com/en/guides/how-to-become-a-backend-developer): The remote backend market in 2026 and the skill path to enter it.
+- [How to become a remote full-stack developer](https://slateremote.com/en/guides/how-to-become-a-fullstack-developer): The remote full-stack path in 2026.
+- [How to become a remote mobile developer](https://slateremote.com/en/guides/how-to-become-a-mobile-developer): The remote mobile engineering path in 2026.
+- [How to become a remote product manager](https://slateremote.com/en/guides/how-to-become-a-product-manager): The path into remote PM roles in 2026.
+- [How to become a remote product designer](https://slateremote.com/en/guides/how-to-become-a-designer): The remote product design path in 2026.
+- [Portugal D8 Digital Nomad Visa for tech workers](https://slateremote.com/en/guides/digital-nomad-visa-portugal): Complete guide to the Portuguese D8 visa for remote tech workers in 2026.
+- [Spain Digital Nomad Visa for tech workers](https://slateremote.com/en/guides/digital-nomad-visa-spain): How to apply for the Spanish Digital Nomad Visa as a remote tech worker.
+- [Germany freelance and Blue Card pathways](https://slateremote.com/en/guides/digital-nomad-visa-germany): The two main routes into Germany for remote tech workers.
+- [Mexico Temporary Resident visa for remote workers](https://slateremote.com/en/guides/digital-nomad-visa-mexico): How US-timezone remote workers use Mexico Temporary Resident status.
+- [Georgia one-year visa-free stay for remote workers](https://slateremote.com/en/guides/digital-nomad-visa-georgia): How remote tech workers use the Georgian visa-free policy and Individual Entrepreneur status.
+- [Remote work taxes for EU-resident tech workers](https://slateremote.com/en/guides/remote-work-taxes-eu): How EU tax residency interacts with foreign remote employment.
+- [Remote work taxes for US-resident tech workers](https://slateremote.com/en/guides/remote-work-taxes-us): State and federal considerations for US-based remote tech workers.
+- [Remote work equipment expenses and deductions](https://slateremote.com/en/guides/remote-work-equipment-deduction): How freelance and employed remote workers can structure equipment expenses.
+- [Remote work timezone strategies that actually work](https://slateremote.com/en/guides/remote-work-timezone-strategies): Practical patterns for engineers working across substantial timezone differences.
+- [Home office setup for remote tech workers](https://slateremote.com/en/guides/remote-work-home-office-setup): What actually matters versus what does not in a home office setup.
+- [Async communication patterns for remote tech teams](https://slateremote.com/en/guides/remote-work-async-communication): The async patterns that distinguish productive remote teams.
+- [Best laptops for remote developers in 2026](https://slateremote.com/en/guides/best-laptops-for-remote-developers): A practical comparison of the laptop choices that actually serve remote engineers.
+- [Software tools every remote developer ends up using](https://slateremote.com/en/guides/best-tools-for-remote-developers): The tooling that has become near-default across remote engineering teams.
+- [Best countries for remote tech workers in 2026](https://slateremote.com/en/guides/best-countries-for-remote-tech-workers): A practical comparison of the top destinations based on visa, tax, cost and infrastructure.
+- [Remote job cover letter templates that actually work](https://slateremote.com/en/guides/remote-job-cover-letter-templates): Cover letter patterns that lift response rates on remote tech postings.
+- [Remote tech interview preparation in 2026](https://slateremote.com/en/guides/remote-tech-interview-preparation): How remote interview loops have stabilized and what to prepare for.
+- [Remote job salary negotiation playbook](https://slateremote.com/en/guides/remote-job-salary-negotiation): How to negotiate a remote tech offer in 2026.
+- [Freelance vs employee for remote tech workers](https://slateremote.com/en/guides/freelance-vs-employee-remote): The trade-offs between contracting and employment for remote engineers.
+- [Mental health practices for remote tech workers](https://slateremote.com/en/guides/remote-work-mental-health): What actually helps sustain remote engineering work over multi-year horizons.
+- [AI engineer salary in 2026](https://slateremote.com/en/guides/ai-engineer-salary-2026): Current salary bands for remote AI and ML engineers in 2026.
+- [Where to find remote junior developer jobs](https://slateremote.com/en/guides/remote-junior-developer-jobs): A practical guide to landing a first remote engineering job at the junior level in 2026.
+- [Remote tech jobs without a degree](https://slateremote.com/en/guides/no-degree-remote-tech-jobs): A realistic view of which remote tech roles still hire candidates without a four-year degree.
+- [Best cities for digital nomads in 2026](https://slateremote.com/en/guides/best-cities-digital-nomad-2026): A ranked guide to the top digital nomad destinations for remote tech workers in 2026.
+- [Digital nomad visa comparison for tech workers in 2026](https://slateremote.com/en/guides/remote-work-visa-comparison-2026): A side-by-side look at the major digital nomad visas available to remote tech workers.
+- [Best time of year to look for a remote tech job](https://slateremote.com/en/guides/best-time-to-look-for-remote-jobs): When companies actually hire and when applications convert.
+- [How to recover from remote tech job rejection](https://slateremote.com/en/guides/remote-tech-job-rejection-recovery): A practical playbook for handling rejection during a remote tech job search.
+- [Remote tech jobs with stock options](https://slateremote.com/en/guides/remote-tech-jobs-with-stock-options): Where to find remote tech roles that still meaningfully grant equity.
+- [Best resume format for remote tech applications](https://slateremote.com/en/guides/best-resume-format-remote-tech): The resume patterns that convert on remote tech applications in 2026.
+- [How to handle remote tech recruiter outreach](https://slateremote.com/en/guides/remote-tech-recruiter-outreach): Cold recruiter messages and how to convert them efficiently.
+- [Best time zones for remote tech workers](https://slateremote.com/en/guides/best-time-zones-for-remote-tech-workers): Time zone selection trade-offs for remote engineering work.
+- [Portfolio projects that convert on remote tech applications](https://slateremote.com/en/guides/remote-tech-portfolio-projects): Which kinds of public projects actually move response rates on remote applications.
+- [Remote developer interview preparation, end to end](https://slateremote.com/en/guides/remote-developer-interview-prep): How to prepare for the four to six round remote engineering interview loop in 2026.
+- [Counter-offer playbook for remote tech offers](https://slateremote.com/en/guides/remote-job-counter-offer-playbook): How to counter on cash, equity, and benefits without burning the offer.
+- [Async standup vs sync standup](https://slateremote.com/en/guides/async-vs-sync-standup): Which standup format actually works for distributed engineering teams.
+- [How to pitch going remote to your current employer](https://slateremote.com/en/guides/how-to-pitch-remote-to-employer): A practical playbook for converting an on-site or hybrid role into fully remote without changing employers.
+- [Mental health and isolation when working fully remote](https://slateremote.com/en/guides/remote-mental-health-isolation): Practical patterns that protect against the silent productivity tax of remote isolation.
+- [Equipment and stipend negotiation for remote engineers](https://slateremote.com/en/guides/remote-equipment-stipend-negotiation): Standard remote benefits, how they vary, and what to ask for at signing.
+- [Searching for a remote job while living abroad](https://slateremote.com/en/guides/remote-job-search-from-abroad): How to make a remote tech job search work when you are not in the country where most employers are.
+- [Second passport and residency for remote workers](https://slateremote.com/en/guides/second-passport-residency-remote-workers): The realistic options for getting a second residency or passport as a remote worker.
+- [Remote onboarding: the first 90 days](https://slateremote.com/en/guides/remote-onboarding-first-90-days): How to start a fully remote engineering role and convert the trial period reliably.
+- [How much tax remote workers actually pay by country](https://slateremote.com/en/guides/remote-worker-tax-by-country): A realistic comparison of effective tax burdens for remote tech workers across major destination countries.
+
+## Cities
+
+- [Lisbon, Portugal](https://slateremote.com/en/cities/lisbon): Top remote tech hub in Western Europe with the D8 nomad visa.
+- [Berlin, Germany](https://slateremote.com/en/cities/berlin): Largest remote-friendly tech city in continental Europe.
+- [Barcelona, Spain](https://slateremote.com/en/cities/barcelona): Mediterranean coast hub with the Spanish nomad visa.
+- [Madrid, Spain](https://slateremote.com/en/cities/madrid): Capital and largest tech market in Spain.
+- [Mexico City, Mexico](https://slateremote.com/en/cities/mexico-city): Top Latin American hub with US-friendly timezone.
+- [Medellín, Colombia](https://slateremote.com/en/cities/medellin): Year-round mild climate hub for remote engineers in LatAm.
+- [Austin, United States](https://slateremote.com/en/cities/austin): Largest US remote-friendly tech city outside the coasts.
+- [London, United Kingdom](https://slateremote.com/en/cities/london): Largest European tech market for remote and hybrid engineering.
+- [Amsterdam, Netherlands](https://slateremote.com/en/cities/amsterdam): Premier remote tech market in the Netherlands.
+- [Bali, Indonesia](https://slateremote.com/en/cities/bali): Top Asian remote tech destination, particularly Canggu and Ubud.
+- [Chiang Mai, Thailand](https://slateremote.com/en/cities/chiang-mai): Long-standing low-cost remote tech base in Thailand.
+- [Singapore, Singapore](https://slateremote.com/en/cities/singapore): Premier Asian tech hub with excellent infrastructure.
+- [Tokyo, Japan](https://slateremote.com/en/cities/tokyo): Major Asian tech market with the new digital nomad visa.
+- [Dubai, United Arab Emirates](https://slateremote.com/en/cities/dubai): Tax-free remote tech base in the Middle East.
+- [Cape Town, South Africa](https://slateremote.com/en/cities/cape-town): Top African remote tech base with EU-aligned timezone.
+- [Tbilisi, Georgia](https://slateremote.com/en/cities/tbilisi): Low-cost remote tech base with one-year visa-free stay.
+- [Warsaw, Poland](https://slateremote.com/en/cities/warsaw): Largest EU remote tech market at moderate cost.
+- [Prague, Czech Republic](https://slateremote.com/en/cities/prague): EU tech base with the Zivno self-employment visa.
+- [Budapest, Hungary](https://slateremote.com/en/cities/budapest): Hungarian tech base with the White Card nomad visa.
+- [Tallinn, Estonia](https://slateremote.com/en/cities/tallinn): Premier digital-native base with e-Residency.
+- [Buenos Aires, Argentina](https://slateremote.com/en/cities/buenos-aires): LatAm base with strong tech talent pool.
+- [Rio de Janeiro, Brazil](https://slateremote.com/en/cities/rio-de-janeiro): Coastal Brazilian base with the digital nomad visa.
+- [São Paulo, Brazil](https://slateremote.com/en/cities/sao-paulo): Largest tech market in Latin America.
+- [Porto, Portugal](https://slateremote.com/en/cities/porto): Smaller, lower-cost alternative to Lisbon.
+- [Valencia, Spain](https://slateremote.com/en/cities/valencia): Lower-cost Mediterranean alternative to Barcelona.
+- [Málaga, Spain](https://slateremote.com/en/cities/malaga): Coastal Andalusian remote tech hub.
+- [Paris, France](https://slateremote.com/en/cities/paris): Largest French tech market with strong AI ecosystem.
+- [Munich, Germany](https://slateremote.com/en/cities/munich): Premium German tech market anchored by enterprise.
+- [Copenhagen, Denmark](https://slateremote.com/en/cities/copenhagen): High-salary Nordic tech market with strong remote culture.
+- [Stockholm, Sweden](https://slateremote.com/en/cities/stockholm): Largest Nordic tech market with English-friendly culture.
+- [Helsinki, Finland](https://slateremote.com/en/cities/helsinki): Nordic tech base with strong gaming and platform ecosystem.
+- [Dublin, Ireland](https://slateremote.com/en/cities/dublin): EU base for many US tech HQs and remote-friendly subsidiaries.
+- [New York, United States](https://slateremote.com/en/cities/new-york): Largest US East Coast tech market.
+- [San Francisco, United States](https://slateremote.com/en/cities/san-francisco): Highest US tech salary bands, increasingly hybrid.
+- [Seattle, United States](https://slateremote.com/en/cities/seattle): Major Pacific Northwest tech hub with no state income tax.
+- [Denver, United States](https://slateremote.com/en/cities/denver): Mid-mountain US tech hub popular with remote engineers.
+- [Miami, United States](https://slateremote.com/en/cities/miami): US East Coast crypto and remote tech hub, no state income tax.
+- [Toronto, Canada](https://slateremote.com/en/cities/toronto): Largest Canadian tech market with US-aligned timezone.
+- [Vancouver, Canada](https://slateremote.com/en/cities/vancouver): Pacific Canadian tech base with US Pacific timezone alignment.
+- [Las Palmas, Spain](https://slateremote.com/en/cities/las-palmas): Year-round mild climate hub on the Atlantic, growing remote tech scene.
+- [Tenerife, Spain](https://slateremote.com/en/cities/tenerife): Volcanic Canary Island alternative to Las Palmas with stronger nomad community.
+- [Funchal (Madeira), Portugal](https://slateremote.com/en/cities/madeira): Atlantic Portuguese island with the original Digital Nomad Village.
+- [Bangkok, Thailand](https://slateremote.com/en/cities/bangkok): Urban Thai alternative to Chiang Mai with stronger tech ecosystem.
+- [Kuala Lumpur, Malaysia](https://slateremote.com/en/cities/kuala-lumpur): English-friendly Asian remote tech base with the DE Rantau pass.
+- [Da Nang, Vietnam](https://slateremote.com/en/cities/da-nang): Beach plus fiber Vietnamese hub for cost-conscious remote workers.
+- [Taipei, Taiwan](https://slateremote.com/en/cities/taipei): Clean tech ecosystem in Asia, world-class fiber.
+- [Seoul, South Korea](https://slateremote.com/en/cities/seoul): Major Asian tech market with new workation visa.
+- [Marrakech, Morocco](https://slateremote.com/en/cities/marrakech): EU-adjacent timezone at half the EU cost of living.
+- [Antalya, Turkey](https://slateremote.com/en/cities/antalya): Mediterranean Turkey base with low cost and EU-compatible hours.
+
+## Comparisons
+
+- [Remote vs hybrid work in tech](https://slateremote.com/en/compare/remote-vs-hybrid): The differences that matter when choosing between fully remote and hybrid roles.
+- [Remote vs onsite tech jobs](https://slateremote.com/en/compare/remote-vs-onsite): The trade-offs between fully remote and fully onsite tech employment.
+- [Freelance vs full-time remote tech work](https://slateremote.com/en/compare/freelance-vs-fulltime): How the freelance and full-time tracks differ for remote tech workers.
+- [US vs EU remote tech companies](https://slateremote.com/en/compare/us-vs-eu-remote-tech-companies): How US-headquartered and EU-headquartered remote tech employers compare on compensation, culture, and operations.
+- [Junior vs senior remote tech jobs](https://slateremote.com/en/compare/junior-vs-senior-remote-jobs): How remote hiring differs by experience level in 2026.
+- [React vs Vue remote job market](https://slateremote.com/en/compare/react-vs-vue-jobs): How React and Vue compare on remote tech postings in 2026.
+- [Python vs Go for remote backend work](https://slateremote.com/en/compare/python-vs-go-backend): How Python and Go compare on remote backend postings in 2026.
+- [Startup vs big tech remote engineering](https://slateremote.com/en/compare/startup-vs-bigtech-remote): How startup and large-company remote engineering differ in 2026.
+- [AWS vs GCP remote job demand](https://slateremote.com/en/compare/aws-vs-gcp-remote-jobs): Comparing the major cloud platforms by remote hiring demand in 2026.
+- [Snowflake vs BigQuery for remote data engineers](https://slateremote.com/en/compare/snowflake-vs-bigquery): How the leading cloud data warehouses split on remote data engineering postings.
+- [Employer of record vs direct employment for remote tech workers](https://slateremote.com/en/compare/employer-of-record-vs-direct): When to use an employer of record service versus direct employment.
+- [In-house vs agency remote tech roles](https://slateremote.com/en/compare/in-house-vs-agency-remote): How agency and in-house remote engineering compare.
+- [Lisbon vs Barcelona for remote tech workers](https://slateremote.com/en/compare/lisbon-vs-barcelona-remote): How the two leading Mediterranean remote tech hubs actually compare.
+- [Portugal D8 vs Spain Digital Nomad Visa](https://slateremote.com/en/compare/portugal-vs-spain-nomad-visa): Side-by-side comparison of the two leading EU nomad visa programs.
+- [Lisbon vs Mexico City for remote tech workers](https://slateremote.com/en/compare/lisbon-vs-mexico-city-remote): European versus Latin American remote tech hub: timezone is the deciding factor.
+- [Bali vs Chiang Mai for remote tech workers](https://slateremote.com/en/compare/bali-vs-chiang-mai-remote): The two longest-running Southeast Asian remote work hubs compared.
+
+## Sister sites
+
+- [slowmadly.com](https://slowmadly.com): country guides for digital nomads who stay a while
+- [ai-by-job.com](https://ai-by-job.com): the best AI tools for every job, in seven languages
+
+## Optional
+
+- [Full content dump for ingestion](https://slateremote.com/llms-full.txt): every guide, city profile, skill description, glossary entry and comparison concatenated as plain text
+- [Sitemap](https://slateremote.com/sitemap.xml): machine-readable list of all URLs
+- [RSS feed (jobs)](https://slateremote.com/feed.xml): jobs feed if available
+- [About the site](https://slateremote.com/en/about): methodology, data sources, and update cadence

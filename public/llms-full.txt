@@ -1,0 +1,2908 @@
+# slateremote.com · full content for language model ingestion
+
+> This is the long-form text body of every guide, city profile, skill description, glossary entry and comparison published on slateremote.com. The data is the same the human-facing pages render, concatenated here as plain text so language models can ingest it in a single document without crawling.
+
+---
+
+# Guides
+
+## How to find a remote tech job in 2026
+
+*A practical walkthrough for landing a remote engineering, data or product role from scratch.* — category: finding
+
+Remote hiring in tech has matured. The companies still posting truly distributed roles in 2026 are a smaller, more selective set than at the 2021 peak, but the bar to apply has dropped: most accept candidates from anywhere within compatible timezones.
+
+## Where to look first
+Start with aggregators that pull from company applicant tracking systems directly. The signal-to-noise ratio is far higher on listings sourced from Greenhouse, Lever or Workday than on generic job boards. The eight APIs powering this site cover the largest portion of that catalog.
+
+## Tailoring the application
+Hiring managers screen for two things on remote applications: written communication and async judgment. A short, well-structured cover letter that names the team's recent shipped work outperforms a generic CV cold-send by an order of magnitude.
+
+## Salary expectations
+Remote does not mean discounted. Companies pay either to the candidate's local market or to a fixed band; the bands at well-funded scale-ups remain within 10 to 15 percent of in-office equivalents for senior engineers.
+
+## Timezones
+The single most filtered criterion in 2026 is timezone overlap. Four hours of overlap with the company's core hub is the working minimum for engineering roles, two for individual-contributor data roles.
+
+## Interview preparation
+Remote interview loops have stabilized at four to six rounds. Expect a recruiter screen, a hiring manager call, two to three technical rounds, and a final values or team-fit round. Coding screens have moved away from leetcode-style puzzles toward pairing sessions on realistic problems.
+
+## Closing the offer
+The compensation conversation on remote roles requires more research than in-office. Ask for the band before disclosing your target, and verify whether the offer is location-adjusted.
+
+Source: https://slateremote.com/en/guides/finding-a-remote-tech-job
+
+---
+
+## Remote developer salary guide for 2026
+
+*How to read salary bands on remote job postings, and what numbers to expect by seniority.* — category: salary
+
+Most remote postings now publish a band. Reading them correctly matters more than negotiating against them.
+
+## What the numbers mean
+The published band is almost always the IC range for a single level. A posting at 150 to 190 means the company hires that level inside that range, not that you can negotiate to 250 with enough leverage.
+
+## Seniority brackets
+Junior engineers at remote-first companies cluster between 70 and 110 thousand USD. Mid-level engineers sit at 110 to 150. Senior bands run 150 to 220, with staff and principal extending to 280 and beyond at the better-funded employers.
+
+## Equity
+Equity grants on remote offers have compressed. Series B and later companies now grant 0.05 to 0.2 percent for senior engineers, vesting over four years.
+
+## Currency
+Companies pay in their headquarters' currency by default. USD-denominated offers from US-based companies are the most common, EUR-denominated from EU companies, GBP from UK. Conversion happens at the contractor or employer-of-record level.
+
+## Location adjustment
+Roughly half of remote-first US companies still apply some geographic adjustment. Tiers are typically grouped: tier 1 cities (SF, NYC) at 100 percent, tier 2 (Austin, Seattle, Boston) at 90 to 95, tier 3 (most other US metros) at 80 to 90.
+
+Source: https://slateremote.com/en/guides/remote-developer-salary-guide
+
+---
+
+## How to become a remote developer
+
+*A roadmap from first line of code to first remote engineering offer.* — category: career
+
+Becoming a remote-employable developer is a different path than becoming a developer in general. The skills the market rewards on remote postings emphasize written communication and async ownership in addition to technical depth.
+
+## Foundation
+Spend the first six to twelve months on one ecosystem deeply rather than sampling many. The fastest-converting paths to remote employment in 2026 are full-stack JavaScript or TypeScript (with React and Node), Python with Django or FastAPI for backend, or Go for platform-leaning roles.
+
+## Building portfolio
+Three substantial projects deployed publicly beat ten tutorial completions. Each should solve a real problem, have clear documentation, and demonstrate testing and deployment practice.
+
+## Open source
+Even three accepted pull requests to a recognized open-source project change the texture of an application materially.
+
+## First job vs first remote job
+The fastest path to a first remote job is often a non-remote first job. Six to twelve months in any engineering environment delivers the unstated requirement most remote postings encode: prior production experience.
+
+Source: https://slateremote.com/en/guides/how-to-become-a-remote-developer
+
+---
+
+## How to become a remote data engineer
+
+*The skills and path that map to remote data engineering postings in 2026.* — category: career
+
+Remote data engineering postings have stabilized around a clear skill stack. The path to employment is shorter than for ML engineering because the role intersects with established analytics and platform engineering work that has existed for years.
+
+## Core skills
+SQL fluency at an advanced level (window functions, CTEs, query optimization). Python for pipeline scripting and orchestration. One major cloud (AWS, GCP or Azure) and one warehouse (Snowflake or BigQuery on most postings). dbt for transformation. Airflow or Dagster for orchestration.
+
+## Distinguishing skills
+Data modeling experience, particularly dimensional modeling and slowly changing dimensions, is the senior signal. Cost optimization on cloud warehouses is rapidly rising in importance.
+
+## Path
+Many remote data engineers come from analytics or backend backgrounds. Demonstrating production pipeline ownership, even on a single significant project, accelerates the transition.
+
+Source: https://slateremote.com/en/guides/how-to-become-a-data-engineer
+
+---
+
+## How to become a remote ML engineer
+
+*The path into remote ML engineering in 2026.* — category: career
+
+Remote ML engineering postings have narrowed in skill expectation since 2023. Most postings expect production deployment experience, not research credentials.
+
+## Core skills
+Python and PyTorch are baseline. Production deployment knowledge (containerization, model serving, monitoring) matters more than the research depth that dominated earlier hiring rounds.
+
+## LLM specialization
+Listings in LLM engineering have grown sharply. Familiarity with retrieval-augmented generation, evaluation frameworks, fine-tuning workflows and inference optimization separates LLM engineering applications from generalist ML applications.
+
+## Path
+A meaningful share of remote ML engineering applicants in 2026 came from software engineering rather than data science backgrounds. The reverse is also common but requires demonstrating production software depth.
+
+Source: https://slateremote.com/en/guides/how-to-become-an-ml-engineer
+
+---
+
+## How to become a remote DevOps or SRE
+
+*The skill set and path into remote platform and reliability engineering.* — category: career
+
+Remote DevOps and SRE postings cluster around a clear technical stack and a smaller number of philosophical concerns (incident response culture, on-call rotation health, automation discipline).
+
+## Technical stack
+Kubernetes and one major cloud (AWS most common, GCP and Azure both meaningful). Terraform for infrastructure-as-code. CI/CD pipeline experience (GitHub Actions most listed). Observability tooling (Prometheus, Grafana, Datadog).
+
+## Programming
+Go is the most-listed language on remote SRE postings, followed by Python.
+
+## Path
+The most common path is from backend engineering through platform team membership. Pure operations backgrounds increasingly require a substantial software engineering component to compete for remote senior listings.
+
+Source: https://slateremote.com/en/guides/how-to-become-a-devops-engineer
+
+---
+
+## How to become a remote front-end developer
+
+*The current state of the remote front-end labor market and how to enter it.* — category: career
+
+Remote front-end postings remain the largest single hiring category in remote tech. The path is well-documented but competitive at the junior level.
+
+## Core stack
+TypeScript, React, Next.js, Tailwind. CSS fundamentals at a level above what most boot-camp curricula deliver. Accessibility familiarity is now an explicit requirement on most senior listings.
+
+## Differentiators
+Design system contribution and Storybook authorship. Performance optimization track record. Direct collaboration experience with designers.
+
+## Path
+Substantial public deployments beat tutorial completions for both response rate and interview performance.
+
+Source: https://slateremote.com/en/guides/how-to-become-a-frontend-developer
+
+---
+
+## How to become a remote backend developer
+
+*The remote backend market in 2026 and the skill path to enter it.* — category: career
+
+Remote backend postings are large in volume but more fragmented across language ecosystems than front-end. Picking a single ecosystem and depth-first specialization is the working strategy.
+
+## Stacks
+TypeScript with Node or NestJS. Python with FastAPI or Django. Go for platform-leaning backends. Java with Spring for enterprise. Each ecosystem has enough remote listings to sustain a career.
+
+## Skills beyond the framework
+Database design at a level beyond ORM usage. Distributed systems literacy. API design and versioning practice. Observability and on-call experience.
+
+## Path
+A first non-remote backend job for one to two years remains the fastest converter to a senior remote backend role.
+
+Source: https://slateremote.com/en/guides/how-to-become-a-backend-developer
+
+---
+
+## How to become a remote full-stack developer
+
+*The remote full-stack path in 2026.* — category: career
+
+Full-stack remains the most common posting category at smaller remote-first companies. The role demands breadth, and the hiring market rewards demonstrated end-to-end ownership.
+
+## Core skills
+React or one major front-end framework. Node, Python or Go on the backend. SQL. One major cloud. Comfortable shipping a feature from spec to deployment without help.
+
+## What employers look for
+Full ownership stories, not feature lists. Senior full-stack postings select for breadth of ownership over deep specialization in any single layer.
+
+Source: https://slateremote.com/en/guides/how-to-become-a-fullstack-developer
+
+---
+
+## How to become a remote mobile developer
+
+*The remote mobile engineering path in 2026.* — category: career
+
+Remote mobile postings split into native iOS, native Android, and cross-platform. Each has a distinct hiring market.
+
+## Native iOS
+Swift and SwiftUI. UIKit familiarity for legacy maintenance. Combine or async/await for concurrency.
+
+## Native Android
+Kotlin with Jetpack Compose. Coroutines for concurrency. Material 3 fluency.
+
+## Cross-platform
+Flutter dominates new cross-platform listings since 2023. React Native remains strong at companies with React web stacks.
+
+## App store experience
+Demonstrated app store publication is the strongest single signal on a mobile application.
+
+Source: https://slateremote.com/en/guides/how-to-become-a-mobile-developer
+
+---
+
+## How to become a remote product manager
+
+*The path into remote PM roles in 2026.* — category: career
+
+Remote PM hiring is selective, with most postings requiring prior PM experience. The conversion path from engineering or design backgrounds is well-trodden.
+
+## Core skills
+Customer interview practice. Roadmap and prioritization frameworks. Async written communication at a level above most engineering and design roles.
+
+## Senior signal
+Track record of shipping. Demonstrated business outcomes tied to product decisions.
+
+## Path
+Most successful first-PM transitions in 2026 came from senior engineering or senior design roles at the same company.
+
+Source: https://slateremote.com/en/guides/how-to-become-a-product-manager
+
+---
+
+## How to become a remote product designer
+
+*The remote product design path in 2026.* — category: career
+
+Remote design postings concentrate on product design rather than visual or brand design. Figma fluency is universally expected.
+
+## Core skills
+Figma at an advanced level (auto-layout, variants, design tokens). Prototyping fluency. Design system experience. User research practice.
+
+## Senior signal
+Design system ownership. Cross-functional partnership skills. Track record of measurable product outcomes.
+
+Source: https://slateremote.com/en/guides/how-to-become-a-designer
+
+---
+
+## Portugal D8 Digital Nomad Visa for tech workers
+
+*Complete guide to the Portuguese D8 visa for remote tech workers in 2026.* — category: visa
+
+Portugal's D8 visa, launched in late 2022, is the most-used digital nomad pathway for remote tech workers in Europe.
+
+## Eligibility
+Proof of remote work for a non-Portuguese employer or as a freelancer. Minimum monthly income of around four times the Portuguese minimum wage (approximately 3 280 EUR in 2026).
+
+## Application
+Apply at the Portuguese consulate in your country of residence. Processing typically takes 60 to 90 days.
+
+## Tax implications
+The NHR (Non-Habitual Resident) tax regime was substantially reformed in 2024. New applicants now fall under a narrower successor program that still offers preferential treatment for specific high-value activities including most software engineering work.
+
+## After arrival
+The visa converts to a residence permit upon arrival. Renewal cycles run two years initially, then three.
+
+Source: https://slateremote.com/en/guides/digital-nomad-visa-portugal
+
+---
+
+## Spain Digital Nomad Visa for tech workers
+
+*How to apply for the Spanish Digital Nomad Visa as a remote tech worker.* — category: visa
+
+Spain's Digital Nomad Visa launched in January 2023 under the Startup Law. It has become one of the most popular European nomad pathways.
+
+## Eligibility
+Remote work for a foreign employer that has operated for at least one year, or freelance work for foreign clients (foreign income must be at least 80 percent of total). Minimum income of around 200 percent of the Spanish minimum wage.
+
+## Tax benefits
+Holders can opt into a reduced 24 percent flat tax on Spanish-source income up to 600 000 EUR for the first six years (the Beckham Law extension for nomads).
+
+## Application
+Apply from inside Spain on a tourist entry or from a Spanish consulate abroad. Approval typically arrives within 20 days for in-country applications.
+
+## Family
+Spouses and dependents can be included in the same application.
+
+Source: https://slateremote.com/en/guides/digital-nomad-visa-spain
+
+---
+
+## Germany freelance and Blue Card pathways
+
+*The two main routes into Germany for remote tech workers.* — category: visa
+
+Germany does not have a dedicated digital nomad visa as of 2026. Two adjacent pathways serve remote tech workers.
+
+## Freiberufler visa
+For self-employed engineers. Requires demonstrating client demand in Germany, German bank account, and registered tax presence.
+
+## Blue Card
+For employed engineers with a job offer from a German company. Faster processing and a 21-month path to permanent residency if German language requirements are met.
+
+## Tax
+Germany taxes worldwide income for residents. The progressive rate reaches 42 percent at modest income levels by US standards, plus solidarity surcharge and health insurance contributions.
+
+Source: https://slateremote.com/en/guides/digital-nomad-visa-germany
+
+---
+
+## Mexico Temporary Resident visa for remote workers
+
+*How US-timezone remote workers use Mexico Temporary Resident status.* — category: visa
+
+Mexico does not have a branded digital nomad visa, but the Temporary Resident visa serves the same purpose and is widely used by US-based remote tech workers.
+
+## Eligibility
+Demonstrate monthly income above approximately 4 500 USD or savings of approximately 75 000 USD. Both must be sustained over the preceding six to twelve months on bank statements.
+
+## Process
+Apply at a Mexican consulate outside Mexico. Approval typically within two to four weeks. Within 30 days of arrival, exchange for the residency card.
+
+## Tax
+The Temporary Resident visa does not by itself create tax residency. Tax residency requires spending more than 183 days per year in Mexico.
+
+Source: https://slateremote.com/en/guides/digital-nomad-visa-mexico
+
+---
+
+## Georgia one-year visa-free stay for remote workers
+
+*How remote tech workers use the Georgian visa-free policy and Individual Entrepreneur status.* — category: visa
+
+Georgia offers visa-free entry of up to one year for citizens of around 100 countries, including most EU and US passports. This has made Tbilisi a long-standing remote tech base.
+
+## Individual Entrepreneur status
+Registering as an Individual Entrepreneur with Small Business Status qualifies most freelance income for a 1 percent tax rate on turnover up to 500 000 GEL per year.
+
+## Banking
+Local bank account opening is straightforward for visa-free residents with proof of address.
+
+Source: https://slateremote.com/en/guides/digital-nomad-visa-georgia
+
+---
+
+## Remote work taxes for EU-resident tech workers
+
+*How EU tax residency interacts with foreign remote employment.* — category: tax
+
+EU tax residency is determined country by country but most member states apply similar tests centered on the 183-day rule and the location of permanent home and personal interests.
+
+## Employment from a non-EU company
+If the employer has no EU presence, the worker typically must register as either self-employed or use an employer-of-record service. The employer-of-record approach simplifies social charges but reduces net.
+
+## Social security
+EU/EEA bilateral agreements coordinate social security across borders. The A1 certificate documents which country's system the worker contributes to.
+
+## Special regimes
+Several EU countries (Spain, Italy, Portugal in narrower form) offer reduced tax regimes for inbound remote workers. These can materially reduce effective tax for the first five to ten years of residency.
+
+Source: https://slateremote.com/en/guides/remote-work-taxes-eu
+
+---
+
+## Remote work taxes for US-resident tech workers
+
+*State and federal considerations for US-based remote tech workers.* — category: tax
+
+US federal tax treats remote work like any other employment: the W-2 income lands in the same bucket regardless of work location.
+
+## State tax
+The complication is state tax. Working remotely from a state different from the employer's location may create tax obligations in both, depending on each state's nexus rules.
+
+## Convenience of the employer rule
+A handful of states (New York, Pennsylvania, Delaware) apply the convenience of the employer rule, taxing remote workers as if they worked at the employer's location. This can produce double taxation that requires credit claims to resolve.
+
+## Foreign-resident US citizens
+US citizens working remotely from abroad still owe US tax on worldwide income. The Foreign Earned Income Exclusion (around 130 000 USD in 2026) and Foreign Tax Credit reduce double taxation.
+
+Source: https://slateremote.com/en/guides/remote-work-taxes-us
+
+---
+
+## Remote work equipment expenses and deductions
+
+*How freelance and employed remote workers can structure equipment expenses.* — category: tax
+
+Equipment treatment depends on employment structure.
+
+## W-2 employees in the US
+Federal home office and unreimbursed employee expense deductions remain unavailable through 2025 under the TCJA. Some states (California, New York) allow them. Most remote-friendly employers reimburse equipment directly.
+
+## Self-employed and freelance
+Equipment is deductible as a business expense. Computers and monitors typically depreciate over five years or qualify for Section 179 immediate expensing depending on jurisdiction.
+
+## EU
+Most EU jurisdictions allow either employer reimbursement or self-employed deduction with similar rules.
+
+Source: https://slateremote.com/en/guides/remote-work-equipment-deduction
+
+---
+
+## Remote work timezone strategies that actually work
+
+*Practical patterns for engineers working across substantial timezone differences.* — category: lifestyle
+
+Successful remote engineering across timezones is less about tools than scheduling discipline.
+
+## The four-hour overlap rule
+Four hours of overlap with the team's core timezone is the working minimum for engineering roles. Two hours works for ICs operating largely async; under that, productivity and team integration degrade measurably.
+
+## Anchor meetings
+Two or three weekly anchor meetings at the overlap window absorb almost all synchronous needs at most well-functioning remote teams.
+
+## Async documentation
+Decisions made in synchronous meetings should be written down within 24 hours. This single discipline accounts for most of the difference between remote teams that work and those that grind.
+
+## Calendar boundaries
+Hard-stop calendar boundaries are easier to defend than soft preferences. Most remote-mature teams accept declined meetings without negotiation.
+
+Source: https://slateremote.com/en/guides/remote-work-timezone-strategies
+
+---
+
+## Home office setup for remote tech workers
+
+*What actually matters versus what does not in a home office setup.* — category: lifestyle
+
+Diminishing returns set in earlier than most spending guides suggest.
+
+## What matters most
+Comfortable chair (the single highest-leverage spend). Monitor at eye level. Camera at eye level. Microphone close to mouth. Stable broadband.
+
+## What matters second
+Quiet room or sound treatment. Climate control. Adjustable desk if you alternate sitting and standing.
+
+## What matters less than people think
+Multiple monitors past the second. Mechanical keyboards. RGB peripherals. High-end webcams beyond mid-tier 1080p.
+
+Source: https://slateremote.com/en/guides/remote-work-home-office-setup
+
+---
+
+## Async communication patterns for remote tech teams
+
+*The async patterns that distinguish productive remote teams.* — category: lifestyle
+
+Async communication is a learned skill at both the individual and team level.
+
+## Writing first
+Default to a written artifact before scheduling a meeting. Most decisions can be made without a meeting if the writeup is clear.
+
+## Decision documents
+A short decision document with context, options, recommendation and decision converges discussions that would otherwise drift across chat for days.
+
+## Status, not standup
+A short written status posted at the start of the day replaces most standups without measurable productivity loss.
+
+## Response time expectations
+Setting team norms on response time windows (e.g. same-day for chat, 24 hours for review requests) reduces the constant interruption tax of always-on chat.
+
+Source: https://slateremote.com/en/guides/remote-work-async-communication
+
+---
+
+## Best laptops for remote developers in 2026
+
+*A practical comparison of the laptop choices that actually serve remote engineers.* — category: tools
+
+Laptop choice for remote engineers depends on stack and travel pattern more than benchmark specs.
+
+## Macbook Pro 14 M4 Pro
+The default for most front-end, full-stack and product engineers in 2026. Battery life, build quality and ARM-native developer tooling have stabilized.
+
+## Macbook Air M4
+The fastest path to a competent remote development setup. Suitable for most web and scripting work. Falls short for heavy local builds or local LLM inference.
+
+## Framework Laptop 13
+The strongest Linux-native choice for engineers who want repairability and Linux-first tooling.
+
+## Lenovo Thinkpad X1 Carbon
+The most-recommended business laptop for engineers using Windows or dual-booting Linux.
+
+## Dell XPS 14
+A capable Windows-first machine, common at enterprise employers that issue corporate Windows fleets.
+
+Source: https://slateremote.com/en/guides/best-laptops-for-remote-developers
+
+---
+
+## Software tools every remote developer ends up using
+
+*The tooling that has become near-default across remote engineering teams.* — category: tools
+
+Tooling convergence has narrowed in 2026. Most successful remote engineering teams settle on a small, predictable set.
+
+## Editor
+VS Code or Cursor for AI-assisted workflows. JetBrains IDEs at enterprise teams and for JVM and Python.
+
+## Terminal
+Warp, iTerm2, or Ghostty. Tmux for persistent multi-pane sessions.
+
+## Notes
+Obsidian, Notion or Logseq. The shared team brain in many remote-first teams sits in Notion.
+
+## Communication
+Slack remains dominant. Discord at smaller dev-tools companies. Zoom and Google Meet for synchronous calls.
+
+## Version control
+Git via GitHub for the majority of remote engineering teams.
+
+Source: https://slateremote.com/en/guides/best-tools-for-remote-developers
+
+---
+
+## Best countries for remote tech workers in 2026
+
+*A practical comparison of the top destinations based on visa, tax, cost and infrastructure.* — category: lifestyle
+
+Country choice for a remote tech worker is rarely a single-variable optimization. The leading destinations each trade differently along visa friction, tax burden, cost of living, internet quality and lifestyle factors.
+
+## Portugal
+Best for EU residence path with a credible long-term tax pathway. Lisbon and Porto offer real tech ecosystems.
+
+## Spain
+Best for the Beckham Law tax extension and Mediterranean lifestyle. Madrid and Barcelona have the deepest local tech markets.
+
+## Mexico
+Best for US-timezone alignment at substantially lower cost. Temporary Resident path is straightforward.
+
+## Estonia
+Best for fully digital business setup. E-Residency simplifies invoicing global clients.
+
+## Georgia
+Best for tax minimization and low friction entry. One-year visa-free, 1 percent tax on small business turnover.
+
+## United Arab Emirates
+Best for tax-free environment at high cost of living. Remote Work Visa simplifies longer stays.
+
+## Thailand
+Best for low cost of living at modest visa friction. The 2024 DTV visa simplifies longer stays.
+
+Source: https://slateremote.com/en/guides/best-countries-for-remote-tech-workers
+
+---
+
+## Remote job cover letter templates that actually work
+
+*Cover letter patterns that lift response rates on remote tech postings.* — category: finding
+
+Generic cover letters lift application volume but not response rate. The patterns that move response rate are short, specific and tied to demonstrable work.
+
+## Structure
+Open with one sentence on why this company. One paragraph on relevant shipped work with a measurable outcome. One paragraph on the specific role and what you would tackle first. Close with availability and a link to a portfolio.
+
+## Length
+Under 200 words. Recruiters scan, not read.
+
+## What to avoid
+Generic enthusiasm language. Restating the resume. Claims of unique fit without specifics.
+
+## Customization minimum
+Naming the company's recent product launch, blog post or hiring announcement signals attention without requiring deep insider knowledge.
+
+Source: https://slateremote.com/en/guides/remote-job-cover-letter-templates
+
+---
+
+## Remote tech interview preparation in 2026
+
+*How remote interview loops have stabilized and what to prepare for.* — category: finding
+
+Remote tech interview loops have converged on a four to six round pattern.
+
+## Round 1: Recruiter screen
+30 minutes. Confirm fit on basics: salary expectations, location, work authorization.
+
+## Round 2: Hiring manager
+45 minutes. Conversational. Past projects, motivations, and the specific role.
+
+## Round 3 to 5: Technical
+Mix of system design, coding, and team-specific deep dives. Live coding has shifted toward pairing-style problems rather than leetcode puzzles at most well-run remote teams.
+
+## Round 6: Final
+Often called values, culture or executive. Increasingly a check on async judgment and written communication for fully remote roles.
+
+Source: https://slateremote.com/en/guides/remote-tech-interview-preparation
+
+---
+
+## Remote job salary negotiation playbook
+
+*How to negotiate a remote tech offer in 2026.* — category: salary
+
+Salary negotiation on remote offers requires different preparation than in-office offers.
+
+## Anchor research
+Use posted bands across comparable companies. The eight APIs powering this site cover the bulk of published bands.
+
+## Location disclosure
+Some companies adjust offers based on location. Disclose only when asked, and verify whether the offer is location-adjusted before counter-offering.
+
+## Total comp
+Equity grant value at private companies is highly uncertain. Discount accordingly when comparing offers across funding stages.
+
+## Counter pattern
+Counter once, with specific reasoning, and accept the second offer if it is materially above your minimum. Multiple counters at the same level tend to harden the recruiter rather than move the offer.
+
+Source: https://slateremote.com/en/guides/remote-job-salary-negotiation
+
+---
+
+## Freelance vs employee for remote tech workers
+
+*The trade-offs between contracting and employment for remote engineers.* — category: career
+
+The freelance versus employee decision has shifted in 2026 toward a more even split, after employee dominance through 2018-2022 and contractor dominance in 2023.
+
+## Income
+Freelance day rates have stabilized at around 1.5 to 2 times the equivalent employed annual rate divided by working days. Senior contract rates remain higher relative to full-time at companies that previously over-relied on contractors.
+
+## Stability
+Employment provides income smoothing. Freelance income has materially higher variance.
+
+## Benefits
+Employer-paid health insurance, retirement contributions and equity make total compensation closer than the headline numbers suggest.
+
+## Tax
+Freelance allows more expense deductions but typically pays more in social charges.
+
+## Tooling and process
+Some teams will not allow contractors access to certain systems or decisions. This can materially affect career development.
+
+Source: https://slateremote.com/en/guides/freelance-vs-employee-remote
+
+---
+
+## Mental health practices for remote tech workers
+
+*What actually helps sustain remote engineering work over multi-year horizons.* — category: lifestyle
+
+Remote work isolates by default. The people who sustain it over five or ten years tend to share a small set of practices.
+
+## Daily structure
+A consistent start time and a hard end time. Lunch eaten away from the desk.
+
+## Physical movement
+Daily walks or workouts at fixed times.
+
+## Social anchors
+Recurring in-person interactions outside work, scheduled with the same priority as meetings.
+
+## Quarterly travel or office time
+Most remote-mature teams now budget for periodic team gatherings. Engineers who sustain remote work tend to take advantage of these.
+
+Source: https://slateremote.com/en/guides/remote-work-mental-health
+
+---
+
+## AI engineer salary in 2026
+
+*Current salary bands for remote AI and ML engineers in 2026.* — category: salary
+
+AI engineering salaries have remained at premium levels through 2026 despite broader tech market softness.
+
+## Senior bands
+Senior AI engineers at well-funded US-headquartered remote companies sit at 220 to 320 thousand USD base, with total compensation between 300 and 500 thousand including equity.
+
+## Mid-level
+Mid-level AI engineers cluster between 150 and 220 thousand USD base on remote offers. The pay gap to general backend engineering at the same seniority is 30 to 50 percent.
+
+## LLM specialization
+Dedicated LLM engineering roles command an additional 10 to 20 percent above generalist AI engineering. Production fine-tuning and inference optimization experience drive the premium.
+
+## EU bands
+European employers pay 130 to 200 thousand EUR for senior AI engineering, with the gap to US bands persistent.
+
+Source: https://slateremote.com/en/guides/ai-engineer-salary-2026
+
+---
+
+## Where to find remote junior developer jobs
+
+*A practical guide to landing a first remote engineering job at the junior level in 2026.* — category: finding
+
+Remote junior developer hiring has tightened since 2022. The companies still hiring fully remote at junior levels are a smaller subset of the broader remote-friendly market, but they exist.
+
+## Where they hire
+Remote-mature scale-ups with formal mentorship programs. Open source-adjacent companies (developer tools, infra, platforms). Some startups under 50 engineers.
+
+## Skills that matter
+Demonstrable async communication. Public portfolio with at least three substantial deployed projects. Written work (blog posts, technical READMEs, accepted PRs).
+
+## Path
+Many engineers who eventually work remotely at junior level get there via a six to twelve month stint at a local company, then transition. The talent friction at fully remote junior is high enough that going hybrid first is often faster.
+
+Source: https://slateremote.com/en/guides/remote-junior-developer-jobs
+
+---
+
+## Remote tech jobs without a degree
+
+*A realistic view of which remote tech roles still hire candidates without a four-year degree.* — category: finding
+
+The "no degree required" trend in tech hiring softened slightly since 2022 but the underlying market remains accessible.
+
+## Roles where it does not matter
+Front-end engineering, full-stack at smaller companies, design, product management at startups. Track record substitutes for credentials at most of these roles.
+
+## Roles where it still matters
+ML and AI research roles. Many large enterprise companies retain degree requirements.
+
+## Substitutes
+Demonstrated open-source contributions. Substantial public deployed projects. Technical writing or speaking presence.
+
+## Verification
+Many companies have moved to "or equivalent experience" language explicitly. This is real, not boilerplate.
+
+Source: https://slateremote.com/en/guides/no-degree-remote-tech-jobs
+
+---
+
+## Best cities for digital nomads in 2026
+
+*A ranked guide to the top digital nomad destinations for remote tech workers in 2026.* — category: lifestyle
+
+The digital nomad city rankings have stabilized somewhat since the post-pandemic shuffle. The top destinations now offer well-tested infrastructure for remote tech workers.
+
+## Tier 1 (well-established, full-service)
+Lisbon, Mexico City, Bali, Chiang Mai, Medellín. Each has dense remote tech expat communities, established co-working scenes, and well-documented visa pathways.
+
+## Tier 2 (growing fast)
+Tbilisi, Buenos Aires, Cape Town, Tallinn, Budapest. Lower costs, smaller communities, less mature infrastructure.
+
+## Choosing
+Match on timezone (most US-anchored remote workers prefer LatAm; EU-anchored prefer Mediterranean Europe). Then on cost of living and visa friction.
+
+Source: https://slateremote.com/en/guides/best-cities-digital-nomad-2026
+
+---
+
+## Digital nomad visa comparison for tech workers in 2026
+
+*A side-by-side look at the major digital nomad visas available to remote tech workers.* — category: visa
+
+Dozens of countries now offer dedicated remote work visas. The trade-offs between them rarely come down to a single variable.
+
+## Income thresholds
+Portugal D8: ~3 280 EUR/month. Spain DNV: ~2 760 EUR/month. Mexico Temporary Resident: ~4 500 USD/month. Estonia DNV: ~3 504 EUR/month. UAE Remote: 3 500 USD/month. Greece DNV: ~3 500 EUR/month.
+
+## Length
+Portugal D8: 2 years renewable to 5, then permanent. Spain DNV: 3 years renewable. Mexico TR: 1 year renewable to 4. Estonia DNV: 1 year, no renewal. UAE Remote: 1 year renewable.
+
+## Tax pathway
+Portugal has the strongest preferential tax regime for the long term. Spain Beckham Law extension lasts 6 years. Mexico requires 183-day residency for tax effects.
+
+## Family
+Most allow spouse and dependents. Mexico, Spain, and Portugal are most family-friendly.
+
+Source: https://slateremote.com/en/guides/remote-work-visa-comparison-2026
+
+---
+
+## Best time of year to look for a remote tech job
+
+*When companies actually hire and when applications convert.* — category: finding
+
+Remote hiring follows the broader engineering hiring cycle with minor differences.
+
+## Strongest months
+January and February. Companies hit new headcount budgets. Most new requisitions open in this window.
+
+## Second peak
+September and October. Post-summer back-to-business cycle. Strong for senior hiring.
+
+## Slow months
+Mid-July to mid-August (summer slowdown). Mid-December to early January (holidays).
+
+## Async hiring continues year-round
+Unlike traditional office hiring, fully remote hiring has less seasonality. Senior remote roles fill more evenly across the year because they require longer searches anyway.
+
+Source: https://slateremote.com/en/guides/best-time-to-look-for-remote-jobs
+
+---
+
+## How to recover from remote tech job rejection
+
+*A practical playbook for handling rejection during a remote tech job search.* — category: finding
+
+Most remote job searches involve multiple rejections. The differentiator between successful and unsuccessful searches is recovery speed, not initial fit.
+
+## The numbers
+A typical experienced remote engineering search runs 80 to 150 applications, 10 to 25 first-round interviews, 4 to 8 full loops, 1 to 3 offers.
+
+## After a rejection
+Ask for specific feedback. Most companies provide little, but the ones that do offer the highest-signal data points in the search.
+
+## Pattern recognition
+After every 10 rejections, audit. Are recruiter screens converting? Are technical rounds? Are final rounds? The bottleneck shifts.
+
+## Mental discipline
+The rejection rate is high enough that taking each one personally compounds into search-ending fatigue. Treat each as data, not verdict.
+
+Source: https://slateremote.com/en/guides/remote-tech-job-rejection-recovery
+
+---
+
+## Remote tech jobs with stock options
+
+*Where to find remote tech roles that still meaningfully grant equity.* — category: salary
+
+Equity grants on remote offers compressed in 2023-2024 and have partially recovered since. The companies that still grant meaningful equity remotely cluster in identifiable categories.
+
+## Pre-IPO scale-ups
+Series B through F companies remain the strongest source of meaningful equity grants for remote engineers. Senior equity grants at this stage typically vest over four years.
+
+## Public companies
+RSU grants at remote-friendly public companies are real income. Senior grants commonly cluster between 100 and 400 thousand USD per year vesting over four years.
+
+## Startups
+Pre-seed and seed equity grants for remote employees are typically too small to value meaningfully despite percentage figures.
+
+## Verification
+Always verify the strike price, total options outstanding, and current preferred share price before treating an equity grant as material compensation.
+
+Source: https://slateremote.com/en/guides/remote-tech-jobs-with-stock-options
+
+---
+
+## Best resume format for remote tech applications
+
+*The resume patterns that convert on remote tech applications in 2026.* — category: finding
+
+Resume conventions for remote tech applications have converged on a clear set of practices.
+
+## Length
+One page for engineers under five years experience. Two pages maximum for senior and staff candidates.
+
+## Structure
+Reverse chronological work history. Skills section at the top or right column. Education at the bottom.
+
+## What to include
+Quantified impact lines on each role. Concrete technologies used. Public links (GitHub, portfolio).
+
+## What to remove
+Objective statements. References. Personal photos. Unrelated early-career roles for senior candidates.
+
+## Format
+PDF, not Word. Plain typography, dark on light. ATS-readable (no graphics, columns scan correctly).
+
+Source: https://slateremote.com/en/guides/best-resume-format-remote-tech
+
+---
+
+## How to handle remote tech recruiter outreach
+
+*Cold recruiter messages and how to convert them efficiently.* — category: finding
+
+Recruiter outreach volume has stayed high through 2026 for mid-level and senior remote engineers. Filter and convert efficiently.
+
+## First filter
+Five-second check: is this a real company, a real role, and a real fit?
+
+## Reply patterns
+For real fits: short interested response with availability. For unclear fits: ask three questions (compensation band, team size, remote policy) before commitment.
+
+## When not to reply
+Generic "great opportunity" boilerplate without role specifics. Recruiters who refuse to name the client. Mass outreach with no personalization.
+
+## Building a recruiter pipeline
+A small number of recruiters who specialize in your stack and seniority become high-value relationships. Invest in 3 to 5 such relationships over a 12-month horizon.
+
+Source: https://slateremote.com/en/guides/remote-tech-recruiter-outreach
+
+---
+
+## Best time zones for remote tech workers
+
+*Time zone selection trade-offs for remote engineering work.* — category: lifestyle
+
+Time zone choice for remote engineers is more constrained than candidates often realize.
+
+## US-anchored companies
+Most US-headquartered remote-first companies require at least four hours of overlap with US Pacific or US Eastern. That maps to working hours from roughly UTC-8 to UTC+3 maximum.
+
+## EU-anchored companies
+EU-headquartered companies typically expect overlap with CET. UTC-4 to UTC+5 is the working range.
+
+## Asia-anchored companies
+Smaller pool. Singapore-based companies often accept candidates from UTC+5 to UTC+11.
+
+## Choosing a base
+If targeting US employers: stay west of UTC+3. If targeting EU: anywhere UTC-4 to UTC+5 works. Truly global hires (anywhere in the world) remain a minority of remote postings.
+
+Source: https://slateremote.com/en/guides/best-time-zones-for-remote-tech-workers
+
+---
+
+## Portfolio projects that convert on remote tech applications
+
+*Which kinds of public projects actually move response rates on remote applications.* — category: finding
+
+Portfolio projects function as filters. The ones that lift response rate share characteristics that often are not the ones candidates intuit.
+
+## What converts
+Substantial deployments solving real problems, with documentation showing decision tradeoffs. Open source contributions to recognized projects. Technical writeups explaining work shipped at previous roles (within NDA limits).
+
+## What does not convert
+Tutorial clones (todo apps, weather apps). Personal blog with thin content. Side projects with no users.
+
+## Volume vs depth
+One substantial project (six months of work, real users) outperforms five tutorial clones consistently in screening data.
+
+## Public visibility
+The benefit of a portfolio is partly that it gets read. Projects buried on GitHub with no traffic generate less signal than the same projects with even modest visibility (a few hundred GitHub stars or active users).
+
+Source: https://slateremote.com/en/guides/remote-tech-portfolio-projects
+
+---
+
+## Remote developer interview preparation, end to end
+
+*How to prepare for the four to six round remote engineering interview loop in 2026.* — category: finding
+
+Remote engineering interview loops have stabilized around a clear pattern. Preparation pays off most on the rounds that have the highest predictive power for the hiring decision.
+
+## The round that decides
+The third or fourth round (the deep technical pairing) carries roughly half the hiring signal. Spend the most preparation time on this format.
+
+## What changed in 2026
+Live coding has moved from leetcode-style puzzles to realistic pairing sessions. Most senior interviews now use a deliberately ambiguous problem with conversation as the main signal.
+
+## System design rounds
+Senior and staff candidates almost always get one. Prepare on two axes: drawing trade-offs cleanly, and asking sharp clarifying questions before drawing anything.
+
+## Behavioral signal
+Async-friendly companies dig into past collaboration through specific examples. Prepare three stories per common theme (conflict, ambiguity, ownership) tied to shipped work.
+
+## Final round
+Increasingly a check on written communication. Expect either a written response exercise or a verbal walkthrough of how you'd document a recent technical decision.
+
+Source: https://slateremote.com/en/guides/remote-developer-interview-prep
+
+---
+
+## Counter-offer playbook for remote tech offers
+
+*How to counter on cash, equity, and benefits without burning the offer.* — category: salary
+
+The counter-offer is one decision point with disproportionate impact on total compensation over a multi-year horizon. Treat it as a single high-leverage interaction.
+
+## Counter once
+Counter once with specific reasoning, then accept the second offer if it is materially above your minimum. Repeated counters tend to harden the recruiter rather than move the offer.
+
+## What to counter on
+Cash is the easiest lever for the recruiter to move. Equity grants at private companies move less frequently but more meaningfully when they do. Benefits (vacation, equipment budget, learning budget) are often pulled from a different bucket and can stack on top of cash.
+
+## Anchoring research
+Use posted bands across comparable companies. Cite the source bracket clearly. Vague "market rate" claims do not move offers.
+
+## When to walk
+If the gap between the offer and your minimum is more than 15 to 20 percent and the recruiter cannot close it, the offer is genuinely below market and the company likely cannot adjust. Walking with grace preserves the relationship.
+
+Source: https://slateremote.com/en/guides/remote-job-counter-offer-playbook
+
+---
+
+## Async standup vs sync standup
+
+*Which standup format actually works for distributed engineering teams.* — category: lifestyle
+
+Most remote engineering teams that work well have settled on async written standups. The teams that still hold daily synchronous standups split into two groups: those who actively need them, and those who haven't questioned the habit.
+
+## When sync wins
+Junior-heavy teams. Teams with active incidents. Teams whose timezone overlap is wide enough that the meeting is cheap.
+
+## When async wins
+Senior IC teams. Teams across more than four timezones. Teams whose work is mostly individual contributor depth rather than coordination.
+
+## The async format that works
+A short message in a shared channel: what I shipped yesterday, what I'm shipping today, blockers. Read within the working hours by whoever needs to read it. Comments inline if relevant.
+
+## What does not work
+Async standup that nobody reads. Synchronous standup that exists out of habit. Both are quiet productivity sinks.
+
+Source: https://slateremote.com/en/guides/async-vs-sync-standup
+
+---
+
+## How to pitch going remote to your current employer
+
+*A practical playbook for converting an on-site or hybrid role into fully remote without changing employers.* — category: career
+
+Many tech workers' fastest path to remote is the company they already work for. The conversion succeeds or fails on framing more than on the underlying request.
+
+## Lead with productivity, not preference
+Frame the change as a productivity decision (focus time, less commute, more deep work) before any lifestyle reason. Lifestyle reasons land badly with most managers.
+
+## Pick the moment
+Ask after a clear win. Performance-review time, after shipping a major feature, or right after a promotion. Avoid asking during stressed periods or while organizational changes are pending.
+
+## Propose a trial
+A three-month trial converts more frequently than a permanent ask. The trial reduces the manager's perceived risk by 90 percent.
+
+## Have a fallback
+Hybrid (one to two days remote per week) is a common compromise that still meaningfully changes daily life. Going in with this in mind helps the negotiation.
+
+Source: https://slateremote.com/en/guides/how-to-pitch-remote-to-employer
+
+---
+
+## Mental health and isolation when working fully remote
+
+*Practical patterns that protect against the silent productivity tax of remote isolation.* — category: lifestyle
+
+Fully remote work isolates by default. The engineers who sustain it over five and ten years tend to share a small set of habits that look unimpressive in isolation but compound powerfully.
+
+## Daily anchors
+A consistent start time. A consistent end time. Lunch eaten away from the desk. None of this is optional past year one of remote.
+
+## Weekly anchors
+Two or three recurring in-person interactions outside work. A weekly call with a friend who is not a colleague. A shared physical activity (gym, sport, hobby) with set times.
+
+## Detect early
+Burnout from isolation does not look like burnout from overwork. It looks like productivity decay over weeks, dreading meetings that used to feel neutral, social anxiety creeping into Slack reactions. Naming it early matters.
+
+## Team gatherings
+Most remote-mature companies budget for periodic in-person team weeks. The engineers who sustain remote work tend to attend these even when it is inconvenient. The signal-to-noise on three days in person is exceptional.
+
+Source: https://slateremote.com/en/guides/remote-mental-health-isolation
+
+---
+
+## Equipment and stipend negotiation for remote engineers
+
+*Standard remote benefits, how they vary, and what to ask for at signing.* — category: salary
+
+Most remote-mature companies budget for home-office setup. The ranges and structures vary widely, and asking explicitly at signing nets meaningful additional value.
+
+## Common buckets in 2026
+One-time equipment budget at start: 1 500 to 3 500 USD. Annual replacement budget: 500 to 1 500. Monthly internet or coworking stipend: 50 to 150. Annual learning budget: 1 000 to 3 000. Annual team gathering budget: separate, often 2 000 to 4 000 per engineer.
+
+## What to ask for
+Ask at the offer stage, not after starting. Bring specific numbers from publicly documented offers at comparable companies. Most recruiters can stretch on at least one of these buckets even when cash is capped.
+
+## What to skip
+Tax-coded benefits in countries where the employer's reimbursement is taxable (US W-2, some EU). These add complexity for limited net.
+
+Source: https://slateremote.com/en/guides/remote-equipment-stipend-negotiation
+
+---
+
+## Searching for a remote job while living abroad
+
+*How to make a remote tech job search work when you are not in the country where most employers are.* — category: finding
+
+Looking for a remote job from a country with limited local tech employer presence requires a deliberately different approach than the equivalent search from a major tech hub.
+
+## Timezone disclosure
+Surface your timezone in the first message to recruiters. Burying it leads to wasted interviews when the company turns out to need broader overlap than you can offer.
+
+## US employers from non-US locations
+Most US-headquartered remote employers can only legally employ contractors or use an employer-of-record service. Understand which one applies to a posting before investing time.
+
+## EU employers from non-EU locations
+EU companies have more flexibility for non-EU contractors but typically prefer EU residents. The Spanish, Portuguese and German nomad and Blue Card paths give you EU residency without requiring local employment.
+
+## Network signal
+Recommendations from someone the employer trusts outweigh location concerns at most companies. Invest in two to three warm intros per month rather than 20 cold applications.
+
+Source: https://slateremote.com/en/guides/remote-job-search-from-abroad
+
+---
+
+## Second passport and residency for remote workers
+
+*The realistic options for getting a second residency or passport as a remote worker.* — category: visa
+
+A second residency or passport buys optionality. The realistic options for a remote tech worker fall into a small number of categories.
+
+## Fast residency (under 2 years)
+Portugal D8 visa (path to residency in 5 years). Spain DNV (path in 5 years). Greece DNV (path in 7 years). Malta nomad residence (renewable annually).
+
+## Faster but more expensive
+UAE Golden Visa (10-year residency from 540 000 AED investment). Portugal Golden Visa (still possible via select investment routes after 2024 reforms).
+
+## Citizenship paths
+Most EU nomad visas lead to citizenship in 5 to 10 years (Portugal 5, Spain 10, Germany 8 with C1 German). St. Kitts and Grenada citizenship-by-investment cost 150 to 250 000 USD and grant a passport in 4 to 6 months.
+
+## Tax considerations
+Holding a second residency does not by itself change tax residency. Tax residency depends on the 183-day test plus the substantive home test in most jurisdictions.
+
+Source: https://slateremote.com/en/guides/second-passport-residency-remote-workers
+
+---
+
+## Remote onboarding: the first 90 days
+
+*How to start a fully remote engineering role and convert the trial period reliably.* — category: career
+
+The first 90 days at a remote engineering role determine whether you slot into the team or drift toward isolation. The pattern that works for most engineers is structured and slightly extroverted.
+
+## First two weeks
+Schedule one 30-minute call with every direct teammate and every interface partner. Ask the same three questions: what is broken, what are you proud of shipping recently, what do you wish a new engineer would do differently.
+
+## First month
+Ship something small but visible. A polish PR, a small feature, a docs improvement. The point is to demonstrate working speed and earn early trust.
+
+## Month two
+Take ownership of a moderate piece of scope. Run it end to end. Communicate progress publicly more than feels natural.
+
+## Month three
+Have a documented opinion on at least one architectural decision in the team's scope. Without an opinion, you read as a senior IC without conviction.
+
+## What to avoid
+Long stretches of solo work without check-ins. Suggesting major changes before two months in. Going dark for any reason.
+
+Source: https://slateremote.com/en/guides/remote-onboarding-first-90-days
+
+---
+
+## How much tax remote workers actually pay by country
+
+*A realistic comparison of effective tax burdens for remote tech workers across major destination countries.* — category: tax
+
+Headline rates differ less than the effective rates remote workers actually pay, which depend on preferential regimes, social charges, and what counts as taxable.
+
+## Effective rate brackets at ~100k EUR income
+Portugal NHR successor regime: ~20 to 25 percent. Spain Beckham extension: 24 percent on Spanish-source up to 600k EUR. Italy impatriate regime: ~25 to 30 percent. Greece DNV regime: ~25 percent. Germany (no special regime): 38 to 42 percent. France (no special regime): 35 to 40 percent. Netherlands 30 percent ruling: ~36 percent net.
+
+## Off-Europe options
+Dubai: 0 percent on personal income, 9 percent corporate above 375k AED. Singapore: 15 to 22 percent depending on residency. US tax-free states: 22 to 32 percent federal, 0 state (TX, FL, WA, NV, TN, NH).
+
+## Hidden costs to model
+Health insurance contributions. Pension contributions. Solidarity surcharges. These add 5 to 12 percentage points to nominal income tax in most EU countries.
+
+Source: https://slateremote.com/en/guides/remote-worker-tax-by-country
+
+---
+
+# City profiles
+
+## Lisbon, Portugal
+
+*Top remote tech hub in Western Europe with the D8 nomad visa.*
+
+Lisbon has cemented its position as the dominant remote tech hub in Western Europe. The D8 digital nomad visa, low cost of living relative to other capital cities, mild climate and strong fiber infrastructure make it the preferred base for remote engineers relocating from higher-cost markets. The startup ecosystem around the Beato Innovation District and Cais do Sodré has matured into a stable network of co-working spaces and meetups in 2026. Rents have risen sharply since 2022 but remain below Paris, Amsterdam or Dublin equivalents.
+
+Source: https://slateremote.com/en/cities/lisbon
+
+---
+
+## Berlin, Germany
+
+*Largest remote-friendly tech city in continental Europe.*
+
+Berlin remains the largest tech hub in continental Europe by remote engineering headcount. The Freiberufler visa for freelancers and the Blue Card for employed engineers give straightforward paths in. The cost of living is moderate compared to other major capitals, though rents have risen significantly. The local English-speaking startup scene is dense enough that day-to-day life as a remote worker without German is workable.
+
+Source: https://slateremote.com/en/cities/berlin
+
+---
+
+## Barcelona, Spain
+
+*Mediterranean coast hub with the Spanish nomad visa.*
+
+Barcelona combines coastal living with a substantial local tech ecosystem. The Spanish Digital Nomad Visa launched in 2023 has made the city a preferred destination for remote engineers from outside the EU. Cost of living is materially lower than Madrid, with rents around 25 to 35 percent below central Madrid.
+
+Source: https://slateremote.com/en/cities/barcelona
+
+---
+
+## Madrid, Spain
+
+*Capital and largest tech market in Spain.*
+
+Madrid is the larger of the two Spanish tech markets and the easier city for engineers needing a wider local job network alongside their remote role. Fiber connectivity is excellent, and the Spanish Digital Nomad Visa is widely used here.
+
+Source: https://slateremote.com/en/cities/madrid
+
+---
+
+## Mexico City, Mexico
+
+*Top Latin American hub with US-friendly timezone.*
+
+Mexico City offers near-perfect timezone overlap with US-based remote employers, a substantial local engineering scene, and a cost of living roughly half that of comparable US cities. The Temporary Resident visa is straightforward for engineers with stable remote income. Neighborhoods like Roma, Condesa and Polanco concentrate the remote tech expat scene.
+
+Source: https://slateremote.com/en/cities/mexico-city
+
+---
+
+## Medellín, Colombia
+
+*Year-round mild climate hub for remote engineers in LatAm.*
+
+Medellín has become the second-most popular LatAm destination for remote engineers after Mexico City. The year-round mild climate (around 22 °C average), low cost of living and a dedicated Colombian Digital Nomad Visa launched in 2023 are the main draws.
+
+Source: https://slateremote.com/en/cities/medellin
+
+---
+
+## Austin, United States
+
+*Largest US remote-friendly tech city outside the coasts.*
+
+Austin remains the largest non-coastal US city for remote-friendly tech employment. The combination of no state income tax, a deep local startup ecosystem and substantial out-of-state tech HQ presence makes it a default landing for US-based remote engineers.
+
+Source: https://slateremote.com/en/cities/austin
+
+---
+
+## London, United Kingdom
+
+*Largest European tech market for remote and hybrid engineering.*
+
+London remains the largest single tech labor market in Europe. Many UK remote postings are technically hybrid, requiring one to two days per week on site. The Global Talent visa offers a fast path for senior engineers and researchers.
+
+Source: https://slateremote.com/en/cities/london
+
+---
+
+## Amsterdam, Netherlands
+
+*Premier remote tech market in the Netherlands.*
+
+Amsterdam attracts remote engineers via the Dutch-American Friendship Treaty (for US citizens starting a business) and the Highly Skilled Migrant program for employed engineers. The Dutch tech ecosystem is dense and English-friendly.
+
+Source: https://slateremote.com/en/cities/amsterdam
+
+---
+
+## Bali, Indonesia
+
+*Top Asian remote tech destination, particularly Canggu and Ubud.*
+
+Bali, particularly the Canggu and Ubud areas, remains the largest concentration of remote tech workers in Southeast Asia. The 2023 Second Home Visa formalized longer-term stays. Internet quality has improved sharply in 2024-2026 with dedicated co-working fiber.
+
+Source: https://slateremote.com/en/cities/bali
+
+---
+
+## Chiang Mai, Thailand
+
+*Long-standing low-cost remote tech base in Thailand.*
+
+Chiang Mai has been a remote work destination since the early 2010s. The 2024 Destination Thailand Visa simplified longer stays for remote workers. Cost of living is among the lowest in any major remote tech hub.
+
+Source: https://slateremote.com/en/cities/chiang-mai
+
+---
+
+## Singapore, Singapore
+
+*Premier Asian tech hub with excellent infrastructure.*
+
+Singapore offers world-class fiber, English-language operations, low corruption and an established Tech.Pass program for senior engineers. Cost of living is among the highest in Asia.
+
+Source: https://slateremote.com/en/cities/singapore
+
+---
+
+## Tokyo, Japan
+
+*Major Asian tech market with the new digital nomad visa.*
+
+Tokyo launched its Digital Nomad Visa in 2024, opening shorter-term remote work options. The Highly Skilled Professional path remains the primary route for engineers relocating long-term.
+
+Source: https://slateremote.com/en/cities/tokyo
+
+---
+
+## Dubai, United Arab Emirates
+
+*Tax-free remote tech base in the Middle East.*
+
+Dubai offers a tax-free environment for remote engineers via its Remote Work Visa launched in 2021. Cost of living is high but with no income tax the net benefit can be substantial for senior earners.
+
+Source: https://slateremote.com/en/cities/dubai
+
+---
+
+## Cape Town, South Africa
+
+*Top African remote tech base with EU-aligned timezone.*
+
+Cape Town is the largest concentration of remote tech workers in Africa, helped by a timezone aligned with European working hours. The 2024 Remote Work Visa simplified longer stays.
+
+Source: https://slateremote.com/en/cities/cape-town
+
+---
+
+## Tbilisi, Georgia
+
+*Low-cost remote tech base with one-year visa-free stay.*
+
+Tbilisi offers a one-year visa-free stay for most passports, low cost of living and a growing English-speaking remote tech community. Banking and registration for individual entrepreneurs is straightforward.
+
+Source: https://slateremote.com/en/cities/tbilisi
+
+---
+
+## Warsaw, Poland
+
+*Largest EU remote tech market at moderate cost.*
+
+Warsaw combines a sizable local tech ecosystem with EU mobility benefits and moderate cost of living. Poland Business Harbour streamlined relocation for engineers from select non-EU countries.
+
+Source: https://slateremote.com/en/cities/warsaw
+
+---
+
+## Prague, Czech Republic
+
+*EU tech base with the Zivno self-employment visa.*
+
+Prague is a popular European base for freelance and contracted remote engineers, with the Zivnostensky list (trade license) providing a clear self-employment path.
+
+Source: https://slateremote.com/en/cities/prague
+
+---
+
+## Budapest, Hungary
+
+*Hungarian tech base with the White Card nomad visa.*
+
+Budapest introduced the White Card digital nomad visa in 2022. Cost of living is among the lowest in EU capitals.
+
+Source: https://slateremote.com/en/cities/budapest
+
+---
+
+## Tallinn, Estonia
+
+*Premier digital-native base with e-Residency.*
+
+Estonia pioneered the e-Residency program and the Digital Nomad Visa. Tallinn remains the most digitally mature European capital for setting up a freelance business remotely.
+
+Source: https://slateremote.com/en/cities/tallinn
+
+---
+
+## Buenos Aires, Argentina
+
+*LatAm base with strong tech talent pool.*
+
+Buenos Aires has a substantial local tech talent pool and a Digital Nomad Visa launched in 2022. Cost of living for USD earners has been exceptionally low through 2024-2026 currency dynamics.
+
+Source: https://slateremote.com/en/cities/buenos-aires
+
+---
+
+## Rio de Janeiro, Brazil
+
+*Coastal Brazilian base with the digital nomad visa.*
+
+Rio de Janeiro pairs Atlantic coastal living with a tech ecosystem concentrated in the South Zone. The Brazilian Digital Nomad Visa launched in 2022 simplifies longer stays for remote engineers.
+
+Source: https://slateremote.com/en/cities/rio-de-janeiro
+
+---
+
+## São Paulo, Brazil
+
+*Largest tech market in Latin America.*
+
+São Paulo is the largest tech market in Latin America, with a deep local engineering ecosystem and a dense international company presence.
+
+Source: https://slateremote.com/en/cities/sao-paulo
+
+---
+
+## Porto, Portugal
+
+*Smaller, lower-cost alternative to Lisbon.*
+
+Porto offers the same D8 nomad visa pathway as Lisbon at materially lower cost of living. The tech scene is smaller but growing, and rents are 30 to 40 percent below Lisbon equivalents.
+
+Source: https://slateremote.com/en/cities/porto
+
+---
+
+## Valencia, Spain
+
+*Lower-cost Mediterranean alternative to Barcelona.*
+
+Valencia attracts remote engineers seeking the Mediterranean lifestyle at materially lower cost than Barcelona. Internet connectivity is among the best in the country.
+
+Source: https://slateremote.com/en/cities/valencia
+
+---
+
+## Málaga, Spain
+
+*Coastal Andalusian remote tech hub.*
+
+Málaga has positioned itself as a 'tech coast' destination on the Costa del Sol, with growing co-working infrastructure and a Mediterranean climate.
+
+Source: https://slateremote.com/en/cities/malaga
+
+---
+
+## Paris, France
+
+*Largest French tech market with strong AI ecosystem.*
+
+Paris hosts the largest concentration of French tech employers and a strong AI research ecosystem around La Défense and Station F. The Passeport Talent program gives a clear path for senior engineers.
+
+Source: https://slateremote.com/en/cities/paris
+
+---
+
+## Munich, Germany
+
+*Premium German tech market anchored by enterprise.*
+
+Munich is the second German tech market after Berlin, anchored by enterprise and automotive employers. Salaries trend higher than Berlin but so do rents.
+
+Source: https://slateremote.com/en/cities/munich
+
+---
+
+## Copenhagen, Denmark
+
+*High-salary Nordic tech market with strong remote culture.*
+
+Copenhagen offers a strong concentration of remote-friendly Nordic tech companies and consistently high salary bands. Cost of living is among the highest in Europe.
+
+Source: https://slateremote.com/en/cities/copenhagen
+
+---
+
+## Stockholm, Sweden
+
+*Largest Nordic tech market with English-friendly culture.*
+
+Stockholm hosts the largest Nordic tech ecosystem, with English-friendly operations across most international companies and a long tradition of remote-friendly work culture.
+
+Source: https://slateremote.com/en/cities/stockholm
+
+---
+
+## Helsinki, Finland
+
+*Nordic tech base with strong gaming and platform ecosystem.*
+
+Helsinki has a particularly strong games industry and platform engineering ecosystem. Internet quality and English fluency are among the highest in Europe.
+
+Source: https://slateremote.com/en/cities/helsinki
+
+---
+
+## Dublin, Ireland
+
+*EU base for many US tech HQs and remote-friendly subsidiaries.*
+
+Dublin hosts the European HQ of many US tech companies, making it a frequent destination for engineers wanting EU residency with US-anchored work culture.
+
+Source: https://slateremote.com/en/cities/dublin
+
+---
+
+## New York, United States
+
+*Largest US East Coast tech market.*
+
+New York remains the largest tech labor market on the US East Coast. Many remote postings in financial services and media are anchored here.
+
+Source: https://slateremote.com/en/cities/new-york
+
+---
+
+## San Francisco, United States
+
+*Highest US tech salary bands, increasingly hybrid.*
+
+San Francisco retains the highest US tech salary bands. Most well-funded local companies have shifted from fully remote to hybrid since 2023.
+
+Source: https://slateremote.com/en/cities/san-francisco
+
+---
+
+## Seattle, United States
+
+*Major Pacific Northwest tech hub with no state income tax.*
+
+Seattle combines major tech employer presence with no state income tax. Remote postings from local HQs are common, though many have shifted to hybrid for nearby engineers.
+
+Source: https://slateremote.com/en/cities/seattle
+
+---
+
+## Denver, United States
+
+*Mid-mountain US tech hub popular with remote engineers.*
+
+Denver has attracted significant remote tech worker inflows since 2020. Cost of living is moderate by US standards and outdoor lifestyle factors weigh heavily in relocation decisions.
+
+Source: https://slateremote.com/en/cities/denver
+
+---
+
+## Miami, United States
+
+*US East Coast crypto and remote tech hub, no state income tax.*
+
+Miami became a notable remote tech destination during the 2020-2023 wave, particularly in crypto and fintech. No state income tax remains a long-term driver.
+
+Source: https://slateremote.com/en/cities/miami
+
+---
+
+## Toronto, Canada
+
+*Largest Canadian tech market with US-aligned timezone.*
+
+Toronto is the largest tech labor market in Canada, with US-aligned timezone and the Global Talent Stream offering a 2-week processing path for senior engineers.
+
+Source: https://slateremote.com/en/cities/toronto
+
+---
+
+## Vancouver, Canada
+
+*Pacific Canadian tech base with US Pacific timezone alignment.*
+
+Vancouver shares its timezone with the US Pacific tech ecosystem and offers an alternative for engineers wanting Canadian residency while collaborating with US-based teams.
+
+Source: https://slateremote.com/en/cities/vancouver
+
+---
+
+## Las Palmas, Spain
+
+*Year-round mild climate hub on the Atlantic, growing remote tech scene.*
+
+Las Palmas, on Gran Canaria, has emerged since 2020 as one of the most active remote work hubs in the Atlantic. The combination of year-round 22 °C average, low cost of living relative to mainland Spain, and the Spanish Digital Nomad Visa pathway makes it a strong pick for engineers wanting a Mediterranean lifestyle with better weather. Co-working scene around Triana and Vegueta is well established, with several dedicated nomad coliving spaces.
+
+Source: https://slateremote.com/en/cities/las-palmas
+
+---
+
+## Tenerife, Spain
+
+*Volcanic Canary Island alternative to Las Palmas with stronger nomad community.*
+
+Tenerife pairs the Canary Islands fiscal regime with a remote nomad community that has grown rapidly since 2021. Puerto de la Cruz and the southern coast around Costa Adeje concentrate most of the remote workers. Internet quality is excellent across the island, and the Spanish DNV applies here as in mainland Spain.
+
+Source: https://slateremote.com/en/cities/tenerife
+
+---
+
+## Funchal (Madeira), Portugal
+
+*Atlantic Portuguese island with the original Digital Nomad Village.*
+
+Madeira launched the original "Digital Nomad Village" in Ponta do Sol in 2021. The Portuguese D8 visa applies here as on the mainland, and the island offers excellent fiber, a dedicated coworking infrastructure, and one of the most stable remote nomad communities in Europe.
+
+Source: https://slateremote.com/en/cities/madeira
+
+---
+
+## Bangkok, Thailand
+
+*Urban Thai alternative to Chiang Mai with stronger tech ecosystem.*
+
+Bangkok offers Thailand\
+
+Source: https://slateremote.com/en/cities/bangkok
+
+---
+
+## Kuala Lumpur, Malaysia
+
+*English-friendly Asian remote tech base with the DE Rantau pass.*
+
+Kuala Lumpur introduced the DE Rantau Nomad Pass in 2022. English is widely spoken across the city, costs are moderate, fiber is excellent, and Mont Kiara plus Bangsar areas concentrate most of the international remote workforce.
+
+Source: https://slateremote.com/en/cities/kuala-lumpur
+
+---
+
+## Da Nang, Vietnam
+
+*Beach plus fiber Vietnamese hub for cost-conscious remote workers.*
+
+Da Nang has overtaken Ho Chi Minh City as the preferred Vietnamese remote work destination. The combination of beach, modern infrastructure, very low cost of living, and a growing English-speaking community drives the inflow. Visa is straightforward, and the 90-day extension paths are well documented.
+
+Source: https://slateremote.com/en/cities/da-nang
+
+---
+
+## Taipei, Taiwan
+
+*Clean tech ecosystem in Asia, world-class fiber.*
+
+Taipei pairs world-class internet (gigabit broadly available) with a clean and English-friendly tech ecosystem. The Taiwan Employment Gold Card is a fast residency path for senior engineers, valid 1 to 3 years and easily renewable.
+
+Source: https://slateremote.com/en/cities/taipei
+
+---
+
+## Seoul, South Korea
+
+*Major Asian tech market with new workation visa.*
+
+Seoul launched its dedicated workation visa in 2024, opening shorter-term legal stays for remote workers. The local tech market is one of the largest in Asia, and internet quality is unmatched. Itaewon and Hannam areas concentrate the international remote scene.
+
+Source: https://slateremote.com/en/cities/seoul
+
+---
+
+## Marrakech, Morocco
+
+*EU-adjacent timezone at half the EU cost of living.*
+
+Marrakech offers EU-aligned working hours at roughly half the cost of EU equivalents. The Gueliz district concentrates the digital nomad community. Internet quality has improved sharply since 2022 with widespread fiber rollout.
+
+Source: https://slateremote.com/en/cities/marrakech
+
+---
+
+## Antalya, Turkey
+
+*Mediterranean Turkey base with low cost and EU-compatible hours.*
+
+Antalya combines the Mediterranean coastline with very low cost of living for USD or EUR earners. Working hours align with most of Europe. Internet quality is solid across the city, and the short-term residence permit can be extended for multi-year stays.
+
+Source: https://slateremote.com/en/cities/antalya
+
+---
+
+# Skill briefings
+
+## React (framework)
+
+*The dominant front-end library on remote engineering postings.*
+
+React still leads the front-end stack on remote job postings in 2026. Roughly two thirds of remote front-end roles ask for React experience, with Next.js explicitly named in about one in three. Senior salary bands cluster between 130 and 190 thousand USD for fully remote positions at US-headquartered companies, and 70 to 110 thousand EUR at EU-based employers.
+
+Source: https://slateremote.com/en/skills/react
+
+---
+
+## TypeScript (language)
+
+*Default language for new web and Node services on remote teams.*
+
+TypeScript is now the baseline for new web services in remote-first companies. Listings that mention TypeScript as required pay on average 8 to 12 percent above their JavaScript-only equivalents at the same seniority. Strong typing fits async, distributed teams: it reduces context-loss cost between reviewers.
+
+Source: https://slateremote.com/en/skills/typescript
+
+---
+
+## JavaScript (language)
+
+*The universal web language, still strongest on broad front-end and Node postings.*
+
+JavaScript remains the most commonly tagged language on remote engineering postings. Most of these listings now expect TypeScript familiarity in practice, but JavaScript proficiency is the door.
+
+Source: https://slateremote.com/en/skills/javascript
+
+---
+
+## Python (language)
+
+*The dominant language for remote data, ML, and backend roles.*
+
+Python tops the remote postings list when filtering for data engineering, machine learning and backend roles. ML and AI engineering roles add a substantial premium: Python-tagged ML engineer positions typically sit 30 to 50 percent above generalist Python backend bands.
+
+Source: https://slateremote.com/en/skills/python
+
+---
+
+## Rust (language)
+
+*Premium-paid systems language with growing remote demand.*
+
+Rust roles are still a smaller share of total remote postings but pay among the highest bands in the index. Senior Rust positions at fintech, infrastructure and cryptography companies sit at 180 to 260 thousand USD remotely.
+
+Source: https://slateremote.com/en/skills/rust
+
+---
+
+## Go (language)
+
+*Backbone of remote-first infrastructure and platform engineering.*
+
+Go dominates platform engineering listings at remote-first companies. If you read a remote SRE or infra posting in 2026, there is a roughly 60 percent chance it asks for Go.
+
+Source: https://slateremote.com/en/skills/go
+
+---
+
+## Java (language)
+
+*Enterprise backbone, common on remote enterprise back-end postings.*
+
+Java is heavily represented in remote backend listings at enterprise-scale companies and at fintech. Spring Boot is the dominant framework on these postings.
+
+Source: https://slateremote.com/en/skills/java
+
+---
+
+## Kotlin (language)
+
+*Primary language for remote Android and JVM backend work.*
+
+Kotlin appears on most remote Android postings and increasingly on JVM backend roles replacing legacy Java services.
+
+Source: https://slateremote.com/en/skills/kotlin
+
+---
+
+## Swift (mobile)
+
+*Required for almost every remote iOS engineering role.*
+
+Swift is required across remote iOS engineering postings. SwiftUI experience is increasingly listed as a hard requirement on new postings since 2024.
+
+Source: https://slateremote.com/en/skills/swift
+
+---
+
+## C# (language)
+
+*Common on remote enterprise and game backend postings.*
+
+C# remains widespread on remote enterprise backend and on game studio postings. .NET 8 and 9 features appear regularly in 2026 listings.
+
+Source: https://slateremote.com/en/skills/csharp
+
+---
+
+## Ruby (language)
+
+*Strong remote presence at established SaaS companies.*
+
+Ruby and Ruby on Rails postings are concentrated at established remote-first SaaS companies. The market is smaller than five years ago but pays well at senior levels.
+
+Source: https://slateremote.com/en/skills/ruby
+
+---
+
+## PHP (language)
+
+*Stable demand on remote backend and Laravel postings.*
+
+PHP remote demand is steady, with Laravel being the dominant framework on new listings. Symfony is common on European postings.
+
+Source: https://slateremote.com/en/skills/php
+
+---
+
+## Next.js (framework)
+
+*The default React meta-framework on remote front-end postings.*
+
+Next.js is explicitly named on the majority of remote React job postings since 2023. App Router experience is now the differentiator on senior listings.
+
+Source: https://slateremote.com/en/skills/nextjs
+
+---
+
+## Vue (framework)
+
+*Second front-end framework on remote postings, strong in EU.*
+
+Vue is the second most-requested front-end framework on remote postings, with particularly strong demand at EU-based companies.
+
+Source: https://slateremote.com/en/skills/vue
+
+---
+
+## Svelte (framework)
+
+*Smaller but growing remote demand at modern web teams.*
+
+Svelte and SvelteKit postings remain a smaller share of remote front-end demand but grow steadily, particularly at scrappy product teams.
+
+Source: https://slateremote.com/en/skills/svelte
+
+---
+
+## Angular (framework)
+
+*Mature framework, common on remote enterprise front-end postings.*
+
+Angular postings cluster at enterprise-scale companies and at established financial services firms with remote engineering offices.
+
+Source: https://slateremote.com/en/skills/angular
+
+---
+
+## Node.js (framework)
+
+*Default JavaScript runtime on remote backend postings.*
+
+Node.js anchors the JavaScript backend stack on remote postings. Express, Fastify and NestJS dominate the framework choices.
+
+Source: https://slateremote.com/en/skills/nodejs
+
+---
+
+## Django (framework)
+
+*Primary Python web framework on remote backend postings.*
+
+Django is the most-listed Python web framework on remote backend postings, especially in fintech and content-heavy SaaS companies.
+
+Source: https://slateremote.com/en/skills/django
+
+---
+
+## FastAPI (framework)
+
+*Growing Python framework on modern remote backend roles.*
+
+FastAPI listings have overtaken Flask on new remote Python backend postings. ML serving and lightweight API teams favor it.
+
+Source: https://slateremote.com/en/skills/fastapi
+
+---
+
+## Spring (framework)
+
+*Dominant Java framework on remote backend postings.*
+
+Spring and Spring Boot are explicitly named on nearly all remote Java backend listings. Microservices architectures with Spring Cloud are typical.
+
+Source: https://slateremote.com/en/skills/spring
+
+---
+
+## AWS (cloud)
+
+*The most-requested cloud on remote backend, devops and platform roles.*
+
+AWS is the most-requested cloud across remote engineering postings. Lambda, ECS, RDS and S3 are the staples on backend listings; EKS, IAM and CloudWatch on platform and SRE listings.
+
+Source: https://slateremote.com/en/skills/aws
+
+---
+
+## GCP (cloud)
+
+*Second cloud on remote data, ML and infra postings.*
+
+GCP appears on roughly one in three remote infra and data postings, often as a primary cloud for data warehouse-heavy stacks built on BigQuery.
+
+Source: https://slateremote.com/en/skills/gcp
+
+---
+
+## Azure (cloud)
+
+*Common on remote enterprise and .NET-heavy postings.*
+
+Azure dominates remote postings at enterprise-grade and .NET-centric companies. Azure DevOps, App Service and AKS appear most frequently.
+
+Source: https://slateremote.com/en/skills/azure
+
+---
+
+## Kubernetes (devops)
+
+*Baseline orchestration skill on remote platform and SRE roles.*
+
+Kubernetes is now baseline on remote platform and SRE postings. The differentiator at senior levels is multi-cluster, multi-region operations experience.
+
+Source: https://slateremote.com/en/skills/kubernetes
+
+---
+
+## Docker (devops)
+
+*Ubiquitous container tooling on remote engineering postings.*
+
+Docker is ubiquitous on remote engineering listings. Container literacy is now an entry-level expectation, not a senior differentiator.
+
+Source: https://slateremote.com/en/skills/docker
+
+---
+
+## Terraform (devops)
+
+*Primary IaC tool on remote platform postings.*
+
+Terraform appears on nearly all remote platform engineering postings as the infrastructure-as-code tool. OpenTofu adoption is rising on more security-conscious teams.
+
+Source: https://slateremote.com/en/skills/terraform
+
+---
+
+## Ansible (devops)
+
+*Common configuration management tool on remote ops roles.*
+
+Ansible appears on remote ops postings that manage long-running VM fleets and on hybrid cloud environments.
+
+Source: https://slateremote.com/en/skills/ansible
+
+---
+
+## PostgreSQL (data)
+
+*Default OLTP database across remote backend postings.*
+
+PostgreSQL is the default OLTP database in remote postings. Knowledge of advanced features (logical replication, partial indexes, RLS) marks senior listings.
+
+Source: https://slateremote.com/en/skills/postgres
+
+---
+
+## MongoDB (data)
+
+*Common document store on remote backend postings.*
+
+MongoDB demand is steady but smaller than five years ago. New listings often pair it with caching layers and event streaming.
+
+Source: https://slateremote.com/en/skills/mongodb
+
+---
+
+## MySQL (data)
+
+*Widespread on remote backend postings at established companies.*
+
+MySQL and MariaDB demand on remote postings is steady, particularly at established consumer SaaS and at content-heavy platforms.
+
+Source: https://slateremote.com/en/skills/mysql
+
+---
+
+## Redis (data)
+
+*Ubiquitous caching and queuing primitive on remote backend roles.*
+
+Redis appears on most remote backend postings as the caching, session and lightweight queueing primitive.
+
+Source: https://slateremote.com/en/skills/redis
+
+---
+
+## Elasticsearch (data)
+
+*Search and log analytics skill across remote backend postings.*
+
+Elasticsearch and its OpenSearch fork are commonly listed on remote backend postings for search, logging and analytics workloads.
+
+Source: https://slateremote.com/en/skills/elasticsearch
+
+---
+
+## Kafka (data)
+
+*Premium event streaming skill on remote data platform postings.*
+
+Kafka shows up on remote data platform and event-driven backend postings. Senior remote postings name it as a hard requirement for distributed systems roles.
+
+Source: https://slateremote.com/en/skills/kafka
+
+---
+
+## Snowflake (data)
+
+*Leading data warehouse on remote data engineering postings.*
+
+Snowflake leads the remote data warehouse listings. Knowledge of cost optimization and access control patterns is the senior differentiator.
+
+Source: https://slateremote.com/en/skills/snowflake
+
+---
+
+## BigQuery (data)
+
+*Default warehouse on remote GCP-anchored data teams.*
+
+BigQuery anchors remote data engineering listings at GCP-centric companies. Familiarity with slot management and BI Engine is the senior signal.
+
+Source: https://slateremote.com/en/skills/bigquery
+
+---
+
+## dbt (data)
+
+*Default transformation layer on remote analytics engineering roles.*
+
+dbt is now ubiquitous on remote analytics engineering postings. Most postings expect both Core and Cloud familiarity.
+
+Source: https://slateremote.com/en/skills/dbt
+
+---
+
+## Apache Spark (data)
+
+*Distributed processing skill on remote data engineering roles.*
+
+Spark and PySpark remain dominant on remote data engineering postings dealing with large-scale batch and streaming pipelines.
+
+Source: https://slateremote.com/en/skills/spark
+
+---
+
+## Apache Airflow (data)
+
+*Most-listed orchestrator on remote data engineering roles.*
+
+Airflow is the most-listed workflow orchestrator on remote data engineering postings. Prefect and Dagster appear on a growing minority of newer listings.
+
+Source: https://slateremote.com/en/skills/airflow
+
+---
+
+## PyTorch (ai)
+
+*Default ML framework on remote ML engineering postings.*
+
+PyTorch is the dominant deep learning framework on remote ML engineering postings since 2022. Familiarity with distributed training and serving is the senior signal.
+
+Source: https://slateremote.com/en/skills/pytorch
+
+---
+
+## TensorFlow (ai)
+
+*Established ML framework on remote ML engineering postings.*
+
+TensorFlow demand remains on remote ML postings, particularly at enterprise companies maintaining established production pipelines.
+
+Source: https://slateremote.com/en/skills/tensorflow
+
+---
+
+## LLM Engineering (ai)
+
+*The fastest-growing remote AI specialty since 2023.*
+
+LLM engineering listings on remote postings have grown sharply since 2023. Production experience with retrieval-augmented generation, fine-tuning and evals is the senior differentiator. Salaries on dedicated LLM engineering postings sit at 180 to 280 thousand USD remotely at well-funded companies.
+
+Source: https://slateremote.com/en/skills/llm
+
+---
+
+## RAG (ai)
+
+*Production retrieval skill across remote AI engineering postings.*
+
+Retrieval-augmented generation experience is named on most remote AI engineering postings since 2024. Vector database familiarity and embedding choice tradeoffs are typical interview topics.
+
+Source: https://slateremote.com/en/skills/rag
+
+---
+
+## Hugging Face (ai)
+
+*Default ML model platform on remote ML engineering postings.*
+
+Hugging Face Transformers, Datasets and Hub appear on most remote ML engineering postings. Model fine-tuning experience using their stack is a common requirement.
+
+Source: https://slateremote.com/en/skills/huggingface
+
+---
+
+## GraphQL (web3)
+
+*API layer skill on remote full-stack postings.*
+
+GraphQL remains on a meaningful minority of remote full-stack postings. Apollo and urql are the most-named clients.
+
+Source: https://slateremote.com/en/skills/graphql
+
+---
+
+## Tailwind CSS (framework)
+
+*Default CSS framework on modern remote front-end roles.*
+
+Tailwind CSS is now the default styling system on most new remote front-end postings, often paired with shadcn or other component libraries.
+
+Source: https://slateremote.com/en/skills/tailwind
+
+---
+
+## Redux (framework)
+
+*Established React state management on remote front-end roles.*
+
+Redux and Redux Toolkit appear on a meaningful share of remote React postings, particularly at established product teams maintaining mature applications.
+
+Source: https://slateremote.com/en/skills/redux
+
+---
+
+## Flutter (mobile)
+
+*Primary cross-platform mobile skill on remote mobile postings.*
+
+Flutter dominates the cross-platform mobile category on remote postings, ahead of React Native at most of the newer listings since 2023.
+
+Source: https://slateremote.com/en/skills/flutter
+
+---
+
+## React Native (mobile)
+
+*Established cross-platform mobile skill on remote postings.*
+
+React Native remains a strong demand on remote mobile postings, particularly at companies whose web stack is React.
+
+Source: https://slateremote.com/en/skills/react-native
+
+---
+
+## Unity (framework)
+
+*Primary game engine on remote gameplay engineering postings.*
+
+Unity remains the dominant engine on remote gameplay engineering postings at indie and mid-size studios.
+
+Source: https://slateremote.com/en/skills/unity
+
+---
+
+## Unreal Engine (framework)
+
+*AAA-tier engine on remote gameplay engineering postings.*
+
+Unreal Engine 5 listings on remote postings are smaller in count but pay among the highest bands for gameplay engineers.
+
+Source: https://slateremote.com/en/skills/unreal
+
+---
+
+## Solidity (web3)
+
+*Primary smart contract language on remote crypto postings.*
+
+Solidity remains the primary smart contract language on remote crypto and DeFi postings. Audit-grade experience commands the highest bands in the category.
+
+Source: https://slateremote.com/en/skills/solidity
+
+---
+
+## Cybersecurity (devops)
+
+*Premium-paid remote category with shortage of senior candidates.*
+
+Remote cybersecurity postings remain underserved by candidates at senior levels. AppSec, cloud security and detection engineering are the most active sub-categories on remote postings.
+
+Source: https://slateremote.com/en/skills/cybersecurity
+
+---
+
+## Figma (framework)
+
+*Universal design tool on remote product design postings.*
+
+Figma is universally listed on remote product design postings. Design system maintenance experience is the senior signal.
+
+Source: https://slateremote.com/en/skills/figma
+
+---
+
+## Storybook (framework)
+
+*Common UI component documentation tool on remote front-end roles.*
+
+Storybook appears on most remote front-end postings that mention a design system or component library.
+
+Source: https://slateremote.com/en/skills/storybook
+
+---
+
+## CI/CD (devops)
+
+*Pipeline skills required across remote engineering postings.*
+
+CI/CD pipeline literacy is now a baseline expectation on remote engineering postings. GitHub Actions is the most-listed tool, with GitLab CI second.
+
+Source: https://slateremote.com/en/skills/cicd
+
+---
+
+## SQL (data)
+
+*Foundational data skill on remote analytics, data and backend roles.*
+
+SQL remains the foundational data skill on remote postings across backend, data and analytics. Window functions and CTEs are now expected at all levels.
+
+Source: https://slateremote.com/en/skills/sql
+
+---
+
+## Machine Learning (ai)
+
+*Broadest AI category on remote engineering postings.*
+
+Machine learning is the broadest AI tag on remote postings. Generalist ML engineering and applied ML on production systems dominate the listings.
+
+Source: https://slateremote.com/en/skills/machine-learning
+
+---
+
+## Data Engineering (data)
+
+*Premium-paid remote data category with steady demand.*
+
+Data engineering postings on remote listings cluster around pipeline ownership, warehouse modeling and platform reliability. Snowflake, dbt and Airflow appear together on most listings.
+
+Source: https://slateremote.com/en/skills/data-engineering
+
+---
+
+## Prompt Engineering (ai)
+
+*Specialized AI skill peaking on remote applied AI postings.*
+
+Dedicated prompt engineering postings remain a small share, with most demand absorbed into broader AI and LLM engineering roles. The skill is still explicitly named on a meaningful minority of remote AI listings.
+
+Source: https://slateremote.com/en/skills/prompt-engineering
+
+---
+
+## WebGL (framework)
+
+*Specialized graphics skill on remote front-end and 3D postings.*
+
+WebGL and Three.js appear on a minority of remote front-end postings, with demand concentrated at 3D product configurators, design tools and game studios.
+
+Source: https://slateremote.com/en/skills/webgl
+
+---
+
+# Comparisons
+
+## Remote vs hybrid work in tech
+
+*The differences that matter when choosing between fully remote and hybrid roles.*
+
+## Geographic flexibility
+Fully remote roles allow choosing any compatible-timezone city. Hybrid roles tie residence to commuting distance.
+
+## Compensation
+Fully remote bands at well-funded companies sit within 10 to 15 percent of in-office equivalents. Hybrid roles typically match in-office bands.
+
+## Career velocity
+Hybrid roles still produce faster promotion velocity at most companies, though the gap has narrowed since 2022. The mechanism is informal visibility rather than explicit policy.
+
+## Team integration
+Hybrid teams reach informal alignment faster. Fully remote teams require deliberate process to match this.
+
+## Choice in 2026
+The choice now depends less on availability (both are abundant) and more on lifestyle and career stage preferences.
+
+Source: https://slateremote.com/en/compare/remote-vs-hybrid
+
+---
+
+## Remote vs onsite tech jobs
+
+*The trade-offs between fully remote and fully onsite tech employment.*
+
+## Geographic flexibility
+Remote removes the geographic constraint entirely. Onsite locks residence to commute distance.
+
+## Compensation
+At equivalent companies and seniority, onsite bands run slightly higher (typically 5 to 15 percent). The gap has narrowed since 2022.
+
+## Career development
+Onsite roles still confer mentorship and informal learning advantages, particularly early-career. The gap is smallest at remote-mature companies.
+
+## Lifestyle
+Remote removes commute time. Onsite provides structural separation between work and home.
+
+Source: https://slateremote.com/en/compare/remote-vs-onsite
+
+---
+
+## Freelance vs full-time remote tech work
+
+*How the freelance and full-time tracks differ for remote tech workers.*
+
+## Income
+Freelance day rates are typically 1.5 to 2x the equivalent annual full-time rate divided by working days. Variance is much higher.
+
+## Benefits
+Full-time roles include health insurance, retirement and equity. These narrow the apparent income gap materially.
+
+## Project depth
+Full-time roles allow deeper ownership of long-running systems. Freelance roles tend toward shorter scoped engagements.
+
+## Tax
+Freelance allows business expense deductions but typically pays more in social charges.
+
+## Time to first contract vs first job
+Freelance contracts can convert faster initially but compound more slowly. Full-time roles compound career capital faster at established employers.
+
+Source: https://slateremote.com/en/compare/freelance-vs-fulltime
+
+---
+
+## US vs EU remote tech companies
+
+*How US-headquartered and EU-headquartered remote tech employers compare on compensation, culture, and operations.*
+
+## Compensation
+US-headquartered remote tech employers pay higher cash bands at equivalent seniority, typically 30 to 60 percent above EU equivalents in raw dollars.
+
+## Benefits
+EU employers provide more statutory benefits (paid vacation, healthcare, parental leave) that narrow the total compensation gap meaningfully.
+
+## Vacation
+US companies typically offer 15 to 25 days; EU companies 25 to 35 days plus statutory holidays.
+
+## Work culture
+US remote-first companies often run faster cadences with longer working hours. EU companies typically enforce stricter working hours norms.
+
+## Timezone fit
+US employers generally hire candidates with at least 4 hours of US timezone overlap; EU employers more flexible on candidate timezone.
+
+Source: https://slateremote.com/en/compare/us-vs-eu-remote-tech-companies
+
+---
+
+## Junior vs senior remote tech jobs
+
+*How remote hiring differs by experience level in 2026.*
+
+## Availability
+Senior remote roles outnumber junior remote roles substantially. Most fully remote teams hire juniors only when they have a structured mentorship program.
+
+## Compensation
+Junior remote roles cluster at 70 to 110 thousand USD. Senior at 150 to 220. Staff and principal at 220 to 320.
+
+## Hiring bar
+Junior remote hiring places more weight on portfolio quality and async communication, since onboarding investment is higher.
+
+## Path
+Many remote engineers start their careers onsite or hybrid, then transition to fully remote at mid-level.
+
+Source: https://slateremote.com/en/compare/junior-vs-senior-remote-jobs
+
+---
+
+## React vs Vue remote job market
+
+*How React and Vue compare on remote tech postings in 2026.*
+
+## Volume
+React listings outnumber Vue listings on remote postings by roughly 4 to 1.
+
+## Geographic distribution
+Vue has stronger relative representation on EU postings, particularly in Germany, Netherlands and France.
+
+## Salary
+At equivalent seniority and company size, salary bands are similar.
+
+## Career mobility
+React fluency provides more job options. Vue fluency is highly valued at the smaller pool of teams using it.
+
+Source: https://slateremote.com/en/compare/react-vs-vue-jobs
+
+---
+
+## Python vs Go for remote backend work
+
+*How Python and Go compare on remote backend postings in 2026.*
+
+## Volume
+Python backend listings outnumber Go listings by roughly 3 to 1.
+
+## Domain
+Python dominates data, ML and content-heavy backends. Go dominates platform engineering, infrastructure and high-throughput services.
+
+## Salary
+Go listings pay a modest premium (roughly 10 to 15 percent at senior levels) reflecting smaller talent pool and higher complexity domains.
+
+## Learning curve
+Go has a flatter learning curve to production-readiness. Python has a flatter learning curve to first hire.
+
+Source: https://slateremote.com/en/compare/python-vs-go-backend
+
+---
+
+## Startup vs big tech remote engineering
+
+*How startup and large-company remote engineering differ in 2026.*
+
+## Compensation
+Big tech still pays higher cash and clearer equity at senior levels. Startups pay variable cash with higher upside (and higher variance) equity.
+
+## Scope
+Startup engineers ship across the stack with more autonomy. Big tech engineers go deeper on narrower problems.
+
+## Career velocity
+Startup roles can produce faster level-up through scope expansion. Big tech offers more structured progression.
+
+## Stability
+Big tech offers materially more income and employment stability.
+
+## Remote culture
+Many big tech companies have moved to hybrid since 2023. Most truly remote-first companies are at the startup to scale-up size.
+
+Source: https://slateremote.com/en/compare/startup-vs-bigtech-remote
+
+---
+
+## AWS vs GCP remote job demand
+
+*Comparing the major cloud platforms by remote hiring demand in 2026.*
+
+## Volume
+AWS appears on roughly 60 percent of remote backend and platform postings. GCP on roughly 30 percent. Postings naming both are common.
+
+## Domain
+GCP has stronger relative representation in data engineering and ML postings, driven by BigQuery and Vertex AI adoption.
+
+## Salary
+Equivalent cloud certifications carry similar weight. AWS Solutions Architect Professional and GCP Professional Cloud Architect both register as senior signals.
+
+Source: https://slateremote.com/en/compare/aws-vs-gcp-remote-jobs
+
+---
+
+## Snowflake vs BigQuery for remote data engineers
+
+*How the leading cloud data warehouses split on remote data engineering postings.*
+
+## Volume
+Snowflake leads Snowflake-or-BigQuery listings on remote postings by a slight margin. Many listings name both.
+
+## Stack alignment
+Snowflake postings cluster at AWS-anchored stacks. BigQuery dominates GCP-anchored stacks.
+
+## Skills
+dbt experience is universal across both. SQL window function fluency is universal.
+
+## Salary
+Equivalent at senior data engineering levels.
+
+Source: https://slateremote.com/en/compare/snowflake-vs-bigquery
+
+---
+
+## Employer of record vs direct employment for remote tech workers
+
+*When to use an employer of record service versus direct employment.*
+
+## Use case
+EOR services let foreign companies employ workers in countries where they have no legal entity. Direct employment requires the employer to have local presence.
+
+## Cost
+EOR adds a per-employee monthly fee, typically 400 to 900 USD. Borne by the employer in most cases.
+
+## Tax and social charges
+EOR handles local payroll, tax withholding and social contributions. The worker receives clean local payslips.
+
+## Benefits
+EOR-employed workers receive statutory local benefits. Equity and stock options are harder to structure through EOR.
+
+## Choice
+Direct employment is cleaner where the employer has local presence. EOR is the standard solution for international remote hires at smaller companies.
+
+Source: https://slateremote.com/en/compare/employer-of-record-vs-direct
+
+---
+
+## In-house vs agency remote tech roles
+
+*How agency and in-house remote engineering compare.*
+
+## Project variety
+Agency engineers see more projects per year. In-house engineers see deeper engagement with fewer systems.
+
+## Compensation
+In-house product teams typically pay 10 to 20 percent more for equivalent seniority. Agencies pay variable amounts including utilization bonuses.
+
+## Career capital
+In-house ownership of long-running systems compounds more clearly into senior engineering credentials. Agency variety compounds into a different skill set centered on adapting to constraints quickly.
+
+## Remote fit
+Both can work fully remote. Agencies have been earlier and more thorough adopters of remote-first operations at most established names.
+
+Source: https://slateremote.com/en/compare/in-house-vs-agency-remote
+
+---
+
+## Lisbon vs Barcelona for remote tech workers
+
+*How the two leading Mediterranean remote tech hubs actually compare.*
+
+## Visa
+Portugal D8 and Spain DNV are roughly equivalent in friction. Portugal’s longer-term tax pathway is more clearly defined post-NHR reforms.
+
+## Cost of living
+Lisbon central rents have risen sharply since 2022, partially closing the gap with Barcelona. Barcelona remains 10 to 20 percent more expensive for equivalent apartments.
+
+## Tech ecosystem
+Lisbon’s ecosystem has grown faster since 2020. Barcelona retains a larger local employer base but a smaller share of remote-first companies.
+
+## Lifestyle
+Lisbon: smaller, more walkable, English-friendly. Barcelona: bigger, more international, more nightlife and culture.
+
+## Choice
+For a first move to Mediterranean remote life: Lisbon. For a base with more depth and Spanish exposure: Barcelona.
+
+Source: https://slateremote.com/en/compare/lisbon-vs-barcelona-remote
+
+---
+
+## Portugal D8 vs Spain Digital Nomad Visa
+
+*Side-by-side comparison of the two leading EU nomad visa programs.*
+
+## Income threshold
+Portugal: ~3 280 EUR/month. Spain: ~2 760 EUR/month.
+
+## Tax regime
+Portugal’s NHR successor offers preferential treatment for specific high-value activities including most software engineering. Spain’s Beckham Law extension caps Spanish-source income at 24 percent flat for six years.
+
+## Processing time
+Portugal: 60 to 90 days from consulate to arrival. Spain: 20 days for in-country applications.
+
+## Path to permanent residency
+Portugal: 5 years to permanent, 5 years to citizenship. Spain: 5 years to permanent, 10 years to citizenship.
+
+## Family
+Both allow dependents. Spain processes spouse applications slightly faster in 2026.
+
+Source: https://slateremote.com/en/compare/portugal-vs-spain-nomad-visa
+
+---
+
+## Lisbon vs Mexico City for remote tech workers
+
+*European versus Latin American remote tech hub: timezone is the deciding factor.*
+
+## Timezone overlap with US employers
+Lisbon: 3 to 4 hours of US East Coast overlap. Mexico City: 9 hours of full overlap with US Central.
+
+## Cost of living
+Mexico City is roughly 25 percent cheaper than Lisbon for equivalent neighborhoods (Roma/Condesa vs Principe Real).
+
+## Lifestyle
+Lisbon: European city scale, ocean nearby, very walkable. Mexico City: massive metro, food scene unmatched, urban density different from European norms.
+
+## Visa
+Portugal D8 vs Mexico Temporary Resident. Both are straightforward for engineers with stable remote income.
+
+## Choice
+US employers + lower cost: Mexico City. EU employers or eventual EU residency: Lisbon.
+
+Source: https://slateremote.com/en/compare/lisbon-vs-mexico-city-remote
+
+---
+
+## Bali vs Chiang Mai for remote tech workers
+
+*The two longest-running Southeast Asian remote work hubs compared.*
+
+## Lifestyle
+Bali: beach plus jungle, larger and louder community, more partying. Chiang Mai: smaller city, mountains, slower pace, more long-term residents.
+
+## Cost
+Chiang Mai is roughly 30 percent cheaper than Bali on like-for-like accommodations and food.
+
+## Visa
+Indonesia: B211a visit visa, Second Home Visa for longer. Thailand: DTV (Destination Thailand Visa) since 2024, valid 5 years multi-entry.
+
+## Internet
+Bali Canggu: 100 to 300 Mbps depending on neighborhood. Chiang Mai: consistent 150 to 200 Mbps citywide.
+
+## Community
+Bali has more nomad coliving infrastructure. Chiang Mai has a longer-established and more stable community.
+
+## Choice
+Younger or shorter-term: Bali. Longer-term or quieter: Chiang Mai.
+
+Source: https://slateremote.com/en/compare/bali-vs-chiang-mai-remote
+
+---
+
+# Glossary
+
+## Async (Asynchronous communication)
+
+Communicating without expecting real-time replies.
+
+Default working pattern of mature remote teams. Decisions written down, discussions happening across hours not minutes, video calls reserved for irreducibly synchronous work.
+
+Source: https://slateremote.com/en/glossary#async
+
+## RTO (Return To Office)
+
+Corporate policy bringing employees back to in-person work.
+
+Most large US tech employers announced RTO between 2022 and 2024, typically requiring three days a week on site. Most remote-first companies have not.
+
+Source: https://slateremote.com/en/glossary#rto
+
+## WFH (Work From Home)
+
+Working remotely from a residential setting.
+
+Often used interchangeably with remote work, though WFH technically excludes travel-based remote (digital nomad) setups.
+
+Source: https://slateremote.com/en/glossary#wfh
+
+## Remote-first
+
+Company where remote is the default operating mode.
+
+Distinct from remote-friendly: remote-first companies design processes, tooling, and culture around distributed work. Documentation is mandatory, meetings are exceptional, hiring is geography-agnostic.
+
+Source: https://slateremote.com/en/glossary#remote-first
+
+## Remote-friendly
+
+Company that allows remote work but defaults to in-office.
+
+Many remote-friendly companies provide a worse remote experience than remote-first peers because culture and tooling still privilege those in the office.
+
+Source: https://slateremote.com/en/glossary#remote-friendly
+
+## Hybrid work
+
+Mix of remote and in-office days.
+
+Typically one to three days in office per week. The dominant pattern at most large tech employers in 2026 outside of remote-first scale-ups.
+
+Source: https://slateremote.com/en/glossary#hybrid
+
+## Distributed team
+
+Team whose members live in multiple cities or countries.
+
+Distributed is broader than remote: a distributed team may have multiple physical offices in different regions, while a remote team typically has no office at all.
+
+Source: https://slateremote.com/en/glossary#distributed-team
+
+## Timezone overlap
+
+Hours when two distributed teammates are both working.
+
+The single most filtered criterion on remote engineering postings in 2026. Four hours of overlap is the working minimum for most synchronous-leaning roles; two hours works for IC-deep work.
+
+Source: https://slateremote.com/en/glossary#timezone-overlap
+
+## EOR (Employer of Record)
+
+Third-party that legally employs a worker on behalf of a foreign company.
+
+Common solution when a US-based company wants to hire an EU resident. The EOR (Deel, Remote.com, Oyster) handles local payroll, tax, and compliance. Typically costs the employer 400 to 900 USD per month per employee.
+
+Source: https://slateremote.com/en/glossary#eor
+
+## IC (Individual Contributor)
+
+Engineer who builds, distinct from a manager.
+
+The IC track typically extends from junior through senior, staff, principal, and distinguished levels. Many remote-first companies favor strong IC ladders over management progression.
+
+Source: https://slateremote.com/en/glossary#ic
+
+## PIP (Performance Improvement Plan)
+
+Formal documented underperformance process.
+
+Usually 30 to 90 days. In remote contexts, almost always precedes termination. Treated as termination notice at most US employers.
+
+Source: https://slateremote.com/en/glossary#pip
+
+## RSU (Restricted Stock Unit)
+
+Company stock granted as part of compensation, vesting over time.
+
+Standard equity vehicle at public tech companies. Vests over four years with a one-year cliff typically. Taxed as ordinary income on vest at most jurisdictions.
+
+Source: https://slateremote.com/en/glossary#rsu
+
+## ESOP (Employee Stock Ownership Plan)
+
+Pool of company shares reserved for employees.
+
+At private companies, employee stock options are granted from the ESOP pool. Total ESOP typically sits between 10 and 20 percent of company shares at well-structured startups.
+
+Source: https://slateremote.com/en/glossary#esop
+
+## DNV (Digital Nomad Visa)
+
+Visa category specifically for remote workers employed abroad.
+
+Roughly 50 countries had a dedicated DNV by 2026. Portugal D8, Spain DNV, Greece DNV, Estonia DNV and Mexico Temporary Resident are the most-used by tech workers.
+
+Source: https://slateremote.com/en/glossary#dnv
+
+## Geo-arbitrage
+
+Earning in a high-income currency while spending in a low-cost location.
+
+Common practice among remote workers earning USD or EUR while living in lower-cost regions. Real wealth-builder over multi-year horizons but creates compliance complexity (tax residency, social charges).
+
+Source: https://slateremote.com/en/glossary#geo-arbitrage
+
+## Permanent establishment
+
+Tax concept where a company is considered to have a taxable presence in a country.
+
+Risk for employers of remote workers: if an employee performs core business functions in a country where the company has no entity, tax authorities may declare the company has permanent establishment there. EOR services exist primarily to avoid this.
+
+Source: https://slateremote.com/en/glossary#permanent-establishment
+
+## Right to disconnect
+
+Legal protection against work communications outside working hours.
+
+Enacted in France, Portugal, Spain, Italy, Australia and Ontario. Generally requires employers to respect employee off-hours and to formalize working hour expectations in writing.
+
+Source: https://slateremote.com/en/glossary#right-to-disconnect
+
+## OKR (Objectives and Key Results)
+
+Goal-setting framework for measurable team outputs.
+
+Dominant goal-setting framework at remote tech companies. Quarterly cadence with three to five objectives, each broken into measurable key results.
+
+Source: https://slateremote.com/en/glossary#okr
+
+## Standup
+
+Recurring team sync, usually daily.
+
+Remote teams typically run async written standups in a shared channel. Synchronous video standups persist but have lost ground since 2022.
+
+Source: https://slateremote.com/en/glossary#standup
+
+## Sprint
+
+Time-boxed development cycle, typically two weeks.
+
+Remote teams often run two-week sprints with planning at the start and a retrospective at the end. Asynchronous sprint planning has emerged as a viable alternative to the traditional synchronous meeting.
+
+Source: https://slateremote.com/en/glossary#sprint
+
+## Retrospective
+
+Team review of what worked and what did not.
+
+Typically at the end of each sprint. Remote teams often run async retros via collaborative documents like Miro or shared docs, with synchronous review only of the discussion items.
+
+Source: https://slateremote.com/en/glossary#retro
+
+## ATS (Applicant Tracking System)
+
+Software that companies use to manage candidate pipelines.
+
+Greenhouse, Lever and Workday dominate. The actual job listings on most company career sites are powered by an ATS. Aggregators like slateremote.com pull from these ATS APIs.
+
+Source: https://slateremote.com/en/glossary#ats
+
+## Severance
+
+Payment made when an employee is terminated without cause.
+
+Varies enormously: at-will US employment provides no statutory severance; most EU countries mandate at least 1 month per year of service. Negotiating severance at signing is rare but high-value at senior levels.
+
+Source: https://slateremote.com/en/glossary#severance
+
+## Notice period
+
+Mandatory advance warning before quitting or being terminated.
+
+Two weeks is standard at US employers. Most EU jurisdictions mandate one to three months. Notice periods are negotiable at signing in many countries.
+
+Source: https://slateremote.com/en/glossary#notice-period
+
+## Non-compete
+
+Clause preventing an employee from joining competitors for a period after leaving.
+
+Banned in California and many EU countries. Enforceable but limited in most US states. Increasingly rare and weakly enforceable in tech in 2026.
+
+Source: https://slateremote.com/en/glossary#non-compete
+
+## NDA (Non-Disclosure Agreement)
+
+Confidentiality obligation about company information.
+
+Universal at tech employers. NDAs covering interview content (during hiring) are common and legally enforceable.
+
+Source: https://slateremote.com/en/glossary#nda
+
+## Founding engineer
+
+Early engineering hire at a startup, typically employees 1 to 10.
+
+Implies significantly higher equity (0.5 to 2 percent typically) and broader scope than later hires. Most founding engineering roles are not strictly remote even at remote-friendly startups.
+
+Source: https://slateremote.com/en/glossary#founding-engineer
+
+## Staff engineer
+
+Senior IC level above senior engineer, below principal.
+
+Roughly 8 to 12 years of experience equivalent. Compensation bands sit at 220 to 320 thousand USD at well-funded remote employers. Significant scope of technical influence beyond individual code.
+
+Source: https://slateremote.com/en/glossary#staff-engineer
+
+## Principal engineer
+
+Senior IC level above staff.
+
+Roughly 12 to 20 years of experience equivalent. Often spans multiple teams. Compensation bands at 280 to 450 thousand USD at well-funded remote employers.
+
+Source: https://slateremote.com/en/glossary#principal-engineer
+
+## 10x engineer
+
+Cliché for an engineer perceived as ten times more productive than the median.
+
+Largely discredited as a concept. The reality is that engineering effectiveness depends on context, codebase familiarity, and team dynamics far more than individual heroics.
+
+Source: https://slateremote.com/en/glossary#ten-x
+
+## Burnout
+
+Chronic workplace stress that has not been successfully managed.
+
+In remote contexts, burnout often manifests as isolation rather than overwork. The combination of lack of separation between work and home plus reduced social signals is the most common driver.
+
+Source: https://slateremote.com/en/glossary#burnout
+
+## Layoff
+
+Termination not based on individual performance.
+
+Tech layoffs hit a multi-year peak in 2023 to 2024 and stabilized by 2026. Severance packages at major employers typically run 2 to 6 months of base salary plus accelerated equity vesting.
+
+Source: https://slateremote.com/en/glossary#layoff
+
+## PTO (Paid Time Off)
+
+Bank of paid vacation days.
+
+US norm is 15 to 25 days. EU statutory minimums range from 20 to 30 days plus public holidays. Most remote-first companies offer "unlimited PTO" which in practice averages closer to the US norm than the EU norm.
+
+Source: https://slateremote.com/en/glossary#pto
+
+## CV vs Resume
+
+Different naming conventions for the application document.
+
+Resume is US/Canada norm: one page, sometimes two. CV is EU/UK norm: longer, more detail. For remote applications to US companies, default to the US resume convention.
+
+Source: https://slateremote.com/en/glossary#cv
+
+## T-shape engineer
+
+Broad knowledge across many areas plus deep expertise in one.
+
+The dominant profile that remote engineering teams value: breadth to communicate across boundaries plus depth to ship in one area.
+
+Source: https://slateremote.com/en/glossary#t-shape
+
+## MVP (Minimum Viable Product)
+
+Smallest version of a product that delivers value to users.
+
+Used loosely. In practice, most "MVPs" ship with more scope than the term implies. The valuable usage is to constrain scope early in a project.
+
+Source: https://slateremote.com/en/glossary#mvp
+
+## TDD (Test-Driven Development)
+
+Writing tests before code.
+
+Less dogmatic than a decade ago. Most senior engineers practice test-first selectively, particularly for complex logic or external interfaces.
+
+Source: https://slateremote.com/en/glossary#tdd
+
+## CI/CD (Continuous Integration / Continuous Deployment)
+
+Automated build, test, and deployment pipelines.
+
+Universal expectation on remote engineering roles. GitHub Actions is the most-listed tool, with GitLab CI second.
+
+Source: https://slateremote.com/en/glossary#ci-cd
+
+## Slowmad / Slowmadism
+
+Digital nomad lifestyle with longer stays in each location.
+
+Reaction against fast nomadism (changing cities every few weeks). Slowmads spend three to twelve months per location, integrate more locally, and report better long-term wellbeing.
+
+Source: https://slateremote.com/en/glossary#slowmad
+
+## Coworking space
+
+Shared workspace open to non-employees of a single company.
+
+WeWork, Selina, Outsite and many local players dominate. Daily passes typically cost 15 to 35 USD; monthly memberships 200 to 500. Most remote workers split time between home and coworking weekly.
+
+Source: https://slateremote.com/en/glossary#coworking

@@ -50,6 +50,9 @@ jobs:
       - name: Generate client-side search index
         run: node scripts/gen_search_index.mjs
 
+      - name: Generate llms.txt + llms-full.txt
+        run: node scripts/gen_llms.mjs
+
       - name: Build static site
         env:
           SITE_URL: https://slateremote.com
