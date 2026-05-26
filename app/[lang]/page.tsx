@@ -4,6 +4,7 @@ import { JobCard } from '@/components/JobCard';
 import { CityCard } from '@/components/CityCard';
 import { Newsletter } from '@/components/Newsletter';
 import { AiByJobPromo } from '@/components/AiByJobPromo';
+import { SlowmadlyPromo } from '@/components/SlowmadlyPromo';
 import { allJobs, rolesWithCounts, topCompanies, topCountries } from '@/lib/jobs';
 import { localePath, t } from '@/lib/i18n';
 import { buildMetadata, organizationJsonLd } from '@/lib/seo';
@@ -163,6 +164,9 @@ export default function Home({ params }: { params: { lang: Locale } }) {
           ))}
         </div>
       </section>
+
+      {/* SLOWMADLY SISTER SITE */}
+      <SlowmadlyPromo variant="banner" />
 
       {/* COUNTRIES */}
       {countries.length > 0 && (

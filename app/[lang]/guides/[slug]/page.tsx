@@ -7,6 +7,7 @@ import type { Locale } from '@/lib/types';
 import { GUIDES, GUIDE_MAP } from '@/lib/guides';
 import { NomadBanking } from '@/components/NomadBanking';
 import { AiByJobPromo } from '@/components/AiByJobPromo';
+import { SlowmadlyPromo } from '@/components/SlowmadlyPromo';
 
 const AI_KEYWORDS = /\b(ai|ml|machine learning|llm|prompt|data scientist|ml engineer)\b/i;
 
@@ -90,6 +91,9 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
       <div className="prose-body whitespace-pre-line text-[0.95rem] leading-relaxed">{g.body}</div>
 
       {AI_KEYWORDS.test(g.title) && <AiByJobPromo />}
+      {(g.category === 'lifestyle' || g.category === 'visa' || g.category === 'tax') && (
+        <SlowmadlyPromo />
+      )}
       {(g.category === 'visa' || g.category === 'tax') && <NomadBanking />}
 
       {g.faqs && g.faqs.length > 0 && (

@@ -32,19 +32,32 @@ export function Footer({ locale }: { locale: Locale }) {
             </div>
             <div className="mt-5 pt-4 border-t border-line">
               <p className="text-[10px] uppercase tracking-wider text-subtle font-semibold mb-2">
-                Sister site
+                Sister sites
               </p>
-              <a
-                href="https://ai-by-job.com"
-                target="_blank"
-                rel="noopener"
-                className="block rounded-lg border border-line bg-paper px-3 py-2 hover:border-ink hover-lift"
-              >
-                <div className="text-sm font-semibold text-ink">ai-by-job.com</div>
-                <div className="text-[11px] text-muted mt-0.5">
-                  The right AI tools, by job role
-                </div>
-              </a>
+              <div className="space-y-2">
+                <a
+                  href="https://ai-by-job.com"
+                  target="_blank"
+                  rel="noopener"
+                  className="block rounded-lg border border-line bg-paper px-3 py-2 hover:border-ink hover-lift"
+                >
+                  <div className="text-sm font-semibold text-ink">ai-by-job.com</div>
+                  <div className="text-[11px] text-muted mt-0.5">
+                    The right AI tools, by job role
+                  </div>
+                </a>
+                <a
+                  href="https://slowmadly.com"
+                  target="_blank"
+                  rel="noopener"
+                  className="block rounded-lg border border-line bg-paper px-3 py-2 hover:border-ink hover-lift"
+                >
+                  <div className="text-sm font-semibold text-ink">slowmadly.com</div>
+                  <div className="text-[11px] text-muted mt-0.5">
+                    Essays on slow nomad living
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
