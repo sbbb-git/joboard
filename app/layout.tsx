@@ -54,6 +54,7 @@ export const metadata: Metadata = {
 
 const CF_ANALYTICS_TOKEN =
   process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN ?? 'c936ca5662e240edb31f83de853086de';
+const AHREFS_KEY = process.env.NEXT_PUBLIC_AHREFS_KEY ?? 'UHRiRpUtDUeXqcHIFhdjcA';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -65,6 +66,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             strategy="afterInteractive"
             src="https://static.cloudflareinsights.com/beacon.min.js"
             data-cf-beacon={`{"token": "${CF_ANALYTICS_TOKEN}"}`}
+          />
+        )}
+        {AHREFS_KEY && (
+          <Script
+            strategy="afterInteractive"
+            src="https://analytics.ahrefs.com/analytics.js"
+            data-key={AHREFS_KEY}
           />
         )}
       </body>
