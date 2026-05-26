@@ -52,7 +52,7 @@ export function HomeFaq() {
       />
       <div className="mb-5">
         <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">FAQ</p>
-        <h2 className="font-display text-2xl md:text-3xl font-bold tracking-tighter text-ink mt-1">
+        <h2 className="font-display text-2xl md:text-3xl font-normal tracking-tighter text-ink mt-1">
           Frequently asked questions
         </h2>
       </div>

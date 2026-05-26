@@ -35,7 +35,7 @@ export default function JobsList({ params }: { params: { lang: Locale } }) {
       />
       <header className="border-b border-line pb-5">
         <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">Search</p>
-        <h1 className="font-display text-3xl md:text-4xl font-bold tracking-tighter text-ink mt-1">
+        <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1">
           {t(locale, 'nav.jobs')}
         </h1>
         <p className="text-graphite text-base mt-3 max-w-prose">

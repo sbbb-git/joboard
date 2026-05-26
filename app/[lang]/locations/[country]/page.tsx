@@ -40,7 +40,7 @@ export default function LocationPage({
     <div className="space-y-8">
       <header className="border-b border-line pb-5">
         <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">Location</p>
-        <h1 className="font-display text-3xl md:text-4xl font-bold tracking-tighter text-ink mt-1">
+        <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1">
           Remote tech jobs · {labelTitle}
         </h1>
         <p className="text-graphite text-sm mt-2">{jobs.length} open positions</p>

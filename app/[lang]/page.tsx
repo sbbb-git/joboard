@@ -52,8 +52,9 @@ export default function Home({ params }: { params: { lang: Locale } }) {
               <span className="w-1.5 h-1.5 rounded-full bg-forest animate-pulse" />
               Updated every 24 hours · {all.length} active jobs
             </span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tightest leading-[1.04] text-ink">
-              Find your next <span className="gradient-text">remote tech role</span>, fresh every day.
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-normal tracking-tightest leading-[1.02] text-ink">
+              Find your next{' '}
+              <em className="font-display italic text-forest">remote tech role</em>, fresh every day.
             </h1>
             <p className="mt-5 text-lg text-graphite max-w-prose">
               {t(locale, 'site.intro')}
@@ -126,6 +127,101 @@ export default function Home({ params }: { params: { lang: Locale } }) {
 
       {/* NEWSLETTER */}
       <Newsletter />
+
+      {/* BENTO HIGHLIGHTS */}
+      <section>
+        <SectionHeader
+          eyebrow="Explore the index"
+          title="Built for the way remote tech actually works"
+        />
+        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[140px] md:auto-rows-[170px] gap-3">
+          <BentoTile className="col-span-2 md:col-span-2 md:row-span-2 bg-gradient-to-br from-forestSoft to-paper">
+            <div>
+              <p className="text-[10px] uppercase tracking-wider text-forest font-bold">
+                Daily refresh
+              </p>
+              <p className="font-display text-4xl md:text-5xl font-normal text-ink leading-none mt-2">
+                {all.length.toLocaleString()}
+              </p>
+              <p className="text-graphite text-sm mt-1">jobs in the index right now</p>
+            </div>
+            <Link
+              href={localePath(locale, 'jobs')}
+              className="text-sm text-forest font-medium hover:underline self-end"
+            >
+              Browse all →
+            </Link>
+          </BentoTile>
+
+          <BentoTile className="col-span-1 md:col-span-2 bg-paper border border-line">
+            <div>
+              <p className="text-[10px] uppercase tracking-wider text-terracotta font-bold">
+                Find your stack
+              </p>
+              <p className="font-display text-2xl md:text-3xl font-normal text-ink mt-2 leading-tight">
+                Browse by skill
+              </p>
+              <p className="text-xs text-muted mt-1">
+                {SKILLS.length} languages, frameworks, clouds, ML stacks
+              </p>
+            </div>
+            <Link
+              href={localePath(locale, 'skills')}
+              className="text-sm text-terracotta font-medium hover:underline self-end"
+            >
+              Explore skills →
+            </Link>
+          </BentoTile>
+
+          <BentoTile className="col-span-1 md:col-span-1 bg-paper border border-line">
+            <div>
+              <p className="text-[10px] uppercase tracking-wider text-amber font-bold">
+                Salary data
+              </p>
+              <p className="font-display text-xl font-normal text-ink mt-1.5 leading-tight">
+                What roles actually pay
+              </p>
+            </div>
+            <Link
+              href={localePath(locale, 'salaries/developer')}
+              className="text-xs text-amber font-medium hover:underline self-end"
+            >
+              See bands →
+            </Link>
+          </BentoTile>
+
+          <BentoTile className="col-span-1 md:col-span-1 bg-gradient-to-br from-amberSoft to-paper">
+            <div>
+              <p className="text-[10px] uppercase tracking-wider text-amber font-bold">
+                Move and work
+              </p>
+              <p className="font-display text-xl font-normal text-ink mt-1.5 leading-tight">
+                {CITIES.length} cities profiled
+              </p>
+            </div>
+            <Link
+              href={localePath(locale, 'cities')}
+              className="text-xs text-amber font-medium hover:underline self-end"
+            >
+              Cities →
+            </Link>
+          </BentoTile>
+
+          <BentoTile className="col-span-2 md:col-span-4 bg-gradient-to-r from-paper to-terracottaSoft border border-line">
+            <div>
+              <p className="text-[10px] uppercase tracking-wider text-terracotta font-bold">
+                Free, forever, no signup
+              </p>
+              <p className="font-display text-2xl md:text-3xl font-normal text-ink mt-2 leading-tight italic">
+                Browse, filter, apply directly.
+              </p>
+            </div>
+            <span className="text-sm text-graphite hidden md:inline">
+              Sources: Remotive · RemoteOK · WWR · Arbeitnow · Himalayas · Jobicy · The Muse · HN
+            </span>
+          </BentoTile>
+        </div>
+      </section>
 
       {/* SKILLS */}
       <section>
@@ -210,11 +306,27 @@ export default function Home({ params }: { params: { lang: Locale } }) {
 function Stat({ number, label, suffix }: { number: number; label: string; suffix?: string }) {
   return (
     <div>
-      <div className="stat-num text-3xl md:text-4xl font-extrabold text-ink">
+      <div className="font-display stat-num text-4xl md:text-5xl font-normal text-ink leading-none">
         {number.toLocaleString()}
         {suffix && <span className="text-forest">{suffix}</span>}
       </div>
-      <div className="text-xs text-muted mt-1 uppercase tracking-wider">{label}</div>
+      <div className="text-xs text-muted mt-2 uppercase tracking-wider">{label}</div>
+    </div>
+  );
+}
+
+function BentoTile({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div
+      className={`rounded-2xl p-5 flex flex-col justify-between shadow-soft hover-lift hover:shadow-lift transition relative overflow-hidden ${className ?? ''}`}
+    >
+      {children}
     </div>
   );
 }
@@ -232,7 +344,7 @@ function SectionHeader({
     <div className="flex items-end justify-between mb-5 gap-4 flex-wrap">
       <div>
         <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{eyebrow}</p>
-        <h2 className="font-display text-2xl md:text-3xl font-bold tracking-tighter text-ink mt-1">
+        <h2 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1">
           {title}
         </h2>
       </div>

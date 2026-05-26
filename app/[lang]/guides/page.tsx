@@ -39,7 +39,7 @@ export default function GuidesIndex({ params }: { params: { lang: Locale } }) {
       />
       <header className="border-b border-line pb-6">
         <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">Guides</p>
-        <h1 className="font-display text-3xl md:text-4xl font-bold tracking-tighter text-ink mt-1">
+        <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1">
           Guides for remote tech workers
         </h1>
         <p className="text-graphite text-base mt-3 max-w-prose">
@@ -53,7 +53,7 @@ export default function GuidesIndex({ params }: { params: { lang: Locale } }) {
         if (items.length === 0) return null;
         return (
           <section key={cat.id}>
-            <h2 className="font-display text-xl font-bold tracking-tighter text-ink mb-4">
+            <h2 className="font-display text-xl font-normal tracking-tighter text-ink mb-4">
               {cat.label}
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

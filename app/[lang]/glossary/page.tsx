@@ -48,7 +48,7 @@ export default function GlossaryIndex({ params }: { params: { lang: Locale } }) 
       />
       <header className="border-b border-line pb-6">
         <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">Glossary</p>
-        <h1 className="font-display text-3xl md:text-4xl font-bold tracking-tighter text-ink mt-1">
+        <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1">
           Remote work glossary
         </h1>
         <p className="text-graphite text-base mt-3 max-w-prose">
@@ -60,7 +60,7 @@ export default function GlossaryIndex({ params }: { params: { lang: Locale } }) 
 
       {Object.entries(grouped).map(([cat, items]) => (
         <section key={cat}>
-          <h2 className="font-display text-xl font-bold tracking-tighter text-ink mb-4">
+          <h2 className="font-display text-xl font-normal tracking-tighter text-ink mb-4">
             {CATEGORY_LABELS[cat] ?? cat}
           </h2>
           <dl className="grid sm:grid-cols-2 gap-4">

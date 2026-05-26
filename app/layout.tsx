@@ -1,6 +1,21 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
+import { Instrument_Serif, Inter } from 'next/font/google';
 import './globals.css';
+
+const sans = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-sans',
+});
+
+const display = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-display',
+});
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -41,7 +56,7 @@ const CF_ANALYTICS_TOKEN = process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${sans.variable} ${display.variable}`}>
       <body className="min-h-screen bg-bg text-ink antialiased font-sans">
         {children}
         {CF_ANALYTICS_TOKEN && (

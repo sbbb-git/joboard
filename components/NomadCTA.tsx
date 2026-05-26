@@ -60,7 +60,7 @@ export function NomadCTA({
         <p className="text-[10px] uppercase tracking-wider text-forest font-bold">
           Sister site · {SISTER_NOMAD.domain}
         </p>
-        <h2 className="font-display text-xl md:text-2xl font-bold tracking-tighter text-ink mt-2">
+        <h2 className="font-display text-xl md:text-2xl font-normal tracking-tighter text-ink mt-2">
           {title}
         </h2>
         <p className="text-sm text-muted mt-2 max-w-prose">{SISTER_NOMAD.tagline}</p>

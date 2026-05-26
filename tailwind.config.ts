@@ -29,8 +29,8 @@ const config: Config = {
         amberSoft: '#f4ead0',
       },
       fontFamily: {
-        sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Inter', 'sans-serif'],
-        display: ['ui-sans-serif', 'system-ui', '-apple-system', 'Inter', 'sans-serif'],
+        sans: ['var(--font-sans)', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Inter', 'sans-serif'],
+        display: ['var(--font-display)', 'ui-serif', 'Georgia', 'Cambria', 'serif'],
         mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
       },
       letterSpacing: {

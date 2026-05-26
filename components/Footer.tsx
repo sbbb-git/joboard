@@ -79,7 +79,7 @@ export function Footer({ locale }: { locale: Locale }) {
             <p className="text-[10px] uppercase tracking-wider text-forest font-bold">
               {SISTER_NOMAD.domain}
             </p>
-            <p className="font-display text-base font-bold tracking-tight text-ink mt-1">
+            <p className="font-display text-base font-normal tracking-tight text-ink mt-1">
               Picking a basecamp? → {SISTER_NOMAD.domain}
             </p>
             <p className="text-xs text-muted mt-1.5">{SISTER_NOMAD.tagline}</p>
@@ -93,7 +93,7 @@ export function Footer({ locale }: { locale: Locale }) {
             <p className="text-[10px] uppercase tracking-wider text-terracotta font-bold">
               {SISTER_AI.domain}
             </p>
-            <p className="font-display text-base font-bold tracking-tight text-ink mt-1">
+            <p className="font-display text-base font-normal tracking-tight text-ink mt-1">
               Need AI tools? → {SISTER_AI.domain}
             </p>
             <p className="text-xs text-muted mt-1.5">{SISTER_AI.tagline}</p>
