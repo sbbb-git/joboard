@@ -42,7 +42,7 @@ const CF_ANALYTICS_TOKEN = process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN;
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-cream text-ink antialiased font-sans">
+      <body className="min-h-screen bg-bg text-ink antialiased font-sans">
         {children}
         {CF_ANALYTICS_TOKEN && (
           <Script

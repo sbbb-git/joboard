@@ -47,11 +47,11 @@ export default function JobsList({ params }: { params: { lang: Locale } }) {
       </div>
       <p className="text-sm text-muted text-center pt-4">
         Looking for more?{' '}
-        <Link href={localePath(locale, 'skills')} className="text-accent hover:underline">
+        <Link href={localePath(locale, 'skills')} className="text-forest hover:underline">
           Browse by skill
         </Link>{' '}
         or{' '}
-        <Link href={localePath(locale, 'cities')} className="text-accent hover:underline">
+        <Link href={localePath(locale, 'cities')} className="text-forest hover:underline">
           by city
         </Link>
         .

@@ -119,7 +119,7 @@ export default function SalaryByCountry({
           </p>
           <p>
             In the meantime, the{' '}
-            <Link href={`/${params.lang}/salaries/${role}`} className="text-accent hover:underline">
+            <Link href={`/${params.lang}/salaries/${role}`} className="text-forest hover:underline">
               global {role.replace('-', ' ')} salary page
             </Link>{' '}
             shows broader benchmark numbers across all countries.

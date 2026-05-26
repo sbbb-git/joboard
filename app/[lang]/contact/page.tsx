@@ -33,7 +33,7 @@ export default function ContactPage() {
           The fastest way to reach us is by email:
         </p>
         <p className="text-lg">
-          <a href={`mailto:${EMAIL}`} className="text-accent hover:underline">
+          <a href={`mailto:${EMAIL}`} className="text-forest hover:underline">
             {EMAIL}
           </a>
         </p>
@@ -48,7 +48,7 @@ export default function ContactPage() {
         <p>
           slateremote.com indexes jobs from public job board APIs. To list yours, simply publish
           on any of our source sites and it appears here within 24 hours. For featured placement
-          across the site, see the <a href="/en/submit" className="text-accent hover:underline">submit page</a>.
+          across the site, see the <a href="/en/submit" className="text-forest hover:underline">submit page</a>.
         </p>
 
         <h2 className="text-lg font-semibold">Partnerships</h2>

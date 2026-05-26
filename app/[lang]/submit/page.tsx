@@ -58,15 +58,15 @@ export default function SubmitPage() {
           </ul>
           <a
             href={FEATURED_30D_URL}
-            className="inline-block mt-5 px-4 py-2 bg-ink text-cream rounded text-sm hover:opacity-90"
+            className="inline-block mt-5 px-4 py-2 bg-ink text-bg rounded text-sm hover:opacity-90"
           >
             Buy featured slot →
           </a>
         </article>
 
-        <article className="border border-line rounded-lg p-5 bg-accentSoft">
+        <article className="border border-line rounded-lg p-5 bg-forestSoft">
           <h2 className="font-semibold">Sponsored placement</h2>
-          <p className="text-xs uppercase tracking-wider text-accent mt-1">Per week</p>
+          <p className="text-xs uppercase tracking-wider text-forest mt-1">Per week</p>
           <p className="text-3xl font-semibold mt-3">$199<span className="text-base text-muted">/week</span></p>
           <ul className="text-sm text-muted mt-4 space-y-1.5">
             <li>· Pinned at the very top across all relevant pages</li>
@@ -76,7 +76,7 @@ export default function SubmitPage() {
           </ul>
           <a
             href={SPONSORED_TOP_URL}
-            className="inline-block mt-5 px-4 py-2 bg-ink text-cream rounded text-sm hover:opacity-90"
+            className="inline-block mt-5 px-4 py-2 bg-ink text-bg rounded text-sm hover:opacity-90"
           >
             Buy sponsored slot →
           </a>

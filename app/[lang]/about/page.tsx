@@ -76,7 +76,7 @@ export default function AboutPage({ params }: { params: { lang: Locale } }) {
         <h2 className="text-lg font-semibold">Contact</h2>
         <p>
           For corrections, takedown requests, or general questions, see the{' '}
-          <Link href={`/${params.lang}/contact`} className="text-accent hover:underline">
+          <Link href={`/${params.lang}/contact`} className="text-forest hover:underline">
             contact page
           </Link>
           .

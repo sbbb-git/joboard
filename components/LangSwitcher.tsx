@@ -11,7 +11,7 @@ export function LangSwitcher({ current, path }: { current: Locale; path: string 
           key={l}
           href={clean ? `/${l}/${clean}` : `/${l}`}
           className={`px-1.5 py-0.5 rounded ${
-            l === current ? 'bg-ink text-cream' : 'text-muted hover:text-ink'
+            l === current ? 'bg-ink text-bg' : 'text-muted hover:text-ink'
           }`}
         >
           {l}

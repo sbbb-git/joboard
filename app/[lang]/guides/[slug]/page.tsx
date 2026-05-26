@@ -110,7 +110,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
               <li key={r.slug}>
                 <Link
                   href={`/${params.lang}/guides/${r.slug}`}
-                  className="text-accent hover:underline"
+                  className="text-forest hover:underline"
                 >
                   {r.title}
                 </Link>

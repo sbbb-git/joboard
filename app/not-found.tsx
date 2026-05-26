@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function NotFound() {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-cream text-ink font-sans antialiased flex items-center justify-center px-5">
+      <body className="min-h-screen bg-bg text-ink font-sans antialiased flex items-center justify-center px-5">
         <div className="max-w-md text-center space-y-5">
           <p className="text-xs uppercase tracking-wider text-muted">Error 404</p>
           <h1 className="text-3xl font-semibold">This page is not in our index.</h1>
@@ -14,7 +14,7 @@ export default function NotFound() {
           <div className="flex flex-wrap gap-2 justify-center pt-2">
             <Link
               href="/en"
-              className="px-4 py-2 bg-ink text-cream rounded text-sm hover:opacity-90"
+              className="px-4 py-2 bg-ink text-bg rounded text-sm hover:opacity-90"
             >
               Go to homepage
             </Link>

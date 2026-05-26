@@ -51,11 +51,11 @@ export default function ComparisonPage({ params }: { params: { lang: Locale; slu
         <p className="text-muted text-sm mt-2">{c.description}</p>
       </header>
       <div className="grid grid-cols-2 gap-3">
-        <div className="border border-line rounded p-3 bg-accentSoft">
-          <p className="text-xs uppercase tracking-wider text-accent">Option A</p>
+        <div className="border border-line rounded p-3 bg-forestSoft">
+          <p className="text-xs uppercase tracking-wider text-forest">Option A</p>
           <p className="text-sm font-medium mt-1">{c.leftLabel}</p>
         </div>
-        <div className="border border-line rounded p-3 bg-cream">
+        <div className="border border-line rounded p-3 bg-bg">
           <p className="text-xs uppercase tracking-wider text-muted">Option B</p>
           <p className="text-sm font-medium mt-1">{c.rightLabel}</p>
         </div>

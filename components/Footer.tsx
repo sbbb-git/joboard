@@ -5,6 +5,7 @@ import type { Locale } from '@/lib/types';
 import { ROLES } from '@/lib/types';
 import { SKILLS } from '@/lib/skills';
 import { CITIES } from '@/lib/cities';
+import { Logo } from './Logo';
 
 export function Footer({ locale }: { locale: Locale }) {
   const meta = readJobs();
@@ -14,66 +15,81 @@ export function Footer({ locale }: { locale: Locale }) {
   const topRoles = ROLES.slice(0, 10);
 
   return (
-    <footer className="border-t border-line bg-cream mt-16">
-      <div className="mx-auto max-w-6xl px-5 py-10 space-y-8">
-        <div className="grid md:grid-cols-4 gap-8 text-sm">
-          <div>
-            <h3 className="font-semibold text-ink mb-3">Roles</h3>
-            <ul className="space-y-1.5 text-muted">
-              {topRoles.map((r) => (
-                <li key={r}>
-                  <Link href={localePath(locale, `jobs/${r}`)} className="hover:text-ink capitalize">
-                    {r.replace('-', ' ')}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+    <footer className="border-t border-line bg-sand mt-20">
+      <div className="mx-auto max-w-6xl px-5 py-12 space-y-10">
+        <div className="grid lg:grid-cols-5 gap-10">
+          <div className="lg:col-span-1">
+            <Logo size="md" withMark />
+            <p className="text-xs text-muted mt-3 leading-relaxed">
+              Remote tech jobs aggregated from eight public job board APIs. Refreshed every day,
+              forever free to browse.
+            </p>
+            <div className="mt-4 flex gap-2 text-xs">
+              <span className="inline-block w-2 h-2 rounded-full bg-forest mt-1.5"></span>
+              <span className="text-muted">
+                {meta.count} active jobs · index updated {refreshed}
+              </span>
+            </div>
           </div>
-          <div>
-            <h3 className="font-semibold text-ink mb-3">Skills</h3>
-            <ul className="space-y-1.5 text-muted">
-              {topSkills.map((s) => (
-                <li key={s.slug}>
-                  <Link href={localePath(locale, `skills/${s.slug}`)} className="hover:text-ink">
-                    {s.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold text-ink mb-3">Cities</h3>
-            <ul className="space-y-1.5 text-muted">
-              {topCities.map((c) => (
-                <li key={c.slug}>
-                  <Link href={localePath(locale, `cities/${c.slug}`)} className="hover:text-ink">
-                    {c.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold text-ink mb-3">Resources</h3>
-            <ul className="space-y-1.5 text-muted">
-              <li><Link href={localePath(locale, 'guides')} className="hover:text-ink">{t(locale, 'nav.guides')}</Link></li>
-              <li><Link href={localePath(locale, 'compare')} className="hover:text-ink">Compare</Link></li>
-              <li><Link href={localePath(locale, 'companies')} className="hover:text-ink">{t(locale, 'nav.companies')}</Link></li>
-              <li><Link href={localePath(locale, 'skills')} className="hover:text-ink">All skills</Link></li>
-              <li><Link href={localePath(locale, 'cities')} className="hover:text-ink">All cities</Link></li>
-              <li><Link href={localePath(locale, 'submit')} className="hover:text-ink">Post a job</Link></li>
-              <li><Link href={localePath(locale, 'about')} className="hover:text-ink">About</Link></li>
-              <li><Link href={localePath(locale, 'contact')} className="hover:text-ink">Contact</Link></li>
-            </ul>
-          </div>
+
+          <FooterCol title="Roles">
+            {topRoles.map((r) => (
+              <FooterLink key={r} href={localePath(locale, `jobs/${r}`)}>
+                <span className="capitalize">{r.replace('-', ' ')}</span>
+              </FooterLink>
+            ))}
+          </FooterCol>
+
+          <FooterCol title="Skills">
+            {topSkills.map((s) => (
+              <FooterLink key={s.slug} href={localePath(locale, `skills/${s.slug}`)}>
+                {s.name}
+              </FooterLink>
+            ))}
+          </FooterCol>
+
+          <FooterCol title="Cities">
+            {topCities.map((c) => (
+              <FooterLink key={c.slug} href={localePath(locale, `cities/${c.slug}`)}>
+                {c.name}
+              </FooterLink>
+            ))}
+          </FooterCol>
+
+          <FooterCol title="Site">
+            <FooterLink href={localePath(locale, 'guides')}>{t(locale, 'nav.guides')}</FooterLink>
+            <FooterLink href={localePath(locale, 'compare')}>Compare</FooterLink>
+            <FooterLink href={localePath(locale, 'companies')}>{t(locale, 'nav.companies')}</FooterLink>
+            <FooterLink href={localePath(locale, 'submit')}>Post a job</FooterLink>
+            <FooterLink href={localePath(locale, 'about')}>About</FooterLink>
+            <FooterLink href={localePath(locale, 'contact')}>Contact</FooterLink>
+          </FooterCol>
         </div>
-        <div className="border-t border-line pt-5 text-xs text-muted flex flex-wrap items-center justify-between gap-3">
+
+        <div className="border-t border-line pt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-muted">
           <span>{t(locale, 'footer.disclaimer')}</span>
-          <span>
-            {t(locale, 'footer.refreshed')}: {refreshed} · {meta.count} jobs
-          </span>
+          <span>© {new Date().getFullYear()} slateremote.com</span>
         </div>
       </div>
     </footer>
+  );
+}
+
+function FooterCol({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <h3 className="font-semibold text-ink text-sm mb-3">{title}</h3>
+      <ul className="space-y-1.5">{children}</ul>
+    </div>
+  );
+}
+
+function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <li>
+      <Link href={href} className="text-xs text-muted hover:text-ink transition-colors">
+        {children}
+      </Link>
+    </li>
   );
 }

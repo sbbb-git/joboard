@@ -54,13 +54,13 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
         </p>
         <h1 className="text-2xl md:text-3xl font-semibold mt-1">{job.title}</h1>
         <div className="mt-3 flex flex-wrap gap-2 text-xs">
-          <span className="px-2 py-0.5 rounded bg-accentSoft text-accent capitalize">
+          <span className="px-2 py-0.5 rounded bg-forestSoft text-forest capitalize">
             {job.role}
           </span>
-          <span className="px-2 py-0.5 rounded bg-cream border border-line capitalize">
+          <span className="px-2 py-0.5 rounded bg-bg border border-line capitalize">
             {job.seniority}
           </span>
-          <span className="px-2 py-0.5 rounded bg-cream border border-line">
+          <span className="px-2 py-0.5 rounded bg-bg border border-line">
             {t(params.lang, 'label.posted')}: {new Date(job.postedAt).toISOString().slice(0, 10)}
           </span>
         </div>
@@ -71,7 +71,7 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
             href={job.url}
             target="_blank"
             rel="nofollow noopener"
-            className="inline-block mt-5 px-4 py-2 bg-ink text-cream rounded text-sm hover:opacity-90"
+            className="inline-block mt-5 px-4 py-2 bg-ink text-bg rounded text-sm hover:opacity-90"
           >
             {t(params.lang, 'cta.apply')} →
           </a>
