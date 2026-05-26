@@ -7,6 +7,7 @@ import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import { NomadCTA } from '@/components/NomadCTA';
 import { AiToolsCTA } from '@/components/AiToolsCTA';
+import { EarnWithAi } from '@/components/EarnWithAi';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -57,7 +58,12 @@ export default function RolePage({ params }: { params: { lang: Locale; role: str
       )}
 
       <NomadCTA context={{ type: 'role', label }} />
-      {AI_ROLES.has(role) && <AiToolsCTA context={{ type: 'role', label }} />}
+      {AI_ROLES.has(role) && (
+        <>
+          <AiToolsCTA context={{ type: 'role', label }} />
+          <EarnWithAi />
+        </>
+      )}
     </div>
   );
 }

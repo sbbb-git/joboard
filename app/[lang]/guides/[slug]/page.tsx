@@ -6,9 +6,11 @@ import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { GUIDES, GUIDE_MAP } from '@/lib/guides';
 import { NomadBanking } from '@/components/NomadBanking';
+import { NomadEssentials } from '@/components/NomadEssentials';
 import { NomadCTA } from '@/components/NomadCTA';
 import { AiToolsCTA } from '@/components/AiToolsCTA';
 import { RemoteTools } from '@/components/RemoteTools';
+import { EarnWithAi } from '@/components/EarnWithAi';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { localePath } from '@/lib/i18n';
 
@@ -103,13 +105,22 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
       <div className="prose-body whitespace-pre-line text-[0.95rem] leading-relaxed">{g.body}</div>
 
       {AI_KEYWORDS.test(g.title) && (
-        <AiToolsCTA context={{ type: 'guide', label: g.title.replace(/^(How to become a |Best |Remote )/i, '').toLowerCase() }} />
+        <>
+          <AiToolsCTA context={{ type: 'guide', label: g.title.replace(/^(How to become a |Best |Remote )/i, '').toLowerCase() }} />
+          <EarnWithAi />
+        </>
       )}
       {g.category === 'tools' && <RemoteTools />}
       {(g.category === 'lifestyle' || g.category === 'visa' || g.category === 'tax' || g.category === 'finding' || g.category === 'career') && (
         <NomadCTA />
       )}
-      {(g.category === 'visa' || g.category === 'tax') && <NomadBanking />}
+      {(g.category === 'visa' || g.category === 'tax') && (
+        <>
+          <NomadEssentials />
+          <NomadBanking />
+        </>
+      )}
+      {g.category === 'lifestyle' && <NomadEssentials />}
 
       {g.faqs && g.faqs.length > 0 && (
         <section className="border-t border-line pt-6">

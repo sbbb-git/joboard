@@ -8,6 +8,7 @@ import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { JobNormalized, Locale } from '@/lib/types';
 import { AiToolsCTA } from '@/components/AiToolsCTA';
+import { EarnWithAi } from '@/components/EarnWithAi';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { localePath } from '@/lib/i18n';
 
@@ -79,7 +80,12 @@ export default function SkillPage({ params }: { params: { lang: Locale; skill: s
         <p>{s.bodyEn}</p>
       </section>
 
-      {s.category === 'ai' && <AiToolsCTA context={{ type: 'skill', label: s.name }} />}
+      {s.category === 'ai' && (
+        <>
+          <AiToolsCTA context={{ type: 'skill', label: s.name }} />
+          <EarnWithAi />
+        </>
+      )}
 
       <section>
         <h2 className="text-lg font-semibold mb-3">

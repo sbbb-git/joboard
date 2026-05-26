@@ -8,6 +8,7 @@ import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { NomadBanking } from '@/components/NomadBanking';
+import { NomadEssentials } from '@/components/NomadEssentials';
 import { NomadCTA } from '@/components/NomadCTA';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { localePath } from '@/lib/i18n';
@@ -100,6 +101,8 @@ export default function CityPage({ params }: { params: { lang: Locale; city: str
       </section>
 
       <NomadCTA context={{ type: 'city', label: c.name, country: c.country }} />
+
+      <NomadEssentials city={c.name} />
 
       <NomadBanking context={c.name} country={c.country} />
 
