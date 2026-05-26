@@ -4,6 +4,7 @@ import { allJobs, topCountries } from '@/lib/jobs';
 import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
+import { NomadCTA } from '@/components/NomadCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -33,14 +34,16 @@ export default function LocationPage({
   params: { lang: Locale; country: string };
 }) {
   const target = decodeURIComponent(params.country).replace(/-/g, ' ').toLowerCase();
+  const labelTitle = target.replace(/\b\w/g, (c) => c.toUpperCase());
   const jobs = allJobs().filter((j) => j.locationCountry?.toLowerCase() === target);
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-semibold capitalize">
-          Remote tech jobs · {target}
+    <div className="space-y-8">
+      <header className="border-b border-line pb-5">
+        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">Location</p>
+        <h1 className="font-display text-3xl md:text-4xl font-bold tracking-tighter text-ink mt-1">
+          Remote tech jobs · {labelTitle}
         </h1>
-        <p className="text-muted text-sm mt-1">{jobs.length} open positions</p>
+        <p className="text-graphite text-sm mt-2">{jobs.length} open positions</p>
       </header>
       {jobs.length === 0 ? (
         <p className="text-muted text-sm">{t(params.lang, 'list.empty')}</p>
@@ -51,6 +54,7 @@ export default function LocationPage({
           ))}
         </div>
       )}
+      <NomadCTA context={{ type: 'location', label: labelTitle, country: labelTitle }} />
     </div>
   );
 }

@@ -6,8 +6,8 @@ import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { GUIDES, GUIDE_MAP } from '@/lib/guides';
 import { NomadBanking } from '@/components/NomadBanking';
-import { AiByJobPromo } from '@/components/AiByJobPromo';
-import { SlowmadlyPromo } from '@/components/SlowmadlyPromo';
+import { NomadCTA } from '@/components/NomadCTA';
+import { AiToolsCTA } from '@/components/AiToolsCTA';
 
 const AI_KEYWORDS = /\b(ai|ml|machine learning|llm|prompt|data scientist|ml engineer)\b/i;
 
@@ -90,9 +90,11 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
       </header>
       <div className="prose-body whitespace-pre-line text-[0.95rem] leading-relaxed">{g.body}</div>
 
-      {AI_KEYWORDS.test(g.title) && <AiByJobPromo />}
-      {(g.category === 'lifestyle' || g.category === 'visa' || g.category === 'tax') && (
-        <SlowmadlyPromo />
+      {AI_KEYWORDS.test(g.title) && (
+        <AiToolsCTA context={{ type: 'guide', label: g.title.replace(/^(How to become a |Best |Remote )/i, '').toLowerCase() }} />
+      )}
+      {(g.category === 'lifestyle' || g.category === 'visa' || g.category === 'tax' || g.category === 'finding' || g.category === 'career') && (
+        <NomadCTA />
       )}
       {(g.category === 'visa' || g.category === 'tax') && <NomadBanking />}
 

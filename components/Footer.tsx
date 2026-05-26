@@ -6,6 +6,7 @@ import { ROLES } from '@/lib/types';
 import { SKILLS } from '@/lib/skills';
 import { CITIES } from '@/lib/cities';
 import { Logo } from './Logo';
+import { SISTER_NOMAD, SISTER_AI } from '@/lib/sister-sites';
 
 export function Footer({ locale }: { locale: Locale }) {
   const meta = readJobs();
@@ -29,35 +30,6 @@ export function Footer({ locale }: { locale: Locale }) {
               <span className="text-muted">
                 {meta.count} active jobs · index updated {refreshed}
               </span>
-            </div>
-            <div className="mt-5 pt-4 border-t border-line">
-              <p className="text-[10px] uppercase tracking-wider text-subtle font-semibold mb-2">
-                Sister sites
-              </p>
-              <div className="space-y-2">
-                <a
-                  href="https://ai-by-job.com"
-                  target="_blank"
-                  rel="noopener"
-                  className="block rounded-lg border border-line bg-paper px-3 py-2 hover:border-ink hover-lift"
-                >
-                  <div className="text-sm font-semibold text-ink">ai-by-job.com</div>
-                  <div className="text-[11px] text-muted mt-0.5">
-                    The right AI tools, by job role
-                  </div>
-                </a>
-                <a
-                  href="https://slowmadly.com"
-                  target="_blank"
-                  rel="noopener"
-                  className="block rounded-lg border border-line bg-paper px-3 py-2 hover:border-ink hover-lift"
-                >
-                  <div className="text-sm font-semibold text-ink">slowmadly.com</div>
-                  <div className="text-[11px] text-muted mt-0.5">
-                    Essays on slow nomad living
-                  </div>
-                </a>
-              </div>
             </div>
           </div>
 
@@ -95,9 +67,41 @@ export function Footer({ locale }: { locale: Locale }) {
           </FooterCol>
         </div>
 
+        {/* Sister sites cross-link band */}
+        <div className="rounded-2xl bg-forestSoft p-6 grid sm:grid-cols-2 gap-4">
+          <a
+            href={SISTER_NOMAD.url}
+            target="_blank"
+            rel="noopener"
+            className="block rounded-xl bg-paper border border-line p-5 hover:border-ink hover-lift"
+          >
+            <p className="text-[10px] uppercase tracking-wider text-forest font-bold">
+              {SISTER_NOMAD.domain}
+            </p>
+            <p className="font-display text-base font-bold tracking-tight text-ink mt-1">
+              Picking a basecamp? → {SISTER_NOMAD.domain}
+            </p>
+            <p className="text-xs text-muted mt-1.5">{SISTER_NOMAD.tagline}</p>
+          </a>
+          <a
+            href={SISTER_AI.url}
+            target="_blank"
+            rel="noopener"
+            className="block rounded-xl bg-paper border border-line p-5 hover:border-ink hover-lift"
+          >
+            <p className="text-[10px] uppercase tracking-wider text-terracotta font-bold">
+              {SISTER_AI.domain}
+            </p>
+            <p className="font-display text-base font-bold tracking-tight text-ink mt-1">
+              Need AI tools? → {SISTER_AI.domain}
+            </p>
+            <p className="text-xs text-muted mt-1.5">{SISTER_AI.tagline}</p>
+          </a>
+        </div>
+
         <div className="border-t border-line pt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-muted">
           <span>{t(locale, 'footer.disclaimer')}</span>
-          <span>© {new Date().getFullYear()} slateremote.com</span>
+          <span>© {new Date().getFullYear()} slateremote.com · part of a small network with {SISTER_NOMAD.domain} and {SISTER_AI.domain}</span>
         </div>
       </div>
     </footer>

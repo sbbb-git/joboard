@@ -8,7 +8,7 @@ import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { NomadBanking } from '@/components/NomadBanking';
-import { SlowmadlyPromo } from '@/components/SlowmadlyPromo';
+import { NomadCTA } from '@/components/NomadCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -90,7 +90,7 @@ export default function CityPage({ params }: { params: { lang: Locale; city: str
         )}
       </section>
 
-      <SlowmadlyPromo context={c.name} />
+      <NomadCTA context={{ type: 'city', label: c.name, country: c.country }} />
 
       <NomadBanking context={c.name} country={c.country} />
 

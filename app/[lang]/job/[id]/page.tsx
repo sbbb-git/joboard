@@ -6,6 +6,7 @@ import type { Locale } from '@/lib/types';
 import { t } from '@/lib/i18n';
 import { buildMetadata, jobPostingJsonLd } from '@/lib/seo';
 import { isExpired } from '@/lib/filters';
+import { NomadCTA } from '@/components/NomadCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -80,6 +81,7 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
       <section className="prose-body text-[0.95rem] leading-relaxed whitespace-pre-wrap">
         {job.description}
       </section>
+      <NomadCTA context={{ type: 'job' }} />
     </article>
   );
 }
