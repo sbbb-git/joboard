@@ -7,23 +7,23 @@ import { Logo } from './Logo';
 export function Header({ locale, path }: { locale: Locale; path: string }) {
   return (
     <header className="sticky top-0 z-40 border-b border-line/70 bg-bg/85 backdrop-blur-md">
-      <div className="mx-auto max-w-6xl flex items-center justify-between px-5 py-3.5 gap-4">
-        <Link href={localePath(locale)} aria-label="slate.remote home">
+      <div className="mx-auto max-w-6xl flex items-center justify-between px-4 sm:px-5 py-3 gap-3">
+        <Link href={localePath(locale)} aria-label="slate.remote home" className="shrink-0">
           <Logo size="md" withMark />
         </Link>
-        <nav className="flex items-center gap-1 md:gap-2 text-sm">
+        <nav className="flex items-center gap-0.5 sm:gap-1 text-sm">
           <NavLink href={localePath(locale, 'jobs')}>{t(locale, 'nav.jobs')}</NavLink>
-          <NavLink href={localePath(locale, 'skills')} hideMobile>Skills</NavLink>
-          <NavLink href={localePath(locale, 'cities')} hideMobile>Cities</NavLink>
-          <NavLink href={localePath(locale, 'salaries/developer')} hideMobile>{t(locale, 'nav.salaries')}</NavLink>
-          <NavLink href={localePath(locale, 'guides')}>{t(locale, 'nav.guides')}</NavLink>
+          <NavLink href={localePath(locale, 'skills')} hide="sm">Skills</NavLink>
+          <NavLink href={localePath(locale, 'cities')} hide="md">Cities</NavLink>
+          <NavLink href={localePath(locale, 'salaries/developer')} hide="lg">{t(locale, 'nav.salaries')}</NavLink>
+          <NavLink href={localePath(locale, 'guides')} hide="sm">{t(locale, 'nav.guides')}</NavLink>
           <Link
             href={localePath(locale, 'submit')}
-            className="ml-1 px-3 py-1.5 text-xs font-semibold text-bg bg-ink rounded-full hover:bg-forest transition-colors"
+            className="ml-1 px-2.5 sm:px-3 py-1.5 text-xs font-semibold text-bg bg-ink rounded-full hover:bg-forest transition-colors whitespace-nowrap"
           >
             Post a job
           </Link>
-          <span className="ml-2 pl-2 border-l border-line">
+          <span className="ml-1.5 sm:ml-2 pl-1.5 sm:pl-2 border-l border-line">
             <LangSwitcher current={locale} path={path} />
           </span>
         </nav>
@@ -35,16 +35,17 @@ export function Header({ locale, path }: { locale: Locale; path: string }) {
 function NavLink({
   href,
   children,
-  hideMobile,
+  hide,
 }: {
   href: string;
   children: React.ReactNode;
-  hideMobile?: boolean;
+  hide?: 'sm' | 'md' | 'lg';
 }) {
+  const hideClass = hide === 'sm' ? 'hidden sm:inline-block' : hide === 'md' ? 'hidden md:inline-block' : hide === 'lg' ? 'hidden lg:inline-block' : 'inline-block';
   return (
     <Link
       href={href}
-      className={`px-2.5 py-1.5 rounded-md text-graphite hover:text-ink hover:bg-sand transition-colors ${hideMobile ? 'hidden sm:inline-block' : 'inline-block'}`}
+      className={`px-2 sm:px-2.5 py-1.5 rounded-md text-graphite hover:text-ink hover:bg-sand transition-colors ${hideClass}`}
     >
       {children}
     </Link>

@@ -47,6 +47,9 @@ jobs:
           git commit -m "chore(jobs): refresh $(date -u +%F)"
           git push origin main
 
+      - name: Generate client-side search index
+        run: node scripts/gen_search_index.mjs
+
       - name: Build static site
         env:
           SITE_URL: https://slateremote.com

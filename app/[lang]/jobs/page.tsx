@@ -1,8 +1,7 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
-import { JobCard } from '@/components/JobCard';
+import { JobSearch } from '@/components/JobSearch';
 import { allJobs } from '@/lib/jobs';
-import { localePath, t } from '@/lib/i18n';
+import { t } from '@/lib/i18n';
 import { buildMetadata, itemListJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 
@@ -13,17 +12,17 @@ export function generateMetadata({ params }: { params: { lang: Locale } }): Meta
   return buildMetadata({
     locale: params.lang,
     path: 'jobs',
-    title: 'All remote tech jobs',
-    description: 'Every active remote tech job in our index, sorted by posting date.',
+    title: 'Search remote tech jobs',
+    description:
+      'Filter every active remote tech job in our index by role, country, seniority, employment type, and salary. Updated daily.',
   });
 }
 
 export default function JobsList({ params }: { params: { lang: Locale } }) {
   const locale = params.lang;
   const all = allJobs();
-  const items = all.slice(0, 60);
   const itemList = itemListJsonLd(
-    items.map((j) => ({
+    all.slice(0, 30).map((j) => ({
       name: `${j.title} at ${j.company}`,
       url: absoluteUrl(`/${locale}/job/${j.id}`),
     })),
@@ -34,28 +33,17 @@ export default function JobsList({ params }: { params: { lang: Locale } }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}
       />
-      <header>
-        <h1 className="text-2xl font-semibold">{t(locale, 'nav.jobs')}</h1>
-        <p className="text-muted text-sm mt-1">
-          {all.length.toLocaleString()} jobs in our index. Showing the {items.length} most recent.
+      <header className="border-b border-line pb-5">
+        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">Search</p>
+        <h1 className="font-display text-3xl md:text-4xl font-bold tracking-tighter text-ink mt-1">
+          {t(locale, 'nav.jobs')}
+        </h1>
+        <p className="text-graphite text-base mt-3 max-w-prose">
+          {all.length.toLocaleString()} active remote tech jobs. Filter by role, country, level,
+          contract type and salary, all in the browser. No signup needed.
         </p>
       </header>
-      <div className="grid gap-3 md:grid-cols-2">
-        {items.map((j) => (
-          <JobCard key={j.id} job={j} locale={locale} />
-        ))}
-      </div>
-      <p className="text-sm text-muted text-center pt-4">
-        Looking for more?{' '}
-        <Link href={localePath(locale, 'skills')} className="text-forest hover:underline">
-          Browse by skill
-        </Link>{' '}
-        or{' '}
-        <Link href={localePath(locale, 'cities')} className="text-forest hover:underline">
-          by city
-        </Link>
-        .
-      </p>
+      <JobSearch locale={locale} />
     </div>
   );
 }
