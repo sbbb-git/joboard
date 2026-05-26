@@ -46,6 +46,16 @@ export function BookmarkButton({
     setSaved(next.includes(id));
   }
 
+  // Avoid SSR hydration flicker by not rendering anything until mounted
+  if (!mounted) {
+    if (variant === 'icon') {
+      return <span aria-hidden="true" className="inline-block w-9 h-9 rounded-full border border-line bg-paper" />;
+    }
+    return (
+      <span aria-hidden="true" className="inline-block h-9 w-[105px] rounded-full border border-line bg-paper" />
+    );
+  }
+
   if (variant === 'icon') {
     return (
       <button
@@ -53,9 +63,13 @@ export function BookmarkButton({
         onClick={toggle}
         aria-pressed={saved}
         aria-label={saved ? 'Remove bookmark' : 'Save job'}
-        className="w-9 h-9 rounded-full flex items-center justify-center border border-line bg-paper hover:border-ink transition-colors"
+        className={`w-9 h-9 rounded-full flex items-center justify-center border transition-colors ${
+          saved
+            ? 'bg-terracottaSoft text-terracotta border-terracotta'
+            : 'bg-paper border-line hover:border-ink'
+        }`}
       >
-        <Heart filled={mounted && saved} />
+        <Heart filled={saved} />
       </button>
     );
   }
@@ -66,13 +80,13 @@ export function BookmarkButton({
       onClick={toggle}
       aria-pressed={saved}
       className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
-        mounted && saved
+        saved
           ? 'bg-terracottaSoft text-terracotta border-terracotta'
           : 'bg-paper text-ink border-line hover:border-ink'
       }`}
     >
-      <Heart filled={mounted && saved} />
-      {mounted && saved ? 'Saved' : 'Save job'}
+      <Heart filled={saved} />
+      {saved ? 'Saved' : 'Save job'}
     </button>
   );
 }

@@ -8,6 +8,9 @@ import { GUIDES, GUIDE_MAP } from '@/lib/guides';
 import { NomadBanking } from '@/components/NomadBanking';
 import { NomadCTA } from '@/components/NomadCTA';
 import { AiToolsCTA } from '@/components/AiToolsCTA';
+import { RemoteTools } from '@/components/RemoteTools';
+import { Breadcrumb } from '@/components/Breadcrumb';
+import { localePath } from '@/lib/i18n';
 
 const AI_KEYWORDS = /\b(ai|ml|machine learning|llm|prompt|data scientist|ml engineer)\b/i;
 
@@ -83,16 +86,26 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       )}
+      <Breadcrumb
+        items={[
+          { label: 'Home', href: localePath(params.lang) },
+          { label: 'Guides', href: localePath(params.lang, 'guides') },
+          { label: g.title },
+        ]}
+      />
       <header className="border-b border-line pb-4">
-        <p className="text-xs uppercase tracking-wider text-muted">{g.category}</p>
-        <h1 className="text-2xl md:text-3xl font-semibold mt-2">{g.title}</h1>
-        <p className="text-muted text-sm mt-2">{g.description}</p>
+        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{g.category}</p>
+        <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1.5 leading-tight">
+          {g.title}
+        </h1>
+        <p className="text-graphite text-base mt-3">{g.description}</p>
       </header>
       <div className="prose-body whitespace-pre-line text-[0.95rem] leading-relaxed">{g.body}</div>
 
       {AI_KEYWORDS.test(g.title) && (
         <AiToolsCTA context={{ type: 'guide', label: g.title.replace(/^(How to become a |Best |Remote )/i, '').toLowerCase() }} />
       )}
+      {g.category === 'tools' && <RemoteTools />}
       {(g.category === 'lifestyle' || g.category === 'visa' || g.category === 'tax' || g.category === 'finding' || g.category === 'career') && (
         <NomadCTA />
       )}

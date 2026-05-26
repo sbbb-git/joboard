@@ -52,7 +52,7 @@ export default function Home({ params }: { params: { lang: Locale } }) {
               <span className="w-1.5 h-1.5 rounded-full bg-forest animate-pulse" />
               Updated every 24 hours · {all.length} active jobs
             </span>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-normal tracking-tightest leading-[1.02] text-ink">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tightest leading-[1.04] text-ink">
               Find your next{' '}
               <em className="font-display italic text-forest">remote tech role</em>, fresh every day.
             </h1>

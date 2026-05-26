@@ -8,6 +8,8 @@ import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { JobNormalized, Locale } from '@/lib/types';
 import { AiToolsCTA } from '@/components/AiToolsCTA';
+import { Breadcrumb } from '@/components/Breadcrumb';
+import { localePath } from '@/lib/i18n';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -58,10 +60,19 @@ export default function SkillPage({ params }: { params: { lang: Locale; skill: s
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
+      <Breadcrumb
+        items={[
+          { label: 'Home', href: localePath(params.lang) },
+          { label: 'Skills', href: localePath(params.lang, 'skills') },
+          { label: s.name },
+        ]}
+      />
       <header className="border-b border-line pb-4">
-        <p className="text-xs uppercase tracking-wider text-muted">{s.category}</p>
-        <h1 className="text-2xl md:text-3xl font-semibold mt-2">Remote {s.name} jobs</h1>
-        <p className="text-muted text-sm mt-2">{s.blurb}</p>
+        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{s.category}</p>
+        <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1.5">
+          Remote {s.name} jobs
+        </h1>
+        <p className="text-graphite text-base mt-3">{s.blurb}</p>
       </header>
 
       <section className="prose-body text-[0.95rem] leading-relaxed">

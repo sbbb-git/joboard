@@ -9,6 +9,8 @@ import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { NomadBanking } from '@/components/NomadBanking';
 import { NomadCTA } from '@/components/NomadCTA';
+import { Breadcrumb } from '@/components/Breadcrumb';
+import { localePath } from '@/lib/i18n';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -54,12 +56,19 @@ export default function CityPage({ params }: { params: { lang: Locale; city: str
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
+      <Breadcrumb
+        items={[
+          { label: 'Home', href: localePath(params.lang) },
+          { label: 'Cities', href: localePath(params.lang, 'cities') },
+          { label: c.name },
+        ]}
+      />
       <header className="border-b border-line pb-4">
-        <p className="text-xs uppercase tracking-wider text-muted">{c.country}</p>
-        <h1 className="text-2xl md:text-3xl font-semibold mt-2">
+        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{c.country}</p>
+        <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1.5">
           Remote tech jobs in {c.name}
         </h1>
-        <p className="text-muted text-sm mt-2">{c.blurb}</p>
+        <p className="text-graphite text-base mt-3">{c.blurb}</p>
       </header>
 
       <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
