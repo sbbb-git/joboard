@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { JobCard } from '@/components/JobCard';
 import { CityCard } from '@/components/CityCard';
 import { Newsletter } from '@/components/Newsletter';
+import { HomeFaq } from '@/components/HomeFaq';
 import { allJobs, rolesWithCounts, topCompanies, topCountries } from '@/lib/jobs';
 import { localePath, t } from '@/lib/i18n';
 import { buildMetadata, organizationJsonLd } from '@/lib/seo';
@@ -199,6 +200,9 @@ export default function Home({ params }: { params: { lang: Locale } }) {
           ))}
         </div>
       </section>
+
+      {/* FAQ */}
+      <HomeFaq />
     </div>
   );
 }

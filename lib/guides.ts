@@ -843,6 +843,204 @@ One substantial project (six months of work, real users) outperforms five tutori
 ## Public visibility
 The benefit of a portfolio is partly that it gets read. Projects buried on GitHub with no traffic generate less signal than the same projects with even modest visibility (a few hundred GitHub stars or active users).`,
   },
+  {
+    slug: 'remote-developer-interview-prep',
+    title: 'Remote developer interview preparation, end to end',
+    description:
+      'How to prepare for the four to six round remote engineering interview loop in 2026.',
+    category: 'finding',
+    body: `Remote engineering interview loops have stabilized around a clear pattern. Preparation pays off most on the rounds that have the highest predictive power for the hiring decision.
+
+## The round that decides
+The third or fourth round (the deep technical pairing) carries roughly half the hiring signal. Spend the most preparation time on this format.
+
+## What changed in 2026
+Live coding has moved from leetcode-style puzzles to realistic pairing sessions. Most senior interviews now use a deliberately ambiguous problem with conversation as the main signal.
+
+## System design rounds
+Senior and staff candidates almost always get one. Prepare on two axes: drawing trade-offs cleanly, and asking sharp clarifying questions before drawing anything.
+
+## Behavioral signal
+Async-friendly companies dig into past collaboration through specific examples. Prepare three stories per common theme (conflict, ambiguity, ownership) tied to shipped work.
+
+## Final round
+Increasingly a check on written communication. Expect either a written response exercise or a verbal walkthrough of how you'd document a recent technical decision.`,
+  },
+  {
+    slug: 'remote-job-counter-offer-playbook',
+    title: 'Counter-offer playbook for remote tech offers',
+    description:
+      'How to counter on cash, equity, and benefits without burning the offer.',
+    category: 'salary',
+    body: `The counter-offer is one decision point with disproportionate impact on total compensation over a multi-year horizon. Treat it as a single high-leverage interaction.
+
+## Counter once
+Counter once with specific reasoning, then accept the second offer if it is materially above your minimum. Repeated counters tend to harden the recruiter rather than move the offer.
+
+## What to counter on
+Cash is the easiest lever for the recruiter to move. Equity grants at private companies move less frequently but more meaningfully when they do. Benefits (vacation, equipment budget, learning budget) are often pulled from a different bucket and can stack on top of cash.
+
+## Anchoring research
+Use posted bands across comparable companies. Cite the source bracket clearly. Vague "market rate" claims do not move offers.
+
+## When to walk
+If the gap between the offer and your minimum is more than 15 to 20 percent and the recruiter cannot close it, the offer is genuinely below market and the company likely cannot adjust. Walking with grace preserves the relationship.`,
+  },
+  {
+    slug: 'async-vs-sync-standup',
+    title: 'Async standup vs sync standup',
+    description: 'Which standup format actually works for distributed engineering teams.',
+    category: 'lifestyle',
+    body: `Most remote engineering teams that work well have settled on async written standups. The teams that still hold daily synchronous standups split into two groups: those who actively need them, and those who haven't questioned the habit.
+
+## When sync wins
+Junior-heavy teams. Teams with active incidents. Teams whose timezone overlap is wide enough that the meeting is cheap.
+
+## When async wins
+Senior IC teams. Teams across more than four timezones. Teams whose work is mostly individual contributor depth rather than coordination.
+
+## The async format that works
+A short message in a shared channel: what I shipped yesterday, what I'm shipping today, blockers. Read within the working hours by whoever needs to read it. Comments inline if relevant.
+
+## What does not work
+Async standup that nobody reads. Synchronous standup that exists out of habit. Both are quiet productivity sinks.`,
+  },
+  {
+    slug: 'how-to-pitch-remote-to-employer',
+    title: 'How to pitch going remote to your current employer',
+    description:
+      'A practical playbook for converting an on-site or hybrid role into fully remote without changing employers.',
+    category: 'career',
+    body: `Many tech workers' fastest path to remote is the company they already work for. The conversion succeeds or fails on framing more than on the underlying request.
+
+## Lead with productivity, not preference
+Frame the change as a productivity decision (focus time, less commute, more deep work) before any lifestyle reason. Lifestyle reasons land badly with most managers.
+
+## Pick the moment
+Ask after a clear win. Performance-review time, after shipping a major feature, or right after a promotion. Avoid asking during stressed periods or while organizational changes are pending.
+
+## Propose a trial
+A three-month trial converts more frequently than a permanent ask. The trial reduces the manager's perceived risk by 90 percent.
+
+## Have a fallback
+Hybrid (one to two days remote per week) is a common compromise that still meaningfully changes daily life. Going in with this in mind helps the negotiation.`,
+  },
+  {
+    slug: 'remote-mental-health-isolation',
+    title: 'Mental health and isolation when working fully remote',
+    description:
+      'Practical patterns that protect against the silent productivity tax of remote isolation.',
+    category: 'lifestyle',
+    body: `Fully remote work isolates by default. The engineers who sustain it over five and ten years tend to share a small set of habits that look unimpressive in isolation but compound powerfully.
+
+## Daily anchors
+A consistent start time. A consistent end time. Lunch eaten away from the desk. None of this is optional past year one of remote.
+
+## Weekly anchors
+Two or three recurring in-person interactions outside work. A weekly call with a friend who is not a colleague. A shared physical activity (gym, sport, hobby) with set times.
+
+## Detect early
+Burnout from isolation does not look like burnout from overwork. It looks like productivity decay over weeks, dreading meetings that used to feel neutral, social anxiety creeping into Slack reactions. Naming it early matters.
+
+## Team gatherings
+Most remote-mature companies budget for periodic in-person team weeks. The engineers who sustain remote work tend to attend these even when it is inconvenient. The signal-to-noise on three days in person is exceptional.`,
+  },
+  {
+    slug: 'remote-equipment-stipend-negotiation',
+    title: 'Equipment and stipend negotiation for remote engineers',
+    description:
+      'Standard remote benefits, how they vary, and what to ask for at signing.',
+    category: 'salary',
+    body: `Most remote-mature companies budget for home-office setup. The ranges and structures vary widely, and asking explicitly at signing nets meaningful additional value.
+
+## Common buckets in 2026
+One-time equipment budget at start: 1 500 to 3 500 USD. Annual replacement budget: 500 to 1 500. Monthly internet or coworking stipend: 50 to 150. Annual learning budget: 1 000 to 3 000. Annual team gathering budget: separate, often 2 000 to 4 000 per engineer.
+
+## What to ask for
+Ask at the offer stage, not after starting. Bring specific numbers from publicly documented offers at comparable companies. Most recruiters can stretch on at least one of these buckets even when cash is capped.
+
+## What to skip
+Tax-coded benefits in countries where the employer's reimbursement is taxable (US W-2, some EU). These add complexity for limited net.`,
+  },
+  {
+    slug: 'remote-job-search-from-abroad',
+    title: 'Searching for a remote job while living abroad',
+    description:
+      'How to make a remote tech job search work when you are not in the country where most employers are.',
+    category: 'finding',
+    body: `Looking for a remote job from a country with limited local tech employer presence requires a deliberately different approach than the equivalent search from a major tech hub.
+
+## Timezone disclosure
+Surface your timezone in the first message to recruiters. Burying it leads to wasted interviews when the company turns out to need broader overlap than you can offer.
+
+## US employers from non-US locations
+Most US-headquartered remote employers can only legally employ contractors or use an employer-of-record service. Understand which one applies to a posting before investing time.
+
+## EU employers from non-EU locations
+EU companies have more flexibility for non-EU contractors but typically prefer EU residents. The Spanish, Portuguese and German nomad and Blue Card paths give you EU residency without requiring local employment.
+
+## Network signal
+Recommendations from someone the employer trusts outweigh location concerns at most companies. Invest in two to three warm intros per month rather than 20 cold applications.`,
+  },
+  {
+    slug: 'second-passport-residency-remote-workers',
+    title: 'Second passport and residency for remote workers',
+    description: 'The realistic options for getting a second residency or passport as a remote worker.',
+    category: 'visa',
+    body: `A second residency or passport buys optionality. The realistic options for a remote tech worker fall into a small number of categories.
+
+## Fast residency (under 2 years)
+Portugal D8 visa (path to residency in 5 years). Spain DNV (path in 5 years). Greece DNV (path in 7 years). Malta nomad residence (renewable annually).
+
+## Faster but more expensive
+UAE Golden Visa (10-year residency from 540 000 AED investment). Portugal Golden Visa (still possible via select investment routes after 2024 reforms).
+
+## Citizenship paths
+Most EU nomad visas lead to citizenship in 5 to 10 years (Portugal 5, Spain 10, Germany 8 with C1 German). St. Kitts and Grenada citizenship-by-investment cost 150 to 250 000 USD and grant a passport in 4 to 6 months.
+
+## Tax considerations
+Holding a second residency does not by itself change tax residency. Tax residency depends on the 183-day test plus the substantive home test in most jurisdictions.`,
+  },
+  {
+    slug: 'remote-onboarding-first-90-days',
+    title: 'Remote onboarding: the first 90 days',
+    description:
+      'How to start a fully remote engineering role and convert the trial period reliably.',
+    category: 'career',
+    body: `The first 90 days at a remote engineering role determine whether you slot into the team or drift toward isolation. The pattern that works for most engineers is structured and slightly extroverted.
+
+## First two weeks
+Schedule one 30-minute call with every direct teammate and every interface partner. Ask the same three questions: what is broken, what are you proud of shipping recently, what do you wish a new engineer would do differently.
+
+## First month
+Ship something small but visible. A polish PR, a small feature, a docs improvement. The point is to demonstrate working speed and earn early trust.
+
+## Month two
+Take ownership of a moderate piece of scope. Run it end to end. Communicate progress publicly more than feels natural.
+
+## Month three
+Have a documented opinion on at least one architectural decision in the team's scope. Without an opinion, you read as a senior IC without conviction.
+
+## What to avoid
+Long stretches of solo work without check-ins. Suggesting major changes before two months in. Going dark for any reason.`,
+  },
+  {
+    slug: 'remote-worker-tax-by-country',
+    title: 'How much tax remote workers actually pay by country',
+    description:
+      'A realistic comparison of effective tax burdens for remote tech workers across major destination countries.',
+    category: 'tax',
+    body: `Headline rates differ less than the effective rates remote workers actually pay, which depend on preferential regimes, social charges, and what counts as taxable.
+
+## Effective rate brackets at ~100k EUR income
+Portugal NHR successor regime: ~20 to 25 percent. Spain Beckham extension: 24 percent on Spanish-source up to 600k EUR. Italy impatriate regime: ~25 to 30 percent. Greece DNV regime: ~25 percent. Germany (no special regime): 38 to 42 percent. France (no special regime): 35 to 40 percent. Netherlands 30 percent ruling: ~36 percent net.
+
+## Off-Europe options
+Dubai: 0 percent on personal income, 9 percent corporate above 375k AED. Singapore: 15 to 22 percent depending on residency. US tax-free states: 22 to 32 percent federal, 0 state (TX, FL, WA, NV, TN, NH).
+
+## Hidden costs to model
+Health insurance contributions. Pension contributions. Solidarity surcharges. These add 5 to 12 percentage points to nominal income tax in most EU countries.`,
+  },
 );
 
 export const GUIDE_MAP: Record<string, GuideEntry> = Object.fromEntries(

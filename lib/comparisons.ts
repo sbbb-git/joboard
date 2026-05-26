@@ -237,6 +237,93 @@ In-house ownership of long-running systems compounds more clearly into senior en
 ## Remote fit
 Both can work fully remote. Agencies have been earlier and more thorough adopters of remote-first operations at most established names.`,
   },
+  {
+    slug: 'lisbon-vs-barcelona-remote',
+    title: 'Lisbon vs Barcelona for remote tech workers',
+    description: 'How the two leading Mediterranean remote tech hubs actually compare.',
+    leftLabel: 'Lisbon',
+    rightLabel: 'Barcelona',
+    body: `## Visa
+Portugal D8 and Spain DNV are roughly equivalent in friction. Portugal’s longer-term tax pathway is more clearly defined post-NHR reforms.
+
+## Cost of living
+Lisbon central rents have risen sharply since 2022, partially closing the gap with Barcelona. Barcelona remains 10 to 20 percent more expensive for equivalent apartments.
+
+## Tech ecosystem
+Lisbon’s ecosystem has grown faster since 2020. Barcelona retains a larger local employer base but a smaller share of remote-first companies.
+
+## Lifestyle
+Lisbon: smaller, more walkable, English-friendly. Barcelona: bigger, more international, more nightlife and culture.
+
+## Choice
+For a first move to Mediterranean remote life: Lisbon. For a base with more depth and Spanish exposure: Barcelona.`,
+  },
+  {
+    slug: 'portugal-vs-spain-nomad-visa',
+    title: 'Portugal D8 vs Spain Digital Nomad Visa',
+    description: 'Side-by-side comparison of the two leading EU nomad visa programs.',
+    leftLabel: 'Portugal D8',
+    rightLabel: 'Spain DNV',
+    body: `## Income threshold
+Portugal: ~3 280 EUR/month. Spain: ~2 760 EUR/month.
+
+## Tax regime
+Portugal’s NHR successor offers preferential treatment for specific high-value activities including most software engineering. Spain’s Beckham Law extension caps Spanish-source income at 24 percent flat for six years.
+
+## Processing time
+Portugal: 60 to 90 days from consulate to arrival. Spain: 20 days for in-country applications.
+
+## Path to permanent residency
+Portugal: 5 years to permanent, 5 years to citizenship. Spain: 5 years to permanent, 10 years to citizenship.
+
+## Family
+Both allow dependents. Spain processes spouse applications slightly faster in 2026.`,
+  },
+  {
+    slug: 'lisbon-vs-mexico-city-remote',
+    title: 'Lisbon vs Mexico City for remote tech workers',
+    description: 'European versus Latin American remote tech hub: timezone is the deciding factor.',
+    leftLabel: 'Lisbon',
+    rightLabel: 'Mexico City',
+    body: `## Timezone overlap with US employers
+Lisbon: 3 to 4 hours of US East Coast overlap. Mexico City: 9 hours of full overlap with US Central.
+
+## Cost of living
+Mexico City is roughly 25 percent cheaper than Lisbon for equivalent neighborhoods (Roma/Condesa vs Principe Real).
+
+## Lifestyle
+Lisbon: European city scale, ocean nearby, very walkable. Mexico City: massive metro, food scene unmatched, urban density different from European norms.
+
+## Visa
+Portugal D8 vs Mexico Temporary Resident. Both are straightforward for engineers with stable remote income.
+
+## Choice
+US employers + lower cost: Mexico City. EU employers or eventual EU residency: Lisbon.`,
+  },
+  {
+    slug: 'bali-vs-chiang-mai-remote',
+    title: 'Bali vs Chiang Mai for remote tech workers',
+    description: 'The two longest-running Southeast Asian remote work hubs compared.',
+    leftLabel: 'Bali',
+    rightLabel: 'Chiang Mai',
+    body: `## Lifestyle
+Bali: beach plus jungle, larger and louder community, more partying. Chiang Mai: smaller city, mountains, slower pace, more long-term residents.
+
+## Cost
+Chiang Mai is roughly 30 percent cheaper than Bali on like-for-like accommodations and food.
+
+## Visa
+Indonesia: B211a visit visa, Second Home Visa for longer. Thailand: DTV (Destination Thailand Visa) since 2024, valid 5 years multi-entry.
+
+## Internet
+Bali Canggu: 100 to 300 Mbps depending on neighborhood. Chiang Mai: consistent 150 to 200 Mbps citywide.
+
+## Community
+Bali has more nomad coliving infrastructure. Chiang Mai has a longer-established and more stable community.
+
+## Choice
+Younger or shorter-term: Bali. Longer-term or quieter: Chiang Mai.`,
+  },
 ];
 
 export const COMPARISON_MAP: Record<string, ComparisonEntry> = Object.fromEntries(

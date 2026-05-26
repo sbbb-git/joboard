@@ -42,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push({ url: `${root}/about`, lastModified: now, priority: 0.5 });
     entries.push({ url: `${root}/contact`, lastModified: now, priority: 0.4 });
     entries.push({ url: `${root}/submit`, lastModified: now, priority: 0.6 });
+    entries.push({ url: `${root}/glossary`, lastModified: now, priority: 0.7 });
 
     for (const role of ROLES) {
       entries.push({ url: `${root}/jobs/${role}`, lastModified: now, priority: 0.8 });

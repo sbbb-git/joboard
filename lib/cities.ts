@@ -473,6 +473,126 @@ export const CITIES: CityEntry[] = [
     bodyEn:
       'Vancouver shares its timezone with the US Pacific tech ecosystem and offers an alternative for engineers wanting Canadian residency while collaborating with US-based teams.',
   },
+  {
+    slug: 'las-palmas',
+    name: 'Las Palmas',
+    country: 'Spain',
+    timezone: 'WET (UTC+0/+1)',
+    costOfLivingUsd: 1600,
+    internetMbps: 600,
+    visa: 'Spanish Digital Nomad Visa',
+    blurb: 'Year-round mild climate hub on the Atlantic, growing remote tech scene.',
+    bodyEn:
+      'Las Palmas, on Gran Canaria, has emerged since 2020 as one of the most active remote work hubs in the Atlantic. The combination of year-round 22 °C average, low cost of living relative to mainland Spain, and the Spanish Digital Nomad Visa pathway makes it a strong pick for engineers wanting a Mediterranean lifestyle with better weather. Co-working scene around Triana and Vegueta is well established, with several dedicated nomad coliving spaces.',
+  },
+  {
+    slug: 'tenerife',
+    name: 'Tenerife',
+    country: 'Spain',
+    timezone: 'WET (UTC+0/+1)',
+    costOfLivingUsd: 1500,
+    internetMbps: 500,
+    visa: 'Spanish Digital Nomad Visa',
+    blurb: 'Volcanic Canary Island alternative to Las Palmas with stronger nomad community.',
+    bodyEn:
+      'Tenerife pairs the Canary Islands fiscal regime with a remote nomad community that has grown rapidly since 2021. Puerto de la Cruz and the southern coast around Costa Adeje concentrate most of the remote workers. Internet quality is excellent across the island, and the Spanish DNV applies here as in mainland Spain.',
+  },
+  {
+    slug: 'madeira',
+    name: 'Funchal (Madeira)',
+    country: 'Portugal',
+    timezone: 'WET (UTC+0/+1)',
+    costOfLivingUsd: 1700,
+    internetMbps: 500,
+    visa: 'Portugal D8 Digital Nomad Visa',
+    blurb: 'Atlantic Portuguese island with the original Digital Nomad Village.',
+    bodyEn:
+      'Madeira launched the original "Digital Nomad Village" in Ponta do Sol in 2021. The Portuguese D8 visa applies here as on the mainland, and the island offers excellent fiber, a dedicated coworking infrastructure, and one of the most stable remote nomad communities in Europe.',
+  },
+  {
+    slug: 'bangkok',
+    name: 'Bangkok',
+    country: 'Thailand',
+    timezone: 'ICT (UTC+7)',
+    costOfLivingUsd: 1500,
+    internetMbps: 400,
+    visa: 'DTV or LTR visa',
+    blurb: 'Urban Thai alternative to Chiang Mai with stronger tech ecosystem.',
+    bodyEn:
+      'Bangkok offers Thailand\'s remote work pathways (the 2024 Destination Thailand Visa and the LTR visa for higher earners) paired with a larger local tech ecosystem than Chiang Mai. Sukhumvit and Thonglor concentrate most of the international remote workforce. Internet is among the best in Southeast Asia.',
+  },
+  {
+    slug: 'kuala-lumpur',
+    name: 'Kuala Lumpur',
+    country: 'Malaysia',
+    timezone: 'MYT (UTC+8)',
+    costOfLivingUsd: 1400,
+    internetMbps: 500,
+    visa: 'DE Rantau Nomad Pass',
+    blurb: 'English-friendly Asian remote tech base with the DE Rantau pass.',
+    bodyEn:
+      'Kuala Lumpur introduced the DE Rantau Nomad Pass in 2022. English is widely spoken across the city, costs are moderate, fiber is excellent, and Mont Kiara plus Bangsar areas concentrate most of the international remote workforce.',
+  },
+  {
+    slug: 'da-nang',
+    name: 'Da Nang',
+    country: 'Vietnam',
+    timezone: 'ICT (UTC+7)',
+    costOfLivingUsd: 1100,
+    internetMbps: 300,
+    visa: 'Visa on arrival (45-day)',
+    blurb: 'Beach plus fiber Vietnamese hub for cost-conscious remote workers.',
+    bodyEn:
+      'Da Nang has overtaken Ho Chi Minh City as the preferred Vietnamese remote work destination. The combination of beach, modern infrastructure, very low cost of living, and a growing English-speaking community drives the inflow. Visa is straightforward, and the 90-day extension paths are well documented.',
+  },
+  {
+    slug: 'taipei',
+    name: 'Taipei',
+    country: 'Taiwan',
+    timezone: 'TST (UTC+8)',
+    costOfLivingUsd: 1900,
+    internetMbps: 1000,
+    visa: 'Gold Card or Employment Gold Card',
+    blurb: 'Clean tech ecosystem in Asia, world-class fiber.',
+    bodyEn:
+      'Taipei pairs world-class internet (gigabit broadly available) with a clean and English-friendly tech ecosystem. The Taiwan Employment Gold Card is a fast residency path for senior engineers, valid 1 to 3 years and easily renewable.',
+  },
+  {
+    slug: 'seoul',
+    name: 'Seoul',
+    country: 'South Korea',
+    timezone: 'KST (UTC+9)',
+    costOfLivingUsd: 2400,
+    internetMbps: 1000,
+    visa: 'F-2-7 Skilled Worker or Workation visa',
+    blurb: 'Major Asian tech market with new workation visa.',
+    bodyEn:
+      'Seoul launched its dedicated workation visa in 2024, opening shorter-term legal stays for remote workers. The local tech market is one of the largest in Asia, and internet quality is unmatched. Itaewon and Hannam areas concentrate the international remote scene.',
+  },
+  {
+    slug: 'marrakech',
+    name: 'Marrakech',
+    country: 'Morocco',
+    timezone: 'WET (UTC+0/+1)',
+    costOfLivingUsd: 1100,
+    internetMbps: 200,
+    visa: 'Visa-free 90 days for most passports',
+    blurb: 'EU-adjacent timezone at half the EU cost of living.',
+    bodyEn:
+      'Marrakech offers EU-aligned working hours at roughly half the cost of EU equivalents. The Gueliz district concentrates the digital nomad community. Internet quality has improved sharply since 2022 with widespread fiber rollout.',
+  },
+  {
+    slug: 'antalya',
+    name: 'Antalya',
+    country: 'Turkey',
+    timezone: 'TRT (UTC+3)',
+    costOfLivingUsd: 1200,
+    internetMbps: 500,
+    visa: 'Short-term residence permit',
+    blurb: 'Mediterranean Turkey base with low cost and EU-compatible hours.',
+    bodyEn:
+      'Antalya combines the Mediterranean coastline with very low cost of living for USD or EUR earners. Working hours align with most of Europe. Internet quality is solid across the city, and the short-term residence permit can be extended for multi-year stays.',
+  },
 ];
 
 export const CITY_MAP: Record<string, CityEntry> = Object.fromEntries(
