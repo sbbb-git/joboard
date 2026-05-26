@@ -19,12 +19,22 @@ export const metadata: Metadata = {
     'A curated index of remote engineering, data, design and product jobs, aggregated from eight public job board APIs and refreshed every day.',
   applicationName: 'slateremote.com',
   formatDetection: { telephone: false, email: false, address: false },
-  alternates: {
-    types: {
-      'application/rss+xml': [{ url: '/feed.xml', title: 'slateremote.com jobs feed' }],
-    },
-  },
   manifest: '/manifest.json',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  openGraph: {
+    images: [{ url: '/og.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og.png'],
+  },
 };
 
 const CF_ANALYTICS_TOKEN = process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN;

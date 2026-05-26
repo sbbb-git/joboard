@@ -1,5 +1,5 @@
-export type Locale = 'en' | 'fr' | 'es' | 'de';
-export const LOCALES: Locale[] = ['en', 'fr', 'es', 'de'];
+export type Locale = 'en' | 'fr' | 'es' | 'de' | 'pt' | 'it' | 'pl';
+export const LOCALES: Locale[] = ['en', 'fr', 'es', 'de', 'pt', 'it', 'pl'];
 export const DEFAULT_LOCALE: Locale = 'en';
 
 export type Seniority = 'junior' | 'mid' | 'senior' | 'lead';

@@ -61,6 +61,9 @@ export function Footer({ locale }: { locale: Locale }) {
               <li><Link href={localePath(locale, 'companies')} className="hover:text-ink">{t(locale, 'nav.companies')}</Link></li>
               <li><Link href={localePath(locale, 'skills')} className="hover:text-ink">All skills</Link></li>
               <li><Link href={localePath(locale, 'cities')} className="hover:text-ink">All cities</Link></li>
+              <li><Link href={localePath(locale, 'submit')} className="hover:text-ink">Post a job</Link></li>
+              <li><Link href={localePath(locale, 'about')} className="hover:text-ink">About</Link></li>
+              <li><Link href={localePath(locale, 'contact')} className="hover:text-ink">Contact</Link></li>
             </ul>
           </div>
         </div>

@@ -20,12 +20,7 @@ export function hreflangAlternates(pathWithoutLocale: string): Record<string, st
   return alternates;
 }
 
-export function ogImageUrl(opts: { title: string; subtitle?: string; tag?: string }): string {
-  const params = new URLSearchParams({ title: opts.title });
-  if (opts.subtitle) params.set('subtitle', opts.subtitle);
-  if (opts.tag) params.set('tag', opts.tag);
-  return `${SITE_URL}/og?${params.toString()}`;
-}
+const STATIC_OG = '/og.png';
 
 export function buildMetadata(opts: {
   locale: Locale;
@@ -33,10 +28,8 @@ export function buildMetadata(opts: {
   title: string;
   description: string;
   index?: boolean;
-  ogTag?: string;
 }): Metadata {
   const url = absoluteUrl(`/${opts.locale}/${opts.path.replace(/^\/+/, '')}`);
-  const og = ogImageUrl({ title: opts.title, subtitle: opts.description.slice(0, 80), tag: opts.ogTag });
   return {
     title: opts.title,
     description: opts.description,
@@ -52,13 +45,13 @@ export function buildMetadata(opts: {
       siteName: SITE_NAME,
       locale: opts.locale,
       type: 'website',
-      images: [{ url: og, width: 1200, height: 630 }],
+      images: [{ url: STATIC_OG, width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',
       title: opts.title,
       description: opts.description,
-      images: [og],
+      images: [STATIC_OG],
     },
     robots: opts.index === false ? { index: false, follow: true } : { index: true, follow: true },
   };

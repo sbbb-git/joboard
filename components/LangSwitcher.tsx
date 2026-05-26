@@ -3,7 +3,7 @@ import { LOCALES } from '@/lib/i18n';
 import type { Locale } from '@/lib/types';
 
 export function LangSwitcher({ current, path }: { current: Locale; path: string }) {
-  const clean = path.replace(/^\/(en|fr|es|de)/, '').replace(/^\/+/, '');
+  const clean = path.replace(/^\/(en|fr|es|de|pt|it|pl)/, '').replace(/^\/+/, '');
   return (
     <span className="flex items-center gap-1 text-xs uppercase tracking-wide">
       {LOCALES.map((l) => (

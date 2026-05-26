@@ -1,7 +1,6 @@
 name: scrape-and-deploy
 
-# Daily at 04:00 UTC: runs the 8 scrapers, commits data/jobs.json back to
-# main, then rebuilds the static site and deploys it to Cloudflare Pages.
+# Daily at 04:00 UTC: scrape -> commit -> build -> deploy -> IndexNow ping.
 # Also runs on every push to main to redeploy whenever code changes.
 
 on:
@@ -51,6 +50,9 @@ jobs:
       - name: Build static site
         env:
           SITE_URL: https://slateremote.com
+          NEXT_PUBLIC_CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
+          NEXT_PUBLIC_STRIPE_FEATURED_30D: ${{ secrets.STRIPE_FEATURED_30D }}
+          NEXT_PUBLIC_STRIPE_SPONSORED_TOP: ${{ secrets.STRIPE_SPONSORED_TOP }}
         run: npm run build
 
       - name: Deploy to Cloudflare Pages
@@ -58,3 +60,24 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: npx wrangler@latest pages deploy out --project-name=slateremote --branch=main --commit-dirty=true
+
+      - name: Ping IndexNow
+        env:
+          SITE_URL: https://slateremote.com
+          INDEXNOW_KEY: 1cb9f8a61b957eb23ab2e38131576cd2
+        run: |
+          set -euo pipefail
+          # Extract all URLs from the freshly built sitemap, ping IndexNow in batches of 1000
+          urls=$(grep -oP '(?<=<loc>)[^<]+' out/sitemap.xml | head -10000)
+          count=$(echo "$urls" | wc -l)
+          echo "Submitting $count URLs to IndexNow"
+          echo "$urls" | split -l 1000 - /tmp/indexnow-batch-
+          for f in /tmp/indexnow-batch-*; do
+            urlList=$(jq -R -s -c 'split("\n") | map(select(length > 0))' < "$f")
+            payload=$(jq -n --arg host "slateremote.com" --arg key "$INDEXNOW_KEY" --arg keyLocation "$SITE_URL/$INDEXNOW_KEY.txt" --argjson urlList "$urlList" \
+              '{host: $host, key: $key, keyLocation: $keyLocation, urlList: $urlList}')
+            code=$(curl -s -o /tmp/indexnow.out -w "%{http_code}" -X POST 'https://api.indexnow.org/indexnow' \
+              -H 'content-type: application/json' \
+              -d "$payload")
+            echo "  batch $f: HTTP $code"
+          done

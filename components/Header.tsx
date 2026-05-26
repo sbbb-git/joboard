@@ -29,6 +29,9 @@ export function Header({ locale, path }: { locale: Locale; path: string }) {
           <Link href={localePath(locale, 'guides')} className="hover:text-ink">
             {t(locale, 'nav.guides')}
           </Link>
+          <Link href={localePath(locale, 'submit')} className="hover:text-ink hidden md:inline px-2 py-1 border border-line rounded text-xs">
+            Post a job
+          </Link>
           <LangSwitcher current={locale} path={path} />
         </nav>
       </div>

@@ -5,6 +5,7 @@ import { LOCALES } from '@/lib/i18n';
 import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { GUIDES, GUIDE_MAP } from '@/lib/guides';
+import { NomadBanking } from '@/components/NomadBanking';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -84,6 +85,8 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
         <p className="text-muted text-sm mt-2">{g.description}</p>
       </header>
       <div className="prose-body whitespace-pre-line text-[0.95rem] leading-relaxed">{g.body}</div>
+
+      {(g.category === 'visa' || g.category === 'tax') && <NomadBanking />}
 
       {g.faqs && g.faqs.length > 0 && (
         <section className="border-t border-line pt-6">

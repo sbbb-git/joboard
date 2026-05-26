@@ -100,7 +100,76 @@ const de: Dict = {
   'footer.refreshed': 'Index aktualisiert',
 };
 
-const DICTS: Record<Locale, Dict> = { en, fr, es, de };
+const pt: Dict = {
+  'site.tagline': 'Empregos tech remotos da web inteira, atualizados todos os dias.',
+  'site.intro':
+    'Um índice curado de vagas remotas de engenharia, dados, design e produto, agregadas das APIs públicas dos oito maiores job boards.',
+  'nav.jobs': 'Vagas',
+  'nav.companies': 'Empresas',
+  'nav.salaries': 'Salários',
+  'nav.locations': 'Países',
+  'nav.guides': 'Guias',
+  'cta.apply': 'Candidatar-se no site da empresa',
+  'cta.viewAll': 'Ver todas as vagas',
+  'label.posted': 'Publicada',
+  'label.salary': 'Salário',
+  'label.remote': 'Remoto',
+  'label.seniority': 'Senioridade',
+  'label.source': 'Fonte',
+  'label.updated': 'Atualizado',
+  'list.empty': 'Nenhuma vaga corresponde a este filtro por enquanto. Volte amanhã.',
+  'footer.disclaimer':
+    'slateremote.com indexa vagas publicadas publicamente. Candidate-se diretamente no site do empregador.',
+  'footer.refreshed': 'Índice atualizado',
+};
+
+const it: Dict = {
+  'site.tagline': 'Lavori tech remoti da tutto il web, aggiornati ogni giorno.',
+  'site.intro':
+    'Un indice curato di ruoli remoti di engineering, data, design e prodotto, aggregato dalle API pubbliche delle otto principali job board.',
+  'nav.jobs': 'Lavori',
+  'nav.companies': 'Aziende',
+  'nav.salaries': 'Stipendi',
+  'nav.locations': 'Paesi',
+  'nav.guides': 'Guide',
+  'cta.apply': 'Candidati sul sito aziendale',
+  'cta.viewAll': 'Vedi tutti i lavori',
+  'label.posted': 'Pubblicata',
+  'label.salary': 'Stipendio',
+  'label.remote': 'Remoto',
+  'label.seniority': 'Livello',
+  'label.source': 'Fonte',
+  'label.updated': 'Aggiornato',
+  'list.empty': 'Nessun lavoro corrisponde a questo filtro per ora. Torna domani.',
+  'footer.disclaimer':
+    'slateremote.com indicizza lavori pubblicamente elencati. Candidati direttamente sul sito del datore di lavoro.',
+  'footer.refreshed': 'Indice aggiornato',
+};
+
+const pl: Dict = {
+  'site.tagline': 'Zdalne prace tech z całej sieci, aktualizowane codziennie.',
+  'site.intro':
+    'Wyselekcjonowany indeks zdalnych stanowisk inżynierskich, data, design i produktowych, agregowany z publicznych API ośmiu największych portali pracy.',
+  'nav.jobs': 'Praca',
+  'nav.companies': 'Firmy',
+  'nav.salaries': 'Wynagrodzenia',
+  'nav.locations': 'Kraje',
+  'nav.guides': 'Poradniki',
+  'cta.apply': 'Aplikuj na stronie firmy',
+  'cta.viewAll': 'Zobacz wszystkie oferty',
+  'label.posted': 'Opublikowano',
+  'label.salary': 'Wynagrodzenie',
+  'label.remote': 'Zdalna',
+  'label.seniority': 'Poziom',
+  'label.source': 'Źródło',
+  'label.updated': 'Zaktualizowano',
+  'list.empty': 'Brak ofert dla tego filtra. Zajrzyj jutro.',
+  'footer.disclaimer':
+    'slateremote.com indeksuje publicznie opublikowane oferty. Aplikuj bezpośrednio na stronie pracodawcy.',
+  'footer.refreshed': 'Indeks zaktualizowany',
+};
+
+const DICTS: Record<Locale, Dict> = { en, fr, es, de, pt, it, pl };
 
 export function t(locale: Locale, key: keyof typeof en): string {
   return DICTS[locale][key] ?? en[key] ?? key;
