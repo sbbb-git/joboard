@@ -52,7 +52,8 @@ export const metadata: Metadata = {
   },
 };
 
-const CF_ANALYTICS_TOKEN = process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN;
+const CF_ANALYTICS_TOKEN =
+  process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN ?? 'c936ca5662e240edb31f83de853086de';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
