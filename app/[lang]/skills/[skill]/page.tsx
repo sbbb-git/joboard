@@ -7,6 +7,7 @@ import { SKILLS, SKILL_MAP } from '@/lib/skills';
 import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { JobNormalized, Locale } from '@/lib/types';
+import { AiByJobPromo } from '@/components/AiByJobPromo';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -66,6 +67,8 @@ export default function SkillPage({ params }: { params: { lang: Locale; skill: s
       <section className="prose-body text-[0.95rem] leading-relaxed">
         <p>{s.bodyEn}</p>
       </section>
+
+      {s.category === 'ai' && <AiByJobPromo context={s.name} />}
 
       <section>
         <h2 className="text-lg font-semibold mb-3">

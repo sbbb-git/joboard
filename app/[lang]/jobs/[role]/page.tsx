@@ -5,9 +5,12 @@ import { jobsByRole } from '@/lib/jobs';
 import { ROLES, type Locale, type Role } from '@/lib/types';
 import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
+import { AiByJobPromo } from '@/components/AiByJobPromo';
 
 export const dynamicParams = false;
 export const revalidate = false;
+
+const AI_ROLES = new Set<Role>(['ml-ai', 'data']);
 
 export function generateStaticParams() {
   return LOCALES.flatMap((lang) => ROLES.map((role) => ({ lang, role })));
@@ -32,11 +35,19 @@ export default function RolePage({ params }: { params: { lang: Locale; role: str
   const role = params.role as Role;
   const jobs = jobsByRole(role);
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-semibold capitalize">Remote {role.replace('-', ' ')} jobs</h1>
-        <p className="text-muted text-sm mt-1">{jobs.length} open positions</p>
+    <div className="space-y-8">
+      <header className="border-b border-line pb-5">
+        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">Role</p>
+        <h1 className="font-display text-3xl md:text-4xl font-bold tracking-tighter text-ink mt-1 capitalize">
+          Remote {role.replace('-', ' ')} jobs
+        </h1>
+        <p className="text-graphite text-sm mt-2">{jobs.length} open positions</p>
       </header>
+
+      {AI_ROLES.has(role) && (
+        <AiByJobPromo context={role === 'ml-ai' ? 'ML & AI engineers' : 'data engineers'} variant="banner" />
+      )}
+
       {jobs.length === 0 ? (
         <p className="text-muted text-sm">{t(params.lang, 'list.empty')}</p>
       ) : (

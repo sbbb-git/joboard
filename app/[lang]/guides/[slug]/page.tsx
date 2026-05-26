@@ -6,6 +6,9 @@ import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { GUIDES, GUIDE_MAP } from '@/lib/guides';
 import { NomadBanking } from '@/components/NomadBanking';
+import { AiByJobPromo } from '@/components/AiByJobPromo';
+
+const AI_KEYWORDS = /\b(ai|ml|machine learning|llm|prompt|data scientist|ml engineer)\b/i;
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -86,6 +89,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
       </header>
       <div className="prose-body whitespace-pre-line text-[0.95rem] leading-relaxed">{g.body}</div>
 
+      {AI_KEYWORDS.test(g.title) && <AiByJobPromo />}
       {(g.category === 'visa' || g.category === 'tax') && <NomadBanking />}
 
       {g.faqs && g.faqs.length > 0 && (
