@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { flagFor } from '@/lib/flags';
 import { ROLES, type Locale, type Role, type Seniority } from '@/lib/types';
+import { CompanyLogo } from './CompanyLogo';
 
 interface SlimJob {
   i: string; t: string; c: string; cs: string; l: string; lc: string | null;
@@ -29,18 +30,6 @@ function relativeDate(iso: string): string {
   if (days === 1) return '1d';
   if (days < 30) return `${days}d`;
   return `${Math.floor(days / 30)}mo`;
-}
-
-function tileColors(name: string): { bg: string; fg: string } {
-  const p = [
-    { bg: 'bg-forestSoft', fg: 'text-forest' },
-    { bg: 'bg-terracottaSoft', fg: 'text-terracotta' },
-    { bg: 'bg-amberSoft', fg: 'text-amber' },
-    { bg: 'bg-sand', fg: 'text-ink' },
-  ];
-  let h = 0;
-  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
-  return p[h % p.length];
 }
 
 export function JobSearch({ locale }: { locale: Locale }) {
@@ -600,16 +589,13 @@ function SlimJobCard({ job, locale }: { job: SlimJob; locale: Locale }) {
         }`
       : null;
   const flag = flagFor(job.lc);
-  const tile = tileColors(job.c);
   return (
     <Link
       href={`/${locale}/job/${job.i}`}
       className="group block rounded-2xl bg-paper border border-line shadow-soft hover-lift hover:shadow-lift hover:border-ink/20 p-4"
     >
       <div className="flex items-start gap-3">
-        <div className={`flex-shrink-0 w-11 h-11 rounded-xl ${tile.bg} ${tile.fg} flex items-center justify-center text-base font-bold`}>
-          {job.c.charAt(0).toUpperCase()}
-        </div>
+        <CompanyLogo company={job.c} companySlug={job.cs} role={job.r} size={44} />
         <div className="min-w-0 flex-1">
           <div className="flex items-start justify-between gap-2">
             <h3 className="text-[15px] font-semibold text-ink leading-snug line-clamp-2 group-hover:text-forest transition-colors">

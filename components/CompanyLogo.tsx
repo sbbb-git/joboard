@@ -1,44 +1,66 @@
 'use client';
 
 import { useState } from 'react';
+import type { Role } from '@/lib/types';
 
 interface Props {
   company: string;
   companySlug: string;
+  role?: Role;
   size?: number; // pixel size of the square
   className?: string;
 }
 
-function tileColors(name: string): { bg: string; fg: string } {
-  const palette = [
-    { bg: 'bg-forestSoft', fg: 'text-forest' },
-    { bg: 'bg-terracottaSoft', fg: 'text-terracotta' },
-    { bg: 'bg-amberSoft', fg: 'text-amber' },
-    { bg: 'bg-sand', fg: 'text-ink' },
+function gradient(name: string): string {
+  const grads = [
+    'from-forestSoft to-amberSoft',
+    'from-terracottaSoft to-amberSoft',
+    'from-forestSoft to-terracottaSoft',
+    'from-amberSoft to-sand',
+    'from-sand to-terracottaSoft',
+    'from-forestSoft to-sand',
   ];
   let h = 0;
   for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
-  return palette[h % palette.length];
+  return grads[h % grads.length];
 }
 
-// Real company logo via Clearbit (no API key, free for our scale). Gracefully
-// falls back to a deterministic colored letter tile when the domain guess fails.
-export function CompanyLogo({ company, companySlug, size = 44, className = '' }: Props) {
+const ROLE_EMOJI: Record<string, string> = {
+  developer: '👩‍💻',
+  frontend: '🎨',
+  backend: '🛠️',
+  fullstack: '🧩',
+  mobile: '📱',
+  data: '📊',
+  'ml-ai': '✨',
+  devops: '🔧',
+  security: '🔒',
+  qa: '🧪',
+  product: '🧭',
+  design: '🖌️',
+};
+
+// Real company logo via Clearbit (no API key). Gracefully falls back to a
+// deterministic gradient tile with a role-themed emoji when the domain
+// guess fails — much nicer than a single random letter.
+export function CompanyLogo({ company, companySlug, role, size = 44, className = '' }: Props) {
   const [errored, setErrored] = useState(false);
-  const tile = tileColors(company);
-  const initial = (company.charAt(0) || '?').toUpperCase();
-  // Best guess: companyslug.com. Works ~60% of the time for tech companies.
-  // The onError handler swaps to the letter tile when the guess fails.
   const url = `https://logo.clearbit.com/${companySlug.replace(/-/g, '')}.com`;
   const dim = { width: size, height: size };
+  const emoji = role ? ROLE_EMOJI[role] ?? '·' : '·';
+  const fontSize = Math.max(16, Math.round(size * 0.5));
 
   if (errored) {
     return (
       <div
         style={dim}
-        className={`flex-shrink-0 rounded-xl ${tile.bg} ${tile.fg} flex items-center justify-center font-bold ${className}`}
+        className={`flex-shrink-0 rounded-xl bg-gradient-to-br ${gradient(company)} flex items-center justify-center ${className}`}
+        aria-hidden={!role}
+        aria-label={role ? `${role} role` : undefined}
       >
-        {initial}
+        <span style={{ fontSize }} className="leading-none select-none">
+          {emoji}
+        </span>
       </div>
     );
   }

@@ -141,7 +141,7 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
         {/* Hero */}
         <header className="rounded-2xl border border-line bg-paper shadow-soft p-5 md:p-7">
           <div className="flex items-start gap-4">
-            <CompanyLogo company={job.company} companySlug={job.companySlug} size={56} />
+            <CompanyLogo company={job.company} companySlug={job.companySlug} role={job.role} size={56} />
             <div className="flex-1 min-w-0">
               <Link
                 href={localePath(params.lang, `companies/${job.companySlug}`)}

@@ -29,7 +29,7 @@ export function JobCard({ job, locale }: { job: JobNormalized; locale: Locale })
       className="group block rounded-2xl bg-paper border border-line shadow-soft hover-lift hover:shadow-lift hover:border-ink/20 p-4"
     >
       <div className="flex items-start gap-3">
-        <CompanyLogo company={job.company} companySlug={job.companySlug} size={44} />
+        <CompanyLogo company={job.company} companySlug={job.companySlug} role={job.role} size={44} />
         <div className="min-w-0 flex-1">
           <div className="flex items-start justify-between gap-2">
             <h3 className="text-[15px] font-semibold text-ink leading-snug line-clamp-2 group-hover:text-forest transition-colors">
