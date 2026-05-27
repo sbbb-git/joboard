@@ -85,3 +85,12 @@ a { color: inherit; }
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.04em;
 }
+
+/* Hide horizontal scrollbar on chip rows */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
