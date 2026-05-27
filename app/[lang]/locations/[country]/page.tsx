@@ -5,6 +5,8 @@ import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { NomadCTA } from '@/components/NomadCTA';
+import { NomadEssentials } from '@/components/NomadEssentials';
+import { NomadBanking } from '@/components/NomadBanking';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -55,6 +57,8 @@ export default function LocationPage({
         </div>
       )}
       <NomadCTA context={{ type: 'location', label: labelTitle, country: labelTitle }} />
+      <NomadEssentials city={labelTitle} />
+      <NomadBanking context={labelTitle} country={labelTitle} />
     </div>
   );
 }

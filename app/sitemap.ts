@@ -69,21 +69,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const cmp of COMPARISONS) {
       entries.push({ url: `${root}/compare/${cmp.slug}`, lastModified: now, priority: 0.65 });
     }
-    for (const c of topCountries(20)) {
+    // All countries that have at least one job (matches generateStaticParams in locations/[country])
+    for (const c of topCountries(1000)) {
       entries.push({ url: `${root}/locations/${c.slug}`, lastModified: now, priority: 0.6 });
     }
-    for (const c of topCompanies(100)) {
+    // All companies (matches generateStaticParams in companies/[name])
+    for (const c of topCompanies(10000)) {
       entries.push({ url: `${root}/companies/${c.slug}`, lastModified: now, priority: 0.5 });
     }
   }
 
-  for (const job of allJobs()) {
-    if (isExpired(job)) continue;
-    entries.push({
-      url: `${SITE_URL}/en/job/${job.id}`,
-      lastModified: new Date(job.postedAt),
-      priority: 0.4,
-    });
+  // Every active job, every locale (each locale renders the same job at a distinct URL)
+  const activeJobs = allJobs().filter((j) => !isExpired(j));
+  for (const lang of LOCALES) {
+    for (const job of activeJobs) {
+      entries.push({
+        url: `${SITE_URL}/${lang}/job/${job.id}`,
+        lastModified: new Date(job.postedAt),
+        priority: 0.4,
+      });
+    }
   }
 
   return entries.slice(0, 49_500);

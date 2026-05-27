@@ -26,11 +26,19 @@ export function generateMetadata({
   const job = jobById(params.id);
   if (!job) return { title: 'Job not found' };
   const expired = isExpired(job);
+  // Truncate to keep titles under ~60 chars (Google search snippet limit)
+  const fullTitle = `${job.title} · ${job.company}`;
+  const title = fullTitle.length <= 60 ? fullTitle : fullTitle.slice(0, 57).trimEnd() + '…';
+  // Build a richer description: first 200 chars of body, padded with role + location signals
+  const cleanBody = job.description.replace(/\s+/g, ' ').trim();
+  const bodyExcerpt = cleanBody.slice(0, 140);
+  const description =
+    `Remote ${job.role.replace('-', ' ')} role at ${job.company}${job.locationCountry ? ` for candidates in ${job.locationCountry}` : ''}. ${bodyExcerpt}`.slice(0, 160);
   return buildMetadata({
     locale: params.lang,
     path: `job/${params.id}`,
-    title: `${job.title} · ${job.company}`,
-    description: job.description.slice(0, 160).replace(/\s+/g, ' '),
+    title,
+    description,
     index: !expired,
   });
 }

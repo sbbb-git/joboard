@@ -59,7 +59,11 @@ jobs:
           NEXT_PUBLIC_CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
           NEXT_PUBLIC_STRIPE_FEATURED_30D: ${{ secrets.STRIPE_FEATURED_30D }}
           NEXT_PUBLIC_STRIPE_SPONSORED_TOP: ${{ secrets.STRIPE_SPONSORED_TOP }}
+          NEXT_PUBLIC_BEEHIIV_EMBED: ${{ secrets.BEEHIIV_EMBED }}
         run: npm run build
+
+      - name: Patch <html lang> per locale
+        run: node scripts/fix_html_lang.mjs
 
       - name: Deploy to Cloudflare Pages
         env:
