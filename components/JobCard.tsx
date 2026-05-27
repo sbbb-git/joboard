@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { localePath } from '@/lib/i18n';
 import { flagFor } from '@/lib/flags';
 import type { JobNormalized, Locale } from '@/lib/types';
+import { CompanyLogo } from './CompanyLogo';
+import { SourceLogo } from './SourceLogo';
 
 function relativeDate(iso: string): string {
   const days = Math.floor((Date.now() - new Date(iso).getTime()) / 86_400_000);
@@ -12,19 +14,6 @@ function relativeDate(iso: string): string {
   return m === 1 ? '1mo ago' : `${m}mo ago`;
 }
 
-// Deterministic pastel from company name for the avatar tile
-function tileColors(name: string): { bg: string; fg: string } {
-  const palette = [
-    { bg: 'bg-forestSoft', fg: 'text-forest' },
-    { bg: 'bg-terracottaSoft', fg: 'text-terracotta' },
-    { bg: 'bg-amberSoft', fg: 'text-amber' },
-    { bg: 'bg-sand', fg: 'text-ink' },
-  ];
-  let h = 0;
-  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
-  return palette[h % palette.length];
-}
-
 export function JobCard({ job, locale }: { job: JobNormalized; locale: Locale }) {
   const salary =
     job.salaryMin || job.salaryMax
@@ -33,8 +22,6 @@ export function JobCard({ job, locale }: { job: JobNormalized; locale: Locale })
         }`
       : null;
   const flag = flagFor(job.locationCountry);
-  const initial = job.company.charAt(0).toUpperCase();
-  const tile = tileColors(job.company);
 
   return (
     <Link
@@ -42,11 +29,7 @@ export function JobCard({ job, locale }: { job: JobNormalized; locale: Locale })
       className="group block rounded-2xl bg-paper border border-line shadow-soft hover-lift hover:shadow-lift hover:border-ink/20 p-4"
     >
       <div className="flex items-start gap-3">
-        <div
-          className={`flex-shrink-0 w-11 h-11 rounded-xl ${tile.bg} ${tile.fg} flex items-center justify-center text-base font-bold`}
-        >
-          {initial}
-        </div>
+        <CompanyLogo company={job.company} companySlug={job.companySlug} size={44} />
         <div className="min-w-0 flex-1">
           <div className="flex items-start justify-between gap-2">
             <h3 className="text-[15px] font-semibold text-ink leading-snug line-clamp-2 group-hover:text-forest transition-colors">
@@ -60,10 +43,13 @@ export function JobCard({ job, locale }: { job: JobNormalized; locale: Locale })
             <span className="font-medium text-graphite">{job.company}</span>
             <span className="text-subtle"> · {flag} {job.location}</span>
           </p>
-          <div className="mt-3 flex flex-wrap gap-1.5 text-[11px]">
+          <div className="mt-3 flex flex-wrap items-center gap-1.5 text-[11px]">
             <Tag tone="forest">{job.role.replace('-', ' ')}</Tag>
             <Tag tone="neutral">{job.seniority}</Tag>
             {salary && <Tag tone="amber">{salary}</Tag>}
+            <span className="ml-auto flex items-center gap-1 text-subtle">
+              <SourceLogo source={job.source} size={14} />
+            </span>
           </div>
         </div>
       </div>

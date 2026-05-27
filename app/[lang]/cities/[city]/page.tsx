@@ -11,6 +11,7 @@ import { NomadBanking } from '@/components/NomadBanking';
 import { NomadEssentials } from '@/components/NomadEssentials';
 import { NomadCTA } from '@/components/NomadCTA';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { CityHero } from '@/components/CityHero';
 import { localePath } from '@/lib/i18n';
 
 export const dynamicParams = false;
@@ -52,7 +53,7 @@ export default function CityPage({ params }: { params: { lang: Locale; city: str
   const related = CITIES.filter((x) => x.country === c.country && x.slug !== c.slug).slice(0, 4);
 
   return (
-    <div className="max-w-3xl mx-auto space-y-8">
+    <div className="max-w-4xl mx-auto space-y-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
@@ -64,13 +65,7 @@ export default function CityPage({ params }: { params: { lang: Locale; city: str
           { label: c.name },
         ]}
       />
-      <header className="border-b border-line pb-4">
-        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{c.country}</p>
-        <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1.5">
-          Remote tech jobs in {c.name}
-        </h1>
-        <p className="text-graphite text-base mt-3">{c.blurb}</p>
-      </header>
+      <CityHero slug={c.slug} name={c.name} country={c.country} blurb={c.blurb} />
 
       <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
         <Stat label="Cost of living" value={`$${c.costOfLivingUsd.toLocaleString()}/mo`} />

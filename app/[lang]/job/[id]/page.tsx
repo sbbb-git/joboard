@@ -10,6 +10,8 @@ import { flagFor } from '@/lib/flags';
 import { NomadCTA } from '@/components/NomadCTA';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { BookmarkButton } from '@/components/BookmarkButton';
+import { CompanyLogo } from '@/components/CompanyLogo';
+import { SourceLogo } from '@/components/SourceLogo';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -41,18 +43,6 @@ export function generateMetadata({
     description,
     index: !expired,
   });
-}
-
-function tileColors(name: string): { bg: string; fg: string } {
-  const palette = [
-    { bg: 'bg-forestSoft', fg: 'text-forest' },
-    { bg: 'bg-terracottaSoft', fg: 'text-terracotta' },
-    { bg: 'bg-amberSoft', fg: 'text-amber' },
-    { bg: 'bg-sand', fg: 'text-ink' },
-  ];
-  let h = 0;
-  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
-  return palette[h % palette.length];
 }
 
 function relativeDate(iso: string): string {
@@ -99,7 +89,6 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
   const job = jobById(params.id);
   if (!job) notFound();
   const expired = isExpired(job);
-  const tile = tileColors(job.company);
   const flag = flagFor(job.locationCountry);
 
   const related = allJobs()
@@ -152,11 +141,7 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
         {/* Hero */}
         <header className="rounded-2xl border border-line bg-paper shadow-soft p-5 md:p-7">
           <div className="flex items-start gap-4">
-            <div
-              className={`flex-shrink-0 w-14 h-14 rounded-xl ${tile.bg} ${tile.fg} flex items-center justify-center text-xl font-bold`}
-            >
-              {job.company.charAt(0).toUpperCase()}
-            </div>
+            <CompanyLogo company={job.company} companySlug={job.companySlug} size={56} />
             <div className="flex-1 min-w-0">
               <Link
                 href={localePath(params.lang, `companies/${job.companySlug}`)}
@@ -168,7 +153,11 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
                 {job.title}
               </h1>
               <p className="text-sm text-muted mt-2">
-                {flag} {job.location} · Posted {relativeDate(job.postedAt)} · via {job.source}
+                <span>{flag} {job.location} · Posted {relativeDate(job.postedAt)} · via</span>{' '}
+                <span className="inline-flex items-baseline gap-1 align-middle">
+                  <SourceLogo source={job.source} size={14} />
+                  <span>{job.source}</span>
+                </span>
               </p>
             </div>
           </div>
