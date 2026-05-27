@@ -18,7 +18,7 @@ export interface ScraperResult {
   jobs: JobNormalized[];
 }
 
-const SCRAPERS: Array<{ name: string; fn: () => Promise<JobNormalized[]> }> = [
+export const SCRAPERS: Array<{ name: string; fn: () => Promise<JobNormalized[]> }> = [
   { name: 'remotive', fn: scrapeRemotive },
   { name: 'remoteok', fn: scrapeRemoteOk },
   { name: 'arbeitnow', fn: scrapeArbeitnow },

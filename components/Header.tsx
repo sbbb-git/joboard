@@ -27,7 +27,7 @@ export function Header({ locale, path }: { locale: Locale; path: string }) {
             Slow travel guides ↗
           </a>
           <Link
-            href={localePath(locale, 'submit')}
+            href={localePath(locale, 'employers')}
             className="ml-1 px-2.5 sm:px-3 py-1.5 text-xs font-semibold text-bg bg-ink rounded-full hover:bg-forest transition-colors whitespace-nowrap"
           >
             Post a job
