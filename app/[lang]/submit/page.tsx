@@ -21,8 +21,8 @@ export function generateMetadata({ params }: { params: { lang: Locale } }): Meta
 }
 
 // Replace these with the Stripe Payment Link URLs once created on Stripe:
-const FEATURED_30D_URL = process.env.NEXT_PUBLIC_STRIPE_FEATURED_30D || 'mailto:hello@slateremote.com?subject=Featured%20job%2099%20USD';
-const SPONSORED_TOP_URL = process.env.NEXT_PUBLIC_STRIPE_SPONSORED_TOP || 'mailto:hello@slateremote.com?subject=Sponsored%20placement%20199%20USD';
+const FEATURED_30D_URL = process.env.NEXT_PUBLIC_STRIPE_FEATURED_30D || 'mailto:hello@slateremote.com?subject=Featured%20job%2049%20USD';
+const SPONSORED_TOP_URL = process.env.NEXT_PUBLIC_STRIPE_SPONSORED_TOP || 'mailto:hello@slateremote.com?subject=Sponsored%20placement%2099%20USD';
 
 export default function SubmitPage() {
   return (
@@ -49,7 +49,7 @@ export default function SubmitPage() {
         <article className="border border-line rounded-lg p-5 bg-white">
           <h2 className="font-semibold">Featured listing</h2>
           <p className="text-xs uppercase tracking-wider text-muted mt-1">30 days</p>
-          <p className="text-3xl font-semibold mt-3">$99</p>
+          <p className="text-3xl font-semibold mt-3">$49</p>
           <ul className="text-sm text-muted mt-4 space-y-1.5">
             <li>· Top of the front page for 30 days</li>
             <li>· Top of the matching role page</li>
@@ -67,7 +67,7 @@ export default function SubmitPage() {
         <article className="border border-line rounded-lg p-5 bg-forestSoft">
           <h2 className="font-semibold">Sponsored placement</h2>
           <p className="text-xs uppercase tracking-wider text-forest mt-1">Per week</p>
-          <p className="text-3xl font-semibold mt-3">$199<span className="text-base text-muted">/week</span></p>
+          <p className="text-3xl font-semibold mt-3">$99<span className="text-base text-muted">/week</span></p>
           <ul className="text-sm text-muted mt-4 space-y-1.5">
             <li>· Pinned at the very top across all relevant pages</li>
             <li>· Distinct sponsor tag</li>
