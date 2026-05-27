@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { LOCALES } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
-import { AFFILIATES, type AffiliateEntry } from '@/lib/affiliates';
+import { AFFILIATES, wiseUrlForLocale, type AffiliateEntry } from '@/lib/affiliates';
 import { AffiliateCard } from '@/components/AffiliateCard';
 
 export const dynamicParams = false;
@@ -133,7 +133,9 @@ export default function StackPage({ params }: { params: { lang: Locale } }) {
       </nav>
 
       {SECTIONS.map((s) => {
-        const entries = AFFILIATES.filter((a) => s.categories.includes(a.category));
+        const entries = AFFILIATES.filter((a) => s.categories.includes(a.category)).map((a) =>
+          a.slug === 'wise' ? { ...a, url: wiseUrlForLocale(params.lang) } : a,
+        );
         if (entries.length === 0) return null;
         return (
           <section key={s.id} id={s.id} className="scroll-mt-24">

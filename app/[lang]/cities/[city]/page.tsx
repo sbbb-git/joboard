@@ -99,7 +99,7 @@ export default function CityPage({ params }: { params: { lang: Locale; city: str
 
       <NomadEssentials city={c.name} />
 
-      <NomadBanking context={c.name} country={c.country} />
+      <NomadBanking context={c.name} country={c.country} locale={params.lang} />
 
       {related.length > 0 && (
         <section className="border-t border-line pt-6">

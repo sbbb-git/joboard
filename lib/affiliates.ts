@@ -260,3 +260,33 @@ export const AFFILIATE_MAP: Record<string, AffiliateEntry> = Object.fromEntries(
 export function affiliatesByCategory(...cats: AffiliateEntry['category'][]): AffiliateEntry[] {
   return AFFILIATES.filter((a) => cats.includes(a.category));
 }
+
+// Wise gives us currency-specific landing pages. Routing each locale to the
+// most-likely currency lifts signup conversion meaningfully.
+const WISE_URL_BY_CURRENCY: Record<string, string> = {
+  USD: 'https://wise.prf.hn/click/camref:1100l5KwDm',
+  EUR: 'https://wise.prf.hn/click/camref:1100l5KwDi',
+  GBP: 'https://wise.prf.hn/click/camref:1100l5KwDj',
+  JPY: 'https://wise.prf.hn/click/camref:1100l5KwDk',
+  AUD: 'https://wise.prf.hn/click/camref:1100l5KwDh',
+};
+
+const LOCALE_TO_CURRENCY: Record<string, string> = {
+  en: 'USD',
+  fr: 'EUR',
+  es: 'EUR',
+  de: 'EUR',
+  pt: 'EUR',
+  it: 'EUR',
+  pl: 'EUR',
+};
+
+export function wiseUrlForLocale(locale?: string | null): string {
+  const currency = LOCALE_TO_CURRENCY[locale ?? ''] ?? 'USD';
+  return WISE_URL_BY_CURRENCY[currency] ?? WISE_URL_BY_CURRENCY.USD;
+}
+
+// Returns the wise entry with its URL adapted to the visitor locale.
+export function wiseForLocale(locale?: string | null): AffiliateEntry {
+  return { ...AFFILIATE_MAP.wise, url: wiseUrlForLocale(locale) };
+}

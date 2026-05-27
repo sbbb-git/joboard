@@ -1,5 +1,6 @@
-import { AFFILIATE_MAP } from '@/lib/affiliates';
+import { AFFILIATE_MAP, wiseForLocale } from '@/lib/affiliates';
 import { AffiliateGrid } from './AffiliateCard';
+import type { Locale } from '@/lib/types';
 
 const EU_COUNTRIES = new Set([
   'Portugal', 'Spain', 'Germany', 'France', 'Italy', 'Netherlands', 'Belgium',
@@ -10,11 +11,14 @@ const EU_COUNTRIES = new Set([
 export function NomadBanking({
   context,
   country,
+  locale,
 }: {
   context?: string;
   country?: string;
+  locale?: Locale;
 }) {
-  const entries = [AFFILIATE_MAP.wise, AFFILIATE_MAP.revolut];
+  // Wise URL adapts to the visitor's currency (USD on en, EUR elsewhere)
+  const entries = [wiseForLocale(locale), AFFILIATE_MAP.revolut];
   if (country && EU_COUNTRIES.has(country)) entries.push(AFFILIATE_MAP.qonto);
 
   return (

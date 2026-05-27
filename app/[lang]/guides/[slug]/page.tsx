@@ -120,7 +120,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
       {(g.category === 'visa' || g.category === 'tax') && (
         <>
           <NomadEssentials />
-          <NomadBanking />
+          <NomadBanking locale={params.lang} />
         </>
       )}
       {g.category === 'lifestyle' && <NomadEssentials />}
