@@ -10,6 +10,8 @@ const DOMAINS: Record<string, string> = {
   jobicy: 'jobicy.com',
   themuse: 'themuse.com',
   hackernews: 'news.ycombinator.com',
+  workingnomads: 'workingnomads.com',
+  jobspresso: 'jobspresso.co',
 };
 
 const LABELS: Record<string, string> = {
@@ -21,6 +23,8 @@ const LABELS: Record<string, string> = {
   jobicy: 'Jobicy',
   themuse: 'The Muse',
   hackernews: 'Hacker News',
+  workingnomads: 'Working Nomads',
+  jobspresso: 'Jobspresso',
 };
 
 export function SourceLogo({

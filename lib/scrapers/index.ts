@@ -7,6 +7,8 @@ import { scrapeHimalayas } from './himalayas';
 import { scrapeJobicy } from './jobicy';
 import { scrapeTheMuse } from './themuse';
 import { scrapeHackerNews } from './hackernews';
+import { scrapeWorkingNomads } from './workingnomads';
+import { scrapeJobspresso } from './jobspresso';
 
 export interface ScraperResult {
   source: string;
@@ -25,6 +27,8 @@ const SCRAPERS: Array<{ name: string; fn: () => Promise<JobNormalized[]> }> = [
   { name: 'jobicy', fn: scrapeJobicy },
   { name: 'themuse', fn: scrapeTheMuse },
   { name: 'hackernews', fn: scrapeHackerNews },
+  { name: 'workingnomads', fn: scrapeWorkingNomads },
+  { name: 'jobspresso', fn: scrapeJobspresso },
 ];
 
 export async function runAllScrapers(): Promise<ScraperResult[]> {
