@@ -106,13 +106,16 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
 
       {AI_KEYWORDS.test(g.title) && (
         <>
-          <AiToolsCTA context={{ type: 'guide', label: g.title.replace(/^(How to become a |Best |Remote )/i, '').toLowerCase() }} />
+          <AiToolsCTA
+            context={{ type: 'guide', label: g.title.replace(/^(How to become a |Best |Remote )/i, '').toLowerCase() }}
+            locale={params.lang}
+          />
           <EarnWithAi />
         </>
       )}
       {g.category === 'tools' && <RemoteTools />}
       {(g.category === 'lifestyle' || g.category === 'visa' || g.category === 'tax' || g.category === 'finding' || g.category === 'career') && (
-        <NomadCTA />
+        <NomadCTA  locale={params.lang} />
       )}
       {(g.category === 'visa' || g.category === 'tax') && (
         <>

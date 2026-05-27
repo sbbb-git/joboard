@@ -6,7 +6,7 @@ import { ROLES } from '@/lib/types';
 import { SKILLS } from '@/lib/skills';
 import { CITIES } from '@/lib/cities';
 import { Logo } from './Logo';
-import { SISTER_NOMAD, SISTER_AI } from '@/lib/sister-sites';
+import { SISTER_NOMAD, SISTER_AI, slowmadlyHomeUrl, aiByJobHomeUrl } from '@/lib/sister-sites';
 
 export function Footer({ locale }: { locale: Locale }) {
   const meta = readJobs();
@@ -72,7 +72,7 @@ export function Footer({ locale }: { locale: Locale }) {
         {/* Sister sites cross-link band */}
         <div className="rounded-2xl bg-forestSoft p-6 grid sm:grid-cols-2 gap-4">
           <a
-            href={SISTER_NOMAD.url}
+            href={slowmadlyHomeUrl(locale)}
             target="_blank"
             rel="noopener"
             className="block rounded-xl bg-paper border border-line p-5 hover:border-ink hover-lift"
@@ -86,7 +86,7 @@ export function Footer({ locale }: { locale: Locale }) {
             <p className="text-xs text-muted mt-1.5">{SISTER_NOMAD.tagline}</p>
           </a>
           <a
-            href={SISTER_AI.url}
+            href={aiByJobHomeUrl(locale)}
             target="_blank"
             rel="noopener"
             className="block rounded-xl bg-paper border border-line p-5 hover:border-ink hover-lift"

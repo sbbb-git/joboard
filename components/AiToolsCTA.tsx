@@ -1,4 +1,5 @@
-import { SISTER_AI, aiByJobRoleUrl } from '@/lib/sister-sites';
+import { SISTER_AI, aiByJobRoleUrl, aiByJobHomeUrl } from '@/lib/sister-sites';
+import type { Locale } from '@/lib/types';
 
 type Context =
   | { type: 'role'; label: string }
@@ -17,23 +18,25 @@ function headline(c?: Context): string {
   }
 }
 
-function targetUrl(c?: Context): string {
-  if (!c) return SISTER_AI.url;
+function targetUrl(c: Context | undefined, locale: Locale | undefined): string {
+  if (!c) return aiByJobHomeUrl(locale);
   if (c.type === 'role' || c.type === 'skill') {
-    return aiByJobRoleUrl(c.label);
+    return aiByJobRoleUrl(c.label, locale);
   }
-  return SISTER_AI.url;
+  return aiByJobHomeUrl(locale);
 }
 
 export function AiToolsCTA({
   context,
+  locale,
   variant = 'card',
 }: {
   context?: Context;
+  locale?: Locale;
   variant?: 'card' | 'inline';
 }) {
   const title = headline(context);
-  const url = targetUrl(context);
+  const url = targetUrl(context, locale);
 
   if (variant === 'inline') {
     return (

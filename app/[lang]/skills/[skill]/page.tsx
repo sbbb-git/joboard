@@ -82,7 +82,7 @@ export default function SkillPage({ params }: { params: { lang: Locale; skill: s
 
       {s.category === 'ai' && (
         <>
-          <AiToolsCTA context={{ type: 'skill', label: s.name }} />
+          <AiToolsCTA context={{ type: 'skill', label: s.name }}  locale={params.lang} />
           <EarnWithAi />
         </>
       )}

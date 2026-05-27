@@ -95,7 +95,7 @@ export default function CityPage({ params }: { params: { lang: Locale; city: str
         )}
       </section>
 
-      <NomadCTA context={{ type: 'city', label: c.name, country: c.country }} />
+      <NomadCTA context={{ type: 'city', label: c.name, country: c.country }}  locale={params.lang} />
 
       <NomadEssentials city={c.name} />
 

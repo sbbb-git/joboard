@@ -19,16 +19,56 @@ export const SISTER_AI: SisterSite = {
   tagline: 'The best AI tools for every job, in 7 languages.',
 };
 
-// Map a city/country to a likely slowmadly.com path. Falls back to root.
-export function slowmadlyCountryUrl(country: string | undefined | null): string {
-  if (!country) return SISTER_NOMAD.url;
-  const slug = country.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-  return `${SISTER_NOMAD.url}/${slug}`;
+// Locales the sister network publishes in. If the current visitor is on a
+// locale outside this set, we fall back to English on the destination site
+// rather than producing a broken URL.
+const SUPPORTED_LOCALES = new Set(['en', 'fr', 'es', 'de', 'pt', 'it', 'pl']);
+const DEFAULT_LOCALE = 'en';
+
+function localeSegment(locale?: string | null): string {
+  if (!locale) return DEFAULT_LOCALE;
+  return SUPPORTED_LOCALES.has(locale) ? locale : DEFAULT_LOCALE;
 }
 
-// Map a role to a likely ai-by-job.com path. Falls back to root.
-export function aiByJobRoleUrl(role: string | undefined | null): string {
-  if (!role) return SISTER_AI.url;
-  const slug = role.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-  return `${SISTER_AI.url}/en/jobs/${slug}`;
+function slugify(input: string): string {
+  return input
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+// ─── Slowmadly URL builders ────────────────────────────────
+export function slowmadlyHomeUrl(locale?: string | null): string {
+  return `${SISTER_NOMAD.url}/${localeSegment(locale)}`;
+}
+
+export function slowmadlyCountryUrl(
+  country: string | undefined | null,
+  locale?: string | null,
+): string {
+  if (!country) return slowmadlyHomeUrl(locale);
+  return `${SISTER_NOMAD.url}/${localeSegment(locale)}/${slugify(country)}`;
+}
+
+// ─── AI by Job URL builders ────────────────────────────────
+export function aiByJobHomeUrl(locale?: string | null): string {
+  return `${SISTER_AI.url}/${localeSegment(locale)}`;
+}
+
+export function aiByJobRoleUrl(
+  role: string | undefined | null,
+  locale?: string | null,
+): string {
+  if (!role) return aiByJobHomeUrl(locale);
+  return `${SISTER_AI.url}/${localeSegment(locale)}/jobs/${slugify(role)}`;
+}
+
+export function aiByJobGuidesUrl(locale?: string | null): string {
+  return `${SISTER_AI.url}/${localeSegment(locale)}/guides`;
+}
+
+export function slowmadlyGuidesUrl(locale?: string | null): string {
+  return `${SISTER_NOMAD.url}/${localeSegment(locale)}/guides`;
 }

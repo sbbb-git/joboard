@@ -1,4 +1,5 @@
-import { SISTER_NOMAD, slowmadlyCountryUrl } from '@/lib/sister-sites';
+import { SISTER_NOMAD, slowmadlyCountryUrl, slowmadlyHomeUrl } from '@/lib/sister-sites';
+import type { Locale } from '@/lib/types';
 
 type Context =
   | { type: 'job' }
@@ -19,23 +20,25 @@ function headline(c?: Context): string {
   }
 }
 
-function targetUrl(c?: Context): string {
-  if (!c) return SISTER_NOMAD.url;
+function targetUrl(c: Context | undefined, locale: Locale | undefined): string {
+  if (!c) return slowmadlyHomeUrl(locale);
   if (c.type === 'city' || c.type === 'location') {
-    return slowmadlyCountryUrl(c.country ?? c.label);
+    return slowmadlyCountryUrl(c.country ?? c.label, locale);
   }
-  return SISTER_NOMAD.url;
+  return slowmadlyHomeUrl(locale);
 }
 
 export function NomadCTA({
   context,
+  locale,
   variant = 'card',
 }: {
   context?: Context;
+  locale?: Locale;
   variant?: 'card' | 'inline';
 }) {
   const title = headline(context);
-  const url = targetUrl(context);
+  const url = targetUrl(context, locale);
 
   if (variant === 'inline') {
     return (

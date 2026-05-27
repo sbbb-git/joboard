@@ -256,7 +256,7 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
           </aside>
         </div>
 
-        <NomadCTA context={{ type: 'job' }} />
+        <NomadCTA context={{ type: 'job' }}  locale={params.lang} />
       </div>
 
       {/* Sticky apply bar on mobile */}

@@ -57,10 +57,10 @@ export default function RolePage({ params }: { params: { lang: Locale; role: str
         </div>
       )}
 
-      <NomadCTA context={{ type: 'role', label }} />
+      <NomadCTA context={{ type: 'role', label }}  locale={params.lang} />
       {AI_ROLES.has(role) && (
         <>
-          <AiToolsCTA context={{ type: 'role', label }} />
+          <AiToolsCTA context={{ type: 'role', label }}  locale={params.lang} />
           <EarnWithAi />
         </>
       )}

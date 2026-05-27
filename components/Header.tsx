@@ -3,7 +3,7 @@ import { localePath, t } from '@/lib/i18n';
 import type { Locale } from '@/lib/types';
 import { LangSwitcher } from './LangSwitcher';
 import { Logo } from './Logo';
-import { SISTER_NOMAD } from '@/lib/sister-sites';
+import { SISTER_NOMAD, slowmadlyHomeUrl } from '@/lib/sister-sites';
 
 export function Header({ locale, path }: { locale: Locale; path: string }) {
   return (
@@ -19,7 +19,7 @@ export function Header({ locale, path }: { locale: Locale; path: string }) {
           <NavLink href={localePath(locale, 'salaries/developer')} hide="lg">{t(locale, 'nav.salaries')}</NavLink>
           <NavLink href={localePath(locale, 'guides')} hide="sm">{t(locale, 'nav.guides')}</NavLink>
           <a
-            href={SISTER_NOMAD.url}
+            href={slowmadlyHomeUrl(locale)}
             target="_blank"
             rel="noopener"
             className="hidden lg:inline-block px-2.5 py-1.5 rounded-md text-graphite hover:text-ink hover:bg-sand transition-colors"
@@ -41,7 +41,7 @@ export function Header({ locale, path }: { locale: Locale; path: string }) {
       <div className="lg:hidden border-t border-line/70 bg-bg/70">
         <div className="mx-auto max-w-6xl px-4 py-1.5 flex justify-end">
           <a
-            href={SISTER_NOMAD.url}
+            href={slowmadlyHomeUrl(locale)}
             target="_blank"
             rel="noopener"
             className="text-[11px] text-muted hover:text-ink"
