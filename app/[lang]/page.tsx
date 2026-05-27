@@ -126,7 +126,7 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       </section>
 
       {/* NEWSLETTER */}
-      <Newsletter />
+      <Newsletter locale={locale} />
 
       {/* BENTO HIGHLIGHTS */}
       <section>
@@ -298,7 +298,7 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       </section>
 
       {/* FAQ */}
-      <HomeFaq />
+      <HomeFaq locale={locale} />
     </div>
   );
 }

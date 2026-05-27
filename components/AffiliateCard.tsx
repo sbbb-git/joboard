@@ -42,7 +42,7 @@ export function AffiliateGrid({
       </div>
       {intro && <p className="text-sm text-muted mb-5 max-w-prose">{intro}</p>}
       <div
-        className={`grid gap-3 ${entries.length >= 3 ? 'sm:grid-cols-2 lg:grid-cols-3' : 'sm:grid-cols-2'}`}
+        className={`grid grid-cols-1 gap-3 ${entries.length >= 3 ? 'sm:grid-cols-2 lg:grid-cols-3' : 'sm:grid-cols-2'}`}
       >
         {entries.map((e) => (
           <AffiliateCard key={e.slug} entry={e} />

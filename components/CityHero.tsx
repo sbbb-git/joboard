@@ -25,7 +25,7 @@ export function CityHero({ slug, name, country, blurb }: Props) {
         <p className="text-[11px] uppercase tracking-wider opacity-80">
           {flagFor(country)} {country}
         </p>
-        <h1 className="font-display text-3xl md:text-5xl font-normal tracking-tighter mt-1 leading-tight">
+        <h1 className="font-display text-2xl sm:text-3xl md:text-5xl font-normal tracking-tighter mt-1 leading-tight">
           {name}
         </h1>
         {blurb && (

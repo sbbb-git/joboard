@@ -18,22 +18,19 @@ export function Footer({ locale }: { locale: Locale }) {
   return (
     <footer className="border-t border-line bg-sand mt-20">
       <div className="mx-auto max-w-6xl px-5 py-12 space-y-10">
-        <div className="grid lg:grid-cols-5 gap-10">
-          <div className="lg:col-span-1">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
+          <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <Logo size="md" withMark />
-            <p className="text-xs text-muted mt-3 leading-relaxed">
-              Remote tech jobs aggregated from eight public job board APIs. Refreshed every day,
-              forever free to browse.
-            </p>
+            <p className="text-xs text-muted mt-3 leading-relaxed">{t(locale, 'footer.byline')}</p>
             <div className="mt-4 flex gap-2 text-xs">
               <span className="inline-block w-2 h-2 rounded-full bg-forest mt-1.5"></span>
               <span className="text-muted">
-                {meta.count} active jobs · index updated {refreshed}
+                {meta.count} {t(locale, 'footer.activeJobs')} {refreshed}
               </span>
             </div>
           </div>
 
-          <FooterCol title="Roles">
+          <FooterCol title={t(locale, 'footer.section.roles')}>
             {topRoles.map((r) => (
               <FooterLink key={r} href={localePath(locale, `jobs/${r}`)}>
                 <span className="capitalize">{r.replace('-', ' ')}</span>
@@ -41,7 +38,7 @@ export function Footer({ locale }: { locale: Locale }) {
             ))}
           </FooterCol>
 
-          <FooterCol title="Skills">
+          <FooterCol title={t(locale, 'footer.section.skills')}>
             {topSkills.map((s) => (
               <FooterLink key={s.slug} href={localePath(locale, `skills/${s.slug}`)}>
                 {s.name}
@@ -49,7 +46,7 @@ export function Footer({ locale }: { locale: Locale }) {
             ))}
           </FooterCol>
 
-          <FooterCol title="Cities">
+          <FooterCol title={t(locale, 'footer.section.cities')}>
             {topCities.map((c) => (
               <FooterLink key={c.slug} href={localePath(locale, `cities/${c.slug}`)}>
                 {c.name}
@@ -57,21 +54,21 @@ export function Footer({ locale }: { locale: Locale }) {
             ))}
           </FooterCol>
 
-          <FooterCol title="Site">
+          <FooterCol title={t(locale, 'footer.section.site')}>
             <FooterLink href={localePath(locale, 'guides')}>{t(locale, 'nav.guides')}</FooterLink>
-            <FooterLink href={localePath(locale, 'compare')}>Compare</FooterLink>
+            <FooterLink href={localePath(locale, 'compare')}>{t(locale, 'footer.compare')}</FooterLink>
             <FooterLink href={localePath(locale, 'companies')}>{t(locale, 'nav.companies')}</FooterLink>
-            <FooterLink href={localePath(locale, 'employers')}>For employers</FooterLink>
-            <FooterLink href={localePath(locale, 'submit')}>Post a job</FooterLink>
-            <FooterLink href={localePath(locale, 'glossary')}>Glossary</FooterLink>
-            <FooterLink href={localePath(locale, 'disclosure')}>Affiliate disclosure</FooterLink>
-            <FooterLink href={localePath(locale, 'about')}>About</FooterLink>
-            <FooterLink href={localePath(locale, 'contact')}>Contact</FooterLink>
+            <FooterLink href={localePath(locale, 'employers')}>{t(locale, 'nav.employers')}</FooterLink>
+            <FooterLink href={localePath(locale, 'submit')}>{t(locale, 'nav.postJob')}</FooterLink>
+            <FooterLink href={localePath(locale, 'glossary')}>{t(locale, 'footer.glossary')}</FooterLink>
+            <FooterLink href={localePath(locale, 'disclosure')}>{t(locale, 'footer.disclosure')}</FooterLink>
+            <FooterLink href={localePath(locale, 'about')}>{t(locale, 'footer.about')}</FooterLink>
+            <FooterLink href={localePath(locale, 'contact')}>{t(locale, 'footer.contact')}</FooterLink>
           </FooterCol>
         </div>
 
         {/* Sister sites cross-link band */}
-        <div className="rounded-2xl bg-forestSoft p-6 grid sm:grid-cols-2 gap-4">
+        <div className="rounded-2xl bg-forestSoft p-5 sm:p-6 grid sm:grid-cols-2 gap-4">
           <a
             href={slowmadlyHomeUrl(locale)}
             target="_blank"
@@ -82,7 +79,7 @@ export function Footer({ locale }: { locale: Locale }) {
               {SISTER_NOMAD.domain}
             </p>
             <p className="font-display text-base font-normal tracking-tight text-ink mt-1">
-              Picking a basecamp? → {SISTER_NOMAD.domain}
+              {t(locale, 'footer.basecamp')} → {SISTER_NOMAD.domain}
             </p>
             <p className="text-xs text-muted mt-1.5">{SISTER_NOMAD.tagline}</p>
           </a>
@@ -96,7 +93,7 @@ export function Footer({ locale }: { locale: Locale }) {
               {SISTER_AI.domain}
             </p>
             <p className="font-display text-base font-normal tracking-tight text-ink mt-1">
-              Need AI tools? → {SISTER_AI.domain}
+              {t(locale, 'footer.aiTools')} → {SISTER_AI.domain}
             </p>
             <p className="text-xs text-muted mt-1.5">{SISTER_AI.tagline}</p>
           </a>
@@ -104,7 +101,7 @@ export function Footer({ locale }: { locale: Locale }) {
 
         <div className="border-t border-line pt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-muted">
           <span>{t(locale, 'footer.disclaimer')}</span>
-          <span>© {new Date().getFullYear()} slateremote.com · part of a small network with {SISTER_NOMAD.domain} and {SISTER_AI.domain}</span>
+          <span>© {new Date().getFullYear()} slateremote.com</span>
         </div>
       </div>
     </footer>

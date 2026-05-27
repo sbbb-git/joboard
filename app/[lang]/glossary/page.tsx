@@ -1,10 +1,15 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { GLOSSARY, GlossaryEntry } from '@/lib/glossary';
+import { GLOSSARY_TRANSLATIONS } from '@/lib/glossary-i18n';
 import { LOCALES, localePath } from '@/lib/i18n';
 import { buildMetadata, itemListJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { GLOSSARY_I18N } from '@/lib/page-i18n';
+
+function trGloss(slug: string, locale: Locale, field: 'term' | 'short' | 'long', fallback: string): string {
+  return GLOSSARY_TRANSLATIONS[slug]?.[locale]?.[field] ?? fallback;
+}
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -57,9 +62,9 @@ export default function GlossaryIndex({ params }: { params: { lang: Locale } }) 
           <dl className="grid sm:grid-cols-2 gap-4">
             {items.map((g) => (
               <div key={g.slug} id={g.slug} className="rounded-xl border border-line bg-paper p-5 shadow-soft scroll-mt-20">
-                <dt className="font-semibold text-ink">{g.term}</dt>
-                <dd className="text-sm text-graphite mt-1.5 leading-relaxed">{g.short}</dd>
-                <dd className="text-xs text-muted mt-2.5 leading-relaxed">{g.long}</dd>
+                <dt className="font-semibold text-ink">{trGloss(g.slug, params.lang, 'term', g.term)}</dt>
+                <dd className="text-sm text-graphite mt-1.5 leading-relaxed">{trGloss(g.slug, params.lang, 'short', g.short)}</dd>
+                <dd className="text-xs text-muted mt-2.5 leading-relaxed">{trGloss(g.slug, params.lang, 'long', g.long)}</dd>
               </div>
             ))}
           </dl>

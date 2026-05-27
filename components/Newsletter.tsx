@@ -1,6 +1,5 @@
-// Beehiiv-hosted newsletter capture. Set NEXT_PUBLIC_BEEHIIV_EMBED to the
-// real embed URL when the publication is created. Until then the component
-// gracefully falls back to a mailto subscribe.
+import { t } from '@/lib/i18n';
+import type { Locale } from '@/lib/types';
 
 const PLACEHOLDER = 'https://embeds.beehiiv.com/c0000000-0000-0000-0000-000000000000';
 const action = process.env.NEXT_PUBLIC_BEEHIIV_EMBED || PLACEHOLDER;
@@ -8,8 +7,10 @@ const isPlaceholder = action === PLACEHOLDER;
 
 export function Newsletter({
   variant = 'card',
+  locale = 'en',
 }: {
   variant?: 'card' | 'inline';
+  locale?: Locale;
 }) {
   if (variant === 'inline') {
     return (
@@ -23,14 +24,15 @@ export function Newsletter({
           type="email"
           name={isPlaceholder ? 'subject' : 'email'}
           required
-          placeholder="you@example.com"
+          placeholder={t(locale, 'newsletter.placeholder')}
+          aria-label={t(locale, 'newsletter.placeholder')}
           className="flex-1 min-w-0 px-3 py-2 rounded border border-line bg-paper text-sm focus:outline-none focus:border-ink"
         />
         <button
           type="submit"
           className="px-4 py-2 bg-ink text-bg rounded text-sm hover:opacity-90"
         >
-          Subscribe
+          {t(locale, 'newsletter.cta')}
         </button>
       </form>
     );
@@ -41,12 +43,9 @@ export function Newsletter({
       <div className="grid md:grid-cols-[1.2fr_1fr] gap-5 items-center">
         <div>
           <h2 className="text-lg md:text-xl font-semibold text-ink">
-            Get the freshest remote tech jobs in your inbox
+            {t(locale, 'newsletter.heading')}
           </h2>
-          <p className="text-sm text-muted mt-1.5">
-            One short email a week. Best new postings, salary updates, and one nomad city deep
-            dive. No spam, unsubscribe anytime.
-          </p>
+          <p className="text-sm text-muted mt-1.5">{t(locale, 'newsletter.body')}</p>
         </div>
         <form
           action={isPlaceholder ? 'mailto:hello@slateremote.com' : action}
@@ -58,17 +57,18 @@ export function Newsletter({
             type="email"
             name={isPlaceholder ? 'subject' : 'email'}
             required
-            placeholder="you@example.com"
+            placeholder={t(locale, 'newsletter.placeholder')}
+            aria-label={t(locale, 'newsletter.placeholder')}
             className="px-3 py-2.5 rounded border border-line bg-paper text-sm focus:outline-none focus:border-ink"
           />
           <button
             type="submit"
             className="px-4 py-2.5 bg-ink text-bg rounded text-sm font-medium hover:bg-forest transition"
           >
-            Subscribe →
+            {t(locale, 'newsletter.cta')} →
           </button>
           <p className="text-[10px] text-subtle text-center">
-            {isPlaceholder ? 'Beta · we email you back manually' : 'Powered by Beehiiv'}
+            {isPlaceholder ? t(locale, 'newsletter.fallback') : 'Powered by Beehiiv'}
           </p>
         </form>
       </div>

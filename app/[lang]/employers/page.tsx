@@ -725,7 +725,7 @@ export default function EmployersPage({ params }: { params: { lang: Locale } }) 
     <div className="space-y-16">
       <header className="border-b border-line pb-10">
         <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{c.eyebrow}</p>
-        <h1 className="font-display text-4xl md:text-6xl font-normal tracking-tighter text-ink mt-2 leading-[1.05]">
+        <h1 className="font-display text-3xl sm:text-4xl md:text-6xl font-normal tracking-tighter text-ink mt-2 leading-[1.05]">
           {c.h1}
         </h1>
         <p className="text-graphite text-base md:text-lg mt-5 max-w-2xl leading-relaxed">{c.intro}</p>
@@ -785,22 +785,22 @@ export default function EmployersPage({ params }: { params: { lang: Locale } }) 
       <section>
         <h2 className="font-display text-2xl md:text-3xl font-normal tracking-tighter text-ink">{c.compareH2}</h2>
         <div className="mt-5 overflow-x-auto">
-          <table className="w-full text-sm border border-line rounded-lg overflow-hidden">
+          <table className="w-full text-xs sm:text-sm border border-line rounded-lg overflow-hidden min-w-[520px]">
             <thead className="bg-sand">
               <tr className="text-left">
-                <th className="px-4 py-3 font-semibold">{c.compareHeaders[0]}</th>
-                <th className="px-4 py-3 font-semibold text-ink">{c.compareHeaders[1]}</th>
-                <th className="px-4 py-3 font-semibold text-muted">{c.compareHeaders[2]}</th>
-                <th className="px-4 py-3 font-semibold text-muted">{c.compareHeaders[3]}</th>
+                <th className="px-2 py-2 sm:px-4 sm:py-3 font-semibold">{c.compareHeaders[0]}</th>
+                <th className="px-2 py-2 sm:px-4 sm:py-3 font-semibold text-ink">{c.compareHeaders[1]}</th>
+                <th className="px-2 py-2 sm:px-4 sm:py-3 font-semibold text-muted">{c.compareHeaders[2]}</th>
+                <th className="px-2 py-2 sm:px-4 sm:py-3 font-semibold text-muted">{c.compareHeaders[3]}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-line">
               {c.compareRows.map((r) => (
                 <tr key={r[0]}>
-                  <td className="px-4 py-3 text-graphite">{r[0]}</td>
-                  <td className="px-4 py-3 text-ink font-medium">{r[1]}</td>
-                  <td className="px-4 py-3 text-muted">{r[2]}</td>
-                  <td className="px-4 py-3 text-muted">{r[3]}</td>
+                  <td className="px-2 py-2 sm:px-4 sm:py-3 text-graphite">{r[0]}</td>
+                  <td className="px-2 py-2 sm:px-4 sm:py-3 text-ink font-medium">{r[1]}</td>
+                  <td className="px-2 py-2 sm:px-4 sm:py-3 text-muted">{r[2]}</td>
+                  <td className="px-2 py-2 sm:px-4 sm:py-3 text-muted">{r[3]}</td>
                 </tr>
               ))}
             </tbody>
@@ -875,8 +875,8 @@ export default function EmployersPage({ params }: { params: { lang: Locale } }) 
 
 function Stat({ big, label }: { big: string; label: string }) {
   return (
-    <div className="border border-line rounded-lg p-4 bg-paper">
-      <div className="font-display text-3xl md:text-4xl tracking-tighter text-ink">{big}</div>
+    <div className="border border-line rounded-lg p-3 sm:p-4 bg-paper">
+      <div className="font-display text-2xl sm:text-3xl md:text-4xl tracking-tighter text-ink">{big}</div>
       <div className="text-xs text-muted mt-1.5 leading-snug">{label}</div>
     </div>
   );
