@@ -5,6 +5,7 @@ import { LOCALES } from '@/lib/i18n';
 import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { GUIDES, GUIDE_MAP } from '@/lib/guides';
+import { tGuide } from '@/lib/guides-i18n';
 import { NomadBanking } from '@/components/NomadBanking';
 import { NomadEssentials } from '@/components/NomadEssentials';
 import { NomadCTA } from '@/components/NomadCTA';
@@ -15,6 +16,16 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 import { localePath } from '@/lib/i18n';
 
 const AI_KEYWORDS = /\b(ai|ml|machine learning|llm|prompt|data scientist|ml engineer)\b/i;
+
+const GUIDE_LABELS: Record<Locale, { faq: string; related: string }> = {
+  en: { faq: 'Frequently asked questions', related: 'Related guides' },
+  fr: { faq: 'Questions fréquentes', related: 'Guides liés' },
+  es: { faq: 'Preguntas frecuentes', related: 'Guías relacionadas' },
+  de: { faq: 'Häufige Fragen', related: 'Verwandte Guides' },
+  pt: { faq: 'Perguntas frequentes', related: 'Guias relacionados' },
+  it: { faq: 'Domande frequenti', related: 'Guide correlate' },
+  pl: { faq: 'Często zadawane pytania', related: 'Powiązane poradniki' },
+};
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -33,8 +44,8 @@ export function generateMetadata({
   return buildMetadata({
     locale: params.lang,
     path: `guides/${params.slug}`,
-    title: g.title,
-    description: g.description,
+    title: tGuide(g.slug, params.lang, 'title', g.title),
+    description: tGuide(g.slug, params.lang, 'description', g.description),
   });
 }
 
@@ -42,12 +53,15 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
   const g = GUIDE_MAP[params.slug];
   if (!g) notFound();
 
+  const title = tGuide(g.slug, params.lang, 'title', g.title);
+  const description = tGuide(g.slug, params.lang, 'description', g.description);
+  const labels = GUIDE_LABELS[params.lang];
   const related = GUIDES.filter((x) => x.category === g.category && x.slug !== g.slug).slice(0, 4);
 
   const breadcrumb = breadcrumbJsonLd([
     { name: 'Home', url: absoluteUrl(`/${params.lang}`) },
     { name: 'Guides', url: absoluteUrl(`/${params.lang}/guides`) },
-    { name: g.title, url: absoluteUrl(`/${params.lang}/guides/${g.slug}`) },
+    { name: title, url: absoluteUrl(`/${params.lang}/guides/${g.slug}`) },
   ]);
 
   const faqJsonLd = g.faqs
@@ -65,8 +79,8 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: g.title,
-    description: g.description,
+    headline: title,
+    description: description,
     inLanguage: params.lang,
     url: absoluteUrl(`/${params.lang}/guides/${g.slug}`),
     publisher: { '@type': 'Organization', name: 'slateremote.com' },
@@ -92,15 +106,15 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
         items={[
           { label: 'Home', href: localePath(params.lang) },
           { label: 'Guides', href: localePath(params.lang, 'guides') },
-          { label: g.title },
+          { label: title },
         ]}
       />
       <header className="border-b border-line pb-4">
         <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{g.category}</p>
         <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1.5 leading-tight">
-          {g.title}
+          {title}
         </h1>
-        <p className="text-graphite text-base mt-3">{g.description}</p>
+        <p className="text-graphite text-base mt-3">{description}</p>
       </header>
       <div className="prose-body whitespace-pre-line text-[0.95rem] leading-relaxed">{g.body}</div>
 
@@ -127,7 +141,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
 
       {g.faqs && g.faqs.length > 0 && (
         <section className="border-t border-line pt-6">
-          <h2 className="text-lg font-semibold mb-3">Frequently asked questions</h2>
+          <h2 className="text-lg font-semibold mb-3">{labels.faq}</h2>
           <div className="space-y-4">
             {g.faqs.map((f) => (
               <div key={f.q}>
@@ -141,7 +155,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
 
       {related.length > 0 && (
         <section className="border-t border-line pt-6">
-          <h2 className="text-lg font-semibold mb-3">Related guides</h2>
+          <h2 className="text-lg font-semibold mb-3">{labels.related}</h2>
           <ul className="space-y-2 text-sm">
             {related.map((r) => (
               <li key={r.slug}>
@@ -149,7 +163,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
                   href={`/${params.lang}/guides/${r.slug}`}
                   className="text-forest hover:underline"
                 >
-                  {r.title}
+                  {tGuide(r.slug, params.lang, 'title', r.title)}
                 </Link>
               </li>
             ))}

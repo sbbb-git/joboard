@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { JobCard } from '@/components/JobCard';
 import { allJobs } from '@/lib/jobs';
 import { SKILLS, SKILL_MAP } from '@/lib/skills';
+import { tSkillBlurb } from '@/lib/skills-i18n';
 import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { JobNormalized, Locale } from '@/lib/types';
@@ -30,7 +31,7 @@ export function generateMetadata({
     locale: params.lang,
     path: `skills/${params.skill}`,
     title: `Remote ${s.name} jobs`,
-    description: `${s.blurb} Browse open remote positions requiring ${s.name}, updated daily.`,
+    description: `${tSkillBlurb(s.slug, params.lang, s.blurb)} Browse open remote positions requiring ${s.name}, updated daily.`,
   });
 }
 
@@ -73,7 +74,7 @@ export default function SkillPage({ params }: { params: { lang: Locale; skill: s
         <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1.5">
           Remote {s.name} jobs
         </h1>
-        <p className="text-graphite text-base mt-3">{s.blurb}</p>
+        <p className="text-graphite text-base mt-3">{tSkillBlurb(s.slug, params.lang, s.blurb)}</p>
       </header>
 
       <section className="prose-body text-[0.95rem] leading-relaxed">

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { GUIDES } from '@/lib/guides';
+import { tGuide } from '@/lib/guides-i18n';
 import { buildMetadata, itemListJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { GUIDES_I18N } from '@/lib/page-i18n';
@@ -23,7 +24,7 @@ const CATEGORY_ORDER = ['finding', 'salary', 'career', 'visa', 'tax', 'lifestyle
 export default function GuidesIndex({ params }: { params: { lang: Locale } }) {
   const c = GUIDES_I18N[params.lang];
   const itemList = itemListJsonLd(
-    GUIDES.map((g) => ({ name: g.title, url: absoluteUrl(`/${params.lang}/guides/${g.slug}`) })),
+    GUIDES.map((g) => ({ name: tGuide(g.slug, params.lang, 'title', g.title), url: absoluteUrl(`/${params.lang}/guides/${g.slug}`) })),
   );
   return (
     <div className="space-y-12">
@@ -58,9 +59,9 @@ export default function GuidesIndex({ params }: { params: { lang: Locale } }) {
                   <p className="text-[10px] uppercase tracking-wider text-forest font-semibold">
                     {g.category}
                   </p>
-                  <h3 className="font-semibold text-ink mt-1.5 leading-snug">{g.title}</h3>
+                  <h3 className="font-semibold text-ink mt-1.5 leading-snug">{tGuide(g.slug, params.lang, 'title', g.title)}</h3>
                   <p className="text-xs text-muted mt-2 leading-relaxed line-clamp-3">
-                    {g.description}
+                    {tGuide(g.slug, params.lang, 'description', g.description)}
                   </p>
                 </Link>
               ))}

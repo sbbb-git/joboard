@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { COMPARISONS } from '@/lib/comparisons';
+import { tComparison } from '@/lib/comparisons-i18n';
 import { buildMetadata } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { COMPARE_I18N } from '@/lib/page-i18n';
@@ -34,8 +35,8 @@ export default function CompareIndex({ params }: { params: { lang: Locale } }) {
               href={`/${params.lang}/compare/${comp.slug}`}
               className="block border border-line rounded-lg p-4 hover:border-ink"
             >
-              <h2 className="font-medium text-ink">{comp.title}</h2>
-              <p className="text-sm text-muted mt-1">{comp.description}</p>
+              <h2 className="font-medium text-ink">{tComparison(comp.slug, params.lang, 'title', comp.title)}</h2>
+              <p className="text-sm text-muted mt-1">{tComparison(comp.slug, params.lang, 'description', comp.description)}</p>
             </Link>
           </li>
         ))}

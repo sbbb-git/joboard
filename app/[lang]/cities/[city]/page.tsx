@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { JobCard } from '@/components/JobCard';
 import { allJobs } from '@/lib/jobs';
 import { CITIES, CITY_MAP } from '@/lib/cities';
+import { tCityBlurb } from '@/lib/cities-i18n';
 import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
@@ -32,7 +33,7 @@ export function generateMetadata({
     locale: params.lang,
     path: `cities/${params.city}`,
     title: `Remote tech jobs in ${c.name}`,
-    description: `${c.blurb} Cost of living, visa options, internet quality, and current open remote positions for ${c.name}.`,
+    description: `${tCityBlurb(c.slug, params.lang, c.blurb)} Cost of living, visa options, internet quality, and current open remote positions for ${c.name}.`,
   });
 }
 
@@ -65,7 +66,7 @@ export default function CityPage({ params }: { params: { lang: Locale; city: str
           { label: c.name },
         ]}
       />
-      <CityHero slug={c.slug} name={c.name} country={c.country} blurb={c.blurb} />
+      <CityHero slug={c.slug} name={c.name} country={c.country} blurb={tCityBlurb(c.slug, params.lang, c.blurb)} />
 
       <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
         <Stat label="Cost of living" value={`$${c.costOfLivingUsd.toLocaleString()}/mo`} />

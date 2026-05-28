@@ -1,0 +1,138 @@
+import type { Locale } from './types';
+
+type Field = { title?: string; description?: string };
+
+export const COMPARISON_TRANSLATIONS: Record<string, Partial<Record<Locale, Field>>> = {
+  'remote-vs-hybrid': {
+    fr: { title: 'Remote vs hybride dans la tech', description: 'Les différences qui comptent entre rôles 100% remote et hybrides.' },
+    es: { title: 'Remoto vs híbrido en tech', description: 'Las diferencias que importan al elegir entre rol 100% remoto e híbrido.' },
+    de: { title: 'Remote vs. Hybrid in der Tech-Branche', description: 'Die Unterschiede, die zählen, wenn Sie zwischen voll Remote und Hybrid wählen.' },
+    pt: { title: 'Remoto vs híbrido em tech', description: 'As diferenças que importam ao escolher entre vagas 100% remotas e híbridas.' },
+    it: { title: 'Remote vs ibrido nel tech', description: 'Le differenze che contano quando si sceglie tra ruoli 100% remote e ibridi.' },
+    pl: { title: 'Zdalne vs hybryda w tech', description: 'Różnice, które się liczą przy wyborze między pełnym remote a hybrydą.' },
+  },
+  'remote-vs-onsite': {
+    fr: { title: 'Remote vs présentiel dans la tech', description: 'Les arbitrages entre emploi 100% remote et 100% présentiel.' },
+    es: { title: 'Remoto vs presencial en tech', description: 'Los trade-offs entre empleo 100% remoto y 100% presencial en tech.' },
+    de: { title: 'Remote vs. Onsite Tech-Jobs', description: 'Die Trade-offs zwischen voll Remote und voll Onsite-Tech-Beschäftigung.' },
+    pt: { title: 'Remoto vs presencial em tech', description: 'Os trade-offs entre emprego 100% remoto e 100% presencial em tech.' },
+    it: { title: 'Remote vs in sede nel tech', description: 'I compromessi tra impiego 100% remote e 100% in sede nel tech.' },
+    pl: { title: 'Zdalne vs stacjonarne w tech', description: 'Kompromisy między 100% zdalnym a 100% stacjonarnym zatrudnieniem w tech.' },
+  },
+  'freelance-vs-fulltime': {
+    fr: { title: 'Freelance vs salarié en remote tech', description: 'En quoi les pistes freelance et salariées diffèrent pour les travailleurs tech remote.' },
+    es: { title: 'Freelance vs full-time en remote tech', description: 'Cómo difieren las pistas freelance y full-time para trabajadores tech remotos.' },
+    de: { title: 'Freelance vs. Festanstellung in Remote-Tech', description: 'Wie sich die Freelance- und Festanstellungs-Wege für Remote-Tech-Worker unterscheiden.' },
+    pt: { title: 'Freelance vs full-time em remote tech', description: 'Como as trajetórias freelance e full-time diferem para trabalhadores tech remotos.' },
+    it: { title: 'Freelance vs full-time nel remote tech', description: 'Come differiscono i percorsi freelance e full-time per i lavoratori tech remote.' },
+    pl: { title: 'Freelance vs etat w remote tech', description: 'Jak różnią się ścieżki freelance i etatowa dla zdalnych pracowników tech.' },
+  },
+  'us-vs-eu-remote-tech-companies': {
+    fr: { title: 'Entreprises tech remote US vs UE', description: 'Comment les employeurs tech remote US et UE diffèrent sur compensation, équité et culture.' },
+    es: { title: 'Empresas tech remote US vs UE', description: 'Cómo difieren empleadores tech remotos US y UE en compensación, equidad y cultura.' },
+    de: { title: 'US vs. EU Remote-Tech-Unternehmen', description: 'Wie sich US- und EU-Remote-Tech-Arbeitgeber bei Vergütung, Equity und Kultur unterscheiden.' },
+    pt: { title: 'Empresas tech remote US vs UE', description: 'Como empregadores tech remotos US e UE diferem em compensação, equity e cultura.' },
+    it: { title: 'Aziende tech remote US vs UE', description: 'Come differiscono i datori di lavoro tech remote US e UE per compensation, equity e cultura.' },
+    pl: { title: 'Firmy tech remote US vs UE', description: 'Jak różnią się amerykańscy i unijni pracodawcy remote tech w wynagrodzeniu, equity i kulturze.' },
+  },
+  'junior-vs-senior-remote-jobs': {
+    fr: { title: 'Offres remote junior vs senior dans la tech', description: 'En quoi le recrutement remote diffère selon le niveau d\'expérience en 2026.' },
+    es: { title: 'Empleos remotos junior vs senior en tech', description: 'Cómo difiere la contratación remota por nivel de experiencia en 2026.' },
+    de: { title: 'Junior vs. Senior Remote-Tech-Jobs', description: 'Wie sich Remote-Hiring je nach Erfahrungsstufe 2026 unterscheidet.' },
+    pt: { title: 'Vagas remotas junior vs senior em tech', description: 'Como o recrutamento remoto difere por nível de experiência em 2026.' },
+    it: { title: 'Lavori remote junior vs senior nel tech', description: 'Come differisce il recruiting remote per livello di esperienza nel 2026.' },
+    pl: { title: 'Zdalne oferty junior vs senior w tech', description: 'Jak różni się zdalna rekrutacja w zależności od poziomu doświadczenia w 2026.' },
+  },
+  'react-vs-vue-jobs': {
+    fr: { title: 'Marché des offres remote React vs Vue', description: 'Comment React et Vue se comparent sur les offres tech remote en 2026.' },
+    es: { title: 'Mercado de empleos remote React vs Vue', description: 'Cómo comparan React y Vue en ofertas tech remotas en 2026.' },
+    de: { title: 'React vs. Vue Remote-Jobmarkt', description: 'Wie sich React und Vue auf Remote-Tech-Stellen 2026 vergleichen.' },
+    pt: { title: 'Mercado de vagas remote React vs Vue', description: 'Como React e Vue comparam em vagas tech remotas em 2026.' },
+    it: { title: 'Mercato lavori remote React vs Vue', description: 'Come React e Vue si confrontano sugli annunci tech remote nel 2026.' },
+    pl: { title: 'Rynek zdalnych ofert React vs Vue', description: 'Jak React i Vue wypadają w zdalnych ogłoszeniach tech w 2026.' },
+  },
+  'python-vs-go-backend': {
+    fr: { title: 'Python vs Go pour le backend remote', description: 'Comment Python et Go se comparent sur les offres backend remote en 2026.' },
+    es: { title: 'Python vs Go para backend remoto', description: 'Cómo comparan Python y Go en ofertas backend remotas en 2026.' },
+    de: { title: 'Python vs. Go für Remote-Backend-Arbeit', description: 'Wie sich Python und Go auf Remote-Backend-Stellen 2026 vergleichen.' },
+    pt: { title: 'Python vs Go para backend remoto', description: 'Como Python e Go comparam em vagas backend remotas em 2026.' },
+    it: { title: 'Python vs Go per il backend remote', description: 'Come Python e Go si confrontano sugli annunci backend remote nel 2026.' },
+    pl: { title: 'Python vs Go w zdalnym backendzie', description: 'Jak Python i Go wypadają w zdalnych ogłoszeniach backend w 2026.' },
+  },
+  'startup-vs-bigtech-remote': {
+    fr: { title: 'Startup vs big tech en remote engineering', description: 'En quoi l\'ingé remote en startup et grande boîte diffèrent en 2026.' },
+    es: { title: 'Startup vs big tech en ingeniería remota', description: 'Cómo difieren la ingeniería remota en startup y gran empresa en 2026.' },
+    de: { title: 'Startup vs. Big Tech Remote-Engineering', description: 'Wie sich Startup- und Konzern-Remote-Engineering 2026 unterscheiden.' },
+    pt: { title: 'Startup vs big tech em engenharia remota', description: 'Como engenharia remota em startup e grande empresa diferem em 2026.' },
+    it: { title: 'Startup vs big tech nell\'ingegneria remote', description: 'Come differiscono ingegneria remote in startup e grande azienda nel 2026.' },
+    pl: { title: 'Startup vs big tech w zdalnej inżynierii', description: 'Jak różnią się zdalna inżynieria w startupie i wielkiej firmie w 2026.' },
+  },
+  'aws-vs-gcp-remote-jobs': {
+    fr: { title: 'Demande remote AWS vs GCP', description: 'Comparaison des principaux clouds par demande remote en 2026.' },
+    es: { title: 'Demanda remota AWS vs GCP', description: 'Comparando los principales clouds por demanda remota en 2026.' },
+    de: { title: 'AWS vs. GCP Remote-Nachfrage', description: 'Vergleich der großen Cloud-Plattformen nach Remote-Hiring-Nachfrage 2026.' },
+    pt: { title: 'Demanda remota AWS vs GCP', description: 'Comparando os principais clouds por demanda remota em 2026.' },
+    it: { title: 'Domanda remote AWS vs GCP', description: 'Confronto delle principali piattaforme cloud per domanda di assunzioni remote nel 2026.' },
+    pl: { title: 'Zdalny popyt AWS vs GCP', description: 'Porównanie głównych platform chmurowych według zdalnego popytu rekrutacyjnego w 2026.' },
+  },
+  'snowflake-vs-bigquery': {
+    fr: { title: 'Snowflake vs BigQuery pour les data engineers remote', description: 'Comment les data warehouses cloud leaders se partagent sur les offres data engineering remote.' },
+    es: { title: 'Snowflake vs BigQuery para data engineers remotos', description: 'Cómo se reparten los data warehouses cloud líderes en ofertas data engineering remotas.' },
+    de: { title: 'Snowflake vs. BigQuery für Remote-Data-Engineers', description: 'Wie sich die führenden Cloud-Data-Warehouses auf Remote-Data-Engineering-Stellen aufteilen.' },
+    pt: { title: 'Snowflake vs BigQuery para data engineers remotos', description: 'Como os data warehouses cloud líderes se dividem em vagas data engineering remotas.' },
+    it: { title: 'Snowflake vs BigQuery per data engineer remote', description: 'Come i data warehouse cloud leader si dividono sugli annunci data engineering remote.' },
+    pl: { title: 'Snowflake vs BigQuery dla zdalnych data engineerów', description: 'Jak wiodące chmurowe data warehouse dzielą się w zdalnych ogłoszeniach data engineering.' },
+  },
+  'employer-of-record-vs-direct': {
+    fr: { title: 'Employer of record vs emploi direct pour les travailleurs tech remote', description: "Quand utiliser un EOR plutôt qu'un emploi direct." },
+    es: { title: 'Employer of record vs empleo directo para trabajadores tech remotos', description: 'Cuándo usar un EOR en lugar de empleo directo.' },
+    de: { title: 'Employer of Record vs. direkte Beschäftigung für Remote-Tech-Worker', description: 'Wann ein Employer-of-Record-Service statt direkter Beschäftigung sinnvoll ist.' },
+    pt: { title: 'Employer of record vs emprego direto para trabalhadores tech remotos', description: 'Quando usar um EOR em vez de emprego direto.' },
+    it: { title: 'Employer of record vs impiego diretto per lavoratori tech remote', description: 'Quando usare un servizio EOR rispetto a un impiego diretto.' },
+    pl: { title: 'Employer of record vs zatrudnienie bezpośrednie dla zdalnych pracowników tech', description: 'Kiedy używać usługi EOR zamiast bezpośredniego zatrudnienia.' },
+  },
+  'in-house-vs-agency-remote': {
+    fr: { title: 'Rôles tech remote in-house vs agence', description: 'Comment l\'ingé remote en agence et in-house se comparent.' },
+    es: { title: 'Roles tech remotos in-house vs agencia', description: 'Cómo comparan la ingeniería remota en agencia y in-house.' },
+    de: { title: 'In-House vs. Agentur Remote-Tech-Rollen', description: 'Wie sich Agentur- und In-House-Remote-Engineering vergleichen.' },
+    pt: { title: 'Vagas tech remotas in-house vs agência', description: 'Como engenharia remota em agência e in-house comparam.' },
+    it: { title: 'Ruoli tech remote in-house vs agenzia', description: 'Come ingegneria remote in agenzia e in-house si confrontano.' },
+    pl: { title: 'Zdalne role tech in-house vs agencja', description: 'Jak wypada zdalna inżynieria w agencji i in-house.' },
+  },
+  'lisbon-vs-barcelona-remote': {
+    fr: { title: 'Lisbonne vs Barcelone pour les travailleurs tech remote', description: 'Comparaison concrète des deux principaux hubs tech remote méditerranéens.' },
+    es: { title: 'Lisboa vs Barcelona para trabajadores tech remotos', description: 'Cómo comparan los dos principales hubs tech remotos mediterráneos.' },
+    de: { title: 'Lissabon vs. Barcelona für Remote-Tech-Worker', description: 'Wie sich die beiden führenden Remote-Tech-Hubs am Mittelmeer tatsächlich vergleichen.' },
+    pt: { title: 'Lisboa vs Barcelona para trabalhadores tech remotos', description: 'Comparação concreta dos dois principais hubs tech remotos do Mediterrâneo.' },
+    it: { title: 'Lisbona vs Barcellona per lavoratori tech remote', description: 'Confronto concreto dei due principali hub tech remote del Mediterraneo.' },
+    pl: { title: 'Lizbona vs Barcelona dla zdalnych pracowników tech', description: 'Konkretne porównanie dwóch wiodących śródziemnomorskich hubów tech remote.' },
+  },
+  'portugal-vs-spain-nomad-visa': {
+    fr: { title: 'Portugal D8 vs Espagne Digital Nomad Visa', description: 'Comparaison côte à côte des deux principaux programmes de visa nomade UE.' },
+    es: { title: 'Portugal D8 vs España Digital Nomad Visa', description: 'Comparación lado a lado de los dos principales programas de visado nómada UE.' },
+    de: { title: 'Portugal D8 vs. Spanien Digital Nomad Visa', description: 'Direktvergleich der beiden führenden EU-Digital-Nomad-Visa-Programme.' },
+    pt: { title: 'Portugal D8 vs Espanha Digital Nomad Visa', description: 'Comparação lado a lado dos dois principais programas de visto nômade da UE.' },
+    it: { title: 'Portogallo D8 vs Spagna Digital Nomad Visa', description: 'Confronto fianco a fianco dei due principali programmi visa nomade UE.' },
+    pl: { title: 'Portugalia D8 vs Hiszpania Digital Nomad Visa', description: 'Bezpośrednie porównanie dwóch wiodących programów wizy nomadycznej UE.' },
+  },
+  'lisbon-vs-mexico-city-remote': {
+    fr: { title: 'Lisbonne vs Mexico City pour les travailleurs tech remote', description: 'Hub tech remote européen vs latino-américain : le fuseau horaire décide.' },
+    es: { title: 'Lisboa vs Ciudad de México para trabajadores tech remotos', description: 'Hub tech remoto europeo vs latinoamericano: la zona horaria es decisiva.' },
+    de: { title: 'Lissabon vs. Mexiko-Stadt für Remote-Tech-Worker', description: 'Europäisches vs. lateinamerikanisches Remote-Tech-Hub: Zeitzone ist der entscheidende Faktor.' },
+    pt: { title: 'Lisboa vs Cidade do México para trabalhadores tech remotos', description: 'Hub tech remoto europeu vs latino-americano: fuso horário decide.' },
+    it: { title: 'Lisbona vs Città del Messico per lavoratori tech remote', description: 'Hub tech remote europeo vs latinoamericano: il fuso orario è il fattore decisivo.' },
+    pl: { title: 'Lizbona vs Meksyk dla zdalnych pracowników tech', description: 'Europejski vs latynoamerykański hub tech remote: strefa czasowa decyduje.' },
+  },
+  'bali-vs-chiang-mai-remote': {
+    fr: { title: 'Bali vs Chiang Mai pour les travailleurs tech remote', description: 'Les deux hubs de travail remote les plus anciens d\'Asie du Sud-Est comparés.' },
+    es: { title: 'Bali vs Chiang Mai para trabajadores tech remotos', description: 'Los dos hubs de trabajo remoto más longevos del Sudeste Asiático comparados.' },
+    de: { title: 'Bali vs. Chiang Mai für Remote-Tech-Worker', description: 'Die beiden am längsten etablierten südostasiatischen Remote-Work-Hubs im Vergleich.' },
+    pt: { title: 'Bali vs Chiang Mai para trabalhadores tech remotos', description: 'Os dois hubs de trabalho remoto mais antigos do Sudeste Asiático comparados.' },
+    it: { title: 'Bali vs Chiang Mai per lavoratori tech remote', description: 'I due hub di lavoro remote più longevi del Sud-Est Asiatico a confronto.' },
+    pl: { title: 'Bali vs Chiang Mai dla zdalnych pracowników tech', description: 'Dwa najdłużej działające hubu pracy zdalnej w Azji Południowo-Wschodniej porównane.' },
+  },
+};
+
+export function tComparison(slug: string, locale: Locale, field: 'title' | 'description', fallback: string): string {
+  return COMPARISON_TRANSLATIONS[slug]?.[locale]?.[field] ?? fallback;
+}

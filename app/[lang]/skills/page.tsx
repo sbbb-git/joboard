@@ -5,6 +5,7 @@ import { buildMetadata, itemListJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { categoryIcon, categoryColors } from '@/lib/skill-icons';
 import { SKILLS_I18N } from '@/lib/page-i18n';
+import { tSkillBlurb } from '@/lib/skills-i18n';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -74,7 +75,7 @@ export default function SkillsIndex({ params }: { params: { lang: Locale } }) {
                           {s.name}
                         </h3>
                         <p className="text-xs text-muted mt-1 line-clamp-2 leading-relaxed">
-                          {s.blurb}
+                          {tSkillBlurb(s.slug, params.lang, s.blurb)}
                         </p>
                       </div>
                     </div>
