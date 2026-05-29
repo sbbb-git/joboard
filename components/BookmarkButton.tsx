@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { t } from '@/lib/i18n';
+import type { Locale } from '@/lib/types';
 
 const STORAGE_KEY = 'slateremote.bookmarks';
 
@@ -27,9 +29,11 @@ function writeBookmarks(ids: string[]) {
 export function BookmarkButton({
   id,
   variant = 'full',
+  locale = 'en',
 }: {
   id: string;
   variant?: 'full' | 'icon';
+  locale?: Locale;
 }) {
   const [saved, setSaved] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -62,7 +66,7 @@ export function BookmarkButton({
         type="button"
         onClick={toggle}
         aria-pressed={saved}
-        aria-label={saved ? 'Remove bookmark' : 'Save job'}
+        aria-label={saved ? t(locale, 'bookmark.remove') : t(locale, 'bookmark.save')}
         className={`w-9 h-9 rounded-full flex items-center justify-center border transition-colors ${
           saved
             ? 'bg-terracottaSoft text-terracotta border-terracotta'
@@ -86,7 +90,7 @@ export function BookmarkButton({
       }`}
     >
       <Heart filled={saved} />
-      {saved ? 'Saved' : 'Save job'}
+      {saved ? t(locale, 'bookmark.saved') : t(locale, 'bookmark.save')}
     </button>
   );
 }

@@ -124,20 +124,20 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
             context={{ type: 'guide', label: g.title.replace(/^(How to become a |Best |Remote )/i, '').toLowerCase() }}
             locale={params.lang}
           />
-          <EarnWithAi />
+          <EarnWithAi locale={params.lang} />
         </>
       )}
-      {g.category === 'tools' && <RemoteTools />}
+      {g.category === 'tools' && <RemoteTools locale={params.lang} />}
       {(g.category === 'lifestyle' || g.category === 'visa' || g.category === 'tax' || g.category === 'finding' || g.category === 'career') && (
         <NomadCTA  locale={params.lang} />
       )}
       {(g.category === 'visa' || g.category === 'tax') && (
         <>
-          <NomadEssentials />
+          <NomadEssentials locale={params.lang} />
           <NomadBanking locale={params.lang} />
         </>
       )}
-      {g.category === 'lifestyle' && <NomadEssentials />}
+      {g.category === 'lifestyle' && <NomadEssentials locale={params.lang} />}
 
       {g.faqs && g.faqs.length > 0 && (
         <section className="border-t border-line pt-6">

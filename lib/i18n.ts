@@ -57,6 +57,14 @@ const en: Dict = {
   '404.home': 'Go home',
   '404.jobs': 'Browse remote jobs',
   '404.guides': 'Read guides',
+  'bookmark.save': 'Save job',
+  'bookmark.saved': 'Saved',
+  'bookmark.remove': 'Remove bookmark',
+  'city.cost': 'Cost',
+  'city.internet': 'Internet',
+  'city.tz': 'TZ',
+  'city.visa': 'Visa',
+  'city.visaAvailable': 'Available',
 };
 
 const fr: Dict = {
@@ -108,6 +116,14 @@ const fr: Dict = {
   '404.home': 'Accueil',
   '404.jobs': 'Parcourir les offres',
   '404.guides': 'Lire les guides',
+  'bookmark.save': 'Sauvegarder',
+  'bookmark.saved': 'Sauvegardé',
+  'bookmark.remove': 'Retirer le favori',
+  'city.cost': 'Coût',
+  'city.internet': 'Internet',
+  'city.tz': 'Fuseau',
+  'city.visa': 'Visa',
+  'city.visaAvailable': 'Disponible',
 };
 
 const es: Dict = {
@@ -159,6 +175,14 @@ const es: Dict = {
   '404.home': 'Inicio',
   '404.jobs': 'Ver empleos',
   '404.guides': 'Leer guías',
+  'bookmark.save': 'Guardar',
+  'bookmark.saved': 'Guardado',
+  'bookmark.remove': 'Quitar marcador',
+  'city.cost': 'Coste',
+  'city.internet': 'Internet',
+  'city.tz': 'Zona',
+  'city.visa': 'Visa',
+  'city.visaAvailable': 'Disponible',
 };
 
 const de: Dict = {
@@ -210,6 +234,14 @@ const de: Dict = {
   '404.home': 'Startseite',
   '404.jobs': 'Remote-Jobs durchsuchen',
   '404.guides': 'Guides lesen',
+  'bookmark.save': 'Job speichern',
+  'bookmark.saved': 'Gespeichert',
+  'bookmark.remove': 'Lesezeichen entfernen',
+  'city.cost': 'Kosten',
+  'city.internet': 'Internet',
+  'city.tz': 'Zeitzone',
+  'city.visa': 'Visum',
+  'city.visaAvailable': 'Verfügbar',
 };
 
 const pt: Dict = {
@@ -261,6 +293,14 @@ const pt: Dict = {
   '404.home': 'Início',
   '404.jobs': 'Ver vagas',
   '404.guides': 'Ler guias',
+  'bookmark.save': 'Salvar vaga',
+  'bookmark.saved': 'Salvo',
+  'bookmark.remove': 'Remover favorito',
+  'city.cost': 'Custo',
+  'city.internet': 'Internet',
+  'city.tz': 'Fuso',
+  'city.visa': 'Visto',
+  'city.visaAvailable': 'Disponível',
 };
 
 const it: Dict = {
@@ -312,6 +352,14 @@ const it: Dict = {
   '404.home': 'Home',
   '404.jobs': 'Vedi lavori',
   '404.guides': 'Leggi le guide',
+  'bookmark.save': 'Salva lavoro',
+  'bookmark.saved': 'Salvato',
+  'bookmark.remove': 'Rimuovi segnalibro',
+  'city.cost': 'Costo',
+  'city.internet': 'Internet',
+  'city.tz': 'Fuso',
+  'city.visa': 'Visto',
+  'city.visaAvailable': 'Disponibile',
 };
 
 const pl: Dict = {
@@ -363,6 +411,14 @@ const pl: Dict = {
   '404.home': 'Strona główna',
   '404.jobs': 'Przeglądaj oferty',
   '404.guides': 'Czytaj poradniki',
+  'bookmark.save': 'Zapisz ofertę',
+  'bookmark.saved': 'Zapisano',
+  'bookmark.remove': 'Usuń zakładkę',
+  'city.cost': 'Koszt',
+  'city.internet': 'Internet',
+  'city.tz': 'Strefa',
+  'city.visa': 'Wiza',
+  'city.visaAvailable': 'Dostępna',
 };
 
 const DICTS: Record<Locale, Dict> = { en, fr, es, de, pt, it, pl };

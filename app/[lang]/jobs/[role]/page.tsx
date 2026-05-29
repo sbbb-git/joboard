@@ -61,7 +61,7 @@ export default function RolePage({ params }: { params: { lang: Locale; role: str
       {AI_ROLES.has(role) && (
         <>
           <AiToolsCTA context={{ type: 'role', label }}  locale={params.lang} />
-          <EarnWithAi />
+          <EarnWithAi locale={params.lang} />
         </>
       )}
     </div>

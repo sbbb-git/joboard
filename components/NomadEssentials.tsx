@@ -1,19 +1,19 @@
 import { AFFILIATE_MAP } from '@/lib/affiliates';
 import { AffiliateGrid } from './AffiliateCard';
+import { AFFILIATE_COPY } from '@/lib/affiliates-i18n';
+import type { Locale } from '@/lib/types';
 
 // Insurance + privacy bundle for city pages and visa guides.
 // Two of the highest-LTV affiliate categories for the nomad audience.
 
-export function NomadEssentials({ city }: { city?: string }) {
+export function NomadEssentials({ city, locale = 'en' }: { city?: string; locale?: Locale }) {
+  const copy = AFFILIATE_COPY[locale];
   return (
     <AffiliateGrid
-      title="Essentials for working from anywhere"
-      intro={
-        city
-          ? `Two things you want sorted before you start working from ${city}: health insurance that follows you, and a VPN that handles public Wi-Fi.`
-          : 'Two things you want sorted when you work from anywhere: portable insurance and a reliable VPN.'
-      }
+      title={copy.essentialsTitle}
+      intro={copy.essentialsIntro(city)}
       entries={[AFFILIATE_MAP.safetywing, AFFILIATE_MAP.nordvpn]}
+      locale={locale}
     />
   );
 }

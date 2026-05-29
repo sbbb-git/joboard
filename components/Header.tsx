@@ -46,7 +46,7 @@ export function Header({ locale, path }: { locale: Locale; path: string }) {
             rel="noopener"
             className="text-[11px] text-muted hover:text-ink"
           >
-            {t(locale, 'nav.travel')} sur {SISTER_NOMAD.domain} ↗
+            {t(locale, 'nav.travel')} · {SISTER_NOMAD.domain} ↗
           </a>
         </div>
       </div>

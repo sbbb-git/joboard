@@ -398,7 +398,7 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
               >
                 {c.applyOn(job.source)}
               </a>
-              <BookmarkButton id={job.id} />
+              <BookmarkButton id={job.id} locale={params.lang} />
             </div>
           )}
           {expired && (
@@ -467,7 +467,7 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
       {!expired && (
         <div className="fixed bottom-0 inset-x-0 z-40 lg:hidden bg-paper/95 backdrop-blur-md border-t border-line p-3 shadow-lift">
           <div className="flex items-center gap-2 max-w-5xl mx-auto">
-            <BookmarkButton id={job.id} variant="icon" />
+            <BookmarkButton id={job.id} variant="icon" locale={params.lang} />
             <a
               href={job.url}
               target="_blank"

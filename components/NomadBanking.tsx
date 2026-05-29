@@ -1,5 +1,6 @@
 import { AFFILIATE_MAP, wiseForLocale } from '@/lib/affiliates';
 import { AffiliateGrid } from './AffiliateCard';
+import { AFFILIATE_COPY } from '@/lib/affiliates-i18n';
 import type { Locale } from '@/lib/types';
 
 const EU_COUNTRIES = new Set([
@@ -20,16 +21,14 @@ export function NomadBanking({
   // Wise URL adapts to the visitor's currency (USD on en, EUR elsewhere)
   const entries = [wiseForLocale(locale), AFFILIATE_MAP.revolut];
   if (country && EU_COUNTRIES.has(country)) entries.push(AFFILIATE_MAP.qonto);
+  const copy = AFFILIATE_COPY[locale ?? 'en'];
 
   return (
     <AffiliateGrid
-      title="Banking for remote workers"
-      intro={
-        context
-          ? `Multi-currency tools that work well if you're moving to or earning from ${context}.`
-          : 'Multi-currency tools for receiving payments across borders.'
-      }
+      title={copy.bankingTitle}
+      intro={copy.bankingIntro(context)}
       entries={entries}
+      locale={locale ?? 'en'}
     />
   );
 }
