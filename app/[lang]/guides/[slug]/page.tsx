@@ -6,6 +6,7 @@ import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { GUIDES, GUIDE_MAP } from '@/lib/guides';
 import { tGuide } from '@/lib/guides-i18n';
+import { tGuideBody, tGuideFaqs } from '@/lib/guides-body-i18n';
 import { NomadBanking } from '@/components/NomadBanking';
 import { NomadEssentials } from '@/components/NomadEssentials';
 import { NomadCTA } from '@/components/NomadCTA';
@@ -55,6 +56,8 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
 
   const title = tGuide(g.slug, params.lang, 'title', g.title);
   const description = tGuide(g.slug, params.lang, 'description', g.description);
+  const body = tGuideBody(g.slug, params.lang, g.body);
+  const faqs = tGuideFaqs(g.slug, params.lang, g.faqs);
   const labels = GUIDE_LABELS[params.lang];
   const related = GUIDES.filter((x) => x.category === g.category && x.slug !== g.slug).slice(0, 4);
 
@@ -64,11 +67,11 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
     { name: title, url: absoluteUrl(`/${params.lang}/guides/${g.slug}`) },
   ]);
 
-  const faqJsonLd = g.faqs
+  const faqJsonLd = faqs
     ? {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        mainEntity: g.faqs.map((f) => ({
+        mainEntity: faqs.map((f) => ({
           '@type': 'Question',
           name: f.q,
           acceptedAnswer: { '@type': 'Answer', text: f.a },
@@ -116,7 +119,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
         </h1>
         <p className="text-graphite text-base mt-3">{description}</p>
       </header>
-      <div className="prose-body whitespace-pre-line text-[0.95rem] leading-relaxed">{g.body}</div>
+      <div className="prose-body whitespace-pre-line text-[0.95rem] leading-relaxed">{body}</div>
 
       {AI_KEYWORDS.test(g.title) && (
         <>
@@ -139,11 +142,11 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
       )}
       {g.category === 'lifestyle' && <NomadEssentials locale={params.lang} />}
 
-      {g.faqs && g.faqs.length > 0 && (
+      {faqs && faqs.length > 0 && (
         <section className="border-t border-line pt-6">
           <h2 className="text-lg font-semibold mb-3">{labels.faq}</h2>
           <div className="space-y-4">
-            {g.faqs.map((f) => (
+            {faqs.map((f) => (
               <div key={f.q}>
                 <h3 className="font-medium text-ink">{f.q}</h3>
                 <p className="text-sm text-muted mt-1">{f.a}</p>
