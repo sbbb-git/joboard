@@ -135,7 +135,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
     eyebrow: 'Guides',
     h1: 'Guides for remote tech workers',
     intro: (n) => `${n} long-form, opinionated guides on every topic that matters for landing and sustaining a remote tech career.`,
-    categories: { finding: 'Finding a job', salary: 'Salaries & negotiation', career: 'Career paths', visa: 'Visas', tax: 'Taxes', lifestyle: 'Lifestyle', tools: 'Tools & setup' },
+    categories: { finding: 'Finding a job', salary: 'Salaries & negotiation', career: 'Career paths', freelance: 'Freelancing & Fiverr', visa: 'Visas', tax: 'Taxes', lifestyle: 'Lifestyle', tools: 'Tools & setup' },
   },
   fr: {
     metaTitle: 'Guides pour les travailleurs tech remote',
@@ -143,7 +143,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
     eyebrow: 'Guides',
     h1: 'Guides pour les travailleurs tech remote',
     intro: (n) => `${n} guides longs et tranchés sur tous les sujets qui comptent pour décrocher et tenir une carrière tech remote.`,
-    categories: { finding: 'Trouver un job', salary: 'Salaires et négociation', career: 'Trajectoires de carrière', visa: 'Visas', tax: 'Impôts', lifestyle: 'Lifestyle', tools: 'Outils et setup' },
+    categories: { finding: 'Trouver un job', salary: 'Salaires et négociation', career: 'Trajectoires de carrière', freelance: 'Freelance et Fiverr', visa: 'Visas', tax: 'Impôts', lifestyle: 'Lifestyle', tools: 'Outils et setup' },
   },
   es: {
     metaTitle: 'Guías para trabajadores tech remotos',
@@ -151,7 +151,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
     eyebrow: 'Guías',
     h1: 'Guías para trabajadores tech remotos',
     intro: (n) => `${n} guías largas y con opinión sobre cada tema que importa para conseguir y sostener una carrera tech remota.`,
-    categories: { finding: 'Encontrar empleo', salary: 'Salarios y negociación', career: 'Trayectorias', visa: 'Visas', tax: 'Impuestos', lifestyle: 'Lifestyle', tools: 'Herramientas y setup' },
+    categories: { finding: 'Encontrar empleo', salary: 'Salarios y negociación', career: 'Trayectorias', freelance: 'Freelance y Fiverr', visa: 'Visas', tax: 'Impuestos', lifestyle: 'Lifestyle', tools: 'Herramientas y setup' },
   },
   de: {
     metaTitle: 'Guides für Remote-Tech-Worker',
@@ -159,7 +159,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
     eyebrow: 'Guides',
     h1: 'Guides für Remote-Tech-Worker',
     intro: (n) => `${n} ausführliche, meinungsstarke Guides zu jedem Thema, das für eine Remote-Tech-Karriere zählt.`,
-    categories: { finding: 'Job finden', salary: 'Gehälter & Verhandlung', career: 'Karrierepfade', visa: 'Visa', tax: 'Steuern', lifestyle: 'Lifestyle', tools: 'Tools & Setup' },
+    categories: { finding: 'Job finden', salary: 'Gehälter & Verhandlung', career: 'Karrierepfade', freelance: 'Freelancing & Fiverr', visa: 'Visa', tax: 'Steuern', lifestyle: 'Lifestyle', tools: 'Tools & Setup' },
   },
   pt: {
     metaTitle: 'Guias para trabalhadores tech remotos',
@@ -167,7 +167,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
     eyebrow: 'Guias',
     h1: 'Guias para trabalhadores tech remotos',
     intro: (n) => `${n} guias longos e opinativos sobre cada tópico que importa para conseguir e sustentar uma carreira tech remota.`,
-    categories: { finding: 'Encontrar vaga', salary: 'Salários e negociação', career: 'Trajetórias', visa: 'Vistos', tax: 'Impostos', lifestyle: 'Lifestyle', tools: 'Ferramentas e setup' },
+    categories: { finding: 'Encontrar vaga', salary: 'Salários e negociação', career: 'Trajetórias', freelance: 'Freelance e Fiverr', visa: 'Vistos', tax: 'Impostos', lifestyle: 'Lifestyle', tools: 'Ferramentas e setup' },
   },
   it: {
     metaTitle: 'Guide per lavoratori tech remote',
@@ -175,7 +175,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
     eyebrow: 'Guide',
     h1: 'Guide per lavoratori tech remote',
     intro: (n) => `${n} guide lunghe e schierate su ogni tema che conta per ottenere e sostenere una carriera tech remote.`,
-    categories: { finding: 'Trovare lavoro', salary: 'Stipendi e negoziazione', career: 'Percorsi di carriera', visa: 'Visti', tax: 'Tasse', lifestyle: 'Lifestyle', tools: 'Strumenti e setup' },
+    categories: { finding: 'Trovare lavoro', salary: 'Stipendi e negoziazione', career: 'Percorsi di carriera', freelance: 'Freelance e Fiverr', visa: 'Visti', tax: 'Tasse', lifestyle: 'Lifestyle', tools: 'Strumenti e setup' },
   },
   pl: {
     metaTitle: 'Poradniki dla zdalnych pracowników tech',
@@ -183,7 +183,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
     eyebrow: 'Poradniki',
     h1: 'Poradniki dla zdalnych pracowników tech',
     intro: (n) => `${n} długich, opiniowych poradników o każdym temacie istotnym dla zdobycia i utrzymania zdalnej kariery tech.`,
-    categories: { finding: 'Znalezienie pracy', salary: 'Wynagrodzenia i negocjacje', career: 'Ścieżki kariery', visa: 'Wizy', tax: 'Podatki', lifestyle: 'Lifestyle', tools: 'Narzędzia i setup' },
+    categories: { finding: 'Znalezienie pracy', salary: 'Wynagrodzenia i negocjacje', career: 'Ścieżki kariery', freelance: 'Freelancing i Fiverr', visa: 'Wizy', tax: 'Podatki', lifestyle: 'Lifestyle', tools: 'Narzędzia i setup' },
   },
 };
 

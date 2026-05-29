@@ -2,7 +2,7 @@ export interface GuideEntry {
   slug: string;
   title: string;
   description: string;
-  category: 'finding' | 'salary' | 'visa' | 'tax' | 'lifestyle' | 'career' | 'tools';
+  category: 'finding' | 'salary' | 'visa' | 'tax' | 'lifestyle' | 'career' | 'tools' | 'freelance';
   body: string;
   faqs?: Array<{ q: string; a: string }>;
 }
@@ -1040,6 +1040,360 @@ Dubai: 0 percent on personal income, 9 percent corporate above 375k AED. Singapo
 
 ## Hidden costs to model
 Health insurance contributions. Pension contributions. Solidarity surcharges. These add 5 to 12 percentage points to nominal income tax in most EU countries.`,
+  },
+  {
+    slug: 'how-to-start-on-fiverr-as-a-developer',
+    title: 'How to start on Fiverr as a developer in 2026',
+    description: 'A step-by-step path to launching your first tech gig on Fiverr and landing paying buyers.',
+    category: 'freelance',
+    body: `Fiverr remains one of the fastest ways for a developer to start earning independent income. Unlike client networks that require interviews and vetting, you can publish a gig the same day and be discoverable to buyers within hours.
+
+## Why Fiverr works for developers
+Buyers on Fiverr arrive with a specific task and a budget already in mind. For a developer this means less selling and more delivering: bug fixes, small scripts, API integrations, landing pages, automations. The platform handles payments, disputes and discovery, so you focus on the work.
+
+## Pick one service to start
+The biggest mistake new sellers make is offering everything. Start with one narrow, repeatable service you can deliver reliably, for example "I will fix bugs in your React app" or "I will build a Python automation script". Narrow gigs rank better and convert higher.
+
+## Set up the account
+Create a seller account, complete your profile fully, and verify your identity. A complete profile with a real photo and a clear description ranks ahead of half-finished ones in Fiverr search.
+
+## Publish your first gig
+Write a clear title, pick the right category, add three pricing tiers, and include a portfolio sample. Even a single strong sample lifts conversion sharply.
+
+## First week expectations
+Most sellers get their first order within one to three weeks if their gig is well-targeted and priced for entry. Treat the first few orders as reputation investments: over-deliver, earn five-star reviews, and use that momentum to raise prices.`,
+    faqs: [
+      {
+        q: 'Do I need experience to start on Fiverr as a developer?',
+        a: 'No formal experience or degree is required. You need the ability to deliver one service reliably and at least one portfolio sample to demonstrate it.',
+      },
+      {
+        q: 'How much can a beginner developer earn on Fiverr?',
+        a: 'Entry sellers commonly start at 20 to 50 USD per gig and scale to several hundred per order within a few months as reviews accumulate and prices rise.',
+      },
+      {
+        q: 'How long until the first order?',
+        a: 'A well-targeted, well-priced gig typically lands its first order within one to three weeks of publishing.',
+      },
+    ],
+  },
+  {
+    slug: 'fiverr-profile-that-wins-orders',
+    title: 'How to build a Fiverr profile that wins orders',
+    description: 'The profile and gig elements that move buyers from browsing to ordering.',
+    category: 'freelance',
+    body: `Your Fiverr profile is a conversion page, not a CV. Buyers skim it in seconds and decide whether to trust you with their money. Every element should reduce risk and signal competence.
+
+## Profile photo and tagline
+Use a clear, friendly headshot. Faces convert better than logos for individual sellers. Your tagline should state the outcome you deliver, not your job title.
+
+## Description that sells outcomes
+Open with the buyer's problem, not your biography. State what you build, who it is for, and why ordering from you is low-risk. Keep it short and scannable.
+
+## Gig titles and tags
+Titles should match how buyers search: "I will build a responsive landing page in React" beats "Web development services". Use all available tags with the exact keywords buyers type.
+
+## Pricing tiers
+Offer three packages. The middle tier should be the one most buyers pick, so anchor it deliberately. The top tier exists to make the middle look reasonable and to capture high-budget buyers.
+
+## Portfolio and proof
+Add real samples to the gig gallery. Screenshots, before-and-after comparisons, and short demo videos all lift conversion. Social proof from reviews compounds over time, so prioritize early five-star ratings.
+
+## Response time
+Fiverr rewards fast responders in search and buyers notice. Enable notifications and aim to reply within an hour during your working day.`,
+    faqs: [
+      {
+        q: 'What makes a Fiverr gig rank higher?',
+        a: 'Keyword-matched titles and tags, a complete profile, fast response time, strong conversion from impressions to orders, and a steady flow of five-star reviews all push gigs up in Fiverr search.',
+      },
+      {
+        q: 'How many gigs should I publish?',
+        a: 'Start with one focused gig. Once it earns reviews, add adjacent gigs that target related buyer searches rather than spreading thin across unrelated services.',
+      },
+    ],
+  },
+  {
+    slug: 'best-fiverr-gigs-for-programmers',
+    title: 'The best Fiverr gigs for programmers in 2026',
+    description: 'The highest-demand, best-paying service categories for developers selling on Fiverr.',
+    category: 'freelance',
+    body: `Not all gigs are equal. Some developer services attract steady demand and command strong prices; others are a race to the bottom. Choosing the right category is half the battle.
+
+## Bug fixing and debugging
+Consistently high demand. Buyers with a broken site or app want it fixed fast and will pay a premium for speed. Easy to scope, easy to deliver, easy to earn repeat business.
+
+## Web app and landing page builds
+Front-end builds in React, Next.js, or plain HTML and CSS sell well. Landing pages in particular have predictable scope and quick turnaround.
+
+## Automation and scripting
+Python automations, web scraping, data cleaning, and spreadsheet-to-API integrations are in rising demand from non-technical buyers who value time saved.
+
+## API integrations
+Connecting Stripe, payment gateways, CRMs, or third-party APIs is a frequent buyer need with limited competition at the quality end.
+
+## AI and chatbot work
+The fastest-growing category in 2026. Custom GPT setups, chatbot integrations, prompt engineering, and LLM-powered tools attract buyers with real budgets and little supply of qualified sellers.
+
+## WordPress and no-code
+Still enormous in volume. WordPress fixes, plugin work, and no-code automation with tools like Zapier or Make are accessible entry points with constant demand.
+
+## What to avoid early
+Avoid large, vaguely scoped full-product builds as a beginner. They invite disputes and one-star risk. Start with tightly scoped, repeatable services and scale up.`,
+    faqs: [
+      {
+        q: 'Which Fiverr developer gig pays the most?',
+        a: 'AI and LLM integration work, complex API integrations, and full web app builds command the highest prices, often several hundred to a few thousand USD per order at the top-rated seller level.',
+      },
+      {
+        q: 'What is the easiest developer gig to start with?',
+        a: 'Bug fixing and small scripting tasks are the easiest to scope and deliver, making them the best entry point for building early reviews.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-get-your-first-fiverr-order',
+    title: 'How to get your first Fiverr order',
+    description: 'Practical tactics to land that crucial first sale and break the zero-review barrier.',
+    category: 'freelance',
+    body: `The hardest order on Fiverr is the first one. Buyers favor sellers with reviews, so a new gig starts at a disadvantage. These tactics break through the cold-start problem.
+
+## Price for entry, not for profit
+Your first few orders are reputation purchases. Price slightly below the market to remove the buyer's risk, then raise prices once you have five-star reviews.
+
+## Use Buyer Requests and Briefs
+Fiverr surfaces buyer needs directly. Respond quickly with a specific, tailored offer that names the buyer's exact problem. Generic copy-paste pitches lose; specific ones win.
+
+## Optimize for search from day one
+Match your title and tags to real buyer searches. A gig nobody can find gets no orders regardless of quality.
+
+## Promote externally
+Share your gig where your target buyers already are: relevant subreddits, Discord servers, X, and developer communities. External traffic that converts also signals quality to Fiverr's algorithm.
+
+## Over-deliver on the first orders
+Deliver faster than promised, add a small extra, and communicate proactively. Early five-star reviews with positive comments are worth far more than the order value itself.
+
+## Be responsive
+Reply to messages within minutes when possible. Fast, helpful responses convert browsing buyers into paying ones and improve your search ranking.`,
+    faqs: [
+      {
+        q: 'Why am I not getting orders on Fiverr?',
+        a: 'The most common causes are poor keyword targeting, no portfolio samples, prices set too high for a zero-review seller, and slow response times. Fix targeting and pricing first.',
+      },
+      {
+        q: 'Should I lower my prices to get the first order?',
+        a: 'Yes, temporarily. Treat the first three to five orders as reputation investments priced for conversion, then raise prices as reviews accumulate.',
+      },
+    ],
+  },
+  {
+    slug: 'fiverr-pricing-strategy-for-developers',
+    title: 'Fiverr pricing strategy for developers',
+    description: 'How to package and price your gigs so buyers pick the tier you want them to.',
+    category: 'freelance',
+    body: `Pricing on Fiverr is a design problem, not a guessing game. The three-tier structure exists to steer buyers toward the package you most want to sell.
+
+## The three-tier anchor
+Offer Basic, Standard, and Premium. Most buyers pick the middle tier, so design it as your target offer. The Basic tier captures price-sensitive buyers; the Premium tier anchors the others and captures high-budget orders.
+
+## Price on value, not hours
+Buyers pay for outcomes. A script that saves a business ten hours a week is worth far more than the two hours it takes you to write. Avoid pricing purely by your time.
+
+## Use gig extras
+Extras like faster delivery, additional revisions, source files, and ongoing support raise average order value with little extra effort. Many sellers earn more from extras than from base gigs.
+
+## Start low, climb fast
+A zero-review seller should price for conversion. Once you reach ten to twenty five-star reviews, raise prices in steps and watch conversion. If orders hold, raise again.
+
+## Avoid the race to the bottom
+Competing only on price attracts the worst buyers and erodes margins. Compete on speed, clarity, and proof instead. Premium positioning attracts better buyers and fewer disputes.
+
+## Reprice regularly
+Review your prices monthly. Strong demand and a full queue are signals to raise. A top-rated seller often charges several times their starting rate for the same service.`,
+    faqs: [
+      {
+        q: 'How should a beginner price gigs on Fiverr?',
+        a: 'Start slightly below market to remove buyer risk and win early reviews, then raise prices in steps once you have a base of five-star ratings.',
+      },
+      {
+        q: 'Do gig extras actually increase earnings?',
+        a: 'Yes. Extras like express delivery, extra revisions and source files commonly add 30 to 100 percent to average order value with minimal additional work.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-make-money-on-fiverr-as-a-developer',
+    title: 'How to make money on Fiverr as a developer',
+    description: 'A realistic playbook for turning Fiverr gigs into consistent monthly income.',
+    category: 'freelance',
+    body: `Making real money on Fiverr is less about talent and more about systems: a tight service, repeatable delivery, and compounding reviews. Here is how consistent earners operate.
+
+## Specialize, then dominate a niche
+Generalists struggle. Sellers who own a specific niche, for example "Shopify app bug fixes" or "Python data scraping", rank higher and charge more because buyers trust specialists.
+
+## Build a repeatable delivery process
+Templatize everything you can: onboarding questions, code structure, delivery messages. Faster delivery with consistent quality means more orders in the same hours and better reviews.
+
+## Climb the level system
+Fiverr rewards consistency with seller levels. Level One, Level Two, and Top Rated Seller each unlock more visibility, higher limits, and buyer trust. Hitting them requires on-time delivery, low cancellations, and steady volume.
+
+## Turn one-off buyers into repeat clients
+Repeat buyers are the highest-margin income on Fiverr. Deliver well, offer a maintenance or retainer extra, and stay responsive. A handful of recurring clients can become the bulk of your income.
+
+## Stack gigs around a core skill
+Once one gig works, add adjacent gigs that target related searches. A React developer can sell bug fixes, landing pages, and component libraries as separate gigs feeding the same skill.
+
+## Track and reinvest
+Watch which gigs convert and double down. Kill underperformers, promote winners, and raise prices as demand grows. Treat it like a small product business, because it is one.`,
+    faqs: [
+      {
+        q: 'How much can you realistically make on Fiverr as a developer?',
+        a: 'Part-time sellers commonly reach 500 to 2000 USD per month within a few months. Full-time top-rated developer sellers regularly earn 5000 USD or more monthly.',
+      },
+      {
+        q: 'Is Fiverr worth it for developers in 2026?',
+        a: 'Yes, particularly for in-demand niches like AI integration, automation and bug fixing where buyer demand outpaces qualified supply.',
+      },
+    ],
+  },
+  {
+    slug: 'fiverr-gig-seo-ranking-guide',
+    title: 'Fiverr gig SEO: how to rank your gig in search',
+    description: 'How Fiverr search works and the levers that move your gig to the first page.',
+    category: 'freelance',
+    body: `Most Fiverr orders come from search, so ranking is everything. Fiverr's algorithm rewards gigs that match buyer intent and then convert and deliver well.
+
+## Keyword research
+Find the exact phrases buyers type. Use Fiverr's own search autocomplete and study the titles of top-ranked gigs in your category. Target one primary keyword per gig.
+
+## Title, tags and category
+Place your primary keyword in the gig title naturally. Fill every tag slot with relevant search terms. Pick the most accurate category and subcategory, since mismatched categories suppress ranking.
+
+## Conversion signals
+Fiverr tracks how many people who view your gig actually order. A high click-to-order rate pushes your gig up. This is why strong gig images, clear pricing, and proof matter for ranking, not just for buyers.
+
+## Delivery and review velocity
+On-time delivery, low cancellation rates, and a steady stream of recent five-star reviews are major ranking factors. A burst of good reviews early can lift a new gig quickly.
+
+## Response rate and time
+Fast, consistent responses improve both ranking and conversion. Fiverr surfaces responsive sellers more often.
+
+## Freshness and consistency
+Active gigs with recent orders rank better than dormant ones. Staying online, updating gig content, and maintaining order flow all help. New gigs also get a temporary visibility boost, so launch with a plan to convert it into reviews.`,
+    faqs: [
+      {
+        q: 'How does Fiverr decide which gigs to show first?',
+        a: 'Fiverr ranks on relevance to the search, conversion rate, review quality and recency, on-time delivery, low cancellations, and seller responsiveness.',
+      },
+      {
+        q: 'How long does it take a new Fiverr gig to rank?',
+        a: 'New gigs get a short visibility boost at launch. Converting that into orders and five-star reviews within the first weeks is what sustains ranking thereafter.',
+      },
+    ],
+  },
+  {
+    slug: 'fiverr-vs-upwork-for-developers',
+    title: 'Fiverr vs Upwork for developers: which to choose',
+    description: 'A practical comparison of the two largest freelance platforms for selling tech services.',
+    category: 'freelance',
+    body: `Fiverr and Upwork are the two largest freelance marketplaces, but they work differently. Choosing the right one, or using both, depends on how you prefer to sell.
+
+## How they differ
+On Fiverr you publish productized gigs and buyers come to you. On Upwork you browse job posts and submit proposals. Fiverr is closer to running a storefront; Upwork is closer to applying for contracts.
+
+## Speed to first income
+Fiverr is usually faster to first income for developers. You can publish a gig today and be found in search immediately. Upwork proposals compete against many other freelancers and can take longer to convert.
+
+## Pricing model
+Fiverr's fixed-package model suits repeatable, well-scoped services. Upwork's hourly and milestone model suits longer, custom engagements where scope evolves.
+
+## Fees
+Both take a platform fee. Factor it into your pricing on either platform. Fees decline on Upwork as you bill more with the same client.
+
+## Buyer type
+Fiverr buyers often want fast, defined deliverables. Upwork clients more often want ongoing relationships and larger projects. Many developers use Fiverr to productize small services and Upwork for longer contracts.
+
+## The case for both
+You do not have to choose. Running productized gigs on Fiverr while submitting selective proposals on Upwork diversifies your income and your buyer pipeline.`,
+    faqs: [
+      {
+        q: 'Is Fiverr or Upwork better for beginners?',
+        a: 'Fiverr is generally faster for beginners because you can publish a gig and be discoverable immediately, rather than competing on proposals from a zero-history account.',
+      },
+      {
+        q: 'Can I use Fiverr and Upwork at the same time?',
+        a: 'Yes. Many developers productize quick services on Fiverr and pursue larger custom contracts on Upwork to diversify income.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-become-a-fiverr-top-rated-seller',
+    title: 'How to become a Fiverr Top Rated Seller',
+    description: 'The requirements and habits that move you up the seller levels to Top Rated.',
+    category: 'freelance',
+    body: `Fiverr's seller levels are the trust ladder. Each level unlocks more visibility, higher gig limits, and faster payouts. Top Rated Seller is the tier that materially changes earnings.
+
+## The level system
+New sellers start unranked. Level One, Level Two, and Top Rated Seller are earned by meeting thresholds on tenure, completed orders, earnings, on-time delivery, response rate, and rating, measured over a rolling window.
+
+## On-time delivery is non-negotiable
+Late deliveries are the fastest way to stall your progression. Pad your delivery times so you consistently beat them, rather than promising fast and slipping.
+
+## Keep cancellations low
+Cancellations hurt more than almost anything. Scope orders precisely, ask clarifying questions before accepting, and decline work outside your gig rather than risk a cancellation.
+
+## Maintain a high rating
+Levels require a consistently high average rating. Over-communicate, manage expectations, and resolve issues before they become low ratings.
+
+## Respond fast and consistently
+A high response rate within a short window is a level requirement and a ranking factor. Build a habit of checking messages several times a day.
+
+## Volume with quality
+Levels reward both completed-order count and earnings. Steady, reliable volume at quality, rather than occasional large orders, is the surest path. Manual review for Top Rated Seller also weighs professionalism and account health.`,
+    faqs: [
+      {
+        q: 'How long does it take to become a Top Rated Seller on Fiverr?',
+        a: 'It typically takes several months of consistent, high-quality delivery. Top Rated status requires sustained tenure, order volume, earnings, on-time delivery and high ratings, plus a manual review.',
+      },
+      {
+        q: 'What disqualifies you from leveling up on Fiverr?',
+        a: 'Late deliveries, order cancellations, slow response rates, and ratings below the threshold are the main blockers to advancing seller levels.',
+      },
+    ],
+  },
+  {
+    slug: 'sell-ai-services-on-fiverr-2026',
+    title: 'How to sell AI services on Fiverr in 2026',
+    description: 'The most profitable AI service categories on Fiverr and how to package them.',
+    category: 'freelance',
+    body: `AI services are the fastest-growing developer category on Fiverr in 2026. Buyer demand has outpaced the supply of sellers who can actually deliver, which means strong prices and steady orders for those who can.
+
+## Chatbot and assistant builds
+Custom chatbots and AI assistants for websites and support are in heavy demand from small businesses. Integrating an LLM with a knowledge base and deploying it is a high-value, repeatable gig.
+
+## Custom GPT and prompt engineering
+Buyers want tailored GPTs, prompt libraries, and workflow automations. These are quick to deliver and command good prices because most buyers cannot build them themselves.
+
+## LLM app integration
+Wiring an LLM into an existing product, adding retrieval-augmented generation, or building an internal AI tool are premium gigs. Production deployment experience separates you from the crowd.
+
+## AI automation
+Combining LLMs with automation tools to handle content, data processing, or customer workflows sells well to non-technical buyers focused on time saved.
+
+## How to package AI gigs
+Productize a specific outcome rather than selling vague AI consulting. "I will build a customer support chatbot trained on your docs" converts far better than "AI services". Offer a Basic setup, a Standard with integration, and a Premium with ongoing tuning.
+
+## Why now
+The supply of qualified AI sellers is still thin relative to demand. Sellers who establish reviews in AI categories now build a durable ranking advantage as the category grows.`,
+    faqs: [
+      {
+        q: 'What AI services sell best on Fiverr?',
+        a: 'Custom chatbots trained on a business knowledge base, custom GPT and prompt engineering, LLM app integrations, and AI automation workflows are the strongest sellers in 2026.',
+      },
+      {
+        q: 'Do I need to be an AI expert to sell AI gigs?',
+        a: 'You need practical delivery skill, not research credentials. The ability to integrate LLMs, build chatbots, and ship working automations is what buyers pay for.',
+      },
+    ],
   },
 );
 

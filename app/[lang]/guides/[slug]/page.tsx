@@ -13,6 +13,7 @@ import { NomadCTA } from '@/components/NomadCTA';
 import { AiToolsCTA } from '@/components/AiToolsCTA';
 import { RemoteTools } from '@/components/RemoteTools';
 import { EarnWithAi } from '@/components/EarnWithAi';
+import { FiverrCTA } from '@/components/FiverrCTA';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { localePath } from '@/lib/i18n';
 
@@ -130,6 +131,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
           <EarnWithAi locale={params.lang} />
         </>
       )}
+      {g.category === 'freelance' && <FiverrCTA locale={params.lang} />}
       {g.category === 'tools' && <RemoteTools locale={params.lang} />}
       {(g.category === 'lifestyle' || g.category === 'visa' || g.category === 'tax' || g.category === 'finding' || g.category === 'career') && (
         <NomadCTA  locale={params.lang} />

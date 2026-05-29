@@ -776,4 +776,255 @@ Dubai: 0 por cento sobre renda pessoal, 9 por cento corporativo acima de 375 mil
 ## Custos ocultos a modelar
 Contribuições de seguro de saúde. Contribuições previdenciárias. Adicionais de solidariedade. Estes acrescentam de 5 a 12 pontos percentuais ao imposto de renda nominal na maioria dos países da UE.`,
   },
+  'how-to-start-on-fiverr-as-a-developer': {
+    body: `O Fiverr continua sendo uma das formas mais rápidas para um desenvolvedor começar a gerar renda independente. Diferentemente de redes de clientes que exigem entrevistas e triagem, você pode publicar um gig no mesmo dia e ficar visível para compradores em poucas horas.
+
+## Por que o Fiverr funciona para desenvolvedores
+Os compradores no Fiverr chegam com uma tarefa específica e um orçamento já em mente. Para um desenvolvedor, isso significa menos venda e mais entrega: correções de bugs, pequenos scripts, integrações de API, landing pages, automações. A plataforma cuida dos pagamentos, das disputas e da descoberta, então você foca no trabalho.
+
+## Escolha um serviço para começar
+O maior erro que os novos vendedores cometem é oferecer de tudo. Comece com um serviço único, restrito e repetível que você consiga entregar de forma confiável, por exemplo "Vou corrigir bugs no seu app React" ou "Vou criar um script de automação em Python". Gigs restritos rankeiam melhor e convertem mais.
+
+## Configure a conta
+Crie uma conta de vendedor, preencha seu perfil por completo e verifique sua identidade. Um perfil completo, com uma foto real e uma descrição clara, fica à frente dos perfis pela metade na busca do Fiverr.
+
+## Publique seu primeiro gig
+Escreva um título claro, escolha a categoria certa, adicione três faixas de preço e inclua uma amostra de portfólio. Mesmo uma única amostra forte aumenta bastante a conversão.
+
+## Expectativas da primeira semana
+A maioria dos vendedores recebe o primeiro pedido dentro de uma a três semanas se o gig for bem direcionado e tiver preço de entrada. Trate os primeiros pedidos como investimentos em reputação: entregue além do combinado, conquiste avaliações de cinco estrelas e use esse impulso para aumentar os preços.`,
+    faqs: [
+      { q: "Preciso de experiência para começar no Fiverr como desenvolvedor?", a: "Nenhuma experiência formal ou diploma é exigido. Você precisa da capacidade de entregar um serviço de forma confiável e de ao menos uma amostra de portfólio para demonstrá-lo." },
+      { q: "Quanto um desenvolvedor iniciante pode ganhar no Fiverr?", a: "Vendedores iniciantes costumam começar com 20 a 50 USD por gig e escalar para algumas centenas por pedido em poucos meses, à medida que as avaliações se acumulam e os preços sobem." },
+      { q: "Quanto tempo até o primeiro pedido?", a: "Um gig bem direcionado e com bom preço normalmente recebe o primeiro pedido dentro de uma a três semanas após a publicação." },
+    ],
+  },
+  'fiverr-profile-that-wins-orders': {
+    body: `Seu perfil no Fiverr é uma página de conversão, não um currículo. Os compradores o examinam em segundos e decidem se confiam em você com o dinheiro deles. Cada elemento deve reduzir o risco e sinalizar competência.
+
+## Foto de perfil e slogan
+Use uma foto de rosto clara e simpática. Rostos convertem melhor do que logos para vendedores individuais. Seu slogan deve declarar o resultado que você entrega, não o seu cargo.
+
+## Descrição que vende resultados
+Comece pelo problema do comprador, não pela sua biografia. Diga o que você constrói, para quem é e por que pedir de você é de baixo risco. Mantenha o texto curto e fácil de ler.
+
+## Títulos e tags dos gigs
+Os títulos devem corresponder à forma como os compradores pesquisam: "Vou criar uma landing page responsiva em React" supera "Serviços de desenvolvimento web". Use todas as tags disponíveis com as palavras-chave exatas que os compradores digitam.
+
+## Faixas de preço
+Ofereça três pacotes. A faixa do meio deve ser a que a maioria dos compradores escolhe, então ancore-a de forma deliberada. A faixa superior existe para fazer a do meio parecer razoável e para captar compradores com orçamento alto.
+
+## Portfólio e provas
+Adicione amostras reais à galeria do gig. Capturas de tela, comparações de antes e depois e vídeos curtos de demonstração elevam a conversão. A prova social das avaliações se acumula ao longo do tempo, então priorize avaliações de cinco estrelas no início.
+
+## Tempo de resposta
+O Fiverr recompensa quem responde rápido na busca, e os compradores percebem isso. Ative as notificações e procure responder dentro de uma hora durante o seu dia de trabalho.`,
+    faqs: [
+      { q: "O que faz um gig do Fiverr rankear mais alto?", a: "Títulos e tags com correspondência de palavras-chave, um perfil completo, tempo de resposta rápido, uma forte conversão de impressões em pedidos e um fluxo constante de avaliações de cinco estrelas, tudo isso empurra os gigs para cima na busca do Fiverr." },
+      { q: "Quantos gigs devo publicar?", a: "Comece com um gig focado. Quando ele conquistar avaliações, adicione gigs adjacentes que mirem buscas relacionadas dos compradores, em vez de se espalhar de forma rasa por serviços não relacionados." },
+    ],
+  },
+  'best-fiverr-gigs-for-programmers': {
+    body: `Nem todos os gigs são iguais. Alguns serviços de desenvolvedor atraem demanda constante e exigem bons preços; outros são uma corrida para o fundo do poço. Escolher a categoria certa é metade da batalha.
+
+## Correção de bugs e depuração
+Demanda consistentemente alta. Compradores com um site ou app quebrado querem o conserto rápido e pagam um valor extra pela velocidade. Fácil de definir o escopo, fácil de entregar, fácil de conquistar trabalho recorrente.
+
+## Construção de web apps e landing pages
+Construções de front-end em React, Next.js ou HTML e CSS puro vendem bem. As landing pages, em particular, têm escopo previsível e prazo rápido.
+
+## Automação e scripting
+Automações em Python, web scraping, limpeza de dados e integrações de planilha para API estão em demanda crescente por parte de compradores não técnicos que valorizam o tempo economizado.
+
+## Integrações de API
+Conectar Stripe, gateways de pagamento, CRMs ou APIs de terceiros é uma necessidade frequente dos compradores, com pouca concorrência na ponta de qualidade.
+
+## Trabalho com IA e chatbots
+A categoria de crescimento mais rápido em 2026. Configurações de GPT personalizadas, integrações de chatbot, engenharia de prompts e ferramentas alimentadas por LLM atraem compradores com orçamentos reais e pouca oferta de vendedores qualificados.
+
+## WordPress e no-code
+Ainda enorme em volume. Correções no WordPress, trabalho com plugins e automação no-code com ferramentas como Zapier ou Make são pontos de entrada acessíveis com demanda constante.
+
+## O que evitar no início
+Evite construções grandes e de escopo vago de produtos completos quando iniciante. Elas convidam disputas e o risco de uma estrela. Comece com serviços de escopo restrito e repetível e cresça a partir daí.`,
+    faqs: [
+      { q: "Qual gig de desenvolvedor no Fiverr paga mais?", a: "Trabalho de integração de IA e LLM, integrações de API complexas e construções completas de web apps exigem os preços mais altos, muitas vezes de algumas centenas a alguns milhares de USD por pedido no nível de vendedor Top Rated." },
+      { q: "Qual é o gig de desenvolvedor mais fácil para começar?", a: "Correção de bugs e pequenas tarefas de scripting são os mais fáceis de definir o escopo e entregar, o que os torna o melhor ponto de entrada para construir as primeiras avaliações." },
+    ],
+  },
+  'how-to-get-your-first-fiverr-order': {
+    body: `O pedido mais difícil no Fiverr é o primeiro. Os compradores favorecem vendedores com avaliações, então um gig novo começa em desvantagem. Estas táticas rompem o problema da partida do zero.
+
+## Defina preço de entrada, não de lucro
+Seus primeiros pedidos são compras de reputação. Coloque um preço um pouco abaixo do mercado para remover o risco do comprador e depois aumente os preços quando tiver avaliações de cinco estrelas.
+
+## Use Buyer Requests e Briefs
+O Fiverr mostra as necessidades dos compradores diretamente. Responda rápido com uma oferta específica e personalizada que cite o problema exato do comprador. Propostas genéricas de copiar e colar perdem; as específicas vencem.
+
+## Otimize para a busca desde o primeiro dia
+Faça seu título e suas tags corresponderem às buscas reais dos compradores. Um gig que ninguém consegue encontrar não recebe pedidos, independentemente da qualidade.
+
+## Promova externamente
+Compartilhe seu gig onde seus compradores-alvo já estão: subreddits relevantes, servidores do Discord, X e comunidades de desenvolvedores. O tráfego externo que converte também sinaliza qualidade para o algoritmo do Fiverr.
+
+## Entregue além do combinado nos primeiros pedidos
+Entregue mais rápido do que o prometido, adicione um pequeno extra e comunique-se de forma proativa. Avaliações iniciais de cinco estrelas com comentários positivos valem muito mais do que o valor do próprio pedido.
+
+## Seja responsivo
+Responda às mensagens em poucos minutos quando possível. Respostas rápidas e úteis convertem compradores que estão apenas navegando em compradores pagantes e melhoram seu ranking na busca.`,
+    faqs: [
+      { q: "Por que não estou recebendo pedidos no Fiverr?", a: "As causas mais comuns são um direcionamento ruim de palavras-chave, ausência de amostras de portfólio, preços altos demais para um vendedor sem avaliações e tempos de resposta lentos. Corrija primeiro o direcionamento e o preço." },
+      { q: "Devo baixar meus preços para conseguir o primeiro pedido?", a: "Sim, temporariamente. Trate os primeiros três a cinco pedidos como investimentos em reputação, com preço voltado para a conversão, e depois aumente os preços conforme as avaliações se acumulam." },
+    ],
+  },
+  'fiverr-pricing-strategy-for-developers': {
+    body: `Definir preços no Fiverr é um problema de design, não um jogo de adivinhação. A estrutura de três faixas existe para conduzir os compradores ao pacote que você mais quer vender.
+
+## A âncora das três faixas
+Ofereça Básico, Padrão e Premium. A maioria dos compradores escolhe a faixa do meio, então projete-a como sua oferta-alvo. A faixa Básica captura compradores sensíveis a preço; a faixa Premium ancora as demais e captura pedidos de orçamento alto.
+
+## Cobre por valor, não por horas
+Os compradores pagam por resultados. Um script que economiza dez horas por semana para uma empresa vale muito mais do que as duas horas que você leva para escrevê-lo. Evite definir preço puramente pelo seu tempo.
+
+## Use os extras do gig
+Extras como entrega mais rápida, revisões adicionais, arquivos-fonte e suporte contínuo aumentam o valor médio do pedido com pouco esforço extra. Muitos vendedores ganham mais com os extras do que com os gigs básicos.
+
+## Comece baixo, suba rápido
+Um vendedor sem avaliações deve definir o preço para a conversão. Quando chegar a dez ou vinte avaliações de cinco estrelas, aumente os preços por etapas e observe a conversão. Se os pedidos se mantiverem, aumente de novo.
+
+## Evite a corrida para o fundo do poço
+Competir apenas por preço atrai os piores compradores e corrói as margens. Compita por velocidade, clareza e prova. O posicionamento premium atrai compradores melhores e menos disputas.
+
+## Reajuste os preços regularmente
+Revise seus preços mensalmente. Demanda forte e uma fila cheia são sinais para aumentar. Um vendedor Top Rated muitas vezes cobra várias vezes sua tarifa inicial pelo mesmo serviço.`,
+    faqs: [
+      { q: "Como um iniciante deve precificar gigs no Fiverr?", a: "Comece um pouco abaixo do mercado para remover o risco do comprador e conquistar avaliações iniciais, depois aumente os preços por etapas quando tiver uma base de avaliações de cinco estrelas." },
+      { q: "Os extras do gig realmente aumentam os ganhos?", a: "Sim. Extras como entrega expressa, revisões extras e arquivos-fonte costumam acrescentar de 30 a 100 por cento ao valor médio do pedido, com trabalho adicional mínimo." },
+    ],
+  },
+  'how-to-make-money-on-fiverr-as-a-developer': {
+    body: `Ganhar dinheiro de verdade no Fiverr tem menos a ver com talento e mais com sistemas: um serviço enxuto, entrega repetível e avaliações que se acumulam. Veja como operam os vendedores consistentes.
+
+## Especialize-se e depois domine um nicho
+Generalistas têm dificuldade. Vendedores que dominam um nicho específico, por exemplo "correções de bugs em apps Shopify" ou "scraping de dados em Python", rankeiam mais alto e cobram mais porque os compradores confiam em especialistas.
+
+## Crie um processo de entrega repetível
+Transforme em modelo tudo o que puder: perguntas de onboarding, estrutura de código, mensagens de entrega. Entrega mais rápida com qualidade consistente significa mais pedidos nas mesmas horas e avaliações melhores.
+
+## Suba no sistema de níveis
+O Fiverr recompensa a consistência com níveis de vendedor. Nível Um, Nível Dois e Top Rated Seller cada um desbloqueia mais visibilidade, limites mais altos e confiança do comprador. Alcançá-los exige entrega no prazo, poucos cancelamentos e volume constante.
+
+## Transforme compradores avulsos em clientes recorrentes
+Compradores recorrentes são a renda de maior margem no Fiverr. Entregue bem, ofereça um extra de manutenção ou retainer e mantenha-se responsivo. Um punhado de clientes recorrentes pode se tornar a maior parte da sua renda.
+
+## Empilhe gigs em torno de uma habilidade central
+Quando um gig funciona, adicione gigs adjacentes que mirem buscas relacionadas. Um desenvolvedor React pode vender correções de bugs, landing pages e bibliotecas de componentes como gigs separados que alimentam a mesma habilidade.
+
+## Acompanhe e reinvista
+Observe quais gigs convertem e aposte mais neles. Elimine os que têm baixo desempenho, promova os vencedores e aumente os preços conforme a demanda cresce. Trate como um pequeno negócio de produto, porque é exatamente isso.`,
+    faqs: [
+      { q: "Quanto dá para ganhar de forma realista no Fiverr como desenvolvedor?", a: "Vendedores de meio período costumam chegar a 500 a 2000 USD por mês em poucos meses. Vendedores desenvolvedores Top Rated em tempo integral ganham regularmente 5000 USD ou mais por mês." },
+      { q: "O Fiverr vale a pena para desenvolvedores em 2026?", a: "Sim, especialmente em nichos de alta demanda como integração de IA, automação e correção de bugs, onde a demanda dos compradores supera a oferta qualificada." },
+    ],
+  },
+  'fiverr-gig-seo-ranking-guide': {
+    body: `A maioria dos pedidos no Fiverr vem da busca, então o ranking é tudo. O algoritmo do Fiverr recompensa gigs que correspondem à intenção do comprador e que depois convertem e entregam bem.
+
+## Pesquisa de palavras-chave
+Encontre as frases exatas que os compradores digitam. Use o próprio autocompletar da busca do Fiverr e estude os títulos dos gigs mais bem rankeados na sua categoria. Mire em uma palavra-chave principal por gig.
+
+## Título, tags e categoria
+Coloque sua palavra-chave principal no título do gig de forma natural. Preencha todos os espaços de tags com termos de busca relevantes. Escolha a categoria e a subcategoria mais precisas, já que categorias incompatíveis prejudicam o ranking.
+
+## Sinais de conversão
+O Fiverr acompanha quantas pessoas que veem seu gig de fato fazem um pedido. Uma alta taxa de clique para pedido empurra seu gig para cima. É por isso que imagens fortes do gig, preços claros e provas importam para o ranking, não apenas para os compradores.
+
+## Velocidade de entrega e de avaliações
+Entrega no prazo, baixas taxas de cancelamento e um fluxo constante de avaliações recentes de cinco estrelas são grandes fatores de ranking. Uma rajada de boas avaliações no início pode elevar um gig novo rapidamente.
+
+## Taxa e tempo de resposta
+Respostas rápidas e consistentes melhoram tanto o ranking quanto a conversão. O Fiverr mostra os vendedores responsivos com mais frequência.
+
+## Atualidade e consistência
+Gigs ativos com pedidos recentes rankeiam melhor do que os inativos. Permanecer online, atualizar o conteúdo do gig e manter o fluxo de pedidos, tudo isso ajuda. Gigs novos também recebem um impulso temporário de visibilidade, então lance com um plano para convertê-lo em avaliações.`,
+    faqs: [
+      { q: "Como o Fiverr decide quais gigs mostrar primeiro?", a: "O Fiverr rankeia pela relevância em relação à busca, pela taxa de conversão, pela qualidade e recência das avaliações, pela entrega no prazo, por poucos cancelamentos e pela responsividade do vendedor." },
+      { q: "Quanto tempo leva para um gig novo do Fiverr rankear?", a: "Gigs novos recebem um breve impulso de visibilidade no lançamento. Converter isso em pedidos e avaliações de cinco estrelas nas primeiras semanas é o que sustenta o ranking dali em diante." },
+    ],
+  },
+  'fiverr-vs-upwork-for-developers': {
+    body: `Fiverr e Upwork são os dois maiores marketplaces de freelance, mas funcionam de formas diferentes. Escolher o certo, ou usar os dois, depende de como você prefere vender.
+
+## Como eles diferem
+No Fiverr você publica gigs no formato de produto e os compradores vêm até você. No Upwork você navega por vagas e envia propostas. O Fiverr está mais próximo de gerir uma loja; o Upwork está mais próximo de se candidatar a contratos.
+
+## Velocidade até a primeira renda
+O Fiverr costuma ser mais rápido para a primeira renda dos desenvolvedores. Você pode publicar um gig hoje e ser encontrado na busca imediatamente. As propostas no Upwork competem com muitos outros freelancers e podem demorar mais para converter.
+
+## Modelo de preço
+O modelo de pacotes fixos do Fiverr combina com serviços repetíveis e de escopo bem definido. O modelo por hora e por marcos do Upwork combina com engajamentos mais longos e personalizados, em que o escopo evolui.
+
+## Taxas
+Ambos cobram uma taxa de plataforma. Considere-a no seu preço em qualquer uma das plataformas. As taxas diminuem no Upwork à medida que você fatura mais com o mesmo cliente.
+
+## Tipo de comprador
+Os compradores do Fiverr geralmente querem entregas rápidas e bem definidas. Os clientes do Upwork mais frequentemente querem relacionamentos contínuos e projetos maiores. Muitos desenvolvedores usam o Fiverr para transformar pequenos serviços em produtos e o Upwork para contratos mais longos.
+
+## O argumento por usar os dois
+Você não precisa escolher. Manter gigs no formato de produto no Fiverr enquanto envia propostas seletivas no Upwork diversifica sua renda e seu funil de compradores.`,
+    faqs: [
+      { q: "Fiverr ou Upwork é melhor para iniciantes?", a: "O Fiverr geralmente é mais rápido para iniciantes porque você pode publicar um gig e ficar visível imediatamente, em vez de competir por propostas a partir de uma conta sem histórico." },
+      { q: "Posso usar Fiverr e Upwork ao mesmo tempo?", a: "Sim. Muitos desenvolvedores transformam serviços rápidos em produtos no Fiverr e buscam contratos personalizados maiores no Upwork para diversificar a renda." },
+    ],
+  },
+  'how-to-become-a-fiverr-top-rated-seller': {
+    body: `Os níveis de vendedor do Fiverr são a escada da confiança. Cada nível desbloqueia mais visibilidade, limites maiores de gigs e pagamentos mais rápidos. Top Rated Seller é o patamar que muda os ganhos de forma significativa.
+
+## O sistema de níveis
+Os novos vendedores começam sem nível. Nível Um, Nível Dois e Top Rated Seller são conquistados ao atingir limiares de tempo de conta, pedidos concluídos, ganhos, entrega no prazo, taxa de resposta e avaliação, medidos ao longo de uma janela móvel.
+
+## Entrega no prazo é inegociável
+Entregas atrasadas são a forma mais rápida de travar sua progressão. Coloque uma folga nos seus prazos de entrega para superá-los de forma consistente, em vez de prometer rápido e deslizar.
+
+## Mantenha os cancelamentos baixos
+Cancelamentos prejudicam mais do que quase qualquer outra coisa. Defina o escopo dos pedidos com precisão, faça perguntas esclarecedoras antes de aceitar e recuse trabalho fora do seu gig em vez de arriscar um cancelamento.
+
+## Mantenha uma avaliação alta
+Os níveis exigem uma média de avaliação consistentemente alta. Comunique-se em excesso, gerencie as expectativas e resolva os problemas antes que se tornem avaliações baixas.
+
+## Responda rápido e de forma consistente
+Uma alta taxa de resposta dentro de uma janela curta é um requisito de nível e um fator de ranking. Crie o hábito de checar as mensagens várias vezes por dia.
+
+## Volume com qualidade
+Os níveis recompensam tanto a contagem de pedidos concluídos quanto os ganhos. Volume constante e confiável com qualidade, em vez de pedidos grandes ocasionais, é o caminho mais seguro. A revisão manual para Top Rated Seller também pesa o profissionalismo e a saúde da conta.`,
+    faqs: [
+      { q: "Quanto tempo leva para se tornar um Top Rated Seller no Fiverr?", a: "Normalmente leva vários meses de entrega consistente e de alta qualidade. O status Top Rated exige tempo de conta sustentado, volume de pedidos, ganhos, entrega no prazo e avaliações altas, além de uma revisão manual." },
+      { q: "O que desqualifica você de subir de nível no Fiverr?", a: "Entregas atrasadas, cancelamentos de pedidos, taxas de resposta lentas e avaliações abaixo do limiar são os principais bloqueios para avançar nos níveis de vendedor." },
+    ],
+  },
+  'sell-ai-services-on-fiverr-2026': {
+    body: `Os serviços de IA são a categoria de desenvolvedor que mais cresce no Fiverr em 2026. A demanda dos compradores superou a oferta de vendedores que de fato conseguem entregar, o que significa preços fortes e pedidos constantes para quem consegue.
+
+## Construção de chatbots e assistentes
+Chatbots e assistentes de IA personalizados para sites e suporte estão em forte demanda por parte de pequenas empresas. Integrar um LLM a uma base de conhecimento e implantá-lo é um gig de alto valor e repetível.
+
+## GPT personalizado e engenharia de prompts
+Os compradores querem GPTs sob medida, bibliotecas de prompts e automações de fluxo de trabalho. São rápidos de entregar e exigem bons preços porque a maioria dos compradores não consegue construí-los sozinha.
+
+## Integração de apps com LLM
+Conectar um LLM a um produto existente, adicionar geração aumentada por recuperação ou construir uma ferramenta interna de IA são gigs premium. Experiência com implantação em produção separa você da multidão.
+
+## Automação com IA
+Combinar LLMs com ferramentas de automação para lidar com conteúdo, processamento de dados ou fluxos de trabalho de clientes vende bem para compradores não técnicos focados no tempo economizado.
+
+## Como empacotar gigs de IA
+Transforme em produto um resultado específico em vez de vender consultoria de IA vaga. "Vou construir um chatbot de suporte ao cliente treinado nos seus documentos" converte muito melhor do que "serviços de IA". Ofereça uma configuração Básica, uma Padrão com integração e uma Premium com ajustes contínuos.
+
+## Por que agora
+A oferta de vendedores qualificados em IA ainda é fina em relação à demanda. Os vendedores que estabelecem avaliações nas categorias de IA agora constroem uma vantagem de ranking duradoura à medida que a categoria cresce.`,
+    faqs: [
+      { q: "Quais serviços de IA vendem melhor no Fiverr?", a: "Chatbots personalizados treinados em uma base de conhecimento da empresa, GPT personalizado e engenharia de prompts, integrações de apps com LLM e fluxos de automação com IA são os que mais vendem em 2026." },
+      { q: "Preciso ser especialista em IA para vender gigs de IA?", a: "Você precisa de habilidade prática de entrega, não de credenciais de pesquisa. A capacidade de integrar LLMs, construir chatbots e entregar automações funcionais é o que os compradores pagam." },
+    ],
+  },
 };

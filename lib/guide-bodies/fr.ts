@@ -794,4 +794,255 @@ Dubaï : 0 pour cent sur le revenu des personnes, 9 pour cent au niveau des soci
 ## Coûts cachés à modéliser
 Cotisations d'assurance maladie. Cotisations retraite. Surtaxes de solidarité. Elles ajoutent 5 à 12 points de pourcentage à l'impôt nominal sur le revenu dans la plupart des pays de l'UE.`,
   },
+  'how-to-start-on-fiverr-as-a-developer': {
+    body: `Fiverr reste l'un des moyens les plus rapides pour un développeur de commencer à générer un revenu indépendant. Contrairement aux réseaux de clients qui exigent entretiens et sélection, vous pouvez publier une prestation le jour même et être visible auprès des acheteurs en quelques heures.
+
+## Pourquoi Fiverr fonctionne pour les développeurs
+Les acheteurs sur Fiverr arrivent avec une tâche précise et un budget déjà en tête. Pour un développeur, cela signifie moins de vente et plus de réalisation : corrections de bugs, petits scripts, intégrations d'API, pages d'atterrissage, automatisations. La plateforme gère les paiements, les litiges et la découverte, ce qui vous permet de vous concentrer sur le travail.
+
+## Choisissez un seul service pour commencer
+La plus grande erreur des nouveaux vendeurs est de tout proposer. Commencez par un seul service restreint et reproductible que vous pouvez livrer de façon fiable, par exemple "Je corrige les bugs de votre application React" ou "Je construis un script d'automatisation Python". Les prestations ciblées sont mieux classées et convertissent davantage.
+
+## Configurez le compte
+Créez un compte vendeur, complétez entièrement votre profil et vérifiez votre identité. Un profil complet avec une vraie photo et une description claire est mieux classé dans la recherche Fiverr que des profils à moitié remplis.
+
+## Publiez votre première prestation
+Rédigez un titre clair, choisissez la bonne catégorie, ajoutez trois paliers tarifaires et incluez un exemple de portfolio. Même un seul exemple solide augmente fortement la conversion.
+
+## Attentes pour la première semaine
+La plupart des vendeurs reçoivent leur première commande en une à trois semaines si leur prestation est bien ciblée et tarifée pour l'entrée de gamme. Considérez les premières commandes comme des investissements de réputation : dépassez les attentes, gagnez des avis cinq étoiles, et utilisez cet élan pour augmenter vos prix.`,
+    faqs: [
+      { q: "Ai-je besoin d'expérience pour démarrer sur Fiverr en tant que développeur ?", a: "Aucune expérience formelle ni diplôme n'est requis. Vous avez besoin de la capacité à livrer un service de façon fiable et d'au moins un exemple de portfolio pour le démontrer." },
+      { q: "Combien un développeur débutant peut-il gagner sur Fiverr ?", a: "Les vendeurs débutants commencent souvent entre 20 et 50 USD par prestation et montent à plusieurs centaines par commande en quelques mois, à mesure que les avis s'accumulent et que les prix augmentent." },
+      { q: "Combien de temps avant la première commande ?", a: "Une prestation bien ciblée et bien tarifée obtient généralement sa première commande en une à trois semaines après publication." },
+    ],
+  },
+  'fiverr-profile-that-wins-orders': {
+    body: `Votre profil Fiverr est une page de conversion, pas un CV. Les acheteurs le parcourent en quelques secondes et décident s'ils peuvent vous confier leur argent. Chaque élément doit réduire le risque et signaler la compétence.
+
+## Photo de profil et accroche
+Utilisez un portrait net et avenant. Les visages convertissent mieux que les logos pour les vendeurs individuels. Votre accroche doit énoncer le résultat que vous livrez, pas votre intitulé de poste.
+
+## Une description qui vend des résultats
+Commencez par le problème de l'acheteur, pas par votre biographie. Indiquez ce que vous construisez, pour qui, et pourquoi commander chez vous présente peu de risque. Restez court et facile à parcourir.
+
+## Titres et étiquettes des prestations
+Les titres doivent correspondre à la façon dont les acheteurs recherchent : "Je construis une page d'atterrissage responsive en React" l'emporte sur "Services de développement web". Utilisez toutes les étiquettes disponibles avec les mots-clés exacts que les acheteurs saisissent.
+
+## Paliers tarifaires
+Proposez trois forfaits. Le palier intermédiaire doit être celui que la plupart des acheteurs choisissent, alors ancrez-le délibérément. Le palier supérieur existe pour faire paraître l'intermédiaire raisonnable et pour capter les acheteurs à fort budget.
+
+## Portfolio et preuves
+Ajoutez de vrais exemples à la galerie de la prestation. Captures d'écran, comparaisons avant/après et courtes vidéos de démonstration augmentent toutes la conversion. La preuve sociale issue des avis se renforce avec le temps, donnez donc la priorité aux premières notes cinq étoiles.
+
+## Temps de réponse
+Fiverr récompense les vendeurs réactifs dans la recherche et les acheteurs le remarquent. Activez les notifications et visez une réponse dans l'heure pendant votre journée de travail.`,
+    faqs: [
+      { q: "Qu'est-ce qui fait grimper une prestation Fiverr dans le classement ?", a: "Des titres et étiquettes alignés sur les mots-clés, un profil complet, un temps de réponse rapide, une forte conversion des impressions en commandes et un flux régulier d'avis cinq étoiles font tous monter les prestations dans la recherche Fiverr." },
+      { q: "Combien de prestations dois-je publier ?", a: "Commencez par une seule prestation ciblée. Une fois qu'elle accumule des avis, ajoutez des prestations adjacentes qui visent des recherches d'acheteurs connexes, plutôt que de vous disperser sur des services sans lien." },
+    ],
+  },
+  'best-fiverr-gigs-for-programmers': {
+    body: `Toutes les prestations ne se valent pas. Certains services de développement attirent une demande régulière et commandent de bons prix ; d'autres sont une course vers le bas. Choisir la bonne catégorie, c'est la moitié de la bataille.
+
+## Correction de bugs et débogage
+Demande constamment élevée. Les acheteurs dont le site ou l'application est cassé veulent une réparation rapide et paieront un surcoût pour la rapidité. Facile à cadrer, facile à livrer, facile à fidéliser.
+
+## Création d'applications web et de pages d'atterrissage
+Les développements front-end en React, Next.js ou en simple HTML et CSS se vendent bien. Les pages d'atterrissage en particulier ont un périmètre prévisible et un délai de livraison court.
+
+## Automatisation et scripting
+Les automatisations Python, le web scraping, le nettoyage de données et les intégrations tableur vers API connaissent une demande croissante de la part d'acheteurs non techniques qui valorisent le temps gagné.
+
+## Intégrations d'API
+Connecter Stripe, des passerelles de paiement, des CRM ou des API tierces est un besoin fréquent des acheteurs, avec une concurrence limitée sur le haut de gamme en qualité.
+
+## Travaux d'IA et de chatbots
+La catégorie qui croît le plus vite en 2026. Les configurations de GPT personnalisés, les intégrations de chatbots, l'ingénierie de prompts et les outils propulsés par LLM attirent des acheteurs aux budgets réels, face à une offre rare de vendeurs qualifiés.
+
+## WordPress et no-code
+Toujours énorme en volume. Les corrections WordPress, le travail sur les extensions et l'automatisation no-code avec des outils comme Zapier ou Make sont des points d'entrée accessibles à la demande constante.
+
+## Ce qu'il faut éviter au début
+Évitez en tant que débutant les grandes créations de produit complet au périmètre vague. Elles invitent aux litiges et au risque d'une étoile. Commencez par des services étroitement cadrés et reproductibles, puis montez en gamme.`,
+    faqs: [
+      { q: "Quelle prestation de développeur paie le plus sur Fiverr ?", a: "Le travail d'intégration IA et LLM, les intégrations d'API complexes et les créations complètes d'applications web commandent les prix les plus élevés, souvent de plusieurs centaines à quelques milliers de USD par commande au niveau des vendeurs les mieux notés." },
+      { q: "Quelle est la prestation de développeur la plus facile pour commencer ?", a: "La correction de bugs et les petites tâches de scripting sont les plus faciles à cadrer et à livrer, ce qui en fait le meilleur point d'entrée pour bâtir ses premiers avis." },
+    ],
+  },
+  'how-to-get-your-first-fiverr-order': {
+    body: `La commande la plus difficile sur Fiverr est la première. Les acheteurs privilégient les vendeurs avec des avis, si bien qu'une nouvelle prestation part désavantagée. Ces tactiques permettent de franchir le problème du démarrage à froid.
+
+## Tarifez pour l'entrée, pas pour le profit
+Vos premières commandes sont des achats de réputation. Tarifez légèrement sous le marché pour éliminer le risque de l'acheteur, puis augmentez vos prix une fois que vous avez des avis cinq étoiles.
+
+## Utilisez les demandes et briefs d'acheteurs
+Fiverr fait remonter directement les besoins des acheteurs. Répondez vite avec une offre précise et sur mesure qui nomme le problème exact de l'acheteur. Les argumentaires génériques copiés-collés perdent ; les argumentaires précis gagnent.
+
+## Optimisez pour la recherche dès le premier jour
+Alignez votre titre et vos étiquettes sur les vraies recherches d'acheteurs. Une prestation que personne ne peut trouver ne reçoit aucune commande, quelle que soit sa qualité.
+
+## Faites la promotion à l'extérieur
+Partagez votre prestation là où vos acheteurs cibles se trouvent déjà : subreddits pertinents, serveurs Discord, X et communautés de développeurs. Un trafic externe qui convertit signale aussi la qualité à l'algorithme de Fiverr.
+
+## Dépassez les attentes sur les premières commandes
+Livrez plus vite que promis, ajoutez un petit extra et communiquez de façon proactive. Les premiers avis cinq étoiles avec des commentaires positifs valent bien plus que la valeur de la commande elle-même.
+
+## Soyez réactif
+Répondez aux messages en quelques minutes lorsque c'est possible. Des réponses rapides et utiles transforment les acheteurs qui parcourent en acheteurs payants et améliorent votre classement dans la recherche.`,
+    faqs: [
+      { q: "Pourquoi je ne reçois pas de commandes sur Fiverr ?", a: "Les causes les plus fréquentes sont un mauvais ciblage des mots-clés, l'absence d'exemples de portfolio, des prix fixés trop haut pour un vendeur sans avis et des temps de réponse lents. Corrigez d'abord le ciblage et la tarification." },
+      { q: "Dois-je baisser mes prix pour obtenir la première commande ?", a: "Oui, temporairement. Considérez les trois à cinq premières commandes comme des investissements de réputation tarifés pour la conversion, puis augmentez les prix à mesure que les avis s'accumulent." },
+    ],
+  },
+  'fiverr-pricing-strategy-for-developers': {
+    body: `La tarification sur Fiverr est un problème de conception, pas un jeu de devinettes. La structure à trois paliers existe pour orienter les acheteurs vers le forfait que vous voulez le plus vendre.
+
+## L'ancrage à trois paliers
+Proposez Basique, Standard et Premium. La plupart des acheteurs choisissent le palier intermédiaire, alors concevez-le comme votre offre cible. Le palier Basique capte les acheteurs sensibles au prix ; le palier Premium ancre les autres et capte les commandes à fort budget.
+
+## Tarifez sur la valeur, pas sur les heures
+Les acheteurs paient pour des résultats. Un script qui fait gagner dix heures par semaine à une entreprise vaut bien plus que les deux heures qu'il vous faut pour l'écrire. Évitez de tarifer uniquement selon votre temps.
+
+## Utilisez les extras de prestation
+Des extras comme une livraison plus rapide, des révisions supplémentaires, les fichiers sources et un accompagnement continu augmentent la valeur moyenne de commande avec peu d'effort supplémentaire. Beaucoup de vendeurs gagnent plus avec les extras qu'avec les prestations de base.
+
+## Commencez bas, montez vite
+Un vendeur sans avis devrait tarifer pour la conversion. Une fois que vous atteignez dix à vingt avis cinq étoiles, augmentez les prix par paliers et observez la conversion. Si les commandes tiennent, augmentez encore.
+
+## Évitez la course vers le bas
+Concurrencer uniquement sur le prix attire les pires acheteurs et érode les marges. Concurrencez plutôt sur la rapidité, la clarté et la preuve. Un positionnement premium attire de meilleurs acheteurs et moins de litiges.
+
+## Réévaluez régulièrement vos prix
+Revoyez vos prix chaque mois. Une forte demande et une file pleine sont des signaux pour augmenter. Un vendeur bien noté facture souvent plusieurs fois son tarif de départ pour le même service.`,
+    faqs: [
+      { q: "Comment un débutant doit-il tarifer ses prestations sur Fiverr ?", a: "Commencez légèrement sous le marché pour éliminer le risque de l'acheteur et gagner les premiers avis, puis augmentez les prix par paliers une fois que vous avez une base de notes cinq étoiles." },
+      { q: "Les extras de prestation augmentent-ils vraiment les revenus ?", a: "Oui. Des extras comme la livraison express, des révisions supplémentaires et les fichiers sources ajoutent couramment de 30 à 100 pour cent à la valeur moyenne de commande avec un travail additionnel minimal." },
+    ],
+  },
+  'how-to-make-money-on-fiverr-as-a-developer': {
+    body: `Gagner réellement de l'argent sur Fiverr tient moins au talent qu'aux systèmes : un service resserré, une livraison reproductible et des avis qui se cumulent. Voici comment opèrent ceux qui gagnent de façon régulière.
+
+## Spécialisez-vous, puis dominez une niche
+Les généralistes peinent. Les vendeurs qui possèdent une niche précise, par exemple "corrections de bugs d'applications Shopify" ou "scraping de données en Python", sont mieux classés et facturent plus parce que les acheteurs font confiance aux spécialistes.
+
+## Construisez un processus de livraison reproductible
+Modélisez tout ce que vous pouvez : questions d'accueil, structure de code, messages de livraison. Une livraison plus rapide à qualité constante signifie plus de commandes dans les mêmes heures et de meilleurs avis.
+
+## Gravissez le système de niveaux
+Fiverr récompense la régularité par des niveaux de vendeur. Niveau Un, Niveau Deux et Vendeur le mieux noté débloquent chacun plus de visibilité, des limites plus élevées et la confiance des acheteurs. Les atteindre exige des livraisons à l'heure, peu d'annulations et un volume régulier.
+
+## Transformez les acheteurs ponctuels en clients récurrents
+Les acheteurs récurrents constituent le revenu à plus forte marge sur Fiverr. Livrez bien, proposez un extra de maintenance ou de forfait récurrent, et restez réactif. Une poignée de clients récurrents peut devenir l'essentiel de votre revenu.
+
+## Empilez les prestations autour d'une compétence centrale
+Une fois qu'une prestation fonctionne, ajoutez des prestations adjacentes qui visent des recherches connexes. Un développeur React peut vendre des corrections de bugs, des pages d'atterrissage et des bibliothèques de composants comme des prestations distinctes nourrissant la même compétence.
+
+## Mesurez et réinvestissez
+Surveillez quelles prestations convertissent et misez davantage dessus. Supprimez celles qui sous-performent, mettez en avant les gagnantes et augmentez les prix à mesure que la demande croît. Traitez cela comme une petite entreprise de produits, car c'en est une.`,
+    faqs: [
+      { q: "Combien peut-on réalistement gagner sur Fiverr en tant que développeur ?", a: "Les vendeurs à temps partiel atteignent couramment 500 à 2000 USD par mois en quelques mois. Les vendeurs développeurs les mieux notés à temps plein gagnent régulièrement 5000 USD ou plus par mois." },
+      { q: "Fiverr en vaut-il la peine pour les développeurs en 2026 ?", a: "Oui, en particulier pour les niches à forte demande comme l'intégration d'IA, l'automatisation et la correction de bugs, où la demande des acheteurs dépasse l'offre qualifiée." },
+    ],
+  },
+  'fiverr-gig-seo-ranking-guide': {
+    body: `La plupart des commandes Fiverr proviennent de la recherche, donc le classement est primordial. L'algorithme de Fiverr récompense les prestations qui correspondent à l'intention de l'acheteur, puis qui convertissent et livrent bien.
+
+## Recherche de mots-clés
+Trouvez les expressions exactes que les acheteurs saisissent. Utilisez l'autocomplétion de la recherche Fiverr et étudiez les titres des prestations les mieux classées de votre catégorie. Visez un mot-clé principal par prestation.
+
+## Titre, étiquettes et catégorie
+Placez votre mot-clé principal dans le titre de la prestation de façon naturelle. Remplissez chaque emplacement d'étiquette avec des termes de recherche pertinents. Choisissez la catégorie et la sous-catégorie les plus exactes, car des catégories mal assorties pénalisent le classement.
+
+## Signaux de conversion
+Fiverr suit combien de personnes qui consultent votre prestation commandent réellement. Un taux élevé de clic vers commande fait monter votre prestation. C'est pourquoi des images de prestation soignées, une tarification claire et la preuve comptent pour le classement, pas seulement pour les acheteurs.
+
+## Vélocité de livraison et d'avis
+La livraison à l'heure, des taux d'annulation faibles et un flux régulier d'avis cinq étoiles récents sont des facteurs de classement majeurs. Une salve de bons avis tôt peut faire monter rapidement une nouvelle prestation.
+
+## Taux et temps de réponse
+Des réponses rapides et constantes améliorent à la fois le classement et la conversion. Fiverr fait remonter plus souvent les vendeurs réactifs.
+
+## Fraîcheur et régularité
+Les prestations actives avec des commandes récentes sont mieux classées que les prestations dormantes. Rester en ligne, mettre à jour le contenu de la prestation et maintenir un flux de commandes aident tous. Les nouvelles prestations bénéficient aussi d'un coup de pouce temporaire de visibilité, alors lancez avec un plan pour le convertir en avis.`,
+    faqs: [
+      { q: "Comment Fiverr décide-t-il quelles prestations afficher en premier ?", a: "Fiverr classe selon la pertinence par rapport à la recherche, le taux de conversion, la qualité et la fraîcheur des avis, la livraison à l'heure, le faible taux d'annulation et la réactivité du vendeur." },
+      { q: "Combien de temps faut-il à une nouvelle prestation Fiverr pour se classer ?", a: "Les nouvelles prestations reçoivent un court coup de pouce de visibilité au lancement. Convertir cela en commandes et en avis cinq étoiles dans les premières semaines est ce qui maintient ensuite le classement." },
+    ],
+  },
+  'fiverr-vs-upwork-for-developers': {
+    body: `Fiverr et Upwork sont les deux plus grandes places de marché de freelance, mais elles fonctionnent différemment. Choisir la bonne, ou utiliser les deux, dépend de votre façon préférée de vendre.
+
+## En quoi elles diffèrent
+Sur Fiverr, vous publiez des prestations produitisées et les acheteurs viennent à vous. Sur Upwork, vous parcourez des offres et soumettez des propositions. Fiverr s'apparente à tenir une boutique ; Upwork s'apparente à postuler à des contrats.
+
+## Rapidité jusqu'au premier revenu
+Fiverr est généralement plus rapide pour atteindre le premier revenu chez les développeurs. Vous pouvez publier une prestation aujourd'hui et être trouvé dans la recherche immédiatement. Les propositions sur Upwork concurrencent de nombreux autres freelances et peuvent prendre plus de temps à convertir.
+
+## Modèle de tarification
+Le modèle de forfaits fixes de Fiverr convient aux services reproductibles et bien cadrés. Le modèle horaire et par jalons d'Upwork convient aux missions plus longues et sur mesure dont le périmètre évolue.
+
+## Frais
+Les deux prélèvent des frais de plateforme. Intégrez-les à votre tarification sur l'une comme l'autre. Les frais diminuent sur Upwork à mesure que vous facturez davantage avec le même client.
+
+## Type d'acheteur
+Les acheteurs Fiverr veulent souvent des livrables rapides et définis. Les clients Upwork veulent plus souvent des relations continues et des projets plus grands. Beaucoup de développeurs utilisent Fiverr pour produitiser de petits services et Upwork pour des contrats plus longs.
+
+## L'intérêt d'utiliser les deux
+Vous n'avez pas à choisir. Faire tourner des prestations produitisées sur Fiverr tout en soumettant des propositions sélectives sur Upwork diversifie votre revenu et votre pipeline d'acheteurs.`,
+    faqs: [
+      { q: "Fiverr ou Upwork, lequel est meilleur pour les débutants ?", a: "Fiverr est généralement plus rapide pour les débutants car vous pouvez publier une prestation et être trouvé immédiatement, plutôt que de concurrencer sur des propositions depuis un compte sans historique." },
+      { q: "Puis-je utiliser Fiverr et Upwork en même temps ?", a: "Oui. Beaucoup de développeurs produitisent des services rapides sur Fiverr et poursuivent des contrats sur mesure plus grands sur Upwork pour diversifier leur revenu." },
+    ],
+  },
+  'how-to-become-a-fiverr-top-rated-seller': {
+    body: `Les niveaux de vendeur de Fiverr forment l'échelle de confiance. Chaque niveau débloque plus de visibilité, des limites de prestation plus élevées et des paiements plus rapides. Le statut de Vendeur le mieux noté est le palier qui change concrètement les revenus.
+
+## Le système de niveaux
+Les nouveaux vendeurs commencent sans classement. Le Niveau Un, le Niveau Deux et le Vendeur le mieux noté s'obtiennent en atteignant des seuils d'ancienneté, de commandes réalisées, de revenus, de livraison à l'heure, de taux de réponse et de note, mesurés sur une fenêtre glissante.
+
+## La livraison à l'heure n'est pas négociable
+Les livraisons en retard sont le moyen le plus rapide de bloquer votre progression. Prévoyez des délais de livraison avec marge pour les battre systématiquement, plutôt que de promettre vite et de glisser.
+
+## Gardez les annulations basses
+Les annulations nuisent plus que presque tout le reste. Cadrez les commandes avec précision, posez des questions de clarification avant d'accepter, et refusez le travail hors de votre prestation plutôt que de risquer une annulation.
+
+## Maintenez une note élevée
+Les niveaux exigent une note moyenne constamment élevée. Communiquez à l'excès, gérez les attentes et résolvez les problèmes avant qu'ils ne deviennent des notes basses.
+
+## Répondez vite et de façon constante
+Un taux de réponse élevé dans un court délai est une exigence de niveau et un facteur de classement. Prenez l'habitude de consulter vos messages plusieurs fois par jour.
+
+## Du volume avec de la qualité
+Les niveaux récompensent à la fois le nombre de commandes réalisées et les revenus. Un volume régulier et fiable à qualité constante, plutôt que des grosses commandes occasionnelles, est le chemin le plus sûr. La revue manuelle pour le Vendeur le mieux noté pèse aussi le professionnalisme et la santé du compte.`,
+    faqs: [
+      { q: "Combien de temps faut-il pour devenir Vendeur le mieux noté sur Fiverr ?", a: "Cela prend généralement plusieurs mois de livraison régulière et de haute qualité. Le statut de mieux noté exige une ancienneté soutenue, un volume de commandes, des revenus, une livraison à l'heure et des notes élevées, plus une revue manuelle." },
+      { q: "Qu'est-ce qui vous disqualifie pour monter de niveau sur Fiverr ?", a: "Les livraisons en retard, les annulations de commandes, les taux de réponse lents et les notes sous le seuil sont les principaux obstacles à l'avancement des niveaux de vendeur." },
+    ],
+  },
+  'sell-ai-services-on-fiverr-2026': {
+    body: `Les services d'IA sont la catégorie de développeur qui croît le plus vite sur Fiverr en 2026. La demande des acheteurs a dépassé l'offre de vendeurs capables de livrer réellement, ce qui signifie de bons prix et des commandes régulières pour ceux qui le peuvent.
+
+## Créations de chatbots et d'assistants
+Les chatbots personnalisés et les assistants IA pour sites web et support sont très demandés par les petites entreprises. Intégrer un LLM à une base de connaissances et le déployer est une prestation à forte valeur et reproductible.
+
+## GPT personnalisé et ingénierie de prompts
+Les acheteurs veulent des GPT sur mesure, des bibliothèques de prompts et des automatisations de flux de travail. Ces livrables sont rapides à produire et commandent de bons prix parce que la plupart des acheteurs ne savent pas les construire eux-mêmes.
+
+## Intégration d'applications LLM
+Brancher un LLM dans un produit existant, ajouter une génération augmentée par récupération ou construire un outil d'IA interne sont des prestations premium. L'expérience de déploiement en production vous distingue de la masse.
+
+## Automatisation par IA
+Combiner les LLM avec des outils d'automatisation pour gérer le contenu, le traitement de données ou les flux clients se vend bien auprès d'acheteurs non techniques focalisés sur le temps gagné.
+
+## Comment empaqueter les prestations d'IA
+Produitisez un résultat précis plutôt que de vendre du conseil IA flou. "Je construis un chatbot de support client entraîné sur vos documents" convertit bien mieux que "services IA". Proposez une configuration Basique, une Standard avec intégration et une Premium avec ajustement continu.
+
+## Pourquoi maintenant
+L'offre de vendeurs IA qualifiés reste mince par rapport à la demande. Les vendeurs qui établissent des avis dans les catégories IA dès maintenant construisent un avantage de classement durable à mesure que la catégorie grandit.`,
+    faqs: [
+      { q: "Quels services d'IA se vendent le mieux sur Fiverr ?", a: "Les chatbots personnalisés entraînés sur une base de connaissances d'entreprise, le GPT personnalisé et l'ingénierie de prompts, les intégrations d'applications LLM et les flux d'automatisation par IA sont les meilleures ventes en 2026." },
+      { q: "Dois-je être un expert en IA pour vendre des prestations d'IA ?", a: "Vous avez besoin d'une compétence pratique de livraison, pas de références de recherche. La capacité à intégrer des LLM, construire des chatbots et livrer des automatisations fonctionnelles est ce que les acheteurs paient." },
+    ],
+  },
 };

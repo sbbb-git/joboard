@@ -19,7 +19,7 @@ export function generateMetadata({ params }: { params: { lang: Locale } }): Meta
   });
 }
 
-const CATEGORY_ORDER = ['finding', 'salary', 'career', 'visa', 'tax', 'lifestyle', 'tools'];
+const CATEGORY_ORDER = ['finding', 'salary', 'career', 'freelance', 'visa', 'tax', 'lifestyle', 'tools'];
 
 export default function GuidesIndex({ params }: { params: { lang: Locale } }) {
   const c = GUIDES_I18N[params.lang];
