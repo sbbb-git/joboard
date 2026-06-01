@@ -228,6 +228,17 @@ export const AFFILIATES: AffiliateEntry[] = [
 
   // ─── Shopping / home office ──────────────────────────────
   {
+    slug: 'appsumo',
+    name: 'AppSumo',
+    url: 'https://appsumo.8odi.net/gRgbDg',
+    blurb:
+      'The biggest marketplace for SaaS lifetime deals. One-time payment, lifetime access to AI tools, marketing software, dev utilities and productivity apps remote workers actually use.',
+    cta: 'Browse AppSumo deals',
+    payout: 'Variable per signup (Impact)',
+    payoutType: 'cash',
+    category: 'shopping',
+  },
+  {
     slug: 'amazon-fr',
     name: 'Amazon (FR)',
     url: 'https://amzn.to/4v8i8tB',

@@ -14,6 +14,17 @@ import { AiToolsCTA } from '@/components/AiToolsCTA';
 import { RemoteTools } from '@/components/RemoteTools';
 import { EarnWithAi } from '@/components/EarnWithAi';
 import { FiverrCTA } from '@/components/FiverrCTA';
+import { AppSumoCTA } from '@/components/AppSumoCTA';
+
+const APPSUMO_SLUGS = new Set([
+  'appsumo-lifetime-deals-explained',
+  'appsumo-best-deals-for-developers-2026',
+  'appsumo-vs-saas-subscription-which-saves-more',
+  'how-to-spot-quality-appsumo-deals',
+  'appsumo-deals-for-remote-workers',
+  'building-a-startup-stack-with-appsumo',
+  'selling-on-appsumo-as-a-founder',
+]);
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { localePath } from '@/lib/i18n';
 
@@ -132,6 +143,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
         </>
       )}
       {g.category === 'freelance' && <FiverrCTA locale={params.lang} />}
+      {APPSUMO_SLUGS.has(g.slug) && <AppSumoCTA locale={params.lang} />}
       {g.category === 'tools' && <RemoteTools locale={params.lang} />}
       {(g.category === 'lifestyle' || g.category === 'visa' || g.category === 'tax' || g.category === 'finding' || g.category === 'career') && (
         <NomadCTA  locale={params.lang} />
