@@ -565,6 +565,46 @@ export const GUIDE_TRANSLATIONS: Record<string, Partial<Record<Locale, Field>>> 
     it: { title: "Come lanciare il tuo SaaS su AppSumo come founder", description: "Come si svolge il processo di lancio su AppSumo dal lato del venditore e come capire se è adatto al tuo prodotto." },
     pl: { title: "Jak wystartować z SaaS na AppSumo jako founder", description: "Jak wygląda proces launchu na AppSumo od strony sprzedawcy i jak ocenić, czy pasuje do Twojego produktu." },
   },
+  'how-to-start-a-tech-newsletter-2026': {
+    fr: { title: "Comment lancer une newsletter tech en 2026", description: "Un plan concret pour lancer une newsletter tech qui grandit et rapporte dès le premier jour." },
+    es: { title: "Cómo lanzar una newsletter tech en 2026", description: "Un plan concreto para lanzar una newsletter tech que crece y genera ingresos desde el primer día." },
+    de: { title: "Wie man 2026 einen Tech-Newsletter startet", description: "Ein konkreter Plan, um einen Tech-Newsletter zu starten, der vom ersten Tag an wächst und Einnahmen bringt." },
+    pt: { title: "Como lançar uma newsletter tech em 2026", description: "Um plano concreto para lançar uma newsletter tech que cresce e gera receita desde o primeiro dia." },
+    it: { title: "Come lanciare una newsletter tech nel 2026", description: "Un piano concreto per lanciare una newsletter tech che cresce e genera ricavi fin dal primo giorno." },
+    pl: { title: "Jak założyć newsletter techniczny w 2026 roku", description: "Konkretny plan na uruchomienie newslettera technicznego, który rośnie i zarabia od pierwszego dnia." },
+  },
+  'how-to-monetize-a-tech-newsletter': {
+    fr: { title: "Comment monétiser une newsletter tech", description: "Les quatre sources de revenus fiables pour une newsletter tech et le moment où chacune commence à fonctionner." },
+    es: { title: "Cómo monetizar una newsletter tech", description: "Las cuatro fuentes de ingresos fiables para una newsletter tech y cuándo empieza a funcionar cada una." },
+    de: { title: "Wie man einen Tech-Newsletter monetarisiert", description: "Die vier verlässlichen Einnahmequellen für einen Tech-Newsletter und wann jede davon zu funktionieren beginnt." },
+    pt: { title: "Como monetizar uma newsletter tech", description: "As quatro fontes de receita confiáveis para uma newsletter tech e quando cada uma começa a funcionar." },
+    it: { title: "Come monetizzare una newsletter tech", description: "Le quattro fonti di ricavo affidabili per una newsletter tech e quando ciascuna inizia a funzionare." },
+    pl: { title: "Jak zarabiać na newsletterze technicznym", description: "Cztery sprawdzone źródła przychodów newslettera technicznego i moment, w którym każde z nich zaczyna działać." },
+  },
+  'best-newsletter-platforms-for-developers': {
+    fr: { title: "Les meilleures plateformes de newsletter pour les développeurs", description: "Une comparaison côte à côte de Beehiiv, Substack, Ghost et ConvertKit pour les rédacteurs techniques." },
+    es: { title: "Las mejores plataformas de newsletter para desarrolladores", description: "Una comparación lado a lado de Beehiiv, Substack, Ghost y ConvertKit para escritores técnicos." },
+    de: { title: "Die besten Newsletter-Plattformen für Entwickler", description: "Ein direkter Vergleich von Beehiiv, Substack, Ghost und ConvertKit für technische Autoren." },
+    pt: { title: "As melhores plataformas de newsletter para desenvolvedores", description: "Uma comparação lado a lado entre Beehiiv, Substack, Ghost e ConvertKit para escritores técnicos." },
+    it: { title: "Le migliori piattaforme di newsletter per sviluppatori", description: "Un confronto diretto tra Beehiiv, Substack, Ghost e ConvertKit per autori tecnici." },
+    pl: { title: "Najlepsze platformy newsletterowe dla deweloperów", description: "Bezpośrednie porównanie Beehiiv, Substack, Ghost i ConvertKit dla autorów technicznych." },
+  },
+  'tech-newsletter-growth-tactics-2026': {
+    fr: { title: "Tactiques de croissance pour newsletter tech qui marchent encore en 2026", description: "La poignée de canaux de croissance qui font progresser durablement le nombre d'abonnés des newsletters techniques." },
+    es: { title: "Tácticas de crecimiento para newsletters tech que aún funcionan en 2026", description: "El puñado de canales de crecimiento que mueven de forma constante el número de suscriptores de las newsletters técnicas." },
+    de: { title: "Wachstumstaktiken für Tech-Newsletter, die 2026 noch funktionieren", description: "Die wenigen Wachstumskanäle, die die Abonnentenzahl technischer Newsletter zuverlässig steigern." },
+    pt: { title: "Táticas de crescimento para newsletter tech que ainda funcionam em 2026", description: "Os poucos canais de crescimento que aumentam de forma consistente o número de assinantes de newsletters técnicas." },
+    it: { title: "Tattiche di crescita per newsletter tech che funzionano ancora nel 2026", description: "I pochi canali di crescita che fanno aumentare in modo costante il numero di iscritti delle newsletter tecniche." },
+    pl: { title: "Taktyki wzrostu newslettera technicznego, które wciąż działają w 2026 roku", description: "Garść kanałów wzrostu, które konsekwentnie zwiększają liczbę subskrybentów newsletterów technicznych." },
+  },
+  'newsletter-vs-blog-which-earns-more': {
+    fr: { title: "Newsletter ou blog : qui rapporte le plus en 2026", description: "Une comparaison directe de l'économie d'une newsletter et d'un blog pour les rédacteurs techniques." },
+    es: { title: "Newsletter o blog: cuál gana más en 2026", description: "Una comparación directa de la economía de una newsletter y un blog para escritores técnicos." },
+    de: { title: "Newsletter oder Blog: Was verdient 2026 mehr", description: "Ein direkter Vergleich der Einnahmen von Newsletter und Blog für technische Autoren." },
+    pt: { title: "Newsletter ou blog: qual ganha mais em 2026", description: "Uma comparação direta entre a economia de uma newsletter e de um blog para escritores técnicos." },
+    it: { title: "Newsletter o blog: chi guadagna di più nel 2026", description: "Un confronto diretto tra l'economia di una newsletter e di un blog per autori tecnici." },
+    pl: { title: "Newsletter czy blog: co zarabia więcej w 2026 roku", description: "Bezpośrednie porównanie ekonomii newslettera i bloga dla autorów technicznych." },
+  },
 };
 
 export function tGuide(slug: string, locale: Locale, field: 'title' | 'description', fallback: string): string {

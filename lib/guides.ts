@@ -1656,6 +1656,190 @@ Skip AppSumo if your product is enterprise-only, requires hands-on onboarding, o
       },
     ],
   },
+  {
+    slug: 'how-to-start-a-tech-newsletter-2026',
+    title: 'How to start a tech newsletter in 2026',
+    description: 'A concrete plan for launching a tech newsletter that grows and pays from day one.',
+    category: 'career',
+    body: `A tech newsletter is one of the highest-leverage side projects a developer can run in 2026. Low operational complexity, asymmetric upside, and an audience that compounds for years.
+
+## Pick a wedge
+Generic "developer tips" newsletters do not break out. Specific wedges do: distributed systems, indie SaaS economics, AI engineering case studies, frontend performance, Postgres internals. The narrower the wedge, the easier the audience finds you.
+
+## Choose a publishing cadence you can sustain
+Weekly is the standard cadence for paid growth. Monthly works if depth is the angle. Daily burns most operators out. Pick a cadence you can hold for 12 months without exception.
+
+## Pick a platform built for monetisation
+The platform you start on matters because it determines how easily you can later add native ads, paid subscriptions and a referral program. Beehiiv, Substack and Ghost cover most cases. Beehiiv leans hardest into monetisation features.
+
+## Define the first 12 issues
+Plan the first quarter of editorial up front. Sustained publishing matters more than perfect writing. A boring schedule beats a brilliant one-off.
+
+## Launch with a base
+Email 100 people you know personally on launch day. They are your first subscribers and your first feedback loop. Compounding starts from there.
+
+## Track one metric
+Pick one growth metric for the first six months. Open rate, click rate, or net new subs per issue. Optimising for one beats juggling five.`,
+    faqs: [
+      {
+        q: 'How long does it take a tech newsletter to grow?',
+        a: 'A consistent operator with a clear wedge typically reaches 1000 subscribers in 4 to 9 months and 5000 in 12 to 18, mostly through organic shares and referrals.',
+      },
+      {
+        q: 'Is a tech newsletter worth it for a developer?',
+        a: 'For developers who write anyway, the leverage is asymmetric. Modest time investment can compound into meaningful audience, side income and career optionality over 2 to 3 years.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-monetize-a-tech-newsletter',
+    title: 'How to monetize a tech newsletter',
+    description: 'The four reliable revenue streams for a tech newsletter and when each one starts working.',
+    category: 'career',
+    body: `A tech newsletter can monetize earlier than most operators expect. The trick is choosing the right revenue stream for your stage rather than chasing all of them at once.
+
+## Native ads
+Native ads pay per send and tend to be the first reliable revenue. They start working once you cross a few thousand engaged subscribers. CPM rates for tech newsletters in 2026 run 30 to 80 USD per thousand opens.
+
+## Paid subscriptions
+Paid subscriptions work when you publish content readers cannot get elsewhere. Five to ten percent of a free list typically converts to paid at 5 to 10 USD per month. Niche depth beats general appeal here.
+
+## Affiliate revenue
+Recommending tools you actually use generates affiliate revenue with almost no extra effort. Best fit for newsletters covering tooling, productivity or developer infrastructure. Keep the volume low and the relevance high.
+
+## Sponsorships and partnerships
+Above 10 to 20 thousand subscribers, direct sponsorships from companies in your niche become attractive. Sponsorship pricing is usually negotiated per slot at a higher rate than ad-network CPMs.
+
+## Order of operations
+Most newsletters monetize in this order: affiliate revenue first (immediately), native ads second (a few thousand subs), paid subscriptions third (clear differentiated content), direct sponsorships fourth (scale + niche fit).
+
+## Avoid premature monetisation
+Loading a 500-subscriber newsletter with ads kills growth. Reach a base where your content earns trust, then layer revenue. The compounding curve rewards patience.`,
+    faqs: [
+      {
+        q: 'How much money can a tech newsletter make?',
+        a: 'A focused tech newsletter with 10 to 20 thousand engaged subscribers commonly earns 3000 to 10000 USD per month across native ads, affiliate revenue and paid subscriptions.',
+      },
+      {
+        q: 'When should I add a paid subscription tier?',
+        a: 'Once you have a clear free format readers love, a base of at least a few thousand active subscribers, and a content angle worth paying for. Premature paid tiers stall growth.',
+      },
+    ],
+  },
+  {
+    slug: 'best-newsletter-platforms-for-developers',
+    title: 'The best newsletter platforms for developers',
+    description: 'A side-by-side comparison of Beehiiv, Substack, Ghost and ConvertKit for technical writers.',
+    category: 'career',
+    body: `The platform you choose shapes how you publish, who can read you, and how easily you monetize. For a developer launching a tech newsletter in 2026, the field has narrowed to a few credible options.
+
+## Beehiiv
+Built for monetisation from the start. Native ad network, paid subscriptions, referral program, and detailed analytics. Free starter tier covers the first few thousand subscribers. Strong fit for newsletters that plan to monetize.
+
+## Substack
+The default brand-recognition platform. Easy setup, strong discovery within the Substack network, paid subscriptions built in. Weaker on advanced analytics and ad monetisation. Takes a percentage of paid revenue.
+
+## Ghost
+Open source and self-hostable. Maximum control, full theming, and a one-time setup cost trades off against running infrastructure. Strong fit for technical operators who value ownership.
+
+## ConvertKit
+Established email marketing platform with strong deliverability and automation. Better suited to course creators and product launches than pure newsletter writing.
+
+## How to choose
+If monetisation is the goal, start on Beehiiv. If discovery and zero-setup matter most, Substack. If you want to own the stack and self-host, Ghost. If you sell digital products alongside the newsletter, ConvertKit.
+
+## Migration is possible but painful
+You can migrate between platforms later, but the move costs effort and risks subscriber loss. Picking the right platform first saves quarters of work.
+
+## Deliverability matters more than features
+Whichever platform you choose, deliverability sits beneath everything. Authenticated sending, list hygiene, and reasonable send cadence determine whether your work actually reaches inboxes.`,
+    faqs: [
+      {
+        q: 'Is Beehiiv better than Substack for tech newsletters?',
+        a: 'For monetisation-focused tech newsletters, yes. Beehiiv offers native ads, referral programs and richer analytics. Substack still wins on built-in discovery and writer brand recognition.',
+      },
+      {
+        q: 'Can I move my newsletter from Substack to Beehiiv later?',
+        a: 'Yes. Both platforms support exporting and importing subscriber lists. Plan for a deliverability dip during transition while the new platform warms up sending reputation.',
+      },
+    ],
+  },
+  {
+    slug: 'tech-newsletter-growth-tactics-2026',
+    title: 'Tech newsletter growth tactics that still work in 2026',
+    description: 'The handful of growth channels that consistently move subscriber count for technical newsletters.',
+    category: 'career',
+    body: `Most tech newsletter growth tactics promoted in 2022 have stopped working. A short list of channels still drives compounding subscriber growth in 2026.
+
+## Cross-promotion swaps
+Trade promotional slots with newsletters of comparable size in adjacent niches. This is still the highest-converting growth channel for tech newsletters because the audience is pre-qualified.
+
+## Referral programs
+Built-in referral programs (rewarding subscribers for inviting others) drive 10 to 25 percent of total growth for active operators. Beehiiv and ConvertKit ship this natively. Substack does not.
+
+## Search-indexed web archive
+Hosting the newsletter archive as a public, searchable site (with proper indexing and on-page SEO) compounds organic growth over years. Many newsletters discover that the archive becomes the largest single growth source after 18 months.
+
+## X and LinkedIn snippets
+Posting one or two strong excerpts per issue, with a soft CTA to subscribe, converts a small but consistent flow of readers. Avoid heavy promotional posting.
+
+## Guest appearances on podcasts
+Tech podcasts in your niche convert at meaningful rates because the audience self-selects for the topic. Five appearances per year often outweighs months of organic posting.
+
+## Hacker News and niche communities
+A single well-placed essay on Hacker News or a relevant subreddit can deliver thousands of subscribers in a day. Hit rate is low; payoff when it hits is large.
+
+## What stopped working
+Cold outreach for subscribers, Twitter follow trains, generic content marketing, and AI-generated content all under-perform in 2026 and damage deliverability.`,
+    faqs: [
+      {
+        q: 'What is the fastest way to grow a tech newsletter?',
+        a: 'Cross-promotion swaps with newsletters of comparable size in adjacent niches consistently deliver the highest conversion rate, often 5 to 10 times higher than paid acquisition.',
+      },
+      {
+        q: 'Do referral programs actually work for newsletters?',
+        a: 'Yes. Well-designed referral programs commonly account for 10 to 25 percent of total subscriber growth for active operators, often more for newsletters with engaged audiences.',
+      },
+    ],
+  },
+  {
+    slug: 'newsletter-vs-blog-which-earns-more',
+    title: 'Newsletter vs blog: which earns more in 2026',
+    description: 'A direct comparison of newsletter and blog economics for technical writers.',
+    category: 'career',
+    body: `Newsletters and blogs both monetize, but the economics work differently. The right choice depends on how you want to grow and what you want to optimize for.
+
+## Revenue per reader
+Newsletters earn more per subscriber than blogs earn per reader. A 10 thousand subscriber newsletter typically out-earns a 100 thousand monthly visitor blog at the same content quality, because newsletter subscribers are higher-intent and reachable on demand.
+
+## Growth pattern
+Blogs grow on search and compound for years. Newsletters grow on referrals, cross-promotion and direct subscribes. Blog growth is slower upfront and steadier later. Newsletter growth is faster upfront and depends on continuous effort.
+
+## Audience ownership
+Newsletter audiences sit on your list. Blog audiences sit on search engines and platforms. Algorithm changes can erase blog traffic overnight. Email lists are durable.
+
+## Monetisation surface
+Blogs monetize through display ads, affiliate placements and search-driven product reviews. Newsletters monetize through native ads, paid subscriptions and direct sponsorships. Newsletters tend to reach higher monthly ceilings per equivalent audience size.
+
+## Effort distribution
+Blogs require ongoing SEO investment and back-catalog maintenance. Newsletters require ongoing publishing discipline. Burnout patterns differ; sustainability matters most.
+
+## The hybrid play
+Many successful operators run both: a newsletter that drives audience and a blog that captures search demand. Cross-pollination amplifies both. This is the model with the highest long-term ceiling.
+
+## Pick based on personality
+Newsletters reward writers who enjoy direct relationships and weekly rhythm. Blogs reward writers who enjoy depth, evergreen value and slow compounding. Choose the one you will still be doing in two years.`,
+    faqs: [
+      {
+        q: 'Does a newsletter earn more than a blog?',
+        a: 'Per equivalent audience size, yes, by roughly 5 to 10 times. A 10 thousand subscriber newsletter commonly out-earns a 100 thousand monthly visitor blog at similar content quality and effort.',
+      },
+      {
+        q: 'Should I run a newsletter and a blog at the same time?',
+        a: 'If sustainable, yes. The hybrid model has the highest long-term ceiling because newsletter and blog growth channels reinforce each other. Most operators start with one and add the other after 12 months.',
+      },
+    ],
+  },
 );
 
 export const GUIDE_MAP: Record<string, GuideEntry> = Object.fromEntries(
