@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { PartnerBand } from '@/components/PartnerBand';
 import { LOCALES, isLocale } from '@/lib/i18n';
 
 export function generateStaticParams() {
@@ -19,6 +20,7 @@ export default function LangLayout({
     <>
       <Header locale={params.lang} path={`/${params.lang}`} />
       <main className="mx-auto max-w-6xl px-5 py-8">{children}</main>
+      <PartnerBand locale={params.lang} path={`/${params.lang}`} />
       <Footer locale={params.lang} />
     </>
   );
