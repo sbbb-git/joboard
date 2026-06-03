@@ -6,7 +6,7 @@ import { Newsletter } from '@/components/Newsletter';
 import { HomeFaq } from '@/components/HomeFaq';
 import { allJobs, rolesWithCounts, topCompanies, topCountries } from '@/lib/jobs';
 import { localePath, t } from '@/lib/i18n';
-import { buildMetadata, organizationJsonLd } from '@/lib/seo';
+import { buildMetadata, organizationJsonLd, websiteJsonLd } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { SKILLS } from '@/lib/skills';
 import { CITIES } from '@/lib/cities';
@@ -44,6 +44,10 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
       />
 
       {/* HERO */}

@@ -58,6 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   entries.push(entry('/glossary', now, 0.7));
   entries.push(entry('/submit', now, 0.6));
   entries.push(entry('/employers', now, 0.6));
+  entries.push(entry('/earn-online', now, 0.75));
   entries.push(entry('/about', now, 0.5));
   entries.push(entry('/contact', now, 0.4));
   entries.push(entry('/disclosure', now, 0.3));

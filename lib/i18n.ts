@@ -34,6 +34,7 @@ const en: Dict = {
   'footer.disclaimer':
     'slateremote.com indexes publicly listed jobs. Apply directly on the employer website.',
   'footer.refreshed': 'Index refreshed',
+  'footer.earn': 'Earn online',
   'footer.compare': 'Compare',
   'footer.glossary': 'Glossary',
   'footer.disclosure': 'Affiliate disclosure',
@@ -93,6 +94,7 @@ const fr: Dict = {
   'footer.disclaimer':
     "slateremote.com indexe des offres publiquement publiées. Postulez directement sur le site de l'employeur.",
   'footer.refreshed': 'Index actualisé',
+  'footer.earn': 'Gagner en ligne',
   'footer.compare': 'Comparer',
   'footer.glossary': 'Glossaire',
   'footer.disclosure': 'Divulgation affiliés',
@@ -152,6 +154,7 @@ const es: Dict = {
   'footer.disclaimer':
     'slateremote.com indexa empleos publicados públicamente. Postúlate directamente en el sitio del empleador.',
   'footer.refreshed': 'Índice actualizado',
+  'footer.earn': 'Ganar en línea',
   'footer.compare': 'Comparar',
   'footer.glossary': 'Glosario',
   'footer.disclosure': 'Divulgación de afiliados',
@@ -211,6 +214,7 @@ const de: Dict = {
   'footer.disclaimer':
     'slateremote.com indexiert öffentlich veröffentlichte Stellen. Bewerben Sie sich direkt auf der Arbeitgeberseite.',
   'footer.refreshed': 'Index aktualisiert',
+  'footer.earn': 'Online verdienen',
   'footer.compare': 'Vergleichen',
   'footer.glossary': 'Glossar',
   'footer.disclosure': 'Affiliate-Offenlegung',
@@ -270,6 +274,7 @@ const pt: Dict = {
   'footer.disclaimer':
     'slateremote.com indexa vagas publicadas publicamente. Candidate-se diretamente no site do empregador.',
   'footer.refreshed': 'Índice atualizado',
+  'footer.earn': 'Ganhar online',
   'footer.compare': 'Comparar',
   'footer.glossary': 'Glossário',
   'footer.disclosure': 'Divulgação de afiliados',
@@ -329,6 +334,7 @@ const it: Dict = {
   'footer.disclaimer':
     'slateremote.com indicizza lavori pubblicamente elencati. Candidati direttamente sul sito del datore di lavoro.',
   'footer.refreshed': 'Indice aggiornato',
+  'footer.earn': 'Guadagnare online',
   'footer.compare': 'Confronta',
   'footer.glossary': 'Glossario',
   'footer.disclosure': 'Divulgazione affiliati',
@@ -388,6 +394,7 @@ const pl: Dict = {
   'footer.disclaimer':
     'slateremote.com indeksuje publicznie opublikowane oferty. Aplikuj bezpośrednio na stronie pracodawcy.',
   'footer.refreshed': 'Indeks zaktualizowany',
+  'footer.earn': 'Zarabianie online',
   'footer.compare': 'Porównaj',
   'footer.glossary': 'Słownik',
   'footer.disclosure': 'Ujawnienie afiliacji',

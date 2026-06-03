@@ -197,5 +197,34 @@ export function organizationJsonLd() {
     '@type': 'Organization',
     name: SITE_NAME,
     url: SITE_URL,
+    logo: absoluteUrl('/icon.svg'),
+    description:
+      'Remote tech jobs aggregated from eight public job board APIs, refreshed daily. Free, multi-locale, no signup.',
+    foundingDate: '2025',
+    sameAs: [
+      'https://slowmadly.com',
+      'https://ai-by-job.com',
+      'https://github.com/sachabitoun17-ctrl/joboard',
+    ],
+  };
+}
+
+export function websiteJsonLd() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE_NAME,
+    url: SITE_URL,
+    description:
+      'Remote tech jobs from across the web, refreshed daily. Free, no signup, available in 7 languages.',
+    inLanguage: ['en', 'fr', 'es', 'de', 'pt', 'it', 'pl'],
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${SITE_URL}/en/jobs?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
   };
 }
