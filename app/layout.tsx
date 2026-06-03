@@ -59,6 +59,12 @@ const AHREFS_KEY = process.env.NEXT_PUBLIC_AHREFS_KEY ?? 'UHRiRpUtDUeXqcHIFhdjcA
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${sans.variable} ${display.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://logo.clearbit.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://logo.clearbit.com" />
+        <link rel="preconnect" href="https://static.cloudflareinsights.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="anonymous" />
+      </head>
       <body className="min-h-screen bg-bg text-ink antialiased font-sans">
         {children}
         {CF_ANALYTICS_TOKEN && (
