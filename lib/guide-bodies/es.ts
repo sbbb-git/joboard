@@ -1658,4 +1658,587 @@ Un puñado de evaluadores acaba dejando su empleo para evaluar a tiempo completo
       },
     ],
   },
+  'fiverr-gig-conversion-optimisation-2026': {
+    body: `La mayoría de los vendedores persiguen más impresiones cuando su verdadero problema es la conversión. Un gig con 1.000 impresiones y una tasa de clic a pedido del 1 por ciento gana menos que el mismo gig con 500 impresiones y un 3 por ciento. Mejorar la conversión es más rápido y barato que pelear por más visibilidad.
+
+## Las cinco palancas que mueven la conversión
+1. Imagen del gig. Los compradores deciden si hacer clic en menos de un segundo. Una captura clara del resultado más un encabezado de beneficio de 4 palabras supera a un logo estilizado o a una imagen genérica de stock. Prueba dos imágenes lado a lado y quédate con la ganadora.
+2. Claridad del título. Lidera con el entregable, no con tu cargo. "I will fix bugs in your React app within 24 hours" convierte más rápido que "Experienced full-stack developer for hire".
+3. Anclaje de niveles. La mayoría de los compradores eligen el nivel intermedio. Diseña Basic, Standard y Premium de manera que Standard sea la opción obvia. Configura Basic lo bastante estrecho para que se autodescarte ante compradores serios, y Premium lo bastante alto para hacer que Standard parezca una ganga.
+4. Las dos primeras líneas de la descripción. Los compradores las leen por encima antes de hacer scroll. Plantea el problema del comprador y luego tu solución específica, en lenguaje claro. Sin rodeos.
+5. Frescura de las reseñas. Cinco reseñas recientes de cinco estrellas elevan la conversión más que cincuenta antiguas. Los vendedores activos rotan pequeños pedidos para mantener alta la frescura de las reseñas.
+
+## Mide la métrica correcta
+El panel muestra impresiones, clics y pedidos. El número a optimizar es la tasa de pedidos sobre impresiones. El algoritmo de Fiverr la premia directamente, y tu cuenta bancaria también.
+
+## Lo que no mueve la conversión
+- Descripciones más largas
+- Más paquetes de gig en el mismo listado
+- Más pulido visual sin un mensaje más claro
+- Añadir vídeo sin un inicio potente en los primeros 5 segundos`,
+    faqs: [
+      {
+        q: "¿Cuál es una buena tasa de conversión en un gig de Fiverr en 2026?",
+        a: "Una tasa de clic a pedido superior al 2 por ciento en gigs de desarrolladores es saludable. Los mejores vendedores en nichos estrechos sostienen entre el 4 y el 6 por ciento.",
+      },
+      {
+        q: "¿Debería bajar precios para subir la conversión en Fiverr?",
+        a: "Solo como principiante sin reseñas. Una vez que tengas una base de reseñas de cinco estrellas, sube precios y deja que los compradores de menor presupuesto vayan a otra parte.",
+      },
+    ],
+  },
+  'multi-currency-banking-for-freelance-developers': {
+    body: `Los desarrolladores freelance pagados por clientes internacionales pierden entre el 2 y el 4 por ciento de cada factura por el diferencial de FX cuando el dinero llega a una cuenta bancaria local. A lo largo de un año eso se acumula en miles. Un stack bancario multi-divisa lo resuelve limpiamente.
+
+## La cuenta base
+Una cuenta multi-divisa que te dé datos de routing locales en USD, EUR y GBP es el cimiento. Wise es la opción más habitual porque el FX se hace al tipo medio del mercado con una pequeña comisión fija. Revolut Business y Mercury (para fundadores de EE. UU.) cubren un terreno similar.
+
+## Cómo te pagan los clientes
+Con datos de routing locales, tu cliente de EE. UU. paga en tu cuenta USD por ACH como si fueras un proveedor doméstico. Tu cliente alemán paga por SEPA en tu cuenta EUR. Sin comisiones SWIFT, sin recortes de FX tomados antes de que el dinero llegue.
+
+## Cuándo convertir
+Mantén saldos en cada divisa hasta que realmente necesites gastar o mover el dinero. Convierte al tipo medio del mercado cuando lo hagas. Evita convertir al recibir, porque el procesador de pago de tu cliente suele ocultar un peor tipo de FX en el diferencial.
+
+## Gasto
+Una tarjeta de débito multi-divisa gasta desde la cartera de la divisa correspondiente, evitando conversiones en compras locales cuando viajas. Si vives en EUR pero ganas en USD, mantén un fondo en EUR para el gasto diario y convierte semanalmente en lugar de hacerlo en cada transacción.
+
+## Ángulo fiscal
+Multi-divisa no cambia tu residencia fiscal ni lo que debes. Sigues declarando ingresos en tu moneda local convertidos a la fecha de recepción. Guarda extractos mensuales de los saldos de la cartera y el tipo de FX de cada conversión para una contabilidad limpia.
+
+## Cuidado con mantener efectivo
+Una cuenta multi-divisa no es un vehículo de ahorro. Los saldos retenidos no generan intereses significativos. Mueve el excedente a una cuenta de ahorro o inversión en la divisa que finalmente vayas a gastar.`,
+    faqs: [
+      {
+        q: "¿Cuál es la forma más barata de recibir USD como freelance de la UE?",
+        a: "Abre una cuenta multi-divisa de Wise con datos de routing de EE. UU. Los clientes te pagan por ACH como una transferencia doméstica sin recorte de FX al recibir.",
+      },
+      {
+        q: "¿Debería facturar a los clientes en su moneda o en la mía?",
+        a: "Factura en la moneda en la que opera tu cliente. Tú asumes el riesgo de FX, pero al tipo medio del mercado vía tu cuenta multi-divisa; la alternativa permite que el cliente elija el tipo y normalmente pierdes más.",
+      },
+    ],
+  },
+  'mercor-domain-application-strategy': {
+    body: `Mercor acepta solicitantes en pistas específicas (revisión general de código, evaluación de trazas de agentes, razonamiento formal, multimodal, legal, médica, etc.). La pista a la que te postulas determina tanto tu probabilidad de aceptación como la tarifa que puedes pedir tras ser aceptado. Elegir de forma deliberada importa.
+
+## Mapea tu profundidad con honestidad
+Anota lo que realmente has construido o en lo que has trabajado durante al menos 18 meses. La pista que encaje con ese trabajo tiene la mayor probabilidad de aceptación. Un ingeniero backend de Python que se postula a code-evaluation pasa más rápido que la misma persona postulándose a matemáticas formales, aunque disfrute de las matemáticas.
+
+## Elige la pista más escasa dentro de tu profundidad
+Entre las pistas que encajan con tu perfil, la que tiene el grupo de solicitantes más reducido paga más. En 2026 las pistas más escasas para perfiles orientados al software son verificación formal, lenguajes de sistemas (OCaml, trabajo de kernel en Rust, Solidity) y revisión de seguridad especializada.
+
+## Evita las pistas genéricas si tienes especificidades
+La revisión general de código es la pista con más postulantes y tiene la tarifa por hora más baja. Si tienes alguna especificidad (un lenguaje, un framework, un dominio), postúlate a la pista estrecha que corresponda.
+
+## Postulaciones a varias pistas
+Mercor te permite postularte a varias pistas. Envía primero una pista especialista estrecha y luego una más amplia como respaldo. La aceptación en la pista estrecha desbloquea invitaciones a la más amplia de todos modos; lo contrario rara vez es cierto.
+
+## Reapostulación
+Si te rechazan en una pista, normalmente puedes volver a postularte tras seis meses. Entre intentos, publica trabajo que demuestre la profundidad específica con la que aplicaste (contribuciones a open source, un artículo técnico, charlas en conferencias). La profundidad de perfil entre intentos es la señal más fuerte de reapostulación.
+
+## Qué descalifica incluso a candidatos fuertes
+Ensayos genéricos reescritos por IA. Mercor filtra por juicio humano, y los ensayos asistidos por LLM se leen exactamente como lo opuesto. Escribe tu solicitud con tu propia voz, con ejemplos específicos; eso solo ya te separa de la mitad del grupo.`,
+    faqs: [
+      {
+        q: "¿Puedo postularme a varias pistas de Mercor a la vez?",
+        a: "Sí, y la mayoría de los expertos aceptados lo hace. Lidera con una pista especialista estrecha y añade una más amplia como respaldo. La aceptación en la estrecha tiende a desbloquear automáticamente la amplia.",
+      },
+      {
+        q: "¿Qué pista de Mercor tiene la mayor tasa de aceptación para desarrolladores?",
+        a: "Las pistas generales de code-evaluation aceptan a más solicitantes, pero a la tarifa más baja. Las pistas especializadas de ingeniería de sistemas aceptan a menos, pero pagan materialmente más.",
+      },
+    ],
+  },
+  'appsumo-bundles-vs-individual-deals-2026': {
+    body: `AppSumo ofrece tanto ofertas vitalicias individuales de SaaS como paquetes temáticos (founder stack, marketing stack, AI stack). Los paquetes parecen más baratos por herramienta, pero solo aportan valor si realmente usas todo lo que incluyen. Las cuentas suelen favorecer las ofertas individuales.
+
+## Cómo se fijan los precios de los paquetes
+Un paquete típico agrupa entre 5 y 10 ofertas vitalicias con un descuento del 30 al 60 por ciento frente a comprarlas por separado. El ahorro solo se materializa si usas al menos la mitad de las herramientas incluidas.
+
+## La tasa de uso realista
+En paquetes reales, los compradores reportan un uso activo de 2 a 4 herramientas por cada paquete de 10 a los seis meses. El resto queda en el panel sin usar. A esa tasa de uso, el paquete fue más caro que comprar las 2 a 4 que querías de forma individual.
+
+## Cuándo gana un paquete
+Tres condiciones deben cumplirse a la vez:
+- Tienes un uso claro para al menos la mitad de las herramientas.
+- Cada herramienta que usarías está en el nivel adecuado para tu escala (sin topes que vayas a superar).
+- El paquete incluye al menos una herramienta por la que habrías pagado precio completo, haciendo que el resto sea efectivamente gratis.
+
+## Cuándo ganan las ofertas individuales
+Por defecto. Elige la herramienta específica que reemplace una suscripción actual, cómprala en su propia oferta y úsala. Añade otra oferta solo cuando aparezca un gasto recurrente real en tus libros.
+
+## Disciplina con los reembolsos
+Usa de forma agresiva la ventana de reembolso de 60 días en compras de paquetes. Dentro de las dos primeras semanas, inicia sesión en cada herramienta, intenta el flujo de trabajo que querías de ella y reembolsa el paquete si menos de la mitad cumple.
+
+## El impuesto oculto
+Cada herramienta vitalicia añadida a tu stack suma coste de onboarding, gestión de contraseñas y fatiga de decisión. Las herramientas que no usas no son gratis; son ruido. Los paquetes con 10 herramientas cuestan tiempo incluso cuando el precio por herramienta es bajo.`,
+    faqs: [
+      {
+        q: "¿Los paquetes de AppSumo realmente valen la pena?",
+        a: "Solo cuando tienes un uso claro para al menos la mitad de las herramientas incluidas en el nivel incluido. De lo contrario, el descuento por herramienta se compensa con herramientas que nunca usas.",
+      },
+      {
+        q: "¿Puedo reembolsar solo parte de un paquete de AppSumo?",
+        a: "Los paquetes normalmente se reembolsan como una unidad dentro de la ventana de 60 días. Decide sobre el paquete completo en las primeras dos semanas de prueba.",
+      },
+    ],
+  },
+  'how-to-invoice-international-clients-as-a-developer': {
+    body: `Enviar una factura limpia, en la divisa correcta y con los datos de pago correctos, es la diferencia entre cobrar en cinco días y cobrar en cinco semanas. La mayoría de los desarrolladores freelance invierten poco aquí y lo pagan en flujo de caja.
+
+## Qué debe contener la factura
+- Tu nombre legal, dirección registrada de la empresa y (si aplica) NIF o ID fiscal
+- Nombre legal y dirección del cliente
+- Un número de factura único y secuencial
+- Fecha de emisión y fecha de vencimiento
+- Líneas detalladas con descripción, cantidad, precio unitario y total
+- Divisa claramente indicada en cada valor monetario
+- Desglose de impuestos (línea de VAT para intracomunitario UE, ninguna para clientes fuera de la UE)
+- Instrucciones de pago incluyendo IBAN, SWIFT o routing ACH de EE. UU. según corresponda
+
+## En qué divisa facturar
+Factura en la divisa en la que opera tu cliente. Un cliente de EE. UU. quiere una factura en USD con datos de routing de EE. UU.; un cliente alemán quiere EUR con IBAN. Esto elimina la fricción de FX por su parte y acorta el tiempo de cobro.
+
+## Los datos de routing locales importan
+Si tienes una cuenta multi-divisa con datos de routing locales (Wise, Revolut Business, Mercury), ponlos en la factura. Los datos de ACH de EE. UU. para clientes de EE. UU. ingresan fondos compensados en dos o tres días hábiles. Los datos de SWIFT tardan de cinco a diez días hábiles y conllevan comisiones en ambos extremos.
+
+## Plazos de pago
+Net 14 es el estándar para trabajo de desarrolladores. Net 30 es aceptable para clientes empresariales consolidados con AP fiable. Net 7 es justo para clientes pequeños y encargos cortos. Indica siempre los plazos; "due upon receipt" no es exigible en la mayoría de jurisdicciones.
+
+## Herramientas
+Una herramienta sencilla de facturación (Indy en Francia, Holvi en Alemania, Wave Free en EE. UU., Stripe Invoicing para pago en línea) ahorra mucha conciliación manual. Evita los PDF artesanales una vez superes las 10 facturas al mes.
+
+## Cadencia de seguimiento
+Envía un recordatorio cortés 3 días después del vencimiento, uno más firme a los 14 días, y escala a llamada directa o burofax a los 30 días. La mayoría de los pagos atrasados se resuelven en el primer recordatorio.`,
+    faqs: [
+      {
+        q: "¿Debo incluir VAT en facturas a clientes fuera de la UE?",
+        a: "No. Las facturas a clientes fuera de la UE están a tipo cero de VAT. Añade una línea indicando \"VAT reverse charge, servicios entregados fuera de la UE\" para mayor claridad.",
+      },
+      {
+        q: "¿Cuán rápido puedo cobrar de un cliente internacional?",
+        a: "Con datos de routing locales en una cuenta multi-divisa y plazos Net 14, la mayoría de los clientes paga en 7 a 10 días. Las configuraciones solo con SWIFT suelen estirarse a 14-21 días.",
+      },
+    ],
+  },
+  'fiverr-message-templates-for-developer-gigs': {
+    body: `Muchos gigs de desarrollo pierden pedidos en el paso de mensajería. Un comprador hace una pregunta, recibe una respuesta lenta o vaga, y compra a otro. Respuestas con plantilla, rápidas y específicas, lo solucionan.
+
+## La ventana de la primera respuesta
+Responde en menos de 30 minutos durante tu jornada laboral. Fiverr destaca algorítmicamente a los que responden rápido y los compradores se dan cuenta. Las plantillas hacen posible la velocidad sin sacrificar calidad.
+
+## Plantilla 1: confirmación de alcance (consulta más habitual)
+"Hi {name}, thanks for reaching out. Para definir bien el alcance, ¿podrías confirmarme: (1) el framework y lenguaje, (2) la fecha límite, y (3) si es una nueva funcionalidad o una corrección sobre código existente? Si compartes una captura o un fragmento de código del estado actual, te doy un presupuesto preciso en la próxima hora."
+
+## Plantilla 2: presupuesto desajustado
+"Hi {name}, gracias por los detalles. El alcance que describes encaja entre mis niveles Standard y Premium por (motivo específico). Puedo entregar el alcance al precio Premium, o recortar X para encajarlo en Standard. ¿Qué te funciona mejor?"
+
+## Plantilla 3: petición fuera de alcance
+"Hi {name}, esta tarea concreta queda fuera de lo que cubre mi gig. No quiero tomar el pedido si no puedo entregarlo limpiamente. (Recomienda a otro vendedor si conoces uno) Si te abres a un alcance relacionado que sí puedo manejar (alternativa concreta), encantado de hablarlo."
+
+## Plantilla 4: arranque tras el pedido
+"Gracias por el pedido. Para empezar necesito (lista numerada de elementos específicos). Entregaré el primer borrador en (plazo). Te aviso en el momento en que esté listo."
+
+## Lo que mata el cierre
+- Saludos genéricos ("Hello dear, hope you are doing well")
+- Pedir el brief dos veces
+- Prometer un presupuesto y no hacer seguimiento
+- Hablar de ti antes de preguntar por el problema del comprador
+
+## Deja de pedir permiso
+Los compradores quieren decisiones, no opciones. Lidera con la respuesta más clara; ofrece alternativas solo si tu recomendación principal no encaja.`,
+    faqs: [
+      {
+        q: "¿Cuán rápido debo responder a los mensajes de Fiverr?",
+        a: "En menos de 30 minutos durante tu jornada laboral. Las respuestas en menos de una hora suben tu gig en búsqueda y cierran más pedidos.",
+      },
+      {
+        q: "¿Debo enviar un argumento de venta largo a los compradores de Fiverr?",
+        a: "No. De tres a cinco frases, enfocadas en el problema específico del comprador, convierten mejor que los argumentos largos.",
+      },
+    ],
+  },
+  'safetywing-vs-iati-vs-genki-insurance-comparison': {
+    body: `Tres productos de seguros dominan el mercado nómada y de trabajadores remotos en 2026: SafetyWing, IATI y Genki. Se solapan en la promesa básica de cobertura transfronteriza, pero difieren en precio, atención incluida, cobertura de países y experiencia en siniestros.
+
+## SafetyWing
+Modelo de suscripción. Aproximadamente 45 USD al mes para menores de 40 años. Cubre más de 180 países. Hospitalización hasta 250.000 USD por condición. Incluye cobertura COVID, dental de emergencia, y cobertura limitada en el país de origen (30 días por año). Onboarding sencillo, cancelación en cualquier momento, facturación mensual.
+
+## IATI
+Modelo de póliza anual, con sede en la UE. Aproximadamente 600 a 1.200 EUR por año según el nivel. Mejor cobertura de maternidad y condiciones crónicas que SafetyWing. Mejor experiencia de reembolso para residentes en la UE. Compromiso inicial más alto.
+
+## Genki
+Entrante más reciente, modelo de suscripción. Aproximadamente 40 EUR al mes en el plan estándar. Cobertura dental y ambulatoria fuerte incluida. Base europea, siniestros procesados rápidamente. Lista de países algo más reducida que SafetyWing (esencialmente todos los destinos nómadas populares están cubiertos).
+
+## Comparativa lado a lado
+
+| Factor              | SafetyWing       | IATI               | Genki            |
+|---------------------|------------------|--------------------|------------------|
+| Facturación         | Mensual          | Anual por adelantado | Mensual        |
+| Coste típico        | 45 USD/mes       | 600-1200 EUR/año   | 40 EUR/mes       |
+| Cobertura países    | 180+             | 180+               | 150+             |
+| Límite hospitalario | 250k USD         | hasta 2M EUR       | hasta 2M EUR     |
+| Dental              | Solo emergencia  | Niveles incluidos  | Incluido         |
+| Condiciones crónicas | Excluidas       | Según nivel        | Limitado         |
+| Flexibilidad cancelación | En cualquier momento | Anual fijo  | En cualquier momento |
+| Reembolso UE        | Aceptable        | Fuerte             | Fuerte           |
+
+## Cómo elegir
+- Nuevo en la vida nómada o primer viaje corto: SafetyWing por flexibilidad
+- Con base en la UE, planeando 12+ meses de viaje: IATI por mejor cobertura
+- Residente en la UE buscando dental y ambulatoria fuertes: Genki
+
+## Lo que ninguno cubre
+Condiciones crónicas preexistentes graves, procedimientos electivos y coberturas solo para dependientes son limitadas en los tres. Si tienes necesidades médicas específicas, lee la letra pequeña antes de suscribir.`,
+    faqs: [
+      {
+        q: "¿Qué seguro nómada es el más barato en 2026?",
+        a: "Genki y SafetyWing tienen un coste mensual aproximadamente igual, de 40 a 45 EUR/USD al mes. IATI es más caro pero cubre más en el extremo superior.",
+      },
+      {
+        q: "¿SafetyWing cubre Estados Unidos?",
+        a: "Sí, con un tope limitado de 250.000 USD por condición. Para estancias prolongadas en EE. UU., una póliza específica de EE. UU. suele ser más adecuada.",
+      },
+    ],
+  },
+  'saas-stack-for-newsletter-operators-2026': {
+    body: `Los operadores de newsletters trabajan con stacks ligeros. Una configuración típica cubre cinco categorías: publicación, gestión de lista, producción de contenido, monetización y analítica. Elegir bien ahorra dinero y fatiga de decisión.
+
+## Plataforma de publicación
+Beehiiv, Substack, Ghost o una configuración autoalojada. Beehiiv es la más amigable para monetizar, con anuncios nativos y referidos, gratis en el nivel inicial. Substack gana en descubrimiento; Ghost gana en propiedad.
+
+## Higiene de lista y verificación
+Los correos rebotados matan la entregabilidad. NeverBounce o ZeroBounce para limpieza periódica de la lista; los niveles gratuitos cubren a la mayoría de operadores en fase inicial.
+
+## Producción de contenido
+Notion u Obsidian para el calendario editorial. Un corrector gramatical. Un asistente de escritura con IA para primeros borradores (Claude funciona bien para newsletters con mucho contenido técnico). Una herramienta de generación de imágenes si publicas visuales.
+
+## Monetización
+Anuncios nativos en tu plataforma de publicación. Red de anuncios opcional si tu audiencia es lo bastante grande. Enlaces de afiliados seleccionados para uno o dos programas que encajen con tu nicho.
+
+## Analítica
+La analítica integrada en la plataforma cubre a la mayoría de operadores. Añade Plausible o Fathom para hacer seguimiento del sitio público de archivo si lo alojas.
+
+## Dónde encajan las ofertas vitalicias
+AppSumo suele tener buenas ofertas en herramientas de nicho de este stack: utilidades de limpieza de listas, herramientas de briefing de contenido, asistentes de edición con IA y widgets de crecimiento de suscriptores. Las ofertas vitalicias a esta escala suelen amortizarse en menos de tres meses.
+
+## Las categorías más prescindibles
+Evita acumular cinco widgets de crecimiento, tres herramientas de analítica o versiones de pago de plataformas de automatización en el primer año. La mayoría de los operadores se sobre-equipan al principio y publican poco. Seis meses de publicación disciplinada con un stack mínimo supera a un stack perfecto con contenido irregular.`,
+    faqs: [
+      {
+        q: "¿Necesito un stack de pago para empezar una newsletter?",
+        a: "No. El nivel gratuito de Beehiiv más una app de notas cubren los primeros 1.000 suscriptores. Añade herramientas de pago solo cuando aparezcan cuellos de botella concretos.",
+      },
+      {
+        q: "¿Qué herramienta de newsletter ofrece más valor en ofertas vitalicias?",
+        a: "Las utilidades de limpieza de listas y las herramientas de edición asistidas por IA ofrecen la mejor proporción de valor frente a coste cuando se compran como ofertas vitalicias.",
+      },
+    ],
+  },
+  'remote-work-tax-residency-strategies-2026': {
+    body: `La residencia fiscal para trabajadores remotos en 2026 es menos flexible que durante los primeros años de pandemia. La mayoría de las jurisdicciones endurecieron las reglas; las estrategias agresivas que funcionaban en 2021 ahora disparan auditorías. Las estrategias que siguen funcionando son conservadoras y bien documentadas.
+
+## Qué determina la residencia fiscal
+La mayoría de los países usan una combinación de presencia física (normalmente 183 días al año) y criterios de centro de vida (familia, vivienda principal, vínculos económicos). Puedes ser residente fiscal en un país en el que pasaste solo 60 días si tu centro de vida está allí.
+
+## Estrategia 1: ruptura limpia hacia un país de baja tributación
+Establece residencia plena en un país con tratamiento fiscal favorable para trabajadores remotos (Portugal NHR, Cyprus non-dom, UAE, programa HNWI de Georgia). Requiere mudarse de verdad: contrato de alquiler real, banco local, familia registrada allí. Las medidas a medias hacen que tu país anterior te reclame.
+
+## Estrategia 2: nomadismo estructurado con base declarada
+Vive como nómada de forma estructurada manteniendo una residencia fiscal declarada. Permanece por debajo de los umbrales de disparo en los países de tránsito (normalmente 183 días). Mantén documentación clara: registros de vuelos, historial de alquileres, registro de ubicaciones de trabajo. Funciona si tu país de origen tiene un régimen territorial o tipos bajos.
+
+## Estrategia 3: enrutamiento por employer-of-record
+Usa un servicio de EOR para ser empleado formalmente en el país cuyo régimen fiscal quieres. Tú contratas con el EOR, el EOR te emplea localmente, tu cliente paga al EOR. Limpio y bien documentado, pero reduce el neto en un 15 a 30 por ciento por las comisiones del EOR y las cargas sociales locales.
+
+## Lo que no funciona en 2026
+Reclamar residencia en un país que apenas visitas. Mantener una Delaware LLC mientras vives en Francia y nunca declarar los ingresos. Reclamaciones de residencia múltiple que se contradicen entre sí. Las autoridades fiscales ahora intercambian información de forma agresiva; los conflictos de doble residencia se detectan.
+
+## Busca asesoría profesional
+La residencia fiscal a esta complejidad siempre justifica una consulta única con un asesor fiscal transfronterizo antes de moverse. Unos pocos cientos de euros por adelantado evitan sorpresas de cinco cifras después.`,
+    faqs: [
+      {
+        q: "¿Cuál es la residencia fiscal más segura para un trabajador tecnológico remoto en 2026?",
+        a: "Establecer limpiamente residencia en un solo país con un régimen favorable (Portugal NHR, Cyprus non-dom, UAE) y vivir allí realmente 183+ días es lo más seguro. Las medidas a medias generan disputas.",
+      },
+      {
+        q: "¿Puedo no ser residente fiscal de ningún país?",
+        a: "Técnicamente posible pero extremadamente arriesgado. Sin una residencia clara, tu país anterior normalmente mantiene la reclamación. La residencia fiscal apátrida es en gran parte una ficción.",
+      },
+    ],
+  },
+  'niche-fiverr-gigs-that-still-pay-in-2026': {
+    body: `Las categorías genéricas de Fiverr (build a landing page, fix a WordPress site) se han saturado. Los nichos específicos aún tienen oferta escasa y permiten tarifas fuertes. La oportunidad en 2026 es la profundidad, no la amplitud.
+
+## Integración de IA en apps existentes
+Los compradores quieren funciones LLM en su producto existente, pero la mayoría no puede entregarlas. Los gigs de nicho sobre implementación RAG, integraciones personalizadas con OpenAI/Anthropic y pipelines de moderación con IA están en 300 a 1.500 USD por proyecto, con poca competencia.
+
+## Stripe y casos límite de pagos
+Configurar Stripe para facturación SaaS se ha vuelto commodity. Los casos límite no. Los gigs específicos sobre cumplimiento Stripe Tax, migraciones de suscripciones, flujos de dunning y liquidación multi-divisa siguen pagando 200 a 800 USD por alcance.
+
+## Migraciones de bases de datos
+Migrar de MySQL a Postgres, de Firebase a Supabase, de MongoDB a Postgres. Cada migración tiene sus particularidades. Los vendedores con experiencia específica en migraciones cobran 500 a 2.500 USD por proyecto.
+
+## Documentación de API y SDK
+Las empresas tienen APIs pero no documentación que convierta a desarrolladores en usuarios. Los gigs sobre escribir documentación de API, generar SDK a partir de OpenAPI specs y producir quickstarts de API pagan 300 a 1.500 USD.
+
+## Fiabilidad de webhooks y configuración de colas
+Configurar procesamiento de webhooks fiable con colas de reintento, idempotencia y observabilidad. De nicho pero con demanda constante. 200 a 800 USD por configuración.
+
+## Optimización de costes en la nube
+Revisiones de facturas AWS / GCP / Azure y auditorías de dimensionamiento. Las empresas suelen gastar de más entre un 30 y un 60 por ciento. Una auditoría sólida paga 500 a 1.500 USD y puede llevar a consultoría continuada.
+
+## Qué hace que un nicho funcione
+- Un problema concreto del comprador que puedes nombrar
+- Un alcance claro que puedas entregar en días, no semanas
+- Un proceso repetible para escalar ingresos sin escalar horas
+- Una o dos muestras de referencia en tu portafolio`,
+    faqs: [
+      {
+        q: "¿Qué nicho de Fiverr tiene menos competencia para desarrolladores en 2026?",
+        a: "El trabajo en casos límite de Stripe, la implementación RAG y las migraciones de bases de datos tienen una oferta notablemente más fina que los gigs genéricos de construcción web.",
+      },
+      {
+        q: "¿Puedo empezar en un nicho sin portafolio?",
+        a: "Necesitas al menos un ejemplo demostrable. Constrúyelo gratis sobre tu propio producto o un proyecto open source; la demo es la credencial.",
+      },
+    ],
+  },
+  'appsumo-deals-for-bootstrapped-saas-founders': {
+    body: `Los fundadores de SaaS bootstrapped toman decisiones de AppSumo en función del flujo de caja, no de listas de funciones. Las ofertas que aparecen repetidamente en stacks reales comparten un patrón: reemplazan suscripciones en la misma categoría durante al menos dos años y tienen detrás proveedores estables.
+
+## Correo transaccional
+Un SaaS en solitario que envía menos de 50k correos al mes paga de más por Mailgun a precio de lista. Las ofertas vitalicias en remitentes transaccionales más pequeños suelen aparecer entre 70 y 150 USD y cubren ese volumen durante años.
+
+## Interfaz de base de datos y editor SQL
+Un panel gestionado de Postgres con editor de consultas, gestión de roles y monitorización básica. Las ofertas vitalicias por 100 a 200 USD ahorran una suscripción por usuario que se acumula con el crecimiento del equipo.
+
+## Seguimiento de errores y uptime
+Alternativas más pequeñas a Sentry o Datadog cubren proyectos paralelos y SaaS en fase inicial. Las ofertas vitalicias por 60 a 150 USD funcionan para volúmenes de producción por debajo de algunos millones de eventos al mes.
+
+## Automatización de marketing
+Herramientas de secuencias de correo, campañas de retención, segmentación de clientes. Las ofertas vitalicias por 100 a 250 USD reemplazan facturas recurrentes de 50 a 200 USD al mes.
+
+## SEO y contenido
+Investigación de keywords, SEO on-page, briefs de contenido. Las ofertas vitalicias aquí se amortizan rápido para startups centradas en marketing de contenidos.
+
+## Atención al cliente
+Agregadores de bandeja de entrada, constructores de bases de conocimiento, herramientas de helpdesk. Las ofertas vitalicias por 80 a 200 USD funcionan bien para equipos de dos a cinco personas; se quedan cortas a escala empresarial.
+
+## Evita ofertas vitalicias en
+- Procesamiento de pagos (Stripe es la respuesta; las herramientas que enrutan a través de Stripe a precio LTD suelen ser flojas)
+- Proveedores de autenticación (Auth0, Clerk, WorkOS justifican suscripción por los SLAs)
+- Hosting y CDN (usa proveedores principales; los precios LTD rara vez compensan)
+- Observabilidad a escala empresarial (los proveedores LTD no soportan el throughput)
+
+## La regla
+Una oferta vitalicia tiene sentido cuando ya has pagado dos meses del equivalente en suscripción SaaS. Lo que no has pagado es teórico; no compres ofertas vitalicias teóricas.`,
+    faqs: [
+      {
+        q: "¿Cuánto ahorra un SaaS bootstrapped típico con ofertas de AppSumo?",
+        a: "Un fundador disciplinado que gasta de 300 a 600 USD en las ofertas vitalicias correctas suele reemplazar 150 a 250 USD al mes de SaaS recurrente, amortizando en 3 a 4 meses.",
+      },
+      {
+        q: "¿Cuándo debería un SaaS bootstrapped saltarse AppSumo y pagar suscripción?",
+        a: "Para pagos, autenticación, hosting y observabilidad de nivel empresarial. Paga por SLAs en esas categorías.",
+      },
+    ],
+  },
+  'multi-currency-invoicing-for-remote-developers': {
+    body: `Los desarrolladores remotos que facturan en varias divisas afrontan dos costes: el diferencial de FX en la conversión y los pagos atrasados por fricción en el lado del cliente. Ambos se reducen drásticamente con una configuración multi-divisa diseñada en torno a los hábitos de pago del cliente.
+
+## Factura en la divisa local del cliente
+Un cliente de EE. UU. debe recibir una factura en USD con datos de routing ACH de EE. UU. Un cliente alemán debe recibir una factura en EUR con SEPA IBAN. Un cliente del Reino Unido debe recibir una factura en GBP con datos de routing locales. Cualquier otra cosa ralentiza el pago porque el AP del cliente tiene que lidiar con la sobrecarga de transferencias internacionales.
+
+## Mantén tres cuentas locales
+Una cuenta multi-divisa de Wise (o Revolut Business / Mercury) te da datos de routing locales en USD, EUR, GBP y otras. Cada divisa tiene su propio número de cuenta que parece doméstico al pagador. Los fondos se acreditan en 1 a 3 días, no en 5 a 10.
+
+## Cotiza el precio en la divisa del cliente
+Evita frases tipo "5.000 EUR (aprox. 5.500 USD)". Elige la divisa una vez y fija el precio con firmeza. Los precios mixtos te hacen parecer amateur y dan al cliente espacio para discutir el FX.
+
+## Convierte cuando TÚ quieras
+Mantén saldos en cada divisa hasta que tengas razón para convertir. Págate en tu divisa local a fin de mes, cuando el tipo te convenga, no en cada recepción de factura.
+
+## Lleva un registro consistente de USD/EUR brutos
+Para la declaración fiscal, normalmente reportas ingresos convertidos a tu divisa local al tipo del día de recepción. Usa el tipo oficial publicado por tu autoridad fiscal (tipo mensual de HMRC, tipo anual del IRS). Las cuentas multi-divisa exportan extractos por divisa, lo que lo hace limpio.
+
+## Qué cambia a escala
+Por encima de 100k USD de ingresos anuales con varios clientes, considera abrir una cuenta bancaria local real en la mayor divisa no local que recibas. El intermediario multi-divisa se convierte en una comisión sobre volumen; una cuenta directa la elimina.
+
+## Evita PayPal para facturación
+El diferencial de FX de PayPal es del 3 al 4 por ciento en transacciones entre divisas. Úsalo solo cuando el cliente rechace cualquier otra cosa, y mete el coste en tu tarifa.`,
+    faqs: [
+      {
+        q: "¿Cuánto ahorra una configuración de facturación en comisiones de FX?",
+        a: "Una cuenta multi-divisa limpia ahorra del 2 al 4 por ciento de cada factura entre divisas. Con 100k USD anuales de ingresos transfronterizos, eso son 2.000 a 4.000 USD al año.",
+      },
+      {
+        q: "¿Debo enviar facturas en PDF o usar un portal en línea?",
+        a: "El PDF funciona bien para la mayoría de los clientes. Un enlace de pago en línea (Stripe Invoicing) acelera el pago para clientes con perfil técnico, pero introduce una comisión del procesador del 2-3 por ciento.",
+      },
+    ],
+  },
+  'how-i-built-a-tech-newsletter-side-income': {
+    body: `Una newsletter técnica enfocada escala de cero a ingresos mensuales de cuatro cifras en 18 meses si publicas con constancia, te especializas y apilas dos o tres fuentes de ingreso. El plan a continuación funciona para escritores técnicos dispuestos a publicar cada semana durante al menos 12 meses.
+
+## Elige un nicho que puedas sostener
+El nicho debe ser lo bastante estrecho para que te identifiquen como la fuente, y lo bastante amplio para que no te quedes sin material. Ejemplos que funcionan: internals de sistemas distribuidos, economía de SaaS indie, casos de estudio de ingeniería de IA, rendimiento de Postgres.
+
+## Publica semanalmente durante 12 meses pase lo que pase
+Los primeros tres meses parecen gritar al vacío. Entre el mes 4 y el 6 se forma un núcleo pequeño de audiencia. Entre el 7 y el 12 entra el crecimiento orgánico. La mayoría de las newsletters que fracasan abandonan entre el mes 2 y el 5.
+
+## Construye el archivo como un sitio público
+Alojar el archivo de la newsletter como un sitio público indexable acumula crecimiento orgánico vía búsqueda. Para el mes 12, el archivo suele convertirse en la mayor fuente única de nuevos suscriptores.
+
+## Apila ingresos en orden
+1. Enlaces de afiliados a herramientas que realmente usas. Empieza a producir de inmediato con cualquier tamaño de lista.
+2. Anuncios nativos vía la plataforma de publicación. Funciona por encima de ~3.000 suscriptores activos.
+3. Suscripciones de pago o patrocinios. Funcionan por encima de ~10.000 suscriptores activos con una propuesta premium clara.
+
+## Números realistas a 12 meses
+Una newsletter técnica enfocada con 8.000 suscriptores suele generar de 800 a 2.500 USD al mes entre afiliados, anuncios nativos y pequeños patrocinios. Por encima de 20.000 cruza los 4.000 USD al mes para la mayoría de los operadores.
+
+## Lo que haría diferente
+- Empezar el archivo el día uno, no en el mes seis
+- Fijar un día semanal de publicación y protegerlo como una reunión
+- Invertir más en escribir titulares que en escribir cuerpos
+- Dejar de intentar crecer en todas las plataformas; concentrar el orgánico en una o dos
+
+## Cuándo plantearse dedicación completa
+4.000 USD al mes sostenidos durante seis meses con base de suscriptores creciente. Por debajo de eso, trátalo como ingreso secundario y protege tu empleo principal.`,
+    faqs: [
+      {
+        q: "¿Cuánto tarda una newsletter técnica en empezar a generar ingresos?",
+        a: "Los ingresos por afiliados pueden empezar en el primer mes con cualquier tamaño de lista. Ingresos secundarios significativos (1.000+ USD al mes) suelen aparecer entre el mes 9 y el 18 para publicadores constantes.",
+      },
+      {
+        q: "¿Puede una newsletter técnica reemplazar un salario a tiempo completo?",
+        a: "Para operadores con experiencia en nichos tecnológicos estrechos, sí, tras 18-24 meses de publicación constante y una buena estratificación de monetización. La mayoría la opera como ingreso secundario.",
+      },
+    ],
+  },
+  'fiverr-vs-upwork-bid-strategy-comparison': {
+    body: `Fiverr y Upwork premian movimientos diferentes. Tratarlos igual es la forma más fácil de malgastar horas en ambos. Saber qué conductas ganan en cada uno acorta el camino hacia trabajo constante.
+
+## Fiverr: productiza, no pujes
+En Fiverr publicas ofertas productizadas y esperas pedidos. No hay puja. El trabajo va a la configuración del gig (título, precios, imagen, descripción) una vez, y después sigue produciendo. Optimiza la tasa de clic a pedido, no la tasa de mensaje a pedido.
+
+## Upwork: puja afilado y selectivo
+En Upwork lees publicaciones de empleo y envías propuestas. La mayoría de freelancers dispersa propuestas a cada coincidencia; eso pierde. La conducta ganadora es: revisar 20 trabajos al día, enviar en 3, con propuestas hechas a medida para cada uno. La calidad de la propuesta importa más que el volumen.
+
+## Manejo de mensajes en Fiverr
+Los compradores en Fiverr llegan con un alcance definido y un presupuesto en mente. Confirma alcance, cotiza un nivel, cierra. Los argumentos largos pierden; las respuestas cortas y decisivas ganan.
+
+## Estructura de la propuesta de Upwork
+- Abre con su problema específico en tu primera frase
+- Una frase sobre un proyecto pasado relevante (métrica concreta)
+- Una pregunta específica que demuestre que leíste el brief
+- Un siguiente paso claro (llamada, muestra, esquema de alcance)
+- Sin "Dear Sir/Madam" ni historias de vida
+
+## Postura de precios
+Fiverr: anclado por tus niveles publicados. Ajusta solo en los extremos. Upwork: cotización por encargo. Apunta al tercio superior del rango de puja que tu evidencia soporta; nunca seas el más barato.
+
+## Las reseñas se acumulan de forma distinta
+En Fiverr cada gig acumula reseñas de forma independiente. En Upwork tu Job Success Score global te sigue entre encargos. Protege ambos; un pedido cancelado o de una estrella puede estancar el progreso en cualquiera de las dos.
+
+## Cuándo usar ambos
+Usa Fiverr para servicios cortos y productizados que los compradores llegan listos a comprar. Usa Upwork para proyectos personalizados más grandes donde la relación puede extenderse. La mayoría de los operadores equilibrados apila ambos.
+
+## Presupuesto de tiempo
+Una rutina semanal sólida son 4 horas de optimización de Fiverr más 1 hora diaria de redacción de propuestas en Upwork. Por encima de eso, los retornos disminuyen; por debajo, ninguno produce.`,
+    faqs: [
+      {
+        q: "¿Debo enviar la misma propuesta a cada trabajo de Upwork?",
+        a: "No. Las propuestas con plantilla pierden frente a las personalizadas. Calidad sobre volumen es la postura ganadora consistente en Upwork.",
+      },
+      {
+        q: "¿Puedo correr Fiverr y Upwork en paralelo?",
+        a: "Sí, y la mayoría de los freelancers experimentados lo hace. Sirven a conductas de comprador y niveles de precio diferentes.",
+      },
+    ],
+  },
+  'wise-borderless-account-explained-2026': {
+    body: `La cuenta multi-divisa de Wise es la capa bancaria más usada en el stack del trabajador remoto. También es la más malentendida. Aquí está lo que realmente es, lo que no es y cuándo usarla.
+
+## Qué es
+Una cuenta de retención con datos de routing locales en varias divisas. Puedes recibir dinero como si tuvieras una cuenta doméstica en cada una de esas divisas. Puedes mantener saldos en cada divisa. Puedes convertir al tipo medio del mercado con una pequeña comisión.
+
+## Qué no es
+Una cuenta bancaria en el sentido tradicional. Los saldos se mantienen en instituciones reguladas de dinero electrónico, no como depósitos bancarios. La cobertura bajo los esquemas de garantía de depósitos varía por jurisdicción; en la mayoría de los casos la protección es distinta a la de una cuenta de banco tradicional.
+
+## Cómo se gana su lugar en el stack
+1. Recibir pagos de clientes en su divisa local sin recorte de FX
+2. Mantener saldos entre divisas hasta que convenga convertir
+3. Convertir al FX medio del mercado con una pequeña comisión transparente, en lugar del diferencial oculto del 2-4 por ciento típico de los bancos
+4. Gastar con una tarjeta de débito en más de 40 divisas sin recargo de FX en el gasto
+
+## Cuánto cuesta
+La cuenta es gratuita. Recibir pagos locales es gratis. Convertir conlleva una comisión transparente, normalmente del 0,4 al 0,7 por ciento. Gastar con la tarjeta en la divisa local es gratis; en divisa extranjera usa el FX medio del mercado sin recargo.
+
+## Dónde falla
+- No es adecuada para aparcar grandes sumas (sin intereses significativos)
+- No es un sustituto a largo plazo de una cuenta bancaria local real en tu país de residencia (historial crediticio, relaciones hipotecarias, normas regulatorias)
+- Soporte de cheques limitado en países que aún dependen de ellos (raro pero existe)
+- El soporte al cliente es asíncrono y más lento que un banco tradicional para asuntos serios
+
+## El patrón que funciona
+Usa Wise como capa de recepción entre clientes y tu cuenta bancaria real. Convierte y barre a tu banco en divisa local mensualmente. Mantén pequeños saldos de trabajo en las divisas en las que gastas. Mueve los ahorros a otro lugar.
+
+## Alternativas si Wise no encaja
+- Revolut Business (conjunto de funciones similar, enfoque UE)
+- Mercury (solo fundadores en EE. UU., cuenta bancaria real)
+- Payoneer (alternativa para clientes que rechazan Wise)`,
+    faqs: [
+      {
+        q: "¿Wise es una cuenta bancaria real?",
+        a: "No. Wise es una institución regulada de dinero electrónico. Funcionalmente actúa como una cuenta multi-divisa, pero el estatus legal y la protección de depósitos difieren de un banco tradicional.",
+      },
+      {
+        q: "¿Puedo usar Wise como mi única cuenta bancaria?",
+        a: "Para la mayoría de los trabajadores remotos, no. Usa Wise como la capa de recepción transfronteriza y FX, y un banco doméstico en tu país de residencia para impuestos, hipoteca y relaciones bancarias a largo plazo.",
+      },
+    ],
+  },
+  'appsumo-stack-for-solopreneurs-under-1000': {
+    body: `Un solopreneur puede montar un stack de operación SaaS funcional con ofertas vitalicias de AppSumo por unos 1.000 USD de una sola vez. Las ofertas correctas reemplazan 150 a 250 USD al mes de SaaS recurrente, amortizando en 4 a 6 meses y ahorrando 1.500+ USD al año de forma continua.
+
+## La lista de la compra
+El orden de abajo es el orden de compra; detente donde se acabe tu presupuesto.
+
+1. Plataforma alternativa de automatización (alternativa a Zapier): 150-200 USD. Reemplaza 30 USD al mes mínimo.
+2. Herramienta de secuencias de correo: 100-200 USD. Reemplaza 30-50 USD al mes.
+3. Interfaz de base de datos / panel de Postgres: 100-150 USD. Reemplaza 25-40 USD al mes.
+4. Remitente de correo transaccional (alternativa a Mailgun a bajo volumen): 70-150 USD. Reemplaza 15-30 USD al mes.
+5. Toma de notas / base de conocimiento personal: 60-100 USD. Reemplaza Notion a 10 USD al mes.
+6. SEO e investigación de keywords: 70-120 USD. Reemplaza herramientas estilo SEMrush a 100 USD al mes a volumen de solopreneur.
+7. Agregador de bandeja de soporte: 80-150 USD. Reemplaza 20-40 USD al mes.
+
+Total: 630 a 1.070 USD. Te prepara para 18-24 meses de operación de solopreneur.
+
+## Lo que esto NO cubre
+- Pagos (Stripe, paga la comisión estándar)
+- Hosting y CDN (Cloudflare y un host principal)
+- Autenticación (Clerk, Auth0 o construye con NextAuth)
+- Hosting de código fuente (GitHub, por defecto)
+- Registrador de dominios (quien tenga el precio más bajo del TLD)
+
+## Cómo validar antes de comprar
+Para cada oferta vitalicia: lista la suscripción SaaS recurrente que pagarías de otro modo por ese rol. Si no puedes nombrar una suscripción actual que la oferta reemplaza, no compres. Las ofertas vitalicias crean valor al eliminar costes recurrentes; los ahorros teóricos sobre herramientas que no habrías pagado no son ahorros.
+
+## Cuándo te quedará pequeño el stack
+Un stack de solopreneur suele aguantar 18-30 meses. A mayor volumen (equipo de 3+, decenas de miles de clientes), herramientas específicas empiezan a tocar techos. En ese punto, migra la herramienta cuello de botella a una suscripción de pago y mantén el resto del stack vitalicio funcionando.
+
+## Seguridad con reembolsos
+Usa la ventana de 60 días. Compra en dos tandas de tres o cuatro ofertas cada una. Prueba cada una en flujos de trabajo reales en las dos primeras semanas. Reembolsa cualquiera que no hayas integrado activamente.`,
+    faqs: [
+      {
+        q: "¿Cuánto ahorra un solopreneur con un stack de AppSumo de 1.000 USD?",
+        a: "Normalmente 1.500 a 2.500 USD al año en marcha, tras 4 a 6 meses de amortización. Ahorros mayores si el stack reemplaza suscripciones de nivel empresarial.",
+      },
+      {
+        q: "¿Puede una startup financiada con capital riesgo usar el mismo stack de AppSumo?",
+        a: "Para algunas categorías sí, pero los SLAs empresariales y las necesidades de SOC2 normalmente fuerzan a los equipos con capital riesgo a niveles de suscripción en 6-12 meses.",
+      },
+    ],
+  },
 };

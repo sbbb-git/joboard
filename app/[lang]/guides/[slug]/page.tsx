@@ -37,6 +37,15 @@ const BEEHIIV_SLUGS = new Set([
   'best-newsletter-platforms-for-developers',
   'tech-newsletter-growth-tactics-2026',
   'newsletter-vs-blog-which-earns-more',
+  'saas-stack-for-newsletter-operators-2026',
+  'how-i-built-a-tech-newsletter-side-income',
+]);
+
+const WISE_SLUGS = new Set([
+  'multi-currency-banking-for-freelance-developers',
+  'how-to-invoice-international-clients-as-a-developer',
+  'multi-currency-invoicing-for-remote-developers',
+  'wise-borderless-account-explained-2026',
 ]);
 
 const MERCOR_SLUGS = new Set([
@@ -48,6 +57,7 @@ const MERCOR_SLUGS = new Set([
   'mercor-tax-and-payout-guide-2026',
   'best-paid-domains-on-mercor-2026',
   'mercor-side-hustle-while-working-full-time',
+  'mercor-domain-application-strategy',
 ]);
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { localePath } from '@/lib/i18n';
@@ -170,7 +180,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
       {APPSUMO_SLUGS.has(g.slug) && <AppSumoCTA locale={params.lang} />}
       {BEEHIIV_SLUGS.has(g.slug) && <BeehiivCTA locale={params.lang} />}
       {MERCOR_SLUGS.has(g.slug) && <MercorCTA locale={params.lang} />}
-      {(g.category === 'tax' || g.category === 'visa') && <WiseCTA locale={params.lang} />}
+      {(g.category === 'tax' || g.category === 'visa' || WISE_SLUGS.has(g.slug)) && <WiseCTA locale={params.lang} />}
       {(g.category === 'visa' || g.category === 'lifestyle') && <SafetyWingCTA locale={params.lang} />}
       {g.category === 'tools' && <NordVPNCTA locale={params.lang} />}
       {g.category === 'tools' && <RemoteTools locale={params.lang} />}

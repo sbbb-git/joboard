@@ -5,9 +5,12 @@ export interface GuideEntry {
   category: 'finding' | 'salary' | 'visa' | 'tax' | 'lifestyle' | 'career' | 'tools' | 'freelance';
   body: string;
   faqs?: Array<{ q: string; a: string }>;
+  /** Optional ISO timestamp; guides with a future publishedAt are filtered
+      out at build time so they appear on the next daily redeploy. */
+  publishedAt?: string;
 }
 
-export const GUIDES: GuideEntry[] = [
+const ALL_GUIDES: GuideEntry[] = [
   {
     slug: 'finding-a-remote-tech-job',
     title: 'How to find a remote tech job in 2026',
@@ -604,7 +607,7 @@ Most remote-mature teams now budget for periodic team gatherings. Engineers who 
   },
 ];
 
-GUIDES.push(
+ALL_GUIDES.push(
   {
     slug: 'ai-engineer-salary-2026',
     title: 'AI engineer salary in 2026',
@@ -2163,6 +2166,678 @@ A handful of evaluators eventually leave their day job to evaluate full-time. Th
       },
     ],
   },
+  // ─── Scheduled publication: June 4-7, 2026 ────────────────────────────
+  {
+    slug: 'fiverr-gig-conversion-optimisation-2026',
+    title: 'Fiverr gig conversion optimisation: lift orders without raising traffic',
+    description: 'The handful of changes that move impressions to orders on Fiverr gigs in 2026.',
+    category: 'freelance',
+    publishedAt: '2026-06-04T03:00:00Z',
+    body: `Most sellers chase more impressions when their actual problem is conversion. A gig with 1,000 impressions and a 1 percent click-to-order rate earns less than the same gig at 500 impressions and 3 percent. Improving conversion is faster and cheaper than fighting for more visibility.
+
+## The five levers that move conversion
+1. Gig image. Buyers decide whether to click in under a second. A clear screenshot of the outcome plus a 4-word benefit header beats a stylised logo or a generic stock image. Test two images side by side and keep the winner.
+2. Title clarity. Lead with the deliverable, not your job title. "I will fix bugs in your React app within 24 hours" converts faster than "Experienced full-stack developer for hire".
+3. Tier anchoring. Most buyers pick the middle tier. Design Basic, Standard, Premium so Standard is the obvious choice. Set Basic narrow enough that it self-disqualifies for serious buyers, and Premium high enough to make Standard look like a bargain.
+4. First two lines of the description. Buyers scan these before scrolling. State the buyer's problem, then your specific solution, in plain English. No throat-clearing.
+5. Reviews recency. Five recent five-star reviews lift conversion more than fifty old ones. Active sellers cycle small orders to keep review freshness high.
+
+## Track the right metric
+The dashboard shows impressions, clicks and orders. The number to optimise is order-to-impression rate. Fiverr's algorithm rewards this directly and so does your bank account.
+
+## What does not move conversion
+- Longer descriptions
+- More gig packages on the same listing
+- Higher visual polish without clearer messaging
+- Adding video without a strong opening 5 seconds`,
+    faqs: [
+      {
+        q: 'What is a good conversion rate on a Fiverr gig in 2026?',
+        a: 'A click-to-order rate above 2 percent on developer gigs is healthy. Top sellers in narrow niches sustain 4 to 6 percent.',
+      },
+      {
+        q: 'Should I lower prices to lift conversion on Fiverr?',
+        a: 'Only as a beginner with no reviews. Once you have a base of five-star reviews, raise prices and let the lower-budget buyers go elsewhere.',
+      },
+    ],
+  },
+  {
+    slug: 'multi-currency-banking-for-freelance-developers',
+    title: 'Multi-currency banking for freelance developers in 2026',
+    description: 'How to set up a banking stack that handles client payments in USD, EUR and GBP without losing 3 percent on every conversion.',
+    category: 'freelance',
+    publishedAt: '2026-06-04T03:00:00Z',
+    body: `Freelance developers paid by international clients lose two to four percent of every invoice to FX spread when the money lands in a local bank account. Over a year that compounds to thousands. A multi-currency banking stack solves it cleanly.
+
+## The base account
+A multi-currency account that gives you local routing details in USD, EUR and GBP is the foundation. Wise is the most common pick because the FX is at mid-market rate with a small flat fee. Revolut Business and Mercury (US founders) cover similar ground.
+
+## How clients pay you
+With local routing details, your US client pays into your USD account by ACH as if you were a domestic vendor. Your German client pays via SEPA into your EUR account. No SWIFT fees, no FX cut taken before the money lands.
+
+## When to convert
+Hold balances in each currency until you actually need to spend or move the money. Convert at the mid-market rate when you do. Avoid converting on receipt because your client's payment processor often hides a worse FX rate in the spread.
+
+## Spending
+A multi-currency debit card spends from the matching currency wallet, avoiding conversion on local purchases when you travel. If you live in EUR but earn USD, keep an EUR float for daily spend and convert weekly rather than per transaction.
+
+## Tax angle
+Multi-currency does not change your tax residency or what you owe. You still declare income in your home currency converted at the date of receipt. Keep monthly statements of the wallet balances and the FX rate at each conversion for clean accounting.
+
+## Beware of holding cash
+A multi-currency account is not a savings vehicle. Held balances do not earn meaningful interest. Move excess to a savings or investment account in the currency you will eventually spend.`,
+    faqs: [
+      {
+        q: 'What is the cheapest way to receive USD as an EU freelancer?',
+        a: 'Open a Wise multi-currency account with US routing details. Clients pay you by ACH as a domestic transfer with zero FX cut taken on receipt.',
+      },
+      {
+        q: 'Should I bill clients in their currency or mine?',
+        a: 'Bill in the currency your client transacts in. You take the FX risk but at mid-market rate via your multi-currency account; the alternative lets the client choose the rate and you usually lose more.',
+      },
+    ],
+  },
+  {
+    slug: 'mercor-domain-application-strategy',
+    title: 'Mercor domain application strategy: which track to apply into',
+    description: 'How to pick the Mercor track that maximises your acceptance odds and your post-acceptance hourly rate.',
+    category: 'freelance',
+    publishedAt: '2026-06-04T03:00:00Z',
+    body: `Mercor accepts applicants into specific tracks (general code review, agent-trace evaluation, formal reasoning, multimodal, legal, medical, etc.). The track you apply into shapes both your acceptance probability and the rate you can command. Picking deliberately matters.
+
+## Map your depth honestly
+Write down what you have actually built or worked on for at least 18 months. The track that maps to that work has the highest acceptance probability. A Python backend engineer applying into code-evaluation passes faster than the same person applying into formal mathematics, even if they enjoy maths.
+
+## Pick the scarcest track within your depth
+Among tracks that fit your background, the one with the thinnest applicant pool pays more. In 2026 the scarcest tracks for software-aligned profiles are formal verification, systems languages (OCaml, Rust kernel work, Solidity), and specialised security review.
+
+## Avoid generic tracks if you have specifics
+General code review is the most-applied-to track and has the lowest hourly rate. If you have any specifics (a language, a framework, a domain), apply into the matching narrow track instead.
+
+## Multi-track applications
+Mercor lets you apply into multiple tracks. Submit one narrow specialist track first, then one broader fallback. Acceptance into the narrow track unlocks invitations into the broader one anyway; the reverse is rarely true.
+
+## Re-application
+If you are rejected from a track, you can usually re-apply after six months. Between attempts, publish work that demonstrates the specific depth you applied with (open-source contributions, a technical blog post, conference talks). Profile depth between attempts is the strongest re-application signal.
+
+## What disqualifies even strong candidates
+Generic AI-rewritten essays. Mercor screens for human judgment, and LLM-assisted essays read as exactly the inverse. Write your application in your own voice with specific examples; that alone separates you from half the pool.`,
+    faqs: [
+      {
+        q: 'Can I apply to multiple Mercor tracks at once?',
+        a: 'Yes, and most accepted experts do. Lead with one narrow specialist track and add one broader fallback. Acceptance into the narrow track tends to unlock the broader one automatically.',
+      },
+      {
+        q: 'Which Mercor track has the highest acceptance rate for developers?',
+        a: 'General code-evaluation tracks accept the most applicants but at the lowest rate. Specialised systems-engineering tracks accept fewer but pay materially more.',
+      },
+    ],
+  },
+  {
+    slug: 'appsumo-bundles-vs-individual-deals-2026',
+    title: 'AppSumo bundles vs individual deals: which actually saves you money',
+    description: 'When AppSumo bundles deliver real value and when buying the individual deals separately wins.',
+    category: 'tools',
+    publishedAt: '2026-06-04T03:00:00Z',
+    body: `AppSumo runs both individual SaaS lifetime deals and themed bundles (founder stack, marketing stack, AI stack). The bundles look cheaper per tool but only deliver value if you actually use everything inside. The math often favours individual deals.
+
+## How bundles are priced
+A typical bundle aggregates 5 to 10 lifetime deals at a 30 to 60 percent discount versus buying each individually. The savings only materialise if you use at least half the included tools.
+
+## The realistic usage rate
+On bundles in the wild, buyers report active usage of 2 to 4 tools per 10-tool bundle six months in. The rest sit in the dashboard unused. At that usage rate the bundle was more expensive than buying the 2 to 4 you wanted individually.
+
+## When a bundle wins
+Three conditions need to all be true:
+- You have a clear use for at least half the tools.
+- Each tool you would use is the right tier for your scale (no caps you will outgrow).
+- The bundle includes at least one tool you would have paid full price for, making the rest effectively free.
+
+## When individual deals win
+The default. Pick the specific tool that replaces a current subscription, buy it on its own deal, use it. Add another deal only when a real recurring spend appears on your books.
+
+## Refund discipline
+Use the 60-day refund window aggressively on bundle purchases. Within the first two weeks, log into every tool, attempt the workflow you wanted from it, and refund the bundle if fewer than half deliver.
+
+## The hidden tax
+Every lifetime tool added to your stack adds onboarding cost, password management, and decision fatigue. Tools you do not use are not free; they are clutter. Bundles with 10 tools cost time even when the per-tool price is low.`,
+    faqs: [
+      {
+        q: 'Are AppSumo bundles actually worth it?',
+        a: 'Only when you have a clear use for at least half the included tools at the included tier. Otherwise the per-tool discount is offset by tools you never use.',
+      },
+      {
+        q: 'Can I refund just part of an AppSumo bundle?',
+        a: 'Bundles are usually refunded as a unit within the 60-day window. Decide on the whole bundle inside the first two weeks of testing.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-invoice-international-clients-as-a-developer',
+    title: 'How to invoice international clients as a developer',
+    description: 'A clean invoicing setup for freelance developers billing clients in multiple currencies across the EU, US and UK.',
+    category: 'freelance',
+    publishedAt: '2026-06-05T03:00:00Z',
+    body: `Sending a clean invoice in the right currency, with the right payment details, is the difference between getting paid in five days and getting paid in five weeks. Most freelance developers underinvest here and pay the price in cash flow.
+
+## What the invoice must contain
+- Your legal name, registered business address, and (if applicable) tax ID
+- The client's legal name and address
+- A unique sequential invoice number
+- Date of issue and payment due date
+- Itemised line items with description, quantity, unit price and total
+- Currency clearly marked on every monetary value
+- Tax breakdown (VAT line for EU intra-EU, none for non-EU clients)
+- Payment instructions including IBAN, SWIFT, or US ACH routing as relevant
+
+## Which currency to bill in
+Bill in the currency your client transacts in. A US client wants a USD invoice with US routing details; a German client wants EUR with IBAN. This eliminates FX friction on their side and shortens payment time.
+
+## Local routing details matter
+If you have a multi-currency account with local routing details (Wise, Revolut Business, Mercury), put those on the invoice. US ACH details for US clients land cleared funds in two to three business days. SWIFT details take five to ten business days and incur fees on both ends.
+
+## Payment terms
+Net 14 is the default for developer work. Net 30 is acceptable for established enterprise clients with reliable AP. Net 7 is fair for small clients and short engagements. Always state the terms; "due upon receipt" is not enforceable in most jurisdictions.
+
+## Tools
+A simple invoicing tool (Indy in France, Holvi in Germany, Wave Free in the US, Stripe Invoicing for online payment) saves a lot of manual reconciliation. Avoid hand-rolled PDFs once you cross 10 invoices per month.
+
+## Follow-up cadence
+Send a polite reminder 3 days after due date, a firmer one at 14 days, and escalate to direct call or registered letter at 30 days. Most late payments resolve at the first reminder.`,
+    faqs: [
+      {
+        q: 'Should I include VAT on invoices to clients outside the EU?',
+        a: 'No. Invoices to non-EU clients are zero-rated for VAT. Add a line noting "VAT reverse charge, services delivered outside the EU" for cleanliness.',
+      },
+      {
+        q: 'How fast can I get paid by an international client?',
+        a: 'With local routing details on a multi-currency account and Net 14 terms, most clients pay within 7 to 10 days. SWIFT-only setups commonly stretch to 14-21 days.',
+      },
+    ],
+  },
+  {
+    slug: 'fiverr-message-templates-for-developer-gigs',
+    title: 'Fiverr message templates for developer gigs that actually close',
+    description: 'The replies and questions that turn Fiverr inquiries into orders, with templates you can adapt for your gig.',
+    category: 'freelance',
+    publishedAt: '2026-06-05T03:00:00Z',
+    body: `Many developer gigs lose orders in the messaging step. A buyer asks a question, gets a slow or vague reply, and orders from someone else. Templated, fast, specific responses fix this.
+
+## The first reply window
+Respond within 30 minutes during your working day. Fiverr surfaces fast responders algorithmically and buyers notice. Templates make speed possible without compromising quality.
+
+## Template 1: scope confirmation (most common inquiry)
+"Hi {name}, thanks for reaching out. To make sure I scope this correctly, could you confirm: (1) the framework and language, (2) the deadline, and (3) whether this is a new feature or a fix to existing code? If you can share a screenshot or code snippet of the current state, I can give you a precise quote within the hour."
+
+## Template 2: budget mismatch
+"Hi {name}, thanks for the details. The scope you described fits between my Standard and Premium tiers because of (specific reason). I can either deliver the scope at the Premium price, or trim X to fit Standard. Which works better for you?"
+
+## Template 3: out-of-scope request
+"Hi {name}, this specific task is outside what my gig covers. I do not want to take the order if I cannot deliver it cleanly. (Recommend another seller if you know one) Otherwise, if you are open to a related scope I can handle (concrete alternative), happy to discuss."
+
+## Template 4: post-order kickoff
+"Thanks for the order. To start, I need (numbered list of specific items). I will deliver the first draft within (timeframe). I will message you the moment it is ready."
+
+## What kills the close
+- Generic openings ("Hello dear, hope you are doing well")
+- Asking for the brief twice
+- Promising a quote and not following up
+- Talking about yourself before asking about the buyer's problem
+
+## Stop asking permission
+Buyers want decisions, not options. Lead with the cleanest answer; offer alternatives only if your primary recommendation does not fit.`,
+    faqs: [
+      {
+        q: 'How fast should I reply to Fiverr messages?',
+        a: 'Within 30 minutes during your working day. Sub-hour responses lift your gig in search and close more orders.',
+      },
+      {
+        q: 'Should I send a long sales pitch to Fiverr buyers?',
+        a: "No. Three to five sentences, focused on the buyer's specific problem, convert better than long pitches.",
+      },
+    ],
+  },
+  {
+    slug: 'safetywing-vs-iati-vs-genki-insurance-comparison',
+    title: 'SafetyWing vs IATI vs Genki: nomad insurance comparison 2026',
+    description: 'A direct comparison of the three most-used health insurances for remote workers and digital nomads in 2026.',
+    category: 'visa',
+    publishedAt: '2026-06-05T03:00:00Z',
+    body: `Three insurance products dominate the nomad and remote-worker market in 2026: SafetyWing, IATI, and Genki. They overlap on the basic promise of cross-border coverage but differ on price, included care, country coverage and claims experience.
+
+## SafetyWing
+Subscription model. Roughly 45 USD per month for under-40s. Covers 180+ countries. Inpatient up to 250,000 USD per condition. Includes COVID coverage, dental and emergency, limited home-country coverage (30 days per year). Easy onboarding, cancel anytime, monthly billing.
+
+## IATI
+Annual policy model, EU-headquartered. Roughly 600 to 1,200 EUR per year depending on tier. Stronger maternity and chronic-condition coverage than SafetyWing. Better reimbursement experience for EU residents. Higher upfront commitment.
+
+## Genki
+Newer entrant, subscription model. Roughly 40 EUR per month for the standard plan. Strong dental and outpatient included. European base, claims processed quickly. Slightly thinner country list than SafetyWing (essentially all popular nomad destinations are covered).
+
+## Side-by-side
+
+| Factor              | SafetyWing       | IATI               | Genki            |
+|---------------------|------------------|--------------------|------------------|
+| Billing             | Monthly          | Annual upfront     | Monthly          |
+| Typical cost        | 45 USD/mo        | 600-1200 EUR/yr    | 40 EUR/mo        |
+| Country coverage    | 180+             | 180+               | 150+             |
+| Inpatient limit     | 250k USD         | up to 2M EUR       | up to 2M EUR     |
+| Dental              | Emergency only   | Included tiers     | Included         |
+| Chronic conditions  | Excluded         | Tier-dependent     | Limited          |
+| Cancel flexibility  | Anytime          | Annual lock-in     | Anytime          |
+| EU reimbursement    | OK               | Strong             | Strong           |
+
+## How to pick
+- New to nomad life or short-trip first: SafetyWing for flexibility
+- EU-based, planning 12+ months travel: IATI for stronger coverage
+- EU resident wanting strong dental and outpatient: Genki
+
+## What none of them cover
+Major chronic pre-existing conditions, elective procedures, and dependents-only coverage are limited across all three. If you have specific medical needs, read the policy fine print before subscribing.`,
+    faqs: [
+      {
+        q: 'Which nomad insurance is cheapest in 2026?',
+        a: 'Genki and SafetyWing run roughly the same monthly cost at 40 to 45 EUR/USD per month. IATI is more expensive but covers more on the upper end.',
+      },
+      {
+        q: 'Does SafetyWing cover the United States?',
+        a: 'Yes, with a limited cap of 250,000 USD per condition. For US-based extended stays a US-specific policy is often more appropriate.',
+      },
+    ],
+  },
+  {
+    slug: 'saas-stack-for-newsletter-operators-2026',
+    title: 'The SaaS stack for newsletter operators in 2026',
+    description: 'The handful of tools serious newsletter operators run, what each one does, and which deliver lifetime deal value.',
+    category: 'tools',
+    publishedAt: '2026-06-05T03:00:00Z',
+    body: `Newsletter operators run lean stacks. A typical setup covers five categories: publishing, list management, content production, monetisation, and analytics. Picking well saves both money and decision fatigue.
+
+## Publishing platform
+Beehiiv, Substack, Ghost, or a self-hosted setup. Beehiiv is the most monetisation-friendly with native ads and referrals, free at the starter tier. Substack wins on discovery; Ghost wins on ownership.
+
+## List hygiene and verification
+Bounced emails kill deliverability. NeverBounce or ZeroBounce for periodic list cleaning, free tiers cover most early-stage operators.
+
+## Content production
+Notion or Obsidian for editorial calendar. A grammar checker. An AI writing assistant for first drafts (Claude works well for tech-heavy newsletters). One image-generation tool if you ship visuals.
+
+## Monetisation
+Native ads on your publishing platform. Optional ad-network if your audience is large enough. Affiliate links curated to one or two programs that match your niche.
+
+## Analytics
+The platform's built-in analytics cover most operators. Add Plausible or Fathom for tracking the public archive site if you host one.
+
+## Where lifetime deals fit
+AppSumo regularly has solid deals on niche tools in this stack: list-cleaning utilities, content briefing tools, AI editing assistants, and subscriber-growth widgets. Lifetime deals at this scale frequently pay back in under three months.
+
+## The most-skippable categories
+Avoid layering on five different growth widgets, three analytics tools, or paid versions of automation platforms in year one. Most operators over-tool at the start and under-publish. Six months of disciplined publishing on a minimal stack beats a perfect stack with patchy content.`,
+    faqs: [
+      {
+        q: 'Do I need a paid stack to start a newsletter?',
+        a: "No. Beehiiv's free tier plus a notes app cover the first 1,000 subscribers. Add paid tools only as specific bottlenecks appear.",
+      },
+      {
+        q: 'Which newsletter tool delivers the most lifetime deal value?',
+        a: 'List-cleaning utilities and AI-assisted editing tools deliver the highest ratio of value to cost when bought as lifetime deals.',
+      },
+    ],
+  },
+  {
+    slug: 'remote-work-tax-residency-strategies-2026',
+    title: 'Remote work tax residency strategies for 2026',
+    description: 'How tax residency works for remote tech workers in 2026 and the strategies that hold up legally.',
+    category: 'tax',
+    publishedAt: '2026-06-06T03:00:00Z',
+    body: `Tax residency for remote workers in 2026 is less flexible than it was during the early pandemic years. Most jurisdictions tightened rules; aggressive strategies that worked in 2021 now trigger audits. The strategies that still work are conservative and well-documented.
+
+## What determines tax residency
+Most countries use a combination of physical presence (typically 183 days per year) and centre-of-life criteria (family, primary residence, economic ties). You can be tax resident in a country you spent only 60 days in if your centre of life is there.
+
+## Strategy 1: clean break to a low-tax country
+Establish full residency in a country with favourable tax treatment for remote workers (Portugal NHR, Cyprus non-dom, UAE, Georgia HNWI program). Requires actually moving: real lease, local bank, family registered there. Half-measures trigger your old country to claim you back.
+
+## Strategy 2: structured nomadism with declared base
+Nomad in a structured way while maintaining one declared tax residency. Stay under the trigger thresholds in transit countries (usually 183 days). Keep clear documentation: flight records, lease history, work-location log. This works if your home country has a territorial tax regime or low rates.
+
+## Strategy 3: employer-of-record routing
+Use an EOR service to be formally employed in the country whose tax regime you want. You contract with the EOR, the EOR employs you locally, your client pays the EOR. Clean and well-documented but reduces take-home by 15 to 30 percent due to EOR fees and local social charges.
+
+## What does not work in 2026
+Claiming residency in a country you barely visit. Maintaining a Delaware LLC while living in France and never declaring the income. Multiple-country residency claims that contradict each other. Tax authorities now exchange information aggressively; double-residency conflicts get spotted.
+
+## Get professional advice
+Tax residency at this complexity always warrants a one-time consultation with a cross-border tax accountant before making moves. A few hundred euros up front prevents five-figure surprises later.`,
+    faqs: [
+      {
+        q: 'What is the safest tax residency for a remote tech worker in 2026?',
+        a: 'Cleanly establishing residency in a single country with a favourable regime (Portugal NHR, Cyprus non-dom, UAE) and actually living there 183+ days is the safest. Half-measures trigger disputes.',
+      },
+      {
+        q: 'Can I be a tax resident of no country?',
+        a: 'Technically possible but extremely risky. Without a clear residency, your previous country usually retains the claim. Stateless tax residency is mostly a fiction.',
+      },
+    ],
+  },
+  {
+    slug: 'niche-fiverr-gigs-that-still-pay-in-2026',
+    title: 'Niche Fiverr gigs that still pay well in 2026',
+    description: 'Underserved Fiverr gig categories where developers can still command strong rates with low competition.',
+    category: 'freelance',
+    publishedAt: '2026-06-06T03:00:00Z',
+    body: `Generic Fiverr categories (build a landing page, fix a WordPress site) have saturated. Specific niches still have thin supply and command strong rates. The opportunity in 2026 is depth, not breadth.
+
+## AI integration into existing apps
+Buyers want LLM features in their existing product but most cannot ship them. Niche gigs around RAG implementation, custom OpenAI/Anthropic integration, and AI moderation pipelines sit at 300 to 1,500 USD per project with low competition.
+
+## Stripe and payment edge cases
+Setting up Stripe for SaaS billing has commoditised. Edge cases have not. Specific gigs around Stripe Tax compliance, subscription migrations, dunning workflows, and multi-currency settlement still pay 200 to 800 USD per scope.
+
+## Database migrations
+Migrating from MySQL to Postgres, from Firebase to Supabase, from MongoDB to Postgres. Each migration has gotchas. Sellers with specific migration experience command 500 to 2,500 USD per project.
+
+## API documentation and SDK
+Companies have APIs but no documentation that converts developers into users. Gigs around writing API docs, generating SDKs from OpenAPI specs, and producing API quickstarts pay 300 to 1,500 USD.
+
+## Webhook reliability and queue setup
+Setting up reliable webhook processing with retry queues, idempotency and observability. Niche but consistently in demand. 200 to 800 USD per setup.
+
+## Cloud cost optimisation
+AWS / GCP / Azure bill reviews and right-sizing audits. Companies routinely overspend by 30 to 60 percent. A solid audit gig pays 500 to 1,500 USD and can lead to ongoing consulting.
+
+## What makes a niche work
+- A specific buyer problem you can name
+- A clear scope you can deliver in days, not weeks
+- A repeatable process so you scale earnings without scaling hours
+- One or two reference samples in your portfolio`,
+    faqs: [
+      {
+        q: 'Which Fiverr niche is least competitive for developers in 2026?',
+        a: 'Stripe edge-case work, RAG implementation, and database migrations have noticeably thinner supply than generic web-build gigs.',
+      },
+      {
+        q: 'Can I start in a niche with no portfolio?',
+        a: 'You need at least one demonstrable example. Build one for free on your own product or an open-source project; the demo is the credential.',
+      },
+    ],
+  },
+  {
+    slug: 'appsumo-deals-for-bootstrapped-saas-founders',
+    title: 'The AppSumo deals bootstrapped SaaS founders actually use',
+    description: 'A practical shortlist of AppSumo deals that show up in real bootstrapped SaaS stacks in 2026.',
+    category: 'tools',
+    publishedAt: '2026-06-06T03:00:00Z',
+    body: `Bootstrapped SaaS founders make AppSumo decisions on cash flow, not feature lists. The deals that show up repeatedly in real stacks share a pattern: they replace subscriptions in the same category for at least two years and have stable vendors behind them.
+
+## Transactional email
+A solo SaaS sending under 50k emails per month overpays for Mailgun at retail. Lifetime deals on smaller transactional senders frequently appear at 70 to 150 USD and cover that volume for years.
+
+## Database UI and SQL editor
+A managed Postgres dashboard with query editor, role management, and basic monitoring. Lifetime deals around 100 to 200 USD save a per-seat subscription that compounds with team growth.
+
+## Error tracking and uptime
+Smaller alternatives to Sentry or Datadog cover side projects and early SaaS. Lifetime deals at 60 to 150 USD work for production volumes under a few million events per month.
+
+## Marketing automation
+Email sequence tools, retention campaigns, customer segmentation. Lifetime deals at 100 to 250 USD replace recurring 50 to 200 USD per month bills.
+
+## SEO and content
+Keyword research, on-page SEO, content briefs. Lifetime deals here pay back fast for content-marketing-led startups.
+
+## Customer support
+Inbox aggregators, knowledge base builders, helpdesk tools. Lifetime deals at 80 to 200 USD work well for two- to five-person teams; outgrown at enterprise scale.
+
+## Avoid lifetime deals on
+- Payment processing (Stripe is the answer; tools that route through Stripe at LTD pricing are usually thin)
+- Authentication providers (Auth0, Clerk, WorkOS warrant subscription for SLAs)
+- Hosting and CDN (use mainstream vendors; LTD pricing rarely cleans up)
+- Observability at enterprise scale (the LTD vendors do not handle the throughput)
+
+## The rule
+A lifetime deal makes sense when you have already paid two months of equivalent SaaS subscription. Anything you have not paid for is theoretical; do not buy theoretical lifetime deals.`,
+    faqs: [
+      {
+        q: 'How much does a typical bootstrapped SaaS save with AppSumo deals?',
+        a: 'A disciplined founder spending 300 to 600 USD on the right lifetime deals usually replaces 150 to 250 USD per month of recurring SaaS, paying back in 3 to 4 months.',
+      },
+      {
+        q: 'When should a bootstrapped SaaS skip AppSumo and pay subscription?',
+        a: 'For payments, auth, hosting, and enterprise-grade observability. Pay for SLAs in those categories.',
+      },
+    ],
+  },
+  {
+    slug: 'multi-currency-invoicing-for-remote-developers',
+    title: 'Multi-currency invoicing for remote developers',
+    description: 'The practical setup for invoicing clients across USD, EUR and GBP without losing margin to FX or chasing late payments.',
+    category: 'freelance',
+    publishedAt: '2026-06-06T03:00:00Z',
+    body: `Remote developers billing across currencies face two costs: FX spread on conversion and delayed payments due to friction at the client's end. Both shrink dramatically with a multi-currency setup designed around the client's payment habits.
+
+## Bill in the client's home currency
+A US client should receive a USD invoice with US ACH routing details. A German client should receive an EUR invoice with SEPA IBAN. A UK client should receive a GBP invoice with local routing details. Anything else slows payment because the client's AP has to deal with international transfer overhead.
+
+## Maintain three local accounts
+A Wise (or Revolut Business / Mercury) multi-currency account gives you local routing details in USD, EUR, GBP and others. Each currency has its own account number that looks domestic to the payer. Funds clear in 1 to 3 days, not 5 to 10.
+
+## Quote the price in the client's currency
+Avoid wording like "5,000 EUR (approx 5,500 USD)". Pick the currency once and price firmly. Mixed pricing makes you look amateur and gives the client space to argue over FX.
+
+## Convert when YOU want to
+Hold balances in each currency until you have a reason to convert. Pay yourself in your home currency at month end, when the rate is convenient, not on every invoice receipt.
+
+## Track gross USD/EUR consistently
+For tax filing, you usually report income converted to your home currency at the date of receipt. Use the official rate published by your tax authority (HMRC monthly rate, IRS yearly rate). Multi-currency accounts export statements per currency, making this clean.
+
+## What changes at scale
+Above 100k USD annual revenue across multiple clients, consider opening an actual local bank account in the largest non-home currency you receive. The multi-currency intermediary becomes a fee on volume; a direct account removes it.
+
+## Avoid PayPal for invoicing
+PayPal's FX spread is 3 to 4 percent on cross-currency transactions. Use it only when the client refuses anything else, and bake the cost into your rate.`,
+    faqs: [
+      {
+        q: 'How much does an invoicing setup save in FX fees?',
+        a: 'A clean multi-currency account saves 2 to 4 percent of every cross-currency invoice. At 100k USD annual cross-border revenue that is 2,000 to 4,000 USD a year.',
+      },
+      {
+        q: 'Should I send invoices in PDF or use an online portal?',
+        a: 'PDF works fine for most clients. An online payment link (Stripe Invoicing) speeds up payment for tech-savvy clients but introduces a 2-3 percent processor fee.',
+      },
+    ],
+  },
+  {
+    slug: 'how-i-built-a-tech-newsletter-side-income',
+    title: 'How I built a tech newsletter side income that pays the bills',
+    description: 'A breakdown of how a focused tech newsletter compounds into meaningful side income over 18 months.',
+    category: 'career',
+    publishedAt: '2026-06-07T03:00:00Z',
+    body: `A focused tech newsletter scales from zero to four-figure monthly income in 18 months if you publish consistently, niche down, and stack two or three revenue streams. The playbook below works for technical writers willing to ship every week for at least 12 months.
+
+## Pick a niche you can sustain
+The niche has to be narrow enough that you can be identified as the source, and broad enough that you do not run out of material. Examples that work: distributed systems internals, indie SaaS economics, AI engineering case studies, Postgres performance.
+
+## Publish weekly for 12 months no matter what
+The first three months feel like shouting into void. Months 4 to 6 a small core audience forms. Months 7 to 12 organic growth kicks in. Most newsletters that fail give up between month 2 and month 5.
+
+## Build the archive as a public site
+Hosting the newsletter archive as an indexable public site compounds organic growth via search. By month 12, the archive often becomes the single largest source of new subscribers.
+
+## Layer revenue in order
+1. Affiliate links to tools you genuinely use. Starts producing immediately at any list size.
+2. Native ads via the publishing platform. Works above ~3,000 engaged subscribers.
+3. Paid subscriptions or sponsorships. Works above ~10,000 engaged subscribers with a clear premium angle.
+
+## Realistic numbers at 12 months
+A focused tech newsletter at 8,000 subscribers commonly generates 800 to 2,500 USD per month across affiliates, native ads, and small sponsorships. At 20,000+ it crosses 4,000 USD per month for most operators.
+
+## What I would do differently
+- Start the archive on day one, not month six
+- Set a fixed weekly publication day and protect it like a meeting
+- Invest in headline writing harder than in body writing
+- Stop trying to grow on every platform; focus organic on one or two
+
+## When to consider going full-time
+Sustained 4,000 USD per month for six months with growing subscriber base. Below that, treat it as a side income and protect your day job.`,
+    faqs: [
+      {
+        q: 'How long until a tech newsletter starts paying?',
+        a: 'Affiliate revenue can start in month one at any list size. Meaningful side income (1,000+ USD per month) typically appears between month 9 and month 18 for consistent publishers.',
+      },
+      {
+        q: 'Can a tech newsletter replace a full-time salary?',
+        a: 'For experienced operators in narrow tech niches, yes, after 18-24 months of consistent publishing and proper monetisation layering. Most operators run it as a side income instead.',
+      },
+    ],
+  },
+  {
+    slug: 'fiverr-vs-upwork-bid-strategy-comparison',
+    title: 'Fiverr vs Upwork: bidding and quoting strategies compared',
+    description: 'How to win work on each platform without burning hours on dead-end proposals or low-margin gigs.',
+    category: 'freelance',
+    publishedAt: '2026-06-07T03:00:00Z',
+    body: `Fiverr and Upwork reward different motions. Treating them the same is the easiest way to waste hours on both. Knowing which behaviours win on each shortens the path to consistent work.
+
+## Fiverr: productise, do not bid
+On Fiverr you publish productised offers and wait for orders. There is no bidding. The work goes into the gig setup (title, pricing, image, description) once, then keeps producing. Optimise for the click-to-order rate, not the message-to-order rate.
+
+## Upwork: bid sharp and selectively
+On Upwork you read job posts and submit proposals. Most freelancers spray proposals at every match; this loses. The winning behaviour is: review 20 jobs per day, submit on 3, with proposals tailored to each. Quality of proposal matters more than volume.
+
+## Fiverr message handling
+Buyers on Fiverr arrive with a defined scope and a budget already in mind. Confirm scope, quote a tier, close. Long sales pitches lose; short, decisive replies win.
+
+## Upwork proposal structure
+- Open with their specific problem in your first sentence
+- One sentence on a relevant past project (concrete metric)
+- One specific question that demonstrates you read the brief
+- A clear next step (call, sample, scope outline)
+- Skip "Dear Sir/Madam" and life stories
+
+## Pricing posture
+Fiverr: anchored by your published tiers. Adjust only at the extremes. Upwork: per-engagement quoting. Aim for the upper third of the bid range your evidence supports; never the lowest bidder.
+
+## Reviews compound differently
+On Fiverr each gig accumulates reviews independently. On Upwork your overall Job Success Score follows you across engagements. Protect both; one canceled or one-star order can stall progression on either platform.
+
+## When to use both
+Use Fiverr for short, productised services that buyers arrive ready to buy. Use Upwork for larger custom projects where the relationship can extend. Most balanced operators stack both.
+
+## Time budget
+A solid weekly setup is 4 hours of Fiverr optimisation + 1 hour daily of Upwork proposal writing. Above that, returns diminish; below that, neither produces.`,
+    faqs: [
+      {
+        q: 'Should I send the same proposal to every Upwork job?',
+        a: 'No. Templated proposals lose to tailored ones. Quality over volume is the consistent winning posture on Upwork.',
+      },
+      {
+        q: 'Can I run Fiverr and Upwork in parallel?',
+        a: 'Yes, and most experienced freelancers do. They serve different buyer behaviours and different price tiers.',
+      },
+    ],
+  },
+  {
+    slug: 'wise-borderless-account-explained-2026',
+    title: 'Wise multi-currency account explained for remote workers in 2026',
+    description: 'How the Wise multi-currency account actually works for remote workers, freelancers and digital nomads.',
+    category: 'freelance',
+    publishedAt: '2026-06-07T03:00:00Z',
+    body: `The Wise multi-currency account is the most-used banking layer in the remote-worker stack. It is also the most misunderstood. Here is what it actually is, what it is not, and when to use it.
+
+## What it is
+A holding account with local routing details in multiple currencies. You can receive money as if you had a domestic account in each of those currencies. You can hold balances in each currency. You can convert at the mid-market rate with a small fee.
+
+## What it is not
+A bank account, in the traditional sense. Balances are held with regulated electronic-money institutions, not as bank deposits. Coverage under deposit-insurance schemes varies by jurisdiction; in most cases the protection is different from a high-street bank account.
+
+## How it earns its place in the stack
+1. Receive client payments in their home currency without FX cut
+2. Hold balances across currencies until convenient to convert
+3. Convert at mid-market FX with a small transparent fee, instead of the 2-4 percent hidden spread typical banks take
+4. Spend with a debit card in 40+ currencies without FX markup on the spend
+
+## What it costs
+Account is free. Receiving local payments is free. Converting incurs a transparent fee, typically 0.4 to 0.7 percent. Card spending in the home currency is free; in foreign currency uses mid-market FX with no markup.
+
+## Where it fails
+- Not suitable for parking large sums (no meaningful interest)
+- Not a long-term substitute for a real local bank account in your residency country (lender history, mortgage relationships, regulatory norms)
+- Limited cheque support in countries that still rely on it (rare but exists)
+- Customer support is async and slower than a high-street bank for serious issues
+
+## The pattern that works
+Use Wise as the receiving layer between clients and your real bank account. Convert and sweep to your home-currency bank monthly. Keep small working balances in the currencies you spend in. Move savings elsewhere.
+
+## Alternatives if Wise does not fit
+- Revolut Business (similar feature set, EU-focused)
+- Mercury (US-founders only, true bank account)
+- Payoneer (alternative for clients refusing Wise)`,
+    faqs: [
+      {
+        q: 'Is Wise a real bank account?',
+        a: 'No. Wise is a regulated electronic-money institution. Functionally it acts like a multi-currency account, but the legal status and deposit protection differ from a high-street bank.',
+      },
+      {
+        q: 'Can I use Wise as my only bank account?',
+        a: 'For most remote workers, no. Use Wise as the cross-border receiving and FX layer and a domestic bank in your residency country for tax, mortgage, and long-term banking relationships.',
+      },
+    ],
+  },
+  {
+    slug: 'appsumo-stack-for-solopreneurs-under-1000',
+    title: 'A solopreneur SaaS stack on AppSumo for under $1000',
+    description: 'A concrete shopping list for a solopreneur building a one-person SaaS stack from AppSumo lifetime deals.',
+    category: 'tools',
+    publishedAt: '2026-06-07T03:00:00Z',
+    body: `A solopreneur can assemble a working SaaS operating stack from AppSumo lifetime deals for around 1,000 USD one-time. The right deals replace 150 to 250 USD per month of recurring SaaS, paying back in 4 to 6 months and saving 1,500+ USD per year ongoing.
+
+## The shopping list
+The order below is the order to buy in; stop where your budget runs out.
+
+1. Automation platform alternative (Zapier alternative): 150-200 USD. Replaces 30 USD per month minimum.
+2. Email sequence tool: 100-200 USD. Replaces 30-50 USD per month.
+3. Database UI / Postgres dashboard: 100-150 USD. Replaces 25-40 USD per month.
+4. Transactional email sender (alternative to Mailgun at low volume): 70-150 USD. Replaces 15-30 USD per month.
+5. Note-taking / personal knowledge base: 60-100 USD. Replaces Notion 10 USD per month.
+6. SEO and keyword research: 70-120 USD. Replaces SEMrush-style 100 USD per month at solopreneur volume.
+7. Customer support inbox aggregator: 80-150 USD. Replaces 20-40 USD per month.
+
+Total: 630 to 1,070 USD. Sets you up for 18-24 months of solopreneur operation.
+
+## What this does NOT cover
+- Payments (Stripe, pay the standard fee)
+- Hosting and CDN (Cloudflare and a mainstream host)
+- Authentication (Clerk, Auth0, or build with NextAuth)
+- Source code hosting (GitHub, default)
+- Domain registrar (whoever has the lowest TLD price)
+
+## How to validate before buying
+For each lifetime deal: list the recurring SaaS subscription you would otherwise pay for that role. If you cannot name a current subscription that the deal replaces, do not buy. Lifetime deals create value by removing recurring costs; theoretical savings on tools you would not have paid for are not savings.
+
+## When you outgrow the stack
+A solopreneur stack typically holds for 18-30 months. At higher volume (team of 3+, tens of thousands of customers), specific tools start to hit caps. At that point, migrate the bottleneck tool to a paid subscription and keep the rest of the lifetime stack running.
+
+## Refund safety
+Use the 60-day window. Buy in two batches of three to four deals each. Test each in real workflows within the first two weeks. Refund anything you have not actively integrated.`,
+    faqs: [
+      {
+        q: 'How much does a solopreneur save with a 1000 USD AppSumo stack?',
+        a: 'Typically 1,500 to 2,500 USD per year ongoing, after 4 to 6 months of payback. Higher savings if the stack replaces enterprise-tier subscriptions.',
+      },
+      {
+        q: 'Can a venture-backed startup use the same AppSumo stack?',
+        a: 'For some categories yes, but enterprise SLAs and SOC2 needs usually force venture-backed teams to subscription tiers within 6-12 months.',
+      },
+    ],
+  },
+);
+
+// Build-time filter: any guide with a future publishedAt is hidden from
+// this build. The daily scrape-and-deploy cron picks them up on the day
+// their publishedAt timestamp passes.
+const BUILD_NOW = Date.now();
+export const GUIDES: GuideEntry[] = ALL_GUIDES.filter(
+  (g) => !g.publishedAt || new Date(g.publishedAt).getTime() <= BUILD_NOW,
 );
 
 export const GUIDE_MAP: Record<string, GuideEntry> = Object.fromEntries(
