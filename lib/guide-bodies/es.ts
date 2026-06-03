@@ -1511,4 +1511,151 @@ Las puntuaciones de calidad se desploman cuando te fatigas. Veinte horas buenas 
       },
     ],
   },
+  "mercor-screening-test-prep": {
+    body: `Mercor evalúa a cada candidato antes de desbloquear trabajo remunerado. La prueba de selección es la principal barrera donde la mayoría de los candidatos fracasa. Prepararse correctamente aumenta de forma marcada la tasa de aceptación.
+
+## Cómo es la prueba en 2026
+La selección es un ejercicio breve y cronometrado, adaptado al dominio que hayas declarado. Para desarrolladores de software, normalmente combina una tarea de lectura de código (calificar dos salidas de un modelo y justificar por qué una es mejor), una pregunta de juicio escrito y una entrevista corta, en vivo o asíncrona.
+
+## Formato según el dominio
+- Ingenieros de software: comparaciones por pares de calidad de código y un recorrido abierto de depuración.
+- Ingenieros de ML: evaluación de salidas de modelos en razonamiento, factualidad y generación de código.
+- Expertos en dominios (derecho, finanzas, medicina, ciencia): evaluaciones de escenarios sobre criterios de rúbrica específicos del campo.
+
+## Cómo prepararte en una semana
+1. Dedica dos tardes a la documentación de Mercor. Lee las rúbricas públicas que publican para los evaluadores.
+2. Practica el juicio por pares con conjuntos de datos públicos gratuitos (muestras de Anthropic HH-RLHF, OpenAI evals, salidas públicas de tablas de clasificación de modelos). Forma una opinión escrita sobre cada uno antes de revisar el consenso.
+3. Redacta tus justificaciones como lo harías para trabajo remunerado: mínimo tres frases, específicas al artefacto, sin elogios genéricos.
+
+## Qué escribir en las secciones abiertas
+Especificidad antes que volumen. Los revisores premian las afirmaciones agudas y refutables ligadas a la salida concreta. El razonamiento vago ("la segunda respuesta es más completa") se penaliza. El razonamiento concreto ("la segunda respuesta identifica correctamente el error de uno en la línea 14, mientras que la primera lo pasa por alto") aprueba.
+
+## Qué evitar
+No uses un LLM para redactar las secciones escritas. Los revisores de Mercor comprueban explícitamente patrones de texto generado por LLM y rechazan a los candidatos que los usan. La prueba mide tu criterio, no el de un modelo.
+
+## Volver a presentarte tras un rechazo
+Si fallas, Mercor permite volver a postularte tras aproximadamente seis meses. Aprovecha el intervalo para publicar escritura técnica de forma pública (entradas de blog, READMEs en GitHub) que demuestre el criterio que evaluaron. La profundidad del perfil entre intentos es la señal más fuerte de reapertura.`,
+    faqs: [
+      {
+        q: "¿Cuánto dura la prueba de selección de Mercor?",
+        a: "La mayoría de las pruebas de selección por dominio duran de 45 a 90 minutos, incluyendo las secciones escritas, con una entrevista corta opcional en vivo para algunas pistas.",
+      },
+      {
+        q: "¿Puedo repetir la prueba de selección de Mercor si la suspendo?",
+        a: "Sí, generalmente tras un periodo de espera de seis meses. Aprovecha ese tiempo para añadir profundidad demostrable a tu perfil y vuelve a postularte.",
+      },
+    ],
+  },
+  "mercor-tax-and-payout-guide-2026": {
+    body: `Mercor paga a los evaluadores en un ciclo semanal o quincenal, en USD, mediante transferencia internacional. Entender el flujo de pago y la clasificación fiscal es importante antes de aceptar la primera tarea.
+
+## Ciclo de pago
+Las ganancias se acumulan por tarea y se agrupan en un ciclo de pago. La mayoría de los evaluadores ve los fondos iniciados en el plazo de una semana tras completar la tarea, y los reciben en su cuenta entre dos y cinco días hábiles después. Los evaluadores internacionales pueden experimentar retrasos adicionales a nivel bancario.
+
+## Métodos de pago
+Mercor colabora con proveedores de transferencias internacionales. En la práctica, los evaluadores reciben USD en una cuenta bancaria local mediante un socio de enrutamiento, o a través de una cuenta multidivisa como Wise o Payoneer. Wise tiende a salir más barato para los receptores fuera de EE. UU. porque el diferencial de divisa es más ajustado que el de la mayoría de las conversiones bancarias.
+
+## Tratamiento fiscal en EE. UU.
+Los evaluadores residentes en EE. UU. son contratistas independientes. Las ganancias se declaran en un formulario 1099-NEC si superas el umbral del IRS. Se aplica el impuesto sobre el trabajo por cuenta propia (15.3 por ciento) además del impuesto federal y estatal sobre la renta. Reserva aproximadamente el 30 por ciento del bruto por defecto; ajústalo a la obligación real con tu contable.
+
+## Tratamiento fiscal en la UE
+Para los evaluadores de la UE, los ingresos de Mercor son rentas de trabajo por cuenta propia de origen extranjero. La mayoría de las jurisdicciones requieren que te registres como autónomo (auto-entrepreneur, freiberufler, partita IVA, etc.) y que declares los ingresos brutos en USD convertidos a la fecha de recepción. Las cargas sociales locales y los umbrales de IVA varían según el país y la clasificación de la actividad.
+
+## Herramientas útiles
+Una cuenta multidivisa (Wise) para la recepción, una herramienta básica de contabilidad (QuickBooks self-employed, Indy en Francia, Holvi en Alemania) para la conciliación mensual y una sesión anual con un contable local cubren la mayoría de los casos.
+
+## Lo que Mercor no retiene
+Mercor no retiene impuestos de EE. UU. ni de la UE en tu nombre. El pago íntegro llega a tu cuenta; la obligación fiscal recae completamente sobre ti. Planifica el flujo de caja en consecuencia: gastar todo el pago cada mes te dejará corto a final de año.`,
+    faqs: [
+      {
+        q: "¿Cómo paga Mercor a los evaluadores fuera de EE. UU.?",
+        a: "Mercor paga mediante transferencia internacional en USD. La mayoría de los evaluadores no estadounidenses reciben los pagos en una cuenta multidivisa como Wise o Payoneer para minimizar las comisiones de cambio.",
+      },
+      {
+        q: "¿Necesito ser autónomo para trabajar en Mercor en la UE?",
+        a: "Sí, en la mayoría de los países de la UE debes registrarte como autónomo antes de facturar trabajo como evaluador. Los umbrales y estatus locales varían; consulta con un contable local.",
+      },
+      {
+        q: "¿Cuánto debo reservar para impuestos sobre los ingresos de Mercor?",
+        a: "Un valor seguro por defecto es el 30 por ciento del bruto para evaluadores en EE. UU. (federal, estatal y autoempleo combinados). Para los evaluadores de la UE la tasa varía mucho; presupuesta entre el 25 y el 45 por ciento según el país y las cargas sociales.",
+      },
+    ],
+  },
+  "best-paid-domains-on-mercor-2026": {
+    body: `Las tarifas en Mercor varían más por dominio que por experiencia. Un experto junior en un dominio escaso a menudo gana más que un generalista senior. Saber qué pistas pagan la prima en 2026 es la palanca menos discutida para los nuevos evaluadores.
+
+## El tramo premium actual
+- Matemáticas formales y demostración de teoremas (130-200 USD/hour)
+- Lenguajes de programación especializados con poca cobertura por modelos (OCaml, trabajo de sistemas en Rust, verificación formal en Solidity): 90-150 USD/hour
+- Jurisdicciones legales específicas y trabajo regulatorio (derecho de valores de EE. UU., especificidades de GDPR en la UE): 100-180 USD/hour
+- Razonamiento médico y clínico (se requieren credenciales validadas): 100-180 USD/hour
+
+## El tramo medio
+- Evaluación general de trazas de agentes LLM (Python, herramientas web): 60-100 USD/hour
+- Razonamiento sobre sistemas de ML en producción (entrenamiento, inferencia, destilación): 60-110 USD/hour
+- Ciencia de datos y estadística: 50-90 USD/hour
+
+## El tramo de entrada
+- Evaluación por pares de calidad de código general en lenguajes mayoritarios (Python, JavaScript): 35-60 USD/hour
+- Comprensión y redacción de lenguaje abierto: 30-50 USD/hour
+
+## Qué hace que un dominio pague bien en Mercor
+Tres rasgos se acumulan:
+1. Escasez de oferta (pocos evaluadores cualificados en el mundo)
+2. Debilidad del modelo (los laboratorios necesitan ayuda justo donde los modelos todavía fallan)
+3. Profundidad verificable (el dominio tiene respuestas claras de correcto o incorrecto, no gusto subjetivo)
+
+## Cómo conseguir una pista premium
+Postúlate con la experiencia declarada más específica que siga siendo veraz. "Ingeniero backend senior con 4 años en sistemas de riesgo de Stripe" cualifica para trabajo de calidad de código. "Especialista en protocolos de consenso distribuido que ha leído todos los artículos de Raft y Paxos" cualifica para pistas de ingeniería de sistemas de nicho en el tramo premium.
+
+## Dominios en cambio en 2026
+Las pistas de matemáticas y demostración formal han crecido mucho en 2026 a medida que los laboratorios impulsan capacidades de razonamiento. Las pistas legales y médicas se mantienen estables. Las pistas generales de evaluación de código se han suavizado porque entran más evaluadores al pool.
+
+## Cómo saber qué pistas está reclutando Mercor activamente
+Mercor publica las pistas abiertas en su página de empleo y en LinkedIn. Las pistas con reclutamiento activo son las de mayor necesidad actual; postularte a esas hace que te evalúen antes.`,
+    faqs: [
+      {
+        q: "¿Qué pista de Mercor paga más a los desarrolladores de software en 2026?",
+        a: "El trabajo en lenguajes de sistemas especializados (OCaml, Rust, Solidity) y las pistas de verificación formal pagan lo más alto a los desarrolladores de software, a menudo 100-150 USD/hour, porque la oferta es escasa.",
+      },
+      {
+        q: "¿Puedo cambiar de pista en Mercor después de ser aceptado?",
+        a: "Sí. Una vez aceptado, puedes solicitar asignaciones adicionales de pistas. Demostrar calidad en tu pista inicial desbloquea invitaciones a pistas adyacentes mejor pagadas.",
+      },
+    ],
+  },
+  "mercor-side-hustle-while-working-full-time": {
+    body: `Para la mayoría de los evaluadores, Mercor es un trabajo secundario, no la fuente principal de ingresos. Bien gestionado, añade entre 1,000 y 4,000 USD de neto mensual a un salario de ingeniería a tiempo completo sin consumir tus fines de semana por completo. Mal gestionado, te quema en tres meses.
+
+## Presupuesto realista de tiempo
+Un trabajo secundario sostenible en Mercor son de 6 a 12 horas semanales. La mayoría de los evaluadores reparten esto en dos o tres sesiones nocturnas de 90 minutos, más un bloque de fin de semana. Por encima de las 15 horas semanales junto a un empleo exigente, la calidad cae y también lo hace la tarifa efectiva por hora.
+
+## Revisa primero tu contrato laboral
+Antes de aceptar cualquier tarea remunerada, lee la cláusula de pluriempleo de tu contrato actual. La mayoría de los contratos tecnológicos en EE. UU. permiten el trabajo externo remunerado siempre que no compita con el empleador y no use el tiempo, el hardware o la propiedad intelectual del empleador. Algunos contratos requieren aprobación por escrito. Los contratos en la UE varían mucho según el país y la antigüedad. En caso de duda, pregunta por escrito antes de la primera tarea.
+
+## Mantente estrictamente fuera del horario laboral
+No registres horas en Mercor durante tu jornada laboral, aunque tengas tiempo muerto. Usa un dispositivo distinto o, como mínimo, una sesión distinta. La mayoría de los problemas legales con el pluriempleo vienen de difuminar el límite de tiempo, no del trabajo en sí.
+
+## Elige pistas que compartan habilidades con tu empleo diurno
+Los evaluadores son más eficientes cuando la carga cognitiva se transfiere. Un ingeniero backend que evalúa revisión de código reutiliza el criterio del día con poco cambio de contexto. Un ingeniero backend que evalúa derecho paga un coste de arranque muy alto.
+
+## Gestión de la energía
+Reserva noches concretas para el trabajo de evaluación y protégelas. Los fragmentos sueltos entre sesiones de Netflix producen salidas de baja calidad y se pierden los plazos que importan para la progresión de la tarifa.
+
+## Impuestos y contabilidad
+Los ingresos del trabajo secundario deben declararse. En EE. UU. eso es el Schedule C más el impuesto sobre el trabajo por cuenta propia. En la UE suele requerir un registro como autónomo incluso a bajo volumen. Presupuesta en consecuencia desde el primer mes.
+
+## Cuándo escalar más allá del trabajo secundario
+Un puñado de evaluadores acaba dejando su empleo para evaluar a tiempo completo. Las cuentas salen con más de 30 horas semanales en una pista de tarifa premium. Antes de renunciar, mantén al menos 20 horas semanales durante dos meses solo en Mercor para validar que el volumen y la tarifa se sostienen.`,
+    faqs: [
+      {
+        q: "¿Es legal el trabajo secundario en Mercor mientras estoy empleado a tiempo completo?",
+        a: "Sí en la mayoría de las jurisdicciones, sujeto a tu contrato laboral. La mayoría de los contratos tecnológicos en EE. UU. y la UE permiten trabajo externo no competitivo; algunos requieren aviso por escrito. Lee tu cláusula y pregunta por escrito si no estás seguro.",
+      },
+      {
+        q: "¿Cuántas horas semanales puedo dedicar realmente a Mercor junto a un empleo diurno?",
+        a: "De seis a doce horas semanales es el rango sostenible sin caída de calidad. Por encima de quince, la calidad del evaluador y la tarifa efectiva por hora suelen bajar.",
+      },
+    ],
+  },
 };

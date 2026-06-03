@@ -1511,4 +1511,151 @@ Les scores de qualité chutent quand vous fatiguez. Vingt bonnes heures par sema
       },
     ],
   },
+  'mercor-screening-test-prep': {
+    body: `Mercor filtre chaque candidat avant de débloquer le travail rémunéré. Le test de sélection est la principale barrière sur laquelle la plupart des candidats échouent. Une préparation sérieuse augmente nettement le taux d'acceptation.
+
+## À quoi ressemble le test en 2026
+La sélection est un court exercice chronométré adapté à votre domaine déclaré. Pour les développeurs logiciels, il combine généralement une tâche de lecture de code (noter deux sorties de modèle et justifier laquelle est meilleure), une consigne de jugement écrit, et un court entretien en direct ou asynchrone.
+
+## Format par domaine
+- Ingénieurs logiciels : comparaisons par paires de qualité de code et une démonstration ouverte de débogage.
+- Ingénieurs ML : évaluation de sorties de modèle sur le raisonnement, la factualité et la génération de code.
+- Experts métier (droit, finance, médecine, sciences) : évaluations de scénarios sur des critères de grille spécifiques au domaine.
+
+## Comment se préparer en une semaine
+1. Consacrez deux soirées à la documentation de Mercor. Lisez les grilles publiques qu'ils publient pour les évaluateurs.
+2. Entraînez-vous au jugement par paires sur des jeux de données publics gratuits (échantillons Anthropic HH-RLHF, OpenAI evals, sorties de classements de modèles publics). Formez une opinion écrite avant de vérifier le consensus.
+3. Rédigez vos justifications comme vous le feriez pour un travail rémunéré : trois phrases minimum, spécifiques à l'artefact, sans éloge générique.
+
+## Que écrire dans les sections ouvertes
+La spécificité avant le volume. Les relecteurs récompensent les affirmations nettes et falsifiables liées à la sortie spécifique. Un raisonnement vague ("la deuxième réponse est plus complète") est dévalué. Un raisonnement concret ("la deuxième réponse identifie correctement l'erreur d'indexation à la ligne 14, tandis que la première la manque") passe.
+
+## Ce qu'il faut éviter
+N'utilisez pas un LLM pour rédiger les sections écrites. Les sélectionneurs de Mercor vérifient explicitement les motifs de texte générés par LLM et rejettent les candidats qui en font usage. Le test mesure votre jugement, pas celui d'un modèle.
+
+## Recandidater après un refus
+En cas d'échec, Mercor autorise une nouvelle candidature après environ six mois. Profitez de l'intervalle pour publier publiquement des écrits techniques (articles de blog, READMEs GitHub) qui démontrent le jugement qu'ils cherchaient à évaluer. La profondeur du profil entre deux tentatives est le signal de recandidature le plus fort.`,
+    faqs: [
+      {
+        q: "Combien de temps dure le test de sélection Mercor ?",
+        a: "La plupart des tests de sélection par domaine durent 45 à 90 minutes en comptant les sections écrites, avec un court entretien en direct optionnel pour certains parcours.",
+      },
+      {
+        q: "Puis-je repasser le test Mercor si j'échoue ?",
+        a: "Oui, généralement après un délai d'attente de six mois. Profitez de ce temps pour ajouter une profondeur démontrable à votre profil, puis recandidatez.",
+      },
+    ],
+  },
+  'mercor-tax-and-payout-guide-2026': {
+    body: `Mercor paie les évaluateurs sur un cycle hebdomadaire ou bimensuel, en USD, par virement international. Comprendre le flux de paiement et la classification fiscale compte avant d'accepter la première tâche.
+
+## Cycle de paiement
+Les revenus s'accumulent par tâche et sont regroupés en un cycle de paiement. La plupart des évaluateurs voient leurs fonds initiés dans la semaine suivant la fin de la tâche, et reçus sur leur compte deux à cinq jours ouvrés plus tard. Les évaluateurs internationaux peuvent constater des délais bancaires supplémentaires.
+
+## Méthodes de paiement
+Mercor s'associe à des prestataires de transfert international. En pratique, les évaluateurs reçoivent des USD sur un compte bancaire local via un partenaire de routage, ou sur un compte multidevises tel que Wise ou Payoneer. Wise est généralement le moins coûteux pour les destinataires non américains, car l'écart de change est plus serré que celui de la plupart des conversions bancaires.
+
+## Traitement fiscal aux États-Unis
+Les évaluateurs basés aux États-Unis sont des prestataires indépendants. Les revenus sont déclarés sur un 1099-NEC si vous dépassez le seuil de l'IRS. La taxe d'auto-emploi (15.3 pour cent) s'applique en plus de l'impôt fédéral et de l'impôt d'État. Mettez de côté environ 30 pour cent du brut par défaut, puis affinez selon le passif réel avec votre comptable.
+
+## Traitement fiscal dans l'UE
+Pour les évaluateurs de l'UE, les revenus Mercor sont des revenus de source étrangère d'auto-emploi. La plupart des juridictions exigent que vous vous enregistriez comme indépendant (auto-entrepreneur, freiberufler, partita IVA, etc.) et que vous déclariez le chiffre d'affaires brut en USD converti à la date de réception. Les charges sociales locales et les seuils de TVA varient selon le pays et la classification d'activité.
+
+## Outils utiles
+Un compte multidevises (Wise) pour la réception, un outil comptable simple (QuickBooks self-employed, Indy en France, Holvi en Allemagne) pour la réconciliation mensuelle, et une séance annuelle avec un comptable local couvre la plupart des configurations.
+
+## Ce que Mercor ne retient pas
+Mercor ne retient pas les taxes américaines ou européennes en votre nom. La totalité du paiement arrive sur votre compte, l'obligation fiscale repose entièrement sur vous. Planifiez votre trésorerie en conséquence : dépenser la totalité du paiement chaque mois vous laisse à court en fin d'année.`,
+    faqs: [
+      {
+        q: "Comment Mercor paie-t-il les évaluateurs non américains ?",
+        a: "Mercor paie par virement international en USD. La plupart des évaluateurs non américains reçoivent leurs paiements sur un compte multidevises comme Wise ou Payoneer afin de minimiser les frais de change.",
+      },
+      {
+        q: "Dois-je être indépendant pour travailler sur Mercor dans l'UE ?",
+        a: "Oui, dans la plupart des pays de l'UE, vous devez vous enregistrer comme indépendant avant de facturer un travail d'évaluation. Les seuils et statuts locaux varient, vérifiez auprès d'un comptable local.",
+      },
+      {
+        q: "Combien dois-je mettre de côté pour l'impôt sur les revenus Mercor ?",
+        a: "Une valeur sûre par défaut est 30 pour cent du brut pour les évaluateurs américains (combinaison de l'impôt fédéral, d'État et d'auto-emploi). Pour les évaluateurs de l'UE, le taux varie largement, prévoyez 25 à 45 pour cent selon le pays et les charges sociales.",
+      },
+    ],
+  },
+  'best-paid-domains-on-mercor-2026': {
+    body: `Les tarifs sur Mercor varient davantage selon le domaine que selon l'expérience. Un expert junior dans un domaine rare gagne souvent plus qu'un généraliste senior. Savoir quels parcours paient le mieux en 2026 est le levier le moins discuté pour les nouveaux évaluateurs.
+
+## La tranche premium actuelle
+- Mathématiques formelles et démonstration de théorèmes (130-200 USD/heure)
+- Langages de programmation spécialisés avec faible couverture des modèles (OCaml, travail systèmes en Rust, vérification formelle Solidity) : 90-150 USD/heure
+- Juridictions juridiques spécifiques et travail réglementaire (droit des valeurs mobilières américain, spécificités GDPR de l'UE) : 100-180 USD/heure
+- Raisonnement médical et clinique (justificatifs validés requis) : 100-180 USD/heure
+
+## La tranche intermédiaire
+- Évaluation générale de traces d'agents LLM (Python, outillage web) : 60-100 USD/heure
+- Raisonnement sur les systèmes ML en production (entraînement, inférence, distillation) : 60-110 USD/heure
+- Science des données et statistiques : 50-90 USD/heure
+
+## La tranche d'entrée
+- Évaluation générale par paires de qualité de code dans les langages courants (Python, JavaScript) : 35-60 USD/heure
+- Compréhension de langue ouverte et rédaction : 30-50 USD/heure
+
+## Ce qui fait qu'un domaine paie bien sur Mercor
+Trois traits se cumulent :
+1. Rareté de l'offre (peu d'évaluateurs qualifiés à l'échelle mondiale)
+2. Faiblesse des modèles (les labos ont besoin d'aide précisément là où les modèles peinent encore)
+3. Profondeur vérifiable (le domaine a des réponses claires de bon ou mauvais, et non un goût subjectif)
+
+## Comment décrocher un parcours premium
+Candidatez avec l'expertise déclarée la plus spécifique tout en restant véridique. "Ingénieur backend senior avec 4 ans sur les systèmes de risque de Stripe" qualifie pour le travail de qualité de code. "Spécialiste des protocoles de consensus distribués ayant lu tous les articles Raft et Paxos" qualifie pour des parcours d'ingénierie de systèmes de niche dans la tranche premium.
+
+## Domaines en évolution en 2026
+Les parcours de mathématiques et de preuves formelles ont fortement progressé en 2026 alors que les labos poussent les capacités de raisonnement. Les parcours juridique et médical restent stables. Les parcours d'évaluation de code général se sont affaiblis à mesure que davantage d'évaluateurs rejoignent le vivier.
+
+## Comment savoir quels parcours Mercor recrute activement
+Mercor publie les ouvertures de parcours sur sa page carrières et sur LinkedIn. Les parcours listés en recrutement actif sont ceux dont le besoin actuel est le plus élevé, y postuler vous fait passer la sélection le plus rapidement.`,
+    faqs: [
+      {
+        q: "Quel parcours Mercor paie le plus pour les développeurs logiciels en 2026 ?",
+        a: "Le travail spécialisé sur les langages systèmes (OCaml, Rust, Solidity) et les parcours de vérification formelle paient le plus pour les développeurs logiciels, souvent 100-150 USD/heure, parce que l'offre est mince.",
+      },
+      {
+        q: "Puis-je changer de parcours sur Mercor après acceptation ?",
+        a: "Oui. Une fois accepté, vous pouvez demander des affectations supplémentaires de parcours. Une qualité démontrée sur votre parcours initial débloque des invitations vers des parcours adjacents mieux payés.",
+      },
+    ],
+  },
+  'mercor-side-hustle-while-working-full-time': {
+    body: `Pour la plupart des évaluateurs, Mercor est une activité d'appoint, pas un revenu principal. Bien menée, elle ajoute 1,000 à 4,000 USD de net mensuel à un salaire d'ingénieur à temps plein sans consommer entièrement vos week-ends. Mal menée, elle vous épuise en trois mois.
+
+## Budget temps réaliste
+Une activité d'appoint durable sur Mercor tourne autour de 6 à 12 heures par semaine. La plupart des évaluateurs répartissent cela sur deux à trois sessions du soir de 90 minutes chacune, plus un bloc le week-end. Au-delà de 15 heures par semaine en parallèle d'un emploi de jour exigeant, la qualité baisse et le tarif horaire effectif aussi.
+
+## Vérifiez d'abord votre contrat de travail
+Avant d'accepter toute tâche rémunérée, lisez la clause de cumul d'emplois dans votre contrat de travail actuel. La plupart des contrats tech américains autorisent le travail rémunéré extérieur tant qu'il ne concurrence pas l'employeur et n'utilise ni le temps, ni le matériel, ni la propriété intellectuelle de l'employeur. Certains contrats exigent une approbation écrite. Les contrats de l'UE varient fortement selon le pays et l'ancienneté. En cas de doute, demandez par écrit avant la première tâche.
+
+## Restez strictement en dehors des heures de travail
+Ne comptabilisez pas d'heures Mercor pendant vos heures de travail de jour, même si vous avez du temps mort. Utilisez un appareil différent ou, au minimum, un identifiant différent. La plupart des problèmes juridiques liés au cumul viennent du flou sur la frontière temporelle, pas du travail lui-même.
+
+## Choisissez des parcours qui partagent des compétences avec votre emploi principal
+Les évaluateurs sont les plus efficaces lorsque la charge cognitive se transfère. Un ingénieur backend faisant de l'évaluation de revue de code réutilise son jugement de jour avec peu de changement de contexte. Un ingénieur backend faisant de l'évaluation juridique paie un coût de montée en compétence élevé.
+
+## Gestion de l'énergie
+Bloquez des soirées spécifiques pour le travail d'évaluation et protégez-les. Des bribes aléatoires entre deux sessions Netflix produisent une sortie de basse qualité et manquent les délais qui comptent pour la progression de tarif.
+
+## Fiscalité et comptabilité
+Les revenus d'activité d'appoint doivent être déclarés. Aux États-Unis, c'est le Schedule C plus la taxe d'auto-emploi. Dans l'UE, cela exige généralement une inscription en tant qu'indépendant même à faible volume. Prévoyez un budget en conséquence dès le premier mois.
+
+## Quand passer au-delà de l'activité d'appoint
+Une poignée d'évaluateurs finissent par quitter leur emploi principal pour évaluer à temps plein. Le calcul fonctionne à plus de 30 heures hebdomadaires sur un parcours à tarif premium. Avant de démissionner, tenez au moins 20 heures par semaine pendant deux mois sur Mercor seul pour valider que le volume et le tarif tiennent.`,
+    faqs: [
+      {
+        q: "Les revenus Mercor en activité d'appoint sont-ils légaux quand on est salarié à temps plein ?",
+        a: "Oui dans la plupart des juridictions, sous réserve de votre contrat de travail. La plupart des contrats tech américains et européens autorisent le travail extérieur non concurrent, certains exigent un préavis écrit. Lisez votre clause et demandez par écrit en cas de doute.",
+      },
+      {
+        q: "Combien d'heures par semaine puis-je réalistiquement faire sur Mercor en parallèle d'un emploi de jour ?",
+        a: "Six à douze heures par semaine est la plage durable sans baisse de qualité. Au-delà de quinze, la qualité de l'évaluateur et le tarif horaire effectif déclinent généralement.",
+      },
+    ],
+  },
 };

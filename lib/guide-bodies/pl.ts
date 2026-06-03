@@ -1511,4 +1511,151 @@ Wyniki jakosci spadaja, gdy sie meczysz. Dwadziescia dobrych godzin tygodniowo b
       },
     ],
   },
+  "mercor-screening-test-prep": {
+    body: `Mercor sprawdza kazdego kandydata przed odblokowaniem platnej pracy. Test kwalifikacyjny to pojedyncza bariera, na ktorej wieksszosc kandydatow odpada. Wlasciwe przygotowanie znaczaco podnosi wskaznik akceptacji.
+
+## Jak wyglada test w 2026 roku
+Kwalifikacja to krotkie cwiczenie z limitem czasu dostosowane do twojej zadeklarowanej dziedziny. Dla programistow zazwyczaj laczy ono zadanie z czytania kodu (ocen dwa wyniki modelu i uzasadnij, dlaczego jeden jest lepszy), pisemne zadanie oceniajace osad oraz krotka rozmowe (na zywo lub asynchroniczna).
+
+## Format specyficzny dla dziedziny
+- Inzynierowie oprogramowania: porownania parami jakosci kodu i jedno otwarte cwiczenie debugowania.
+- Inzynierowie ML: ocena wynikow modelu pod katem rozumowania, faktycznosci i generowania kodu.
+- Eksperci dziedzinowi (prawo, finanse, medycyna, nauka): oceny scenariuszy wedlug kryteriow rubryki specyficznych dla dziedziny.
+
+## Jak przygotowac sie w tydzien
+1. Spedz dwa wieczory na dokumentacji Mercor. Przeczytaj publiczne rubryki, ktore publikuja dla ewaluatorow.
+2. Cwicz ocene parami na bezplatnych publicznych zbiorach danych (probki Anthropic HH-RLHF, OpenAI evals, publiczne wyniki rankingowe modeli). Sformuluj pisemna opinie o kazdym przed sprawdzeniem konsensusu.
+3. Pisz swoje uzasadnienia tak, jak robilbys to w platnej pracy: minimum trzy zdania, specyficzne dla artefaktu, bez ogolnych pochwal.
+
+## Co pisac w sekcjach otwartych
+Specyficznosc ponad obfitosc. Recenzenci nagradzaja ostre, falsyfikowalne twierdzenia powiazane z konkretnym wynikiem. Niejasne rozumowanie (na przyklad "druga odpowiedz jest bardziej kompleksowa") jest obnizane. Konkretne rozumowanie (na przyklad "druga odpowiedz poprawnie identyfikuje blad off-by-one w linii 14, podczas gdy pierwsza go pomija") przechodzi.
+
+## Czego unikac
+Nie uzywaj LLM do pisania sekcji pisemnych. Recenzenci Mercor jawnie sprawdzaja wzorce tekstu generowanego przez LLM i odrzucaja kandydatow, ktorzy ich uzywaja. Test sprawdza twoj osad, a nie osad modelu.
+
+## Ponowne aplikowanie po odrzuceniu
+Jesli odpadniesz, Mercor pozwala na ponowne aplikowanie po okolo szesciu miesiacach. Wykorzystaj te przerwe na publikowanie tekstow technicznych publicznie (posty na blogu, GitHub READMEs), ktore pokazuja osad, ktory byl sprawdzany. Pogleb profilu miedzy probami to najsilniejszy sygnal przy ponownej aplikacji.`,
+    faqs: [
+      {
+        q: "Jak dlugo trwa test kwalifikacyjny Mercor?",
+        a: "Wieksszosc testow dziedzinowych trwa od 45 do 90 minut wraz z sekcjami pisemnymi, z opcjonalna krotka rozmowa na zywo dla niektorych sciezek.",
+      },
+      {
+        q: "Czy moge powtorzyc test kwalifikacyjny Mercor po niepowodzeniu?",
+        a: "Tak, zazwyczaj po szesciomiesiecznym okresie oczekiwania. Wykorzystaj ten czas na dodanie wymiernej glebi do profilu, a nastepnie zlozyc ponowna aplikacje.",
+      },
+    ],
+  },
+  "mercor-tax-and-payout-guide-2026": {
+    body: `Mercor placi ewaluatorom w cyklu tygodniowym lub dwutygodniowym, w USD, przelewem miedzynarodowym. Zrozumienie przeplywu wyplat i klasyfikacji podatkowej ma znaczenie przed przyjeciem pierwszego zadania.
+
+## Cykl wyplat
+Zarobki kumuluja sie za zadanie i sa grupowane w pojedyncza wyplate. Wieksszosc ewaluatorow widzi srodki zainicjowane w ciagu tygodnia od zakonczenia zadania, docierajace na konto w ciagu dwoch do pieciu dni roboczych pozniej. Ewaluatorzy miedzynarodowi moga zauwazyc dodatkowe opoznienia na poziomie bankowym.
+
+## Metody wyplat
+Mercor wspolpracuje z miedzynarodowymi dostawcami przelewow. W praktyce ewaluatorzy otrzymuja USD na lokalne konto bankowe za posrednictwem partnera routingowego lub przez konto wielowalutowe takie jak Wise lub Payoneer. Wise zazwyczaj wypada najtaniej dla odbiorcow spoza USA, poniewaz spread FX jest wezszy niz w wieksszosci konwersji bankowych.
+
+## Opodatkowanie w USA
+Ewaluatorzy z siedziba w USA sa niezaleznymi wykonawcami. Zarobki sa raportowane na formularzu 1099-NEC, jesli przekroczysz prog IRS. Podatek od samozatrudnienia (15.3 procent) ma zastosowanie oprocz federalnego i stanowego podatku dochodowego. Odlozyc okolo 30 procent brutto domyslnie, a nastepnie doprecyzuj do rzeczywistego zobowiazania ze swoim ksiegowym.
+
+## Opodatkowanie w UE
+Dla ewaluatorow z UE dochod z Mercor to zagraniczny dochod z samozatrudnienia. Wieksszosc jurysdykcji wymaga rejestracji jako samozatrudniony (auto-entrepreneur, freiberufler, partita IVA itp.) i deklarowania przychodu brutto w USD przeliczonego na date otrzymania. Lokalne skladki socjalne i progi VAT roznia sie w zaleznosci od kraju i klasyfikacji dzialalnosci.
+
+## Narzedzia, ktore pomagaja
+Konto wielowalutowe (Wise) do odbioru, podstawowe narzedzie ksiegowe (QuickBooks self-employed, Indy we Francji, Holvi w Niemczech) do miesiecznej rekoncyliacji oraz coroczna sesja z lokalnym ksiegowym pokrywa wieksszosc konfiguracji.
+
+## Czego Mercor nie potraca
+Mercor nie potraca podatkow w USA ani UE w twoim imieniu. Pelna platnosc trafia na twoje konto; zobowiazanie podatkowe spoczywa wylacznie na tobie. Planuj przeplywy pieniezne odpowiednio: wydanie pelnej wyplaty co miesiac pozostawia cie z niedoborem na koniec roku.`,
+    faqs: [
+      {
+        q: "Jak Mercor placi ewaluatorom spoza USA?",
+        a: "Mercor placi przelewem miedzynarodowym w USD. Wieksszosc ewaluatorow spoza USA otrzymuje wyplaty na konto wielowalutowe takie jak Wise lub Payoneer, aby zminimalizowac oplaty FX.",
+      },
+      {
+        q: "Czy musze byc samozatrudniony, aby pracowac na Mercor w UE?",
+        a: "Tak, w wieksszosci krajow UE musisz zarejestrowac sie jako samozatrudniony przed wystawieniem faktury za prace ewaluatora. Lokalne progi i statusy roznia sie; skonsultuj sie z lokalnym ksiegowym.",
+      },
+      {
+        q: "Ile powinienem odlozyc na podatek od dochodu z Mercor?",
+        a: "Bezpiecznym domyslem jest 30 procent brutto dla ewaluatorow w USA (laczny podatek federalny, stanowy i od samozatrudnienia). Dla ewaluatorow w UE stawka rozni sie znacznie; planuj 25 do 45 procent w zaleznosci od kraju i skladek socjalnych.",
+      },
+    ],
+  },
+  "best-paid-domains-on-mercor-2026": {
+    body: `Stawki na Mercor roznia sie bardziej w zaleznosci od dziedziny niz od doswiadczenia. Mlodszy ekspert w rzadkiej dziedzinie czesto zarabia wiecej niz doswiadczony generalista. Wiedza o tym, ktore sciezki placa premium w 2026 roku, to najmniej omawiana dzwignia dla nowych ewaluatorow.
+
+## Obecny poziom premium
+- Matematyka formalna i dowodzenie twierdzen (130-200 USD/godzine)
+- Specjalistyczne jezyki programowania z cienkim pokryciem modelu (OCaml, prace systemowe w Rust, formalna weryfikacja Solidity): 90-150 USD/godzine
+- Specyficzne jurysdykcje prawne i prace regulacyjne (prawo papierow wartosciowych USA, specyfika GDPR w UE): 100-180 USD/godzine
+- Rozumowanie medyczne i kliniczne (wymagane zweryfikowane kwalifikacje): 100-180 USD/godzine
+
+## Sredni poziom
+- Ogolna ocena sladow agentow LLM (Python, narzedzia webowe): 60-100 USD/godzine
+- Rozumowanie produkcyjnych systemow ML (trening, inferencja, destylacja): 60-110 USD/godzine
+- Nauka o danych i statystyka: 50-90 USD/godzine
+
+## Poziom poczatkowy
+- Ogolna ocena jakosci kodu parami w popularnych jezykach (Python, JavaScript): 35-60 USD/godzine
+- Otwarte rozumienie jezyka i pisanie: 30-50 USD/godzine
+
+## Co sprawia, ze dziedzina dobrze placi na Mercor
+Trzy cechy sie kumuluja:
+1. Niedobor podazy (niewielu wykwalifikowanych ewaluatorow na swiecie)
+2. Slabosc modelu (laboratoria potrzebuja pomocy dokladnie tam, gdzie modele wciaz maja trudnosci)
+3. Weryfikowalna glebia (dziedzina ma jasne poprawne lub niepoprawne odpowiedzi, a nie subiektywny gust)
+
+## Jak zdobyc sciezke premium
+Aplikuj z najbardziej specyficzna zadeklarowana ekspertyza, ktora jest nadal prawdziwa. "Starszy inzynier backendu z 4 latami pracy nad systemami ryzyka Stripe" kwalifikuje sie do prac nad jakoscia kodu. "Specjalista w protokolach konsensusu rozproszonego, ktory przeczytal kazdy artykul o Raft i Paxos" kwalifikuje sie do niszowych sciezek inzynierii systemow na poziomie premium.
+
+## Dziedziny zmieniajace sie w 2026 roku
+Sciezki matematyki i dowodow formalnych mocno wzrosly w 2026 roku, gdy laboratoria forsuja zdolnosci rozumowania. Sciezki prawne i medyczne pozostaja stabilne. Ogolne sciezki oceny kodu zmiekly, gdyz wiecej ewaluatorow wchodzi do puli.
+
+## Jak dowiedziec sie, ktore sciezki Mercor aktywnie rekrutuje
+Mercor publikuje otwarcia sciezek na swojej stronie kariery i na LinkedIn. Sciezki wymienione z aktywna rekrutacja to te z najwiekszym obecnym zapotrzebowaniem; aplikowanie na nie pozwala najszybciej przejsc kwalifikacje.`,
+    faqs: [
+      {
+        q: "Ktora sciezka Mercor placi najwiecej programistom w 2026 roku?",
+        a: "Specjalistyczne prace nad jezykami systemowymi (OCaml, Rust, Solidity) i sciezki formalnej weryfikacji placa najwiecej programistom, czesto 100-150 USD/godzine, poniewaz podaz jest niewielka.",
+      },
+      {
+        q: "Czy moge zmienic sciezke na Mercor po akceptacji?",
+        a: "Tak. Po zaakceptowaniu mozesz poprosic o dodatkowe przydzialy sciezek. Wykazana jakosc na poczatkowej sciezce odblokowuje zaproszenia do wyzej platnych sciezek sasiednich.",
+      },
+    ],
+  },
+  "mercor-side-hustle-while-working-full-time": {
+    body: `Dla wieksszosci ewaluatorow Mercor to dodatkowe zajecie, a nie glowne zrodlo dochodu. Dobrze prowadzone dodaje 1,000 do 4,000 USD miesiecznego dochodu netto do pelnoetatowej pensji inzynierskiej bez calkowitego pochlaniania weekendow. Zle prowadzone wypala cie w trzy miesiace.
+
+## Realistyczny budzet czasu
+Zrownowazone dodatkowe zajecie na Mercor to 6 do 12 godzin tygodniowo. Wieksszosc ewaluatorow rozklada to na dwie do trzech wieczornych sesji po 90 minut, plus jeden blok weekendowy. Powyzej 15 godzin tygodniowo obok wymagajacej pracy dziennej, jakosc spada, a wraz z nia efektywna stawka godzinowa.
+
+## Najpierw sprawdz swoja umowe o prace
+Przed przyjeciem jakiegokolwiek platnego zadania przeczytaj klauzule o pracy dodatkowej w swojej obecnej umowie o prace. Wieksszosc amerykanskich umow w branzy technologicznej pozwala na zewnetrzna platna prace, dopoki nie konkuruje ona z pracodawca i nie wykorzystuje czasu, sprzetu lub wlasnosci intelektualnej pracodawcy. Niektore umowy wymagaja pisemnej zgody. Umowy w UE roznia sie znacznie w zaleznosci od kraju i seniority. Jesli masz watpliwosci, zapytaj na pismie przed pierwszym zadaniem.
+
+## Trzymaj sie scisle poza czasem pracy
+Nie loguj godzin Mercor podczas godzin pracy w glownym miejscu zatrudnienia, nawet jesli masz przestoje. Uzyj innego urzadzenia lub przynajmniej innego loginu. Wieksszosc problemow prawnych z praca dodatkowa wynika z rozmycia granicy czasowej, a nie z samej pracy.
+
+## Wybieraj sciezki, ktore dziela umiejetnosci z twoja praca dzienna
+Ewaluatorzy sa najbardziej wydajni, gdy obciazenie poznawcze sie przenosi. Inzynier backendu wykonujacy ocene przegladu kodu wykorzystuje ponownie swoj osad z pracy dziennej przy niewielkim przelaczaniu kontekstu. Inzynier backendu wykonujacy ocene prawna placi stromy koszt rozruchu.
+
+## Zarzadzanie energia
+Zablokuj konkretne wieczory na prace ewaluacyjna i chron je. Przypadkowe urywki miedzy sesjami Netflix produkuja prace niskiej jakosci i nie dotrzymuja terminow, ktore maja znaczenie dla wzrostu stawki.
+
+## Podatki i ksiegowosc
+Dochod z pracy dodatkowej musi byc zgloszony. W USA to Schedule C plus podatek od samozatrudnienia. W UE zazwyczaj wymaga to rejestracji jako samozatrudniony nawet przy niskim wolumenie. Planuj odpowiednio od pierwszego miesiaca.
+
+## Kiedy skalowac poza dodatkowe zajecie
+Garstka ewaluatorow ostatecznie odchodzi z pracy dziennej, aby oceniac w pelnym wymiarze godzin. Matematyka dziala przy ponad 30 godzinach tygodniowo na sciezce o stawce premium. Przed rezygnacja, utrzymuj co najmniej 20 godzin tygodniowo przez dwa miesiace tylko na Mercor, aby zweryfikowac, ze wolumen i stawka sie utrzymuja.`,
+    faqs: [
+      {
+        q: "Czy dochod z Mercor jako pracy dodatkowej jest legalny przy zatrudnieniu na pelny etat?",
+        a: "Tak w wieksszosci jurysdykcji, z zastrzezeniem twojej umowy o prace. Wieksszosc amerykanskich i unijnych umow w branzy technologicznej pozwala na niekonkurujaca prace zewnetrzna; niektore wymagaja pisemnego powiadomienia. Przeczytaj swoja klauzule i zapytaj na pismie, jesli masz watpliwosci.",
+      },
+      {
+        q: "Ile godzin tygodniowo moge realistycznie wykonywac na Mercor obok pracy dziennej?",
+        a: "Szesc do dwunastu godzin tygodniowo to zrownowazony zakres bez spadku jakosci. Powyzej pietnastu jakosc ewaluatora i efektywna stawka godzinowa zazwyczaj spadaja.",
+      },
+    ],
+  },
 };

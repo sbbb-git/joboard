@@ -1466,4 +1466,124 @@ As notas de qualidade despencam quando você fadiga. Vinte boas horas por semana
       { q: "Posso negociar uma taxa mais alta na Mercor?", a: "Diretamente, não. A taxa é determinada por trilha, especialidade e sinais de qualidade. O caminho mais rápido para uma taxa efetiva mais alta é qualificar-se para trilhas mais bem pagas via profundidade de justificativa e posicionamento de especialidade." },
     ],
   },
+  "mercor-screening-test-prep": {
+    body: `A Mercor avalia todo candidato antes de liberar trabalho remunerado. O teste de triagem é a única barreira que a maioria dos candidatos não passa. Preparar-se adequadamente aumenta bastante a taxa de aceitação.
+
+## Como é o teste em 2026
+A triagem é um exercício curto e cronometrado adaptado ao domínio que você declarou. Para desenvolvedores de software, geralmente combina uma tarefa de leitura de código (avaliar duas saídas de modelo e justificar por que uma é melhor), um prompt de julgamento por escrito e uma entrevista curta ao vivo ou assíncrona.
+
+## Formato específico por domínio
+- Engenheiros de software: comparações pareadas de qualidade de código e um passo a passo aberto de depuração.
+- Engenheiros de ML: avaliação de saídas de modelo em raciocínio, factualidade e geração de código.
+- Especialistas de domínio (direito, finanças, medicina, ciência): avaliações de cenários com critérios de rubrica específicos da área.
+
+## Como se preparar em uma semana
+1. Dedique duas noites à documentação da Mercor. Leia as rubricas públicas que eles publicam para avaliadores.
+2. Pratique julgamento pareado em conjuntos de dados públicos gratuitos (amostras do Anthropic HH-RLHF, evals da OpenAI, saídas de leaderboards públicos de modelos). Forme uma opinião escrita sobre cada uma antes de verificar o consenso.
+3. Escreva suas justificativas como faria em um trabalho remunerado: no mínimo três frases, específicas ao artefato, sem elogios genéricos.
+
+## O que escrever nas seções abertas
+Especificidade acima de volume. Os revisores recompensam afirmações precisas e falsificáveis vinculadas à saída específica. Raciocínio vago ("a segunda resposta é mais abrangente") recebe nota mais baixa. Raciocínio concreto ("a segunda resposta identifica corretamente o erro de off-by-one na linha 14, enquanto a primeira não percebe") passa.
+
+## O que evitar
+Não use um LLM para redigir as seções escritas. Os triadores da Mercor verificam explicitamente padrões de texto gerado por LLM e rejeitam candidatos que os utilizam. A triagem é para o seu julgamento, não o de um modelo.
+
+## Reaplicar após rejeição
+Se você for reprovado, a Mercor permite reaplicar após aproximadamente seis meses. Use o intervalo para publicar escrita técnica publicamente (posts de blog, READMEs no GitHub) que demonstrem o julgamento pelo qual eles avaliaram. Profundidade de perfil entre tentativas é o sinal mais forte para reaplicação.`,
+    faqs: [
+      { q: "Quanto tempo dura o teste de triagem da Mercor?", a: "A maioria dos testes de triagem por domínio dura de 45 a 90 minutos, incluindo as seções escritas, com uma entrevista curta ao vivo opcional para algumas trilhas." },
+      { q: "Posso refazer a triagem da Mercor se for reprovado?", a: "Sim, geralmente após um período de espera de seis meses. Use o tempo para adicionar profundidade demonstrável ao seu perfil e então reaplicar." },
+    ],
+  },
+  "mercor-tax-and-payout-guide-2026": {
+    body: `A Mercor paga os avaliadores em um ciclo semanal ou quinzenal, em USD, via transferência internacional. Entender o fluxo de pagamento e a classificação tributária importa antes de aceitar a primeira tarefa.
+
+## Ciclo de pagamento
+Os ganhos se acumulam por tarefa e são agrupados em uma rodada de pagamento. A maioria dos avaliadores vê os fundos iniciados em até uma semana após a conclusão da tarefa, chegando à conta em dois a cinco dias úteis depois disso. Avaliadores internacionais podem enfrentar atrasos adicionais em nível bancário.
+
+## Métodos de pagamento
+A Mercor faz parceria com provedores de transferência internacional. Na prática, os avaliadores recebem USD em uma conta bancária local usando um parceiro de roteamento, ou via uma conta multimoedas como Wise ou Payoneer. A Wise tende a sair mais barata para destinatários fora dos EUA porque o spread cambial é menor do que na maioria das conversões bancárias.
+
+## Tratamento tributário nos EUA
+Avaliadores baseados nos EUA são prestadores autônomos. Os ganhos são reportados em um 1099-NEC se você ultrapassar o limite do IRS. O imposto de trabalho autônomo (15.3 por cento) se aplica além do imposto de renda federal e estadual. Reserve aproximadamente 30 por cento do bruto como padrão; refine para o valor real com seu contador.
+
+## Tratamento tributário na UE
+Para avaliadores da UE, a renda da Mercor é renda de trabalho autônomo de origem estrangeira. A maioria das jurisdições exige que você se registre como autônomo (auto-entrepreneur, freiberufler, partita IVA, etc.) e declare a receita bruta em USD convertida na data de recebimento. Os encargos sociais locais e os limites de VAT variam por país e por classificação de atividade.
+
+## Ferramentas que ajudam
+Uma conta multimoedas (Wise) para recebimento, uma ferramenta básica de contabilidade (QuickBooks self-employed, Indy na França, Holvi na Alemanha) para conciliação mensal, e uma sessão anual com um contador local cobrem a maioria das configurações.
+
+## O que a Mercor não retém
+A Mercor não retém impostos dos EUA ou da UE em seu nome. O pagamento integral chega à sua conta; a obrigação tributária fica inteiramente com você. Planeje o fluxo de caixa de acordo: gastar o pagamento inteiro a cada mês deixa você no vermelho no final do ano.`,
+    faqs: [
+      { q: "Como a Mercor paga avaliadores fora dos EUA?", a: "A Mercor paga via transferência internacional em USD. A maioria dos avaliadores fora dos EUA recebe pagamentos em uma conta multimoedas como Wise ou Payoneer para minimizar taxas cambiais." },
+      { q: "Preciso ser autônomo para trabalhar na Mercor na UE?", a: "Sim, na maioria dos países da UE você deve se registrar como autônomo antes de faturar pelo trabalho de avaliador. Os limites e estatutos locais variam; consulte um contador local." },
+      { q: "Quanto devo reservar para impostos sobre a renda da Mercor?", a: "Um padrão seguro é 30 por cento do bruto para avaliadores dos EUA (combinando imposto federal, estadual e de trabalho autônomo). Para avaliadores da UE, a taxa varia bastante; reserve de 25 a 45 por cento dependendo do país e dos encargos sociais." },
+    ],
+  },
+  "best-paid-domains-on-mercor-2026": {
+    body: `As taxas na Mercor variam mais por domínio do que por experiência. Um especialista júnior em um domínio escasso muitas vezes ganha mais do que um generalista sênior. Saber quais trilhas pagam o prêmio em 2026 é a alavanca menos discutida para novos avaliadores.
+
+## A faixa premium atual
+- Matemática formal e prova de teoremas (130-200 USD/hora)
+- Linguagens de programação especializadas com pouca cobertura de modelos (OCaml, trabalho de sistemas em Rust, verificação formal em Solidity): 90-150 USD/hora
+- Jurisdições legais específicas e trabalho regulatório (direito de valores mobiliários dos EUA, especificidades do GDPR da UE): 100-180 USD/hora
+- Raciocínio médico e clínico (credenciais validadas exigidas): 100-180 USD/hora
+
+## A faixa intermediária
+- Avaliação geral de traços de agentes LLM (Python, ferramentas web): 60-100 USD/hora
+- Raciocínio sobre sistemas de ML em produção (treinamento, inferência, destilação): 60-110 USD/hora
+- Ciência de dados e estatística: 50-90 USD/hora
+
+## A faixa de entrada
+- Avaliação pareada geral de qualidade de código em linguagens mainstream (Python, JavaScript): 35-60 USD/hora
+- Compreensão e escrita de linguagem aberta: 30-50 USD/hora
+
+## O que faz um domínio pagar bem na Mercor
+Três características se combinam:
+1. Escassez de oferta (poucos avaliadores qualificados globalmente)
+2. Fraqueza dos modelos (os laboratórios precisam de ajuda exatamente onde os modelos ainda têm dificuldades)
+3. Profundidade verificável (o domínio tem respostas claramente certas ou erradas, não gosto subjetivo)
+
+## Como conseguir uma trilha premium
+Inscreva-se com a especialização declarada mais específica que ainda seja verdadeira. "Engenheiro de backend sênior com 4 anos em sistemas de risco da Stripe" qualifica para trabalho de qualidade de código. "Especialista em protocolos de consenso distribuído que leu todos os papers de Raft e Paxos" qualifica para trilhas de engenharia de sistemas de nicho na faixa premium.
+
+## Domínios em mudança em 2026
+As trilhas de matemática e prova formal cresceram bastante em 2026, à medida que os laboratórios avançam nas capacidades de raciocínio. As trilhas jurídicas e médicas permanecem estáveis. As trilhas gerais de avaliação de código suavizaram, à medida que mais avaliadores entram no pool.
+
+## Como descobrir quais trilhas a Mercor está recrutando ativamente
+A Mercor publica vagas de trilhas em sua página de carreiras e no LinkedIn. As trilhas listadas com recrutamento ativo são as de maior necessidade atual; inscrever-se nelas faz você ser avaliado mais rápido.`,
+    faqs: [
+      { q: "Qual trilha da Mercor paga mais para desenvolvedores de software em 2026?", a: "Trabalho em linguagens de sistemas especializadas (OCaml, Rust, Solidity) e trilhas de verificação formal pagam mais para desenvolvedores de software, frequentemente 100-150 USD/hora, porque a oferta é escassa." },
+      { q: "Posso trocar de trilha na Mercor após a aceitação?", a: "Sim. Uma vez aceito, você pode solicitar atribuições adicionais de trilhas. Qualidade comprovada na sua trilha inicial libera convites para trilhas adjacentes mais bem pagas." },
+    ],
+  },
+  "mercor-side-hustle-while-working-full-time": {
+    body: `Para a maioria dos avaliadores, a Mercor é uma renda extra, não uma renda principal. Bem feito, adiciona 1,000 a 4,000 USD de renda líquida mensal a um salário de engenharia em tempo integral sem consumir todos os seus fins de semana. Mal feito, leva ao burnout em três meses.
+
+## Orçamento de tempo realista
+Uma renda extra sustentável na Mercor roda de 6 a 12 horas por semana. A maioria dos avaliadores distribui isso em duas ou três sessões noturnas de 90 minutos cada, mais um bloco de fim de semana. Acima de 15 horas por semana junto com um trabalho diário exigente, a qualidade cai e, com ela, a taxa horária efetiva.
+
+## Verifique seu contrato de trabalho primeiro
+Antes de aceitar qualquer tarefa remunerada, leia a cláusula de trabalho paralelo no seu contrato de trabalho atual. A maioria dos contratos de tecnologia dos EUA permite trabalho externo remunerado desde que não concorra com o empregador e não use o tempo, o hardware ou a propriedade intelectual do empregador. Alguns contratos exigem aprovação por escrito. Os contratos da UE variam bastante por país e por senioridade. Em caso de dúvida, pergunte por escrito antes da primeira tarefa.
+
+## Mantenha-se estritamente fora do horário de trabalho
+Não registre horas na Mercor durante o horário de trabalho do seu emprego principal, mesmo que você tenha tempo ocioso. Use um dispositivo diferente ou, no mínimo, um login diferente. A maioria dos problemas legais com trabalho paralelo vem de borrar a fronteira de tempo, não do trabalho em si.
+
+## Escolha trilhas que compartilhem habilidades com seu trabalho principal
+Os avaliadores são mais eficientes quando a sobrecarga cognitiva se transfere. Um engenheiro de backend fazendo avaliação de revisão de código reaproveita seu julgamento do trabalho diário com pouca troca de contexto. Um engenheiro de backend fazendo avaliação jurídica paga um custo íngreme de aprendizado.
+
+## Gestão de energia
+Reserve noites específicas para o trabalho de avaliação e proteja-as. Trechos aleatórios entre sessões de Netflix produzem saída de baixa qualidade e perdem os prazos que importam para a progressão de taxa.
+
+## Imposto e contabilidade
+A renda extra deve ser declarada. Nos EUA isso é o Schedule C mais o imposto de trabalho autônomo. Na UE, geralmente requer um registro como autônomo, mesmo em volume baixo. Faça orçamento adequadamente desde o primeiro mês.
+
+## Quando escalar além da renda extra
+Um punhado de avaliadores eventualmente deixa o emprego principal para avaliar em tempo integral. A matemática funciona em mais de 30 horas semanais em uma trilha de taxa premium. Antes de pedir demissão, sustente pelo menos 20 horas semanais por dois meses apenas na Mercor para validar que o volume e a taxa se mantêm.`,
+    faqs: [
+      { q: "Renda extra na Mercor é legal enquanto se trabalha em tempo integral?", a: "Sim, na maioria das jurisdições, sujeita ao seu contrato de trabalho. A maioria dos contratos de tecnologia dos EUA e da UE permite trabalho externo não concorrente; alguns exigem aviso por escrito. Leia sua cláusula e pergunte por escrito se tiver dúvida." },
+      { q: "Quantas horas por semana posso realisticamente dedicar à Mercor junto com um emprego principal?", a: "De seis a doze horas por semana é a faixa sustentável sem queda de qualidade. Acima de quinze, a qualidade do avaliador e a taxa horária efetiva geralmente declinam." },
+    ],
+  },
 };

@@ -1484,4 +1484,124 @@ I punteggi di qualita crollano quando ti affatichi. Venti ore buone a settimana 
       { q: "Posso negoziare una tariffa piu alta su Mercor?", a: "Direttamente, no. La tariffa e guidata da percorso, specialita e segnali di qualita. Il modo piu rapido per ottenere una tariffa effettiva piu alta e qualificarsi per percorsi meglio pagati tramite la profondita delle giustificazioni e il posizionamento di specialita." },
     ],
   },
+  "mercor-screening-test-prep": {
+    body: `Mercor sottopone a screening ogni candidato prima di sbloccare il lavoro retribuito. Il test di screening e l'unica barriera che fa fallire la maggior parte dei candidati. Una preparazione adeguata aumenta nettamente il tasso di accettazione.
+
+## Come si presenta il test nel 2026
+Lo screening e un breve esercizio a tempo, su misura per il tuo dominio dichiarato. Per gli sviluppatori software combina di solito un compito di lettura del codice (valutare due output del modello e giustificare perche uno e migliore), una prova di giudizio scritto e un breve colloquio live o asincrono.
+
+## Formato specifico per dominio
+- Ingegneri software: confronti a coppie sulla qualita del codice e una procedura di debug aperta.
+- Ingegneri ML: valutazione degli output del modello su ragionamento, fattualita e generazione di codice.
+- Esperti di dominio (diritto, finanza, medicina, scienza): valutazioni di scenario su criteri rubricali specifici del settore.
+
+## Come prepararsi in una settimana
+1. Dedica due serate alla documentazione di Mercor. Leggi le rubriche pubbliche che pubblicano per i valutatori.
+2. Esercitati nel giudizio a coppie su dataset pubblici gratuiti (campioni Anthropic HH-RLHF, OpenAI evals, output pubblici dalle leaderboard dei modelli). Formati un'opinione scritta su ognuno prima di consultare il consenso.
+3. Scrivi le tue giustificazioni come faresti per il lavoro retribuito: almeno tre frasi, specifiche per l'artefatto, senza elogi generici.
+
+## Cosa scrivere nelle sezioni aperte
+Specificita prima del volume. I revisori premiano affermazioni nette e falsificabili, legate all'output specifico. Un ragionamento vago (come dire che la seconda risposta e piu completa) viene declassato. Un ragionamento concreto (la seconda risposta identifica correttamente l'errore off-by-one alla riga 14, mentre la prima lo perde) supera la prova.
+
+## Cosa evitare
+Non usare un LLM per redigere le sezioni scritte. Gli screener di Mercor controllano esplicitamente i pattern testuali generati da LLM e rifiutano i candidati che li usano. Lo screening serve a misurare il tuo giudizio, non quello di un modello.
+
+## Riproporsi dopo un rifiuto
+Se fallisci, Mercor consente di ricandidarsi dopo circa sei mesi. Usa la pausa per pubblicare contenuti tecnici pubblici (post sul blog, README su GitHub) che dimostrino il giudizio per cui ti hanno valutato. La profondita del profilo tra un tentativo e l'altro e il segnale piu forte per la nuova candidatura.`,
+    faqs: [
+      { q: "Quanto dura il test di screening di Mercor?", a: "La maggior parte dei test di screening per dominio dura dai 45 ai 90 minuti incluse le sezioni scritte, con un breve colloquio live opzionale per alcuni percorsi." },
+      { q: "Posso ripetere lo screening di Mercor se fallisco?", a: "Si, generalmente dopo un periodo di attesa di sei mesi. Usa il tempo per aggiungere profondita dimostrabile al tuo profilo, poi candidati di nuovo." },
+    ],
+  },
+  "mercor-tax-and-payout-guide-2026": {
+    body: `Mercor paga i valutatori su base settimanale o quindicinale, in USD, tramite bonifico internazionale. Capire il flusso dei pagamenti e la classificazione fiscale e importante prima di accettare il primo task.
+
+## Ciclo di pagamento
+I guadagni maturano per ciascun task e vengono accorpati in un ciclo di pagamento. La maggior parte dei valutatori vede i fondi avviati entro una settimana dal completamento del task, con accredito sul conto entro due o cinque giorni lavorativi successivi. I valutatori internazionali possono subire ulteriori ritardi a livello bancario.
+
+## Metodi di pagamento
+Mercor collabora con fornitori di trasferimenti internazionali. In pratica, i valutatori ricevono USD su un conto bancario locale tramite un partner di routing, oppure tramite un conto multivaluta come Wise o Payoneer. Wise tende a risultare il piu economico per i destinatari non statunitensi perche lo spread sul cambio e piu stretto rispetto alle conversioni bancarie tradizionali.
+
+## Trattamento fiscale negli USA
+I valutatori con sede negli USA sono lavoratori autonomi. I guadagni vengono dichiarati con un 1099-NEC se superi la soglia IRS. La self-employment tax (15.3 percento) si aggiunge alle imposte federali e statali sul reddito. Metti da parte di default circa il 30 percento del lordo; affina poi sul debito reale con il tuo commercialista.
+
+## Trattamento fiscale nell'UE
+Per i valutatori UE, il reddito Mercor e reddito da lavoro autonomo di fonte estera. La maggior parte delle giurisdizioni richiede di registrarsi come lavoratore autonomo (auto-entrepreneur, freiberufler, partita IVA, ecc.) e di dichiarare il fatturato lordo in USD convertito alla data di incasso. Contributi sociali locali e soglie IVA variano per paese e per classificazione dell'attivita.
+
+## Strumenti che aiutano
+Un conto multivaluta (Wise) per ricevere i pagamenti, uno strumento contabile di base (QuickBooks self-employed, Indy in Francia, Holvi in Germania) per la riconciliazione mensile e una sessione annuale con un commercialista locale coprono la maggior parte degli scenari.
+
+## Cosa Mercor non trattiene
+Mercor non trattiene imposte statunitensi o europee per tuo conto. L'intero pagamento arriva sul tuo conto; l'obbligo fiscale resta interamente a tuo carico. Pianifica il flusso di cassa di conseguenza: spendere tutto il payout ogni mese ti lascera scoperto a fine anno.`,
+    faqs: [
+      { q: "Come paga Mercor i valutatori non statunitensi?", a: "Mercor paga tramite bonifico internazionale in USD. La maggior parte dei valutatori non statunitensi riceve i pagamenti su un conto multivaluta come Wise o Payoneer per ridurre al minimo le commissioni di cambio." },
+      { q: "Devo essere lavoratore autonomo per lavorare su Mercor nell'UE?", a: "Si, nella maggior parte dei paesi UE devi registrarti come lavoratore autonomo prima di fatturare il lavoro di valutazione. Soglie e regimi locali variano; verifica con un commercialista del posto." },
+      { q: "Quanto devo mettere da parte per le tasse sul reddito Mercor?", a: "Una soglia prudente e il 30 percento del lordo per i valutatori USA (federale, statale e self-employment tax combinati). Per i valutatori UE l'aliquota varia molto; preventiva dal 25 al 45 percento a seconda del paese e dei contributi sociali." },
+    ],
+  },
+  "best-paid-domains-on-mercor-2026": {
+    body: `Le tariffe su Mercor variano piu per dominio che per esperienza. Un esperto junior in un dominio raro spesso guadagna piu di un generalista senior. Sapere quali percorsi pagano la maggiorazione nel 2026 e la leva meno discussa per i nuovi valutatori.
+
+## La fascia premium attuale
+- Matematica formale e dimostrazione di teoremi (130-200 USD/ora)
+- Linguaggi di programmazione specialistici con copertura del modello limitata (OCaml, lavoro di sistema in Rust, verifica formale in Solidity): 90-150 USD/ora
+- Giurisdizioni legali specifiche e lavoro regolatorio (diritto dei titoli statunitense, specifiche GDPR UE): 100-180 USD/ora
+- Ragionamento medico e clinico (credenziali certificate richieste): 100-180 USD/ora
+
+## La fascia intermedia
+- Valutazione generale di trace di agenti LLM (Python, tooling web): 60-100 USD/ora
+- Ragionamento su sistemi ML in produzione (training, inferenza, distillazione): 60-110 USD/ora
+- Data science e statistica: 50-90 USD/ora
+
+## La fascia di ingresso
+- Valutazione a coppie della qualita del codice in linguaggi mainstream (Python, JavaScript): 35-60 USD/ora
+- Comprensione del linguaggio aperta e scrittura: 30-50 USD/ora
+
+## Cosa rende un dominio ben pagato su Mercor
+Tre tratti si combinano:
+1. Scarsita di offerta (pochi valutatori qualificati a livello globale)
+2. Debolezza del modello (i laboratori hanno bisogno di aiuto proprio dove i modelli faticano)
+3. Profondita verificabile (il dominio ha risposte chiaramente giuste o sbagliate, non gusto soggettivo)
+
+## Come accedere a un percorso premium
+Candidati con la competenza piu specifica possibile, purche veritiera. "Ingegnere backend senior con 4 anni sui sistemi di rischio di Stripe" qualifica per il lavoro sulla qualita del codice. "Specialista di protocolli di consenso distribuito che ha letto ogni paper su Raft e Paxos" qualifica per percorsi di nicchia di ingegneria dei sistemi nella fascia premium.
+
+## Domini in evoluzione nel 2026
+I percorsi di matematica e dimostrazione formale sono cresciuti molto nel 2026, mentre i laboratori spingono sulle capacita di ragionamento. I percorsi legali e medici restano stabili. I percorsi generali di valutazione del codice si sono indeboliti man mano che entrano piu valutatori nel pool.
+
+## Come scoprire quali percorsi Mercor sta attivamente reclutando
+Mercor pubblica le aperture dei percorsi sulla sua pagina careers e su LinkedIn. I percorsi indicati con reclutamento attivo sono quelli con il bisogno corrente piu alto; candidarsi su quelli ti fa passare lo screening piu velocemente.`,
+    faqs: [
+      { q: "Quale percorso Mercor paga di piu per gli sviluppatori software nel 2026?", a: "Il lavoro su linguaggi di sistema specialistici (OCaml, Rust, Solidity) e i percorsi di verifica formale pagano di piu per gli sviluppatori software, spesso 100-150 USD/ora, perche l'offerta e ridotta." },
+      { q: "Posso cambiare percorso su Mercor dopo l'accettazione?", a: "Si. Una volta accettato, puoi richiedere ulteriori assegnazioni di percorso. Una qualita dimostrata sul percorso iniziale sblocca inviti a percorsi adiacenti meglio pagati." },
+    ],
+  },
+  "mercor-side-hustle-while-working-full-time": {
+    body: `Per la maggior parte dei valutatori, Mercor e un'attivita secondaria, non una fonte di reddito principale. Fatto bene, aggiunge da 1,000 a 4,000 USD di netto mensile a uno stipendio da ingegnere full-time senza consumarti del tutto i weekend. Fatto male, ti porta al burnout in tre mesi.
+
+## Budget di tempo realistico
+Un side hustle sostenibile su Mercor occupa dalle 6 alle 12 ore a settimana. La maggior parte dei valutatori distribuisce questo carico su due o tre sessioni serali da 90 minuti, piu un blocco nel weekend. Oltre le 15 ore a settimana, accanto a un lavoro principale impegnativo, la qualita cala e con essa la tariffa oraria effettiva.
+
+## Controlla prima il tuo contratto di lavoro
+Prima di accettare qualsiasi task retribuito, leggi la clausola sul secondo lavoro nel tuo contratto attuale. La maggior parte dei contratti tech statunitensi consente lavoro retribuito esterno purche non sia in concorrenza con il datore e non utilizzi il tempo, l'hardware o la proprieta intellettuale del datore. Alcuni contratti richiedono un'approvazione scritta. I contratti UE variano molto per paese e seniority. In caso di dubbio, chiedi per iscritto prima del primo task.
+
+## Resta rigorosamente fuori dall'orario di lavoro
+Non registrare ore su Mercor durante l'orario del lavoro principale, anche se hai tempi morti. Usa un dispositivo diverso o, come minimo, un login diverso. La maggior parte dei problemi legali con il secondo lavoro nasce dal confondere il confine temporale, non dal lavoro in se.
+
+## Scegli percorsi che condividono competenze con il lavoro principale
+I valutatori sono piu efficienti quando l'overhead cognitivo si trasferisce. Un ingegnere backend che fa valutazione di code-review riusa il proprio giudizio quotidiano con pochissimo cambio di contesto. Un ingegnere backend che fa valutazione legale paga un costo di ramp-up notevole.
+
+## Gestione delle energie
+Blocca serate specifiche per il lavoro di valutazione e proteggile. Spezzoni casuali tra una sessione di Netflix e l'altra producono output di bassa qualita e fanno perdere le scadenze che contano per la progressione di tariffa.
+
+## Tasse e contabilita
+Il reddito da side hustle va dichiarato. Negli USA significa Schedule C piu self-employment tax. Nell'UE di solito richiede una registrazione come lavoratore autonomo anche a basso volume. Calcola di conseguenza fin dal primo mese.
+
+## Quando scalare oltre il side hustle
+Una manciata di valutatori finisce per lasciare il lavoro principale per valutare a tempo pieno. I conti tornano a partire da 30 ore settimanali in un percorso a tariffa premium. Prima di lasciare, sostieni almeno 20 ore settimanali per due mesi su Mercor da solo, per verificare che volume e tariffa reggano.`,
+    faqs: [
+      { q: "Il reddito da side hustle su Mercor e legale mentre si lavora full-time?", a: "Si nella maggior parte delle giurisdizioni, fatto salvo il tuo contratto di lavoro. La maggior parte dei contratti tech USA e UE consente lavoro esterno non in concorrenza; alcuni richiedono un preavviso scritto. Leggi la tua clausola e chiedi per iscritto se hai dubbi." },
+      { q: "Quante ore a settimana posso fare realisticamente su Mercor accanto a un lavoro principale?", a: "Dalle sei alle dodici ore a settimana e la fascia sostenibile senza calo di qualita. Oltre le quindici, la qualita del valutatore e la tariffa oraria effettiva di solito calano." },
+    ],
+  },
 };
