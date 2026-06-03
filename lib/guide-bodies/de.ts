@@ -1541,4 +1541,151 @@ Qualitätsbewertungen brechen ein, wenn Sie ermüden. Zwanzig gute Stunden pro W
       },
     ],
   },
+  "mercor-screening-test-prep": {
+    body: `Mercor prüft jeden Bewerber, bevor bezahlte Arbeit freigeschaltet wird. Der Screening-Test ist die einzelne Hürde, an der die meisten Kandidaten scheitern. Eine ordentliche Vorbereitung erhöht die Erfolgsquote deutlich.
+
+## Wie der Test 2026 aussieht
+Das Screening ist eine kurze, zeitlich begrenzte Aufgabe, die auf Ihr angegebenes Fachgebiet zugeschnitten ist. Für Softwareentwickler kombiniert es üblicherweise eine Code-Lese-Aufgabe (zwei Modellausgaben bewerten und begründen, warum eine besser ist), eine schriftliche Bewertungsaufgabe und ein kurzes Live- oder asynchrones Interview.
+
+## Fachspezifisches Format
+- Softwareingenieure: paarweise Vergleiche der Code-Qualität und ein offener Debugging-Durchgang.
+- ML-Ingenieure: Bewertung von Modellausgaben in Bezug auf Schlussfolgerung, Faktentreue und Codegenerierung.
+- Fachexperten (Recht, Finanzen, Medizin, Wissenschaft): Szenariobewertungen anhand von Rubrik-Kriterien, die für das jeweilige Feld spezifisch sind.
+
+## So bereiten Sie sich in einer Woche vor
+1. Verbringen Sie zwei Abende mit der Dokumentation von Mercor. Lesen Sie die öffentlichen Rubriken, die sie für Bewerter veröffentlichen.
+2. Üben Sie paarweise Urteilsbildung an frei zugänglichen öffentlichen Datensätzen (Anthropic HH-RLHF-Beispiele, OpenAI evals, öffentliche Ausgaben aus Model-Leaderboards). Bilden Sie sich zu jedem eine schriftliche Meinung, bevor Sie den Konsens prüfen.
+3. Schreiben Sie Ihre Begründungen so, wie Sie es für bezahlte Arbeit tun würden: mindestens drei Sätze, konkret auf das Artefakt bezogen, kein generisches Lob.
+
+## Was Sie in die offenen Abschnitte schreiben sollten
+Präzision vor Umfang. Prüfer belohnen scharfe, widerlegbare Aussagen, die auf die konkrete Ausgabe bezogen sind. Vage Begründungen ("die zweite Antwort ist umfassender") werden abgewertet. Konkrete Begründungen ("die zweite Antwort identifiziert korrekt den Off-by-one-Fehler in Zeile 14, während die erste ihn übersieht") bestehen.
+
+## Was Sie vermeiden sollten
+Nutzen Sie kein LLM, um die schriftlichen Abschnitte zu entwerfen. Die Prüfer von Mercor achten ausdrücklich auf Muster LLM-generierter Texte und lehnen Kandidaten ab, die sie verwenden. Das Screening prüft Ihr Urteilsvermögen, nicht das eines Modells.
+
+## Erneute Bewerbung nach Ablehnung
+Wenn Sie scheitern, erlaubt Mercor eine erneute Bewerbung nach etwa sechs Monaten. Nutzen Sie die Pause, um technische Inhalte öffentlich zu veröffentlichen (Blogbeiträge, GitHub READMEs), die genau das Urteilsvermögen zeigen, auf das geprüft wurde. Profiltiefe zwischen den Versuchen ist das stärkste Signal für eine erneute Bewerbung.`,
+    faqs: [
+      {
+        q: "Wie lange dauert der Mercor-Screening-Test?",
+        a: "Die meisten fachspezifischen Screening-Tests dauern 45 bis 90 Minuten einschließlich der schriftlichen Abschnitte, mit einem optionalen kurzen Live-Interview für einige Tracks.",
+      },
+      {
+        q: "Kann ich das Mercor-Screening wiederholen, wenn ich durchfalle?",
+        a: "Ja, in der Regel nach einer Wartezeit von sechs Monaten. Nutzen Sie die Zeit, um Ihrem Profil nachweisbare Tiefe hinzuzufügen, und bewerben Sie sich dann erneut.",
+      },
+    ],
+  },
+  "mercor-tax-and-payout-guide-2026": {
+    body: `Mercor zahlt Bewerter in einem wöchentlichen oder zweiwöchentlichen Rhythmus aus, in USD, per internationaler Überweisung. Den Auszahlungsablauf und die steuerliche Einordnung zu verstehen ist wichtig, bevor Sie die erste Aufgabe annehmen.
+
+## Auszahlungszyklus
+Einnahmen werden pro Aufgabe aufgebaut und in einem Auszahlungslauf gebündelt. Die meisten Bewerter sehen die Beträge innerhalb einer Woche nach Abschluss der Aufgabe veranlasst und innerhalb von zwei bis fünf Werktagen danach auf ihrem Konto. Internationale Bewerter müssen mit zusätzlichen Verzögerungen auf Bankebene rechnen.
+
+## Auszahlungsmethoden
+Mercor arbeitet mit internationalen Überweisungsanbietern zusammen. In der Praxis erhalten Bewerter USD auf ein lokales Bankkonto über einen Routing-Partner oder über ein Mehrwährungskonto wie Wise oder Payoneer. Wise ist für Empfänger außerhalb der USA tendenziell am günstigsten, weil der FX-Spread enger ist als bei den meisten Bankkonvertierungen.
+
+## US-Steuerbehandlung
+US-basierte Bewerter sind unabhängige Auftragnehmer. Einnahmen werden auf einem 1099-NEC gemeldet, wenn Sie die IRS-Schwelle überschreiten. Die Selbstständigensteuer (15.3 Prozent) fällt zusätzlich zur Bundes- und Landeseinkommensteuer an. Legen Sie standardmäßig etwa 30 Prozent des Bruttobetrags zurück; verfeinern Sie die tatsächliche Steuerlast mit Ihrem Steuerberater.
+
+## EU-Steuerbehandlung
+Für EU-Bewerter sind Mercor-Einnahmen ausländische Einkünfte aus selbstständiger Tätigkeit. Die meisten Jurisdiktionen verlangen, dass Sie sich als Selbstständiger registrieren (auto-entrepreneur, Freiberufler, partita IVA usw.) und den USD-Bruttoumsatz, umgerechnet zum Datum des Eingangs, deklarieren. Lokale Sozialabgaben und Umsatzsteuerschwellen variieren je nach Land und Tätigkeitseinordnung.
+
+## Hilfreiche Werkzeuge
+Ein Mehrwährungskonto (Wise) für den Empfang, ein einfaches Buchhaltungstool (QuickBooks self-employed, Indy in Frankreich, Holvi in Deutschland) für die monatliche Abstimmung und eine jährliche Sitzung mit einem lokalen Steuerberater decken die meisten Konstellationen ab.
+
+## Was Mercor nicht einbehält
+Mercor behält keine US- oder EU-Steuern für Sie ein. Der volle Betrag landet auf Ihrem Konto; die Steuerpflicht liegt vollständig bei Ihnen. Planen Sie den Cashflow entsprechend: Wenn Sie die volle Auszahlung jeden Monat ausgeben, fehlt Ihnen am Jahresende Geld.`,
+    faqs: [
+      {
+        q: "Wie zahlt Mercor Bewerter außerhalb der USA aus?",
+        a: "Mercor zahlt per internationaler Überweisung in USD. Die meisten Bewerter außerhalb der USA erhalten Auszahlungen auf ein Mehrwährungskonto wie Wise oder Payoneer, um FX-Gebühren zu minimieren.",
+      },
+      {
+        q: "Muss ich selbstständig sein, um in der EU für Mercor zu arbeiten?",
+        a: "Ja, in den meisten EU-Ländern müssen Sie sich als Selbstständiger registrieren, bevor Sie für Bewerter-Arbeit Rechnungen stellen. Lokale Schwellen und Status variieren; klären Sie das mit einem lokalen Steuerberater.",
+      },
+      {
+        q: "Wie viel sollte ich für Steuern auf Mercor-Einnahmen zurücklegen?",
+        a: "Ein sicherer Standardwert sind 30 Prozent des Bruttobetrags für US-Bewerter (kombinierte Bundes-, Landes- und Selbstständigensteuer). Für EU-Bewerter variiert der Satz stark; planen Sie 25 bis 45 Prozent ein, abhängig von Land und Sozialabgaben.",
+      },
+    ],
+  },
+  "best-paid-domains-on-mercor-2026": {
+    body: `Die Sätze bei Mercor variieren stärker nach Fachgebiet als nach Erfahrung. Ein junger Experte in einem knappen Fachgebiet verdient oft mehr als ein erfahrener Generalist. Zu wissen, welche Tracks 2026 die Prämie zahlen, ist der am wenigsten diskutierte Hebel für neue Bewerter.
+
+## Die aktuelle Premium-Stufe
+- Formale Mathematik und Beweisführung (130-200 USD/hour)
+- Spezialisierte Programmiersprachen mit dünner Modellabdeckung (OCaml, Rust-Systemarbeit, Solidity-Formalverifikation): 90-150 USD/hour
+- Bestimmte Rechtsräume und Regulierungsarbeit (US-Wertpapierrecht, GDPR-Spezifika in der EU): 100-180 USD/hour
+- Medizinisches und klinisches Denken (validierte Qualifikationen erforderlich): 100-180 USD/hour
+
+## Die mittlere Stufe
+- Allgemeine LLM-Agent-Trace-Evaluation (Python, Web-Tooling): 60-100 USD/hour
+- Produktions-ML-System-Argumentation (Training, Inferenz, Destillation): 60-110 USD/hour
+- Data Science und Statistik: 50-90 USD/hour
+
+## Die Einstiegsstufe
+- Allgemeine paarweise Code-Qualitätsbewertung in Mainstream-Sprachen (Python, JavaScript): 35-60 USD/hour
+- Offenes Sprachverständnis und Schreiben: 30-50 USD/hour
+
+## Was ein Fachgebiet bei Mercor gut bezahlt macht
+Drei Merkmale verstärken sich gegenseitig:
+1. Angebotsknappheit (weltweit wenige qualifizierte Bewerter)
+2. Modellschwäche (die Labore brauchen genau dort Hilfe, wo Modelle noch Schwierigkeiten haben)
+3. Überprüfbare Tiefe (das Fachgebiet hat klare richtige oder falsche Antworten, keinen subjektiven Geschmack)
+
+## Wie Sie einen Premium-Track bekommen
+Bewerben Sie sich mit der spezifischsten deklarierten Expertise, die noch wahrheitsgemäß ist. "Senior Backend-Ingenieur mit 4 Jahren in Stripe-Risikosystemen" qualifiziert für Code-Qualitätsarbeit. "Spezialist für verteilte Konsensprotokolle, der jedes Raft- und Paxos-Paper gelesen hat" qualifiziert für Nischen-Tracks in der Systemtechnik auf Premium-Niveau.
+
+## Sich 2026 verschiebende Fachgebiete
+Mathematik- und Formalbeweis-Tracks sind 2026 stark gewachsen, da Labore die Reasoning-Fähigkeiten vorantreiben. Rechts- und Medizin-Tracks bleiben stabil. Allgemeine Code-Bewertungs-Tracks sind schwächer geworden, da mehr Bewerter in den Pool eintreten.
+
+## Wie Sie herausfinden, welche Tracks Mercor aktiv rekrutiert
+Mercor veröffentlicht Track-Öffnungen auf seiner Karriereseite und auf LinkedIn. Die Tracks mit aktiver Rekrutierung sind diejenigen mit dem höchsten aktuellen Bedarf; eine Bewerbung dort wird am schnellsten geprüft.`,
+    faqs: [
+      {
+        q: "Welcher Mercor-Track zahlt 2026 für Softwareentwickler am meisten?",
+        a: "Spezialisierte Systemsprachenarbeit (OCaml, Rust, Solidity) und Formalverifikations-Tracks zahlen für Softwareentwickler am höchsten, oft 100-150 USD/hour, weil das Angebot dünn ist.",
+      },
+      {
+        q: "Kann ich nach der Annahme bei Mercor Tracks wechseln?",
+        a: "Ja. Nach der Annahme können Sie zusätzliche Track-Zuweisungen anfordern. Nachgewiesene Qualität in Ihrem Start-Track schaltet Einladungen zu besser bezahlten benachbarten Tracks frei.",
+      },
+    ],
+  },
+  "mercor-side-hustle-while-working-full-time": {
+    body: `Für die meisten Bewerter ist Mercor ein Nebeneinkommen, kein Haupteinkommen. Gut gemacht, ergänzt es ein Vollzeit-Ingenieursgehalt um 1,000 bis 4,000 USD monatlich netto, ohne Ihre Wochenenden vollständig zu verbrauchen. Schlecht gemacht, brennt es Sie in drei Monaten aus.
+
+## Realistisches Zeitbudget
+Eine nachhaltige Nebentätigkeit bei Mercor läuft mit 6 bis 12 Stunden pro Woche. Die meisten Bewerter verteilen das auf zwei bis drei Abendsitzungen à 90 Minuten plus einen Block am Wochenende. Über 15 Stunden pro Woche neben einem fordernden Hauptjob sinkt die Qualität und damit auch der effektive Stundensatz.
+
+## Prüfen Sie zuerst Ihren Arbeitsvertrag
+Bevor Sie eine bezahlte Aufgabe annehmen, lesen Sie die Nebentätigkeitsklausel in Ihrem aktuellen Arbeitsvertrag. Die meisten US-Tech-Verträge erlauben bezahlte Nebentätigkeiten, solange sie nicht in Konkurrenz zum Arbeitgeber stehen und nicht die Zeit, Hardware oder IP des Arbeitgebers nutzen. Manche Verträge verlangen eine schriftliche Genehmigung. EU-Verträge variieren stark nach Land und Senioritätsstufe. Im Zweifel fragen Sie schriftlich nach, bevor Sie die erste Aufgabe annehmen.
+
+## Bleiben Sie strikt außerhalb der Arbeitszeit
+Buchen Sie keine Mercor-Stunden während Ihrer Hauptjob-Arbeitszeit, auch wenn Sie Leerlauf haben. Verwenden Sie ein anderes Gerät oder zumindest einen anderen Login. Die meisten rechtlichen Probleme bei Nebentätigkeiten entstehen durch das Verwischen der Zeitgrenze, nicht durch die Arbeit selbst.
+
+## Wählen Sie Tracks, die Fähigkeiten mit Ihrem Hauptjob teilen
+Bewerter sind am effizientesten, wenn der kognitive Aufwand übertragbar ist. Ein Backend-Ingenieur, der Code-Review-Evaluation macht, nutzt sein Hauptjob-Urteil mit wenig Kontextwechsel. Ein Backend-Ingenieur, der juristische Evaluation macht, zahlt einen hohen Einarbeitungspreis.
+
+## Energiemanagement
+Reservieren Sie bestimmte Abende für Evaluierungsarbeit und schützen Sie sie. Zufällige Schnipsel zwischen Netflix-Sitzungen erzeugen geringwertige Ergebnisse und verfehlen die Fristen, die für die Satzentwicklung wichtig sind.
+
+## Steuern und Buchhaltung
+Nebeneinkünfte müssen gemeldet werden. In den USA ist das Schedule C plus Selbstständigensteuer. In der EU erfordert es in der Regel auch bei geringem Volumen eine Selbstständigen-Registrierung. Planen Sie das ab dem ersten Monat ein.
+
+## Wann der Schritt über die Nebentätigkeit hinaus sinnvoll ist
+Eine Handvoll Bewerter verlässt irgendwann den Hauptjob, um in Vollzeit zu bewerten. Die Rechnung geht ab 30 Wochenstunden in einem Premium-Track auf. Vor dem Kündigen sollten Sie mindestens 20 Stunden pro Woche zwei Monate lang allein bei Mercor durchhalten, um zu validieren, dass Volumen und Satz tragen.`,
+    faqs: [
+      {
+        q: "Ist Mercor-Nebeneinkommen während einer Vollzeitanstellung legal?",
+        a: "Ja in den meisten Rechtsräumen, vorbehaltlich Ihres Arbeitsvertrags. Die meisten US- und EU-Tech-Verträge erlauben nicht konkurrierende Nebentätigkeit; manche verlangen eine schriftliche Anzeige. Lesen Sie Ihre Klausel und fragen Sie im Zweifel schriftlich nach.",
+      },
+      {
+        q: "Wie viele Stunden pro Woche kann ich realistisch bei Mercor neben einem Hauptjob leisten?",
+        a: "Sechs bis zwölf Stunden pro Woche ist der nachhaltige Bereich ohne Qualitätsabfall. Über fünfzehn sinken typischerweise Bewerterqualität und effektiver Stundensatz.",
+      },
+    ],
+  },
 };

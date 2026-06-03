@@ -41,6 +41,10 @@ const MERCOR_SLUGS = new Set([
   'how-much-does-mercor-pay-in-2026',
   'mercor-vs-scale-vs-surge-ai',
   'maximize-earnings-on-mercor-as-a-developer',
+  'mercor-screening-test-prep',
+  'mercor-tax-and-payout-guide-2026',
+  'best-paid-domains-on-mercor-2026',
+  'mercor-side-hustle-while-working-full-time',
 ]);
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { localePath } from '@/lib/i18n';

@@ -637,6 +637,38 @@ export const GUIDE_TRANSLATIONS: Record<string, Partial<Record<Locale, Field>>> 
     it: { title: "Come massimizzare i tuoi guadagni su Mercor come sviluppatore", description: "Leve pratiche per aumentare la tua tariffa oraria e le ore settimanali su Mercor dopo il primo mese." },
     pl: { title: "Jak zmaksymalizować zarobki w Mercor jako deweloper", description: "Praktyczne dźwignie, które podniosą twoją stawkę godzinową i liczbę godzin tygodniowo w Mercor po pierwszym miesiącu." },
   },
+  'mercor-screening-test-prep': {
+    fr: { title: "Comment se préparer au test de sélection Mercor", description: "Le format du test de sélection Mercor en 2026 et comment l'aborder bien préparé." },
+    es: { title: "Cómo prepararse para el test de selección de Mercor", description: "El formato del test de selección de Mercor en 2026 y cómo llegar listo el día de la prueba." },
+    de: { title: "So bereiten Sie sich auf den Mercor-Auswahltest vor", description: "Das Format des Mercor-Auswahltests im Jahr 2026 und wie Sie bestens vorbereitet antreten." },
+    pt: { title: "Como se preparar para o teste de seleção da Mercor", description: "O formato do teste de seleção da Mercor em 2026 e como chegar pronto no dia da prova." },
+    it: { title: "Come prepararsi al test di selezione Mercor", description: "Il formato del test di selezione Mercor nel 2026 e come arrivare pronti il giorno della prova." },
+    pl: { title: "Jak przygotować się do testu kwalifikacyjnego Mercor", description: "Format testu kwalifikacyjnego Mercor w 2026 roku i jak podejść do niego w pełni przygotowanym." },
+  },
+  'mercor-tax-and-payout-guide-2026': {
+    fr: { title: "Guide des paiements et impôts Mercor pour 2026", description: "Comment Mercor vous paie, les méthodes de paiement acceptées et ce que vous devez en impôts en tant qu'évaluateur aux États-Unis ou dans l'UE." },
+    es: { title: "Guía de pagos e impuestos de Mercor para 2026", description: "Cómo te paga Mercor, los métodos de pago disponibles y qué debes pagar en impuestos como evaluador en EE. UU. o la UE." },
+    de: { title: "Mercor Auszahlungen und Steuern: Leitfaden für 2026", description: "Wie Mercor Sie bezahlt, welche Zahlungsmethoden unterstützt werden und welche Steuern Sie als Evaluator in den USA oder der EU schulden." },
+    pt: { title: "Guia de pagamentos e impostos da Mercor para 2026", description: "Como a Mercor paga você, os métodos de pagamento suportados e o que você deve em impostos como avaliador nos EUA ou na UE." },
+    it: { title: "Guida ai pagamenti e alle tasse Mercor per il 2026", description: "Come Mercor ti paga, i metodi di pagamento supportati e cosa devi in tasse come valutatore negli Stati Uniti o nell'UE." },
+    pl: { title: "Przewodnik po wypłatach i podatkach Mercor na 2026 rok", description: "Jak Mercor wypłaca wynagrodzenie, jakie metody płatności są obsługiwane i jakie podatki płacisz jako ewaluator w USA lub UE." },
+  },
+  'best-paid-domains-on-mercor-2026': {
+    fr: { title: "Les domaines les mieux payés sur Mercor en 2026", description: "Quelles filières d'évaluation paient les tarifs les plus élevés sur Mercor actuellement et ce qui rend un domaine assez rare pour justifier une prime." },
+    es: { title: "Los dominios mejor pagados en Mercor en 2026", description: "Qué tracks de evaluación pagan las tarifas más altas en Mercor ahora mismo y qué hace que un dominio sea lo bastante escaso para cobrar un plus." },
+    de: { title: "Die bestbezahlten Fachgebiete auf Mercor im Jahr 2026", description: "Welche Evaluator-Tracks aktuell die höchsten Tarife auf Mercor zahlen und was ein Fachgebiet so knapp macht, dass es einen Aufschlag rechtfertigt." },
+    pt: { title: "Os domínios mais bem pagos na Mercor em 2026", description: "Quais trilhas de avaliação pagam as maiores tarifas na Mercor atualmente e o que torna um domínio escasso o suficiente para garantir um prêmio." },
+    it: { title: "I domini meglio pagati su Mercor nel 2026", description: "Quali percorsi di valutazione pagano le tariffe più alte su Mercor in questo momento e cosa rende un dominio abbastanza raro da giustificare un sovrapprezzo." },
+    pl: { title: "Najlepiej płatne dziedziny w Mercor w 2026 roku", description: "Które ścieżki ewaluacji oferują obecnie najwyższe stawki w Mercor i co sprawia, że dana dziedzina jest na tyle deficytowa, by uzyskać premię." },
+  },
+  'mercor-side-hustle-while-working-full-time': {
+    fr: { title: "Faire de Mercor une activité secondaire en gardant son emploi à temps plein", description: "Comment intégrer le travail d'évaluation Mercor à un emploi à temps plein : heures, contrats, gestion de l'énergie et aspects juridiques." },
+    es: { title: "Mercor como ingreso extra mientras trabajas a tiempo completo", description: "Cómo encajar el trabajo de evaluación en Mercor con un empleo a tiempo completo: horas, contratos, gestión de la energía y el ángulo legal." },
+    de: { title: "Mercor als Nebenjob neben einer Vollzeitstelle betreiben", description: "Wie Sie Mercor-Evaluierungsarbeit neben einem Vollzeitjob unterbringen: Stunden, Verträge, Energiemanagement und die rechtliche Seite." },
+    pt: { title: "Como fazer da Mercor uma renda extra mantendo o emprego em tempo integral", description: "Como encaixar o trabalho de avaliação na Mercor em um emprego em tempo integral: horas, contratos, gestão de energia e a parte legal." },
+    it: { title: "Mercor come secondo lavoro mentre lavori a tempo pieno", description: "Come incastrare il lavoro di valutazione Mercor con un impiego a tempo pieno: ore, contratti, gestione dell'energia e aspetti legali." },
+    pl: { title: "Mercor jako dodatkowe źródło dochodu obok pracy na pełen etat", description: "Jak pogodzić pracę ewaluatora Mercor z etatem: godziny, umowy, zarządzanie energią i kwestie prawne." },
+  },
 };
 
 export function tGuide(slug: string, locale: Locale, field: 'title' | 'description', fallback: string): string {

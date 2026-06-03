@@ -2000,6 +2000,169 @@ Quality scores tank when you fatigue. Twenty good hours per week beat thirty med
       },
     ],
   },
+  {
+    slug: 'mercor-screening-test-prep',
+    title: 'How to prepare for the Mercor screening test',
+    description: 'The format of the Mercor screening test in 2026 and how to walk in ready.',
+    category: 'freelance',
+    body: `Mercor screens every applicant before unlocking paid work. The screening test is the single barrier most candidates fail. Preparing properly increases the acceptance rate sharply.
+
+## What the test looks like in 2026
+The screening is a short timed exercise tailored to your declared domain. For software developers it usually combines a code-reading task (rate two model outputs and justify why one is better), a written-judgment prompt, and a short live or async interview.
+
+## Domain-specific format
+- Software engineers: pairwise code-quality comparisons and one open-ended debugging walkthrough.
+- ML engineers: model-output evaluation across reasoning, factuality, and code generation.
+- Domain experts (law, finance, medicine, science): scenario evaluations on rubric criteria specific to the field.
+
+## How to prepare in a week
+1. Spend two evenings on Mercor's documentation. Read the public rubrics they publish for evaluators.
+2. Practise pairwise judgment on free public datasets (Anthropic HH-RLHF samples, OpenAI evals, public model leaderboard outputs). Form a written opinion on each before checking the consensus.
+3. Write your justifications as you would for paid work: three sentences minimum, specific to the artefact, no generic praise.
+
+## What to write in the open-ended sections
+Specificity over volume. Reviewers reward sharp, falsifiable claims tied to the specific output. Vague reasoning ("the second response is more comprehensive") is downrated. Concrete reasoning ("the second response correctly identifies the off-by-one error on line 14, while the first misses it") passes.
+
+## What to avoid
+Do not use an LLM to draft the written sections. Mercor's screeners explicitly check for LLM-generated text patterns and reject candidates who use them. The screen is for your judgment, not a model's.
+
+## Re-applying after rejection
+If you fail, Mercor allows reapplication after roughly six months. Use the gap to publish technical writing publicly (blog posts, GitHub READMEs) that demonstrates the judgment they screened for. Profile depth between attempts is the strongest re-application signal.`,
+    faqs: [
+      {
+        q: 'How long is the Mercor screening test?',
+        a: 'Most domain-screening tests run 45 to 90 minutes including the written sections, with an optional short live interview for some tracks.',
+      },
+      {
+        q: 'Can I retake the Mercor screening if I fail?',
+        a: 'Yes, generally after a six-month waiting period. Use the time to add demonstrable depth to your profile, then reapply.',
+      },
+    ],
+  },
+  {
+    slug: 'mercor-tax-and-payout-guide-2026',
+    title: 'Mercor payouts and taxes guide for 2026',
+    description: 'How Mercor pays you, supported payment methods, and what you owe in tax as a US or EU evaluator.',
+    category: 'freelance',
+    body: `Mercor pays evaluators on a weekly or bi-weekly cycle, in USD, via international transfer. Understanding the payout flow and the tax classification matters before you accept the first task.
+
+## Payout cycle
+Earnings accrue per task and are batched into a payout run. Most evaluators see funds initiated within a week of task completion, arriving in their account within two to five business days after that. International evaluators may see additional bank-level delays.
+
+## Payout methods
+Mercor partners with international transfer providers. In practice, evaluators receive USD into a local bank account using a routing partner, or via a multi-currency account such as Wise or Payoneer. Wise tends to land cheapest for non-US recipients because the FX spread is tighter than most bank conversions.
+
+## US tax treatment
+US-based evaluators are independent contractors. Earnings are reported on a 1099-NEC if you cross the IRS threshold. Self-employment tax (15.3 percent) applies in addition to federal and state income tax. Set aside roughly 30 percent of gross by default; refine to actual liability with your accountant.
+
+## EU tax treatment
+For EU evaluators, Mercor income is foreign-source self-employment income. Most jurisdictions require you to register as self-employed (auto-entrepreneur, freiberufler, partita IVA, etc.) and declare gross USD revenue converted at the date of receipt. Local social charges and VAT thresholds vary by country and by activity classification.
+
+## Tools that help
+A multi-currency account (Wise) for receipt, a basic accounting tool (QuickBooks self-employed, Indy in France, Holvi in Germany) for monthly reconciliation, and an annual session with a local accountant covers most setups.
+
+## What Mercor does not withhold
+Mercor does not withhold US or EU taxes on your behalf. The full payment lands in your account; the tax obligation sits entirely with you. Plan cash flow accordingly: spending the full payout each month leaves you short at year end.`,
+    faqs: [
+      {
+        q: 'How does Mercor pay non-US evaluators?',
+        a: 'Mercor pays via international transfer in USD. Most non-US evaluators receive payouts into a multi-currency account such as Wise or Payoneer to minimise FX fees.',
+      },
+      {
+        q: 'Do I need to be self-employed to work on Mercor in the EU?',
+        a: 'Yes, in most EU countries you must register as self-employed before invoicing for evaluator work. Local thresholds and statuses vary; check with a local accountant.',
+      },
+      {
+        q: 'How much should I set aside for tax on Mercor income?',
+        a: 'A safe default is 30 percent of gross for US evaluators (combined federal, state and self-employment tax). For EU evaluators the rate varies widely; budget 25 to 45 percent depending on country and social charges.',
+      },
+    ],
+  },
+  {
+    slug: 'best-paid-domains-on-mercor-2026',
+    title: 'The best-paid domains on Mercor in 2026',
+    description: 'Which evaluator tracks pay the highest rates on Mercor right now and what makes a domain scarce enough to command a premium.',
+    category: 'freelance',
+    body: `Rates on Mercor vary by domain more than by experience. A junior expert in a scarce domain often out-earns a senior generalist. Knowing which tracks pay the premium in 2026 is the most under-discussed lever for new evaluators.
+
+## The current premium tier
+- Formal mathematics and theorem-proving (130-200 USD/hour)
+- Specialised programming languages with thin model coverage (OCaml, Rust systems work, Solidity formal verification): 90-150 USD/hour
+- Specific legal jurisdictions and regulatory work (US securities law, EU GDPR specifics): 100-180 USD/hour
+- Medical and clinical reasoning (validated credentials required): 100-180 USD/hour
+
+## The mid tier
+- General LLM-agent trace evaluation (Python, web tooling): 60-100 USD/hour
+- Production ML systems reasoning (training, inference, distillation): 60-110 USD/hour
+- Data science and statistics: 50-90 USD/hour
+
+## The entry tier
+- General code-quality pairwise evaluation in mainstream languages (Python, JavaScript): 35-60 USD/hour
+- Open-ended language comprehension and writing: 30-50 USD/hour
+
+## What makes a domain pay well on Mercor
+Three traits compound:
+1. Supply scarcity (few qualified evaluators globally)
+2. Model weakness (the labs need help precisely where models still struggle)
+3. Verifiable depth (the domain has clear right or wrong answers, not subjective taste)
+
+## How to land a premium track
+Apply with the most specific declared expertise that is still truthful. "Senior backend engineer with 4 years on Stripe risk systems" qualifies for code-quality work. "Specialist in distributed consensus protocols who has read every Raft and Paxos paper" qualifies for niche systems-engineering tracks at the premium tier.
+
+## Domains shifting in 2026
+Mathematics and formal proof tracks have grown sharply in 2026 as labs push reasoning capabilities. Legal and medical tracks remain steady. General code-evaluation tracks have softened as more evaluators enter the pool.
+
+## How to find out which tracks Mercor is actively recruiting
+Mercor publishes track openings on its careers page and on LinkedIn. The tracks listed with active recruitment are the ones with the highest current need; applying into those gets you screened fastest.`,
+    faqs: [
+      {
+        q: 'Which Mercor track pays the most for software developers in 2026?',
+        a: 'Specialised systems-language work (OCaml, Rust, Solidity) and formal-verification tracks pay the highest for software developers, often 100-150 USD/hour, because supply is thin.',
+      },
+      {
+        q: 'Can I switch tracks on Mercor after acceptance?',
+        a: 'Yes. Once accepted, you can request additional track assignments. Demonstrated quality on your starting track unlocks invitations to higher-paying adjacent tracks.',
+      },
+    ],
+  },
+  {
+    slug: 'mercor-side-hustle-while-working-full-time',
+    title: 'Running Mercor as a side hustle while working full-time',
+    description: 'How to fit Mercor evaluation work around a full-time job: hours, contracts, energy management, and the legal angle.',
+    category: 'freelance',
+    body: `For most evaluators, Mercor is a side hustle, not a primary income. Done well, it adds 1,000 to 4,000 USD of monthly net to a full-time engineering salary without consuming your weekends entirely. Done poorly, it burns you out in three months.
+
+## Realistic time budget
+A sustainable side hustle on Mercor runs 6 to 12 hours per week. Most evaluators spread this across two to three evening sessions of 90 minutes each, plus one weekend block. Above 15 hours per week alongside a demanding day job, quality drops and so does effective hourly rate.
+
+## Check your employment contract first
+Before accepting any paid task, read the moonlighting clause in your current employment contract. Most US tech contracts allow outside paid work as long as it does not compete with the employer and does not use the employer's time, hardware, or IP. Some contracts require written approval. EU contracts vary heavily by country and seniority. If in doubt, ask in writing before the first task.
+
+## Stay strictly outside work time
+Do not log Mercor hours during your day-job working hours, even if you have downtime. Use a different device or at minimum a different login. Most legal issues with moonlighting come from blurring the time boundary, not from the work itself.
+
+## Pick tracks that share skills with your day job
+Evaluators are most efficient when the cognitive overhead transfers. A backend engineer doing code-review evaluation reuses their day-job judgment with little context switch. A backend engineer doing legal evaluation pays a steep ramp-up cost.
+
+## Energy management
+Block specific evenings for evaluation work and protect them. Random snippets between Netflix sessions produce low-quality output and miss the deadlines that matter for rate progression.
+
+## Tax and accounting
+Side-hustle income must be reported. In the US that is Schedule C plus self-employment tax. In the EU it usually requires a self-employed registration even at low volume. Budget accordingly from month one.
+
+## When to scale beyond side hustle
+A handful of evaluators eventually leave their day job to evaluate full-time. The math works at 30-plus weekly hours in a premium-rate track. Before quitting, sustain at least 20 hours weekly for two months on Mercor alone to validate that volume and rate hold up.`,
+    faqs: [
+      {
+        q: 'Is Mercor side-hustle income legal while employed full-time?',
+        a: 'Yes in most jurisdictions, subject to your employment contract. Most US and EU tech contracts allow non-competing outside work; some require written notice. Read your clause and ask in writing if unsure.',
+      },
+      {
+        q: 'How many hours per week can I realistically do on Mercor alongside a day job?',
+        a: 'Six to twelve hours per week is the sustainable range without quality drop. Above fifteen, evaluator quality and effective hourly rate typically decline.',
+      },
+    ],
+  },
 );
 
 export const GUIDE_MAP: Record<string, GuideEntry> = Object.fromEntries(
