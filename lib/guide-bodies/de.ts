@@ -1397,4 +1397,148 @@ Newsletter belohnen Autoren, die direkte Beziehungen und einen wöchentlichen Rh
       },
     ],
   },
+  "how-to-get-accepted-on-mercor": {
+    body: `Mercor bezahlt geprüfte Experten dafür, die Ausgaben von Frontier-KI-Modellen zu bewerten. Die Arbeit ist asynchron, remote, wird in USD bezahlt, und die Stundensätze schlagen fast jeden anderen Remote-Job, sofern Ihr Fachgebiet gefragt ist. Der Haken: Mercor prüft streng. Die meisten Bewerber bestehen nicht.
+
+## Was Mercor-Evaluatoren tatsächlich tun
+Sie lesen einen Prompt, betrachten die Modellausgabe und bewerten sie nach Rubriken, die auf die jeweilige Aufgabe zugeschnitten sind (Korrektheit, Treue zur Quelle, Sicherheit, Codequalität, logisches Denken). Für Entwickler besteht der Großteil der Arbeit aus Code-Bewertungsaufgaben: Paaren von Modellantworten, bei denen Sie beurteilen, welche besser ist und warum, oft mit einer schriftlichen Begründung.
+
+## Wonach Mercor prüft
+Drei Dinge tauchen in den meisten Annahmegesprächen auf:
+1. Nachweisbare Tiefe in mindestens einem technischen oder fachlichen Bereich (Engineering, ML, Biologie, Recht, Finanzen usw.).
+2. Schriftliches Urteilsvermögen unter Unklarheit (die Bewerbung enthält kurze schriftliche Aufgaben).
+3. Verlässlichkeitssignale (LinkedIn- oder GitHub-Profil, das bestätigt, was Sie angeben).
+
+## Wie Sie Ihr Profil positionieren
+Listen Sie konkrete Punkte statt Allgemeinplätze auf. Ein Profil, das lautet "Senior Python-Entwickler mit 6 Jahren bei Stripe im Aufbau von Risikosystemen", konvertiert besser als "Softwareingenieur mit breiter Erfahrung". Für technische Prüfer wiegt eine GitHub-Historie mit substanziellen Commits mehr als Abschlüsse.
+
+## Der Auswahlprozess
+Sie bewerben sich, absolvieren einen kurzen schriftlichen oder Coding-Test, und wenn Sie bestehen, werden Sie zu einer bezahlten Probeaufgabe eingeladen. Ihre ersten Aufgaben legen Ihre Zuverlässigkeitsbewertung fest; konstante Qualität schaltet mehr Arbeit und höhere Sätze frei.
+
+## Typischer Zeitrahmen
+Der gesamte Weg von der Bewerbung bis zur ersten bezahlten Aufgabe dauert üblicherweise zwei bis vier Wochen. Profile mit seltenen Fachgebieten (juristische Expertise, fortgeschrittene Mathematik, Nischen-Programmiersprachen) werden schneller geprüft.
+
+## Was schnell disqualifiziert
+Generische, KI-unterstützte Bewerbungstexte sind der schnellste Disqualifikationsgrund. Mercor prüft auf menschliches Urteilsvermögen; das Einreichen von LLM-überarbeiteten Antworten signalisiert genau das Gegenteil.`,
+    faqs: [
+      {
+        q: "Steht Mercor Bewerbern weltweit offen?",
+        a: "Ja. Mercor rekrutiert weltweit. Auszahlungen erfolgen in USD über gängige internationale Überweisungsmethoden.",
+      },
+      {
+        q: "Wie lange dauert es bis zur ersten bezahlten Aufgabe bei Mercor?",
+        a: "Die meisten angenommenen Experten erhalten ihre erste bezahlte Aufgabe innerhalb von ein bis zwei Wochen nach Abschluss der Auswahl. Profile mit seltenen Fachgebieten können schneller bedient werden.",
+      },
+      {
+        q: "Brauche ich einen Doktortitel, um mich bei Mercor zu bewerben?",
+        a: "Nein. Mercor rekrutiert in vielen Fachgebieten, einschließlich Softwareentwicklung. Nachweisbare praktische Expertise zählt für die meisten Tracks mehr als Abschlüsse.",
+      },
+    ],
+  },
+  "how-much-does-mercor-pay-in-2026": {
+    body: `Mercor bezahlt pro Stunde Bewertungsarbeit. Die veröffentlichte Spanne liegt bei 30 bis 100 USD/Stunde, aber die tatsächlichen Einnahmen hängen von Ihrem Fachgebiet, Ihrer Qualitätsbewertung und davon ab, wie viel Arbeit Sie aufrechterhalten können.
+
+## Die realistische Einstiegsspanne
+Neue Evaluatoren in Softwareentwicklung und allgemeinen technischen Tracks beginnen üblicherweise bei 30 bis 45 USD pro Stunde. Tracks mit seltenen Fachgebieten (fortgeschrittene Mathematik, Biologie, Recht) starten höher, oft bei 50 bis 80 USD.
+
+## Was den Satz nach oben treibt
+Drei Treiber wirken zusammen:
+1. Beständige Qualität. Mercor gewichtet die Übereinstimmung zwischen Prüfern und die Tiefe Ihrer schriftlichen Begründungen. Hohe Übereinstimmung plus gründliche Erklärungen treiben den Satz mit der Zeit nach oben.
+2. Aufgabenkomplexität. Längere, nuanciertere Bewertungen (mehrstufige Agenten-Traces, Code-Argumentationsketten) zahlen mehr pro Stunde als kurze paarweise Vergleiche.
+3. Spezialisierung. Sobald Sie in einer stark nachgefragten Nische markiert sind (LLM-Agentenbewertung, formale Beweise, juristisches Denken), springt der Satz, weil das Angebot dünner ist.
+
+## Volumen
+Das Volumen ist stoßweise. Manche Wochen bringen viele Aufgabenpakete; andere sind ruhig. Rechnen Sie mit 5 bis 20 Stunden pro Woche als realistische, nachhaltige Spanne neben einem Hauptjob. Wenige Experten in seltenen Fachgebieten kommen auf 30+ Stunden.
+
+## Hochgerechnet
+Konstante 10 Stunden/Woche zu 50 USD/Stunde ergeben rund 26.000 USD pro Jahr an Nebeneinkommen. Bei 60 USD/Stunde für 20 Stunden/Woche erreichen Sie etwa 60.000 USD pro Jahr, was in manchen Märkten mit einem Vollzeit-Engineering-Job mithalten kann.
+
+## Wann Mercor sich nicht lohnt
+Wenn Ihr Hauptjob mehr als 100 USD pro Stunde all-in bezahlt (Top-Vergütung im US-Engineering), lohnen sich Mercor-Nebeneinkünfte Ihre Abendstunden vermutlich nicht. Die Rechnung geht am besten auf für mittelpreisige Ingenieure, Auftragnehmer zwischen Engagements oder Experten in seltenen Fachgebieten.
+
+## Auszahlungsgeschwindigkeit
+Die Standard-Auszahlungszyklen sind wöchentlich bis zweiwöchentlich. Internationale Überweisungen über den Zahlungspartner der Plattform; Ankunftszeiten variieren je nach Land, typischerweise zwei bis fünf Werktage.`,
+    faqs: [
+      {
+        q: "Wie hoch ist der durchschnittliche Mercor-Stundensatz für Entwickler im Jahr 2026?",
+        a: "Die meisten angenommenen Softwareentwickler verdienen nach dem ersten Monat 35 bis 60 USD pro Stunde, wobei erfahrene oder spezialisierte Profile bei Premium-Aufgaben 80 USD oder mehr erreichen.",
+      },
+      {
+        q: "Kann Mercor ein Vollzeitgehalt ersetzen?",
+        a: "Für mittelpreisige Ingenieure in günstigeren Märkten können dauerhafte 25 bis 30 Stunden pro Woche zu 50 bis 70 USD pro Stunde ein lokales Vollzeitgehalt erreichen oder übertreffen. Die meisten Evaluatoren behandeln es als Ergänzung, nicht als Ersatz.",
+      },
+    ],
+  },
+  "mercor-vs-scale-vs-surge-ai": {
+    body: `Drei Plattformen dominieren 2026 die bezahlte KI-Bewertung: Mercor, Scale AI (über die Marken Outlier und Remotasks) und Surge AI. Sie überschneiden sich beim Kundenstamm, unterscheiden sich aber bei Satz, Aufgabentyp, Prüfschwelle und Verlässlichkeit des Arbeitsangebots.
+
+## Mercor
+Geprüft, expertengetrieben, wöchentliche Sätze oft 30 bis 100 USD/Stunde für Software- und technische Tracks. Bewerbungshürde ist hoch; nach der Annahme ist die Arbeit tendenziell tiefer und länger angelegt. Beste Passung für erfahrene Entwickler und Fachexperten, die Satz über Volumen stellen.
+
+## Scale AI (Outlier/Remotasks)
+Breiter, volumenorientierter. Sätze sind im Durchschnitt niedriger (15 bis 40 USD/Stunde für die meisten Tracks, Premium-Domänen höher). Niedrigere Einstiegshürde macht es schnell zugänglich. Beste Passung, wenn Sie sofortiges Volumen und stetige Wochenstunden möchten und sich weniger um den Satz scheren.
+
+## Surge AI
+Positioniert sich als qualitätsorientierte Plattform für hochwertige Annotation und Bewertung. Sätze grob vergleichbar mit Mercor für ähnliche Qualifikationsstufen. Kleinerer Pool an Arbeit, aber für angenommene Experten beständig.
+
+## Direkter Vergleich
+
+| Faktor               | Mercor             | Scale AI            | Surge AI         |
+|----------------------|--------------------|---------------------|------------------|
+| Typischer Satz (Dev) | 35-80 USD/h        | 18-40 USD/h         | 35-70 USD/h      |
+| Annahmehürde         | Hoch               | Niedrig bis mittel  | Mittel bis hoch  |
+| Volumen-Verlässlichkeit | Stoßweise       | Stetig              | Stoßweise        |
+| Aufgabentiefe        | Langform, nuanciert | Kurz, repetitiv    | Gemischt         |
+| Zeit bis erste Aufgabe | 2-4 Wochen       | 1-7 Tage            | 2-3 Wochen       |
+
+## Wie entscheiden
+Wenn Ihre stündlichen Opportunitätskosten hoch sind und Sie stoßweises Volumen verkraften können: Mercor. Wenn Sie schnelles Onboarding und stetige Wochenstunden zu niedrigerem Satz möchten: Scale AI/Outlier. Wenn Sie eine Nischenspezialisierung haben (formale Verifikation, fortgeschrittene Mathematik, bestimmte Sprachen), bewerben Sie sich auf allen drei und lassen Sie die bestbezahlten Angebote Ihre Zeit gewinnen.
+
+## Stapeln
+Viele Experten fahren zwei Plattformen parallel. Mercor + Scale füllt Volumenlücken; Mercor + Surge streut das Plattformrisiko. Vermeiden Sie es, Exklusivitätsklauseln zu unterschreiben, falls angeboten.`,
+    faqs: [
+      {
+        q: "Welche Plattform bezahlt KI-Evaluatoren 2026 am besten?",
+        a: "Pro Stunde liegen Mercor und Surge AI bei Experten- und Entwickler-Tracks tendenziell vorne mit 35-80 USD/Stunde. Scale AI/Outlier bezahlt im Schnitt weniger, bietet aber dauerhafteres Volumen.",
+      },
+      {
+        q: "Kann ich gleichzeitig bei Mercor und Scale AI arbeiten?",
+        a: "Ja, es sei denn, eine der beiden Plattformen verlangt Exklusivität für ein bestimmtes Projekt. Die meisten Evaluatoren stapeln Plattformen, um Einkommensschwankungen zu glätten.",
+      },
+    ],
+  },
+  "maximize-earnings-on-mercor-as-a-developer": {
+    body: `Sobald Sie bei Mercor angenommen sind, hängen Ihre effektiven Stundeneinnahmen weniger von Ihrem ersten Angebot ab als von den Entscheidungen, die Sie in den ersten drei Monaten treffen. Derselbe Evaluator kann bei gleichem nominalem Satz das Doppelte eines anderen verdienen.
+
+## Hebel 1: die richtigen Tracks wählen
+Mercor segmentiert die Arbeit in Tracks (allgemeines Code-Review, Agenten-Trace-Bewertung, formales Denken, multimodal usw.). Einige bezahlen deutlich mehr pro Stunde. Melden Sie sich freiwillig für die Tracks, die zu Ihrer stärksten Tiefe passen, und bitten Sie dann darum, im technischsten oder spezialisiertesten Paket innerhalb dieser Tracks eingesetzt zu werden. Der Aufschlag für Spezialisierung wirkt kumulativ.
+
+## Hebel 2: schriftliche Begründungen vertiefen
+Evaluatoren, die detaillierte, spezifische Begründungen schreiben, werden zu höher bezahlten Paketen erneut eingeladen. Drei Sätze substanzieller Argumentation schlagen ein Ein-Wort-Urteil sowohl bei der Qualitätsbewertung als auch bei künftigen Aufgabenangeboten. Das ist der größte beeinflussbare Hebel.
+
+## Hebel 3: Übereinstimmung mit anderen Prüfern halten
+Mercor vergleicht Ihre Bewertungen mit einem Kalibrierungsset und anderen Experten. Beständige Übereinstimmung über der Plattformschwelle hebt Ihren Satz; ein Abrutschen darunter deckelt ihn. Lesen Sie die Rubrik vor jedem Paket, überfliegen Sie sie nicht.
+
+## Hebel 4: schnell auf Einladungen zu neuen Paketen reagieren
+Pakete schließen, sobald sie gefüllt sind. Evaluatoren, die Einladungen innerhalb von Minuten annehmen, schnappen sich die premium-bezahlten Aufgaben vor anderen. Aktivieren Sie Benachrichtigungen und nehmen Sie das Einladungsfenster ernst.
+
+## Hebel 5: ein Spezialprofil aufbauen
+Wenn Sie sich glaubwürdig als "der LLM-Agenten-Evaluator" oder "der Python-Typsystem-Spezialist" etikettieren können, werden Sie zur ersten Wahl für diese Nische. Spezialprofile erhalten einladungsgebundene Pakete am oberen Ende der Spanne.
+
+## Hebel 6: Stunden strategisch stapeln
+Mercors Stundensatz ändert sich nicht mit dem Volumen an sich, aber Burst-Wochen (wenn Pakete erscheinen) sind die Zeit, in der Premium-Arbeit fließt. Planen Sie Verfügbarkeit für diese Fenster, selbst wenn Sie an anderer Stelle Stunden kürzen.
+
+## Hebel 7: kein Burnout
+Qualitätsbewertungen brechen ein, wenn Sie ermüden. Zwanzig gute Stunden pro Woche schlagen dreißig mittelmäßige. Begrenzen Sie Ihre Wochenstunden und schützen Sie Ihr Urteilsvermögen.`,
+    faqs: [
+      {
+        q: "Wie lange dauert es, bis mein Mercor-Satz steigt?",
+        a: "Satzanpassungen erfolgen üblicherweise nach 4 bis 8 Wochen beständig hochwertiger Arbeit, schneller, wenn Sie sich in einer stark nachgefragten Nische spezialisieren, die die Plattform aktiv besetzt.",
+      },
+      {
+        q: "Kann ich bei Mercor einen höheren Satz verhandeln?",
+        a: "Direkt nein. Der Satz wird durch Track, Spezialisierung und Qualitätssignale bestimmt. Der schnellste Weg zu einem höheren effektiven Satz besteht darin, sich über Tiefe der Begründung und Spezialisierung für höher bezahlte Tracks zu qualifizieren.",
+      },
+    ],
+  },
 };

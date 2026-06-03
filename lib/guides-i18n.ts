@@ -605,6 +605,38 @@ export const GUIDE_TRANSLATIONS: Record<string, Partial<Record<Locale, Field>>> 
     it: { title: "Newsletter o blog: chi guadagna di più nel 2026", description: "Un confronto diretto tra l'economia di una newsletter e di un blog per autori tecnici." },
     pl: { title: "Newsletter czy blog: co zarabia więcej w 2026 roku", description: "Bezpośrednie porównanie ekonomii newslettera i bloga dla autorów technicznych." },
   },
+  'how-to-get-accepted-on-mercor': {
+    fr: { title: "Comment être accepté sur Mercor en tant qu'évaluateur AI", description: "Ce que Mercor évalue réellement et comment positionner votre profil pour passer la barre en 2026." },
+    es: { title: "Cómo ser aceptado en Mercor como evaluador de AI", description: "Lo que Mercor realmente evalúa y cómo posicionar tu perfil para superar el filtro en 2026." },
+    de: { title: "Wie man als AI-Evaluator bei Mercor angenommen wird", description: "Worauf Mercor wirklich prüft und wie Sie Ihr Profil positionieren, um die Hürde 2026 zu nehmen." },
+    pt: { title: "Como ser aceito na Mercor como avaliador de AI", description: "O que a Mercor realmente avalia e como posicionar seu perfil para passar no filtro em 2026." },
+    it: { title: "Come essere accettati su Mercor come valutatore AI", description: "Cosa valuta davvero Mercor e come posizionare il tuo profilo per superare la selezione nel 2026." },
+    pl: { title: "Jak zostać przyjętym do Mercor jako ewaluator AI", description: "Czego naprawdę szuka Mercor i jak ustawić swój profil, aby przejść selekcję w 2026 roku." },
+  },
+  'how-much-does-mercor-pay-in-2026': {
+    fr: { title: "Combien Mercor paie réellement les évaluateurs AI en 2026", description: "Tarifs horaires réalistes sur Mercor pour développeurs et experts de domaine, ce qui détermine la fourchette et comment le tarif évolue dans le temps." },
+    es: { title: "Cuánto paga realmente Mercor a los evaluadores de AI en 2026", description: "Tarifas por hora realistas en Mercor para desarrolladores y expertos de dominio, qué impulsa el rango y cómo sube la tarifa con el tiempo." },
+    de: { title: "Wie viel zahlt Mercor AI-Evaluatoren wirklich im Jahr 2026", description: "Realistische Stundensätze bei Mercor für Entwickler und Fachexperten, was die Spanne bestimmt und wie der Satz mit der Zeit steigt." },
+    pt: { title: "Quanto a Mercor realmente paga aos avaliadores de AI em 2026", description: "Tarifas por hora realistas na Mercor para desenvolvedores e especialistas de domínio, o que define a faixa e como a tarifa sobe ao longo do tempo." },
+    it: { title: "Quanto paga davvero Mercor ai valutatori AI nel 2026", description: "Tariffe orarie realistiche su Mercor per sviluppatori ed esperti di dominio, cosa determina la fascia e come la tariffa cresce nel tempo." },
+    pl: { title: "Ile naprawdę płaci Mercor ewaluatorom AI w 2026 roku", description: "Realistyczne stawki godzinowe w Mercor dla deweloperów i ekspertów dziedzinowych, co decyduje o przedziale i jak stawka rośnie w czasie." },
+  },
+  'mercor-vs-scale-vs-surge-ai': {
+    fr: { title: "Mercor vs Scale AI vs Surge AI : qui paie le plus les évaluateurs AI", description: "Une comparaison pratique des trois plus grandes plateformes d'évaluation AI pour développeurs et experts de domaine en 2026." },
+    es: { title: "Mercor vs Scale AI vs Surge AI: cuál paga más a los evaluadores de AI", description: "Una comparación práctica de las tres mayores plataformas de evaluación de AI para desarrolladores y expertos de dominio en 2026." },
+    de: { title: "Mercor vs Scale AI vs Surge AI: Wer zahlt AI-Evaluatoren mehr", description: "Ein praktischer Vergleich der drei größten AI-Evaluierungsplattformen für Entwickler und Fachexperten im Jahr 2026." },
+    pt: { title: "Mercor vs Scale AI vs Surge AI: qual paga mais aos avaliadores de AI", description: "Uma comparação prática das três maiores plataformas de avaliação de AI para desenvolvedores e especialistas de domínio em 2026." },
+    it: { title: "Mercor vs Scale AI vs Surge AI: chi paga di più i valutatori AI", description: "Un confronto pratico delle tre maggiori piattaforme di valutazione AI per sviluppatori ed esperti di dominio nel 2026." },
+    pl: { title: "Mercor vs Scale AI vs Surge AI: kto płaci więcej ewaluatorom AI", description: "Praktyczne porównanie trzech największych platform ewaluacji AI dla deweloperów i ekspertów dziedzinowych w 2026 roku." },
+  },
+  'maximize-earnings-on-mercor-as-a-developer': {
+    fr: { title: "Comment maximiser vos revenus sur Mercor en tant que développeur", description: "Leviers pratiques pour augmenter votre tarif horaire et vos heures hebdomadaires sur Mercor après le premier mois." },
+    es: { title: "Cómo maximizar tus ingresos en Mercor como desarrollador", description: "Palancas prácticas para subir tu tarifa por hora y tus horas semanales en Mercor después del primer mes." },
+    de: { title: "Wie Sie als Entwickler Ihre Einnahmen bei Mercor maximieren", description: "Praktische Hebel, um Ihren Stundensatz und Ihre Wochenstunden bei Mercor nach dem ersten Monat zu steigern." },
+    pt: { title: "Como maximizar seus ganhos na Mercor como desenvolvedor", description: "Alavancas práticas para aumentar sua tarifa por hora e suas horas semanais na Mercor após o primeiro mês." },
+    it: { title: "Come massimizzare i tuoi guadagni su Mercor come sviluppatore", description: "Leve pratiche per aumentare la tua tariffa oraria e le ore settimanali su Mercor dopo il primo mese." },
+    pl: { title: "Jak zmaksymalizować zarobki w Mercor jako deweloper", description: "Praktyczne dźwignie, które podniosą twoją stawkę godzinową i liczbę godzin tygodniowo w Mercor po pierwszym miesiącu." },
+  },
 };
 
 export function tGuide(slug: string, locale: Locale, field: 'title' | 'description', fallback: string): string {

@@ -1367,4 +1367,148 @@ Newslettery nagradzaja pisarzy, ktorzy lubia bezposrednie relacje i cotygodniowy
       { q: "Czy powinienem prowadzic newsletter i blog jednoczesnie?", a: "Jesli zrownowazenie, tak. Model hybrydowy ma najwyzszy dlugoterminowy pulap, poniewaz kanaly wzrostu newslettera i bloga wzajemnie sie wzmacniaja. Wiekszosc operatorow zaczyna od jednego i dodaje drugi po 12 miesiacach." },
     ],
   },
+  'how-to-get-accepted-on-mercor': {
+    body: `Mercor placi zweryfikowanym ekspertom za ocene wynikow czolowych modeli AI. Praca jest asynchroniczna, zdalna, oplacana w USD, a stawki godzinowe bija niemal kazdy inny zdalny gig, jesli twoja domena jest poszukiwana. Haczyk polega na tym, ze Mercor mocno selekcjonuje. Wiekszosc kandydatow nie przechodzi.
+
+## Co faktycznie robia ewaluatorzy Mercor
+Czytasz prompt, patrzysz na wynik modelu i oceniasz go wedlug rubryk specyficznych dla zadania (poprawnosc, wiernosc, bezpieczenstwo, jakosc kodu, rozumowanie). Dla programistow wieksza czesc pracy to zadania oceny kodu: pary uzupelnien modelu, w ktorych oceniasz, ktore jest lepsze i dlaczego, czesto z pisemnym uzasadnieniem.
+
+## Czego szuka Mercor
+Trzy rzeczy pojawiaja sie w wiekszosci rozmow akceptacyjnych:
+1. Wykazalna glebia w co najmniej jednym obszarze technicznym lub domenowym (inzynieria, ML, biologia, prawo, finanse itp.).
+2. Osad pisemny w warunkach niejednoznacznosci (aplikacja zawiera krotkie zadania pisemne).
+3. Sygnaly wiarygodnosci (profil na LinkedIn lub GitHubie, ktory potwierdza to, co twierdzisz).
+
+## Jak pozycjonowac swoj profil
+Wymieniaj konkrety zamiast ogolnikow. Profil mowiacy "Senior Python developer z 6 latami w Stripe budujacy systemy ryzyka" konwertuje lepiej niz "Inzynier oprogramowania o szerokim doswiadczeniu". Dla recenzentow technicznych historia na GitHubie ze znaczacymi commitami wazy wiecej niz dyplomy.
+
+## Proces selekcji
+Aplikujesz, wypelniasz krotki pisemny lub kodowy screening, a jesli przejdziesz, zostajesz zaproszony do platnego zadania probnego. Twoje pierwsze kilka zadan ustala twoja ocene wiarygodnosci; konsekwentna jakosc odblokowuje wiecej pracy i wyzsze stawki.
+
+## Typowy harmonogram
+Pelna sciezka od aplikacji do pierwszego platnego zadania zwykle trwa od dwoch do czterech tygodni. Profile w domenach niedoborowych (ekspertyza prawna, zaawansowana matematyka, niszowe jezyki programowania) sa weryfikowane szybciej.
+
+## Co szybko dyskwalifikuje
+Ogolne tresci aplikacji wspomagane AI to najszybszy dyskwalifikator. Mercor selekcjonuje pod katem ludzkiego osadu; przesylanie odpowiedzi przepisanych przez LLM sygnalizuje dokladnie cos przeciwnego.`,
+    faqs: [
+      {
+        q: "Czy Mercor jest otwarty na kandydatow z calego swiata?",
+        a: "Tak. Mercor rekrutuje globalnie. Wyplaty sa w USD poprzez standardowe miedzynarodowe metody przelewu.",
+      },
+      {
+        q: "Ile trwa do mojego pierwszego platnego zadania na Mercor?",
+        a: "Wiekszosc zaakceptowanych ekspertow otrzymuje pierwsze platne zadanie w ciagu jednego do dwoch tygodni od zakonczenia selekcji. Profile w domenach niedoborowych moga byc szybsze.",
+      },
+      {
+        q: "Czy potrzebuje doktoratu, by aplikowac do Mercor?",
+        a: "Nie. Mercor rekrutuje w wielu domenach, w tym w inzynierii oprogramowania. Dla wiekszosci sciezek wykazalna praktyczna ekspertyza wazy wiecej niz referencje.",
+      },
+    ],
+  },
+  'how-much-does-mercor-pay-in-2026': {
+    body: `Mercor placi za godzine pracy ewaluacyjnej. Opublikowany zakres to 30 do 100 USD/godzine, ale rzeczywiste zarobki zaleza od twojej domeny, twojej oceny jakosci i tego, ile pracy mozesz utrzymac.
+
+## Realistyczny zakres startowy
+Nowi ewaluatorzy w inzynierii oprogramowania i ogolnych sciezkach technicznych zwykle zaczynaja od 30 do 45 USD za godzine. Sciezki w domenach niedoborowych (zaawansowana matematyka, biologia, prawo) zaczynaja sie wyzej, czesto 50 do 80 USD.
+
+## Co podnosi stawke
+Trzy czynniki sie kumuluja:
+1. Konsekwencja jakosci. Mercor wazy zgodnosc miedzy oceniajacymi i glebie twoich pisemnych uzasadnien. Wysoka zgodnosc plus dokladne wyjasnienia pchaja stawke w gore z czasem.
+2. Zlozonosc zadania. Dluzsze, bardziej zniuansowane oceny (wieloturnowe slady agentow, lancuchy rozumowania o kodzie) placa wiecej za godzine niz krotkie porownania parami.
+3. Specjalizacja. Gdy zostaniesz oznaczony w wysoko poszukiwanej niszy (ocena agentow LLM, formalne dowody, rozumowanie prawne), stawka skacze, poniewaz podaz jest cienka.
+
+## Wolumen
+Wolumen jest skokowy. Niektore tygodnie maja wiele partii zadan; inne sa ciche. Spodziewaj sie 5 do 20 godzin tygodniowo jako realistycznego, mozliwego do utrzymania zakresu przy zachowaniu pracy dziennej. Kilku ekspertow w niedoborowych domenach dochodzi do ponad 30 godzin.
+
+## W skali rocznej
+Konsekwentne 10 godzin/tydzien po 50 USD/godzine to mniej wiecej 26 000 USD rocznego dodatkowego dochodu. Przy 60 USD/godzine za 20 godzin/tydzien osiagasz okolo 60 000 USD rocznie, co moze rywalizowac z praca inzynierska na pelen etat na niektorych rynkach.
+
+## Kiedy Mercor sie nie oplaca
+Jesli twoja praca dzienna placi wiecej niz 100 USD za godzine wszystko wliczone (najwyzsze wynagrodzenie inzynierskie w USA), dodatkowy dochod z Mercor prawdopodobnie nie jest wart twoich wieczornych godzin. Matematyka dziala najlepiej dla inzynierow ze srednia stawka, kontraktorow miedzy zleceniami lub ekspertow w niedoborowych domenach.
+
+## Szybkosc wyplat
+Standardowe cykle wyplat sa tygodniowe lub dwutygodniowe. Miedzynarodowe przelewy poprzez partnera platniczego platformy; czasy dotarcia roznia sie w zaleznosci od kraju, zwykle dwa do pieciu dni roboczych.`,
+    faqs: [
+      {
+        q: "Jaka jest srednia stawka godzinowa Mercor dla programistow w 2026 roku?",
+        a: "Wiekszosc zaakceptowanych programistow zarabia 35 do 60 USD za godzine po pierwszym miesiacu, a doswiadczone lub wyspecjalizowane profile siegaja 80 USD lub wiecej przy zadaniach premium.",
+      },
+      {
+        q: "Czy Mercor moze zastapic pensje na pelen etat?",
+        a: "Dla inzynierow ze srednia stawka na rynkach o nizszych kosztach, utrzymywane 25 do 30 godzin tygodniowo po 50 do 70 USD za godzine moze dorownac lokalnej pensji na pelen etat lub ja przekroczyc. Wiekszosc ewaluatorow traktuje to jako uzupelnienie, a nie zastapienie.",
+      },
+    ],
+  },
+  'mercor-vs-scale-vs-surge-ai': {
+    body: `Trzy platformy dominuja w platnej ocenie AI w 2026 roku: Mercor, Scale AI (poprzez marki Outlier i Remotasks) oraz Surge AI. Pokrywaja sie w bazie klientow, ale roznia sie stawka, typem zadan, progiem weryfikacji i niezawodnoscia podazy pracy.
+
+## Mercor
+Zweryfikowany, prowadzony przez ekspertow, tygodniowe stawki czesto 30 do 100 USD/godzine dla sciezek oprogramowania i technicznych. Prog aplikacyjny jest wysoki; po akceptacji praca jest zwykle glebsza i dluzsza. Najlepsze dopasowanie dla doswiadczonych programistow i ekspertow domenowych, ktorzy ceniaja stawke ponad wolumen.
+
+## Scale AI (Outlier/Remotasks)
+Szerszy, bardziej zorientowany na wolumen. Stawki sa srednio nizsze (15 do 40 USD/godzine dla wiekszosci sciezek, premium w domenach wyzej). Nizszy prog wejscia czyni go szybko dostepnym. Najlepsze dopasowanie, jesli chcesz natychmiastowego wolumenu i stalych godzin tygodniowych, mniej zaniepokojony stawka.
+
+## Surge AI
+Pozycjonuje sie jako platforma skoncentrowana na jakosci dla premium adnotacji i oceny. Stawki szeroko porownywalne z Mercor dla podobnych poziomow umiejetnosci. Mniejsza pula pracy, ale konsekwentna dla zaakceptowanych ekspertow.
+
+## Bezposrednie porownanie
+
+| Czynnik             | Mercor          | Scale AI            | Surge AI         |
+|---------------------|-----------------|---------------------|------------------|
+| Typowa stawka (dev) | 35-80 USD/h     | 18-40 USD/h         | 35-70 USD/h      |
+| Prog akceptacji     | Wysoki          | Niski do sredniego  | Sredni do wysokiego |
+| Niezawodnosc wolumenu | Skokowy       | Staly               | Skokowy          |
+| Glebia zadan        | Dluga forma, zniuansowana | Krotka, powtarzalna | Mieszana    |
+| Czas do pierwszego zadania | 2-4 tygodnie | 1-7 dni          | 2-3 tygodnie     |
+
+## Jak zdecydowac
+Jesli twoj koszt alternatywny godzinowy jest wysoki i mozesz wchlonac skokowy wolumen, Mercor. Jesli chcesz szybkiego onboardingu i stalych godzin tygodniowych po nizszej stawce, Scale AI/Outlier. Jesli masz niszowa specjalnosc (formalna weryfikacja, zaawansowana matematyka, konkretne jezyki), aplikuj do wszystkich trzech i pozwol najlepiej placacym ofertom wygrac twoj czas.
+
+## Stackowanie
+Wielu ekspertow prowadzi dwie platformy rownolegle. Mercor plus Scale wypelnia luki w wolumenie; Mercor plus Surge rozprasza ryzyko platformy. Unikaj podpisywania klauzul wylacznosci, jesli sa oferowane.`,
+    faqs: [
+      {
+        q: "Ktora platforma placi ewaluatorom AI najwiecej w 2026 roku?",
+        a: "Na godzine Mercor i Surge AI maja tendencje do prowadzenia dla sciezek eksperckich i programistycznych na poziomie 35-80 USD/godzine. Scale AI/Outlier placi srednio mniej, ale oferuje bardziej utrzymany wolumen.",
+      },
+      {
+        q: "Czy moge pracowac na Mercor i Scale AI w tym samym czasie?",
+        a: "Tak, chyba ze ktoras platforma prosi o wylacznosc dla konkretnego projektu. Wiekszosc ewaluatorow stackuje platformy, by wygladzic zmiennosc dochodu.",
+      },
+    ],
+  },
+  'maximize-earnings-on-mercor-as-a-developer': {
+    body: `Po akceptacji na Mercor twoje efektywne zarobki godzinowe zaleza mniej od poczatkowej oferty, a bardziej od wyborow, ktore dokonujesz w pierwszych trzech miesiacach. Ten sam ewaluator moze zarobic dwa razy wiecej niz inny przy tej samej nominalnej stawce.
+
+## Dzwignia 1: wybierz odpowiednie sciezki
+Mercor segmentuje prace na sciezki (ogolny przeglad kodu, ocena sladow agentow, formalne rozumowanie, multi-modalne itp.). Niektore placa istotnie wiecej za godzine. Zglos sie do sciezek, ktore pasuja do twojej najmocniejszej glebi, a nastepnie popros o przydzielenie do najbardziej technicznej lub wyspecjalizowanej partii w ich ramach. Premia za specjalizacje sie kumuluje.
+
+## Dzwignia 2: poglebiaj swoje pisemne uzasadnienia
+Ewaluatorzy, ktorzy pisza szczegolowe, konkretne uzasadnienia, sa ponownie zapraszani do lepiej placacych partii. Trzy zdania merytorycznego rozumowania bija jednoslowny werdykt zarowno w punktacji jakosci, jak i w przyszlych ofertach zadan. To pojedyncza najwieksza kontrolowalna dzwignia.
+
+## Dzwignia 3: utrzymuj zgodnosc miedzy oceniajacymi
+Mercor porownuje twoje oceny z zestawem kalibracyjnym i innymi ekspertami. Konsekwentna zgodnosc powyzej progu platformy podnosi twoja stawke; spadek ponizej ja ogranicza. Czytaj rubryke przed kazda partia, nie przebiegaj wzrokiem.
+
+## Dzwignia 4: odpowiadaj szybko na zaproszenia do nowych partii
+Partie zamykaja sie, gdy sie zapelnia. Ewaluatorzy, ktorzy przyjmuja zaproszenia w ciagu minut, zgarniaja zadania placace premium przed innymi. Wlacz powiadomienia i traktuj okno zaproszen powaznie.
+
+## Dzwignia 5: zbuduj profil specjalistyczny
+Jesli mozesz wiarygodnie oznaczyc siebie jako "ewaluator agentow LLM" lub "specjalista od systemu typow Pythona", stajesz sie pierwszym wyborem dla tej niszy. Profile specjalistyczne otrzymuja partie tylko na zaproszenie na szczycie zakresu stawek.
+
+## Dzwignia 6: stackuj godziny strategicznie
+Stawka godzinowa Mercor nie zmienia sie z wolumenem sama w sobie, ale tygodnie skokowe (kiedy spadaja partie) sa wtedy, gdy plynie praca premium. Planuj byc dostepnym w tych oknach, nawet jesli obcinasz godziny gdzie indziej.
+
+## Dzwignia 7: nie wypalaj sie
+Wyniki jakosci spadaja, gdy sie meczysz. Dwadziescia dobrych godzin tygodniowo bije trzydziesci miernych. Ogranicz swoje tygodniowe godziny i chron swoj osad.`,
+    faqs: [
+      {
+        q: "Ile trwa, zanim moja stawka na Mercor wzrosnie?",
+        a: "Korekty stawek zwykle odbywaja sie po 4 do 8 tygodniach konsekwentnej pracy o wysokiej jakosci, wczesniej, jesli specjalizujesz sie w wysoko poszukiwanej niszy, ktora platforma aktywnie obsadza.",
+      },
+      {
+        q: "Czy moge negocjowac wyzsza stawke na Mercor?",
+        a: "Bezposrednio nie. Stawka jest napedzana przez sciezke, specjalnosc i sygnaly jakosci. Najszybsza droga do wyzszej efektywnej stawki to kwalifikacja do lepiej placacych sciezek poprzez glebie uzasadnienia i pozycjonowanie specjalnosci.",
+      },
+    ],
+  },
 };

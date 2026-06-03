@@ -1840,6 +1840,166 @@ Newsletters reward writers who enjoy direct relationships and weekly rhythm. Blo
       },
     ],
   },
+  {
+    slug: 'how-to-get-accepted-on-mercor',
+    title: 'How to get accepted on Mercor as an AI evaluator',
+    description: 'What Mercor actually screens for and how to position your profile to pass the bar in 2026.',
+    category: 'freelance',
+    body: `Mercor pays vetted experts to evaluate the outputs of frontier AI models. The work is async, remote, paid in USD, and the hourly rates beat almost any other remote gig if your domain is in demand. The catch is that Mercor screens hard. Most applicants do not pass.
+
+## What Mercor evaluators actually do
+You read a prompt, look at the model output, and rate it on rubrics specific to the task (correctness, faithfulness, safety, code quality, reasoning). For developers, the bulk of work is code-evaluation tasks: pairs of model completions where you judge which is better and why, often with a written justification.
+
+## What Mercor screens for
+Three things show up across most acceptance interviews:
+1. Demonstrable depth in at least one technical or domain area (engineering, ML, biology, law, finance, etc.).
+2. Written judgment under ambiguity (the application includes short written tasks).
+3. Reliability signals (LinkedIn or GitHub profile that confirms what you claim).
+
+## How to position your profile
+List specifics rather than generalities. A profile that says "Senior Python developer with 6 years at Stripe building risk systems" converts better than "Software engineer with broad experience". For technical reviewers, GitHub history with substantial commits weighs more than degrees.
+
+## The screening flow
+You apply, complete a short written or coding screen, and if you pass you are invited to a paid trial task. Your first few tasks set your reliability rating; consistent quality unlocks more work and higher rates.
+
+## Typical timeline
+The full path from application to first paid task usually runs two to four weeks. Domain-scarce profiles (legal expertise, advanced math, niche programming languages) get screened faster.
+
+## What disqualifies fast
+Generic AI-assisted application copy is the fastest disqualifier. Mercor screens for human judgment; submitting LLM-rewritten answers signals exactly the opposite.`,
+    faqs: [
+      {
+        q: 'Is Mercor open to applicants worldwide?',
+        a: 'Yes. Mercor recruits globally. Payouts are in USD via standard international transfer methods.',
+      },
+      {
+        q: 'How long until I see my first paid task on Mercor?',
+        a: 'Most accepted experts get their first paid task within one to two weeks of finishing the screening. Domain-scarce profiles can be faster.',
+      },
+      {
+        q: 'Do I need a PhD to apply to Mercor?',
+        a: 'No. Mercor recruits across many domains, including software engineering. Demonstrable practical expertise matters more than credentials for most tracks.',
+      },
+    ],
+  },
+  {
+    slug: 'how-much-does-mercor-pay-in-2026',
+    title: 'How much does Mercor actually pay AI evaluators in 2026',
+    description: 'Realistic hourly rates on Mercor for developers and domain experts, what drives the range, and how the rate climbs over time.',
+    category: 'freelance',
+    body: `Mercor pays per hour of evaluation work. The published range is 30 to 100 USD/hour, but actual earnings depend on your domain, your quality rating, and how much work you can sustain.
+
+## The realistic starting range
+New evaluators in software engineering and general technical tracks typically start at 30 to 45 USD per hour. Domain-scarce tracks (advanced math, biology, law) start higher, often 50 to 80 USD.
+
+## What moves the rate up
+Three drivers compound:
+1. Quality consistency. Mercor weights the inter-rater agreement and the depth of your written justifications. High agreement plus thorough explanations push the rate upward over time.
+2. Task complexity. Longer, more nuanced evaluations (multi-turn agent traces, code reasoning chains) pay more per hour than short pairwise comparisons.
+3. Specialisation. Once you are tagged in a high-demand niche (LLM agent evaluation, formal proofs, legal reasoning), the rate jumps because supply is thinner.
+
+## Volume
+Volume is bursty. Some weeks have many task batches; others are quiet. Expect 5 to 20 hours per week as a realistic sustainable range while keeping a day job. A few experts in scarce domains go to 30+ hours.
+
+## Annualised
+A consistent 10 hours/week at 50 USD/hour is roughly 26,000 USD per year of side income. At 60 USD/hour for 20 hours/week, you hit around 60,000 USD per year, which can rival a full-time engineering job for some markets.
+
+## When Mercor is not worth it
+If your day job pays more than 100 USD per hour all-in (top-tier US engineering compensation), Mercor side income probably is not worth your evening hours. The math works best for mid-rate engineers, contractors between gigs, or experts in scarce domains.
+
+## Payout speed
+Standard payout cycles are weekly to bi-weekly. International transfers via the platform's payment partner; arrival times vary by country, typically two to five business days.`,
+    faqs: [
+      {
+        q: 'What is the average Mercor hourly rate for developers in 2026?',
+        a: 'Most accepted software developers earn 35 to 60 USD per hour after the first month, with experienced or specialised profiles reaching 80 USD or more on premium tasks.',
+      },
+      {
+        q: 'Can Mercor replace a full-time salary?',
+        a: 'For mid-rate engineers in lower-cost markets, sustained 25 to 30 hours per week at 50 to 70 USD per hour can match or exceed a local full-time salary. Most evaluators treat it as a complement, not a replacement.',
+      },
+    ],
+  },
+  {
+    slug: 'mercor-vs-scale-vs-surge-ai',
+    title: 'Mercor vs Scale AI vs Surge AI: which pays AI evaluators more',
+    description: 'A practical comparison of the three biggest AI-evaluation platforms for developers and domain experts in 2026.',
+    category: 'freelance',
+    body: `Three platforms dominate paid AI evaluation in 2026: Mercor, Scale AI (via its Outlier and Remotasks brands), and Surge AI. They overlap in client base but differ on rate, task type, vetting bar, and reliability of work supply.
+
+## Mercor
+Vetted, expert-led, weekly rates often 30 to 100 USD/hour for software and technical tracks. Application bar is high; once accepted, the work tends to be deeper and longer-form. Best fit for experienced developers and domain experts who value rate over volume.
+
+## Scale AI (Outlier/Remotasks)
+Broader, more volume-oriented. Rates are lower on average (15 to 40 USD/hour for most tracks, premium domains higher). Lower entry bar makes it accessible quickly. Best fit if you want immediate volume and steady weekly hours, less concerned with rate.
+
+## Surge AI
+Positions itself as a quality-focused platform for premium annotation and evaluation. Rates broadly comparable to Mercor for similar skill tiers. Smaller pool of work but consistent for accepted experts.
+
+## Direct comparison
+
+| Factor              | Mercor          | Scale AI            | Surge AI         |
+|---------------------|-----------------|---------------------|------------------|
+| Typical rate (dev)  | 35-80 USD/h     | 18-40 USD/h         | 35-70 USD/h      |
+| Acceptance bar      | High            | Low to medium       | Medium to high   |
+| Volume reliability  | Bursty          | Steady              | Bursty           |
+| Task depth          | Long-form, nuanced | Short, repetitive | Mixed            |
+| Time to first task  | 2-4 weeks       | 1-7 days            | 2-3 weeks        |
+
+## How to decide
+If your hourly opportunity cost is high and you can absorb bursty volume, Mercor. If you want fast onboarding and steady weekly hours at lower rate, Scale AI/Outlier. If you have a niche specialty (formal verification, advanced math, specific languages), apply to all three and let the highest-paying offers win your time.
+
+## Stacking
+Many experts run two platforms in parallel. Mercor + Scale fills gaps in volume; Mercor + Surge spreads platform risk. Avoid signing exclusivity clauses if offered.`,
+    faqs: [
+      {
+        q: 'Which platform pays AI evaluators the most in 2026?',
+        a: 'Per hour, Mercor and Surge AI tend to lead for expert and developer tracks at 35-80 USD/hour. Scale AI/Outlier pays less on average but offers more sustained volume.',
+      },
+      {
+        q: 'Can I work on Mercor and Scale AI at the same time?',
+        a: 'Yes, unless either platform asks for exclusivity for a specific project. Most evaluators stack platforms to smooth income volume.',
+      },
+    ],
+  },
+  {
+    slug: 'maximize-earnings-on-mercor-as-a-developer',
+    title: 'How to maximize your earnings on Mercor as a developer',
+    description: 'Practical levers to push your Mercor hourly rate and weekly hours after the first month.',
+    category: 'freelance',
+    body: `Once you are accepted on Mercor, your effective hourly earnings depend less on your initial offer and more on the choices you make in the first three months. The same evaluator can earn double another's pay for the same nominal rate.
+
+## Lever 1: pick the right tracks
+Mercor segments work into tracks (general code review, agent trace evaluation, formal reasoning, multi-modal, etc.). Some pay materially more per hour. Volunteer for the tracks that match your strongest depth, then ask to be slotted into the most technical or specialised batch within them. The premium for specialisation compounds.
+
+## Lever 2: deepen your written justifications
+Evaluators who write detailed, specific justifications get re-invited to higher-paying batches. Three sentences of substantive reasoning beat a one-word verdict for both quality scoring and future task offers. This is the single biggest controllable lever.
+
+## Lever 3: maintain inter-rater agreement
+Mercor compares your ratings against a calibration set and other experts. Consistent agreement above the platform threshold raises your rate; falling below it caps you. Read the rubric before every batch, do not skim.
+
+## Lever 4: respond fast on new batch invites
+Batches close as they fill. Evaluators who accept invites within minutes capture the premium-paying tasks before others do. Enable notifications and treat the invites window seriously.
+
+## Lever 5: build a specialty profile
+If you can credibly tag yourself as "the LLM agent evaluator" or "the Python type-system specialist", you become first call for that niche. Specialty profiles get invitation-only batches at top of the rate range.
+
+## Lever 6: stack hours strategically
+Mercor's hourly rate does not change with volume per se, but burst weeks (when batches drop) are when premium work flows. Plan to be available in those windows even if you cut hours elsewhere.
+
+## Lever 7: do not burn out
+Quality scores tank when you fatigue. Twenty good hours per week beat thirty mediocre ones. Cap your weekly hours and protect your judgment.`,
+    faqs: [
+      {
+        q: 'How long until my Mercor rate increases?',
+        a: 'Rate adjustments usually happen after 4 to 8 weeks of consistent high-quality work, sooner if you specialise in a high-demand niche the platform is actively staffing.',
+      },
+      {
+        q: 'Can I negotiate a higher rate on Mercor?',
+        a: 'Directly, no. Rate is driven by track, specialty, and quality signals. The fastest way to a higher effective rate is to qualify for higher-paying tracks via depth of justification and specialty positioning.',
+      },
+    ],
+  },
 );
 
 export const GUIDE_MAP: Record<string, GuideEntry> = Object.fromEntries(

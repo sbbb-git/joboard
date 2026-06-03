@@ -16,6 +16,7 @@ import { EarnWithAi } from '@/components/EarnWithAi';
 import { FiverrCTA } from '@/components/FiverrCTA';
 import { AppSumoCTA } from '@/components/AppSumoCTA';
 import { BeehiivCTA } from '@/components/BeehiivCTA';
+import { MercorCTA } from '@/components/MercorCTA';
 
 const APPSUMO_SLUGS = new Set([
   'appsumo-lifetime-deals-explained',
@@ -33,6 +34,13 @@ const BEEHIIV_SLUGS = new Set([
   'best-newsletter-platforms-for-developers',
   'tech-newsletter-growth-tactics-2026',
   'newsletter-vs-blog-which-earns-more',
+]);
+
+const MERCOR_SLUGS = new Set([
+  'how-to-get-accepted-on-mercor',
+  'how-much-does-mercor-pay-in-2026',
+  'mercor-vs-scale-vs-surge-ai',
+  'maximize-earnings-on-mercor-as-a-developer',
 ]);
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { localePath } from '@/lib/i18n';
@@ -154,6 +162,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
       {g.category === 'freelance' && <FiverrCTA locale={params.lang} />}
       {APPSUMO_SLUGS.has(g.slug) && <AppSumoCTA locale={params.lang} />}
       {BEEHIIV_SLUGS.has(g.slug) && <BeehiivCTA locale={params.lang} />}
+      {MERCOR_SLUGS.has(g.slug) && <MercorCTA locale={params.lang} />}
       {g.category === 'tools' && <RemoteTools locale={params.lang} />}
       {(g.category === 'lifestyle' || g.category === 'visa' || g.category === 'tax' || g.category === 'finding' || g.category === 'career') && (
         <NomadCTA  locale={params.lang} />
