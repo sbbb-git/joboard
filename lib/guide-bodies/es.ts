@@ -1367,4 +1367,148 @@ Los newsletters recompensan a los escritores que disfrutan de las relaciones dir
       { q: "¿Debería llevar un newsletter y un blog al mismo tiempo?", a: "Si es sostenible, sí. El modelo híbrido tiene el mayor techo a largo plazo porque los canales de crecimiento del newsletter y del blog se refuerzan mutuamente. La mayoría de los operadores empiezan con uno y añaden el otro tras 12 meses." },
     ],
   },
+  'how-to-get-accepted-on-mercor': {
+    body: `Mercor paga a expertos verificados para evaluar las respuestas de los modelos de IA más avanzados. El trabajo es asíncrono, remoto, se cobra en USD y las tarifas por hora superan a casi cualquier otro trabajo remoto si tu dominio tiene demanda. La trampa es que Mercor filtra con dureza. La mayoría de los candidatos no pasa.
+
+## Qué hacen realmente los evaluadores de Mercor
+Lees un prompt, miras la salida del modelo y la calificas según rúbricas específicas de la tarea (corrección, fidelidad, seguridad, calidad del código, razonamiento). Para los desarrolladores, el grueso del trabajo son tareas de evaluación de código: pares de respuestas del modelo en las que juzgas cuál es mejor y por qué, a menudo con una justificación escrita.
+
+## Qué filtra Mercor
+Tres cosas aparecen en la mayoría de las entrevistas de aceptación:
+1. Profundidad demostrable en al menos un área técnica o de dominio (ingeniería, ML, biología, derecho, finanzas, etc.).
+2. Criterio escrito ante la ambigüedad (la solicitud incluye tareas escritas breves).
+3. Señales de fiabilidad (un perfil de LinkedIn o GitHub que confirme lo que afirmas).
+
+## Cómo posicionar tu perfil
+Enumera datos específicos en lugar de generalidades. Un perfil que diga "Desarrollador senior de Python con 6 años en Stripe construyendo sistemas de riesgo" convierte mejor que "Ingeniero de software con amplia experiencia". Para los revisores técnicos, un historial de GitHub con commits sustanciales pesa más que los títulos.
+
+## El flujo de selección
+Te postulas, completas una prueba escrita o de programación corta y, si la pasas, te invitan a una tarea de prueba remunerada. Tus primeras tareas establecen tu calificación de fiabilidad; la calidad constante desbloquea más trabajo y tarifas más altas.
+
+## Cronograma típico
+El camino completo desde la postulación hasta la primera tarea remunerada suele durar de dos a cuatro semanas. Los perfiles con escasez de dominio (experiencia legal, matemáticas avanzadas, lenguajes de programación de nicho) se filtran más rápido.
+
+## Qué descalifica rápido
+El texto de postulación genérico asistido por IA es el descalificador más rápido. Mercor filtra el criterio humano; enviar respuestas reescritas por un LLM señala exactamente lo contrario.`,
+    faqs: [
+      {
+        q: "¿Mercor está abierto a candidatos de todo el mundo?",
+        a: "Sí. Mercor recluta a nivel global. Los pagos se realizan en USD mediante métodos estándar de transferencia internacional.",
+      },
+      {
+        q: "¿Cuánto tarda en llegar mi primera tarea remunerada en Mercor?",
+        a: "La mayoría de los expertos aceptados reciben su primera tarea remunerada en una o dos semanas tras finalizar la selección. Los perfiles con escasez de dominio pueden ser más rápidos.",
+      },
+      {
+        q: "¿Necesito un doctorado para postularme a Mercor?",
+        a: "No. Mercor recluta en muchos dominios, incluida la ingeniería de software. La experiencia práctica demostrable importa más que las credenciales en la mayoría de las pistas.",
+      },
+    ],
+  },
+  'how-much-does-mercor-pay-in-2026': {
+    body: `Mercor paga por hora de trabajo de evaluación. El rango publicado es de 30 a 100 USD/hora, pero los ingresos reales dependen de tu dominio, tu calificación de calidad y cuánto trabajo puedes sostener.
+
+## El rango inicial realista
+Los nuevos evaluadores en ingeniería de software y pistas técnicas generales suelen empezar entre 30 y 45 USD por hora. Las pistas con escasez de dominio (matemáticas avanzadas, biología, derecho) empiezan más alto, a menudo entre 50 y 80 USD.
+
+## Qué hace subir la tarifa
+Tres factores se acumulan:
+1. Consistencia de calidad. Mercor pondera el acuerdo entre evaluadores y la profundidad de tus justificaciones escritas. Un alto acuerdo más explicaciones exhaustivas empujan la tarifa al alza con el tiempo.
+2. Complejidad de la tarea. Las evaluaciones más largas y matizadas (trazas de agentes multi-turno, cadenas de razonamiento de código) pagan más por hora que las comparaciones breves por pares.
+3. Especialización. Una vez etiquetado en un nicho de alta demanda (evaluación de agentes LLM, demostraciones formales, razonamiento jurídico), la tarifa salta porque la oferta es más escasa.
+
+## Volumen
+El volumen es irregular. Algunas semanas hay muchos lotes de tareas; otras están tranquilas. Espera de 5 a 20 horas por semana como rango sostenible realista mientras mantienes un trabajo principal. Algunos expertos en dominios escasos llegan a más de 30 horas.
+
+## Anualizado
+Un ritmo constante de 10 horas/semana a 50 USD/hora equivale aproximadamente a 26.000 USD al año de ingreso adicional. A 60 USD/hora durante 20 horas/semana, alcanzas unos 60.000 USD al año, lo que puede rivalizar con un empleo de ingeniería a tiempo completo en algunos mercados.
+
+## Cuándo Mercor no merece la pena
+Si tu empleo principal paga más de 100 USD por hora todo incluido (compensación de ingeniería de primer nivel en EE. UU.), el ingreso secundario de Mercor probablemente no compense tus horas de tarde. Las cuentas funcionan mejor para ingenieros con tarifa media, contratistas entre proyectos o expertos en dominios escasos.
+
+## Velocidad de pago
+Los ciclos de pago estándar son semanales o quincenales. Las transferencias internacionales se realizan a través del socio de pagos de la plataforma; los tiempos de llegada varían según el país, normalmente de dos a cinco días hábiles.`,
+    faqs: [
+      {
+        q: "¿Cuál es la tarifa media por hora en Mercor para desarrolladores en 2026?",
+        a: "La mayoría de los desarrolladores de software aceptados ganan entre 35 y 60 USD por hora tras el primer mes, y los perfiles experimentados o especializados alcanzan 80 USD o más en tareas premium.",
+      },
+      {
+        q: "¿Puede Mercor sustituir un salario a tiempo completo?",
+        a: "Para ingenieros con tarifa media en mercados de menor coste, sostener de 25 a 30 horas por semana a 50-70 USD por hora puede igualar o superar un salario local a tiempo completo. La mayoría de los evaluadores lo tratan como un complemento, no como un reemplazo.",
+      },
+    ],
+  },
+  'mercor-vs-scale-vs-surge-ai': {
+    body: `Tres plataformas dominan la evaluación de IA remunerada en 2026: Mercor, Scale AI (a través de sus marcas Outlier y Remotasks) y Surge AI. Comparten base de clientes pero difieren en tarifa, tipo de tarea, listón de selección y fiabilidad del suministro de trabajo.
+
+## Mercor
+Verificada, liderada por expertos, con tarifas semanales a menudo de 30 a 100 USD/hora para pistas de software y técnicas. El listón de postulación es alto; una vez aceptado, el trabajo tiende a ser más profundo y de formato más largo. Mejor encaje para desarrolladores experimentados y expertos de dominio que valoran la tarifa por encima del volumen.
+
+## Scale AI (Outlier/Remotasks)
+Más amplia, más orientada al volumen. Las tarifas son menores en promedio (de 15 a 40 USD/hora para la mayoría de pistas, dominios premium más altos). El listón de entrada más bajo la hace accesible rápidamente. Mejor encaje si quieres volumen inmediato y horas semanales estables, sin tanta preocupación por la tarifa.
+
+## Surge AI
+Se posiciona como una plataforma centrada en la calidad para anotación y evaluación premium. Las tarifas son comparables en general a Mercor para niveles de habilidad similares. Pool de trabajo más pequeño pero consistente para los expertos aceptados.
+
+## Comparación directa
+
+| Factor                    | Mercor             | Scale AI              | Surge AI         |
+|---------------------------|--------------------|-----------------------|------------------|
+| Tarifa típica (dev)       | 35-80 USD/h        | 18-40 USD/h           | 35-70 USD/h      |
+| Listón de aceptación      | Alto               | Bajo a medio          | Medio a alto     |
+| Fiabilidad del volumen    | Irregular          | Estable               | Irregular        |
+| Profundidad de la tarea   | Largo, matizado    | Corto, repetitivo     | Mixto            |
+| Tiempo a la primera tarea | 2-4 semanas        | 1-7 días              | 2-3 semanas      |
+
+## Cómo decidir
+Si tu coste de oportunidad por hora es alto y puedes absorber un volumen irregular, Mercor. Si quieres una incorporación rápida y horas semanales estables a una tarifa menor, Scale AI/Outlier. Si tienes una especialidad de nicho (verificación formal, matemáticas avanzadas, lenguajes específicos), postúlate a las tres y deja que las ofertas mejor pagadas se lleven tu tiempo.
+
+## Apilar plataformas
+Muchos expertos llevan dos plataformas en paralelo. Mercor más Scale llena los huecos de volumen; Mercor más Surge reparte el riesgo de plataforma. Evita firmar cláusulas de exclusividad si te las ofrecen.`,
+    faqs: [
+      {
+        q: "¿Qué plataforma paga más a los evaluadores de IA en 2026?",
+        a: "Por hora, Mercor y Surge AI tienden a liderar para pistas de expertos y desarrolladores, entre 35 y 80 USD/hora. Scale AI/Outlier paga menos en promedio pero ofrece un volumen más sostenido.",
+      },
+      {
+        q: "¿Puedo trabajar en Mercor y Scale AI al mismo tiempo?",
+        a: "Sí, a menos que alguna de las plataformas pida exclusividad para un proyecto específico. La mayoría de los evaluadores apilan plataformas para suavizar la volatilidad del ingreso.",
+      },
+    ],
+  },
+  'maximize-earnings-on-mercor-as-a-developer': {
+    body: `Una vez aceptado en Mercor, tus ingresos efectivos por hora dependen menos de tu oferta inicial y más de las decisiones que tomes en los primeros tres meses. El mismo evaluador puede ganar el doble que otro por la misma tarifa nominal.
+
+## Palanca 1: elige las pistas correctas
+Mercor segmenta el trabajo en pistas (revisión general de código, evaluación de trazas de agentes, razonamiento formal, multi-modal, etc.). Algunas pagan sustancialmente más por hora. Ofrécete voluntario para las pistas que coincidan con tu mayor profundidad y luego pide que te asignen al lote más técnico o especializado dentro de ellas. La prima por especialización se acumula.
+
+## Palanca 2: profundiza tus justificaciones escritas
+Los evaluadores que escriben justificaciones detalladas y específicas son reinvitados a lotes mejor pagados. Tres frases de razonamiento sustancial superan a un veredicto de una palabra tanto para la puntuación de calidad como para futuras ofertas de tareas. Esta es la palanca controlable individual más importante.
+
+## Palanca 3: mantén el acuerdo entre evaluadores
+Mercor compara tus calificaciones con un conjunto de calibración y con otros expertos. Un acuerdo constante por encima del umbral de la plataforma sube tu tarifa; caer por debajo te pone un tope. Lee la rúbrica antes de cada lote, no la hojees.
+
+## Palanca 4: responde rápido a las nuevas invitaciones de lotes
+Los lotes se cierran a medida que se llenan. Los evaluadores que aceptan invitaciones en cuestión de minutos capturan las tareas mejor pagadas antes que los demás. Activa las notificaciones y trata la ventana de invitaciones con seriedad.
+
+## Palanca 5: construye un perfil de especialidad
+Si puedes etiquetarte de forma creíble como "el evaluador de agentes LLM" o "el especialista en el sistema de tipos de Python", te conviertes en la primera llamada para ese nicho. Los perfiles de especialidad reciben lotes solo por invitación en la parte alta del rango de tarifas.
+
+## Palanca 6: apila horas estratégicamente
+La tarifa por hora de Mercor no cambia con el volumen en sí, pero las semanas con avalancha (cuando llegan los lotes) son cuando fluye el trabajo premium. Planifica estar disponible en esas ventanas incluso si recortas horas en otros sitios.
+
+## Palanca 7: no te quemes
+Las puntuaciones de calidad se desploman cuando te fatigas. Veinte horas buenas a la semana superan a treinta mediocres. Limita tus horas semanales y protege tu criterio.`,
+    faqs: [
+      {
+        q: "¿Cuánto tarda en subir mi tarifa de Mercor?",
+        a: "Los ajustes de tarifa suelen producirse después de 4 a 8 semanas de trabajo constante de alta calidad, antes si te especializas en un nicho de alta demanda que la plataforma esté reclutando activamente.",
+      },
+      {
+        q: "¿Puedo negociar una tarifa más alta en Mercor?",
+        a: "Directamente, no. La tarifa la impulsan la pista, la especialidad y las señales de calidad. La forma más rápida de llegar a una tarifa efectiva más alta es calificar para pistas mejor pagadas mediante la profundidad de la justificación y el posicionamiento de especialidad.",
+      },
+    ],
+  },
 };

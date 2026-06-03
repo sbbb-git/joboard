@@ -1367,4 +1367,121 @@ Le newsletter premiano gli scrittori che amano relazioni dirette e ritmo settima
       { q: "Dovrei gestire una newsletter e un blog contemporaneamente?", a: "Se sostenibile, si. Il modello ibrido ha il soffitto piu alto a lungo termine perche i canali di crescita di newsletter e blog si rinforzano a vicenda. La maggior parte degli operatori inizia con uno e aggiunge l'altro dopo 12 mesi." },
     ],
   },
+  'how-to-get-accepted-on-mercor': {
+    body: `Mercor paga esperti selezionati per valutare gli output dei modelli AI di frontiera. Il lavoro e asincrono, da remoto, pagato in USD, e le tariffe orarie battono quasi qualsiasi altro impiego da remoto se il tuo dominio e richiesto. Il problema e che Mercor seleziona con severita. La maggior parte dei candidati non passa.
+
+## Cosa fanno davvero i valutatori di Mercor
+Leggi un prompt, guardi l'output del modello e lo valuti su griglie specifiche per il compito (correttezza, fedelta, sicurezza, qualita del codice, ragionamento). Per gli sviluppatori, il grosso del lavoro consiste in compiti di valutazione del codice: coppie di completamenti del modello in cui giudichi quale sia migliore e perche, spesso con una giustificazione scritta.
+
+## Cosa valuta Mercor
+Tre cose emergono nella maggior parte dei colloqui di accettazione:
+1. Profondita dimostrabile in almeno un'area tecnica o di dominio (ingegneria, ML, biologia, diritto, finanza, ecc.).
+2. Giudizio scritto in condizioni di ambiguita (la candidatura include brevi compiti scritti).
+3. Segnali di affidabilita (profilo LinkedIn o GitHub che conferma quanto dichiari).
+
+## Come posizionare il tuo profilo
+Elenca dettagli specifici anziche generalita. Un profilo che dice "Sviluppatore Python senior con 6 anni in Stripe a costruire sistemi di rischio" converte meglio di "Ingegnere del software con ampia esperienza". Per i revisori tecnici, una cronologia GitHub con commit consistenti pesa piu dei titoli di studio.
+
+## Il flusso di selezione
+Ti candidi, completi un breve test scritto o di coding e, se passi, vieni invitato a un compito di prova retribuito. I tuoi primi compiti definiscono il tuo punteggio di affidabilita; una qualita costante sblocca piu lavoro e tariffe piu alte.
+
+## Tempistiche tipiche
+Il percorso completo dalla candidatura al primo compito retribuito dura di solito da due a quattro settimane. I profili scarsi per dominio (competenze legali, matematica avanzata, linguaggi di programmazione di nicchia) vengono selezionati piu rapidamente.
+
+## Cosa squalifica in fretta
+Un testo di candidatura generico assistito dall'IA e lo squalificante piu rapido. Mercor seleziona per il giudizio umano; inviare risposte riscritte da un LLM segnala esattamente l'opposto.`,
+    faqs: [
+      { q: "Mercor e aperto a candidati di tutto il mondo?", a: "Si. Mercor recluta a livello globale. I pagamenti sono in USD tramite i metodi standard di trasferimento internazionale." },
+      { q: "Quanto tempo passa prima del mio primo compito retribuito su Mercor?", a: "La maggior parte degli esperti accettati riceve il primo compito retribuito entro una o due settimane dalla fine della selezione. I profili scarsi per dominio possono essere piu rapidi." },
+      { q: "Mi serve un dottorato per candidarmi a Mercor?", a: "No. Mercor recluta in molti domini, inclusa l'ingegneria del software. Per la maggior parte dei percorsi, una competenza pratica dimostrabile conta piu delle credenziali." },
+    ],
+  },
+  'how-much-does-mercor-pay-in-2026': {
+    body: `Mercor paga per ora di lavoro di valutazione. L'intervallo pubblicato e di 30-100 USD/ora, ma i guadagni reali dipendono dal tuo dominio, dal tuo punteggio di qualita e da quanto lavoro riesci a sostenere.
+
+## L'intervallo realistico di partenza
+I nuovi valutatori nei percorsi di ingegneria del software e tecnici generali partono di solito da 30 a 45 USD all'ora. I percorsi scarsi per dominio (matematica avanzata, biologia, diritto) partono piu in alto, spesso da 50 a 80 USD.
+
+## Cosa fa salire la tariffa
+Tre fattori si combinano:
+1. Costanza nella qualita. Mercor pondera l'accordo tra valutatori e la profondita delle tue giustificazioni scritte. Un alto accordo unito a spiegazioni accurate spinge la tariffa verso l'alto nel tempo.
+2. Complessita del compito. Valutazioni piu lunghe e sfumate (tracce di agenti multi-turno, catene di ragionamento sul codice) pagano di piu all'ora rispetto a brevi confronti a coppie.
+3. Specializzazione. Una volta etichettato in una nicchia ad alta domanda (valutazione di agenti LLM, prove formali, ragionamento legale), la tariffa salta perche l'offerta e piu rada.
+
+## Volume
+Il volume e a ondate. Alcune settimane hanno molti lotti di compiti; altre sono tranquille. Aspettati da 5 a 20 ore a settimana come intervallo sostenibile realistico mentre mantieni un lavoro fisso. Pochi esperti in domini scarsi arrivano a oltre 30 ore.
+
+## Su base annua
+Una costanza di 10 ore a settimana a 50 USD/ora equivale grossomodo a 26.000 USD all'anno di reddito secondario. A 60 USD/ora per 20 ore a settimana, raggiungi circa 60.000 USD all'anno, cifra che in alcuni mercati puo rivaleggiare con un lavoro di ingegneria a tempo pieno.
+
+## Quando Mercor non vale la pena
+Se il tuo lavoro principale paga piu di 100 USD all'ora tutto incluso (la retribuzione di ingegneria statunitense di fascia alta), il reddito secondario su Mercor probabilmente non vale le tue ore serali. La matematica funziona meglio per ingegneri a tariffa media, contractor tra un incarico e l'altro o esperti in domini scarsi.
+
+## Velocita dei pagamenti
+I cicli standard di pagamento sono settimanali o bisettimanali. I trasferimenti internazionali avvengono tramite il partner di pagamento della piattaforma; i tempi di arrivo variano per paese, di solito da due a cinque giorni lavorativi.`,
+    faqs: [
+      { q: "Qual e la tariffa oraria media di Mercor per gli sviluppatori nel 2026?", a: "La maggior parte degli sviluppatori software accettati guadagna da 35 a 60 USD all'ora dopo il primo mese, con profili esperti o specializzati che raggiungono 80 USD o piu sui compiti premium." },
+      { q: "Mercor puo sostituire uno stipendio a tempo pieno?", a: "Per gli ingegneri a tariffa media nei mercati a costo piu basso, 25-30 ore costanti a settimana a 50-70 USD all'ora possono eguagliare o superare uno stipendio locale a tempo pieno. La maggior parte dei valutatori lo tratta come un complemento, non come una sostituzione." },
+    ],
+  },
+  'mercor-vs-scale-vs-surge-ai': {
+    body: `Tre piattaforme dominano la valutazione AI retribuita nel 2026: Mercor, Scale AI (tramite i suoi marchi Outlier e Remotasks) e Surge AI. Si sovrappongono nella base clienti ma differiscono per tariffa, tipo di compito, livello di selezione e affidabilita nell'offerta di lavoro.
+
+## Mercor
+Selezionata, guidata da esperti, tariffe settimanali spesso da 30 a 100 USD/ora per i percorsi di software e tecnici. La soglia di candidatura e alta; una volta accettati, il lavoro tende a essere piu approfondito e in forma piu lunga. Adatta a sviluppatori esperti ed esperti di dominio che danno priorita alla tariffa rispetto al volume.
+
+## Scale AI (Outlier/Remotasks)
+Piu ampia, piu orientata al volume. Le tariffe sono in media piu basse (15-40 USD/ora per la maggior parte dei percorsi, domini premium piu alti). Una soglia di ingresso piu bassa la rende accessibile rapidamente. Adatta se vuoi volume immediato e ore settimanali costanti, meno preoccupato della tariffa.
+
+## Surge AI
+Si posiziona come una piattaforma orientata alla qualita per l'annotazione e la valutazione premium. Tariffe ampiamente comparabili a Mercor per fasce di competenza simili. Bacino di lavoro piu piccolo ma costante per gli esperti accettati.
+
+## Confronto diretto
+
+| Fattore                  | Mercor             | Scale AI            | Surge AI         |
+|--------------------------|--------------------|---------------------|------------------|
+| Tariffa tipica (sviluppatore) | 35-80 USD/h   | 18-40 USD/h         | 35-70 USD/h      |
+| Soglia di accettazione   | Alta               | Bassa o media       | Media o alta     |
+| Affidabilita del volume  | A ondate           | Costante            | A ondate         |
+| Profondita del compito   | Forma lunga, sfumata | Breve, ripetitivo | Mista            |
+| Tempo al primo compito   | 2-4 settimane      | 1-7 giorni          | 2-3 settimane    |
+
+## Come decidere
+Se il tuo costo opportunita orario e alto e puoi assorbire volumi a ondate, scegli Mercor. Se vuoi un onboarding rapido e ore settimanali costanti a tariffa piu bassa, scegli Scale AI/Outlier. Se hai una specialita di nicchia (verifica formale, matematica avanzata, linguaggi specifici), candidati a tutte e tre e lascia che le offerte meglio pagate si prendano il tuo tempo.
+
+## Combinazione
+Molti esperti gestiscono due piattaforme in parallelo. Mercor con Scale colma le lacune nel volume; Mercor con Surge distribuisce il rischio di piattaforma. Evita di firmare clausole di esclusivita se ti vengono proposte.`,
+    faqs: [
+      { q: "Quale piattaforma paga di piu i valutatori AI nel 2026?", a: "All'ora, Mercor e Surge AI tendono a guidare per i percorsi da esperto e da sviluppatore a 35-80 USD/ora. Scale AI/Outlier paga in media meno ma offre un volume piu costante." },
+      { q: "Posso lavorare su Mercor e Scale AI contemporaneamente?", a: "Si, a meno che una delle due piattaforme non chieda esclusivita per un progetto specifico. La maggior parte dei valutatori combina le piattaforme per livellare la volatilita del reddito." },
+    ],
+  },
+  'maximize-earnings-on-mercor-as-a-developer': {
+    body: `Una volta accettato su Mercor, i tuoi guadagni orari effettivi dipendono meno dall'offerta iniziale e piu dalle scelte che fai nei primi tre mesi. Lo stesso valutatore puo guadagnare il doppio di un altro a parita di tariffa nominale.
+
+## Leva 1: scegli i percorsi giusti
+Mercor segmenta il lavoro in percorsi (revisione generale del codice, valutazione di tracce di agenti, ragionamento formale, multi-modale, ecc.). Alcuni pagano sostanzialmente di piu all'ora. Proponiti per i percorsi che corrispondono alla tua maggiore profondita, poi chiedi di essere inserito nel lotto piu tecnico o specializzato al loro interno. Il premio per la specializzazione si compone.
+
+## Leva 2: approfondisci le tue giustificazioni scritte
+I valutatori che scrivono giustificazioni dettagliate e specifiche vengono reinvitati a lotti meglio pagati. Tre frasi di ragionamento sostanziale battono un verdetto di una parola sia per il punteggio di qualita sia per le offerte di compiti futuri. E la singola leva controllabile piu importante.
+
+## Leva 3: mantieni l'accordo tra valutatori
+Mercor confronta le tue valutazioni con un set di calibrazione e con altri esperti. Un accordo costante sopra la soglia della piattaforma fa salire la tua tariffa; scendere sotto la limita. Leggi la griglia prima di ogni lotto, non scorrerla.
+
+## Leva 4: rispondi rapidamente ai nuovi inviti ai lotti
+I lotti si chiudono man mano che si riempiono. I valutatori che accettano gli inviti entro pochi minuti si aggiudicano i compiti meglio pagati prima degli altri. Abilita le notifiche e prendi sul serio la finestra degli inviti.
+
+## Leva 5: costruisci un profilo di specialita
+Se puoi etichettarti credibilmente come "il valutatore di agenti LLM" o "lo specialista del sistema di tipi di Python", diventi la prima chiamata per quella nicchia. I profili di specialita ricevono lotti su invito al massimo della fascia di tariffa.
+
+## Leva 6: accumula le ore in modo strategico
+La tariffa oraria di Mercor non cambia con il volume di per se, ma le settimane a ondata (quando arrivano i lotti) sono quelle in cui scorre il lavoro premium. Pianifica di essere disponibile in quelle finestre, anche se riduci le ore altrove.
+
+## Leva 7: non bruciarti
+I punteggi di qualita crollano quando ti affatichi. Venti ore buone a settimana battono trenta mediocri. Metti un tetto alle ore settimanali e proteggi il tuo giudizio.`,
+    faqs: [
+      { q: "Quanto tempo passa prima che la mia tariffa su Mercor aumenti?", a: "Gli aggiustamenti di tariffa avvengono di solito dopo 4-8 settimane di lavoro costante di alta qualita, prima se ti specializzi in una nicchia ad alta domanda che la piattaforma sta attivamente coprendo." },
+      { q: "Posso negoziare una tariffa piu alta su Mercor?", a: "Direttamente, no. La tariffa e guidata da percorso, specialita e segnali di qualita. Il modo piu rapido per ottenere una tariffa effettiva piu alta e qualificarsi per percorsi meglio pagati tramite la profondita delle giustificazioni e il posizionamento di specialita." },
+    ],
+  },
 };
