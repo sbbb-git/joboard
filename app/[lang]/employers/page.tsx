@@ -5,6 +5,122 @@ import { buildMetadata } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { readJobs, topCountries } from '@/lib/jobs';
 import { SCRAPERS } from '@/lib/scrapers';
+import { TrustBlock } from '@/components/TrustBlock';
+
+const FEATURED_30D_URL =
+  process.env.NEXT_PUBLIC_STRIPE_FEATURED_30D ||
+  'mailto:hello@slateremote.com?subject=Featured%20job%2049%20USD';
+const SPONSORED_TOP_URL =
+  process.env.NEXT_PUBLIC_STRIPE_SPONSORED_TOP ||
+  'mailto:hello@slateremote.com?subject=Sponsored%20placement%2099%20USD';
+
+type StripeCopy = {
+  pricingEyebrow: string;
+  pricingTitle: string;
+  featuredName: string;
+  featuredDuration: string;
+  featuredBullet: string;
+  featuredCta: string;
+  sponsoredName: string;
+  sponsoredDuration: string;
+  sponsoredBullet: string;
+  sponsoredCta: string;
+  perWeek: string;
+};
+
+const STRIPE_COPY: Record<Locale, StripeCopy> = {
+  en: {
+    pricingEyebrow: 'Pricing',
+    pricingTitle: 'Pick a placement and go live in 24 hours',
+    featuredName: 'Featured',
+    featuredDuration: '30 days',
+    featuredBullet: 'Top of role page + homepage + all 7 locale variants',
+    featuredCta: 'Buy Featured · $49 →',
+    sponsoredName: 'Sponsored top',
+    sponsoredDuration: 'per week',
+    sponsoredBullet: 'Homepage hero across all 7 locales + 1st position on /jobs',
+    sponsoredCta: 'Buy Sponsored · $99 →',
+    perWeek: '/week',
+  },
+  fr: {
+    pricingEyebrow: 'Tarifs',
+    pricingTitle: "Choisissez un emplacement, en ligne sous 24 h",
+    featuredName: 'Featured',
+    featuredDuration: '30 jours',
+    featuredBullet: 'Haut de la page rôle + home + les 7 variantes de langue',
+    featuredCta: 'Acheter Featured · 49 USD →',
+    sponsoredName: 'Sponsored top',
+    sponsoredDuration: 'par semaine',
+    sponsoredBullet: 'Hero de la home dans les 7 langues + 1ère position sur /jobs',
+    sponsoredCta: 'Acheter Sponsored · 99 USD →',
+    perWeek: '/semaine',
+  },
+  es: {
+    pricingEyebrow: 'Precios',
+    pricingTitle: 'Elige un emplazamiento, en vivo en 24 h',
+    featuredName: 'Featured',
+    featuredDuration: '30 días',
+    featuredBullet: 'Tope de la página de rol + home + las 7 variantes de idioma',
+    featuredCta: 'Comprar Featured · 49 USD →',
+    sponsoredName: 'Sponsored top',
+    sponsoredDuration: 'por semana',
+    sponsoredBullet: 'Hero de la home en los 7 idiomas + 1ª posición en /jobs',
+    sponsoredCta: 'Comprar Sponsored · 99 USD →',
+    perWeek: '/semana',
+  },
+  de: {
+    pricingEyebrow: 'Preise',
+    pricingTitle: 'Wähle einen Platz, live in 24 Stunden',
+    featuredName: 'Featured',
+    featuredDuration: '30 Tage',
+    featuredBullet: 'Top der Rollen-Seite + Homepage + alle 7 Sprachvarianten',
+    featuredCta: 'Featured kaufen · 49 USD →',
+    sponsoredName: 'Sponsored top',
+    sponsoredDuration: 'pro Woche',
+    sponsoredBullet: 'Homepage-Hero in allen 7 Sprachen + 1. Position auf /jobs',
+    sponsoredCta: 'Sponsored kaufen · 99 USD →',
+    perWeek: '/Woche',
+  },
+  pt: {
+    pricingEyebrow: 'Preços',
+    pricingTitle: 'Escolha um posicionamento, no ar em 24 h',
+    featuredName: 'Featured',
+    featuredDuration: '30 dias',
+    featuredBullet: 'Topo da página do cargo + home + todas as 7 variantes de idioma',
+    featuredCta: 'Comprar Featured · 49 USD →',
+    sponsoredName: 'Sponsored top',
+    sponsoredDuration: 'por semana',
+    sponsoredBullet: 'Hero da home nos 7 idiomas + 1ª posição em /jobs',
+    sponsoredCta: 'Comprar Sponsored · 99 USD →',
+    perWeek: '/semana',
+  },
+  it: {
+    pricingEyebrow: 'Prezzi',
+    pricingTitle: 'Scegli un posizionamento, online in 24 ore',
+    featuredName: 'Featured',
+    featuredDuration: '30 giorni',
+    featuredBullet: 'In cima alla pagina ruolo + home + tutte le 7 varianti di lingua',
+    featuredCta: 'Acquista Featured · 49 USD →',
+    sponsoredName: 'Sponsored top',
+    sponsoredDuration: 'a settimana',
+    sponsoredBullet: 'Hero della home in tutte le 7 lingue + 1ª posizione su /jobs',
+    sponsoredCta: 'Acquista Sponsored · 99 USD →',
+    perWeek: '/settimana',
+  },
+  pl: {
+    pricingEyebrow: 'Cennik',
+    pricingTitle: 'Wybierz miejsce, live w 24 godziny',
+    featuredName: 'Featured',
+    featuredDuration: '30 dni',
+    featuredBullet: 'Górna część strony roli + home + wszystkie 7 wariantów językowych',
+    featuredCta: 'Kup Featured · 49 USD →',
+    sponsoredName: 'Sponsored top',
+    sponsoredDuration: 'na tydzień',
+    sponsoredBullet: 'Hero strony głównej we wszystkich 7 językach + 1 pozycja na /jobs',
+    sponsoredCta: 'Kup Sponsored · 99 USD →',
+    perWeek: '/tydzień',
+  },
+};
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -716,6 +832,7 @@ export function generateMetadata({ params }: { params: { lang: Locale } }): Meta
 
 export default function EmployersPage({ params }: { params: { lang: Locale } }) {
   const c = COPY[params.lang];
+  const sc = STRIPE_COPY[params.lang];
   const meta = readJobs();
   const liveJobs = meta.count;
   const sourceCount = SCRAPERS.length;
@@ -747,9 +864,50 @@ export default function EmployersPage({ params }: { params: { lang: Locale } }) 
 
       <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
         <Stat big={liveJobs.toLocaleString()} label={c.statLabels[0]} />
-        <Stat big="6,300+" label={c.statLabels[1]} />
+        <Stat big="6,800+" label={c.statLabels[1]} />
         <Stat big={`${sourceCount}`} label={c.statLabels[2]} />
         <Stat big="7" label={c.statLabels[3]} />
+      </section>
+
+      <TrustBlock locale={params.lang} />
+
+      <section>
+        <p className="text-[10px] uppercase tracking-wider text-forest font-bold">{sc.pricingEyebrow}</p>
+        <h2 className="font-display text-2xl md:text-3xl font-normal tracking-tighter text-ink mt-2">
+          {sc.pricingTitle}
+        </h2>
+        <div className="grid sm:grid-cols-2 gap-4 mt-6">
+          <article className="rounded-2xl border border-line bg-paper p-6 shadow-soft">
+            <h3 className="font-semibold text-ink">{sc.featuredName}</h3>
+            <p className="text-xs uppercase tracking-wider text-muted mt-1">{sc.featuredDuration}</p>
+            <p className="font-display text-4xl text-ink mt-3">$49</p>
+            <p className="text-sm text-graphite mt-3">· {sc.featuredBullet}</p>
+            <a
+              href={FEATURED_30D_URL}
+              target={FEATURED_30D_URL.startsWith('http') ? '_blank' : undefined}
+              rel={FEATURED_30D_URL.startsWith('http') ? 'noopener' : undefined}
+              className="inline-flex items-center mt-5 px-5 py-2.5 bg-ink text-bg rounded-full text-sm font-semibold hover:bg-forest transition-colors"
+            >
+              {sc.featuredCta}
+            </a>
+          </article>
+          <article className="rounded-2xl border border-forest bg-forestSoft p-6 shadow-soft">
+            <h3 className="font-semibold text-forest">{sc.sponsoredName}</h3>
+            <p className="text-xs uppercase tracking-wider text-forest mt-1">{sc.sponsoredDuration}</p>
+            <p className="font-display text-4xl text-ink mt-3">
+              $99<span className="text-base text-muted">{sc.perWeek}</span>
+            </p>
+            <p className="text-sm text-graphite mt-3">· {sc.sponsoredBullet}</p>
+            <a
+              href={SPONSORED_TOP_URL}
+              target={SPONSORED_TOP_URL.startsWith('http') ? '_blank' : undefined}
+              rel={SPONSORED_TOP_URL.startsWith('http') ? 'noopener' : undefined}
+              className="inline-flex items-center mt-5 px-5 py-2.5 bg-forest text-bg rounded-full text-sm font-semibold hover:bg-ink transition-colors"
+            >
+              {sc.sponsoredCta}
+            </a>
+          </article>
+        </div>
       </section>
 
       <section>

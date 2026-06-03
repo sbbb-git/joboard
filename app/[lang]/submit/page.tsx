@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { LOCALES } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
+import { TrustBlock } from '@/components/TrustBlock';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -283,6 +284,8 @@ export default function SubmitPage({ params }: { params: { lang: Locale } }) {
         <p>{c.intro1}</p>
         <p>{c.intro2}</p>
       </section>
+
+      <TrustBlock locale={params.lang} />
 
       <section className="grid md:grid-cols-2 gap-4">
         <article className="border border-line rounded-lg p-5 bg-white">

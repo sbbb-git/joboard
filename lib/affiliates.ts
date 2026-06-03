@@ -193,7 +193,7 @@ export const AFFILIATES: AffiliateEntry[] = [
   {
     slug: 'braintrust',
     name: 'Braintrust',
-    url: 'https://www.usebraintrust.com/r/sacha67/',
+    url: 'https://app.usebraintrust.com/r/sacha67/',
     blurb:
       'Top-tier freelance engineering talent network. Build a profile once, get matched to vetted client engagements.',
     cta: 'Join Braintrust',
