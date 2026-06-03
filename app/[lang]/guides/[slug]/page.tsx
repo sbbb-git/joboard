@@ -17,6 +17,9 @@ import { FiverrCTA } from '@/components/FiverrCTA';
 import { AppSumoCTA } from '@/components/AppSumoCTA';
 import { BeehiivCTA } from '@/components/BeehiivCTA';
 import { MercorCTA } from '@/components/MercorCTA';
+import { WiseCTA } from '@/components/WiseCTA';
+import { SafetyWingCTA } from '@/components/SafetyWingCTA';
+import { NordVPNCTA } from '@/components/NordVPNCTA';
 
 const APPSUMO_SLUGS = new Set([
   'appsumo-lifetime-deals-explained',
@@ -167,6 +170,9 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
       {APPSUMO_SLUGS.has(g.slug) && <AppSumoCTA locale={params.lang} />}
       {BEEHIIV_SLUGS.has(g.slug) && <BeehiivCTA locale={params.lang} />}
       {MERCOR_SLUGS.has(g.slug) && <MercorCTA locale={params.lang} />}
+      {(g.category === 'tax' || g.category === 'visa') && <WiseCTA locale={params.lang} />}
+      {(g.category === 'visa' || g.category === 'lifestyle') && <SafetyWingCTA locale={params.lang} />}
+      {g.category === 'tools' && <NordVPNCTA locale={params.lang} />}
       {g.category === 'tools' && <RemoteTools locale={params.lang} />}
       {(g.category === 'lifestyle' || g.category === 'visa' || g.category === 'tax' || g.category === 'finding' || g.category === 'career') && (
         <NomadCTA  locale={params.lang} />
