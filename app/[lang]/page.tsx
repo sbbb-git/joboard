@@ -6,27 +6,30 @@ import { Newsletter } from '@/components/Newsletter';
 import { HomeFaq } from '@/components/HomeFaq';
 import { allJobs, rolesWithCounts, topCompanies, topCountries } from '@/lib/jobs';
 import { localePath, t } from '@/lib/i18n';
-import { buildMetadata, organizationJsonLd } from '@/lib/seo';
+import { buildMetadata, organizationJsonLd, websiteJsonLd } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { SKILLS } from '@/lib/skills';
 import { CITIES } from '@/lib/cities';
 import { GUIDES } from '@/lib/guides';
+import { tGuide } from '@/lib/guides-i18n';
+import { HOME } from '@/lib/home-i18n';
 
 export const dynamicParams = false;
 export const revalidate = false;
 
 export function generateMetadata({ params }: { params: { lang: Locale } }): Metadata {
+  const h = HOME[params.lang];
   return buildMetadata({
     locale: params.lang,
     path: '',
-    title: 'Remote tech jobs from across the web, refreshed daily',
-    description:
-      'Browse remote engineering, data, design and product jobs aggregated from eight public job board APIs. Updated every day in 7 languages. Salary, city and skill pages included.',
+    title: h.metaTitle,
+    description: h.metaDescription,
   });
 }
 
 export default function Home({ params }: { params: { lang: Locale } }) {
   const locale = params.lang;
+  const h = HOME[locale];
   const all = allJobs();
   const jobs = all.slice(0, 12);
   const roles = rolesWithCounts().filter((r) => r.count > 0).slice(0, 8);
@@ -42,6 +45,10 @@ export default function Home({ params }: { params: { lang: Locale } }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
+      />
 
       {/* HERO */}
       <section className="relative -mt-8 pt-12 pb-12 px-1">
@@ -50,11 +57,11 @@ export default function Home({ params }: { params: { lang: Locale } }) {
           <div>
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-forestSoft text-forest mb-5">
               <span className="w-1.5 h-1.5 rounded-full bg-forest animate-pulse" />
-              Updated every 24 hours · {all.length} active jobs
+              {h.badge(all.length)}
             </span>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tightest leading-[1.04] text-ink">
-              Find your next{' '}
-              <em className="font-display italic text-forest">remote tech role</em>, fresh every day.
+              {h.h1a}
+              <em className="font-display italic text-forest">{h.h1em}</em>{h.h1b}
             </h1>
             <p className="mt-5 text-lg text-graphite max-w-prose">
               {t(locale, 'site.intro')}
@@ -64,25 +71,25 @@ export default function Home({ params }: { params: { lang: Locale } }) {
                 href={localePath(locale, 'jobs')}
                 className="inline-flex items-center px-5 py-2.5 bg-ink text-bg rounded-full text-sm font-semibold hover:bg-forest transition-colors"
               >
-                Browse {all.length} jobs →
+                {h.browseJobs(all.length)}
               </Link>
               <Link
                 href={localePath(locale, 'salaries/developer')}
                 className="inline-flex items-center px-5 py-2.5 bg-paper border border-line text-ink rounded-full text-sm font-semibold hover:border-ink transition-colors"
               >
-                See salary data
+                {h.seeSalary}
               </Link>
             </div>
           </div>
 
           {/* Stats card */}
           <div className="rounded-2xl bg-paper border border-line shadow-soft p-6 grid grid-cols-2 gap-5">
-            <Stat number={all.length} label="active jobs" />
-            <Stat number={countries.length} label="countries" suffix="+" />
-            <Stat number={companies.length * 10} label="companies" suffix="+" />
-            <Stat number={SKILLS.length} label="skills tracked" />
-            <Stat number={CITIES.length} label="cities profiled" />
-            <Stat number={GUIDES.length} label="long-form guides" />
+            <Stat number={all.length} label={h.stat.jobs} />
+            <Stat number={countries.length} label={h.stat.countries} suffix="+" />
+            <Stat number={companies.length * 10} label={h.stat.companies} suffix="+" />
+            <Stat number={SKILLS.length} label={h.stat.skills} />
+            <Stat number={CITIES.length} label={h.stat.cities} />
+            <Stat number={GUIDES.length} label={h.stat.guides} />
           </div>
         </div>
 
@@ -110,7 +117,7 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       {/* LATEST JOBS */}
       <section>
         <SectionHeader
-          eyebrow="Latest postings"
+          eyebrow={h.latest}
           title={t(locale, 'nav.jobs')}
           link={{ href: localePath(locale, 'jobs'), label: `${t(locale, 'cta.viewAll')} →` }}
         />
@@ -126,94 +133,94 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       </section>
 
       {/* NEWSLETTER */}
-      <Newsletter />
+      <Newsletter locale={locale} />
 
       {/* BENTO HIGHLIGHTS */}
       <section>
         <SectionHeader
-          eyebrow="Explore the index"
-          title="Built for the way remote tech actually works"
+          eyebrow={h.bentoEyebrow}
+          title={h.bentoTitle}
         />
         <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[140px] md:auto-rows-[170px] gap-3">
           <BentoTile className="col-span-2 md:col-span-2 md:row-span-2 bg-gradient-to-br from-forestSoft to-paper">
             <div>
               <p className="text-[10px] uppercase tracking-wider text-forest font-bold">
-                Daily refresh
+                {h.dailyRefresh}
               </p>
               <p className="font-display text-4xl md:text-5xl font-normal text-ink leading-none mt-2">
                 {all.length.toLocaleString()}
               </p>
-              <p className="text-graphite text-sm mt-1">jobs in the index right now</p>
+              <p className="text-graphite text-sm mt-1">{h.jobsRightNow}</p>
             </div>
             <Link
               href={localePath(locale, 'jobs')}
               className="text-sm text-forest font-medium hover:underline self-end"
             >
-              Browse all →
+              {h.browseAll}
             </Link>
           </BentoTile>
 
           <BentoTile className="col-span-1 md:col-span-2 bg-paper border border-line">
             <div>
               <p className="text-[10px] uppercase tracking-wider text-terracotta font-bold">
-                Find your stack
+                {h.findStack}
               </p>
               <p className="font-display text-2xl md:text-3xl font-normal text-ink mt-2 leading-tight">
-                Browse by skill
+                {h.browseBySkillTile}
               </p>
               <p className="text-xs text-muted mt-1">
-                {SKILLS.length} languages, frameworks, clouds, ML stacks
+                {h.skillsSub(SKILLS.length)}
               </p>
             </div>
             <Link
               href={localePath(locale, 'skills')}
               className="text-sm text-terracotta font-medium hover:underline self-end"
             >
-              Explore skills →
+              {h.exploreSkills}
             </Link>
           </BentoTile>
 
           <BentoTile className="col-span-1 md:col-span-1 bg-paper border border-line">
             <div>
               <p className="text-[10px] uppercase tracking-wider text-amber font-bold">
-                Salary data
+                {h.salaryData}
               </p>
               <p className="font-display text-xl font-normal text-ink mt-1.5 leading-tight">
-                What roles actually pay
+                {h.whatPays}
               </p>
             </div>
             <Link
               href={localePath(locale, 'salaries/developer')}
               className="text-xs text-amber font-medium hover:underline self-end"
             >
-              See bands →
+              {h.seeBands}
             </Link>
           </BentoTile>
 
           <BentoTile className="col-span-1 md:col-span-1 bg-gradient-to-br from-amberSoft to-paper">
             <div>
               <p className="text-[10px] uppercase tracking-wider text-amber font-bold">
-                Move and work
+                {h.moveWork}
               </p>
               <p className="font-display text-xl font-normal text-ink mt-1.5 leading-tight">
-                {CITIES.length} cities profiled
+                {h.citiesProfiled(CITIES.length)}
               </p>
             </div>
             <Link
               href={localePath(locale, 'cities')}
               className="text-xs text-amber font-medium hover:underline self-end"
             >
-              Cities →
+              {h.citiesLink}
             </Link>
           </BentoTile>
 
           <BentoTile className="col-span-2 md:col-span-4 bg-gradient-to-r from-paper to-terracottaSoft border border-line">
             <div>
               <p className="text-[10px] uppercase tracking-wider text-terracotta font-bold">
-                Free, forever, no signup
+                {h.freeForever}
               </p>
               <p className="font-display text-2xl md:text-3xl font-normal text-ink mt-2 leading-tight italic">
-                Browse, filter, apply directly.
+                {h.browseFilterApply}
               </p>
             </div>
             <span className="text-sm text-graphite hidden md:inline">
@@ -226,9 +233,9 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       {/* SKILLS */}
       <section>
         <SectionHeader
-          eyebrow="Browse by stack"
-          title="Find jobs by skill"
-          link={{ href: localePath(locale, 'skills'), label: `All ${SKILLS.length} skills →` }}
+          eyebrow={h.skillsEyebrow}
+          title={h.skillsTitle}
+          link={{ href: localePath(locale, 'skills'), label: h.allSkills(SKILLS.length) }}
         />
         <div className="flex flex-wrap gap-2">
           {featuredSkills.map((s) => (
@@ -246,9 +253,9 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       {/* CITIES */}
       <section>
         <SectionHeader
-          eyebrow="Live and work anywhere"
-          title="Top cities for remote tech workers"
-          link={{ href: localePath(locale, 'cities'), label: `All ${CITIES.length} cities →` }}
+          eyebrow={h.citiesEyebrow}
+          title={h.citiesTitle}
+          link={{ href: localePath(locale, 'cities'), label: h.allCities(CITIES.length) }}
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {featuredCities.map((c) => (
@@ -260,7 +267,7 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       {/* COUNTRIES */}
       {countries.length > 0 && (
         <section>
-          <SectionHeader eyebrow="By country" title={t(locale, 'nav.locations')} />
+          <SectionHeader eyebrow={h.countryEyebrow} title={t(locale, 'nav.locations')} />
           <div className="flex flex-wrap gap-2">
             {countries.map((c) => (
               <Link
@@ -278,9 +285,9 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       {/* GUIDES */}
       <section>
         <SectionHeader
-          eyebrow="Read up"
+          eyebrow={h.guidesEyebrow}
           title={t(locale, 'nav.guides')}
-          link={{ href: localePath(locale, 'guides'), label: `All ${GUIDES.length} guides →` }}
+          link={{ href: localePath(locale, 'guides'), label: h.allGuides(GUIDES.length) }}
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {featuredGuides.map((g) => (
@@ -290,15 +297,15 @@ export default function Home({ params }: { params: { lang: Locale } }) {
               className="block rounded-2xl border border-line bg-paper shadow-soft hover-lift hover:shadow-lift hover:border-ink/20 p-5"
             >
               <p className="text-[10px] uppercase tracking-wider text-forest font-semibold">{g.category}</p>
-              <h3 className="font-semibold text-ink mt-1.5 leading-snug">{g.title}</h3>
-              <p className="text-xs text-muted mt-2 leading-relaxed line-clamp-3">{g.description}</p>
+              <h3 className="font-semibold text-ink mt-1.5 leading-snug">{tGuide(g.slug, locale, 'title', g.title)}</h3>
+              <p className="text-xs text-muted mt-2 leading-relaxed line-clamp-3">{tGuide(g.slug, locale, 'description', g.description)}</p>
             </Link>
           ))}
         </div>
       </section>
 
       {/* FAQ */}
-      <HomeFaq />
+      <HomeFaq locale={locale} />
     </div>
   );
 }

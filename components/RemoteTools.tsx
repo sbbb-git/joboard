@@ -1,7 +1,9 @@
 import { affiliatesByCategory } from '@/lib/affiliates';
 import { AffiliateGrid } from './AffiliateCard';
+import { AFFILIATE_COPY } from '@/lib/affiliates-i18n';
+import type { Locale } from '@/lib/types';
 
-export function RemoteTools() {
+export function RemoteTools({ locale = 'en' }: { locale?: Locale }) {
   const entries = affiliatesByCategory(
     'newsletter',
     'productivity',
@@ -9,11 +11,13 @@ export function RemoteTools() {
     'talent',
     'ai',
   );
+  const copy = AFFILIATE_COPY[locale];
   return (
     <AffiliateGrid
-      title="Tools remote workers actually use"
-      intro="Software we run our own stack on, plus the better picks we recommend to remote engineers around us."
+      title={copy.toolsTitle}
+      intro={copy.toolsIntro}
       entries={entries}
+      locale={locale}
     />
   );
 }

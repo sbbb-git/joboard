@@ -6,6 +6,191 @@ import { flagFor } from '@/lib/flags';
 import { ROLES, type Locale, type Role, type Seniority } from '@/lib/types';
 import { CompanyLogo } from './CompanyLogo';
 
+type SearchStrings = {
+  searchPlaceholder: string;
+  clearSearch: string;
+  today: string;
+  pastWeek: string;
+  pastMonth: string;
+  fullTime: string;
+  contract: string;
+  partTime: string;
+  intern: string;
+  withSalary: string;
+  allFilters: string;
+  filtering: string;
+  reset: string;
+  resetAll: string;
+  resetFilters: string;
+  loading: string;
+  job: string;
+  jobs: string;
+  of: string;
+  noMatches: string;
+  noMatchesBody: string;
+  showMore: (n: number) => string;
+  showCount: (n: number, label: string) => string;
+  close: string;
+  groupRole: string;
+  groupCountry: string;
+  groupSeniority: string;
+  groupType: string;
+  groupMinSalary: string;
+  groupPostedWithin: string;
+  groupOther: string;
+  any: string;
+  anyCountry: string;
+  countriesRepresented: (n: number) => string;
+  anytime: string;
+  past24h: string;
+  threeDays: string;
+  oneWeek: string;
+  twoWeeks: string;
+  oneMonth: string;
+  onlyWithSalary: string;
+  newest: string;
+  salaryDesc: string;
+  salaryAsc: string;
+  pastNd: (n: number) => string;
+  todayRel: string;
+};
+
+const STR: Record<Locale, SearchStrings> = {
+  en: {
+    searchPlaceholder: 'Search role, company, skill…', clearSearch: 'Clear search',
+    today: 'Today', pastWeek: 'Past week', pastMonth: 'Past month',
+    fullTime: 'Full-time', contract: 'Contract', partTime: 'Part-time', intern: 'Intern',
+    withSalary: 'With salary', allFilters: 'All filters', filtering: 'Filtering',
+    reset: 'Reset', resetAll: 'Reset all', resetFilters: 'Reset filters',
+    loading: 'Loading…', job: 'job', jobs: 'jobs', of: 'of',
+    noMatches: 'No matches', noMatchesBody: 'Try removing a filter or two. New jobs land every day at 04:00 UTC.',
+    showMore: (n) => `Show ${n} more`, showCount: (n, l) => `Show ${n.toLocaleString()} ${l}`,
+    close: 'Close',
+    groupRole: 'Role', groupCountry: 'Country', groupSeniority: 'Seniority', groupType: 'Type',
+    groupMinSalary: 'Minimum salary', groupPostedWithin: 'Posted within', groupOther: 'Other',
+    any: 'Any', anyCountry: 'Any country',
+    countriesRepresented: (n) => `${n} represented`,
+    anytime: 'Anytime', past24h: 'Past 24h', threeDays: '3 days', oneWeek: '1 week', twoWeeks: '2 weeks', oneMonth: '1 month',
+    onlyWithSalary: 'Only jobs with published salary',
+    newest: 'Newest', salaryDesc: 'Salary ↓', salaryAsc: 'Salary ↑',
+    pastNd: (n) => `Past ${n}d`, todayRel: 'today',
+  },
+  fr: {
+    searchPlaceholder: 'Rechercher rôle, entreprise, skill…', clearSearch: 'Effacer la recherche',
+    today: "Aujourd'hui", pastWeek: '7 derniers jours', pastMonth: '30 derniers jours',
+    fullTime: 'Temps plein', contract: 'Freelance', partTime: 'Temps partiel', intern: 'Stage',
+    withSalary: 'Avec salaire', allFilters: 'Tous les filtres', filtering: 'Filtres actifs',
+    reset: 'Effacer', resetAll: 'Tout effacer', resetFilters: 'Effacer les filtres',
+    loading: 'Chargement…', job: 'offre', jobs: 'offres', of: 'sur',
+    noMatches: 'Aucun résultat', noMatchesBody: "Essayez de retirer un filtre. De nouvelles offres arrivent chaque jour à 04:00 UTC.",
+    showMore: (n) => `Afficher ${n} de plus`, showCount: (n, l) => `Afficher ${n.toLocaleString()} ${l}`,
+    close: 'Fermer',
+    groupRole: 'Rôle', groupCountry: 'Pays', groupSeniority: 'Niveau', groupType: 'Type',
+    groupMinSalary: 'Salaire minimum', groupPostedWithin: 'Publié depuis', groupOther: 'Autre',
+    any: 'Tous', anyCountry: 'Tous les pays',
+    countriesRepresented: (n) => `${n} représentés`,
+    anytime: 'À tout moment', past24h: '24h', threeDays: '3 jours', oneWeek: '1 semaine', twoWeeks: '2 semaines', oneMonth: '1 mois',
+    onlyWithSalary: 'Uniquement avec salaire publié',
+    newest: 'Plus récents', salaryDesc: 'Salaire ↓', salaryAsc: 'Salaire ↑',
+    pastNd: (n) => `${n}j`, todayRel: "auj.",
+  },
+  es: {
+    searchPlaceholder: 'Buscar rol, empresa, skill…', clearSearch: 'Limpiar búsqueda',
+    today: 'Hoy', pastWeek: 'Última semana', pastMonth: 'Último mes',
+    fullTime: 'Tiempo completo', contract: 'Freelance', partTime: 'Medio tiempo', intern: 'Prácticas',
+    withSalary: 'Con salario', allFilters: 'Todos los filtros', filtering: 'Filtros activos',
+    reset: 'Limpiar', resetAll: 'Limpiar todo', resetFilters: 'Limpiar filtros',
+    loading: 'Cargando…', job: 'empleo', jobs: 'empleos', of: 'de',
+    noMatches: 'Sin resultados', noMatchesBody: 'Intenta quitar un filtro. Nuevas vacantes llegan cada día a las 04:00 UTC.',
+    showMore: (n) => `Mostrar ${n} más`, showCount: (n, l) => `Mostrar ${n.toLocaleString()} ${l}`,
+    close: 'Cerrar',
+    groupRole: 'Rol', groupCountry: 'País', groupSeniority: 'Nivel', groupType: 'Tipo',
+    groupMinSalary: 'Salario mínimo', groupPostedWithin: 'Publicado en', groupOther: 'Otro',
+    any: 'Cualquiera', anyCountry: 'Cualquier país',
+    countriesRepresented: (n) => `${n} representados`,
+    anytime: 'Cualquier momento', past24h: '24h', threeDays: '3 días', oneWeek: '1 semana', twoWeeks: '2 semanas', oneMonth: '1 mes',
+    onlyWithSalary: 'Solo empleos con salario publicado',
+    newest: 'Recientes', salaryDesc: 'Salario ↓', salaryAsc: 'Salario ↑',
+    pastNd: (n) => `${n}d`, todayRel: 'hoy',
+  },
+  de: {
+    searchPlaceholder: 'Rolle, Firma, Skill suchen…', clearSearch: 'Suche löschen',
+    today: 'Heute', pastWeek: 'Letzte Woche', pastMonth: 'Letzter Monat',
+    fullTime: 'Vollzeit', contract: 'Freelance', partTime: 'Teilzeit', intern: 'Praktikum',
+    withSalary: 'Mit Gehalt', allFilters: 'Alle Filter', filtering: 'Aktive Filter',
+    reset: 'Zurücksetzen', resetAll: 'Alle zurücksetzen', resetFilters: 'Filter zurücksetzen',
+    loading: 'Lädt…', job: 'Job', jobs: 'Jobs', of: 'von',
+    noMatches: 'Keine Treffer', noMatchesBody: 'Versuchen Sie, einen Filter zu entfernen. Neue Jobs kommen täglich um 04:00 UTC.',
+    showMore: (n) => `${n} weitere anzeigen`, showCount: (n, l) => `${n.toLocaleString()} ${l} anzeigen`,
+    close: 'Schließen',
+    groupRole: 'Rolle', groupCountry: 'Land', groupSeniority: 'Level', groupType: 'Typ',
+    groupMinSalary: 'Mindestgehalt', groupPostedWithin: 'Veröffentlicht in', groupOther: 'Sonstiges',
+    any: 'Alle', anyCountry: 'Alle Länder',
+    countriesRepresented: (n) => `${n} vertreten`,
+    anytime: 'Jederzeit', past24h: '24h', threeDays: '3 Tage', oneWeek: '1 Woche', twoWeeks: '2 Wochen', oneMonth: '1 Monat',
+    onlyWithSalary: 'Nur Jobs mit veröffentlichtem Gehalt',
+    newest: 'Neueste', salaryDesc: 'Gehalt ↓', salaryAsc: 'Gehalt ↑',
+    pastNd: (n) => `${n}T`, todayRel: 'heute',
+  },
+  pt: {
+    searchPlaceholder: 'Buscar cargo, empresa, skill…', clearSearch: 'Limpar busca',
+    today: 'Hoje', pastWeek: 'Última semana', pastMonth: 'Último mês',
+    fullTime: 'Tempo integral', contract: 'Freelance', partTime: 'Meio período', intern: 'Estágio',
+    withSalary: 'Com salário', allFilters: 'Todos os filtros', filtering: 'Filtros ativos',
+    reset: 'Limpar', resetAll: 'Limpar tudo', resetFilters: 'Limpar filtros',
+    loading: 'Carregando…', job: 'vaga', jobs: 'vagas', of: 'de',
+    noMatches: 'Sem resultados', noMatchesBody: 'Tente remover um filtro. Novas vagas chegam todo dia às 04:00 UTC.',
+    showMore: (n) => `Mostrar mais ${n}`, showCount: (n, l) => `Mostrar ${n.toLocaleString()} ${l}`,
+    close: 'Fechar',
+    groupRole: 'Cargo', groupCountry: 'País', groupSeniority: 'Senioridade', groupType: 'Tipo',
+    groupMinSalary: 'Salário mínimo', groupPostedWithin: 'Publicada em', groupOther: 'Outro',
+    any: 'Qualquer', anyCountry: 'Qualquer país',
+    countriesRepresented: (n) => `${n} representados`,
+    anytime: 'Qualquer momento', past24h: '24h', threeDays: '3 dias', oneWeek: '1 semana', twoWeeks: '2 semanas', oneMonth: '1 mês',
+    onlyWithSalary: 'Apenas vagas com salário publicado',
+    newest: 'Recentes', salaryDesc: 'Salário ↓', salaryAsc: 'Salário ↑',
+    pastNd: (n) => `${n}d`, todayRel: 'hoje',
+  },
+  it: {
+    searchPlaceholder: 'Cerca ruolo, azienda, skill…', clearSearch: 'Pulisci ricerca',
+    today: 'Oggi', pastWeek: 'Ultima settimana', pastMonth: 'Ultimo mese',
+    fullTime: 'Tempo pieno', contract: 'Freelance', partTime: 'Part-time', intern: 'Stage',
+    withSalary: 'Con stipendio', allFilters: 'Tutti i filtri', filtering: 'Filtri attivi',
+    reset: 'Resetta', resetAll: 'Resetta tutto', resetFilters: 'Resetta filtri',
+    loading: 'Caricamento…', job: 'lavoro', jobs: 'lavori', of: 'di',
+    noMatches: 'Nessun risultato', noMatchesBody: 'Prova a rimuovere un filtro. Nuovi annunci arrivano ogni giorno alle 04:00 UTC.',
+    showMore: (n) => `Mostra altri ${n}`, showCount: (n, l) => `Mostra ${n.toLocaleString()} ${l}`,
+    close: 'Chiudi',
+    groupRole: 'Ruolo', groupCountry: 'Paese', groupSeniority: 'Seniority', groupType: 'Tipo',
+    groupMinSalary: 'Stipendio minimo', groupPostedWithin: 'Pubblicato in', groupOther: 'Altro',
+    any: 'Qualunque', anyCountry: 'Qualunque paese',
+    countriesRepresented: (n) => `${n} rappresentati`,
+    anytime: 'In qualsiasi momento', past24h: '24h', threeDays: '3 giorni', oneWeek: '1 settimana', twoWeeks: '2 settimane', oneMonth: '1 mese',
+    onlyWithSalary: 'Solo lavori con stipendio pubblicato',
+    newest: 'Più recenti', salaryDesc: 'Stipendio ↓', salaryAsc: 'Stipendio ↑',
+    pastNd: (n) => `${n}g`, todayRel: 'oggi',
+  },
+  pl: {
+    searchPlaceholder: 'Szukaj roli, firmy, skilla…', clearSearch: 'Wyczyść wyszukiwanie',
+    today: 'Dziś', pastWeek: 'Ostatni tydzień', pastMonth: 'Ostatni miesiąc',
+    fullTime: 'Pełny etat', contract: 'Kontrakt', partTime: 'Pół etatu', intern: 'Staż',
+    withSalary: 'Z wynagrodzeniem', allFilters: 'Wszystkie filtry', filtering: 'Aktywne filtry',
+    reset: 'Wyczyść', resetAll: 'Wyczyść wszystko', resetFilters: 'Wyczyść filtry',
+    loading: 'Ładowanie…', job: 'oferta', jobs: 'ofert', of: 'z',
+    noMatches: 'Brak wyników', noMatchesBody: 'Spróbuj usunąć filtr. Nowe oferty pojawiają się codziennie o 04:00 UTC.',
+    showMore: (n) => `Pokaż więcej (${n})`, showCount: (n, l) => `Pokaż ${n.toLocaleString()} ${l}`,
+    close: 'Zamknij',
+    groupRole: 'Rola', groupCountry: 'Kraj', groupSeniority: 'Senioritet', groupType: 'Typ',
+    groupMinSalary: 'Min. wynagrodzenie', groupPostedWithin: 'Opublikowano w', groupOther: 'Inne',
+    any: 'Dowolny', anyCountry: 'Dowolny kraj',
+    countriesRepresented: (n) => `${n} reprezentowanych`,
+    anytime: 'Kiedykolwiek', past24h: '24h', threeDays: '3 dni', oneWeek: '1 tydzień', twoWeeks: '2 tygodnie', oneMonth: '1 miesiąc',
+    onlyWithSalary: 'Tylko oferty z opublikowanym wynagrodzeniem',
+    newest: 'Najnowsze', salaryDesc: 'Wynagrodzenie ↓', salaryAsc: 'Wynagrodzenie ↑',
+    pastNd: (n) => `${n}d`, todayRel: 'dziś',
+  },
+};
+
 interface SlimJob {
   i: string; t: string; c: string; cs: string; l: string; lc: string | null;
   r: Role; s: Seniority; e: string;
@@ -24,15 +209,16 @@ const PAGE_SIZE = 30;
 
 type Sort = 'recent' | 'salary-high' | 'salary-low';
 
-function relativeDate(iso: string): string {
+function relativeDate(iso: string, t: SearchStrings): string {
   const days = Math.floor((Date.now() - new Date(iso).getTime()) / 86_400_000);
-  if (days < 1) return 'today';
-  if (days === 1) return '1d';
-  if (days < 30) return `${days}d`;
+  if (days < 1) return t.todayRel;
+  if (days === 1) return t.pastNd(1);
+  if (days < 30) return t.pastNd(days);
   return `${Math.floor(days / 30)}mo`;
 }
 
 export function JobSearch({ locale }: { locale: Locale }) {
+  const t = STR[locale];
   const [data, setData] = useState<IndexFile | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -120,13 +306,13 @@ export function JobSearch({ locale }: { locale: Locale }) {
   if (role) activeChips.push({ label: role.replace('-', ' '), clear: () => setRole('') });
   if (country) activeChips.push({ label: `${flagFor(country)} ${country}`, clear: () => setCountry('') });
   if (seniority) activeChips.push({ label: cap(seniority), clear: () => setSeniority('') });
-  if (employment) activeChips.push({ label: empLabel(employment), clear: () => setEmployment('') });
+  if (employment) activeChips.push({ label: empLabel(employment, t), clear: () => setEmployment('') });
   if (minSalary > 0) activeChips.push({ label: `$${minSalary / 1000}k+`, clear: () => setMinSalary(0) });
   if (postedWithin > 0) activeChips.push({
-    label: postedWithin === 1 ? 'Past 24h' : postedWithin === 7 ? 'Past week' : `Past ${postedWithin}d`,
+    label: postedWithin === 1 ? t.past24h : postedWithin === 7 ? t.pastWeek : t.pastNd(postedWithin),
     clear: () => setPostedWithin(0),
   });
-  if (salaryOnly) activeChips.push({ label: 'With salary', clear: () => setSalaryOnly(false) });
+  if (salaryOnly) activeChips.push({ label: t.withSalary, clear: () => setSalaryOnly(false) });
 
   // Count of advanced filters currently active (excluding quick chips already exposed)
   const advancedActive = [role, country, seniority].filter(Boolean).length;
@@ -134,10 +320,10 @@ export function JobSearch({ locale }: { locale: Locale }) {
   return (
     <div className="space-y-4">
       {/* Toolbar — sticky right below the site header */}
-      <div className="sticky top-[57px] sm:top-[60px] z-30 -mx-4 sm:mx-0 px-4 sm:px-0">
-        <div className="bg-bg/95 backdrop-blur-md py-3 sm:py-0">
+      <div className="sticky top-16 sm:top-[68px] z-30 -mx-4 sm:mx-0 px-4 sm:px-0">
+        <div className="bg-bg/95 backdrop-blur-md py-3 sm:py-2">
           <div className="flex items-center gap-2 sm:gap-3">
-            <div className="relative flex-1">
+            <div className="relative flex-1 min-w-0">
               <svg viewBox="0 0 24 24" fill="none" className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-subtle pointer-events-none">
                 <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="2" />
                 <path d="M21 21l-4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -146,20 +332,20 @@ export function JobSearch({ locale }: { locale: Locale }) {
                 type="text"
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
-                placeholder="Search role, company, skill…"
+                placeholder={t.searchPlaceholder}
                 className="w-full h-11 pl-10 pr-9 rounded-full border border-line bg-paper text-sm placeholder:text-subtle focus:outline-none focus:border-ink focus:ring-2 focus:ring-ink/5 transition-shadow"
               />
               {q && (
                 <button
                   onClick={() => setQ('')}
-                  aria-label="Clear search"
+                  aria-label={t.clearSearch}
                   className="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full hover:bg-sand flex items-center justify-center text-subtle hover:text-ink"
                 >
                   ×
                 </button>
               )}
             </div>
-            <SortMenu value={sort} onChange={setSort} />
+            <SortMenu value={sort} onChange={setSort} t={t} />
           </div>
         </div>
       </div>
@@ -167,27 +353,27 @@ export function JobSearch({ locale }: { locale: Locale }) {
       {/* Quick chips */}
       <div className="flex items-center gap-2 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 pb-1 scrollbar-hide">
         <FilterChip active={postedWithin === 1} onClick={() => setPostedWithin(postedWithin === 1 ? 0 : 1)} icon={<DotIcon />}>
-          Today
+          {t.today}
         </FilterChip>
         <FilterChip active={postedWithin === 7} onClick={() => setPostedWithin(postedWithin === 7 ? 0 : 7)}>
-          Past week
+          {t.pastWeek}
         </FilterChip>
         <FilterChip active={postedWithin === 30} onClick={() => setPostedWithin(postedWithin === 30 ? 0 : 30)}>
-          Past month
+          {t.pastMonth}
         </FilterChip>
         <Divider />
         <FilterChip active={employment === 'FULL_TIME'} onClick={() => setEmployment(employment === 'FULL_TIME' ? '' : 'FULL_TIME')}>
-          Full-time
+          {t.fullTime}
         </FilterChip>
         <FilterChip active={employment === 'CONTRACTOR'} onClick={() => setEmployment(employment === 'CONTRACTOR' ? '' : 'CONTRACTOR')}>
-          Contract
+          {t.contract}
         </FilterChip>
         <FilterChip active={employment === 'PART_TIME'} onClick={() => setEmployment(employment === 'PART_TIME' ? '' : 'PART_TIME')}>
-          Part-time
+          {t.partTime}
         </FilterChip>
         <Divider />
         <FilterChip active={salaryOnly} onClick={() => setSalaryOnly((s) => !s)} icon={<DollarIcon />}>
-          With salary
+          {t.withSalary}
         </FilterChip>
         <FilterChip active={minSalary === 100000} onClick={() => setMinSalary(minSalary === 100000 ? 0 : 100000)}>
           $100k+
@@ -199,10 +385,10 @@ export function JobSearch({ locale }: { locale: Locale }) {
         <button
           type="button"
           onClick={() => setAllOpen(true)}
-          className="flex-shrink-0 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border-2 border-ink/15 bg-paper text-xs font-semibold text-ink hover:border-ink transition-colors whitespace-nowrap"
+          className="flex-shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border-2 border-ink/15 bg-paper text-xs font-semibold text-ink hover:border-ink transition-colors whitespace-nowrap"
         >
           <SlidersIcon />
-          All filters
+          {t.allFilters}
           {advancedActive > 0 && (
             <span className="ml-0.5 inline-flex items-center justify-center w-5 h-5 rounded-full bg-ink text-bg text-[10px] font-bold">
               {advancedActive}
@@ -214,7 +400,7 @@ export function JobSearch({ locale }: { locale: Locale }) {
       {/* Active filters bar */}
       {activeChips.length > 0 && (
         <div className="flex items-center gap-2 flex-wrap text-sm">
-          <span className="text-[11px] uppercase tracking-wider text-subtle font-semibold">Filtering</span>
+          <span className="text-[11px] uppercase tracking-wider text-subtle font-semibold">{t.filtering}</span>
           {activeChips.map((c, i) => (
             <button
               key={i}
@@ -226,7 +412,7 @@ export function JobSearch({ locale }: { locale: Locale }) {
             </button>
           ))}
           <button onClick={reset} className="text-xs font-medium text-muted hover:text-ink underline underline-offset-2 ml-1">
-            Reset
+            {t.reset}
           </button>
         </div>
       )}
@@ -235,13 +421,13 @@ export function JobSearch({ locale }: { locale: Locale }) {
       <div className="flex items-baseline justify-between pt-2">
         <p className="text-sm">
           {loading ? (
-            <span className="text-subtle">Loading…</span>
+            <span className="text-subtle">{t.loading}</span>
           ) : (
             <>
               <span className="font-display text-2xl font-normal text-ink stat-num">{filtered.length.toLocaleString()}</span>
               <span className="text-muted ml-2">
-                {filtered.length === 1 ? 'job' : 'jobs'}
-                {data ? ` of ${data.count.toLocaleString()}` : ''}
+                {filtered.length === 1 ? t.job : t.jobs}
+                {data ? ` ${t.of} ${data.count.toLocaleString()}` : ''}
               </span>
             </>
           )}
@@ -257,13 +443,11 @@ export function JobSearch({ locale }: { locale: Locale }) {
               <path d="M21 21l-4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
           </div>
-          <p className="text-base font-semibold text-ink">No matches</p>
-          <p className="text-sm text-muted mt-1.5 max-w-sm mx-auto">
-            Try removing a filter or two. New jobs land every day at 04:00 UTC.
-          </p>
+          <p className="text-base font-semibold text-ink">{t.noMatches}</p>
+          <p className="text-sm text-muted mt-1.5 max-w-sm mx-auto">{t.noMatchesBody}</p>
           {activeChips.length > 0 && (
             <button onClick={reset} className="mt-4 px-4 py-2 bg-ink text-bg rounded-full text-sm font-medium hover:bg-forest">
-              Reset filters
+              {t.resetFilters}
             </button>
           )}
         </div>
@@ -291,7 +475,7 @@ export function JobSearch({ locale }: { locale: Locale }) {
 
       <div className="grid gap-3 md:grid-cols-2">
         {filtered.slice(0, shown).map((j) => (
-          <SlimJobCard key={j.i} job={j} locale={locale} />
+          <SlimJobCard key={j.i} job={j} locale={locale} t={t} />
         ))}
       </div>
 
@@ -301,7 +485,7 @@ export function JobSearch({ locale }: { locale: Locale }) {
             onClick={() => setShown((s) => s + PAGE_SIZE)}
             className="px-6 py-3 bg-paper border border-line rounded-full text-sm font-semibold hover:border-ink shadow-soft hover:shadow-lift transition"
           >
-            Show {Math.min(PAGE_SIZE, filtered.length - shown)} more
+            {t.showMore(Math.min(PAGE_SIZE, filtered.length - shown))}
           </button>
         </div>
       )}
@@ -310,60 +494,60 @@ export function JobSearch({ locale }: { locale: Locale }) {
       {allOpen && (
         <div className="fixed inset-0 z-50 flex items-end sm:items-center sm:justify-center" role="dialog" aria-modal="true">
           <button
-            aria-label="Close filters"
+            aria-label={t.close}
             onClick={() => setAllOpen(false)}
             className="absolute inset-0 bg-ink/40 backdrop-blur-sm"
           />
           <div className="relative w-full sm:max-w-lg bg-bg sm:rounded-2xl rounded-t-2xl border border-line shadow-lift max-h-[85vh] flex flex-col">
             <div className="flex items-center justify-between px-5 py-4 border-b border-line">
-              <h3 className="font-display text-xl font-normal tracking-tighter text-ink">All filters</h3>
-              <button onClick={() => setAllOpen(false)} aria-label="Close" className="w-9 h-9 rounded-full hover:bg-sand flex items-center justify-center text-muted text-lg">
+              <h3 className="font-display text-xl font-normal tracking-tighter text-ink">{t.allFilters}</h3>
+              <button onClick={() => setAllOpen(false)} aria-label={t.close} className="w-11 h-11 sm:w-9 sm:h-9 rounded-full hover:bg-sand flex items-center justify-center text-muted text-lg">
                 ×
               </button>
             </div>
             <div className="flex-1 overflow-y-auto px-5 py-5 space-y-6">
-              <FilterGroup title="Role">
+              <FilterGroup title={t.groupRole}>
                 <RadioGrid
-                  options={[{ value: '', label: 'Any' }, ...ROLES.map((r) => ({ value: r, label: r.replace('-', ' ') }))]}
+                  options={[{ value: '', label: t.any }, ...ROLES.map((r) => ({ value: r, label: r.replace('-', ' ') }))]}
                   value={role}
                   onChange={(v) => setRole(v as Role | '')}
                 />
               </FilterGroup>
-              <FilterGroup title="Country" subtitle={`${countries.length} represented`}>
+              <FilterGroup title={t.groupCountry} subtitle={t.countriesRepresented(countries.length)}>
                 <NativeSelect value={country} onChange={setCountry}>
-                  <option value="">Any country</option>
+                  <option value="">{t.anyCountry}</option>
                   {countries.map((c) => (
                     <option key={c} value={c}>{c}</option>
                   ))}
                 </NativeSelect>
               </FilterGroup>
-              <FilterGroup title="Seniority">
+              <FilterGroup title={t.groupSeniority}>
                 <RadioGrid
                   options={[
-                    { value: '', label: 'Any' },
+                    { value: '', label: t.any },
                     ...SENIORITIES.map((s) => ({ value: s, label: cap(s) })),
                   ]}
                   value={seniority}
                   onChange={(v) => setSeniority(v as Seniority | '')}
                 />
               </FilterGroup>
-              <FilterGroup title="Type">
+              <FilterGroup title={t.groupType}>
                 <RadioGrid
                   options={[
-                    { value: '', label: 'Any' },
-                    { value: 'FULL_TIME', label: 'Full-time' },
-                    { value: 'CONTRACTOR', label: 'Contract' },
-                    { value: 'PART_TIME', label: 'Part-time' },
-                    { value: 'INTERN', label: 'Intern' },
+                    { value: '', label: t.any },
+                    { value: 'FULL_TIME', label: t.fullTime },
+                    { value: 'CONTRACTOR', label: t.contract },
+                    { value: 'PART_TIME', label: t.partTime },
+                    { value: 'INTERN', label: t.intern },
                   ]}
                   value={employment}
                   onChange={setEmployment}
                 />
               </FilterGroup>
-              <FilterGroup title="Minimum salary">
+              <FilterGroup title={t.groupMinSalary}>
                 <RadioGrid
                   options={[
-                    { value: '0', label: 'Any' },
+                    { value: '0', label: t.any },
                     { value: '50000', label: '$50k+' },
                     { value: '80000', label: '$80k+' },
                     { value: '100000', label: '$100k+' },
@@ -375,23 +559,23 @@ export function JobSearch({ locale }: { locale: Locale }) {
                   onChange={(v) => setMinSalary(Number(v))}
                 />
               </FilterGroup>
-              <FilterGroup title="Posted within">
+              <FilterGroup title={t.groupPostedWithin}>
                 <RadioGrid
                   options={[
-                    { value: '0', label: 'Anytime' },
-                    { value: '1', label: 'Past 24h' },
-                    { value: '3', label: '3 days' },
-                    { value: '7', label: '1 week' },
-                    { value: '14', label: '2 weeks' },
-                    { value: '30', label: '1 month' },
+                    { value: '0', label: t.anytime },
+                    { value: '1', label: t.past24h },
+                    { value: '3', label: t.threeDays },
+                    { value: '7', label: t.oneWeek },
+                    { value: '14', label: t.twoWeeks },
+                    { value: '30', label: t.oneMonth },
                   ]}
                   value={String(postedWithin)}
                   onChange={(v) => setPostedWithin(Number(v))}
                 />
               </FilterGroup>
-              <FilterGroup title="Other">
+              <FilterGroup title={t.groupOther}>
                 <label className="flex items-center justify-between gap-3 p-3 rounded-lg border border-line cursor-pointer hover:border-ink">
-                  <span className="text-sm text-ink">Only jobs with published salary</span>
+                  <span className="text-sm text-ink">{t.onlyWithSalary}</span>
                   <input
                     type="checkbox"
                     checked={salaryOnly}
@@ -403,13 +587,13 @@ export function JobSearch({ locale }: { locale: Locale }) {
             </div>
             <div className="px-5 py-4 border-t border-line bg-bg flex items-center justify-between gap-3">
               <button onClick={reset} className="text-sm text-muted hover:text-ink font-medium">
-                Reset all
+                {t.resetAll}
               </button>
               <button
                 onClick={() => setAllOpen(false)}
                 className="px-5 py-2.5 bg-ink text-bg rounded-full text-sm font-semibold hover:bg-forest transition-colors"
               >
-                Show {filtered.length.toLocaleString()} {filtered.length === 1 ? 'job' : 'jobs'}
+                {t.showCount(filtered.length, filtered.length === 1 ? t.job : t.jobs)}
               </button>
             </div>
           </div>
@@ -452,17 +636,18 @@ function Divider() {
   return <span className="flex-shrink-0 w-px h-5 bg-line mx-0.5" />;
 }
 
-function SortMenu({ value, onChange }: { value: Sort; onChange: (v: Sort) => void }) {
+function SortMenu({ value, onChange, t }: { value: Sort; onChange: (v: Sort) => void; t: SearchStrings }) {
   return (
     <div className="relative flex-shrink-0">
       <select
         value={value}
         onChange={(e) => onChange(e.target.value as Sort)}
+        aria-label={t.newest}
         className="appearance-none h-11 pl-3.5 pr-9 rounded-full border border-line bg-paper text-xs font-medium text-ink focus:outline-none focus:border-ink cursor-pointer hover:border-ink/40 transition"
       >
-        <option value="recent">Newest</option>
-        <option value="salary-high">Salary ↓</option>
-        <option value="salary-low">Salary ↑</option>
+        <option value="recent">{t.newest}</option>
+        <option value="salary-high">{t.salaryDesc}</option>
+        <option value="salary-low">{t.salaryAsc}</option>
       </select>
       <svg viewBox="0 0 14 14" width="12" height="12" className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-muted">
         <path d="M3 5l4 4 4-4" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
@@ -571,17 +756,17 @@ function cap(s: string): string {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
-function empLabel(value: string): string {
+function empLabel(value: string, t: SearchStrings): string {
   switch (value) {
-    case 'FULL_TIME': return 'Full-time';
-    case 'CONTRACTOR': return 'Contract';
-    case 'PART_TIME': return 'Part-time';
-    case 'INTERN': return 'Intern';
+    case 'FULL_TIME': return t.fullTime;
+    case 'CONTRACTOR': return t.contract;
+    case 'PART_TIME': return t.partTime;
+    case 'INTERN': return t.intern;
     default: return value;
   }
 }
 
-function SlimJobCard({ job, locale }: { job: SlimJob; locale: Locale }) {
+function SlimJobCard({ job, locale, t }: { job: SlimJob; locale: Locale; t: SearchStrings }) {
   const salary =
     job.sn || job.sx
       ? `${job.cu ?? 'USD'} ${Math.round((job.sn || 0) / 1000)}${
@@ -601,7 +786,7 @@ function SlimJobCard({ job, locale }: { job: SlimJob; locale: Locale }) {
             <h3 className="text-[15px] font-semibold text-ink leading-snug line-clamp-2 group-hover:text-forest transition-colors">
               {job.t}
             </h3>
-            <span className="flex-shrink-0 text-[11px] text-subtle whitespace-nowrap pt-0.5">{relativeDate(job.p)}</span>
+            <span className="flex-shrink-0 text-[11px] text-subtle whitespace-nowrap pt-0.5">{relativeDate(job.p, t)}</span>
           </div>
           <p className="text-[13px] mt-1">
             <span className="font-medium text-graphite">{job.c}</span>

@@ -1,4 +1,6 @@
 import type { AffiliateEntry } from '@/lib/affiliates';
+import { AFFILIATE_COPY } from '@/lib/affiliates-i18n';
+import type { Locale } from '@/lib/types';
 
 export function AffiliateCard({ entry }: { entry: AffiliateEntry }) {
   return (
@@ -26,32 +28,32 @@ export function AffiliateGrid({
   title,
   intro,
   entries,
+  locale = 'en',
 }: {
   title: string;
   intro?: string;
   entries: AffiliateEntry[];
+  locale?: Locale;
 }) {
   if (entries.length === 0) return null;
+  const copy = AFFILIATE_COPY[locale];
   return (
     <section className="rounded-2xl border border-line bg-paper shadow-soft p-6">
       <div className="flex items-baseline justify-between flex-wrap gap-2 mb-3">
         <h2 className="font-semibold text-ink">{title}</h2>
         <span className="text-[10px] uppercase tracking-wider text-subtle">
-          Affiliate · disclosure below
+          {copy.badge}
         </span>
       </div>
       {intro && <p className="text-sm text-muted mb-5 max-w-prose">{intro}</p>}
       <div
-        className={`grid gap-3 ${entries.length >= 3 ? 'sm:grid-cols-2 lg:grid-cols-3' : 'sm:grid-cols-2'}`}
+        className={`grid grid-cols-1 gap-3 ${entries.length >= 3 ? 'sm:grid-cols-2 lg:grid-cols-3' : 'sm:grid-cols-2'}`}
       >
         {entries.map((e) => (
           <AffiliateCard key={e.slug} entry={e} />
         ))}
       </div>
-      <p className="text-[10px] text-subtle mt-3">
-        We may earn a small commission if you sign up via these links. Pricing and features are
-        unchanged.
-      </p>
+      <p className="text-[10px] text-subtle mt-3">{copy.disclaimer}</p>
     </section>
   );
 }

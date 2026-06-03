@@ -5,13 +5,25 @@ import type { JobNormalized, Locale } from '@/lib/types';
 import { CompanyLogo } from './CompanyLogo';
 import { SourceLogo } from './SourceLogo';
 
-function relativeDate(iso: string): string {
+type RelCopy = { today: string; days: (n: number) => string; months: (n: number) => string };
+
+const REL: Record<Locale, RelCopy> = {
+  en: { today: 'today', days: (n) => `${n}d ago`, months: (n) => `${n}mo ago` },
+  fr: { today: "auj.", days: (n) => `il y a ${n}j`, months: (n) => `il y a ${n}m` },
+  es: { today: 'hoy', days: (n) => `hace ${n}d`, months: (n) => `hace ${n}m` },
+  de: { today: 'heute', days: (n) => `vor ${n}T`, months: (n) => `vor ${n}M` },
+  pt: { today: 'hoje', days: (n) => `há ${n}d`, months: (n) => `há ${n}m` },
+  it: { today: 'oggi', days: (n) => `${n}g fa`, months: (n) => `${n}m fa` },
+  pl: { today: 'dziś', days: (n) => `${n}d temu`, months: (n) => `${n}mies temu` },
+};
+
+function relativeDate(iso: string, locale: Locale): string {
+  const c = REL[locale];
   const days = Math.floor((Date.now() - new Date(iso).getTime()) / 86_400_000);
-  if (days < 1) return 'today';
-  if (days === 1) return '1d ago';
-  if (days < 30) return `${days}d ago`;
+  if (days < 1) return c.today;
+  if (days < 30) return c.days(days);
   const m = Math.floor(days / 30);
-  return m === 1 ? '1mo ago' : `${m}mo ago`;
+  return c.months(m);
 }
 
 export function JobCard({ job, locale }: { job: JobNormalized; locale: Locale }) {
@@ -36,7 +48,7 @@ export function JobCard({ job, locale }: { job: JobNormalized; locale: Locale })
               {job.title}
             </h3>
             <span className="flex-shrink-0 text-[11px] text-subtle whitespace-nowrap pt-0.5">
-              {relativeDate(job.postedAt)}
+              {relativeDate(job.postedAt, locale)}
             </span>
           </div>
           <p className="text-[13px] mt-1">

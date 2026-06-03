@@ -1,35 +1,30 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { GUIDES } from '@/lib/guides';
+import { tGuide } from '@/lib/guides-i18n';
 import { buildMetadata, itemListJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
+import { GUIDES_I18N } from '@/lib/page-i18n';
 
 export const dynamicParams = false;
 export const revalidate = false;
 
 export function generateMetadata({ params }: { params: { lang: Locale } }): Metadata {
+  const c = GUIDES_I18N[params.lang];
   return buildMetadata({
     locale: params.lang,
     path: 'guides',
-    title: 'Guides for remote tech workers',
-    description:
-      'Long-form guides on finding remote tech jobs, salaries, visas, taxes, tools and lifestyle for remote engineers.',
+    title: c.metaTitle,
+    description: c.metaDescription(GUIDES.length),
   });
 }
 
-const CATEGORIES: Array<{ id: string; label: string }> = [
-  { id: 'finding', label: 'Finding a job' },
-  { id: 'salary', label: 'Salaries & negotiation' },
-  { id: 'career', label: 'Career paths' },
-  { id: 'visa', label: 'Visas' },
-  { id: 'tax', label: 'Taxes' },
-  { id: 'lifestyle', label: 'Lifestyle' },
-  { id: 'tools', label: 'Tools & setup' },
-];
+const CATEGORY_ORDER = ['finding', 'salary', 'career', 'freelance', 'visa', 'tax', 'lifestyle', 'tools'];
 
 export default function GuidesIndex({ params }: { params: { lang: Locale } }) {
+  const c = GUIDES_I18N[params.lang];
   const itemList = itemListJsonLd(
-    GUIDES.map((g) => ({ name: g.title, url: absoluteUrl(`/${params.lang}/guides/${g.slug}`) })),
+    GUIDES.map((g) => ({ name: tGuide(g.slug, params.lang, 'title', g.title), url: absoluteUrl(`/${params.lang}/guides/${g.slug}`) })),
   );
   return (
     <div className="space-y-12">
@@ -38,23 +33,21 @@ export default function GuidesIndex({ params }: { params: { lang: Locale } }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}
       />
       <header className="border-b border-line pb-6">
-        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">Guides</p>
+        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{c.eyebrow}</p>
         <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1">
-          Guides for remote tech workers
+          {c.h1}
         </h1>
-        <p className="text-graphite text-base mt-3 max-w-prose">
-          {GUIDES.length} long-form, opinionated guides on every topic that matters for landing
-          and sustaining a remote tech career.
-        </p>
+        <p className="text-graphite text-base mt-3 max-w-prose">{c.intro(GUIDES.length)}</p>
       </header>
 
-      {CATEGORIES.map((cat) => {
-        const items = GUIDES.filter((g) => g.category === cat.id);
+      {CATEGORY_ORDER.map((catId) => {
+        const items = GUIDES.filter((g) => g.category === catId);
         if (items.length === 0) return null;
+        const label = c.categories[catId] ?? catId;
         return (
-          <section key={cat.id}>
+          <section key={catId}>
             <h2 className="font-display text-xl font-normal tracking-tighter text-ink mb-4">
-              {cat.label}
+              {label}
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {items.map((g) => (
@@ -66,9 +59,9 @@ export default function GuidesIndex({ params }: { params: { lang: Locale } }) {
                   <p className="text-[10px] uppercase tracking-wider text-forest font-semibold">
                     {g.category}
                   </p>
-                  <h3 className="font-semibold text-ink mt-1.5 leading-snug">{g.title}</h3>
+                  <h3 className="font-semibold text-ink mt-1.5 leading-snug">{tGuide(g.slug, params.lang, 'title', g.title)}</h3>
                   <p className="text-xs text-muted mt-2 leading-relaxed line-clamp-3">
-                    {g.description}
+                    {tGuide(g.slug, params.lang, 'description', g.description)}
                   </p>
                 </Link>
               ))}

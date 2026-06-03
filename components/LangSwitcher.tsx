@@ -19,7 +19,7 @@ export function LangSwitcher({ current, path }: { current: Locale; path: string 
           <path d="M2 4l3 3 3-3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
-      <span className="absolute right-0 top-full mt-1 hidden group-hover:grid group-focus-within:grid grid-cols-3 gap-1 bg-paper border border-line rounded-lg shadow-lift p-1.5 min-w-[140px] z-50">
+      <span className="absolute right-0 top-full mt-1 hidden group-hover:grid group-focus-within:grid grid-cols-3 gap-1 bg-paper border border-line rounded-lg shadow-lift p-1.5 min-w-[140px] max-w-[calc(100vw-2rem)] z-50">
         {others.map((l) => (
           <Link
             key={l}

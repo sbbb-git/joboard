@@ -201,6 +201,17 @@ export const AFFILIATES: AffiliateEntry[] = [
     payoutType: 'cash',
     category: 'talent',
   },
+  {
+    slug: 'fiverr',
+    name: 'Fiverr',
+    url: 'https://go.fiverr.com/visit/?bta=1169210&brand=fiverrmarketplace',
+    blurb:
+      'The largest marketplace for freelance tech services. List a gig, get matched with buyers worldwide, and get paid for code, automation and AI work.',
+    cta: 'Start selling on Fiverr',
+    payout: 'Up to $150 CPA per first-time buyer',
+    payoutType: 'cash',
+    category: 'talent',
+  },
 
   // ─── Community ────────────────────────────────────────────
   {
@@ -216,6 +227,17 @@ export const AFFILIATES: AffiliateEntry[] = [
   },
 
   // ─── Shopping / home office ──────────────────────────────
+  {
+    slug: 'appsumo',
+    name: 'AppSumo',
+    url: 'https://appsumo.8odi.net/gRgbDg',
+    blurb:
+      'The biggest marketplace for SaaS lifetime deals. One-time payment, lifetime access to AI tools, marketing software, dev utilities and productivity apps remote workers actually use.',
+    cta: 'Browse AppSumo deals',
+    payout: 'Variable per signup (Impact)',
+    payoutType: 'cash',
+    category: 'shopping',
+  },
   {
     slug: 'amazon-fr',
     name: 'Amazon (FR)',

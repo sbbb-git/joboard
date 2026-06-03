@@ -1,0 +1,48 @@
+# Cloudflare Pages cache & security headers.
+# More-specific rules win over /* for the same header name.
+
+# ─── Long-cache hashed Next.js static assets (immutable) ───────────────
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# ─── Brand assets and images: 30 days ─────────────────────────────────
+/og/*
+  Cache-Control: public, max-age=2592000
+/icons/*
+  Cache-Control: public, max-age=2592000
+/*.png
+  Cache-Control: public, max-age=2592000
+/*.jpg
+  Cache-Control: public, max-age=2592000
+/*.jpeg
+  Cache-Control: public, max-age=2592000
+/*.webp
+  Cache-Control: public, max-age=2592000
+/*.svg
+  Cache-Control: public, max-age=2592000
+/*.ico
+  Cache-Control: public, max-age=2592000
+
+# ─── Web manifest, robots, sitemap: 1 hour ────────────────────────────
+/manifest.webmanifest
+  Cache-Control: public, max-age=3600
+/robots.txt
+  Cache-Control: public, max-age=3600
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+
+# ─── RSC payload files (.txt) ─────────────────────────────────────────
+# These are Next.js streaming-RSC files for SPA navigation, not human content.
+# Cache hard at the edge so bot crawls hit cache, and deindex from search.
+/*.txt
+  Cache-Control: public, max-age=21600, s-maxage=86400
+  X-Robots-Tag: noindex, nofollow
+
+# ─── HTML pages: short browser cache, 24h edge cache ──────────────────
+# Site rebuilds daily; edge cache will be invalidated by the deploy.
+/*
+  Cache-Control: public, max-age=300, s-maxage=86400, stale-while-revalidate=86400
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()

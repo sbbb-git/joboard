@@ -4,32 +4,24 @@ import { SKILLS, skillsByCategory } from '@/lib/skills';
 import { buildMetadata, itemListJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { categoryIcon, categoryColors } from '@/lib/skill-icons';
+import { SKILLS_I18N } from '@/lib/page-i18n';
+import { tSkillBlurb } from '@/lib/skills-i18n';
 
 export const dynamicParams = false;
 export const revalidate = false;
 
 export function generateMetadata({ params }: { params: { lang: Locale } }): Metadata {
+  const c = SKILLS_I18N[params.lang];
   return buildMetadata({
     locale: params.lang,
     path: 'skills',
-    title: 'Remote tech jobs by skill',
-    description:
-      'Browse remote engineering jobs by language, framework, cloud, database, AI/ML stack. Updated daily.',
+    title: c.metaTitle,
+    description: c.metaDescription(SKILLS.length),
   });
 }
 
-const CATEGORY_LABELS: Record<string, string> = {
-  language: 'Languages',
-  framework: 'Frameworks',
-  cloud: 'Cloud platforms',
-  data: 'Data & databases',
-  devops: 'DevOps & platform',
-  ai: 'AI & ML',
-  mobile: 'Mobile',
-  web3: 'API & Web3',
-};
-
 export default function SkillsIndex({ params }: { params: { lang: Locale } }) {
+  const c = SKILLS_I18N[params.lang];
   const grouped = skillsByCategory();
   const itemList = itemListJsonLd(
     SKILLS.map((s) => ({ name: s.name, url: absoluteUrl(`/${params.lang}/skills/${s.slug}`) })),
@@ -41,14 +33,11 @@ export default function SkillsIndex({ params }: { params: { lang: Locale } }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}
       />
       <header className="border-b border-line pb-6">
-        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">By skill</p>
+        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{c.eyebrow}</p>
         <h1 className="font-display text-4xl md:text-5xl font-normal tracking-tighter text-ink mt-1">
-          Remote tech jobs by skill
+          {c.h1}
         </h1>
-        <p className="text-graphite text-base mt-3 max-w-prose">
-          {SKILLS.length} skill categories tracked across the index. Pick a stack to see open
-          positions and salary ranges.
-        </p>
+        <p className="text-graphite text-base mt-3 max-w-prose">{c.intro(SKILLS.length)}</p>
       </header>
 
       {Object.entries(grouped).map(([cat, items]) => {
@@ -62,13 +51,13 @@ export default function SkillsIndex({ params }: { params: { lang: Locale } }) {
                 {categoryIcon(cat)}
               </span>
               <h2 className="font-display text-2xl font-normal tracking-tighter text-ink">
-                {CATEGORY_LABELS[cat] ?? cat}
+                {c.categories[cat] ?? cat}
               </h2>
-              <span className="text-xs text-subtle">{items.length} skills</span>
+              <span className="text-xs text-subtle">{items.length} {c.countLabel}</span>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {items.map((s) => {
-                const c = categoryColors(s.category);
+                const cc = categoryColors(s.category);
                 return (
                   <Link
                     key={s.slug}
@@ -77,7 +66,7 @@ export default function SkillsIndex({ params }: { params: { lang: Locale } }) {
                   >
                     <div className="flex items-start gap-3">
                       <span
-                        className={`flex-shrink-0 inline-flex items-center justify-center w-10 h-10 rounded-lg font-mono text-sm font-bold ${c.bg} ${c.text}`}
+                        className={`flex-shrink-0 inline-flex items-center justify-center w-10 h-10 rounded-lg font-mono text-sm font-bold ${cc.bg} ${cc.text}`}
                       >
                         {categoryIcon(s.category)}
                       </span>
@@ -86,7 +75,7 @@ export default function SkillsIndex({ params }: { params: { lang: Locale } }) {
                           {s.name}
                         </h3>
                         <p className="text-xs text-muted mt-1 line-clamp-2 leading-relaxed">
-                          {s.blurb}
+                          {tSkillBlurb(s.slug, params.lang, s.blurb)}
                         </p>
                       </div>
                     </div>

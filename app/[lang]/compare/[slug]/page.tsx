@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { COMPARISONS, COMPARISON_MAP } from '@/lib/comparisons';
+import { tComparison } from '@/lib/comparisons-i18n';
 import { LOCALES } from '@/lib/i18n';
 import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
@@ -23,8 +24,8 @@ export function generateMetadata({
   return buildMetadata({
     locale: params.lang,
     path: `compare/${params.slug}`,
-    title: c.title,
-    description: c.description,
+    title: tComparison(c.slug, params.lang, 'title', c.title),
+    description: tComparison(c.slug, params.lang, 'description', c.description),
   });
 }
 
@@ -35,7 +36,7 @@ export default function ComparisonPage({ params }: { params: { lang: Locale; slu
   const breadcrumb = breadcrumbJsonLd([
     { name: 'Home', url: absoluteUrl(`/${params.lang}`) },
     { name: 'Compare', url: absoluteUrl(`/${params.lang}/compare`) },
-    { name: c.title, url: absoluteUrl(`/${params.lang}/compare/${c.slug}`) },
+    { name: tComparison(c.slug, params.lang, 'title', c.title), url: absoluteUrl(`/${params.lang}/compare/${c.slug}`) },
   ]);
 
   const others = COMPARISONS.filter((x) => x.slug !== c.slug).slice(0, 6);
@@ -47,8 +48,8 @@ export default function ComparisonPage({ params }: { params: { lang: Locale; slu
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
       <header className="border-b border-line pb-4">
-        <h1 className="text-2xl md:text-3xl font-semibold">{c.title}</h1>
-        <p className="text-muted text-sm mt-2">{c.description}</p>
+        <h1 className="text-2xl md:text-3xl font-semibold">{tComparison(c.slug, params.lang, 'title', c.title)}</h1>
+        <p className="text-muted text-sm mt-2">{tComparison(c.slug, params.lang, 'description', c.description)}</p>
       </header>
       <div className="grid grid-cols-2 gap-3">
         <div className="border border-line rounded p-3 bg-forestSoft">

@@ -57,7 +57,7 @@ export default function LocationPage({
         </div>
       )}
       <NomadCTA context={{ type: 'location', label: labelTitle, country: labelTitle }}  locale={params.lang} />
-      <NomadEssentials city={labelTitle} />
+      <NomadEssentials city={labelTitle} locale={params.lang} />
       <NomadBanking context={labelTitle} country={labelTitle} locale={params.lang} />
     </div>
   );

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { localePath } from '@/lib/i18n';
+import { localePath, t } from '@/lib/i18n';
 import { flagFor } from '@/lib/flags';
 import { cityImage } from '@/lib/city-images';
 import type { CityEntry } from '@/lib/cities';
@@ -29,10 +29,10 @@ export function CityCard({ city, locale }: { city: CityEntry; locale: Locale }) 
       </div>
       <div className="p-4">
         <div className="grid grid-cols-2 gap-y-1.5 gap-x-3 text-[11px]">
-          <Stat label="Cost" value={`$${city.costOfLivingUsd.toLocaleString()}`} />
-          <Stat label="Internet" value={`${city.internetMbps}+ Mbps`} />
-          <Stat label="TZ" value={city.timezone.split(' ')[0]} />
-          {city.visa && <Stat label="Visa" value="Available" />}
+          <Stat label={t(locale, 'city.cost')} value={`$${city.costOfLivingUsd.toLocaleString()}`} />
+          <Stat label={t(locale, 'city.internet')} value={`${city.internetMbps}+ Mbps`} />
+          <Stat label={t(locale, 'city.tz')} value={city.timezone.split(' ')[0]} />
+          {city.visa && <Stat label={t(locale, 'city.visa')} value={t(locale, 'city.visaAvailable')} />}
         </div>
       </div>
     </Link>
