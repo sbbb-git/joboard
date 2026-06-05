@@ -53,6 +53,18 @@ jobs:
       - name: Generate llms.txt + llms-full.txt
         run: node scripts/gen_llms.mjs
 
+      - name: Verify build env vars (lengths only)
+        env:
+          NEXT_PUBLIC_CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
+          NEXT_PUBLIC_STRIPE_FEATURED_30D: ${{ secrets.STRIPE_FEATURED_30D }}
+          NEXT_PUBLIC_STRIPE_SPONSORED_TOP: ${{ secrets.STRIPE_SPONSORED_TOP }}
+          NEXT_PUBLIC_BEEHIIV_EMBED: ${{ secrets.BEEHIIV_EMBED }}
+        run: |
+          echo "CF_ANALYTICS_TOKEN length:  ${#NEXT_PUBLIC_CF_ANALYTICS_TOKEN}"
+          echo "STRIPE_FEATURED_30D length: ${#NEXT_PUBLIC_STRIPE_FEATURED_30D}"
+          echo "STRIPE_SPONSORED_TOP length: ${#NEXT_PUBLIC_STRIPE_SPONSORED_TOP}"
+          echo "BEEHIIV_EMBED length:       ${#NEXT_PUBLIC_BEEHIIV_EMBED}"
+
       - name: Build static site
         env:
           SITE_URL: https://slateremote.com
