@@ -2241,4 +2241,1063 @@ Utilisez la fenêtre de 60 jours. Achetez en deux lots de trois à quatre deals 
       },
     ],
   },
+  'claude-for-freelance-developer-workflow': {
+    body: `La plupart des articles sur l'utilisation des LLM dans le dev sont soit du marketing creux, soit des histoires de quelqu'un qui a livré des bugs générés par IA en production. Le modèle qui fonctionne réellement pour les développeurs freelance en 2026 est plus étroit et plus discipliné que ces deux extrêmes.
+
+## Pour quoi Claude est bon dans le travail freelance
+Rédiger du boilerplate (squelettes de tests, specs OpenAPI, squelettes Terraform). Expliquer des bases de code inconnues lors de l'onboarding chez un nouveau client. Relire vos propres diffs pour repérer des cas limites oubliés. Générer de la documentation à partir du code existant. Produire des premiers brouillons d'emails clients et de documents de cadrage.
+
+## Pour quoi Claude est mauvais
+Écrire des fonctionnalités complètes sans supervision. Prendre des décisions d'architecture. Tout ce où un bug subtil coûte plus que le temps économisé. Les tâches que le client attend entièrement de vous (lisez votre contrat).
+
+## Un workflow typique
+Lisez le brief, écrivez vous-même une page de cadrage. Demandez à Claude de challenger le design à 10x et 100x l'échelle. Planifiez le travail en petits commits. Pour chaque commit, écrivez d'abord le test, puis demandez à Claude une implémentation brouillon. Relisez et réécrivez avec votre voix avant de committer.
+
+## Soyez honnête avec les clients
+Beaucoup de clients acceptent le travail assisté par LLM tant que le code passe la revue et que le livrable est le vôtre. Certains l'interdisent explicitement. Lisez le contrat ; en cas de doute, demandez par écrit avant le premier commit.
+
+## Tarification
+Le gain de productivité ne justifie pas de baisser votre tarif. Le risque de bugs, la garantie et la responsabilité finale restent les vôtres.`,
+    faqs: [
+      {
+        q: "Dois-je dire aux clients que j'utilise Claude ?",
+        a: "Soyez transparent si on vous le demande, et vérifiez d'abord votre contrat. Beaucoup de clients acceptent le travail assisté par LLM ; certains l'interdisent explicitement. Le livrable et la responsabilité restent les vôtres dans tous les cas.",
+      },
+      {
+        q: "Puis-je facturer moins quand j'utilise Claude pour aller plus vite ?",
+        a: "Vous pouvez mais ne devriez pas par défaut. Le risque de bugs, la responsabilité de réécriture et la garantie restent identiques. Le gain de productivité est le vôtre, gardez-le.",
+      },
+    ],
+  },
+  'digital-nomad-tax-portugal-nhr-2026': {
+    body: `Le régime portugais NHR (Non-Habitual Resident) a fermé aux nouveaux candidats fin 2023. Le régime de 2026 qui compte est l'IFICI, le successeur du NHR pour la recherche, l'innovation et les rôles tech qualifiés.
+
+## Qui se qualifie en 2026
+Les ingénieurs logiciels, ingénieurs ML, data scientists, product engineers et la plupart des rôles tech travaillant pour des employeurs étrangers ou en freelance pour des clients étrangers peuvent se qualifier, sous réserve d'une résidence réelle (183+ jours), d'une profession éligible et de liens de substance fiscale.
+
+## L'avantage
+Un taux forfaitaire de 20 pour cent sur les revenus professionnels de source portugaise pendant 10 ans. La plupart des revenus de source étrangère (plus-values, dividendes, salaires éligibles) sont effectivement exonérés pendant la même période. Le taux effectif net se situe typiquement entre 15 et 22 pour cent au total.
+
+## Exigences de substance
+Vivre réellement au Portugal. Vrai contrat de location, banque locale, famille enregistrée localement, 183+ jours physiquement sur place. Les demi-mesures se font auditer et le régime est révoqué rétroactivement.
+
+## La configuration qui tient
+Déménagez physiquement d'abord. Signez un bail minimum de 12 mois. Enregistrez-vous auprès de l'AT comme résident fiscal. Ouvrez un compte bancaire portugais. Demandez l'IFICI avec preuve de profession éligible. Gardez les traces : historique de voyages, journaux de travail, factures.
+
+## Où Wise s'inscrit
+Les comptes multidevises permettent de recevoir les paiements clients en USD ou EUR au taux du marché interbancaire, puis de transférer vers votre banque portugaise pour les dépenses du quotidien. La stack à trois comptes (Wise pour la réception, banque locale pour les dépenses, courtier pour l'épargne) est standard pour les remote workers basés au Portugal.`,
+    faqs: [
+      {
+        q: "Le NHR portugais est-il disponible pour les nouveaux candidats en 2026 ?",
+        a: "Le NHR original a fermé fin 2023. Son successeur IFICI est ouvert en 2026 avec une liste de professions éligibles plus restreinte qui couvre tout de même la plupart des rôles tech à distance.",
+      },
+      {
+        q: "Dois-je vivre physiquement au Portugal pour me qualifier ?",
+        a: "Oui. 183 jours minimum et des liens résidentiels réels sont requis. L'administration fiscale audite la substance et révoque le régime rétroactivement pour les demi-mesures.",
+      },
+    ],
+  },
+  'safetywing-real-claim-process-2026': {
+    body: `La plupart des avis sur les assurances nomades sautent la partie qui compte : ce qui se passe quand on déclare réellement un sinistre. Voici l'expérience réaliste d'une déclaration SafetyWing en 2026.
+
+## Le flux de déclaration
+Connectez-vous, ouvrez la police concernée, cliquez sur "Submit a claim". Téléversez les documents justificatifs (reçus, rapports médicaux, ordonnances). Remplissez le formulaire standard (date, lieu, brève description). Soumettez et suivez le statut dans le tableau de bord.
+
+## Quels documents il faut
+Les reçus originaux détaillés en devise locale. Le rapport médical du médecin traitant, en anglais ou traduit. Les détails d'ordonnance si applicable. Date de l'incident et du traitement clairement visibles. Preuve de paiement.
+
+## Délai de traitement
+Réclamations simples sous 500 USD : 5-10 jours ouvrés. Réclamations complexes ou nécessitant des documents supplémentaires : 2-4 semaines. Hospitalisation ou évacuation : géré via leur ligne d'urgence 24/7, souvent payé directement au prestataire.
+
+## Ce qui est refusé
+Conditions préexistantes (exceptions limitées). Traitement dans votre pays d'origine au-delà du plafond annuel de 30 jours. Procédures électives (cosmétique, fertilité, la plupart des soins dentaires non urgents). Activités exclues. Documentation dans une langue autre que l'anglais sans traduction.
+
+## Comment éviter les frictions
+Photographiez les reçus le jour où vous les recevez. Obtenez le rapport médical en anglais au point de soin. Soumettez dans les 30 jours. Suivez les dépenses par voyage dans un dossier partagé unique.
+
+## Ce qui surprend les nouveaux déclarants
+Le plan standard vous rembourse (payez d'abord, soyez remboursé). Pour les hospitalisations, le prestataire peut être facturé directement mais vous devez d'abord appeler la ligne d'urgence.`,
+    faqs: [
+      {
+        q: "Combien de temps prend une déclaration SafetyWing ?",
+        a: "Les réclamations simples sous 500 USD se résolvent en 5-10 jours ouvrés. Les réclamations plus complexes prennent 2-4 semaines. Les cas d'hospitalisation passent par la ligne d'urgence 24/7 et sont souvent payés directement au prestataire.",
+      },
+      {
+        q: "Quelle est la raison la plus fréquente de refus d'une réclamation ?",
+        a: "Les litiges sur les conditions préexistantes et la documentation manquante en anglais. Les deux sont gérables : divulgation complète à l'inscription et reçus en anglais au point de soin.",
+      },
+    ],
+  },
+  'passive-income-stack-for-remote-developers-2026': {
+    body: `Le vrai revenu passif est rare. Ce que les développeurs distants expérimentés font tourner en pratique est un petit portefeuille de flux semi-passifs, chacun de 1 à 5 heures par semaine, qui composent sur les années.
+
+## Flux 1 : revenus d'affiliation d'une newsletter tech
+Une newsletter tech ciblée publie chaque semaine, en pointant vers les outils que l'auteur utilise. Une fois passé le seuil d'environ 3 000 lecteurs engagés, les liens d'affiliation produisent 200 à 800 USD par mois pour environ 3 heures de rédaction par semaine.
+
+## Flux 2 : petit SaaS ou produit sur AppSumo
+Un outil dev de niche vendu en deal lifetime unique peut générer 50 000 à 250 000 USD au lancement, puis 1 000 à 5 000 USD par mois ensuite. Le plus difficile à démarrer, le plus haut potentiel.
+
+## Flux 3 : évaluation IA rémunérée sur Mercor
+4 à 8 heures par semaine de travail d'évaluation à 40-80 USD de l'heure produisent 600 à 2 500 USD par mois sans surcharge opérationnelle.
+
+## Flux 4 : investissements indiciels financés par 1 à 3
+Une fois que les flux actifs couvrent le burn mensuel, dirigez l'excédent vers un indice large dans votre devise d'origine. Le seul flux qui compose sans votre temps.
+
+## Ce qui n'a PAS sa place ici
+Trading haute fréquence, airdrops crypto, dropshipping, cours sur plateformes à partage de revenus. Tous non passifs en pratique.
+
+## Ordre d'empilement
+Mercor d'abord (immédiat). Newsletter ensuite (composition lente). Investissements en troisième. SaaS ou produit AppSumo en dernier. Ajouter tout en même temps vous épuise.
+
+## Chiffres réalistes à maturité
+2-3 ans en : 1 500 à 5 000 USD par mois en dehors du job principal pour 8 à 12 heures hebdomadaires.`,
+    faqs: [
+      {
+        q: "Combien de temps avant que la stack couvre le burn mensuel ?",
+        a: "Pour un opérateur discipliné, 18 à 36 mois. Plus rapide avec une audience existante ; plus lent en partant de zéro.",
+      },
+      {
+        q: "Le vrai revenu passif est-il réaliste en 2026 ?",
+        a: "Le purement passif est rare. Le semi-passif (1-5 heures par semaine et par flux, qui compose) est la version réaliste.",
+      },
+    ],
+  },
+  'fiverr-portfolio-essentials-for-developers': {
+    body: `Les acheteurs Fiverr passent moins de 10 secondes sur un portfolio avant de décider. Ce qu'ils cherchent est plus étroit que la plupart des vendeurs ne le supposent.
+
+## Ce qui convertit
+Trois à cinq échantillons ciblés qui prouvent que vous pouvez livrer LA chose spécifique que votre gig promet. Une capture before/after propre pour du design, une URL de démo déployée pour du web, un extrait de code avec explication pour du backend.
+
+## Ce qui ne convertit pas
+Vingt échantillons qui diluent vos meilleurs. Des projets personnels sans rapport avec la catégorie du gig. Des listes de stack ("React, Node, AWS"). Des logos d'anciens employeurs sans contexte.
+
+## En construire un à partir de zéro
+Pas besoin de travail rémunéré pour commencer. Construisez trois livrables d'exemple qui correspondent à la promesse de votre gig (landing page maquette, dépôt débogué, automatisation scriptée) et hébergez-les publiquement. Chaque échantillon prend 4 à 8 heures ; le portfolio paie en retour pour toujours.
+
+## Hébergement
+Utilisez la galerie du gig Fiverr pour les trois meilleurs échantillons. Liez un site personnel ou un dépôt GitHub depuis la description du gig pour les acheteurs qui veulent de la profondeur. Ne liez pas les clients sans leur permission.
+
+## Mises à jour
+Remplacez votre échantillon le plus faible tous les deux mois quand de nouveaux travaux clients arrivent. Les avis composent ; la qualité du portfolio compose de la même façon.
+
+## Erreurs courantes
+Mettre en avant des visuels front-end alors que votre gig est de l'automatisation backend. Mélanger les stacks tech dans un même gig (choisissez une stack par gig, lancez des gigs séparés pour les stacks adjacentes). Échantillons obsolètes de 2 ans qu'aucun acheteur ne peut vérifier fonctionner encore.`,
+    faqs: [
+      {
+        q: "Combien d'échantillons un portfolio Fiverr doit-il avoir ?",
+        a: "Trois à cinq échantillons ciblés, chacun étroitement aligné sur la promesse du gig. Plus d'échantillons diluent la conversion plutôt que de l'améliorer.",
+      },
+      {
+        q: "Puis-je inclure des projets personnels dans mon portfolio Fiverr ?",
+        a: "Oui, surtout au début. Les acheteurs veulent voir que vous pouvez livrer, pas que vous avez été payé pour cela. Le vrai travail client finira par remplacer les échantillons personnels.",
+      },
+    ],
+  },
+  'wise-vs-payoneer-for-developers': {
+    body: `Wise et Payoneer dominent les paiements transfrontaliers pour les développeurs freelance. Ils se ressemblent mais la structure des coûts et l'ensemble de fonctionnalités divergent à l'échelle d'une manière qui compte.
+
+## Wise : pensé pour la transparence
+Taux de change réel du marché interbancaire. Coordonnées bancaires locales dans 8+ devises. Frais pris visiblement à la conversion uniquement (0,4 à 0,7 pour cent typiquement). La carte de débit dépense au taux interbancaire sans majoration. Idéal quand vous recevez des paiements et convertissez fréquemment.
+
+## Payoneer : pensé pour les marketplaces
+Frais standards sur les payouts de marketplaces (Upwork, Fiverr, Amazon, etc.). Moins de transparence sur le FX, avec des taux généralement 1 à 2 pour cent en dessous du marché interbancaire. Compte de réception US local pour les vendeurs non-US. Idéal quand la marketplace est partenaire de Payoneer.
+
+## Comparaison directe
+
+| Critère | Wise | Payoneer |
+|---|---|---|
+| Spread FX | 0,4-0,7% | 1-2% |
+| Devises de routage local | USD, EUR, GBP, AUD, NZD, etc. | USD principalement |
+| Intégration marketplace | Retrait direct | Native sur beaucoup |
+| Carte de débit | Marché interbancaire, sans majoration | Majoration 1-2% |
+| Frais mensuels | Aucun | Aucun à la réception |
+
+## Quand utiliser Payoneer
+Si votre marketplace (Fiverr, Upwork) propose Payoneer comme option de payout, l'intégration est généralement plus fluide qu'un retrait vers Wise. Le coût FX est le compromis.
+
+## Quand utiliser Wise
+Pour la facturation directe de clients, conserver plusieurs devises, dépenser à l'étranger avec une carte de débit. Les économies de FX composent à l'échelle.
+
+## La stack qui marche
+Beaucoup de développeurs freelance utilisent les deux : Payoneer pour les payouts de marketplaces qui s'intègrent nativement, Wise pour la facturation directe et la gestion FX.`,
+    faqs: [
+      {
+        q: "Lequel est le moins cher pour recevoir des USD en tant que freelance UE ?",
+        a: "Wise. Le taux interbancaire avec un petit frais fixe bat Payoneer de 1 à 2 pour cent de la transaction.",
+      },
+      {
+        q: "Puis-je lier directement les payouts Payoneer dans Wise ?",
+        a: "Pas directement. Vous pouvez transférer de Payoneer vers un compte bancaire US puis vers Wise, mais le coût FX absorbe la plupart du bénéfice.",
+      },
+    ],
+  },
+  'mercor-application-timeline-2026': {
+    body: `L'onboarding Mercor est plus rapide que ce que beaucoup attendent pour les candidats acceptés, et plus lent que ce que beaucoup espèrent pour les autres. Le calendrier réaliste de 2026 est ci-dessous.
+
+## Jour 0 : soumettre la candidature
+Quelques informations personnelles, l'expertise déclarée, lien LinkedIn ou GitHub optionnel. 20 minutes.
+
+## Jour 1-3 : pré-sélection automatique initiale
+Mercor traite la candidature algorithmiquement. Les candidats avec une expertise démontrable claire dans les domaines déclarés sont fast-trackés ; les autres reçoivent un test de pré-sélection plus long.
+
+## Jour 3-7 : test écrit de pré-sélection
+Exercices spécifiques au domaine (comparaisons de qualité de code, prompts de raisonnement, justifications écrites). 45 à 90 minutes.
+
+## Jour 7-14 : revue
+Combinaison de notation par LLM et de revue humaine sur les cas limites. La plupart des candidats acceptés ont des nouvelles dans cette fenêtre.
+
+## Jour 14-21 : tâche payée d'essai
+Première tâche rémunérée au tarif d'entrée pour le parcours. La performance ici fixe votre score de réputation initial.
+
+## Jour 21-30 : ouverture du flux régulier de tâches
+Une qualité soutenue sur la tâche d'essai ouvre les invitations régulières. Les ajustements de tarif commencent 4 à 8 semaines plus tard selon les signaux de qualité.
+
+## Ce qui ralentit le calendrier
+Essais de candidature génériques réécrits par LLM. Candidatures sur les mauvais parcours (profondeur technique dans le domaine X mais candidature dans le domaine Y). Manquer la fenêtre de réponse sur le test écrit.
+
+## Ce qui accélère
+Spécialisation à profil rare (mathématiques formelles, OCaml, juridictions juridiques spécifiques, certifications médicales). Preuve publique claire de profondeur (commits GitHub, écriture technique, conférences).`,
+    faqs: [
+      {
+        q: "Combien de temps entre la candidature Mercor et la première tâche payée ?",
+        a: "Pour les candidats acceptés, 14 à 21 jours en moyenne. Les profils à compétences rares peuvent être plus rapides.",
+      },
+      {
+        q: "Qu'est-ce qui fait caler une candidature Mercor ?",
+        a: "Les essais assistés par LLM, les candidatures sur des parcours mal alignés et le manquement à la fenêtre du test de pré-sélection sont les trois raisons principales.",
+      },
+    ],
+  },
+  'appsumo-best-deals-by-month-pattern-2026': {
+    body: `AppSumo lance de nouveaux deals en continu, mais la qualité et le prix des deals suivent un schéma calendaire. Le comprendre épargne à la fois de l'argent et de mauvais achats.
+
+## T1 (janvier-mars)
+Trafic intense lié aux résolutions de début d'année et aux fondateurs bootstrap. Lancements éditeurs forts en productivité, IA et petits SaaS. Meilleure fenêtre pour les outils que vous comptez utiliser comme stack fondamentale.
+
+## T2 (avril-juin)
+Activité éditeurs plus lente, moins de premiers lancements. Meilleure fenêtre pour empiler des codes sur des deals à succès existants (plus de codes disponibles, moindre fragilité).
+
+## T3 (juillet-septembre)
+Pic de rentrée scolaire. Les deals d'éducation, productivité et outils créateurs dominent. Forte fenêtre pour les outils de newsletter, plateformes de cours, production de contenu.
+
+## T4 (octobre-décembre)
+Black Friday et saison des soldes de fin d'année. Les remises sur les deals existants sont les plus lourdes ici, souvent 30 à 50 pour cent en dessous du prix lifetime déjà remisé. Beaucoup de fondateurs calent leurs plus gros achats de stack pour fin novembre.
+
+## Ce qui ne change pas
+Les deals lifetime de qualité apparaissent à chaque trimestre ; le calendrier décale les catégories qui émergent. Les outils fondamentaux (email transactionnel, automatisation, UI de base de données) valent toujours d'être pris quand ils tombent au bon palier.
+
+## Comment chronométrer un achat
+Si un deal que vous voulez apparaît au plein tarif lifetime en mars, le même éditeur le remise souvent davantage pendant le Black Friday. Pour les outils optionnels, attendez. Pour les outils fondamentaux dont vous auriez payé l'abonnement mensuel, achetez maintenant et récupérez la différence d'abonnement.`,
+    faqs: [
+      {
+        q: "Quand AppSumo organise-t-il sa plus grande vente ?",
+        a: "La semaine du Black Friday et la période qui y mène (mi-novembre à début décembre). Beaucoup de deals lifetime sont remisés de 30 à 50 pour cent supplémentaires.",
+      },
+      {
+        q: "Faut-il attendre le Black Friday pour chaque deal AppSumo ?",
+        a: "Non. Les outils fondamentaux qui remplacent des abonnements récurrents se rentabilisent plus vite que le delta de remise. Outils optionnels, attendez. Outils fondamentaux, achetez quand ils conviennent.",
+      },
+    ],
+  },
+  'beehiiv-vs-substack-monetisation-2026': {
+    body: `Beehiiv et Substack publient tous deux des newsletters mais leur surface de monétisation diffère nettement. La bonne plateforme dépend de votre stratégie.
+
+## Substack : centré sur l'abonnement payant
+Le plus fort pour les newsletters avec un angle premium clair. Mécaniques de palier payant intégrées. Forte découverte sur le réseau Substack (notes, recommandations, app). Prélève un pourcentage du revenu payant. Le plus faible sur les annonces natives et les parrainages complexes.
+
+## Beehiiv : centré sur le réseau publicitaire
+Le plus fort pour les newsletters qui monétisent via annonces natives et parrainages style affiliation. Réseau publicitaire intégré avec payouts au CPM dès environ 3 000 abonnés engagés. Programme de parrainage natif pour la croissance de la liste gratuite. Le réseau de découverte de Substack n'est pas présent ; Beehiiv attend que vous ameniez le trafic.
+
+## Comparaison directe
+
+| Critère | Beehiiv | Substack |
+|---|---|---|
+| Annonces natives | Fort | Aucun |
+| Abonnements payants | Pris en charge | Fonction centrale |
+| Programme de parrainage | Natif | Aucun |
+| Découverte plateforme | Limitée | Forte |
+| Partage de revenus | Aucun sur le gratuit, 0% sur les abos | 10% des abos |
+| Profondeur des analytics | Forte | Modérée |
+
+## Quelle choisir
+Les newsletters tech qui monétisent via outils, deals et liens affiliés produits convertissent mieux sur Beehiiv. Les newsletters d'opinion et purement éditoriales avec base d'abonnés payants penchent vers Substack.
+
+## L'option de migration
+Vous pouvez passer de Substack à Beehiiv (et vice versa). Les abonnés transfèrent proprement ; la baisse de délivrabilité pendant la transition est la friction. Prévoyez deux mois de croissance plus lente pendant le déménagement.`,
+    faqs: [
+      {
+        q: "Substack prend-il une part de mon revenu de newsletter payante ?",
+        a: "Oui, 10 pour cent du revenu d'abonnement plus les frais Stripe. Beehiiv prend 0 pour cent du revenu d'abonnement mais manque de la découverte Substack.",
+      },
+      {
+        q: "Puis-je monétiser une newsletter Beehiiv avec des abonnements payants ?",
+        a: "Oui, Beehiiv prend en charge les paliers payants nativement. Substack a toujours une découverte plus forte pour les newsletters payantes ; Beehiiv est plus fort pour les revenus d'annonces et d'affiliation.",
+      },
+    ],
+  },
+  'claude-prompt-patterns-for-developers': {
+    body: `La plupart du contenu sur le prompt engineering est générique. Les schémas qui fonctionnent pour les développeurs utilisant Claude dans le vrai travail de projet sont plus étroits et concrets.
+
+## Schéma 1 : ancrer avec des contraintes
+Commencez chaque prompt par les contraintes (stack, version du langage, framework, cible de déploiement). Sans elles, Claude se rabat par défaut sur des choix grand public qui peuvent ne pas convenir à votre stack.
+
+## Schéma 2 : demander une revue adverse
+"Voici une fonction. Listez cinq façons dont elle peut échouer sous charge concurrente." Le cadrage adverse produit une meilleure découverte de cas limites que la revue ouverte.
+
+## Schéma 3 : comparer deux designs
+"Je choisis entre l'approche A (...) et l'approche B (...). Quels sont les compromis à 100x l'échelle ?" Le cadrage en comparaison force un raisonnement explicite au lieu de suggestions vagues.
+
+## Schéma 4 : raisonnement pas à pas avant le code
+"Avant d'écrire le code, listez les étapes et les cas limites que vous gérerez. Puis écrivez le code." Forcer le plan d'abord réduit les cycles d'itération.
+
+## Schéma 5 : post-mortem de votre propre travail
+"Voici un bug qui m'a pris 2 heures à trouver. Quels signaux aurais-je pu remarquer plus vite ?" Transforme la douleur passée en habitudes transférables.
+
+## Ce qui marche rarement
+Demander des "meilleures pratiques" sans cadre. Demander du code "prêt pour la production" sans le tester. Faire confiance à la première réponse pour tout ce qui est sensible à la sécurité. Demander à Claude de générer de grandes quantités de code non supervisé.
+
+## Intégration au workflow
+La plupart des développeurs expérimentés intègrent Claude via l'un de : CLI terminal, assistant IDE, chat dédié. Choisissez-en un et utilisez-le constamment ; alterner entre les trois est de la friction.`,
+    faqs: [
+      {
+        q: "Faut-il utiliser Claude pour tout le travail de dev ?",
+        a: "Non. Utilisez-le là où il raccourcit l'itération : revue, scaffolding, documentation, découverte de cas limites. Évitez-le pour les décisions d'architecture et le code sensible à la sécurité.",
+      },
+      {
+        q: "Combien de temps faut-il pour bien prompter Claude pour le dev ?",
+        a: "Une semaine d'utilisation régulière pour apprendre les schémas ci-dessus. Au-delà, les améliorations marginales viennent de votre propre boucle d'itération, pas des astuces de prompt.",
+      },
+    ],
+  },
+  'fiverr-buyer-objections-handling-guide': {
+    body: `La plupart des commandes Fiverr perdues meurent à l'étape des messages, pas sur la page du gig. Cinq objections d'acheteurs reviennent sans cesse sur les gigs développeurs. Savoir gérer chacune ferme plus de commandes sans baisser le tarif.
+
+## Objection 1 : "Pouvez-vous le faire moins cher ?"
+Réponse : "Je tarife au périmètre. Si on retire X, le palier Standard le couvre. Sinon le prix reflète le travail que cela nécessite pour être bien fait."
+
+## Objection 2 : "Pouvez-vous le faire plus vite ?"
+Réponse : "Le délai standard est de X jours. La livraison express est disponible en option à Y USD car elle nécessite que je réorganise mes autres engagements."
+
+## Objection 3 : "D'autres vendeurs proposent cela à moitié prix"
+Réponse : "Il existe des options moins chères. La mienne inclut (livrable spécifique qu'ils n'offrent pas). Si cela compte pour votre cas, je suis le bon choix ; sinon, le vendeur moins cher convient."
+
+## Objection 4 : "Pouvez-vous me garantir X ?"
+Réponse : "Je livre selon le périmètre convenu. Si quelque chose ne correspond pas au brief, je révise sans coût supplémentaire. Je ne peux pas garantir les résultats qui dépendent de (dépendance externe spécifique)."
+
+## Objection 5 : "Peut-on en discuter sur WhatsApp/Discord/email ?"
+Réponse : "Fiverr exige toute communication sur la plateforme. Je continue volontiers la conversation ici." Le contact hors plateforme viole les conditions d'utilisation ; refuser poliment protège votre compte.
+
+## Ce qui tue plus de commandes que toute objection
+Les réponses lentes (plus de 30 minutes). Les ouvertures génériques "Bonjour, merci de me contacter". Promettre un devis et ne pas suivre. Poser deux fois la même question de périmètre.
+
+## Quand renoncer
+Si le style de communication de l'acheteur suggère un dérapage de périmètre, des messages à minuit ou des attentes déraisonnables, déclinez poliment. Une mauvaise commande avec une annulation nuit plus à votre niveau de vendeur qu'une commande ratée.`,
+    faqs: [
+      {
+        q: "Faut-il s'aligner sur un concurrent moins cher sur Fiverr ?",
+        a: "Rarement. Les acheteurs qui choisissent uniquement sur le prix churnent vite et laissent des avis 1 étoile. Concurrencez sur la rapidité, la clarté et la compétence démontrable.",
+      },
+      {
+        q: "Que faire si un acheteur Fiverr insiste pour un contact hors plateforme ?",
+        a: "Déclinez poliment. Les conditions Fiverr l'interdisent et votre compte peut être suspendu pour l'avoir accepté. La plupart des acheteurs acceptent la limite quand elle est posée calmement.",
+      },
+    ],
+  },
+  'wise-debit-card-spending-tips': {
+    body: `La carte de débit Wise est l'une des cartes les plus utilisées dans la stack nomade et remote worker. Sa façon de fonctionner en pratique est plus nuancée que ce que le marketing suggère.
+
+## Comment fonctionne la dépense
+La carte dépense d'abord depuis le portefeuille de la devise correspondante. Si vous avez un solde en EUR et dépensez en EUR, pas de FX. Si vous n'avez que des USD et dépensez en EUR, Wise convertit au taux interbancaire avec un petit frais (0,4 à 0,7 pour cent typiquement).
+
+## Ce qui n'a pas de FX
+Dépenser dans des devises pour lesquelles vous avez déjà un solde. Retraits aux distributeurs jusqu'à une limite mensuelle gratuite dans n'importe quelle devise (actuellement environ 200 EUR équivalent par mois, puis petit frais par retrait).
+
+## Ce qui a du FX
+Dépense depuis une devise que vous ne détenez pas (conversion automatique au moment). Achats en ligne dans une troisième devise auprès d'un vendeur dans une quatrième devise. Pré-autorisations d'hôtel qui retiennent depuis votre devise par défaut.
+
+## Le schéma qui marche
+Détenez un petit flottant dans la devise locale partout où vous dépensez. Rechargez mensuellement depuis votre devise principale. Utilisez les distributeurs avec parcimonie ; la dépense par carte a une comptabilité plus propre.
+
+## Surprises à connaître
+- Frais aux distributeurs : gratuit jusqu'à environ 200 EUR par mois, puis petit frais par transaction
+- Certains commerçants font de la conversion dynamique de devise (DCC) ; refusez toujours le DCC et dépensez en devise locale
+- Les blocages de pré-autorisation peuvent durer 7-14 jours ; Wise libère le blocage quand le commerçant débloque
+
+## Carte perdue ou compromise
+Gelez instantanément depuis l'app. Commandez une carte de remplacement à votre adresse. La carte virtuelle est disponible immédiatement en attendant.
+
+## Angle fiscal
+La dépense carte n'est que de la dépense ; pas d'implication d'impôt sur le revenu. Mais chaque dépense en devise étrangère convertit au taux du jour. Pour la déclaration fiscale dans votre pays d'origine, le relevé continu aide.`,
+    faqs: [
+      {
+        q: "La carte Wise applique-t-elle des frais de transaction étrangère ?",
+        a: "Pas quand vous dépensez depuis un solde dans la devise correspondante. À la conversion automatique, un petit frais interbancaire s'applique (0,4-0,7 pour cent), sans surtaxe de transaction étrangère par-dessus.",
+      },
+      {
+        q: "Quelle est la limite de retrait au distributeur Wise ?",
+        a: "En 2026, environ 200 EUR équivalent gratuit par mois. Au-delà, un petit frais par transaction plus le taux interbancaire standard si conversion.",
+      },
+    ],
+  },
+  'mercor-evaluator-quality-rubrics-explained': {
+    body: `Mercor paie les évaluateurs différemment selon un score de qualité qui combine plusieurs signaux. Comprendre chacun permet d'optimiser là où ça compte et d'ignorer le bruit.
+
+## Signal 1 : accord inter-évaluateurs
+Sur les ensembles d'étalonnage où une vérité terrain existe ou où plusieurs évaluateurs notent le même artefact, votre taux d'accord est mesuré. Au-dessus du seuil (typiquement haut 80 à bas 90 pour cent sur la plupart des parcours) vous progressez ; en dessous votre tarif plafonne.
+
+## Signal 2 : profondeur de justification
+Une note sans explication reçoit le crédit minimum même si elle est correcte. Une note avec un raisonnement spécifique et falsifiable ("la seconde réponse manque l'erreur off-by-one ligne 14") reçoit le crédit complet et débloque des lots mieux payés.
+
+## Signal 3 : vitesse de réponse dans des limites raisonnables
+L'acceptation et l'achèvement plus rapides des invitations sont récompensés. Une vitesse soutenue en dessous d'environ 24 heures par tâche en moyenne peut être un signal d'alarme de précipitation ; le système optimise pour la qualité, pas la pure vitesse.
+
+## Signal 4 : taux d'achèvement des tâches
+Le pourcentage de tâches acceptées que vous achevez réellement. Refuser des tâches après les avoir acceptées endommage le tarif ; ne pas accepter au départ est neutre.
+
+## Signal 5 : retour des relecteurs humains
+Périodiquement, un humain examine vos évaluations et note des schémas. Les critiques constructives appliquées dans le travail suivant relèvent votre score.
+
+## Quoi faire
+Lisez chaque rubrique attentivement avant le premier lot dans un nouveau parcours. Écrivez les justifications comme si un humain relecteur allait les lire (parce que c'est le cas). Acceptez uniquement les tâches que vous pouvez achever proprement dans le délai. Traitez les 10 à 20 premières tâches dans un nouveau parcours comme la fenêtre d'étalonnage.
+
+## Ce qui vous fait éliminer
+Accord inter-évaluateurs soutenu en dessous du seuil sur plusieurs parcours. Justifications qui se lisent comme générées par LLM. Accepter et abandonner des tâches à répétition.`,
+    faqs: [
+      {
+        q: "Comment Mercor pondère-t-il la qualité d'évaluateur ?",
+        a: "Une composition d'accord inter-évaluateurs, profondeur de justification, taux d'achèvement et retour de revue humaine. L'accord inter-évaluateurs et la profondeur de justification sont les deux signaux les plus lourds.",
+      },
+      {
+        q: "Puis-je améliorer mon tarif Mercor sans faire plus d'heures ?",
+        a: "Oui. Une plus grande profondeur de justification et le respect constant des rubriques relèvent le tarif sans changement de volume. La qualité compose ; le volume seul ne compose pas.",
+      },
+    ],
+  },
+  'appsumo-stacking-codes-explained': {
+    body: `Beaucoup de deals lifetime AppSumo permettent aux acheteurs d'empiler plusieurs codes du même deal pour débloquer des paliers supérieurs. Les mécaniques sont simples mais la planification est là où la plupart des acheteurs perdent de l'argent.
+
+## Ce qu'est l'empilement
+Chaque deal AppSumo a des paliers (Tier 1 à Tier N) avec des limites ou fonctionnalités progressivement plus élevées. Un seul code Tier 1 débloque le palier d'entrée. Empiler un second code Tier 1 (quand c'est permis) débloque généralement les limites de Tier 2 ou étend les plafonds.
+
+## Quand l'empilement est proposé
+La page du deal mentionne "stackable" explicitement. Courant pour les SaaS plafonnés par usage (plus d'appels API, plus d'espaces de travail, plus de sièges utilisateurs par empilement). Moins courant pour les SaaS verrouillés par fonctionnalité où les paliers supérieurs ajoutent de nouvelles fonctionnalités plutôt que de la capacité.
+
+## Quand l'empilement a du sens
+Vous êtes confiant que l'outil convient à votre workflow. La capacité au Tier 1 est trop juste pour votre usage projeté sur 18 mois. Acheter le Tier 2 directement coûte plus que deux codes Tier 1 empilés. L'éditeur a une roadmap publique et un historique de releases récent.
+
+## Quand l'empilement n'a PAS de sens
+Vous n'avez pas validé l'outil dans votre vrai workflow. Le plafond que vous dépasseriez est à des années. Vous empilez pour une échelle future théorique qui pourrait ne jamais se matérialiser.
+
+## Mécanique de remboursement
+La fenêtre de remboursement de 60 jours s'applique au paquet de codes achetés. Le remboursement partiel de codes dans un empilement varie selon l'éditeur ; vérifiez le deal spécifique avant d'empiler.
+
+## Séquence pratique
+Achetez Tier 1. Utilisez-le en workflow réel pendant 2 semaines. Si l'outil colle et que le plafond compte, ajoutez un code d'empilement. Sinon, remboursez dans la fenêtre.`,
+    faqs: [
+      {
+        q: "Comment savoir si un deal AppSumo permet l'empilement ?",
+        a: "La page du deal le mentionne explicitement sous \"Stackable\" ou dans le tableau de comparaison des paliers. Quand ce n'est pas indiqué, supposez achat unique seulement.",
+      },
+      {
+        q: "Puis-je rembourser certains codes d'un empilement et garder les autres ?",
+        a: "Cela dépend de l'éditeur. Certains autorisent les remboursements partiels dans la fenêtre de 60 jours ; d'autres traitent l'empilement comme un achat unique. Lisez le deal spécifique avant d'acheter.",
+      },
+    ],
+  },
+  'tech-newsletter-niche-selection-2026': {
+    body: `La décision la plus dure quand on lance une newsletter tech est la niche. Trop large, vous concurrencez des géants établis. Trop étroit, vous manquez d'audience. Le schéma qui fonctionne en 2026 est ci-dessous.
+
+## Les deux modes d'échec
+Trop large : "Astuces dev et news IA". Concurrence mille autres newsletters, pas d'identité claire, faible conversion en payant.
+Trop étroit : "Optimisation des performances Postgres pour studios de jeux". 200 abonnés potentiels, plateau au mois 6.
+
+## Le point idéal
+Un rôle spécifique + une lentille spécifique. "Systèmes distribués pour fondateurs SaaS", "Ingénierie ML pour legal tech", "Performance frontend pour ecommerce". Grosso modo 50 000 à 500 000 lecteurs adressables globalement est le bon réservoir : assez grand pour composer, assez petit pour dominer.
+
+## Tester si la niche fonctionne
+Trois signaux confirment une niche viable :
+- Vous pouvez nommer 20 sujets spécifiques sur lesquels vous écririez
+- Il existe au moins une autre newsletter dans l'espace adjacent (preuve que l'audience lit des newsletters)
+- Vous pouvez penser à trois outils, livres ou événements dont les acheteurs sont vos lecteurs
+
+## Niches sur-saturées en 2026
+Productivité dev générique. Récap d'actualités IA. Web3. "Futur du travail" flou. À éviter.
+
+## Niches encore sous-desservies
+Langages spécifiques hors top 5 (Erlang, OCaml, Zig, Roc). Ingénierie SaaS verticale (legal tech, infrastructure biotech, climate tech). Rôles transversaux (DevRel pour B2B, marketing produit technique, éducation développeur à grande échelle).
+
+## Durabilité
+Vous publierez 50 fois la première année. Choisissez une niche qui vous intéresse vraiment parce que l'audience entend si oui ou non c'est le cas.`,
+    faqs: [
+      {
+        q: "À quel point ma niche de newsletter doit-elle être étroite ?",
+        a: "Assez étroite pour être identifiable comme la source, assez large pour que 50 000 à 500 000 lecteurs globalement puissent la trouver pertinente. Rôle spécifique + lentille spécifique est le bon niveau.",
+      },
+      {
+        q: "Puis-je élargir la niche plus tard ?",
+        a: "Oui, mais cela dilue la marque. Les newsletters qui élargissent avec succès le font généralement sur des années, pas des mois, et depuis une base étroite forte.",
+      },
+    ],
+  },
+  'safetywing-pre-existing-conditions-guide': {
+    body: `Les conditions préexistantes sont la partie la plus mal comprise de l'assurance nomade. La police SafetyWing 2026 les traite de façon spécifique ; comprendre les règles évite les refus surprises.
+
+## Ce qui compte comme préexistant
+Toute condition médicale qui existait, a été diagnostiquée, traitée ou pour laquelle vous avez ressenti des symptômes dans la période avant le début de la police. La fenêtre de rétrospection est typiquement de 2 ans pour les conditions chroniques, plus courte pour les aiguës.
+
+## Ce qui est exclu
+Traitement, médication, soins de suivi et toute complication directement liée à une condition préexistante. C'est l'exclusion par défaut.
+
+## Ce qui est couvert (exception d'apparition aiguë)
+Les urgences soudaines et inattendues d'une condition préexistante peuvent être couvertes jusqu'à un plafond spécifique, même si la condition elle-même est exclue. Exemple : une personne avec un diabète stable peut être couverte pour une urgence hyperglycémique inattendue nécessitant des soins hospitaliers, même si la gestion routinière du diabète est exclue.
+
+## Ce qu'il faut divulguer à l'inscription
+Tout. Le formulaire d'inscription SafetyWing demande des conditions spécifiques. Divulguer pleinement est la plus bon marché des assurances contre les refus ultérieurs. La non-divulgation qui ressurgit au moment du sinistre entraîne un refus immédiat et une annulation potentielle.
+
+## Conditions spécifiquement traitées en 2026
+COVID et respiratoire : couverts comme aigus selon les règles standards.
+Santé mentale : couverture limitée, dépend du pays.
+Grossesse : limitée à des complications spécifiques, la plupart des soins de grossesse exclus pour les nomades.
+Blessures sportives : couvertes sauf si liées à une activité exclue (sports extrêmes, sports de combat sans avenant).
+
+## Comment planifier
+Si vous avez une condition chronique nécessitant des soins continus, SafetyWing seule est insuffisante. Superposez avec une police de votre pays d'origine ou une police expat spécialisée qui couvre votre condition spécifiquement.`,
+    faqs: [
+      {
+        q: "SafetyWing couvrira-t-elle le traitement d'une condition préexistante connue ?",
+        a: "Généralement non pour les soins de routine. Les urgences aiguës et soudaines de conditions préexistantes peuvent être couvertes jusqu'à un plafond spécifique. La gestion routinière de la condition est exclue.",
+      },
+      {
+        q: "Faut-il divulguer toutes les conditions à l'inscription SafetyWing ?",
+        a: "Oui. La non-divulgation qui ressurgit au moment du sinistre est une cause de refus immédiat et peut entraîner l'annulation de la police. La divulgation ne fait pas monter le prix ; la police est forfaitaire.",
+      },
+    ],
+  },
+  'fiverr-gig-multiples-strategy-2026': {
+    body: `Beaucoup de vendeurs essaient de faire tourner 5+ gigs à la fois et constatent qu'aucun ne performe bien. Le schéma qui fonctionne en 2026 est plus discipliné.
+
+## Combien de gigs faire tourner
+2 à 4 gigs bien ciblés surpassent généralement 8 gigs mal ciblés. Chaque gig supplémentaire divise votre attention éditoriale et dilue le signal au niveau du compte pour la recherche Fiverr.
+
+## Comment choisir les gigs
+Construisez des gigs adjacents qui partagent les compétences sous-jacentes mais ciblent des recherches d'acheteur différentes. Un développeur React peut publier : corrections de bugs, landing pages, bibliothèques de composants et audits de performance Next.js. Tous les quatre servent la même compétence mais capturent des requêtes d'acheteurs distinctes.
+
+## Ce qu'il faut éviter
+Publier le même gig avec des formulations légèrement différentes (cannibalise votre propre visibilité de recherche). Publier des services radicalement différents depuis un même compte (data engineer + site WordPress dilue le signal). Recycler de vieux gigs sans les rafraîchir.
+
+## Promotion croisée entre vos gigs
+Chaque description de gig peut lier vers vos autres gigs en bas : "Vous cherchez X à la place ? Voyez mon gig sur [X]." Garde les acheteurs dans votre tunnel.
+
+## Tarification entre gigs
+Utilisez la même structure de paliers entre vos gigs pour que les acheteurs puissent comparer et choisir le bon service. Des échelles de paliers incohérentes créent de la confusion et des conversations abandonnées.
+
+## Quand retirer un gig
+Un gig qui n'a pas produit de commande en 90 jours et qui a moins de 10 impressions par semaine ne reviendra probablement pas. Retirez-le et remplacez par une cible plus tranchée.`,
+    faqs: [
+      {
+        q: "Faire tourner plus de gigs Fiverr nuit-il à ma conversion ?",
+        a: "Au-delà de 4-5 gigs bien ciblés, oui. L'attention éditoriale se divise et le signal de recherche se dilue. 2-4 gigs tranchés battent 8 gigs larges.",
+      },
+      {
+        q: "Faut-il publier le même service dans plusieurs gigs avec des formulations différentes ?",
+        a: "Non. La recherche Fiverr les traite comme des doublons et les classe mal. Différenciez chaque gig par l'intention d'achat, pas en réécrivant la même offre.",
+      },
+    ],
+  },
+  'wise-vs-revolut-business-comparison-2026': {
+    body: `Wise Business et Revolut Business servent tous deux le marché du développeur freelance mais optimisent pour des choses différentes. Choisir le bon compte importe à l'échelle.
+
+## Wise Business
+Comptes locaux multidevises (USD ACH, EUR IBAN, GBP local, etc.). FX au taux interbancaire. Pas de frais mensuels. Meilleure réceptivité internationale. Cartes limitées (débit uniquement, pas de crédit). Ensemble de fonctionnalités léger au-delà des paiements.
+
+## Revolut Business
+Centré sur l'UE avec un fort ensemble de fonctionnalités : facturation, dépenses, intégrations comptables, cartes virtuelles. Frais mensuels par palier selon le plan (palier gratuit limité). Une certaine majoration FX au-delà d'un volume gratuit mensuel. Fort pour les freelances basés UE qui gèrent des opérations proches d'une entreprise.
+
+## Comparaison directe
+
+| Critère | Wise Business | Revolut Business |
+|---|---|---|
+| Frais mensuels | Aucun | 0 à 99 EUR/mo selon le plan |
+| Devises de routage local | 9+ | 5+ |
+| FX à la conversion | Interbancaire + petit frais | Gratuit jusqu'à la limite mensuelle, puis majoration |
+| Facturation | Basique | Fonctionnalité complète |
+| Cartes virtuelles | Limitées | Fortes |
+| Intégrations comptables | Peu | Nombreuses (Xero, QB, etc.) |
+| Idéal pour | Réception internationale | Opérations basées UE |
+
+## Lequel choisir
+Si vous recevez surtout des paiements internationaux et convertissez : Wise.
+Si vous faites tourner une petite opération à une personne avec facturation, suivi des dépenses, cartes virtuelles : Revolut.
+Beaucoup de freelances utilisent les deux.
+
+## Ce qu'il faut éviter
+Mettre tout le volume sur un seul compte en transfrontalier. La redondance vaut un petit frais mensuel. Garder tout le solde dans l'un ou l'autre à grande échelle (ouvrez un vrai compte bancaire dès que vous dépassez 50 000 USD de revenu annuel).`,
+    faqs: [
+      {
+        q: "Lequel est moins cher, Wise Business ou Revolut Business ?",
+        a: "Wise sur le FX et les frais de compte. Revolut gagne sur les fonctionnalités opérationnelles comme la facturation et l'intégration comptable. Dépend de si votre goulot est le FX des paiements ou les opérations business.",
+      },
+      {
+        q: "Puis-je avoir à la fois Wise Business et Revolut Business ?",
+        a: "Oui. Beaucoup de freelances le font, avec Wise pour la réception internationale et Revolut pour les opérations quotidiennes.",
+      },
+    ],
+  },
+  'mercor-vs-tortoise-eval-platforms': {
+    body: `Le marché de l'évaluation IA s'est élargi au-delà de Mercor et Scale en 2026. Trois plateformes représentent la plupart du travail d'évaluation payée par des experts : Mercor, Tortoise et Outlier (marque Scale AI).
+
+## Mercor
+Barre de sélection élevée. Tarifs de 30 à 100 USD/h pour les parcours logiciels et techniques. Tâches longues avec profondeur. Idéal pour les spécialistes expérimentés qui valorisent le tarif sur le volume.
+
+## Tortoise
+Nouvel entrant centré sur des parcours premium (raisonnement formel, mathématiques avancées, évaluation scientifique). Plus petit volume de travail mais taux d'acceptation élevé pour les profils vraiment rares. Tarifs de 50 à 150 USD/h pour les parcours premium.
+
+## Outlier (Scale AI)
+Volume plus important, barre de sélection plus basse. Tarifs typiquement de 18 à 45 USD/h. Volume hebdomadaire constant. Idéal pour les évaluateurs qui veulent des heures prévisibles plutôt qu'un tarif élevé.
+
+## Comparaison directe
+
+| Critère | Mercor | Tortoise | Outlier |
+|---|---|---|---|
+| Tarif typique (dev) | 35-80 USD/h | 50-150 USD/h | 18-45 USD/h |
+| Barre d'acceptation | Élevée | Très élevée (selon niche) | Faible-moyenne |
+| Fiabilité du volume | Par à-coups | Par à-coups | Constant |
+| Complexité des tâches | Longues | Niche premium | Mixte |
+| Idéal pour | Spécialistes | Experts de domaines rares | Chercheurs de volume |
+
+## Empilement
+Beaucoup d'évaluateurs font tourner deux ou trois plateformes en parallèle. Mercor et Tortoise pour le tarif, Outlier pour combler les creux. L'exclusivité est rare ; vérifiez avant de signer.
+
+## Ce qui change en 2026
+Les domaines premium (vérification formelle, mathématiques avancées, juridique spécifique) commandent des tarifs plus élevés partout à mesure que les labos IA poussent les capacités de raisonnement. Les parcours génériques de revue de code se sont assouplis. L'écart entre le haut et le bas du tarif s'élargit.`,
+    faqs: [
+      {
+        q: "Quelle plateforme paie le plus les évaluateurs IA en 2026 ?",
+        a: "Tortoise mène sur les niches premium ; Mercor mène pour les parcours techniques grand public. Outlier paie moins par heure mais offre un volume plus soutenu.",
+      },
+      {
+        q: "Puis-je travailler sur plusieurs plateformes d'évaluation IA en même temps ?",
+        a: "Oui. L'exclusivité est rare. La plupart des évaluateurs expérimentés empilent au moins deux plateformes pour équilibrer tarif et volume.",
+      },
+    ],
+  },
+  'appsumo-for-indie-hackers-buying-guide-2026': {
+    body: `Les indie hackers sont l'audience cœur d'AppSumo mais aussi les plus exposés au sur-achat. La discipline d'achat de 2026 ci-dessous maximise la valeur et évite la stack qui gonfle.
+
+## Règle 1 : ne jamais acheter du théorique
+Achetez des deals lifetime qui remplacent des abonnements récurrents que vous payez déjà. Les dépenses futures théoriques ne sont pas des économies.
+
+## Règle 2 : valider avant d'empiler
+Achetez Tier 1 d'abord. Utilisez l'outil en workflows réels pendant deux semaines. N'empilez des codes que si l'outil colle et que le plafond compte.
+
+## Règle 3 : discipline de remboursement
+Utilisez la fenêtre de 60 jours agressivement. Tout ce que vous n'avez pas activement intégré dans les deux semaines : remboursez.
+
+## Règle 4 : éviter les pièges des bundles
+Les bundles thématiques ont l'air de remises mais embarquent 5-10 outils dont vous ne vous servirez probablement pas. Achetez les deals individuels pour les 2-3 outils dont vous avez vraiment besoin.
+
+## Catégories qui se rentabilisent
+Stack fondamentale : envoi d'email, automatisation, CRM, base de connaissances. Les deals lifetime ici se rentabilisent typiquement en 2-4 mois.
+Stack marketing : recherche SEO, briefs de contenu, inbox de support client. Rentabilisation en 3-6 mois.
+Projets annexes : outillage de niche pour stacks spécifiques. Rentabilisation à la sortie du projet.
+
+## Catégories à éviter
+Fournisseurs d'authentification, paiements, hébergement, observabilité d'entreprise. Les paliers d'abonnement dans ces catégories justifient le coût.
+
+## Revue annuelle
+Une fois par an, auditez votre stack. Outils non ouverts depuis 30 jours : enlevez. Faites comme si vous achetiez la stack de zéro ; chaque outil passerait-il ?
+
+## La règle des 1 000 USD par an
+Un indie hacker qui dépense plus de 1 000 USD par an en deals lifetime sur-achète probablement. Disciplinez le budget et laissez le surplus aller dans l'investissement produit à la place.`,
+    faqs: [
+      {
+        q: "Combien un indie hacker doit-il budgéter pour AppSumo par an ?",
+        a: "La plupart des indie hackers disciplinés plafonnent à 500-1 000 USD par an en deals lifetime. Au-delà, l'outil marginal ajoute généralement plus d'encombrement que de valeur.",
+      },
+      {
+        q: "Quand un indie hacker doit-il payer un abonnement plutôt qu'un deal lifetime AppSumo ?",
+        a: "Pour les paiements, l'authentification, l'hébergement et l'observabilité de niveau entreprise. Le SLA et le support des paliers d'abonnement comptent plus que l'économie sur la vie.",
+      },
+    ],
+  },
+  'how-to-cross-promote-newsletter-with-tech-blog': {
+    body: `Les newsletters tech les plus fortes font tourner un blog public en parallèle. Bien fait, les deux se nourrissent l'un l'autre et atteignent un plafond à long terme bien plus haut que l'un ou l'autre seul. Les schémas structurels sont ci-dessous.
+
+## Le blog nourrit la recherche ; la newsletter nourrit l'engagement
+Le contenu de blog se classe sur Google sur des mois et amène de nouveaux lecteurs. La newsletter retient ces lecteurs et les monétise via les outils, deals et abonnements payants.
+
+## Ce qui va où
+Exclusif newsletter : opinions, coulisses, observations personnelles, prises de position sensibles au temps.
+Blog evergreen : tutoriels, plongées profondes, articles de référence, comparaisons.
+
+## La passerelle
+Chaque article de blog se termine par un CTA pour s'abonner à la newsletter ("Si cela a aidé, la newsletter hebdomadaire va plus loin. Inscrivez-vous ici."). Chaque newsletter a au moins un lien vers un article de blog (existant ou nouveau) pour que les moteurs de recherche voient des backlinks de votre audience engagée.
+
+## Cadence de fréquence
+Newsletter hebdomadaire. Blog tous les quinze jours environ. Qualité sur quantité pour les deux. Les archives obsolètes nuisent aux deux canaux.
+
+## SEO de l'archive
+Hébergez l'archive de newsletter dans le blog (même domaine, indexable). Chaque numéro devient une page crawlable. Sur 18-24 mois, l'archive devient la plus grande source unique de nouveaux abonnés.
+
+## Ce qui ne marche pas
+Contenu identique sur les deux canaux. Les newsletters qui ne sont que des republications de blog perdent la rétention ; les blogs qui ne sont que des republications de newsletter perdent le rang de recherche.
+
+## La courbe de composition
+Année 1 : le blog porte 80 pour cent de la croissance, la newsletter porte l'engagement.
+Année 2 : l'archive commence à se classer, l'écart se referme.
+Année 3+ : les deux canaux portent chacun 50 pour cent de la croissance et du revenu.`,
+    faqs: [
+      {
+        q: "L'archive de ma newsletter doit-elle être publique ou réservée aux payants ?",
+        a: "Publique, hébergée sur le même domaine que votre blog. Le bénéfice SEO compose sur des années ; les archives en paywall perdent entièrement cela.",
+      },
+      {
+        q: "Combien de temps avant que la promotion croisée produise une vraie composition ?",
+        a: "18 à 24 mois pour que l'archive se classe vraiment sur Google. Les bénéfices d'engagement démarrent plus tôt ; la composition SEO prend du temps.",
+      },
+    ],
+  },
+  'nomad-insurance-by-country-tier-2026': {
+    body: `L'assurance nomade standard (SafetyWing, Genki, IATI) couvre la plupart des pays correctement mais l'expérience varie nettement selon la destination. Le cadre par tier de pays ci-dessous aide à choisir une couverture qui marche vraiment là où vous allez.
+
+## Tier A (fonctionne bien avec assurance nomade standard)
+UE, Royaume-Uni, Australie, Nouvelle-Zélande, Canada, Japon, Singapour, Corée du Sud, Argentine, Chili, Uruguay. Systèmes médicaux solides avec documentation en anglais. Les plans nomades standards traitent les sinistres sans heurts ici.
+
+## Tier B (fonctionne avec des réserves)
+US, EAU, Hong Kong, Israël. Les plafonds de couverture sont plus serrés par rapport aux coûts médicaux locaux. Le plafond de 250 000 de SafetyWing aux US peut être atteint vite ; envisagez un plan de niveau supérieur ou une police complémentaire spécifique US.
+
+## Tier C (assurance nomade standard suffisante pour les cas courants mais pas les urgences)
+La plupart de l'Asie du Sud-Est, une grande partie de l'Amérique latine, Europe de l'Est. Soins routiniers bien couverts, les urgences hospitalières nécessitent parfois un paiement initial avec remboursement ultérieur. Friction de documentation en langue locale.
+
+## Tier D (besoin de couverture spécialisée)
+Pays avec infrastructure médicale limitée ou complications de sanctions. Les polices standards peuvent exclure entièrement ou exiger une évacuation. Envisagez des polices expat spécifiques ou centrées sur l'évacuation.
+
+## Cadre de décision
+Où passez-vous 80 pour cent de votre temps ? Choisissez une police qui performe bien dans ce tier. Utilisez des polices voyage en complément pour les excursions Tier C/D si nécessaire.
+
+## Réalité du remboursement
+Même là où la police couvre, se faire rembourser exige de payer d'avance dans la plupart des cas. Maintenez un petit fonds d'urgence médicale (3-5 000 USD) dans votre compte multidevises.`,
+    faqs: [
+      {
+        q: "SafetyWing fonctionne-t-elle bien aux États-Unis ?",
+        a: "Adéquatement pour les soins courants, mais le plafond hospitalier de 250 000 peut être atteint vite. Pour des séjours US prolongés, complétez avec une police spécifique US ou montez à un plan de niveau supérieur.",
+      },
+      {
+        q: "Faut-il une assurance différente pour les destinations à haut risque ?",
+        a: "Oui pour les pays Tier D avec infrastructure médicale limitée ou complications de sanctions. Une police de voyage courte durée ou spécifique évacuation par-dessus la couverture nomade standard.",
+      },
+    ],
+  },
+  'fiverr-pro-application-checklist-2026': {
+    body: `Fiverr Pro est le palier curaté et vérifié manuellement pour les vendeurs haut de gamme. La barre d'application de 2026 est plus haute qu'au lancement ; bien se préparer vaut le travail initial.
+
+## Ce qu'est Fiverr Pro
+Un palier distinct avec revue qualité plus stricte. Les vendeurs Pro obtiennent plus de visibilité, des prix premium et l'accès aux acheteurs entreprise. Les annonces sont relues manuellement par le staff Fiverr, pas algorithmiquement.
+
+## Ce qu'ils filtrent
+Travail démontrable de niveau expert dans la catégorie offerte. Présentation professionnelle (portfolio, bio, échantillons). Historique de résultats clients, idéalement avec des marques nommées ou projets substantiels. Communication écrite en anglais de niveau natif ou quasi natif.
+
+## Matériaux de candidature
+1. Profil à jour avec photo de qualité
+2. 3-5 échantillons de portfolio qui prouvent une capacité de niveau expert
+3. Bio qui nomme des entreprises, projets ou technologies spécifiques que vous avez livrés
+4. Historique Fiverr existant (la plupart des candidats acceptés ont d'abord 50+ avis 5 étoiles au palier standard)
+5. Références ou vérification externe (Linkedin, GitHub, conférences)
+
+## Ce qui disqualifie
+Bla-bla auto-promotionnel dans la bio. Échantillons de portfolio qui ressemblent à des projets personnels plutôt qu'à du travail client. Qualité incohérente entre échantillons. Pas de preuve externe d'expertise en dehors de Fiverr.
+
+## Calendrier d'approbation
+4 à 8 semaines de la soumission à la décision en 2026. Les taux d'approbation tournent autour de 20-30 pour cent des candidatures.
+
+## Ce qui change après approbation
+Les vendeurs Pro sont listés sous des URLs séparées avec le badge Pro. Le bassin d'acheteurs bascule vers des clients à plus gros budget. Les prix typiquement 2-5x le palier standard du vendeur. Modèles de message et gestion de commande réservés aux Pro.
+
+## Re-candidature
+En cas de rejet, vous pouvez recandidater après 6 mois. Utilisez l'écart pour renforcer les signaux spécifiques cités dans la lettre de rejet.`,
+    faqs: [
+      {
+        q: "Quel est le taux d'acceptation Fiverr Pro ?",
+        a: "Environ 20 à 30 pour cent des candidatures en 2026. La barre est réelle ; la plupart des rejets remontent à une preuve externe d'expertise insuffisante ou à des portfolios minces.",
+      },
+      {
+        q: "Combien de temps prend l'approbation Fiverr Pro ?",
+        a: "4 à 8 semaines de la soumission à la décision en 2026, avec relecture manuelle par le staff Fiverr.",
+      },
+    ],
+  },
+  'how-to-receive-stripe-payouts-as-non-us': {
+    body: `Stripe traite la plupart des paiements en ligne des développeurs globalement, mais le côté payout diffère selon le pays. Les développeurs non-US en 2026 ont quelques voies claires.
+
+## Où Stripe opère directement
+50+ pays incluant tous les États membres de l'UE, le Royaume-Uni, le Canada, l'Australie, la Nouvelle-Zélande, Singapour, le Japon. Payouts locaux directs en devise locale.
+
+## Où Stripe Atlas aide
+Les fondateurs dans des pays que Stripe ne supporte pas localement peuvent constituer une LLC US via Stripe Atlas. Atlas ouvre un compte bancaire US, immatricule la LLC et connecte Stripe directement à elle. Les payouts atterrissent sur le compte US ; vous transférez vers votre pays via Wise ou similaire.
+
+## Considérations de coût
+Atlas coûte environ 500 USD initialement plus des frais annuels de dépôt d'État (50-300 USD selon l'État). Rentable au-dessus de quelques milliers d'USD de revenu annuel ; pas justifié pour de tout petits projets annexes.
+
+## Alternative : Stripe via marketplace
+Si vous vendez via une marketplace (Gumroad, Lemon Squeezy, Paddle), la marketplace agit comme Merchant of Record. Vous recevez les payouts dans votre devise locale sans opérer Stripe directement. Coût par transaction plus élevé ; moins de surcharge opérationnelle.
+
+## Ce que Stripe remplace
+Stripe + Wise supprime la plus grande partie de la douleur héritée des "merchant accounts". PayPal devient optionnel plutôt que requis. Les relations avec un acquéreur de cartes local ne sont plus nécessaires pour la plupart des volumes.
+
+## Reporting et fiscalité
+Stripe émet des équivalents 1099-K par juridiction. Suivez le volume brut de payouts contre votre devise de déclaration. Les comptes multidevises simplifient la réconciliation.
+
+## La stack propre
+Stripe (direct ou via Atlas), compte multidevises (Wise), banque locale pour les dépenses quotidiennes. Balayage mensuel. Réconciliation une fois par an avec un comptable.`,
+    faqs: [
+      {
+        q: "Faut-il une LLC US pour utiliser Stripe en tant que développeur non-US ?",
+        a: "Seulement si votre pays n'est pas supporté par Stripe directement. 50+ pays supportent les payouts locaux. Stripe Atlas gère le reste pour 500 USD de mise en place.",
+      },
+      {
+        q: "À quelle vitesse Stripe paie-t-il les développeurs non-US ?",
+        a: "La cadence de payout standard est de 2 à 7 jours ouvrés après le règlement de chaque lot. Des options de payout instantané plus rapides sont disponibles dans certains pays moyennant un petit frais.",
+      },
+    ],
+  },
+  'ai-pair-programming-comparison-cursor-claude': {
+    body: `Trois outils dominent le pair-programming IA en 2026 : Cursor (IDE), Claude (chat ou CLI), et GitHub Copilot. Chacun est idéal pour un workflow spécifique ; les mélanger est courant mais coûteux.
+
+## Cursor
+Un éditeur conçu autour de l'assistance IA. Complétions inline, chat avec contexte complet du dépôt, éditions multi-fichiers. Idéal pour les développeurs qui vivent dans leur éditeur et veulent tout au même endroit.
+
+## Claude
+Le plus flexible. Fonctionne en chat, CLI ou via API. Fort sur les tâches à long contexte (grandes bases de code, raisonnement multi-étapes). Idéal pour les développeurs qui découpent le workflow en sessions ciblées et veulent le plus fort raisonnement par requête.
+
+## GitHub Copilot
+Complétion inline légère plus chat. Intégration plus serrée avec GitHub lui-même (revue de PR, triage d'issues). Idéal pour les développeurs déjà profondément dans l'écosystème GitHub qui veulent un minimum de changement de contexte.
+
+## Comparaison directe
+
+| Critère | Cursor | Claude | Copilot |
+|---|---|---|---|
+| Complétion inline | Forte | Aucune (séparée) | Forte |
+| Raisonnement long contexte | Fort | Le plus fort | Modéré |
+| Édition multi-fichiers | Native | Via chat | Limitée |
+| Coût (par dev) | 20 USD/mo | Variable | 10-39 USD/mo |
+| Meilleur workflow | Centré éditeur | Basé sur sessions | Centré GitHub |
+
+## Comment choisir
+Si vous voulez l'IA dans votre éditeur et que l'édition multi-fichiers est votre goulot : Cursor.
+Si vous voulez le plus fort raisonnement et utilisez l'IA en sessions ciblées : Claude.
+Si votre goulot est de petites complétions et le workflow PR GitHub : Copilot.
+
+## Empilement
+Beaucoup de développeurs en font tourner deux : Cursor (ou Copilot) dans l'éditeur + Claude pour le raisonnement lourd. Le coût s'additionne ; n'empilez que si le gain de productivité le justifie.
+
+## Ce qui ne déplace pas la productivité
+Changer d'outil chaque semaine. Les longues sorties générées que vous ne lisez pas. Faire confiance aux complétions dans du code sensible à la sécurité sans vérification.`,
+    faqs: [
+      {
+        q: "Faut-il utiliser Cursor ou rester sur VS Code + Copilot ?",
+        a: "Dépend du workflow. Cursor est plus fort pour les éditions multi-fichiers et les refactors conscients du dépôt. VS Code + Copilot suffit pour les complétions inline et petites assistances.",
+      },
+      {
+        q: "Puis-je utiliser Claude comme mon seul outil IA de dev ?",
+        a: "Oui si vous préférez le travail par sessions aux complétions inline. Le compromis est les changements de contexte de workflow ; certains préfèrent, d'autres détestent.",
+      },
+    ],
+  },
+  'genki-vs-safetywing-claims-experience': {
+    body: `Genki et SafetyWing vendent toutes deux des assurances nomades par abonnement à des prix similaires mais l'expérience de sinistre diffère de façon notable.
+
+## Flux de sinistre Genki
+Formulaire web. Téléversement des reçus depuis mobile ou desktop. Sinistre assigné à un gestionnaire de cas en 1-2 jours ouvrés. Remboursement typiquement traité en 5-10 jours ouvrés pour les cas simples.
+
+## Flux de sinistre SafetyWing
+Basé sur le tableau de bord. Téléversement de document requis à la soumission. Sinistre assigné automatiquement sans gestionnaire de cas nommé sauf si complexe. Remboursement typiquement 5-10 jours ouvrés pour les sinistres sous 500 USD, 2-4 semaines pour les complexes.
+
+## Là où Genki diffère
+- Gestionnaire de cas nommé dès le départ (vs au cas par cas chez SafetyWing)
+- Pré-approbation disponible pour les procédures planifiées (SafetyWing principalement remboursement)
+- Fort sur les soins ambulatoires et dentaires inclus dans le plan standard
+- Couverture géographique légèrement plus mince (essentiellement toutes les destinations nomades populaires couvertes)
+
+## Là où SafetyWing diffère
+- Couverture pays plus large (180+ vs 150+)
+- Couverture US incluse dans le plan standard (Genki coût supplémentaire)
+- Facturation cancel-anytime plus flexible
+- Prix légèrement plus bas pour les moins de 40 ans
+
+## Calendrier de remboursement réel (données 2026)
+Les deux plateformes traitent les sinistres simples (payés de leur poche, reçus téléversés) en 7-14 jours de bout en bout. Les sinistres complexes (valeur élevée, multi-incident, admission hospitalière) sont systématiquement plus rapides chez Genki grâce au gestionnaire de cas nommé.
+
+## Comment choisir
+Genki pour les nomades basés UE qui valorisent l'expérience de sinistre et l'inclusion ambulatoire/dentaire.
+SafetyWing pour les nomades qui voyagent largement y compris US et veulent le coût mensuel le moins cher.
+
+## Ce que les deux partagent
+Modèle d'abonnement cancel-anytime. Soumission de sinistre mobile-first. Exclusions standards (conditions préexistantes, procédures électives, sports extrêmes sans avenant).`,
+    faqs: [
+      {
+        q: "Lequel est plus rapide à traiter un sinistre, Genki ou SafetyWing ?",
+        a: "Pour les sinistres complexes, Genki tend à être plus rapide grâce à l'assignation d'un gestionnaire de cas nommé. Les sinistres simples sous 500 USD sont traités de façon similaire sur les deux plateformes.",
+      },
+      {
+        q: "Genki couvre-t-elle les États-Unis comme SafetyWing ?",
+        a: "Genki couvre les US seulement sur le plan de palier supérieur, pas le standard. SafetyWing inclut une couverture US limitée dans le plan standard.",
+      },
+    ],
+  },
+  'remote-tech-interview-loop-2026-changes': {
+    body: `Les loops d'entretiens techniques à distance se sont installés en 2026 dans une forme spécifique qui diffère sensiblement de 2022-2023. Les changements affectent la préparation et ce à quoi s'attendre.
+
+## Le loop typique en 2026
+1. Pré-sélection recruteur (30 min)
+2. Appel hiring manager (45-60 min)
+3. Entretien technique, souvent en pair sur du vrai code (60-90 min)
+4. Design système ou round spécifique au domaine (60-90 min)
+5. Round valeurs équipe / culture (45 min)
+
+Total : 5-6 heures réparties sur 2-3 semaines pour les rôles seniors. Les loops juniors se sont raccourcis à 3-4 rounds chez la plupart des entreprises.
+
+## Ce qui est nouveau
+- Les entretiens en pair ont remplacé les puzzles style leetcode dans la plupart des entreprises remote-first
+- L'usage de l'IA pendant l'entretien technique est désormais explicitement annoncé d'emblée ; certaines entreprises l'autorisent, d'autres l'interdisent, presque aucune ne l'ignore
+- Les tests à la maison sont plus courts (1-3 heures, pas 8+) à cause du recul
+- Loops compatibles asynchrone émergeant dans les entreprises totalement distribuées (réponses enregistrées à des prompts écrits)
+
+## Ce qui ne change pas
+L'appel hiring manager comme conversation au plus gros poids de décision. Le round de fit équipe comme piège de disqualification. La pré-sélection recruteur comme porte des attentes salariales.
+
+## Comment se préparer en 2026
+- Répétez spécifiquement le muscle de l'entretien en pair : coder avec quelqu'un qui regarde, parler des compromis, accepter le retour en temps réel
+- Soyez clair d'emblée sur l'usage de l'IA ; demandez si des outils comme Claude ou Copilot sont autorisés pendant la technique
+- Ayez un exemple solide de design système prêt qui démontre l'échelle et la complexité spécifiques au rôle
+- Connaissez votre chiffre de salaire avant l'appel recruteur ; ne le divulguez jamais en premier
+
+## Ce qui bloque les offres
+Attentes salariales mal alignées qui ressortent tard. Réponses incohérentes entre rounds. Poser seulement des questions logistiques ; ne jamais poser de questions de fond sur l'équipe ou le produit. Réponses génériques au round culture.`,
+    faqs: [
+      {
+        q: "Puis-je utiliser l'IA pendant un entretien technique distant en 2026 ?",
+        a: "Dépend entièrement de l'entreprise. La plupart annoncent explicitement leur politique au début. Demandez si ce n'est pas dit ; supposer faux est pire que demander.",
+      },
+      {
+        q: "Combien de temps dure un loop typique d'entretien tech senior à distance en 2026 ?",
+        a: "5 à 6 heures de contact réparties sur 2 à 3 semaines. Les loops plus longs que 8 heures sont rares et un drapeau jaune sur le processus de recrutement.",
+      },
+    ],
+  },
+  'how-to-quit-without-burning-bridges-remote': {
+    body: `Démissionner proprement d'un job à distance compte plus que d'un job en présentiel parce que le monde tech remote est petit et que les mêmes personnes ressurgissent. Le playbook 2026 ci-dessous.
+
+## Période de préavis
+Standard pour le tech remote en 2026 : 2 semaines aux US, 1 mois dans la plupart de l'UE. Vérifiez votre contrat ; certains rôles seniors ont des clauses de préavis de 2-3 mois. Respectez-les.
+
+## Comment annoncer à votre manager
+1:1 en visio, pas Slack, pas email. Phrase directe : "J'ai décidé de partir. Mon dernier jour sera le X." Ayez vos raisons prêtes si demandées mais ne menez pas avec. Évitez le sondage sur les détails du prochain job ; nommer le prochain rôle est votre choix.
+
+## À quoi s'engager pendant le préavis
+Finalisation du travail du sprint en cours. Documentation des projets en cours. Conversations de passation avec les personnes qui reprendront votre travail. Enregistrements de transfert de connaissances pour les systèmes non évidents.
+
+## À éviter
+Cracher sur l'équipe ou l'entreprise en interne ou en externe. Chasse d'emploi visible sur le temps de l'entreprise. Glander pendant le préavis. Négocier une contre-offre juste pour l'utiliser comme levier.
+
+## La conversation de sortie
+La plupart des entreprises font un entretien de sortie. Utilisez-le pour un retour honnête et constructif si vous en avez. Évitez le déversement de griefs ; cela vous fait passer pour le problème, pas pour la chose que vous décrivez.
+
+## Après le départ
+L'annonce LinkedIn est OK ; mentionnez l'équipe et ce que vous avez apprécié. Restez en contact léger avec les personnes avec qui vous avez vraiment aimé travailler. Beaucoup de rôles tech remote tournent dans le même réseau dans les 2-5 ans ; gardez ce canal ouvert.
+
+## Le volant d'inertie de la professionnalisme
+La façon dont vous sortez détermine si d'anciens collègues vous recommandent, vous réembauchent ou avertissent les autres. Le retour composé d'une sortie propre est énorme sur une carrière d'une décennie.`,
+    faqs: [
+      {
+        q: "Faut-il accepter une contre-offre en quittant un job remote ?",
+        a: "Rarement. L'acceptation d'une contre-offre augmente la chance que vous partiez dans l'année de toute façon, et endommage la confiance avec l'équipe qui savait que vous cherchiez. Déclinez poliment.",
+      },
+      {
+        q: "Combien de temps rester pendant ma période de préavis à un job remote ?",
+        a: "Honorez votre préavis contractuel entièrement. Glander nuit plus à votre réputation que partir tôt ; finir fort est la seule bonne option.",
+      },
+    ],
+  },
+  'remote-team-meetings-survival-guide-2026': {
+    body: `Les équipes distantes qui n'ont pas activement élagué leur charge de réunions dérivent vers 4-6 heures de réunions par jour. Les équipes qui prospèrent réduisent agressivement, restructurent et protègent le temps de production.
+
+## Le piège par défaut
+Standups, planification, rétros, all-hands, 1:1s, démos, social. Chaque réunion est raisonnable isolément. Ensemble, elles avalent la journée et ne laissent aucun temps continu pour le vrai travail d'ingénierie.
+
+## Ce qu'il faut couper en premier
+Standups qui sont des lectures à voix haute de statuts (utilisez de l'écrit asynchrone à la place). Démos en synchrone pour le travail terminé (enregistrez + partagez). All-hands où le contenu pourrait être un memo écrit. 1:1s qui sont du pur statut (recentrer sur croissance et blocages).
+
+## Ce qu'il faut garder
+1:1s hiring manager avec contenu de croissance. Discussions incompatibles avec l'async (vraies décisions, appels contestés). Temps social d'équipe, à périmètre intentionnel.
+
+## Structure qui marche
+- Bloc de 4 heures heads-down par jour, bloqué en calendrier, sans réunions
+- Un jour par semaine sans réunion
+- Longueur de réunion par défaut de 25 ou 50 minutes (pas 30 ou 60)
+- Ordre du jour écrit obligatoire avant toute réunion
+
+## Substituts asynchrones
+- Loom pour les démos et walkthroughs
+- Standups écrits asynchrones dans un canal dédié
+- Documents de décision avec DRI clair, options et recommandation
+- Vidéo enregistrée pour le contexte qui n'a pas besoin d'un public en direct
+
+## Quand appeler une réunion
+La conversation a 3+ participants et a besoin de va-et-vient. Un chemin async écrit prendrait 5+ jours à résoudre. La décision est contestée.
+
+## Quand NE PAS appeler une réunion
+Mises à jour de statut. Diffusions d'information à sens unique. Réunions récurrentes qui ont survécu à leur but. Brainstorming avec les mauvaises personnes.
+
+## Le signal de leadership
+Un manager qui annule activement des réunions, expédie des memos écrits à la place et protège le temps de production crée l'un des plus forts signaux de culture d'équipe en travail à distance.`,
+    faqs: [
+      {
+        q: "Combien d'heures de réunions est sain pour un ingénieur remote ?",
+        a: "Sous 10 heures par semaine pour les contributeurs individuels, sous 20 pour les managers. Au-delà, la production chute brutalement parce que le deep work ne peut pas avoir lieu.",
+      },
+      {
+        q: "Comment amener mon équipe à couper les réunions ?",
+        a: "Donnez l'exemple. Annulez une réunion récurrente de votre agenda chaque semaine et remplacez-la par un substitut écrit asynchrone. Démontrez le résultat ; le reste de l'équipe copie.",
+      },
+    ],
+  },
+  'how-to-take-a-tech-sabbatical-2026': {
+    body: `Les sabbatiques tech (3 à 12 mois de pause) sont devenus plus courants en 2026 alors que le secteur mûrit. Bien fait, un sabbatique rafraîchit votre carrière ; mal fait, il laisse un trou difficile à expliquer.
+
+## La mise en place financière
+Économisez 12 mois de dépenses avant de commencer, même pour un sabbatique de 6 mois. Des surprises arrivent. Les comptes multidevises simplifient la gestion des dépenses entre frontières si vous voyagez pendant la pause.
+
+## La narration pour le retour
+Recruteurs et hiring managers posent des questions sur les trous. Les explications propres sont : sabbatique délibéré pour voyage/famille/santé, projet personnel (avec sortie livrable), apprentissage continu (avec artefacts concrets). Un vague "récupération de burnout" sonne vrai mais atterrit comme un drapeau jaune en 2026.
+
+## Que faire pendant
+- Choisissez un projet personnel substantiel (livrable, public) pour ancrer le temps
+- Écrivez publiquement : blog, newsletter, posts techniques, conférence
+- Maintenez l'actualité des compétences via lecture et petits projets, pas du grinding plein temps
+- Gardez un contact léger avec 5-10 contacts réseau de confiance ; ne disparaissez pas entièrement
+
+## À éviter
+Disparaître entièrement de la vue publique. Revenir sans sortie livrable. Brûler les économies en inflation de style de vie qui survit au retour. Sauter la lecture technique et trouver que le secteur a avancé de 2 ans à votre retour.
+
+## Durée et timing
+3 à 6 mois : dommage narratif minimal, facile à revenir.
+6 à 12 mois : nécessite un artefact livrable clair pour un retour propre.
+12+ mois : reconstruction de carrière significative ; traiter comme un changement de carrière plutôt qu'un sabbatique.
+
+## La recherche de retour
+Commencez 6-8 semaines avant votre date de retour cible. Utilisez le projet personnel, l'écriture et les contacts réseau comme preuves différenciantes. La rémunération sur la première offre de retour est généralement légèrement en dessous d'avant le sabbatique ; récupération en 18 mois dans la nouvelle entreprise.
+
+## Là où ce schéma compte le plus
+Pour les ingénieurs seniors avec 5+ ans de risque de burnout cumulé. Pour les fondateurs entre ventures. Pour les parents en transition de retour après des années familiales intensives. La forme est cohérente entre ces cas.`,
+    faqs: [
+      {
+        q: "Combien de temps est trop long pour un sabbatique tech ?",
+        a: "12+ mois commence à exiger une explication comme changement de carrière plutôt que comme sabbatique. Les trous de moins de 12 mois avec un artefact livrable clair se reconvertissent proprement dans la plupart des marchés.",
+      },
+      {
+        q: "Faut-il divulguer un sabbatique sur son CV ?",
+        a: "Oui, explicitement. L'appeler sabbatique et nommer ce que vous avez produit pendant atterrit bien mieux que laisser un trou caché qui ressort en entretien.",
+      },
+    ],
+  },
 };
