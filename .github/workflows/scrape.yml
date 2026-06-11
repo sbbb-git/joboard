@@ -112,4 +112,3 @@ jobs:
               -d "$payload" || echo "000")
             echo "  batch $(basename $f): HTTP $code"
           done
-# trigger 20260605T180000

@@ -2830,6 +2830,1216 @@ Use the 60-day window. Buy in two batches of three to four deals each. Test each
       },
     ],
   },
+  // ─── Scheduled release: 30 guides, one per day from June 8 to July 7, 2026
+  {
+    slug: 'claude-for-freelance-developer-workflow',
+    title: 'How freelance developers actually use Claude in client work',
+    description: 'Real workflows where LLMs like Claude lift a freelance developer throughput without compromising code quality.',
+    category: 'freelance',
+    publishedAt: '2026-06-08T03:00:00Z',
+    body: `Most posts about using LLMs in dev work are either marketing fluff or stories of someone shipping AI-generated bugs in production. The pattern that actually works for freelance developers in 2026 is narrower and more disciplined than either extreme.
+
+## What Claude is good for in freelance work
+Drafting boilerplate (test scaffolding, OpenAPI specs, Terraform skeletons). Explaining unfamiliar codebases when onboarding to a new client. Reviewing your own diffs for missed edge cases. Generating documentation from existing code. Producing first-draft client emails and scope documents.
+
+## What Claude is bad for
+Writing complete features unsupervised. Making architectural calls. Anything where a subtle bug costs more than the time saved. Tasks the client expects fully by you (read your contract).
+
+## A typical workflow
+Read the brief, write a one-page scope yourself. Ask Claude to challenge the design at 10x and 100x scale. Plan the work as small commits. For each commit, write the test first, then ask Claude for a draft implementation. Read and rewrite in your own voice before committing.
+
+## Be honest with clients
+Many clients accept LLM-assisted work as long as the code passes review and the deliverable is yours. Some explicitly forbid it. Read the contract; if unclear, ask in writing before the first commit.
+
+## Pricing
+Productivity gain does not justify lowering your rate. The bug risk, warranty, and final responsibility stay yours.`,
+    faqs: [
+      {
+        q: 'Should I tell clients I use Claude?',
+        a: 'Be transparent if asked, and check your contract first. Many clients accept LLM-assisted work; some explicitly do not. The deliverable and responsibility remain yours either way.',
+      },
+      {
+        q: 'Can I bill less when using Claude to speed up?',
+        a: 'You can but should not by default. Bug risk, rewrite responsibility, and warranty stay identical. Productivity gain is yours to keep.',
+      },
+    ],
+  },
+  {
+    slug: 'digital-nomad-tax-portugal-nhr-2026',
+    title: 'Portugal NHR for remote tech workers in 2026',
+    description: 'How the post-reform Portugal tax regime treats remote tech workers and the practical setup that holds up legally.',
+    category: 'tax',
+    publishedAt: '2026-06-09T03:00:00Z',
+    body: `Portugal Non-Habitual Resident regime closed to new applicants end of 2023. The 2026 regime that matters is the IFICI, the NHR successor for research, innovation, and qualified tech roles.
+
+## Who qualifies in 2026
+Software engineers, ML engineers, data scientists, product engineers, and most tech roles working for foreign employers or freelancing for foreign clients can qualify, given real residency (183+ days), eligible profession, and tax-substance ties.
+
+## The benefit
+A flat 20 percent rate on Portuguese-source professional income for 10 years. Most foreign-source income (capital gains, dividends, qualifying salary) effectively exempt during the same window. Net effective rate typically 15 to 22 percent total.
+
+## Substance requirements
+Actually live in Portugal. Real rental contract, local bank, family registered locally, 183+ days physically there. Half-measures get audited and the regime is revoked retroactively.
+
+## The setup that holds up
+Move physically first. Sign a 12-month minimum lease. Register with the AT as tax resident. Open a Portuguese bank account. Apply for IFICI with proof of eligible profession. Keep records: travel history, work logs, invoices.
+
+## Where Wise fits
+Multi-currency accounts let you receive client payments in USD or EUR at mid-market FX, then move to your Portuguese bank for daily spend. Three-account stack (Wise for receiving, local bank for spending, brokerage for savings) is standard for Portugal-based remote workers.`,
+    faqs: [
+      {
+        q: 'Is Portugal NHR available for new applicants in 2026?',
+        a: 'The original NHR closed at end of 2023. Its successor IFICI is open in 2026 with a narrower eligible-profession list that still covers most remote tech roles.',
+      },
+      {
+        q: 'Do I need to physically live in Portugal to qualify?',
+        a: 'Yes. 183 days minimum and real residential ties are required. The tax authority audits substance and revokes the regime retroactively for half-measures.',
+      },
+    ],
+  },
+  {
+    slug: 'safetywing-real-claim-process-2026',
+    title: 'SafetyWing claim process in 2026: what to expect',
+    description: 'What submitting a SafetyWing claim actually looks like, how long it takes, and what to keep on file.',
+    category: 'visa',
+    publishedAt: '2026-06-10T03:00:00Z',
+    body: `Most nomad-insurance reviews skip the part that matters: what happens when you actually claim. Here is the realistic SafetyWing claim experience in 2026.
+
+## The claim flow
+Log in, open the relevant policy, click "Submit a claim". Upload supporting documents (receipts, medical reports, prescriptions). Fill the standard form (date, location, brief description). Submit and track status in the dashboard.
+
+## What documents you need
+Original itemised receipts in local currency. Medical report from the treating physician, English or translated. Prescription details if applicable. Date of incident and treatment clearly visible. Proof of payment.
+
+## Processing time
+Simple claims under 500 USD: 5-10 business days. Complex or extra-documentation claims: 2-4 weeks. Inpatient or evacuation: handled through their 24/7 emergency line, often paid directly to the provider.
+
+## What gets denied
+Pre-existing conditions (limited exceptions). Treatment in your home country beyond the 30-day annual cap. Elective procedures (cosmetic, fertility, most non-emergency dental). Excluded activities. Documentation in a non-English language without translation.
+
+## How to avoid friction
+Photograph receipts the day you get them. Get the medical report in English at point of care. Submit within 30 days. Track expenses per trip in a single shared folder.
+
+## What surprises first-time claimants
+The standard plan reimburses you (pay first, get reimbursed). For inpatient stays, the provider can be billed directly but you must call the emergency line first.`,
+    faqs: [
+      {
+        q: 'How long does a SafetyWing claim take?',
+        a: 'Simple under-500-USD claims resolve in 5-10 business days. More complex claims take 2-4 weeks. Inpatient cases go through the 24/7 emergency line and are often paid direct to the provider.',
+      },
+      {
+        q: 'What is the most common reason a claim is denied?',
+        a: 'Pre-existing condition disputes and missing English documentation. Both addressable: full disclosure on signup and English receipts at point of care.',
+      },
+    ],
+  },
+  {
+    slug: 'passive-income-stack-for-remote-developers-2026',
+    title: 'Passive income stack for remote developers in 2026',
+    description: 'The handful of income streams a remote developer can layer on top of a day job without compromising it.',
+    category: 'career',
+    publishedAt: '2026-06-11T03:00:00Z',
+    body: `Genuine passive income is rare. What experienced remote developers actually run is a small portfolio of semi-passive streams, each 1 to 5 hours per week, compounding over years.
+
+## Stream 1: tech newsletter affiliate revenue
+A focused tech newsletter publishes weekly, links to tools the author uses. Once subscribers cross ~3,000 engaged readers, affiliate links produce 200 to 800 USD per month with about 3 hours weekly of writing.
+
+## Stream 2: small SaaS or product on AppSumo
+A niche developer tool sold as a one-time lifetime deal can generate 50,000 to 250,000 USD at launch, then 1,000 to 5,000 USD per month afterwards. Hardest to start, highest upside.
+
+## Stream 3: paid AI evaluation on Mercor
+4 to 8 hours per week of evaluation work at 40 to 80 USD per hour produces 600 to 2,500 USD per month with no operational overhead.
+
+## Stream 4: index investments funded by 1-3
+Once active streams cover monthly burn, route surplus into broad index in your home currency. The only stream that compounds without your time.
+
+## What does NOT belong here
+High-frequency trading, crypto airdrops, drop-shipping, courses on revenue-share platforms. All non-passive in practice.
+
+## Layer order
+Mercor first (immediate). Newsletter second (slow compound). Investments third. SaaS or AppSumo product last. Adding all at once burns you out.
+
+## Realistic numbers at maturity
+2-3 years in: 1,500 to 5,000 USD per month outside the day job with 8 to 12 weekly hours.`,
+    faqs: [
+      {
+        q: 'How long until the stack covers monthly burn?',
+        a: 'For a disciplined operator, 18 to 36 months. Faster with an existing audience; slower starting from zero.',
+      },
+      {
+        q: 'Is true passive income realistic in 2026?',
+        a: 'Pure passive is rare. Semi-passive (1-5 hours weekly per stream, compounding) is the realistic version.',
+      },
+    ],
+  },
+  {
+    slug: 'fiverr-portfolio-essentials-for-developers',
+    title: 'The Fiverr portfolio that actually converts buyers',
+    description: 'What buyers look for in a developer Fiverr portfolio in 2026, and how to assemble one from scratch.',
+    category: 'freelance',
+    publishedAt: '2026-06-12T03:00:00Z',
+    body: `Fiverr buyers spend under 10 seconds on a portfolio before deciding. What they look for is narrower than most sellers assume.
+
+## What converts
+Three to five focused samples that prove you can deliver THE SPECIFIC thing your gig promises. A clean before/after screenshot for design, a deployed demo URL for web, a code snippet with explanation for backend work.
+
+## What does not
+Twenty samples diluting your strongest. Personal projects unrelated to the gig category. Stack lists ("React, Node, AWS"). Logos of past employers without context.
+
+## Building one from zero
+You do not need paid work to start. Build three sample deliverables matching your gig promise (mock landing page, debugged repo, scripted automation) and host them publicly. Each sample takes 4 to 8 hours; the portfolio pays back forever.
+
+## Hosting
+Use the Fiverr gig gallery for the three best samples. Link a personal site or GitHub repo from the gig description for buyers who want depth. Do not link to clients without their permission.
+
+## Updates
+Replace your weakest sample every two months as new client work comes in. Reviews compound; portfolio quality compounds the same way.
+
+## Common mistakes
+Showcasing front-end visuals when your gig is backend automation. Mixing tech stacks in one gig (pick one stack per gig, run separate gigs for adjacent stacks). Stale samples from 2 years ago that no buyer can verify still work.`,
+    faqs: [
+      {
+        q: 'How many samples should a Fiverr portfolio have?',
+        a: 'Three to five focused samples, each closely matching the gig promise. More samples dilute conversion rather than improve it.',
+      },
+      {
+        q: 'Can I include personal projects in my Fiverr portfolio?',
+        a: 'Yes, especially when starting. Buyers care that you can deliver, not that you were paid for it. Real client work eventually replaces personal samples.',
+      },
+    ],
+  },
+  {
+    slug: 'wise-vs-payoneer-for-developers',
+    title: 'Wise vs Payoneer for freelance developers in 2026',
+    description: 'Two of the most-used international payment platforms compared on the criteria that matter for freelance developers.',
+    category: 'freelance',
+    publishedAt: '2026-06-13T03:00:00Z',
+    body: `Wise and Payoneer dominate cross-border payment for freelance developers. They look similar but the cost structure and feature set diverge in ways that matter at scale.
+
+## Wise: built for transparency
+Real mid-market FX rate. Local routing details in 8+ currencies. Fee taken visibly on conversion only (0.4 to 0.7 percent typical). Debit card spends at FX with no markup. Best fit when you receive payments and convert frequently.
+
+## Payoneer: built for marketplaces
+Standard fee on marketplace payouts (Upwork, Fiverr, Amazon, etc.). Less FX transparency, with rates usually 1 to 2 percent off mid-market. Local US receiving account for non-US sellers. Best fit when the marketplace partners with Payoneer.
+
+## Side by side
+
+| Factor | Wise | Payoneer |
+|---|---|---|
+| FX spread | 0.4-0.7% | 1-2% |
+| Local routing currencies | USD, EUR, GBP, AUD, NZD, etc. | USD primarily |
+| Marketplace integration | Direct withdrawal | Native on many |
+| Debit card | Mid-market, no markup | 1-2% markup |
+| Monthly fee | None | None on receive |
+
+## When to use Payoneer
+If your marketplace (Fiverr, Upwork) offers Payoneer as a payout option, the integration is usually smoother than withdrawing to Wise. The FX cost is the tradeoff.
+
+## When to use Wise
+For direct invoicing of clients, holding multiple currencies, spending abroad with a debit card. The FX savings compound at scale.
+
+## The stack that works
+Many freelance developers run both: Payoneer for marketplace payouts that integrate natively, Wise for direct client invoicing and FX management.`,
+    faqs: [
+      {
+        q: 'Which is cheaper for receiving USD as an EU freelancer?',
+        a: 'Wise. The mid-market FX with a small flat fee beats Payoneer by 1-2 percent of the transaction.',
+      },
+      {
+        q: 'Can I link Payoneer payouts directly into Wise?',
+        a: 'Not directly. You can transfer Payoneer to a US bank account and then to Wise, but the FX cost eats most of the benefit.',
+      },
+    ],
+  },
+  {
+    slug: 'mercor-application-timeline-2026',
+    title: 'Mercor application timeline 2026: realistic expectations',
+    description: 'From application to first paid task, how long the Mercor onboarding actually takes in 2026.',
+    category: 'freelance',
+    publishedAt: '2026-06-14T03:00:00Z',
+    body: `Mercor onboarding is faster than most expect for accepted candidates and slower than most hope for the rest. The realistic 2026 timeline is below.
+
+## Day 0: submit application
+A few personal details, declared expertise, optional LinkedIn or GitHub link. 20 minutes.
+
+## Day 1-3: initial automated screen
+Mercor processes the application algorithmically. Candidates with clear demonstrable expertise in declared areas get fast-tracked; the rest get a longer screening test.
+
+## Day 3-7: written screening test
+Domain-specific exercises (code-quality comparisons, reasoning prompts, written justifications). 45 to 90 minutes.
+
+## Day 7-14: review
+A combination of LLM grading and human review on the borderline cases. Most accepted candidates hear back within this window.
+
+## Day 14-21: paid trial task
+First paid task at the entry rate for the track. Performance here sets your initial reputation score.
+
+## Day 21-30: regular task flow opens
+Sustained quality on the trial task opens regular task invitations. Rate adjustments start happening 4 to 8 weeks in based on quality signals.
+
+## What stalls the timeline
+Generic LLM-rewritten application essays. Mismatched track applications (technical depth in field X but applied to field Y). Missing the response window on the written screen.
+
+## What accelerates
+Domain-scarce specialisation (formal math, OCaml, specific legal jurisdictions, medical credentials). Clear public proof of depth (GitHub commits, technical writing, conference talks).`,
+    faqs: [
+      {
+        q: 'How long from Mercor application to first paid task?',
+        a: 'For accepted candidates, 14 to 21 days on average. Domain-scarce profiles can be faster.',
+      },
+      {
+        q: 'What stalls a Mercor application?',
+        a: 'LLM-assisted essays, mismatched track applications, and missing the screening-test window are the top three reasons.',
+      },
+    ],
+  },
+  {
+    slug: 'appsumo-best-deals-by-month-pattern-2026',
+    title: 'When AppSumo runs its best deals: the calendar pattern',
+    description: 'How AppSumo deal quality and discounts cycle through the year, and when to wait for a better one.',
+    category: 'tools',
+    publishedAt: '2026-06-15T03:00:00Z',
+    body: `AppSumo runs new deals continuously, but deal quality and pricing follow a calendar pattern. Understanding it saves both money and bad purchases.
+
+## Q1 (January-March)
+Heavy traffic from new-year resolutions and bootstrap founders. Strong vendor launches in productivity, AI, and small SaaS categories. Best window for tools you intend to use as foundational stack.
+
+## Q2 (April-June)
+Slower vendor activity, fewer first-time launches. Better window for stacking codes on existing successful deals (more codes available, lower fragility).
+
+## Q3 (July-September)
+Back-to-school surge. Education, productivity and creator-tool deals dominate. Strong for newsletter tools, course platforms, content production.
+
+## Q4 (October-December)
+Black Friday and end-of-year sale season. Discounts on existing deals are heaviest here, often 30 to 50 percent off the already-discounted lifetime price. Many founders time their largest stack purchases for late November.
+
+## What does not change
+Quality vendor lifetime deals appear in every quarter; the calendar shifts which categories surface. Foundational tools (transactional email, automation, database UI) are always worth grabbing when they land at the right tier.
+
+## How to time a purchase
+If a deal you want appears at full lifetime price in March, the same vendor often discounts further during Black Friday. For optional tools, wait. For foundational tools you would have paid subscription for monthly, buy now and recover the subscription difference.`,
+    faqs: [
+      {
+        q: 'When does AppSumo run its biggest sale?',
+        a: 'Black Friday week and the run-up to it (mid-November to early December). Many lifetime deals discount an additional 30 to 50 percent.',
+      },
+      {
+        q: 'Should I wait for Black Friday on every AppSumo deal?',
+        a: 'No. Foundational tools that replace recurring subscriptions pay back faster than the discount delta. Optional tools, wait. Foundational tools, buy when they fit.',
+      },
+    ],
+  },
+  {
+    slug: 'beehiiv-vs-substack-monetisation-2026',
+    title: 'Beehiiv vs Substack for newsletter monetisation in 2026',
+    description: 'Direct comparison of how Beehiiv and Substack handle monetisation for a tech newsletter operator.',
+    category: 'career',
+    publishedAt: '2026-06-16T03:00:00Z',
+    body: `Beehiiv and Substack both publish newsletters but the monetisation surface differs sharply. The right platform depends on your strategy.
+
+## Substack: paid-subscription focused
+Strongest for newsletters with a clear premium angle. Built-in paid tier mechanics. Strong discovery on the Substack network (notes, recommendations, app). Charges a percentage of paid revenue. Weakest on native ads and complex referrals.
+
+## Beehiiv: ad-network focused
+Strongest for newsletters that monetise through native ads and affiliate-style sponsorships. Built-in ad network with CPM-based payouts at ~3,000 engaged subs. Native referral program for free-list growth. Substacks discovery network not present; Beehiiv expects you to bring traffic.
+
+## Side by side
+
+| Factor | Beehiiv | Substack |
+|---|---|---|
+| Native ads | Strong | None |
+| Paid subscriptions | Supported | Core feature |
+| Referral program | Native | None |
+| Platform discovery | Limited | Strong |
+| Revenue share | None on free, 0% on subs | 10% of subs |
+| Analytics depth | Strong | Moderate |
+
+## Which to pick
+Tech newsletters that monetise through tools, deals, and product affiliate links convert better on Beehiiv. Opinion-driven and content-only newsletters with a paid subscriber base lean Substack.
+
+## The migration option
+You can move from Substack to Beehiiv (and vice versa). Subscribers transfer cleanly; the deliverability dip during transition is the friction. Plan for two months of slower growth during the move.`,
+    faqs: [
+      {
+        q: 'Does Substack take a cut of my paid newsletter revenue?',
+        a: 'Yes, 10 percent of paid-subscription revenue plus Stripe fees. Beehiiv takes 0 percent of subscription revenue but lacks Substack discovery.',
+      },
+      {
+        q: 'Can I monetise a Beehiiv newsletter with paid subscriptions?',
+        a: 'Yes, Beehiiv supports paid tiers natively. Substack still has stronger discovery for paid newsletters; Beehiiv is stronger for ad and affiliate revenue.',
+      },
+    ],
+  },
+  {
+    slug: 'claude-prompt-patterns-for-developers',
+    title: 'Claude prompt patterns developers actually use',
+    description: 'The handful of prompt patterns that consistently produce useful output when using Claude for development work.',
+    category: 'tools',
+    publishedAt: '2026-06-17T03:00:00Z',
+    body: `Most prompt-engineering content is generic. The patterns that work for developers using Claude in actual project work are narrower and concrete.
+
+## Pattern 1: anchor with constraints
+Start every prompt with the constraints (stack, language version, framework, deployment target). Without them, Claude defaults to mainstream choices that may not fit your stack.
+
+## Pattern 2: ask for adversarial review
+"Here is a function. List five ways this can fail under concurrent load." Adversarial framing produces better edge-case discovery than open-ended review.
+
+## Pattern 3: compare two designs
+"I am choosing between approach A (...) and approach B (...). What are the tradeoffs at 100x scale?" Comparison framing forces explicit reasoning instead of vague suggestions.
+
+## Pattern 4: stepwise reasoning before code
+"Before writing code, list the steps and the edge cases you will handle. Then write the code." Forcing the plan first cuts iteration cycles.
+
+## Pattern 5: post-mortem of your own work
+"Here is a bug that took me 2 hours to find. What signals could I have noticed faster?" Turns past pain into transferable habits.
+
+## What rarely works
+Asking for "best practices" unscoped. Asking for "production-ready" code without testing it. Trusting the first answer for anything security-sensitive. Asking Claude to generate large amounts of unsupervised code.
+
+## Workflow integration
+Most experienced developers integrate Claude through one of: terminal CLI, IDE assistant, dedicated chat. Pick one and use it consistently; switching between three is friction.`,
+    faqs: [
+      {
+        q: 'Should I use Claude for all my development work?',
+        a: 'No. Use it where it shortens iteration: review, scaffolding, documentation, edge-case discovery. Avoid it for architectural decisions and security-sensitive code.',
+      },
+      {
+        q: 'How long does it take to get good at prompting Claude for dev work?',
+        a: 'A week of consistent use to learn the patterns above. Beyond that, marginal improvements come from your own iteration loop, not from prompt tricks.',
+      },
+    ],
+  },
+  {
+    slug: 'fiverr-buyer-objections-handling-guide',
+    title: 'Handling common Fiverr buyer objections that kill orders',
+    description: 'The five buyer objections that come up most on developer gigs in 2026 and the replies that close the order.',
+    category: 'freelance',
+    publishedAt: '2026-06-18T03:00:00Z',
+    body: `Most lost Fiverr orders die in the messaging step, not at the gig page. Five buyer objections come up repeatedly on developer gigs. Knowing how to handle each closes more orders without lowering rate.
+
+## Objection 1: "Can you do it cheaper?"
+Reply: "I price by scope. If we trim X, the Standard tier covers it. Otherwise the price reflects the work this needs done correctly."
+
+## Objection 2: "Can you do it faster?"
+Reply: "Standard delivery is X days. Express delivery is available as an extra at Y USD because it requires me to reshuffle other commitments."
+
+## Objection 3: "Other sellers offer this at half the price"
+Reply: "There are cheaper options. Mine includes (specific deliverable they do not). If those matter for your case, I am the right pick; if not, the cheaper seller is fine."
+
+## Objection 4: "Can you guarantee X?"
+Reply: "I deliver to the scope we agreed. If something does not match the brief I revise at no extra cost. I cannot guarantee outcomes that depend on (specific external dependency)."
+
+## Objection 5: "Can we discuss this on WhatsApp/Discord/email?"
+Reply: "Fiverr requires all communication on platform. Happy to continue the conversation here." Off-platform contact violates terms of service; refusing politely protects your account.
+
+## What kills more orders than any objection
+Slow responses (over 30 minutes). Generic "Hi, thanks for reaching out" openings. Promising a quote and not following through. Asking the same scope question twice.
+
+## When to walk away
+If the buyer\\'s communication style suggests scope creep, midnight messages, or unreasonable expectations, decline politely. A bad order with a cancellation hurts your seller level more than a missed order.`,
+    faqs: [
+      {
+        q: 'Should I match a cheaper competitor on Fiverr?',
+        a: 'Rarely. Buyers who pick on price alone churn fast and leave one-star reviews. Compete on speed, clarity and demonstrable competence instead.',
+      },
+      {
+        q: 'What if a Fiverr buyer insists on off-platform contact?',
+        a: 'Politely decline. Fiverr terms forbid it and your account can be suspended for accepting. Most buyers accept the boundary when stated calmly.',
+      },
+    ],
+  },
+  {
+    slug: 'wise-debit-card-spending-tips',
+    title: 'Wise debit card tips for travelling developers',
+    description: 'How the Wise debit card actually works abroad, the fees that surprise new users, and the spending pattern that works.',
+    category: 'freelance',
+    publishedAt: '2026-06-19T03:00:00Z',
+    body: `The Wise debit card is one of the most-used cards in the nomad and remote-worker stack. The way it works in practice is more nuanced than the marketing suggests.
+
+## How spending works
+The card spends from the matching currency wallet first. If you have a EUR balance and spend EUR, no FX. If you have only USD and spend EUR, Wise converts at mid-market with a small fee (0.4 to 0.7 percent typical).
+
+## What does not have FX
+Spend in currencies you already hold balance for. ATM withdrawals up to a monthly free limit in any currency (currently around 200 EUR equivalent per month, then small per-withdrawal fee).
+
+## What does have FX
+Spending from a currency you do not hold (auto-converts at the time). Online purchases in a third currency from a vendor in a fourth currency. Hotel pre-authorisations that hold from your default currency.
+
+## The pattern that works
+Hold a small float in the local currency wherever you spend. Top up monthly from your main currency. Use ATM only sparingly; card spend has cleaner accounting.
+
+## Surprises to know
+- ATM fees: free until ~200 EUR per month, then small per-transaction fee
+- Some merchants do dynamic currency conversion (DCC); always decline DCC and spend in local currency
+- Pre-authorisation holds can last 7-14 days; Wise releases the hold when the merchant clears
+
+## Lost or compromised card
+Freeze instantly in the app. Order a replacement to your shipping address. Virtual card is available immediately while you wait.
+
+## Tax angle
+Card spend is just spending; no income tax implication. But every spend in a foreign currency converts at the day rate. For tax reporting in your home country, the running statement helps.`,
+    faqs: [
+      {
+        q: 'Does the Wise card charge a foreign transaction fee?',
+        a: 'Not when you spend from a balance in the matching currency. When auto-converting, a small mid-market fee applies (0.4-0.7 percent), with no foreign-transaction surcharge on top.',
+      },
+      {
+        q: 'What is the Wise ATM withdrawal limit?',
+        a: 'In 2026, around 200 EUR equivalent free per month. Beyond that, a small per-transaction fee plus the standard mid-market FX if converting.',
+      },
+    ],
+  },
+  {
+    slug: 'mercor-evaluator-quality-rubrics-explained',
+    title: 'How Mercor scores evaluator quality, explained',
+    description: 'The signals Mercor uses to rate evaluator quality and what to do with each one to climb the rate ladder.',
+    category: 'freelance',
+    publishedAt: '2026-06-20T03:00:00Z',
+    body: `Mercor pays evaluators differently based on a quality score that combines several signals. Understanding each lets you optimise where it matters and ignore the noise.
+
+## Signal 1: inter-rater agreement
+On calibration sets where ground truth exists or where multiple evaluators rate the same artefact, your agreement rate is measured. Above the threshold (typically high 80s to low 90s percent on most tracks) you advance; below it your rate caps.
+
+## Signal 2: justification depth
+A rating without explanation gets the minimum credit even if correct. A rating with specific, falsifiable reasoning ("the second response misses the off-by-one error on line 14") gets full credit and unlocks higher-paying batches.
+
+## Signal 3: response speed within reasonable limits
+Faster acceptance and completion of task invitations is rewarded. Sustained speed beyond ~24 hours per task average can be a red flag for over-rushing; the system optimises for quality, not pure speed.
+
+## Signal 4: task completion rate
+The percentage of accepted tasks you actually complete. Declining tasks after accepting damages the rate; not accepting in the first place is neutral.
+
+## Signal 5: review feedback from human reviewers
+Periodically a human reviews your evaluations and notes patterns. Constructive criticism applied in subsequent work raises your score.
+
+## What to do
+Read every rubric carefully before the first batch in a new track. Write justifications as if a human reviewer will read them (because one will). Accept only tasks you can complete cleanly within the deadline. Treat the first 10 to 20 tasks in any new track as the calibration window.
+
+## What gets you removed
+Sustained inter-rater agreement below threshold across multiple tracks. Justifications that read as LLM-generated. Accepting and abandoning tasks repeatedly.`,
+    faqs: [
+      {
+        q: 'How does Mercor weight evaluator quality?',
+        a: 'A composite of inter-rater agreement, justification depth, completion rate and human review feedback. Inter-rater agreement and justification depth are the two heaviest signals.',
+      },
+      {
+        q: 'Can I improve my Mercor rate without doing more hours?',
+        a: 'Yes. Higher justification depth and consistent rubric adherence raise the rate without volume change. Quality compounds; quantity alone does not.',
+      },
+    ],
+  },
+  {
+    slug: 'appsumo-stacking-codes-explained',
+    title: 'AppSumo code stacking explained for buyers in 2026',
+    description: 'When AppSumo lifetime deal codes can stack to higher tiers, when they cannot, and how to plan around it.',
+    category: 'tools',
+    publishedAt: '2026-06-21T03:00:00Z',
+    body: `Many AppSumo lifetime deals allow buyers to stack multiple codes from the same deal to unlock higher tiers. The mechanics are simple but the planning is where most buyers lose money.
+
+## What stacking is
+Each AppSumo deal has tiers (Tier 1 to Tier N) with progressively higher limits or features. A single Tier 1 code unlocks the entry tier. Stacking a second Tier 1 code (where allowed) usually unlocks Tier 2 limits or extends caps.
+
+## When stacking is offered
+The deal page lists "stackable" explicitly. Common for usage-capped SaaS (more API calls, more workspaces, more user seats per stack). Less common for feature-gated SaaS where higher tiers add new functionality not just capacity.
+
+## When stacking makes sense
+You are confident the tool fits your workflow. The capacity at Tier 1 is too tight for your projected 18-month usage. Buying Tier 2 directly costs more than two Tier 1 codes stacked. The vendor has a public roadmap and recent release history.
+
+## When stacking does NOT make sense
+You have not validated the tool in your actual workflow yet. The cap you would outgrow is years away. You are stacking for theoretical future scale that may never materialise.
+
+## Refund mechanics
+The 60-day refund window applies to the bundle of codes purchased. Refunding partial codes within a stack varies by vendor; check the specific deal before stacking.
+
+## Practical sequence
+Buy Tier 1. Use it in real workflow for 2 weeks. If the tool clicks and the cap matters, add a stack code. If not, refund within the window.`,
+    faqs: [
+      {
+        q: 'How do I know if an AppSumo deal allows stacking?',
+        a: 'The deal page lists it explicitly under "Stackable" or in the tier comparison table. When unstated, assume single-purchase only.',
+      },
+      {
+        q: 'Can I refund some codes from a stack and keep others?',
+        a: 'Depends on the vendor. Some allow partial refunds within the 60-day window; others treat the stack as a single purchase. Read the specific deal before buying.',
+      },
+    ],
+  },
+  {
+    slug: 'tech-newsletter-niche-selection-2026',
+    title: 'Picking a tech newsletter niche that still works in 2026',
+    description: 'How to choose a tech newsletter niche that has enough audience to grow and enough scarcity to stand out.',
+    category: 'career',
+    publishedAt: '2026-06-22T03:00:00Z',
+    body: `The hardest decision when starting a tech newsletter is the niche. Pick too broad and you compete with established giants. Pick too narrow and you run out of audience. The pattern that works in 2026 is below.
+
+## The two failure modes
+Too broad: "Developer tips and AI news". Competes with thousand other newsletters, no clear identity, low conversion to paid.
+Too narrow: "Postgres performance tuning for game studios". 200 possible subscribers, plateau at month 6.
+
+## The sweet spot
+A specific role + a specific lens. "Distributed systems for SaaS founders", "ML engineering for legal tech", "Frontend performance for ecommerce". Roughly 50,000 to 500,000 addressable readers globally is the right pool: big enough to compound, small enough to dominate.
+
+## Test if the niche works
+Three signals confirm a viable niche:
+- You can name 20 specific topics you would write about
+- There is at least one other newsletter in adjacent space (proof the audience reads newsletters)
+- You can think of three tools, books or events whose buyers are your readers
+
+## Niches over-saturated in 2026
+Generic developer productivity. AI news roundups. Web3. Vague "future of work". Avoid.
+
+## Niches still underserved
+Specific languages outside top 5 (Erlang, OCaml, Zig, Roc). Vertical SaaS engineering (legal tech, biotech infrastructure, climate tech). Cross-functional roles (DevRel for B2B, technical product marketing, developer education at scale).
+
+## Sustainability
+You will publish 50 times in the first year. Pick a niche you find genuinely interesting because the audience hears whether you do.`,
+    faqs: [
+      {
+        q: 'How narrow should my newsletter niche be?',
+        a: 'Narrow enough to be identifiable as the source, broad enough that 50,000 to 500,000 readers globally could find it relevant. Specific role + specific lens is the right level.',
+      },
+      {
+        q: 'Can I broaden the niche later?',
+        a: 'Yes, but it dilutes the brand. The newsletters that broaden successfully usually do so over years, not months, and from a strong narrow base.',
+      },
+    ],
+  },
+  {
+    slug: 'safetywing-pre-existing-conditions-guide',
+    title: 'SafetyWing and pre-existing conditions: what is covered',
+    description: 'How SafetyWing handles pre-existing conditions in 2026 and what to disclose at signup.',
+    category: 'visa',
+    publishedAt: '2026-06-23T03:00:00Z',
+    body: `Pre-existing conditions are the most-misunderstood part of nomad insurance. The SafetyWing 2026 policy treats them specifically; understanding the rules avoids surprise denials.
+
+## What counts as pre-existing
+Any medical condition that existed, was diagnosed, treated, or experienced symptoms in the period before the policy started. The lookback window is typically 2 years for chronic conditions, shorter for acute ones.
+
+## What is excluded
+Treatment, medication, follow-up care, and any complications directly related to a pre-existing condition. This is the default exclusion.
+
+## What is covered (acute-onset exception)
+Unexpected, sudden emergencies of a pre-existing condition can be covered up to a specific cap, even though the condition itself is excluded. Example: a person with stable diabetes can be covered for an unexpected hyperglycaemic emergency that requires hospital care, even though routine diabetes management is excluded.
+
+## What to disclose at signup
+Everything. The SafetyWing signup form asks about specific conditions. Disclosing fully is the cheapest insurance against later denials. Non-disclosure that surfaces at claim time results in immediate denial and potential cancellation.
+
+## Conditions specifically handled in 2026
+COVID and respiratory: covered as acute under standard rules.
+Mental health: limited coverage, country-dependent.
+Pregnancy: limited to specific complications, with most pregnancy care excluded for nomads.
+Sports injuries: covered unless from an excluded activity (extreme sports, combat sports without rider).
+
+## How to plan
+If you have a chronic condition that needs ongoing care, SafetyWing alone is insufficient. Layer it with a home-country policy or a specialist expat policy that covers your condition specifically.`,
+    faqs: [
+      {
+        q: 'Will SafetyWing cover treatment for a known pre-existing condition?',
+        a: 'Generally no for routine care. Acute, sudden emergencies of pre-existing conditions may be covered up to a specific cap. Routine management of the condition is excluded.',
+      },
+      {
+        q: 'Should I disclose all conditions when signing up for SafetyWing?',
+        a: 'Yes. Non-disclosure that surfaces at claim time is an immediate denial reason and can result in policy cancellation. Disclosure does not raise the price; the policy is flat.',
+      },
+    ],
+  },
+  {
+    slug: 'fiverr-gig-multiples-strategy-2026',
+    title: 'Running multiple Fiverr gigs without diluting any of them',
+    description: 'How to run several Fiverr gigs from the same seller account in 2026 without weakening conversion on any individual gig.',
+    category: 'freelance',
+    publishedAt: '2026-06-24T03:00:00Z',
+    body: `Many sellers try to run 5+ gigs at once and find that none of them performs well. The pattern that works in 2026 is more disciplined.
+
+## How many gigs to run
+2 to 4 well-targeted gigs typically outperforms 8 thinly-targeted ones. Each additional gig divides your editorial attention and dilutes your account-level signal to Fiverr search.
+
+## How to pick which gigs
+Build adjacent gigs that share underlying skills but target different buyer searches. A React developer can publish: bug fixes, landing pages, component libraries, and Next.js performance audits. All four serve the same skill but capture distinct buyer queries.
+
+## What to avoid
+Publishing the same gig in slightly different wording (cannibalises your own search visibility). Publishing wildly different services from one account (data engineer + WordPress site dilutes the signal). Recycling old gigs without refreshing.
+
+## Cross-promotion within your gigs
+Each gig description can link to your other gigs at the bottom: "Looking for X instead? See my gig on [X]." Keeps buyers in your funnel.
+
+## Pricing across gigs
+Use the same tier structure across your gigs so buyers can compare and pick the right service. Mismatched tier scales cause confusion and abandoned chats.
+
+## When to retire a gig
+A gig that has not produced an order in 90 days and has fewer than 10 impressions per week is unlikely to come back. Retire it and replace with a sharper target.`,
+    faqs: [
+      {
+        q: 'Does running more Fiverr gigs hurt my conversion?',
+        a: 'Beyond 4-5 well-targeted gigs, yes. Editorial attention divides and search signal dilutes. 2-4 sharp gigs beat 8 broad ones.',
+      },
+      {
+        q: 'Should I publish the same service across different gigs with different wording?',
+        a: 'No. Fiverr search treats those as duplicates and ranks them poorly. Differentiate each gig by buyer intent, not by rewriting the same offer.',
+      },
+    ],
+  },
+  {
+    slug: 'wise-vs-revolut-business-comparison-2026',
+    title: 'Wise Business vs Revolut Business for freelance developers',
+    description: 'A direct comparison of the two leading business accounts for freelance developers in 2026.',
+    category: 'freelance',
+    publishedAt: '2026-06-25T03:00:00Z',
+    body: `Both Wise Business and Revolut Business serve the freelance-developer market but they optimise for different things. Picking the right one matters at scale.
+
+## Wise Business
+Multi-currency local accounts (USD ACH, EUR IBAN, GBP local, etc.). Mid-market FX. No monthly fee. Better international receivability. Limited cards (debit only, no credit). Light feature set beyond payments.
+
+## Revolut Business
+EU-focused with strong feature set: invoicing, expenses, accounting integrations, virtual cards. Monthly fee tiered by plan (free tier limited). Some FX markup beyond a monthly free volume. Strong for EU-based freelancers running near-business operations.
+
+## Direct comparison
+
+| Factor | Wise Business | Revolut Business |
+|---|---|---|
+| Monthly fee | None | 0 to 99 EUR/mo by plan |
+| Local routing currencies | 9+ | 5+ |
+| FX on conversion | Mid-market + small fee | Free up to monthly limit, then markup |
+| Invoicing | Basic | Full feature |
+| Virtual cards | Limited | Strong |
+| Accounting integrations | Few | Many (Xero, QB, etc.) |
+| Best for | International receivability | EU-based operations |
+
+## Which to pick
+If you mostly receive international payments and convert: Wise.
+If you run a small one-person operation with invoicing, expense tracking, virtual cards: Revolut.
+Many freelancers run both.
+
+## What to avoid
+Putting all volume through one account if cross-border. The redundancy is worth a tiny monthly fee. Keeping all balance in either at large scale (open a real bank account once you cross 50k USD annual revenue).`,
+    faqs: [
+      {
+        q: 'Is Wise Business or Revolut Business cheaper?',
+        a: 'Wise on FX and account fee. Revolut wins on operational features like invoicing and accounting integration. Depends on whether your bottleneck is payment FX or business operations.',
+      },
+      {
+        q: 'Can I have both Wise Business and Revolut Business?',
+        a: 'Yes. Many freelancers do, with Wise for international receiving and Revolut for daily operations.',
+      },
+    ],
+  },
+  {
+    slug: 'mercor-vs-tortoise-eval-platforms',
+    title: 'Mercor vs Tortoise vs Outlier: AI evaluation platforms compared',
+    description: 'Three growing AI evaluation platforms compared on acceptance bar, hourly rate and task supply.',
+    category: 'freelance',
+    publishedAt: '2026-06-26T03:00:00Z',
+    body: `The AI evaluation market has expanded beyond Mercor and Scale in 2026. Three platforms account for most expert paid evaluation work: Mercor, Tortoise, and Outlier (Scale AI brand).
+
+## Mercor
+High vetting bar. Rates 30 to 100 USD/h for software and technical tracks. Long-form tasks with depth. Best for experienced specialists who value rate over volume.
+
+## Tortoise
+Newer entrant focused on premium tracks (formal reasoning, advanced math, scientific evaluation). Smaller pool of work but high acceptance rate for genuinely scarce profiles. Rates 50 to 150 USD/h for premium tracks.
+
+## Outlier (Scale AI)
+Larger volume, lower acceptance bar. Rates typically 18 to 45 USD/h. Steady weekly volume. Best for evaluators wanting predictable hours over rate.
+
+## Side by side
+
+| Factor | Mercor | Tortoise | Outlier |
+|---|---|---|---|
+| Typical rate (dev) | 35-80 USD/h | 50-150 USD/h | 18-45 USD/h |
+| Acceptance bar | High | Very high (niche-dependent) | Low-medium |
+| Volume reliability | Bursty | Bursty | Steady |
+| Task complexity | Long-form | Premium-niche | Mixed |
+| Best for | Specialists | Scarce-domain experts | Volume seekers |
+
+## Stacking
+Many evaluators run two or three platforms in parallel. Mercor and Tortoise for rate, Outlier for filling gaps. Exclusivity is rare; check before signing.
+
+## What is changing in 2026
+Premium domains (formal verification, advanced math, specific legal) command higher rates everywhere as AI labs push reasoning capabilities. Generic code-review tracks have softened. The gap between top and entry rate is widening.`,
+    faqs: [
+      {
+        q: 'Which platform pays AI evaluators the most in 2026?',
+        a: 'Tortoise leads on premium niches; Mercor leads for mainstream technical tracks. Outlier pays less per hour but offers more sustained volume.',
+      },
+      {
+        q: 'Can I work on multiple AI evaluation platforms at once?',
+        a: 'Yes. Exclusivity is rare. Most experienced evaluators stack at least two platforms to balance rate and volume.',
+      },
+    ],
+  },
+  {
+    slug: 'appsumo-for-indie-hackers-buying-guide-2026',
+    title: 'AppSumo buying guide for indie hackers in 2026',
+    description: 'How indie hackers should approach AppSumo deals in 2026 to maximise value and avoid stack bloat.',
+    category: 'tools',
+    publishedAt: '2026-06-27T03:00:00Z',
+    body: `Indie hackers are the core AppSumo audience but also the most exposed to over-buying. The 2026 buying discipline below maximises value and avoids stack bloat.
+
+## Rule 1: never buy theoretical
+Buy lifetime deals that replace recurring subscriptions you already pay for. Theoretical future spending is not savings.
+
+## Rule 2: validate before stacking
+Buy Tier 1 first. Use the tool in real workflows for two weeks. Only stack codes if the tool clicks and the cap matters.
+
+## Rule 3: refund discipline
+Use the 60-day window aggressively. Anything you have not actively integrated within two weeks: refund.
+
+## Rule 4: avoid bundle traps
+Themed bundles look like discounts but ship 5-10 tools you will probably not use. Buy individual deals for the 2-3 tools you actually need.
+
+## Categories that pay back
+Foundational stack: email sending, automation, CRM, knowledge base. Lifetime deals here typically pay back in 2-4 months.
+Marketing stack: SEO research, content briefs, customer support inbox. Pay back in 3-6 months.
+Side projects: niche tooling for specific stacks. Pay back when the project ships.
+
+## Categories to skip
+Auth providers, payments, hosting, enterprise observability. Subscription tiers in these categories warrant the cost.
+
+## Annual review
+Once a year, audit your stack. Tools you have not opened in 30 days: drop. Pretend you are buying the stack from scratch; would each tool make the cut?
+
+## The 1,000 USD-per-year rule
+An indie hacker who spends more than 1,000 USD per year on lifetime deals is probably over-buying. Discipline the budget and let the surplus flow into product investment instead.`,
+    faqs: [
+      {
+        q: 'How much should an indie hacker budget for AppSumo annually?',
+        a: 'Most disciplined indie hackers cap at 500 to 1,000 USD per year on lifetime deals. Above that, the marginal tool usually adds clutter rather than value.',
+      },
+      {
+        q: 'When should an indie hacker pay for a subscription instead of an AppSumo lifetime deal?',
+        a: 'For payments, auth, hosting, and enterprise-grade observability. The SLA and support that subscription tiers offer matter more than the lifetime cost saving.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-cross-promote-newsletter-with-tech-blog',
+    title: 'Cross-promoting a tech newsletter and blog for compound growth',
+    description: 'How to structure the relationship between a tech newsletter and a public blog so they amplify each other.',
+    category: 'career',
+    publishedAt: '2026-06-28T03:00:00Z',
+    body: `The strongest tech newsletters run a public blog in parallel. Done right, the two feed each other and reach a long-term ceiling much higher than either alone. The structural patterns are below.
+
+## Blog feeds search; newsletter feeds engagement
+Blog content ranks on Google over months and brings new readers. The newsletter retains those readers and monetises them via tools, deals, and paid subscriptions.
+
+## What goes where
+Newsletter exclusive: opinions, behind-the-scenes, personal observations, time-sensitive takes.
+Blog evergreen: tutorials, deep dives, reference posts, comparisons.
+
+## The crosswalk
+Each blog post ends with a CTA to subscribe to the newsletter ("If this helped, the weekly newsletter goes deeper. Subscribe here."). Each newsletter has at least one link to a blog post (existing or new) so search engines see backlinks from your engaged audience.
+
+## Frequency cadence
+Newsletter weekly. Blog every other week or so. Quality over quantity on both. Stale archives hurt both channels.
+
+## SEO of the archive
+Host the newsletter archive as part of the blog (same domain, indexable). Each issue becomes a crawlable page. Over 18-24 months the archive becomes the largest single source of new subscribers.
+
+## What does not work
+Identical content on both channels. Newsletters that are just blog reprints lose retention; blogs that are just newsletter reposts lose search rank.
+
+## The compounding curve
+Year 1: blog drives 80 percent of growth, newsletter drives engagement.
+Year 2: archive starts ranking, the gap closes.
+Year 3+: the two channels each drive 50 percent of growth and revenue.`,
+    faqs: [
+      {
+        q: 'Should my newsletter archive be public or paywall-only?',
+        a: 'Public, hosted on the same domain as your blog. The SEO benefit compounds over years; paywall-only archives lose this entirely.',
+      },
+      {
+        q: 'How long until cross-promotion produces real compounding?',
+        a: '18 to 24 months for the archive to rank meaningfully on Google. Engagement benefits start sooner; SEO compounding takes time.',
+      },
+    ],
+  },
+  {
+    slug: 'nomad-insurance-by-country-tier-2026',
+    title: 'Nomad insurance by country tier: where standard plans fall short',
+    description: 'How nomad insurance coverage and reimbursement experience varies by country, with a tier framework for picking the right cover.',
+    category: 'visa',
+    publishedAt: '2026-06-29T03:00:00Z',
+    body: `Standard nomad insurance (SafetyWing, Genki, IATI) covers most countries adequately but the experience varies sharply by destination. The country-tier framework below helps you pick coverage that actually works where you go.
+
+## Tier A (works well with standard nomad insurance)
+EU, UK, Australia, New Zealand, Canada, Japan, Singapore, South Korea, Argentina, Chile, Uruguay. Strong medical systems with English documentation. Standard nomad plans process claims smoothly here.
+
+## Tier B (works with caveats)
+US, UAE, Hong Kong, Israel. Coverage caps are tighter relative to local medical costs. SafetyWing 250k cap in the US can be quickly hit; consider a higher-tier plan or supplemental US-specific policy.
+
+## Tier C (standard nomad insurance is enough for common cases but not emergencies)
+Most of Southeast Asia, much of Latin America, Eastern Europe. Routine care covered well, hospital emergencies sometimes require upfront payment with later reimbursement. Local-language documentation friction.
+
+## Tier D (need specialist coverage)
+Countries with limited medical infrastructure or sanctions complications. Standard policies may exclude entirely or require evacuation. Consider expat-specific or evacuation-focused policies.
+
+## Decision framework
+Where do you spend 80 percent of your time? Pick a policy that performs well in that tier. Use travel-specific top-up policies for Tier C/D excursions if needed.
+
+## Reimbursement reality
+Even where the policy covers, getting reimbursed requires paying upfront in most cases. Maintain a small medical emergency fund (3-5k USD) in your multi-currency account.`,
+    faqs: [
+      {
+        q: 'Does SafetyWing work well in the United States?',
+        a: 'Adequately for common care, but the 250k inpatient cap can be hit quickly. For extended US stays, supplement with a US-specific policy or upgrade to a higher-tier plan.',
+      },
+      {
+        q: 'Do I need different insurance for high-risk destinations?',
+        a: 'Yes for Tier D countries with limited medical infrastructure or sanctions complications. A short-term travel or evacuation-specific policy on top of the standard nomad cover.',
+      },
+    ],
+  },
+  {
+    slug: 'fiverr-pro-application-checklist-2026',
+    title: 'Fiverr Pro application checklist for 2026',
+    description: 'The portfolio, profile, and proof points that pass the Fiverr Pro review in 2026.',
+    category: 'freelance',
+    publishedAt: '2026-06-30T03:00:00Z',
+    body: `Fiverr Pro is the curated, manually-vetted tier for high-end sellers. The 2026 application bar is higher than at launch; preparing properly is worth the upfront work.
+
+## What Fiverr Pro is
+A separate tier with stricter quality review. Pro sellers get higher visibility, premium pricing, and access to enterprise buyers. Listings are reviewed manually by Fiverr staff, not algorithmically.
+
+## What they screen for
+Demonstrable expert-level work in the offered category. Professional presentation (portfolio, bio, samples). Track record of client outcomes, ideally with named brands or substantial projects. English written communication at native or near-native level.
+
+## Application materials
+1. Updated profile with high-quality photo
+2. 3-5 portfolio samples that prove expert-level capability
+3. Bio that names specific companies, projects, or technologies you have shipped
+4. Existing Fiverr track record (most successful applicants have 50+ five-star reviews on standard tier first)
+5. References or external verification (LinkedIn, GitHub, conference talks)
+
+## What disqualifies
+Self-promotional fluff in the bio. Portfolio samples that look like personal projects rather than client work. Inconsistent quality across samples. No external proof of expertise outside of Fiverr.
+
+## Approval timeline
+4 to 8 weeks from submission to decision in 2026. Approval rates are roughly 20-30 percent of applications.
+
+## What changes after approval
+Pro sellers list under separate URLs with the Pro badge. Buyer pool shifts to higher-budget clients. Pricing typically 2-5x the seller\\'s standard tier. Pro-only message templates and order management.
+
+## Re-application
+If rejected, you can re-apply after 6 months. Use the gap to strengthen the specific signals the rejection letter cites.`,
+    faqs: [
+      {
+        q: 'What is the Fiverr Pro acceptance rate?',
+        a: 'Roughly 20 to 30 percent of applications in 2026. The bar is real; most rejections trace to insufficient external proof of expertise or thin portfolios.',
+      },
+      {
+        q: 'How long does Fiverr Pro approval take?',
+        a: '4 to 8 weeks from submission to decision in 2026, with manual review by Fiverr staff.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-receive-stripe-payouts-as-non-us',
+    title: 'Receiving Stripe payouts as a non-US developer in 2026',
+    description: 'How non-US developers can accept Stripe payouts and what the alternatives are in 2026.',
+    category: 'freelance',
+    publishedAt: '2026-07-01T03:00:00Z',
+    body: `Stripe processes most online developer payments globally but the payout side differs by country. Non-US developers in 2026 have a few clean paths.
+
+## Where Stripe operates directly
+50+ countries including all EU member states, UK, Canada, Australia, New Zealand, Singapore, Japan. Direct local payouts in local currency.
+
+## Where Stripe Atlas helps
+Founders in countries Stripe does not support locally can incorporate a US LLC via Stripe Atlas. Atlas opens a US bank account, registers the LLC, and connects Stripe directly to it. Payouts land in the US account; you transfer to your home country via Wise or similar.
+
+## Cost considerations
+Atlas costs around 500 USD upfront plus annual state filing fees (50-300 USD depending on state). Profitable above a few thousand USD in annual revenue; not worth it for tiny side projects.
+
+## Alternative: Stripe via marketplace
+If you sell through a marketplace (Gumroad, Lemon Squeezy, Paddle), the marketplace acts as Merchant of Record. You receive payouts in your local currency without operating Stripe directly. Higher per-transaction cost; less operational overhead.
+
+## What Stripe replaces
+Stripe + Wise removes most of the legacy "merchant account" pain. PayPal becomes optional rather than required. Local card-acquirer relationships are no longer necessary for most volumes.
+
+## Reporting and tax
+Stripe issues 1099-K equivalents per jurisdiction. Track gross payout volume against your tax filing currency. Multi-currency accounts simplify the reconciliation.
+
+## The clean stack
+Stripe (direct or via Atlas) → multi-currency account (Wise) → local bank for daily spend. Sweep monthly. Reconcile once a year with an accountant.`,
+    faqs: [
+      {
+        q: 'Do I need a US LLC to use Stripe as a non-US developer?',
+        a: 'Only if your country is not supported by Stripe directly. 50+ countries support local payouts. Stripe Atlas handles the rest at 500 USD setup.',
+      },
+      {
+        q: 'How fast does Stripe pay out non-US developers?',
+        a: 'Standard payout cadence is 2 to 7 business days after each batch settles. Faster instant-payout options are available in some countries for a small fee.',
+      },
+    ],
+  },
+  {
+    slug: 'ai-pair-programming-comparison-cursor-claude',
+    title: 'AI pair-programming tools compared: Cursor, Claude, Copilot',
+    description: 'A practical comparison of the three most-used AI pair-programming tools for developers in 2026.',
+    category: 'tools',
+    publishedAt: '2026-07-02T03:00:00Z',
+    body: `Three tools dominate AI pair-programming in 2026: Cursor (IDE), Claude (chat or CLI), and GitHub Copilot. Each is best for a specific workflow; mixing them is common but expensive.
+
+## Cursor
+An editor built around AI assistance. Inline completions, chat with full repository context, multi-file edits. Best for developers who live in their editor and want everything in one place.
+
+## Claude
+Most flexible. Works in chat, CLI, or via API. Strong on long-context tasks (large codebases, multi-step reasoning). Best for developers who break workflow into focused sessions and want the strongest reasoning per query.
+
+## GitHub Copilot
+Lightweight inline completion plus chat. Tighter integration with GitHub itself (PR review, issue triage). Best for developers already deep in the GitHub ecosystem who want minimal switching.
+
+## Side by side
+
+| Factor | Cursor | Claude | Copilot |
+|---|---|---|---|
+| Inline completion | Strong | None (separate) | Strong |
+| Long-context reasoning | Strong | Strongest | Moderate |
+| Multi-file edits | Native | Via chat | Limited |
+| Cost (per dev) | 20 USD/mo | Variable | 10-39 USD/mo |
+| Best workflow | Editor-centric | Session-based | GitHub-centric |
+
+## How to pick
+If you want the AI inside your editor and the multi-file edit is your bottleneck: Cursor.
+If you want the strongest reasoning and use AI in focused sessions: Claude.
+If your bottleneck is small completions and GitHub PR workflow: Copilot.
+
+## Stacking
+Many developers run two: Cursor (or Copilot) in the editor + Claude for the heavy reasoning. The cost adds up; only stack if the productivity gain justifies it.
+
+## What does not move productivity
+Switching tools weekly. Long generated outputs you do not read. Trusting completions in security-sensitive code without verification.`,
+    faqs: [
+      {
+        q: 'Should I use Cursor or stick with VS Code + Copilot?',
+        a: 'Depends on workflow. Cursor is stronger for multi-file edits and repository-aware refactors. VS Code + Copilot is enough for inline completions and small assists.',
+      },
+      {
+        q: 'Can I use Claude as my only AI dev tool?',
+        a: 'Yes if you prefer session-based work over inline completions. The tradeoff is workflow context switches; some developers prefer that, some hate it.',
+      },
+    ],
+  },
+  {
+    slug: 'genki-vs-safetywing-claims-experience',
+    title: 'Genki vs SafetyWing claims experience compared',
+    description: 'How the actual claim process differs between Genki and SafetyWing, with real-world reimbursement timelines.',
+    category: 'visa',
+    publishedAt: '2026-07-03T03:00:00Z',
+    body: `Genki and SafetyWing both sell subscription nomad insurance at similar price points but the claim experience differs meaningfully.
+
+## Genki claim flow
+Web-based form. Receipt upload via mobile or desktop. Claim assigned to a case manager within 1-2 business days. Reimbursement typically processed in 5-10 business days for straightforward cases.
+
+## SafetyWing claim flow
+Dashboard-based. Document upload required at submission. Claim assigned automatically with no named case manager unless complex. Reimbursement typically 5-10 business days for under-500-USD claims, 2-4 weeks for complex.
+
+## Where Genki differs
+- Named case manager from the start (vs case-by-case at SafetyWing)
+- Pre-approval available for planned procedures (SafetyWing primarily reimbursement)
+- Strong on outpatient and dental claims included in the standard plan
+- Slightly thinner geographic coverage (essentially all popular nomad destinations covered)
+
+## Where SafetyWing differs
+- Broader country coverage (180+ vs 150+)
+- US coverage included at standard plan (Genki extra cost)
+- More flexible cancel-anytime billing
+- Slightly lower price for under-40s
+
+## Real-world reimbursement timeline (2026 data)
+Both platforms process simple claims (paid out of pocket, receipts uploaded) within 7-14 days end to end. Complex claims (high value, multi-incident, hospital admission) consistently faster on Genki due to the named case manager.
+
+## How to pick
+Genki for EU-based nomads who value claim experience and outpatient/dental inclusion.
+SafetyWing for nomads who travel broadly including US and want the cheapest monthly cost.
+
+## What both share
+Subscription cancel-anytime model. Mobile-first claim submission. Standard exclusions (pre-existing conditions, elective procedures, extreme sports without rider).`,
+    faqs: [
+      {
+        q: 'Which is faster to process a claim, Genki or SafetyWing?',
+        a: 'For complex claims, Genki tends to be faster due to the named case manager assignment. Simple under-500-USD claims process similarly on both platforms.',
+      },
+      {
+        q: 'Does Genki cover the United States like SafetyWing?',
+        a: 'Genki covers US only on the higher-tier plan, not the standard. SafetyWing includes limited US coverage on the standard plan.',
+      },
+    ],
+  },
+  {
+    slug: 'remote-tech-interview-loop-2026-changes',
+    title: 'Remote tech interview loops in 2026: what changed',
+    description: 'The current shape of remote technical interviews in 2026 and how the changes affect preparation.',
+    category: 'finding',
+    publishedAt: '2026-07-04T03:00:00Z',
+    body: `Remote technical interview loops have settled into a specific shape in 2026 that differs meaningfully from 2022-2023. The changes affect how to prepare and what to expect.
+
+## The typical loop in 2026
+1. Recruiter screen (30 min)
+2. Hiring manager call (45-60 min)
+3. Technical screen, often pairing on real code (60-90 min)
+4. System design or domain-specific round (60-90 min)
+5. Team values / culture round (45 min)
+
+Total: 5-6 hours over 2-3 weeks for senior roles. Junior loops have shrunk to 3-4 rounds at most companies.
+
+## What is new
+- Pairing screens have replaced leetcode-style puzzles at most remote-first companies
+- AI usage during the technical screen is now explicitly disclosed up front; some companies allow it, some forbid it, almost none ignore it
+- Take-home assignments are shorter (1-3 hours, not 8+) due to backlash
+- Async-friendly loops emerging at fully distributed companies (recorded answers to written prompts)
+
+## What is the same
+Hiring manager call as the most decision-weight conversation. Team fit round as the disqualification trap. Recruiter screen as the salary expectations gate.
+
+## How to prepare in 2026
+- Specifically rehearse pairing-screen muscle: working code with someone watching, talking through tradeoffs, accepting feedback in real time
+- Be clear up front about AI usage; ask whether tools like Claude or Copilot are allowed during the technical
+- Have one strong system-design example ready that demonstrates the specific scale and complexity of the role
+- Know your salary number before the recruiter call; never disclose first
+
+## What stalls offers
+Mismatched salary expectations surfacing late. Inconsistent answers across rounds. Asking only logistics questions; never asking substantive questions about the team or product. Generic culture-round answers.`,
+    faqs: [
+      {
+        q: 'Can I use AI during a remote technical interview in 2026?',
+        a: 'Depends entirely on the company. Most explicitly state their policy at the start. Ask if not stated; assuming wrong is worse than asking.',
+      },
+      {
+        q: 'How long is a typical senior remote tech interview loop in 2026?',
+        a: '5 to 6 hours of contact time spread over 2 to 3 weeks. Loops longer than 8 hours are uncommon and a yellow flag on the hiring process.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-quit-without-burning-bridges-remote',
+    title: 'How to quit a remote job without burning bridges',
+    description: 'The practical playbook for resigning cleanly from a remote engineering role in 2026.',
+    category: 'career',
+    publishedAt: '2026-07-05T03:00:00Z',
+    body: `Resigning cleanly from a remote job matters more than from an in-office one because the remote tech world is small and the same people surface again. The 2026 playbook below.
+
+## Notice period
+Standard for tech remote in 2026: 2 weeks in the US, 1 month in most EU. Check your contract; some senior roles have 2-3 month notice clauses. Respect them.
+
+## How to tell your manager
+1:1 video call, not Slack, not email. Direct sentence: "I have decided to leave. My last day will be X." Have your reasons ready if asked but do not lead with them. Skip job-detail probing; whether the next role is named is your call.
+
+## What to commit to during notice
+Wrap-up of current sprint work. Documentation of in-flight projects. Handoff conversations with the people who will pick up your work. Knowledge-transfer recordings for non-obvious systems.
+
+## What to avoid
+Trash-talking the team or company internally or externally. Job-hunting visibly on company time. Coasting through notice. Negotiating a counter-offer just to use as leverage.
+
+## The exit conversation
+Most companies do an exit interview. Use it for honest, constructive feedback if you have any. Avoid grievance dumping; it lands you as the problem, not the issue you describe.
+
+## After you leave
+LinkedIn announcement is fine; mention the team and what you appreciated. Stay in light touch with the people you actually enjoyed working with. Many remote tech roles cycle through the same network within 2-5 years; keep that channel open.
+
+## The professionalism flywheel
+The way you exit determines whether former colleagues recommend you, hire you again, or warn others. The compounding return on a clean exit is enormous over a decade-long career.`,
+    faqs: [
+      {
+        q: 'Should I accept a counter-offer when quitting a remote job?',
+        a: 'Rarely. Counter-offer acceptance increases the chance you leave within a year anyway, and damages trust with the team that knew you were looking. Decline politely.',
+      },
+      {
+        q: 'How long should I stay during my notice period at a remote job?',
+        a: 'Honor your contractual notice period in full. Coasting damages your reputation more than leaving early; finishing strong is the only good option.',
+      },
+    ],
+  },
+  {
+    slug: 'remote-team-meetings-survival-guide-2026',
+    title: 'Surviving remote team meetings in 2026',
+    description: 'How to reduce, structure, and survive the meeting load on a remote engineering team.',
+    category: 'lifestyle',
+    publishedAt: '2026-07-06T03:00:00Z',
+    body: `Remote teams that have not actively pruned their meeting load drift toward 4-6 hours of meetings per day. The teams that thrive aggressively reduce, restructure, and protect maker time.
+
+## The default trap
+Standups, planning, retros, all-hands, 1:1s, demos, social. Each is reasonable in isolation. Together they swallow the workday and leave no continuous time for actual engineering work.
+
+## What to cut first
+Standups that are read-aloud status updates (use async written instead). Sync demos for completed work (record + share). All-hands where the content could be a written memo. 1:1s that are pure status updates (refocus on growth and blockers).
+
+## What to keep
+Hiring manager 1:1s with growth content. Async-incompatible discussions (real decisions, contested calls). Team social time, intentionally scoped.
+
+## Structure that works
+- 4-hour heads-down block per day, calendar-blocked, no meetings
+- One day per week meeting-free
+- Default 25 or 50 minute meeting length (not 30 or 60)
+- Mandatory written agenda before any meeting
+
+## Async substitutes
+- Loom for demos and walkthroughs
+- Async written standups in a dedicated channel
+- Decision documents with clear DRI, options, and recommendation
+- Recorded video for context that does not need a live audience
+
+## When to call a meeting
+The conversation has 3+ participants and needs back-and-forth. A written async path would take 5+ days to resolve. The decision is contested.
+
+## When NOT to call a meeting
+Status updates. One-way information broadcasts. Recurring meetings that have outlived their purpose. Brainstorming with the wrong people.
+
+## The leadership signal
+A manager who actively cancels meetings, ships written memos instead, and protects maker time creates one of the strongest team culture signals in remote work.`,
+    faqs: [
+      {
+        q: 'How many hours of meetings is healthy for a remote engineer?',
+        a: 'Under 10 hours per week for individual contributors, under 20 for managers. Above that, output drops sharply because deep work cannot happen.',
+      },
+      {
+        q: 'How do I get my team to cut meetings?',
+        a: 'Lead by example. Cancel one recurring meeting on your calendar each week and replace it with a written async substitute. Demonstrate the result; the rest of the team copies it.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-take-a-tech-sabbatical-2026',
+    title: 'How to take a tech sabbatical in 2026',
+    description: 'The practical setup for taking a multi-month sabbatical from a tech career without permanently damaging it.',
+    category: 'career',
+    publishedAt: '2026-07-07T03:00:00Z',
+    body: `Tech sabbaticals (3 to 12 months off) have become more common in 2026 as the field matures. Done well, a sabbatical refreshes your career; done poorly, it leaves a hard-to-explain gap.
+
+## The financial setup
+Save 12 months of expenses before starting, even for a 6-month sabbatical. Surprises happen. Multi-currency accounts simplify managing expenses across borders if you travel during the time off.
+
+## The narrative for return
+Recruiters and hiring managers ask about gaps. The clean explanations are: deliberate sabbatical for travel/family/health, personal project (with shippable output), continued learning (with concrete artefacts). Vague "burnout recovery" sounds true but lands as a yellow flag in 2026.
+
+## What to do during
+- Pick one substantial personal project (shippable, public) to anchor the time
+- Write publicly: blog, newsletter, technical posts, conference talk
+- Maintain skill currency through reading and small projects, not full-time grinding
+- Keep light touch with 5-10 trusted network contacts; do not disappear entirely
+
+## What to avoid
+Vanishing from public view entirely. Returning with no shippable output. Burning savings on lifestyle inflation that survives the return. Skipping the technical reading and finding the field has moved 2 years ahead when you come back.
+
+## Length and timing
+3 to 6 months: minimal narrative damage, easy to return.
+6 to 12 months: requires a clear shippable artefact for clean return.
+12+ months: meaningful career rebuild; treat as career change rather than sabbatical.
+
+## The return search
+Start 6-8 weeks before your target return date. Use the personal project, writing, and network contacts as the differentiating evidence. The compensation on the first return offer is usually slightly below pre-sabbatical; recover within 18 months at the new company.
+
+## Where this pattern matters most
+For senior engineers with 5+ years of compounding burnout risk. For founders between ventures. For parents transitioning back from intensive family years. The shape is consistent across these.`,
+    faqs: [
+      {
+        q: 'How long is too long for a tech sabbatical?',
+        a: '12+ months starts to require explanation as a career change rather than a sabbatical. Sub-12-month gaps with a clear shippable artefact return cleanly in most markets.',
+      },
+      {
+        q: 'Should I disclose a sabbatical on my resume?',
+        a: 'Yes, explicitly. Calling it a sabbatical and naming what you produced during it lands far better than leaving a hidden gap that surfaces in interview questions.',
+      },
+    ],
+  },
 );
 
 // Build-time filter: any guide with a future publishedAt is hidden from

@@ -39,6 +39,10 @@ const BEEHIIV_SLUGS = new Set([
   'newsletter-vs-blog-which-earns-more',
   'saas-stack-for-newsletter-operators-2026',
   'how-i-built-a-tech-newsletter-side-income',
+  'beehiiv-vs-substack-monetisation-2026',
+  'tech-newsletter-niche-selection-2026',
+  'how-to-cross-promote-newsletter-with-tech-blog',
+  'passive-income-stack-for-remote-developers-2026',
 ]);
 
 const WISE_SLUGS = new Set([
@@ -46,6 +50,10 @@ const WISE_SLUGS = new Set([
   'how-to-invoice-international-clients-as-a-developer',
   'multi-currency-invoicing-for-remote-developers',
   'wise-borderless-account-explained-2026',
+  'wise-vs-payoneer-for-developers',
+  'wise-debit-card-spending-tips',
+  'wise-vs-revolut-business-comparison-2026',
+  'how-to-receive-stripe-payouts-as-non-us',
 ]);
 
 const MERCOR_SLUGS = new Set([
@@ -58,6 +66,9 @@ const MERCOR_SLUGS = new Set([
   'best-paid-domains-on-mercor-2026',
   'mercor-side-hustle-while-working-full-time',
   'mercor-domain-application-strategy',
+  'mercor-application-timeline-2026',
+  'mercor-evaluator-quality-rubrics-explained',
+  'mercor-vs-tortoise-eval-platforms',
 ]);
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { localePath } from '@/lib/i18n';
