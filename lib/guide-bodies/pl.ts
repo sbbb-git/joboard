@@ -3300,4 +3300,132 @@ Dla senior inzynierow z 5+ lat kumulujacego sie ryzyka wypalenia. Dla zalozyciel
       },
     ],
   },
+  'world-cup-2026-remote-work-from-host-cities': {
+    body: `Mistrzostwa Swiata 2026 odbeda sie w 16 miastach gospodarzach w Stanach Zjednoczonych, Kanadzie i Meksyku. Dla zdalnych pracownikow tech, ktorzy chca polaczyc ogladanie meczow z dalsza praca, planowanie z wyprzedzeniem ma wieksze znaczenie niz przy zwyklym wyjezdzie.
+
+## 16 miast gospodarzy z perspektywy pracy zdalnej
+USA: Atlanta, Boston, Dallas, Houston, Kansas City, Los Angeles, Miami, New York/New Jersey, Philadelphia, San Francisco Bay Area, Seattle. Kanada: Toronto, Vancouver. Meksyk: Guadalajara, Mexico City, Monterrey.
+
+Sposrod nich najlepsze pod katem ciaglosci pracy zdalnej w 2026 roku to: New York, Boston, San Francisco Bay Area, Toronto, Vancouver i Mexico City (dobrze rozwiniete coworkingi, szybki internet, latwe nakladanie sie stref czasowych z wiekszoscia zespolow w USA i UE).
+
+## Co rezerwowac wczesnie
+Hotele i wynajem krotkoterminowy w poblizu miast gospodarzy potroily ceny w okresie kwalifikacji. Rezerwuj tydzien przed i tydzien po meczu, nie tylko sam dzien meczu. Dniowki w coworkingach sie zapelniaja; zarezerwuj przed przyjazdem.
+
+## Internet
+WiFi w hotelach jest zawodne w szczytowych dniach kibicowskich. Tetheruj sie ze swojego telefonu z lokalna karta SIM jako polaczenie podstawowe, a WiFi hotelu trzymaj jako zapas. Coworkingi z dedykowanymi laczami biznesowymi sa najbezpieczniejsze do rozmow wideo.
+
+## Strefy czasowe
+Mecze na wschodzie USA odbywaja sie mniej wiecej od 12:00 do 21:00 czasu lokalnego, co dziala swietnie dla zdalnych pracownikow z bazy w UE. Mecze na zachodnim wybrzezu (Vancouver, LA, SF) sa przesuniete pozniej, co jest przyjazniejsze dla zespolow z Azji.
+
+## Koszt
+Codzienne wydatki w trakcie turnieju w miastach gospodarzach sa o 30 do 60 procent wyzsze niz poza sezonem. Zaplanuj bufor w USD dla kazdego miasta i przeliczaj przez konto wielowalutowe, aby uniknac strat na FX w punkcie sprzedazy.`,
+    faqs: [
+      {
+        q: "Czy moge pracowac zdalnie w dni meczow Mistrzostw Swiata 2026?",
+        a: "Tak, jesli zaplanujesz redundancje internetu i wybierzesz coworking w poblizu miasta gospodarza. WiFi w hotelu w szczytowych dniach kibicowskich jest zawodne; lokalna karta SIM jako polaczenie podstawowe to najbezpieczniejszy uklad.",
+      },
+      {
+        q: "Ktore miasto gospodarz Mistrzostw Swiata 2026 jest najlepsze dla pracownikow zdalnych?",
+        a: "Toronto, Boston, Bay Area i Mexico City maja najlepiej rozwinieta infrastrukture coworkingowa i niezawodna lacznosc. Pozostale miasta gospodarze tez sie nadaja, ale wymagaja wiecej planowania.",
+      },
+    ],
+  },
+  'world-cup-2026-travel-insurance-multi-country': {
+    body: `Kibice jadacy na Mistrzostwa Swiata 2026 do miast gospodarzy w trzech krajach staja przed konkretnym pytaniem ubezpieczeniowym: jedna polisa, ktora obejmuje Stany Zjednoczone, Kanade i Meksyk bez luk w pokryciu na granicach.
+
+## Dlaczego to ma znaczenie
+Koszty opieki zdrowotnej w USA sa najwyzsze na swiecie. Jedna hospitalizacja bez ubezpieczenia moze siegnac 30 000 USD lub wiecej. Meksykanskie szpitale prywatne sa tansze, ale wciaz drogie przy powaznych przypadkach. Transgraniczny transport karetka (Meksyk do USA, czesty przy turniejach w regionach przygranicznych) rzadko jest objety standardowo.
+
+## Subskrypcyjne plany nomadow
+SafetyWing i Genki obejmuja wszystkie trzy kraje gospodarzy w standardowych planach, przy czym Stany Zjednoczone sa wliczone w plan standardowy SafetyWing, a u Genki dopiero w wyzszych poziomach. Aktywacja jest szybka (ponizej godziny) i pokrycie zaczyna sie tego samego dnia.
+
+## Limity przy USA
+Plan standardowy SafetyWing ma limit hospitalizacji na poziomie 250 000 USD na schorzenie. Przy 4-tygodniowym pobycie w wielu miastach gospodarzach w USA ten limit jest akceptowalny w wiekszosci scenariuszy roszczen, ale ciasny przy powaznych operacjach lub przedluzonym pobycie na ICU. Rozwaz upgrade do wyzszego poziomu albo uzupelnienie krotkoterminowym planem medycznym specyficznym dla USA.
+
+## Co jest wylaczone
+Urazy meczowe z incydentow w tlumie (objete jako standardowe nagle przypadki). Wylaczone aktywnosci: sporty motorowe w trakcie podrozy, paralotniarstwo, nurkowanie ponad rekreacyjne glebokosci.
+
+## Gdzie pasuje Wise
+Placisz udzialy wlasne i kwoty nieobjete w lokalnej walucie po kursie miedzybankowym. Karta wielowalutowa Wise unika 2 do 3 procent strat na FX przy kazdej transakcji w trzech krajach gospodarzach.
+
+## Z jakim wyprzedzeniem kupowac
+Dzien przed wyjazdem jest w porzadku dla planow subskrypcyjnych. Przy dluzszych wyjazdach (ponad 30 dni) kup przynajmniej tydzien wczesniej, zeby uniknac sporow o timing przy stanach pre-existing.`,
+    faqs: [
+      {
+        q: "Czy SafetyWing obejmuje wszystkie trzy kraje gospodarzy Mistrzostw Swiata 2026?",
+        a: "Tak, z USA wliczonym w plan standardowy do limitu 250 000 USD hospitalizacji na schorzenie. Kanada i Meksyk sa objete planem standardowym bez obaw o limit.",
+      },
+      {
+        q: "Czy potrzebuje osobnego ubezpieczenia dla kazdego kraju gospodarza?",
+        a: "Nie. Pojedynczy wielokrajowy plan nomada od SafetyWing, Genki lub IATI obejmuje wszystkie trzy na jednej polisie. Uzyj uzupelniajacego planu specyficznego dla USA tylko jesli planujesz dluzsze pobyty w USA albo masz wysokie ryzyko medyczne.",
+      },
+    ],
+  },
+  'world-cup-2026-multi-currency-spending-usa-canada-mexico': {
+    body: `Kibice jadacy na Mistrzostwa Swiata 2026 do Stanow Zjednoczonych, Kanady i Meksyku beda wydawac w trzech walutach. Domyslna karta bankowa pobiera 2 do 4 procent FX na kazdej transakcji. W trakcie 4-tygodniowej podrozy przez wszystkie trzy kraje gospodarzy skumuluje sie to w realne pieniadze.
+
+## Czysty zestaw
+Konto wielowalutowe Wise trzyma salda w USD, CAD i MXN. Doladowuj przed kazda granica. Wydawaj kartka debetowa z pasujacego portfela walutowego, kurs miedzybankowy, brak narzutu. Wyplaty z bankomatow do miesiecznego darmowego limitu, potem niewielka oplata za wyplate.
+
+## Jak budzetowac per kraj
+Miasta gospodarze w USA (11 z 16): spodziewaj sie 200 do 400 USD dziennie w tygodniach turniejowych, wiecej w NYC i Miami.
+Kanadyjskie miasta gospodarze (Toronto, Vancouver): spodziewaj sie 250 do 400 CAD dziennie.
+Meksykanskie miasta gospodarze (Guadalajara, Mexico City, Monterrey): spodziewaj sie 1500 do 3000 MXN dziennie (mniej wiecej 80 do 175 USD).
+
+## Strategia bankomatowa
+Korzystaj z bankomatow tylko wtedy, gdy to konieczne. Darmowy miesieczny limit pokrywa lekkie uzycie gotowki; powyzej niego oplata za wyplate plus oplata lokalnego operatora bankomatu sumuje sie. Plac kartka wszedzie, gdzie sie da, w tym u malych meksykanskich sprzedawcow, ktorzy juz powszechnie akceptuja tap.
+
+## Odrzucaj DCC
+Niektorzy sprzedawcy proponuja obciazenie ciebie w twojej walucie domowej (Dynamic Currency Conversion). Zawsze odmawiaj. Plac w walucie lokalnej; twoja karta przeliczy po kursie miedzybankowym. DCC dodaje 3 do 7 procent na gore.
+
+## Blokady przedautoryzacyjne
+Hotele i wypozyczalnie samochodow przedautoryzuja kaucje, ktora blokuje sie na 7 do 14 dni. Zaplanuj, ze blokada zwiaze czesc salda w trakcie wyjazdu. Wise zwalnia blokade automatycznie, gdy sprzedawca rozliczy faktyczne obciazenie.
+
+## Platnosci na stadionach i obiektach
+Obiekty we wszystkich trzech krajach gospodarzach akceptuja platnosci zblizeniowe globalnie. Gotowka rzadko jest potrzebna wewnatrz stadionow. Dla sprzedawcow ulicznych i malych restauracji przy obiektach drobne kwoty lokalnej waluty nadal sa przydatne.`,
+    faqs: [
+      {
+        q: "Jaki jest najtanszy sposob wydawania w USD, CAD i MXN podczas Mistrzostw Swiata?",
+        a: "Konto wielowalutowe Wise z lokalnymi saldami w kazdej walucie. Tap kartka debetowa, kurs miedzybankowy, brak narzutu za transakcje zagraniczna. Unikaj DCC u kazdego sprzedawcy.",
+      },
+      {
+        q: "Czy powinienem wyplacac gotowke na zakupy na stadionach i obiektach?",
+        a: "Nie, poza sprzedawcami ulicznymi i bardzo malymi zakupami. Obiekty we wszystkich trzech krajach gospodarzach akceptuja zblizeniowo globalnie. Platnosc kartka calkowicie omija oplaty bankomatowe.",
+      },
+    ],
+  },
+  'world-cup-2026-remote-developer-time-off-strategies': {
+    body: `Mistrzostwa Swiata 2026 trwaja mniej wiecej piec tygodni od polowy czerwca do polowy lipca. Zdalni programisci staja przed decyzja: pelne PTO w trakcie meczow, ktore sie licza, czesciowa praca asynchroniczna, albo mieszanka.
+
+## Opcja 1: pelne PTO w trakcie kluczowych meczow
+Dwa do trzech dni wolnego na mecze grupowe swojej druzyny, potem jeden do dwoch tygodni w trakcie fazy pucharowej. Lacznie: 8 do 12 dni PTO dla kibica jadacego osobiscie na pozniejsze rundy.
+
+## Opcja 2: praca asynchroniczna wokol harmonogramu
+Przesun swoje godziny pracy tak, by otaczaly godziny meczow. Mecze na wschodnim wybrzezu USA odbywaja sie od 12:00 do 21:00 czasu lokalnego. Praca od 06:00 do 11:00 plus od 22:00 do 02:00 daje ci mecze pomiedzy. Do utrzymania przez tydzien, trudne dluzej.
+
+## Opcja 3: podejscie mieszane
+Wez PTO na duze mecze swojej druzyny i na final. Pracuj asynchronicznie wokol reszty. Najlepsze dla kibicow, ktorzy chca ciaglosci w pracy, ale wolnosci na mecze o wysokim znaczeniu.
+
+## Jak prosic o wolne
+Sposob, w jaki prosisz, ma znaczenie. Zloz wniosek z wiecej niz 4 tygodniowym wyprzedzeniem. Sformulujto jako "planuje byc wolny od X do Y, i przekaze A i B przed wyjazdem". Konkretne plany przekazania zostaja zatwierdzone szybciej niz mgliste prosby.
+
+## Zarzadzanie zespolem w trakcie nieobecnosci
+Nagraj wczesniej krotkie Looms pokrywajace biezacy kontekst. Wyznacz jedna osobe jako wskazany punkt kontaktu dla kazdego otwartego projektu. Zablokuj swoj kalendarz w kalendarzu zespolu; nie znikaj po prostu.
+
+## Powrot
+Zaplanuj miekki dzien wejscia z powrotem. Brak duzych deployow pierwszego dnia po powrocie. Zarezerwuj pierwszy poranek na nadrobienie asynchronicznych wiadomosci i przejrzenie tego, co dostarczono pod twoja nieobecnosc.
+
+## Co nie dziala
+Probowanie pracy w pelnych godzinach przy jednoczesnym chodzeniu na mecze. Nieinformowanie nikogo z wyprzedzeniem i znikniecie na tydzien. Branie PTO bez koordynowania przekazan.`,
+    faqs: [
+      {
+        q: "Ile dni PTO powinien wziac zdalny programista na Mistrzostwa Swiata 2026?",
+        a: "Pelne kibicowanie z udzialem w meczach fazy pucharowej zwykle zuzywa 8 do 12 dni PTO. Lzejsza obecnosc z asynchroniczna praca wokol godzin meczow moze zejsc do 3 do 5.",
+      },
+      {
+        q: "Czy moge pracowac asynchronicznie wokol godzin meczow w trakcie Mistrzostw Swiata?",
+        a: "Przez tydzien tak. Powyzej tego utrzymywane przesuniete godziny obnizaja jakosc pracy. Wez PTO na mecze, ktore licza sie najbardziej, i pracuj w normalnych godzinach reszte turnieju.",
+      },
+    ],
+  },
 };

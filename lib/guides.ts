@@ -4040,6 +4040,151 @@ For senior engineers with 5+ years of compounding burnout risk. For founders bet
       },
     ],
   },
+  // ─── World Cup 2026 topical cluster (immediate release, no publishedAt)
+  {
+    slug: 'world-cup-2026-remote-work-from-host-cities',
+    title: 'Working remote from a 2026 World Cup host city: practical setup',
+    description: 'Which 2026 World Cup host cities work for a remote tech worker chasing matches, and what to plan before showing up.',
+    category: 'lifestyle',
+    body: `The 2026 World Cup runs across 16 host cities in the United States, Canada and Mexico. For remote tech workers wanting to combine match attendance with continued work, planning ahead matters more than for a normal trip.
+
+## The 16 host cities, ranked for remote work
+US: Atlanta, Boston, Dallas, Houston, Kansas City, Los Angeles, Miami, New York/New Jersey, Philadelphia, San Francisco Bay Area, Seattle. Canada: Toronto, Vancouver. Mexico: Guadalajara, Mexico City, Monterrey.
+
+Of these, the strongest for remote work continuity in 2026 are: New York, Boston, San Francisco Bay Area, Toronto, Vancouver, Mexico City (well-developed coworking, fast internet, easy time-zone overlap with most US and EU teams).
+
+## What to book early
+Hotels and short-term rentals near host cities tripled in price during the bidding period. Book the week before and the week after a match, not just the match day. Coworking day-passes are filling up; reserve before arrival.
+
+## Internet
+Hotel WiFi is unreliable during peak fan periods. Tether to your phone with a local SIM as primary, hotel WiFi as backup. Coworking spaces with dedicated business lines are the safest for video calls.
+
+## Time zones
+US East matches play roughly 12:00 to 21:00 local, working fine for EU-based remote workers. West Coast matches (Vancouver, LA, SF) skew later, friendlier to Asia-based teams.
+
+## Cost
+Daily expenses during the tournament run 30 to 60 percent above off-season in host cities. Budget a USD float per city and convert via a multi-currency account to avoid FX bleed at point of sale.`,
+    faqs: [
+      {
+        q: 'Can I work remote during 2026 World Cup match days?',
+        a: 'Yes if you plan internet redundancy and pick coworking near the host city. Hotel WiFi during peak fan periods is unreliable; a local SIM as primary connection is the safest setup.',
+      },
+      {
+        q: 'Which 2026 World Cup host city is best for remote workers?',
+        a: 'Toronto, Boston, the Bay Area, and Mexico City have the most established coworking infrastructure and reliable connectivity. The other host cities work but require more planning.',
+      },
+    ],
+  },
+  {
+    slug: 'world-cup-2026-travel-insurance-multi-country',
+    title: 'Travel insurance for the 2026 World Cup across USA, Canada, Mexico',
+    description: 'How to pick travel and health insurance that covers all three 2026 World Cup host countries for fans attending matches in multiple cities.',
+    category: 'visa',
+    body: `Fans attending the 2026 World Cup across host cities in three countries face a specific insurance question: a single policy that covers the United States, Canada and Mexico without coverage gaps at borders.
+
+## Why this matters
+US healthcare costs are the highest in the world. A single hospital admission without coverage can run 30,000 USD or more. Mexican private hospitals are cheaper but still expensive for serious cases. Cross-border ambulance transport (Mexico to US, common at border-region tournaments) is rarely covered by default.
+
+## Subscription nomad plans
+SafetyWing and Genki both cover all three host countries on their standard plans, with the United States included on SafetyWing standard and on Genki only at higher tiers. Activation is fast (under an hour) and coverage starts the same day.
+
+## Cap considerations for the US
+SafetyWing\\'s standard plan caps inpatient at 250,000 USD per condition. For a 4-week stay across multiple US host cities, that cap is acceptable for most claim scenarios but tight for major surgery or extended ICU. Consider upgrading to a higher tier or supplementing with a short-term US-specific travel medical plan.
+
+## What is excluded
+Match-day injuries from crowd incidents (covered as standard emergencies). Excluded activities: motorsports during travel, paragliding, scuba beyond recreational depth.
+
+## Where Wise fits
+Pay deductibles and uncovered amounts in local currency at the mid-market rate. A Wise multi-currency card avoids 2-3 percent FX bleed on each transaction across the three host countries.
+
+## How early to buy
+Day-before-departure is fine for subscription plans. For longer trips (over 30 days) buy at least a week ahead to avoid pre-existing-condition disputes about timing.`,
+    faqs: [
+      {
+        q: 'Does SafetyWing cover all three 2026 World Cup host countries?',
+        a: 'Yes, with USA included on the standard plan up to a 250,000 USD inpatient cap per condition. Canada and Mexico are covered at the standard plan without cap concerns.',
+      },
+      {
+        q: 'Do I need separate insurance for each host country?',
+        a: 'No. A single multi-country nomad plan from SafetyWing, Genki or IATI covers all three on one policy. Use a supplemental US-specific plan only if you plan extended US stays or have high medical risk.',
+      },
+    ],
+  },
+  {
+    slug: 'world-cup-2026-multi-currency-spending-usa-canada-mexico',
+    title: 'Spending across USD, CAD, MXN during the 2026 World Cup',
+    description: 'A practical setup for spending in three currencies during the 2026 World Cup without losing 3 percent on every transaction.',
+    category: 'freelance',
+    body: `Fans attending the 2026 World Cup across the United States, Canada and Mexico will spend in three currencies. The default bank card charges 2 to 4 percent FX on every transaction. Over a 4-week trip across all three host countries that compounds into real money.
+
+## The clean stack
+A Wise multi-currency account holds balances in USD, CAD and MXN. Top up before each border. Spend with the debit card from the matching currency wallet, mid-market FX, no markup. ATM withdrawals up to the monthly free cap, then small per-withdrawal fee.
+
+## How to budget per country
+US host cities (11 of 16): expect 200 to 400 USD per day during tournament weeks, more in NYC and Miami.
+Canadian host cities (Toronto, Vancouver): expect 250 to 400 CAD per day.
+Mexican host cities (Guadalajara, Mexico City, Monterrey): expect 1,500 to 3,000 MXN per day (roughly 80 to 175 USD).
+
+## ATM strategy
+Use ATMs only when necessary. The free monthly cap covers light cash use; beyond it the per-withdrawal fee plus local ATM operator fee adds up. Pay by card wherever possible, including small Mexican vendors who now widely accept tap.
+
+## Decline DCC
+Some merchants offer to charge you in your home currency (Dynamic Currency Conversion). Always decline. Pay in the local currency; your card converts at mid-market rate. DCC adds 3 to 7 percent on top.
+
+## Pre-authorisation holds
+Hotels and rental cars pre-authorise a deposit that holds for 7 to 14 days. Plan for the hold to tie up some balance during your trip. Wise releases the hold automatically when the merchant clears the actual charge.
+
+## Stadium and venue payments
+All three host countries' venues accept contactless card globally. Cash is rarely needed inside stadiums. For street vendors and small restaurants near venues, small amounts of local currency are still useful.`,
+    faqs: [
+      {
+        q: 'What is the cheapest way to spend across USD, CAD and MXN during the World Cup?',
+        a: 'A Wise multi-currency account with local balances in each currency. Tap the debit card, mid-market FX, no foreign-transaction markup. Avoid DCC at every merchant.',
+      },
+      {
+        q: 'Should I withdraw cash for stadium and venue purchases?',
+        a: "No, except for street vendors and very small purchases. All three host countries' venues accept contactless globally. Card payment avoids ATM fees entirely.",
+      },
+    ],
+  },
+  {
+    slug: 'world-cup-2026-remote-developer-time-off-strategies',
+    title: 'Time off and async strategies for remote developers during the 2026 World Cup',
+    description: 'How remote developers can attend or follow the 2026 World Cup without burning all their PTO or compromising delivery.',
+    category: 'career',
+    body: `The 2026 World Cup runs roughly five weeks across mid-June to mid-July. Remote developers face a decision: full PTO during the matches that matter, partial async working, or a mix.
+
+## Option 1: full PTO during key matches
+Two to three days off for your country's group-stage matches, then one to two weeks during the knockout rounds. Total budget: 8 to 12 PTO days for a fan attending the latter rounds in person.
+
+## Option 2: async working around the schedule
+Shift your working hours to bracket match times. East-coast US matches play 12:00 to 21:00 local. Working 06:00 to 11:00 plus 22:00 to 02:00 gives you the matches in between. Sustainable for a week, hard beyond that.
+
+## Option 3: mixed approach
+Take PTO for your team's big matches and the final. Work async around the rest. Best for fans who want continuity at work but the freedom for high-impact matches.
+
+## How to request the time off
+The way you ask matters. Submit the request more than 4 weeks ahead. Frame it as "I plan to be off X to Y, and I will hand off A and B before leaving." Concrete handover plans get approved faster than vague requests.
+
+## Managing the team during your absence
+Pre-record short Looms covering ongoing context. Designate one person as the named point of contact for each open project. Block your calendar in the team's shared calendar; do not just disappear.
+
+## Returning
+Plan a soft re-entry day. No major deploys on day one back. Reserve the first morning for catching up on async messages and reviewing what shipped while you were out.
+
+## What does not work
+Trying to work full hours while attending matches. Saying nothing in advance and disappearing for a week. Taking PTO without coordinating handoffs.`,
+    faqs: [
+      {
+        q: 'How many PTO days should a remote developer take for the 2026 World Cup?',
+        a: 'A full fan experience attending knockout-round matches typically uses 8 to 12 PTO days. Lighter attendance with async working around match times can drop that to 3 to 5.',
+      },
+      {
+        q: 'Can I work async around match times during the World Cup?',
+        a: 'For a week, yes. Beyond that, sustained shifted hours degrade work quality. Take PTO for the matches that matter most and work normal hours the rest of the tournament.',
+      },
+    ],
+  },
 );
 
 // Build-time filter: any guide with a future publishedAt is hidden from

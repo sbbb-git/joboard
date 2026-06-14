@@ -1037,6 +1037,38 @@ export const GUIDE_TRANSLATIONS: Record<string, Partial<Record<Locale, Field>>> 
     it: { title: "Come prendersi un sabbatico tech nel 2026", description: "Il setup pratico per prendersi un sabbatico di più mesi da una carriera tech senza danneggiarla in modo permanente." },
     pl: { title: "Jak wziąć tech-sabbatical w 2026", description: "Praktyczny setup na wielomiesięczny sabbatical od kariery tech bez trwałego jej uszkadzania." },
   },
+  'world-cup-2026-remote-work-from-host-cities': {
+    fr: { title: "Travailler en remote depuis une ville hôte de la World Cup 2026 : setup pratique", description: "Quelles villes hôtes de la World Cup 2026 conviennent à un travailleur tech remote qui suit les matches, et que prévoir avant d'arriver." },
+    es: { title: "Trabajar en remoto desde una ciudad sede de la World Cup 2026: setup práctico", description: "Qué ciudades sede de la World Cup 2026 funcionan para un trabajador tech remoto que sigue los partidos, y qué planificar antes de llegar." },
+    de: { title: "Remote arbeiten aus einer World Cup 2026 Host City: praktisches Setup", description: "Welche World Cup 2026 Host Cities für einen Remote-Tech-Worker geeignet sind, der Spiele besucht, und was vor der Ankunft zu planen ist." },
+    pt: { title: "Trabalhar remoto a partir de uma cidade-sede da World Cup 2026: setup prático", description: "Quais cidades-sede da World Cup 2026 funcionam para um trabalhador tech remoto que acompanha os jogos, e o que planejar antes de chegar." },
+    it: { title: "Lavorare in remote da una città ospitante della World Cup 2026: setup pratico", description: "Quali città ospitanti della World Cup 2026 funzionano per un lavoratore tech remote che segue le partite, e cosa pianificare prima di arrivare." },
+    pl: { title: "Praca zdalna z miasta-gospodarza World Cup 2026: praktyczny setup", description: "Które miasta-gospodarze World Cup 2026 sprawdzą się dla zdalnego pracownika tech śledzącego mecze i co zaplanować przed przyjazdem." },
+  },
+  'world-cup-2026-travel-insurance-multi-country': {
+    fr: { title: "Assurance voyage pour la World Cup 2026 entre USA, Canada et Mexico", description: "Comment choisir une assurance voyage et santé qui couvre les trois pays hôtes de la World Cup 2026 pour les fans suivant des matches dans plusieurs villes." },
+    es: { title: "Seguro de viaje para la World Cup 2026 entre USA, Canada y Mexico", description: "Cómo elegir un seguro de viaje y salud que cubra los tres países sede de la World Cup 2026 para fans que asisten a partidos en varias ciudades." },
+    de: { title: "Reiseversicherung für die World Cup 2026 in USA, Canada und Mexico", description: "Wie man eine Reise- und Krankenversicherung wählt, die alle drei Gastgeberländer der World Cup 2026 ohne Deckungslücken abdeckt, für Fans mit Spielen in mehreren Städten." },
+    pt: { title: "Seguro de viagem para a World Cup 2026 entre USA, Canada e Mexico", description: "Como escolher um seguro de viagem e saúde que cubra os três países-sede da World Cup 2026 para fãs que assistem a jogos em várias cidades." },
+    it: { title: "Assicurazione viaggio per la World Cup 2026 tra USA, Canada e Mexico", description: "Come scegliere un'assicurazione viaggio e sanitaria che copra i tre paesi ospitanti della World Cup 2026 per i tifosi che seguono partite in più città." },
+    pl: { title: "Ubezpieczenie podróżne na World Cup 2026 w USA, Canada i Mexico", description: "Jak wybrać ubezpieczenie podróżne i zdrowotne pokrywające wszystkie trzy kraje-gospodarzy World Cup 2026 dla kibiców jeżdżących na mecze w kilku miastach." },
+  },
+  'world-cup-2026-multi-currency-spending-usa-canada-mexico': {
+    fr: { title: "Dépenser en USD, CAD et MXN pendant la World Cup 2026", description: "Un setup pratique pour dépenser dans trois devises pendant la World Cup 2026 sans perdre 3 pour cent sur chaque transaction." },
+    es: { title: "Gastar en USD, CAD y MXN durante la World Cup 2026", description: "Un setup práctico para gastar en tres monedas durante la World Cup 2026 sin perder un 3 por ciento en cada transacción." },
+    de: { title: "Ausgaben in USD, CAD und MXN während der World Cup 2026", description: "Ein praktisches Setup, um während der World Cup 2026 in drei Währungen zu zahlen, ohne 3 Prozent pro Transaktion zu verlieren." },
+    pt: { title: "Gastar em USD, CAD e MXN durante a World Cup 2026", description: "Um setup prático para gastar em três moedas durante a World Cup 2026 sem perder 3 por cento em cada transação." },
+    it: { title: "Spendere in USD, CAD e MXN durante la World Cup 2026", description: "Un setup pratico per spendere in tre valute durante la World Cup 2026 senza perdere il 3 per cento su ogni transazione." },
+    pl: { title: "Wydatki w USD, CAD i MXN podczas World Cup 2026", description: "Praktyczny setup do płacenia w trzech walutach podczas World Cup 2026 bez tracenia 3 procent na każdej transakcji." },
+  },
+  'world-cup-2026-remote-developer-time-off-strategies': {
+    fr: { title: "Congés et stratégies async pour développeurs remote pendant la World Cup 2026", description: "Comment les développeurs remote peuvent suivre la World Cup 2026 sans cramer tous leurs congés ni compromettre la livraison." },
+    es: { title: "Vacaciones y estrategias async para desarrolladores remotos durante la World Cup 2026", description: "Cómo los desarrolladores remotos pueden seguir la World Cup 2026 sin quemar todas sus vacaciones ni comprometer la entrega." },
+    de: { title: "Urlaub und Async-Strategien für Remote-Entwickler während der World Cup 2026", description: "Wie Remote-Entwickler die World Cup 2026 verfolgen können, ohne ihren gesamten Urlaub zu verbrennen oder die Delivery zu gefährden." },
+    pt: { title: "Folgas e estratégias async para desenvolvedores remotos durante a World Cup 2026", description: "Como desenvolvedores remotos podem acompanhar a World Cup 2026 sem queimar todas as férias nem comprometer a entrega." },
+    it: { title: "Ferie e strategie async per sviluppatori remote durante la World Cup 2026", description: "Come gli sviluppatori remote possono seguire la World Cup 2026 senza bruciare tutte le ferie né compromettere la delivery." },
+    pl: { title: "Urlopy i strategie async dla zdalnych deweloperów podczas World Cup 2026", description: "Jak zdalni deweloperzy mogą śledzić World Cup 2026, nie spalając całego urlopu i nie zagrażając dostarczeniu." },
+  },
 };
 
 export function tGuide(slug: string, locale: Locale, field: 'title' | 'description', fallback: string): string {
