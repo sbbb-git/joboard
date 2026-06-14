@@ -54,6 +54,8 @@ const WISE_SLUGS = new Set([
   'wise-debit-card-spending-tips',
   'wise-vs-revolut-business-comparison-2026',
   'how-to-receive-stripe-payouts-as-non-us',
+  'world-cup-2026-multi-currency-spending-usa-canada-mexico',
+  'world-cup-2026-remote-work-from-host-cities',
 ]);
 
 const MERCOR_SLUGS = new Set([
