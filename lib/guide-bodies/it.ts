@@ -3246,4 +3246,132 @@ Per ingegneri senior con 5+ anni di rischio di burnout composto. Per fondatori t
       },
     ],
   },
+  'world-cup-2026-remote-work-from-host-cities': {
+    body: `I Mondiali 2026 si giocheranno in 16 citta ospitanti tra Stati Uniti, Canada e Messico. Per i lavoratori tech da remoto che vogliono unire la presenza alle partite con la continuita lavorativa, pianificare in anticipo conta piu che per un viaggio normale.
+
+## Le 16 citta ospitanti, classificate per il lavoro da remoto
+USA: Atlanta, Boston, Dallas, Houston, Kansas City, Los Angeles, Miami, New York/New Jersey, Philadelphia, San Francisco Bay Area, Seattle. Canada: Toronto, Vancouver. Messico: Guadalajara, Mexico City, Monterrey.
+
+Di queste, le migliori per la continuita del lavoro da remoto nel 2026 sono: New York, Boston, San Francisco Bay Area, Toronto, Vancouver, Mexico City (coworking ben sviluppato, internet veloce, sovrapposizione di fuso oraria facile con la maggior parte dei team USA ed EU).
+
+## Cosa prenotare presto
+Hotel e affitti brevi vicino alle citta ospitanti hanno triplicato il prezzo durante la fase di candidatura. Prenota la settimana prima e la settimana dopo la partita, non solo il giorno della partita. I pass giornalieri per il coworking si stanno riempiendo; riserva prima dell'arrivo.
+
+## Internet
+Il WiFi degli hotel e inaffidabile nei periodi di picco dei tifosi. Fai tethering al telefono con una SIM locale come connessione primaria, WiFi dell'hotel come backup. Gli spazi di coworking con linee business dedicate sono i piu sicuri per le videochiamate.
+
+## Fusi orari
+Le partite negli USA est si giocano grossomodo dalle 12:00 alle 21:00 ora locale, andando bene per i lavoratori da remoto basati in EU. Le partite sulla West Coast (Vancouver, LA, SF) tendono piu tardi, piu amichevoli per i team basati in Asia.
+
+## Costo
+Le spese quotidiane durante il torneo corrono tra il 30 e il 60 percento sopra la bassa stagione nelle citta ospitanti. Pianifica un fondo in USD per ciascuna citta e converti tramite un conto multi-valuta per evitare perdite di cambio al punto vendita.`,
+    faqs: [
+      {
+        q: "Posso lavorare da remoto durante i giorni di partita dei Mondiali 2026?",
+        a: "Si se pianifichi una ridondanza internet e scegli un coworking vicino alla citta ospitante. Il WiFi degli hotel nei periodi di picco dei tifosi e inaffidabile; una SIM locale come connessione primaria e l'allestimento piu sicuro.",
+      },
+      {
+        q: "Quale citta ospitante dei Mondiali 2026 e migliore per i lavoratori da remoto?",
+        a: "Toronto, Boston, la Bay Area e Mexico City hanno l'infrastruttura di coworking piu consolidata e la connettivita piu affidabile. Le altre citta ospitanti funzionano ma richiedono piu pianificazione.",
+      },
+    ],
+  },
+  'world-cup-2026-travel-insurance-multi-country': {
+    body: `I tifosi che seguono i Mondiali 2026 tra le citta ospitanti in tre paesi si trovano davanti a una domanda specifica sull'assicurazione: una singola polizza che copra Stati Uniti, Canada e Messico senza buchi di copertura ai confini.
+
+## Perche conta
+I costi sanitari negli USA sono i piu alti al mondo. Un singolo ricovero senza copertura puo arrivare a 30.000 USD o piu. Gli ospedali privati messicani sono piu economici ma comunque costosi per casi gravi. Il trasporto in ambulanza trans-frontaliera (Messico verso USA, comune nei tornei nelle aree di confine) raramente e coperto di default.
+
+## Piani nomadi in abbonamento
+SafetyWing e Genki coprono entrambi tutti e tre i paesi ospitanti sui loro piani standard, con gli Stati Uniti inclusi su SafetyWing standard e su Genki solo nei livelli superiori. L'attivazione e rapida (sotto un'ora) e la copertura parte lo stesso giorno.
+
+## Considerazioni sui massimali per gli USA
+Il piano standard di SafetyWing limita il ricovero ospedaliero a 250.000 USD per condizione. Per un soggiorno di 4 settimane tra varie citta ospitanti USA, quel massimale e accettabile per la maggior parte degli scenari di sinistro ma stretto per interventi chirurgici importanti o terapia intensiva prolungata. Considera l'aggiornamento a un livello superiore o l'integrazione con un piano sanitario di viaggio specifico per gli USA a breve termine.
+
+## Cosa e escluso
+Infortuni nei giorni di partita per incidenti tra la folla (coperti come emergenze standard). Attivita escluse: motorsport durante il viaggio, parapendio, immersioni oltre le profondita ricreative.
+
+## Dove entra Wise
+Paga franchigie e importi non coperti in valuta locale al tasso mid-market. Una carta multi-valuta Wise evita la perdita di cambio del 2-3 percento su ogni transazione tra i tre paesi ospitanti.
+
+## Con quanto anticipo acquistare
+Il giorno prima della partenza va bene per i piani in abbonamento. Per viaggi piu lunghi (oltre 30 giorni) acquista almeno una settimana prima per evitare dispute sulle condizioni preesistenti riguardo alla tempistica.`,
+    faqs: [
+      {
+        q: "SafetyWing copre tutti e tre i paesi ospitanti dei Mondiali 2026?",
+        a: "Si, con gli USA inclusi nel piano standard fino a un massimale di 250.000 USD per ricovero per condizione. Canada e Messico sono coperti nel piano standard senza preoccupazioni sui massimali.",
+      },
+      {
+        q: "Mi serve un'assicurazione separata per ciascun paese ospitante?",
+        a: "No. Un singolo piano nomade multi-paese di SafetyWing, Genki o IATI copre tutti e tre su un'unica polizza. Usa un piano supplementare specifico per gli USA solo se prevedi soggiorni prolungati negli USA o hai un rischio sanitario elevato.",
+      },
+    ],
+  },
+  'world-cup-2026-multi-currency-spending-usa-canada-mexico': {
+    body: `I tifosi che seguono i Mondiali 2026 tra Stati Uniti, Canada e Messico spenderanno in tre valute. La carta bancaria di default carica dal 2 al 4 percento di cambio su ogni transazione. Su un viaggio di 4 settimane tra tutti e tre i paesi ospitanti, quello si compone in soldi veri.
+
+## Lo stack pulito
+Un conto multi-valuta Wise tiene saldi in USD, CAD e MXN. Ricarica prima di ciascun confine. Spendi con la carta di debito dal portafoglio nella valuta corrispondente, cambio mid-market, nessun ricarico. Prelievi ATM fino al massimale mensile gratuito, poi piccola commissione per prelievo.
+
+## Come pianificare il budget per paese
+Citta ospitanti USA (11 su 16): aspettati dai 200 ai 400 USD al giorno durante le settimane del torneo, di piu a NYC e Miami.
+Citta ospitanti canadesi (Toronto, Vancouver): aspettati dai 250 ai 400 CAD al giorno.
+Citta ospitanti messicane (Guadalajara, Mexico City, Monterrey): aspettati da 1.500 a 3.000 MXN al giorno (grossomodo da 80 a 175 USD).
+
+## Strategia ATM
+Usa gli ATM solo quando necessario. Il massimale mensile gratuito copre l'uso leggero del contante; oltre, la commissione per prelievo piu la commissione dell'operatore ATM locale si accumulano. Paga con carta dove possibile, inclusi piccoli venditori messicani che ora accettano ampiamente il contactless.
+
+## Rifiuta il DCC
+Alcuni esercenti offrono di addebitarti nella tua valuta di origine (Dynamic Currency Conversion). Rifiuta sempre. Paga nella valuta locale; la tua carta converte al tasso mid-market. Il DCC aggiunge dal 3 al 7 percento sopra.
+
+## Blocchi di pre-autorizzazione
+Hotel e autonoleggi pre-autorizzano un deposito che trattiene da 7 a 14 giorni. Pianifica che il blocco leghi una parte del saldo durante il viaggio. Wise rilascia il blocco automaticamente quando l'esercente regola l'addebito effettivo.
+
+## Pagamenti negli stadi e nei luoghi
+Gli stadi di tutti e tre i paesi ospitanti accettano carta contactless globalmente. Il contante e raramente necessario all'interno degli stadi. Per venditori ambulanti e piccoli ristoranti vicino agli stadi, piccoli importi in valuta locale sono ancora utili.`,
+    faqs: [
+      {
+        q: "Qual e il modo piu economico per spendere tra USD, CAD e MXN durante la Coppa del Mondo?",
+        a: "Un conto multi-valuta Wise con saldi locali in ciascuna valuta. Pagamento contactless con la carta di debito, cambio mid-market, nessun ricarico sulle transazioni estere. Evita il DCC presso ogni esercente.",
+      },
+      {
+        q: "Devo prelevare contante per gli acquisti negli stadi e nei luoghi?",
+        a: "No, eccetto per venditori ambulanti e acquisti molto piccoli. Gli stadi di tutti e tre i paesi ospitanti accettano contactless globalmente. Il pagamento con carta evita interamente le commissioni ATM.",
+      },
+    ],
+  },
+  'world-cup-2026-remote-developer-time-off-strategies': {
+    body: `I Mondiali 2026 durano grossomodo cinque settimane tra meta giugno e meta luglio. Gli sviluppatori da remoto si trovano davanti a una decisione: PTO completo durante le partite che contano, lavoro asincrono parziale, oppure un mix.
+
+## Opzione 1: PTO completo durante le partite chiave
+Due o tre giorni liberi per le partite della fase a gironi della tua nazionale, poi una o due settimane durante i turni a eliminazione diretta. Budget totale: da 8 a 12 giorni di PTO per un tifoso che partecipa di persona alle fasi finali.
+
+## Opzione 2: lavoro asincrono attorno al calendario
+Sposta le tue ore lavorative per delimitare gli orari delle partite. Le partite negli USA costa est si giocano dalle 12:00 alle 21:00 ora locale. Lavorando dalle 06:00 alle 11:00 piu dalle 22:00 alle 02:00 ti tieni le partite nel mezzo. Sostenibile per una settimana, difficile oltre.
+
+## Opzione 3: approccio misto
+Prendi PTO per le partite grosse della tua squadra e per la finale. Lavora in asincrono attorno al resto. Migliore per i tifosi che vogliono continuita al lavoro ma liberta per le partite ad alto impatto.
+
+## Come richiedere il tempo libero
+Il modo in cui chiedi conta. Invia la richiesta con piu di 4 settimane di anticipo. Inquadrala come "Saro fuori dal X al Y, e prima di partire passero in consegna A e B". Piani concreti di handover vengono approvati piu rapidamente delle richieste vaghe.
+
+## Gestire il team durante la tua assenza
+Pre-registra brevi Looms che coprano il contesto in corso. Designa una persona come punto di contatto nominato per ciascun progetto aperto. Blocca il calendario nel calendario condiviso del team; non sparire e basta.
+
+## Il ritorno
+Pianifica una giornata di rientro morbido. Niente deploy importanti il primo giorno di ritorno. Riserva la prima mattina per recuperare i messaggi async e rivedere cosa e stato rilasciato mentre eri fuori.
+
+## Cosa non funziona
+Provare a lavorare a pieno regime mentre si seguono le partite. Non dire nulla in anticipo e sparire per una settimana. Prendere PTO senza coordinare gli handoff.`,
+    faqs: [
+      {
+        q: "Quanti giorni di PTO dovrebbe prendere uno sviluppatore da remoto per i Mondiali 2026?",
+        a: "Un'esperienza completa da tifoso che segue le partite a eliminazione diretta usa tipicamente da 8 a 12 giorni di PTO. Una partecipazione piu leggera con lavoro async attorno agli orari delle partite puo scendere da 3 a 5.",
+      },
+      {
+        q: "Posso lavorare in asincrono attorno agli orari delle partite durante la Coppa del Mondo?",
+        a: "Per una settimana, si. Oltre, gli orari spostati prolungati degradano la qualita del lavoro. Prendi PTO per le partite che contano di piu e lavora ore normali per il resto del torneo.",
+      },
+    ],
+  },
 };
