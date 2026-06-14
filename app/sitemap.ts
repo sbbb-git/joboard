@@ -8,6 +8,7 @@ import { SKILLS } from '@/lib/skills';
 import { CITIES } from '@/lib/cities';
 import { GUIDES } from '@/lib/guides';
 import { COMPARISONS } from '@/lib/comparisons';
+import { WC2026_CITIES } from '@/lib/world-cup-2026';
 
 export const dynamic = 'force-static';
 
@@ -59,6 +60,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   entries.push(entry('/submit', now, 0.6));
   entries.push(entry('/employers', now, 0.6));
   entries.push(entry('/earn-online', now, 0.75));
+  entries.push(entry('/world-cup-2026', now, 0.8));
+  for (const city of WC2026_CITIES) entries.push(entry(`/world-cup-2026/${city.slug}`, now, 0.75));
   entries.push(entry('/about', now, 0.5));
   entries.push(entry('/contact', now, 0.4));
   entries.push(entry('/disclosure', now, 0.3));
