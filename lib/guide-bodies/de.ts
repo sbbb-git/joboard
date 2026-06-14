@@ -3330,4 +3330,132 @@ Nutzen Sie das 60-Tage-Fenster. Kaufen Sie in zwei Chargen von je drei bis vier 
       },
     ],
   },
+  'world-cup-2026-remote-work-from-host-cities': {
+    body: `Die WM 2026 wird in 16 Austragungsstädten in den Vereinigten Staaten, Kanada und Mexiko ausgetragen. Für remote arbeitende Tech-Beschäftigte, die Spielbesuche mit fortlaufender Arbeit verbinden wollen, zählt die vorausschauende Planung mehr als bei einer normalen Reise.
+
+## Die 16 Austragungsstädte, sortiert für Remote-Arbeit
+USA: Atlanta, Boston, Dallas, Houston, Kansas City, Los Angeles, Miami, New York/New Jersey, Philadelphia, San Francisco Bay Area, Seattle. Kanada: Toronto, Vancouver. Mexiko: Guadalajara, Mexico City, Monterrey.
+
+Von diesen sind 2026 für die Kontinuität der Remote-Arbeit am stärksten: New York, Boston, San Francisco Bay Area, Toronto, Vancouver, Mexico City (gut entwickeltes Coworking, schnelles Internet, einfache Zeitzonenüberschneidung mit den meisten US- und EU-Teams).
+
+## Was früh zu buchen ist
+Hotels und Kurzzeitvermietungen in der Nähe der Austragungsstädte verdreifachten sich während der Vergabephase im Preis. Buchen Sie die Woche vor und die Woche nach einem Spiel, nicht nur den Spieltag selbst. Tagespässe für Coworking-Spaces füllen sich; reservieren Sie vor der Ankunft.
+
+## Internet
+Hotel-WLAN ist während der Spitzenzeiten der Fans unzuverlässig. Tethern Sie über Ihr Telefon mit einer lokalen SIM als Primärverbindung, Hotel-WLAN als Backup. Coworking-Spaces mit eigenen Geschäftsleitungen sind für Videoanrufe am sichersten.
+
+## Zeitzonen
+Spiele an der US-Ostküste laufen ungefähr von 12:00 bis 21:00 Ortszeit und passen gut für EU-basierte Remote-Beschäftigte. Westküstenspiele (Vancouver, LA, SF) verschieben sich nach hinten und sind freundlicher zu in Asien ansässigen Teams.
+
+## Kosten
+Die täglichen Ausgaben während des Turniers liegen 30 bis 60 Prozent über der Nebensaison in den Austragungsstädten. Planen Sie pro Stadt ein USD-Polster ein und wechseln Sie über ein Multi-Währungs-Konto, um FX-Verluste am Point of Sale zu vermeiden.`,
+    faqs: [
+      {
+        q: "Kann ich während der Spieltage der WM 2026 remote arbeiten?",
+        a: "Ja, wenn Sie Internet-Redundanz einplanen und Coworking in der Nähe der Austragungsstadt wählen. Hotel-WLAN ist während Fan-Spitzenzeiten unzuverlässig; eine lokale SIM als Primärverbindung ist das sicherste Setup.",
+      },
+      {
+        q: "Welche Austragungsstadt der WM 2026 eignet sich am besten für Remote-Beschäftigte?",
+        a: "Toronto, Boston, die Bay Area und Mexico City haben die etablierteste Coworking-Infrastruktur und zuverlässige Konnektivität. Die anderen Austragungsstädte funktionieren, erfordern aber mehr Planung.",
+      },
+    ],
+  },
+  'world-cup-2026-travel-insurance-multi-country': {
+    body: `Fans, die die WM 2026 in Austragungsstädten in drei Ländern besuchen, stehen vor einer konkreten Versicherungsfrage: eine einzige Police, die die Vereinigten Staaten, Kanada und Mexiko ohne Deckungslücken an den Grenzen abdeckt.
+
+## Warum das wichtig ist
+Die Gesundheitskosten in den USA sind die höchsten der Welt. Eine einzige Krankenhauseinweisung ohne Versicherungsschutz kann 30.000 USD oder mehr kosten. Mexikanische Privatkliniken sind günstiger, aber bei schweren Fällen immer noch teuer. Grenzüberschreitender Krankentransport (Mexiko in die USA, häufig bei Spielen in Grenzregionen) ist standardmäßig selten abgedeckt.
+
+## Abo-Tarife für Nomaden
+SafetyWing und Genki decken auf ihren Standardtarifen alle drei Austragungsländer ab, wobei die Vereinigten Staaten bei SafetyWing standardmäßig und bei Genki erst in höheren Stufen enthalten sind. Die Aktivierung geht schnell (unter einer Stunde), die Deckung beginnt am selben Tag.
+
+## Höchstgrenzen für die USA beachten
+Der Standardtarif von SafetyWing deckelt stationäre Behandlung bei 250.000 USD pro Erkrankung. Für einen vierwöchigen Aufenthalt über mehrere US-Austragungsstädte hinweg ist diese Grenze für die meisten Schadensszenarien akzeptabel, aber knapp bei größeren Operationen oder verlängertem Aufenthalt auf einer ICU. Erwägen Sie ein Upgrade auf eine höhere Stufe oder die Ergänzung durch einen kurzfristigen, USA-spezifischen Reisekrankenversicherungstarif.
+
+## Was ausgeschlossen ist
+Spieltagverletzungen durch Vorfälle in der Menge (als Standard-Notfälle gedeckt). Ausgeschlossene Aktivitäten: Motorsport während der Reise, Gleitschirmfliegen, Tauchen jenseits der Freizeit-Tiefen.
+
+## Wo Wise hineinpasst
+Zahlen Sie Selbstbehalte und ungedeckte Beträge in lokaler Währung zum Mittelkurs. Eine Wise-Multi-Währungs-Karte vermeidet 2 bis 3 Prozent FX-Verluste bei jeder Transaktion über die drei Austragungsländer hinweg.
+
+## Wie früh kaufen
+Am Vortag der Abreise ist für Abo-Tarife in Ordnung. Bei längeren Reisen (über 30 Tage) mindestens eine Woche vorher kaufen, um Streit über den Zeitpunkt von Vorerkrankungen zu vermeiden.`,
+    faqs: [
+      {
+        q: "Deckt SafetyWing alle drei Austragungsländer der WM 2026 ab?",
+        a: "Ja, mit den USA im Standardtarif bis zu einer Obergrenze von 250.000 USD für stationäre Behandlung pro Erkrankung. Kanada und Mexiko sind im Standardtarif ohne Obergrenzenbedenken abgedeckt.",
+      },
+      {
+        q: "Brauche ich für jedes Austragungsland eine separate Versicherung?",
+        a: "Nein. Ein einziger Multi-Länder-Nomadentarif von SafetyWing, Genki oder IATI deckt alle drei in einer Police ab. Nutzen Sie einen ergänzenden USA-spezifischen Tarif nur, wenn Sie längere USA-Aufenthalte planen oder ein hohes medizinisches Risiko haben.",
+      },
+    ],
+  },
+  'world-cup-2026-multi-currency-spending-usa-canada-mexico': {
+    body: `Fans, die die WM 2026 in den Vereinigten Staaten, Kanada und Mexiko besuchen, geben in drei Währungen aus. Die Standard-Bankkarte berechnet 2 bis 4 Prozent FX bei jeder Transaktion. Über eine vierwöchige Reise durch alle drei Austragungsländer summiert sich das zu echtem Geld.
+
+## Der saubere Stack
+Ein Wise-Multi-Währungs-Konto hält Guthaben in USD, CAD und MXN. Laden Sie vor jeder Grenze auf. Bezahlen Sie mit der Debitkarte aus dem passenden Währungsfach, Mittelkurs, kein Aufschlag. ATM-Abhebungen bis zur monatlichen Freigrenze, danach eine kleine Gebühr pro Abhebung.
+
+## Wie pro Land budgetieren
+US-Austragungsstädte (11 von 16): rechnen Sie mit 200 bis 400 USD pro Tag während der Turnierwochen, mehr in NYC und Miami.
+Kanadische Austragungsstädte (Toronto, Vancouver): rechnen Sie mit 250 bis 400 CAD pro Tag.
+Mexikanische Austragungsstädte (Guadalajara, Mexico City, Monterrey): rechnen Sie mit 1.500 bis 3.000 MXN pro Tag (etwa 80 bis 175 USD).
+
+## ATM-Strategie
+Nutzen Sie ATMs nur, wenn nötig. Die monatliche Freigrenze deckt leichten Bargeldgebrauch ab; darüber hinaus summieren sich Gebühr pro Abhebung plus die Gebühr des lokalen ATM-Betreibers. Zahlen Sie wo immer möglich per Karte, auch bei kleinen mexikanischen Händlern, die heute weithin kontaktloses Zahlen akzeptieren.
+
+## DCC ablehnen
+Einige Händler bieten an, Ihnen in Ihrer Heimatwährung zu berechnen (Dynamic Currency Conversion). Lehnen Sie immer ab. Zahlen Sie in der lokalen Währung; Ihre Karte rechnet zum Mittelkurs um. DCC schlägt 3 bis 7 Prozent obendrauf.
+
+## Vorautorisierungen
+Hotels und Mietwagen autorisieren eine Kaution vor, die 7 bis 14 Tage gehalten wird. Planen Sie ein, dass die Reservierung während Ihrer Reise einen Teil des Guthabens bindet. Wise gibt die Reservierung automatisch frei, sobald der Händler die tatsächliche Abbuchung verrechnet.
+
+## Zahlungen in Stadien und Veranstaltungsorten
+Veranstaltungsorte in allen drei Austragungsländern akzeptieren weltweit kontaktloses Bezahlen per Karte. Bargeld wird in den Stadien selten benötigt. Für Straßenhändler und kleine Restaurants in der Nähe der Veranstaltungsorte sind kleine Beträge in lokaler Währung weiterhin nützlich.`,
+    faqs: [
+      {
+        q: "Was ist der günstigste Weg, während der WM in USD, CAD und MXN auszugeben?",
+        a: "Ein Wise-Multi-Währungs-Konto mit lokalen Guthaben in jeder Währung. Tippen mit der Debitkarte, Mittelkurs-FX, kein Auslandstransaktionsaufschlag. Vermeiden Sie DCC bei jedem Händler.",
+      },
+      {
+        q: "Soll ich Bargeld für Käufe in Stadien und Veranstaltungsorten abheben?",
+        a: "Nein, außer für Straßenhändler und sehr kleine Einkäufe. Veranstaltungsorte in allen drei Austragungsländern akzeptieren weltweit kontaktloses Bezahlen. Kartenzahlung vermeidet ATM-Gebühren vollständig.",
+      },
+    ],
+  },
+  'world-cup-2026-remote-developer-time-off-strategies': {
+    body: `Die WM 2026 läuft etwa fünf Wochen von Mitte Juni bis Mitte Juli. Remote arbeitende Entwicklerinnen und Entwickler stehen vor einer Entscheidung: volle PTO während der Spiele, die zählen, teilweise asynchrones Arbeiten oder eine Mischung.
+
+## Option 1: volle PTO während der wichtigen Spiele
+Zwei bis drei Tage frei für die Gruppenspiele Ihres Landes, dann ein bis zwei Wochen während der K.-o.-Runden. Gesamtbudget: 8 bis 12 PTO-Tage für einen Fan, der die späteren Runden persönlich besucht.
+
+## Option 2: asynchrones Arbeiten rund um den Spielplan
+Verschieben Sie Ihre Arbeitszeiten so, dass sie die Spielzeiten umrahmen. Spiele an der US-Ostküste laufen von 12:00 bis 21:00 Ortszeit. Arbeiten von 06:00 bis 11:00 plus 22:00 bis 02:00 gibt Ihnen die Spiele dazwischen. Eine Woche lang tragfähig, darüber hinaus schwer.
+
+## Option 3: gemischter Ansatz
+Nehmen Sie PTO für die wichtigen Spiele Ihres Teams und das Finale. Arbeiten Sie für den Rest asynchron. Am besten für Fans, die Kontinuität bei der Arbeit wollen, aber Freiheit für Spiele mit hoher Bedeutung.
+
+## Wie die freie Zeit beantragen
+Wie Sie fragen, ist entscheidend. Reichen Sie den Antrag mehr als 4 Wochen im Voraus ein. Rahmen Sie es so ein: "Ich plane, von X bis Y frei zu sein, und ich werde A und B vor meiner Abreise übergeben." Konkrete Übergabepläne werden schneller genehmigt als vage Anfragen.
+
+## Das Team während Ihrer Abwesenheit managen
+Nehmen Sie kurze Looms vorab auf, die laufenden Kontext abdecken. Bestimmen Sie eine Person als benannten Ansprechpartner für jedes offene Projekt. Blockieren Sie Ihren Kalender im Team-Kalender; verschwinden Sie nicht einfach.
+
+## Rückkehr
+Planen Sie einen sanften Wiedereinstiegstag. Keine größeren Deploys am ersten Tag zurück. Reservieren Sie den ersten Vormittag, um asynchrone Nachrichten nachzuholen und durchzugehen, was während Ihrer Abwesenheit ausgeliefert wurde.
+
+## Was nicht funktioniert
+Versuchen, volle Stunden zu arbeiten, während Sie Spiele besuchen. Im Voraus nichts sagen und eine Woche verschwinden. PTO nehmen, ohne Übergaben zu koordinieren.`,
+    faqs: [
+      {
+        q: "Wie viele PTO-Tage sollte eine remote arbeitende Entwicklerin für die WM 2026 nehmen?",
+        a: "Ein volles Fan-Erlebnis mit Besuch der K.-o.-Spiele verbraucht typischerweise 8 bis 12 PTO-Tage. Leichterer Besuch mit asynchronem Arbeiten um die Spielzeiten herum kann das auf 3 bis 5 senken.",
+      },
+      {
+        q: "Kann ich während der WM um die Spielzeiten herum asynchron arbeiten?",
+        a: "Eine Woche lang ja. Darüber hinaus verschlechtern dauerhaft verschobene Arbeitszeiten die Arbeitsqualität. Nehmen Sie PTO für die wichtigsten Spiele und arbeiten Sie für den Rest des Turniers zu normalen Zeiten.",
+      },
+    ],
+  },
 };
