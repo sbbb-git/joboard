@@ -4185,6 +4185,260 @@ Trying to work full hours while attending matches. Saying nothing in advance and
       },
     ],
   },
+  // ─── World Cup 2026 USA-focused cluster (immediate release)
+  {
+    slug: 'world-cup-2026-esta-visa-for-international-fans',
+    title: 'ESTA and B-2 visa for international fans at the 2026 World Cup in the USA',
+    description: 'How international fans can enter the United States for the 2026 World Cup: ESTA, B-2, processing time, and the documents that matter.',
+    category: 'visa',
+    body: `Eleven of sixteen 2026 World Cup host cities are in the United States. International fans need either an ESTA or a B-2 visa to attend. Processing times and document requirements have tightened in 2026; planning ahead matters.
+
+## ESTA: Visa Waiver Program countries
+If you hold a passport from a Visa Waiver Program country (most of the EU, UK, Australia, Japan, South Korea, Singapore, etc.), ESTA is the path. Apply online via the official CBP site, fee around 21 USD, approval typically within 72 hours though Customs and Border Protection asks for 7 days minimum before travel.
+
+## ESTA validity
+Valid for 2 years or until the passport expires, whichever comes first. Each visit must be 90 days or less. Multiple entries allowed within the validity window.
+
+## B-2 visa: everyone else
+Travelers from non-VWP countries need a B-2 tourist visa. Apply via the US embassy in your country: DS-160 form, in-person interview, biometrics. Processing times in 2026 run 60 to 180 days depending on the embassy; the Mexico City embassy is among the fastest, while several South American embassies have multi-month backlogs.
+
+## What to bring at entry
+Passport valid 6+ months past your trip. Approved ESTA or B-2 visa in passport. Proof of accommodation, return flight, and financial means. Match ticket confirmations help but are not strictly required.
+
+## What you cannot do on ESTA or B-2
+Work, including remote work for non-US clients while physically in the US. The IRS and CBP have aligned tighter on this; do not log paid hours while in the US on a tourist status. Watching matches and tourism only.
+
+## Border crossings to Canada or Mexico
+ESTA does not automatically allow re-entry after side trips. Stay within the US for the duration if your trip is short; if multi-country, check the latest CBP guidance on re-entry windows.`,
+    faqs: [
+      {
+        q: 'How long does ESTA take to approve for the 2026 World Cup?',
+        a: 'Most approvals come within 72 hours. CBP asks for at least 7 days lead time before travel, and processing has been slower in 2026 due to tournament volume. Apply at least 2 weeks ahead.',
+      },
+      {
+        q: 'Can I work remotely from the US during the 2026 World Cup on an ESTA?',
+        a: 'No. ESTA and B-2 status do not permit any paid work, including remote work for foreign employers while physically in the United States. Stick to tourism.',
+      },
+    ],
+  },
+  {
+    slug: 'world-cup-2026-us-host-cities-public-transit-guide',
+    title: 'Public transit at the 11 US host cities for the 2026 World Cup',
+    description: 'How to get to each US stadium for the 2026 World Cup using public transit, ride share, or rental car.',
+    category: 'lifestyle',
+    body: `The 11 US host cities for the 2026 World Cup vary enormously in transit quality. Some have functional rail to the stadium; others require a car or ride-share by default. Planning the right approach saves hours.
+
+## Cities with good stadium transit
+NYC / New Jersey (MetLife): NJ Transit train from Penn Station Manhattan, 35 minutes to stadium gate. Boston (Gillette in Foxborough): commuter rail from South Station, 50 minutes. Philadelphia (Lincoln Financial Field): SEPTA Broad Street Line direct.
+
+## Cities with usable transit but slower
+Seattle (Lumen Field): Sound Transit Link light rail to within walking distance. San Francisco Bay Area (Levi's Stadium): VTA light rail plus longer walk; better to use the dedicated express buses. Atlanta (Mercedes-Benz Stadium): MARTA train to GWCC/CNN Center station, walkable.
+
+## Cities where you really need a car or ride-share
+Dallas (AT&T Stadium in Arlington): no rail to stadium. Plan 60-90 minutes Uber from downtown Dallas, more on match day. Houston (NRG Stadium): light rail exists but is slow; ride-share is faster. Kansas City (Arrowhead Stadium): no rail. Most fans park; ride-share surge pricing matches days.
+
+## Los Angeles (SoFi Stadium): plan ahead
+Metro K Line stops within walking distance. Match-day traffic is the worst in the country; budget 2 hours from anywhere west of downtown LA. Or use the people-mover from LAX if flying same day.
+
+## Miami (Hard Rock Stadium)
+No direct rail. Ride-share or driving with stadium parking pre-booked. Plan 45 minutes from South Beach off-peak, 90+ on match days.
+
+## What to do
+Pre-book your stadium return. Surge pricing for Uber/Lyft hits 3-5x on match-day egress. Public transit in NYC, Philly, Boston is the cheapest and often fastest. In LA, Dallas, Houston, Miami, accept that 90 minutes of buffer is realistic.`,
+    faqs: [
+      {
+        q: 'Which US World Cup 2026 host city has the easiest stadium access by public transit?',
+        a: 'New York / New Jersey (NJ Transit train direct from Penn Station Manhattan) and Philadelphia (SEPTA Broad Street Line) are the easiest. Boston is close behind via commuter rail.',
+      },
+      {
+        q: 'Do I need to rent a car to attend matches in US World Cup 2026 host cities?',
+        a: 'In Dallas, Houston, Kansas City, and Miami yes for stadium access. Atlanta, NYC, Philly, Boston, Seattle, SF Bay all have viable transit. LA is a special case requiring planning.',
+      },
+    ],
+  },
+  {
+    slug: 'world-cup-2026-us-stadium-comparison',
+    title: 'All 11 US 2026 World Cup stadiums compared',
+    description: 'A direct comparison of the 11 US World Cup 2026 stadiums on capacity, sightlines, surface, fan experience and access.',
+    category: 'lifestyle',
+    body: `The 11 US World Cup 2026 stadiums host 78 of the tournament's 104 matches. They differ in capacity, primary use, and fan experience. The breakdown below helps if you have flexibility on which match to attend.
+
+## Largest capacity
+MetLife Stadium (NY/NJ): 82,500 — hosts the final
+AT&T Stadium (Dallas): 80,000 — hosts a semi-final
+Mercedes-Benz Stadium (Atlanta): 71,000
+NRG Stadium (Houston): 72,220
+SoFi Stadium (Los Angeles): 70,240
+
+## Mid-tier capacity
+Lumen Field (Seattle): 68,740
+Levi's Stadium (San Francisco Bay): 68,500
+Lincoln Financial Field (Philadelphia): 67,594
+Gillette Stadium (Boston): 65,878
+Hard Rock Stadium (Miami): 65,326
+Arrowhead Stadium (Kansas City): 76,416
+
+## Surface
+All 11 venues are converting to natural grass for the tournament. SoFi, MetLife and AT&T Stadium are typically artificial; the tournament regulations require natural turf so each is laying grass over the existing surface for the duration.
+
+## Stadium experience
+Roof closed (climate controlled): SoFi, AT&T, NRG, Mercedes-Benz, MetLife (partial).
+Open air: Lumen, Levi's, Lincoln Financial, Gillette, Hard Rock, Arrowhead.
+
+## Famous matches scheduled
+Final: MetLife Stadium, NY/NJ
+Semi-final: AT&T Stadium, Dallas
+Knockout-round venues: SoFi, MetLife, AT&T, Lumen, Hard Rock, NRG, Mercedes-Benz
+
+## Best for atmosphere
+Mercedes-Benz Stadium (Atlanta) and Gillette Stadium (Boston) consistently rank highest for soccer atmosphere among MLS regular venues. SoFi has the newest fan facilities. MetLife is the largest but more anonymous due to size.
+
+## Easiest food and beverage
+Mercedes-Benz Stadium runs a famous flat-pricing model where most food and drinks are below 10 USD. The others all carry typical premium stadium pricing.`,
+    faqs: [
+      {
+        q: 'Which US World Cup 2026 stadium hosts the final?',
+        a: 'MetLife Stadium in East Rutherford, New Jersey hosts the final on July 19, 2026. Capacity around 82,500.',
+      },
+      {
+        q: 'Are the US World Cup 2026 stadiums grass or artificial turf?',
+        a: 'All 11 are using natural grass for the tournament. Several (SoFi, MetLife, AT&T) typically use artificial turf and are laying natural grass over their existing surface for the World Cup.',
+      },
+    ],
+  },
+  {
+    slug: 'world-cup-2026-us-east-coast-multi-city-itinerary',
+    title: 'East Coast US multi-city itinerary for the 2026 World Cup',
+    description: 'A practical multi-city itinerary chaining East Coast US host cities for fans attending several 2026 World Cup matches.',
+    category: 'lifestyle',
+    body: `Five US host cities sit on the East Coast within reasonable travel distance: Boston, NY/NJ, Philadelphia, Atlanta, and Miami. The itinerary below works for fans planning 7 to 14 days chasing multiple matches.
+
+## The geographic logic
+Boston, NY/NJ and Philadelphia form a tight northeast triangle (each pair under 4 hours by Amtrak or car). Atlanta and Miami are further south, each a flight from the triangle but close to each other via flight or 10-hour drive.
+
+## Suggested 10-day route
+Days 1-3: New York City as base. Walking the city, attending a MetLife match.
+Days 4-5: Philadelphia. 2-hour train ride, attend a match at Lincoln Financial.
+Days 6-7: Boston via train (4 hours). Attend a Gillette match.
+Days 8-9: Fly to Atlanta. Attend a Mercedes-Benz match.
+Day 10: Fly to Miami for the final stretch or fly home.
+
+## Where to base
+Stay in city centers, not near stadiums. Stadium-adjacent hotels triple in price on match days. Downtown stays are cheaper, food/transit options are better, and stadium transit from city centre is well-organised.
+
+## Transport between cities
+Amtrak Acela: Boston-NYC-Philly-DC corridor. Fast, comfortable, no airport security. Book early for tournament-period pricing.
+Domestic flights: NYC-Atlanta-Miami short hauls. Watch for ATL connection issues; the airport is among the busiest in the world during the tournament.
+Rental car: only if you plan side trips. The Northeast cities work better with transit than car.
+
+## Practical money tips
+Multi-currency account (Wise USD wallet) avoids 2-4 percent FX bleed across vendors. Hotels in NYC and Miami get expensive fast; book 6+ months ahead for tournament dates.
+
+## Match ticket strategy
+FIFA's official secondary marketplace is the safest source. Avoid scalper sites; counterfeit ticket cases at the 2022 World Cup were widespread.
+
+## Time budget per match
+4 hours stadium transit + match + return. Plan accordingly; one match day eats most of one day even with good planning.`,
+    faqs: [
+      {
+        q: 'Can I do multiple US World Cup 2026 matches in one trip?',
+        a: 'Yes, especially on the East Coast where Boston, NYC/NJ, Philly are tightly connected by Amtrak. A 7-10 day trip can comfortably catch 3-4 matches across cities.',
+      },
+      {
+        q: 'Is Amtrak Acela faster than flying between East Coast US host cities?',
+        a: 'For Boston-NYC-Philly-DC, yes when you include airport security and transit. For Atlanta and Miami, you need to fly.',
+      },
+    ],
+  },
+  {
+    slug: 'world-cup-2026-us-watch-parties-and-fan-zones',
+    title: 'Watch parties and fan zones across US host cities for the 2026 World Cup',
+    description: 'Official and unofficial watch parties, fan zones, and bar guides for fans attending or watching the 2026 World Cup in US host cities.',
+    category: 'lifestyle',
+    body: `Most fans at the 2026 World Cup will not attend every match in person but will watch in fan zones, bars, and watch parties across host cities. The setup varies sharply by city.
+
+## Official FIFA Fan Festival sites
+FIFA operates official Fan Festival sites in each host city with giant screens, food, sponsor activations, and free entry. Locations announced per city:
+- NYC: Liberty State Park (Jersey City side)
+- LA: Exposition Park
+- Atlanta: Centennial Olympic Park
+- Boston: Boston Common
+- Dallas: AT&T Discovery District
+- Houston: Discovery Green
+- Kansas City: National WWI Museum and Memorial grounds
+- Miami: Bayfront Park
+- Philadelphia: Independence Mall
+- San Francisco Bay: San Jose Plaza de César Chávez
+- Seattle: Seattle Center
+
+## Unofficial fan zones
+Major sports bars in each city host watch parties. Atlanta's bar scene on Edgewood Avenue and Boston's around Fenway draw big crowds. LA's Soccer City venues and NYC's Hell's Kitchen Irish pubs are reliable for major-country support.
+
+## National team specific
+Each country has a few standout US bars where fans gather: French Toast NYC for France, Banger's in Austin for Argentina, Ole Ole in Miami for Mexico, Brazilian Steakhouse District in Chicago for Brazil. Country-specific group chats and ambassador-organized events surface most national-team venues.
+
+## Cost
+Official Fan Festivals are free entry. Bar-based watch parties usually no cover but inflated drink prices on match days (10-15 USD per beer). Some hotels run private watch parties for guests.
+
+## Booking
+Fan Festivals are first-come; arrive 2 hours before kick-off for marquee matches. Reserved table watch parties at bars require deposits ahead of high-stakes matches (group decider, knockout).
+
+## Connectivity
+WiFi at Fan Festivals is overwhelmed during peak matches. Bring a charged power bank; depend on your local SIM data for ticketing app access or transit apps.`,
+    faqs: [
+      {
+        q: 'Are the FIFA Fan Festival sites free to attend?',
+        a: 'Yes, official FIFA Fan Festivals in all 11 US host cities have free entry. Expect long lines and packed crowds for marquee matches.',
+      },
+      {
+        q: 'Where do specific national team supporters watch the 2026 World Cup in US cities?',
+        a: "Country-specific bars cluster in each major US city. French Toast NYC, Banger's in Austin for Argentina, Ole Ole in Miami for Mexico are well-known examples. Country group chats organize most events.",
+      },
+    ],
+  },
+  {
+    slug: 'world-cup-2026-working-remote-from-us-as-foreign-fan',
+    title: 'Working remote from the US during the 2026 World Cup as a foreign fan',
+    description: 'The visa and tax constraints on working remotely from the US during the 2026 World Cup as a foreign visitor.',
+    category: 'visa',
+    body: `Foreign fans planning extended US stays during the 2026 World Cup often want to combine match attendance with continued remote work. The legal picture is narrower than most assume.
+
+## ESTA and B-2 do not permit work
+The Visa Waiver Program (ESTA) and B-2 tourist visa both explicitly forbid paid work while physically in the United States. This includes remote work for non-US employers and freelance work for non-US clients. Customs and Border Protection enforcement on this has tightened in 2026.
+
+## What is allowed
+Tourism, attending matches, meeting friends, attending events. Personal correspondence and social media is fine. Tax-residency in your home country is unchanged by a short US stay under VWP.
+
+## What is not allowed
+Logging billable hours for an employer or client while physically in the US, even if the work is performed for a non-US entity and paid in non-US currency. The location of performance is what matters under US law.
+
+## The risk profile
+For short stays (under 30 days) and senior employees of major non-US companies, enforcement is virtually zero. For digital nomads with visible online presence and multiple short stays, scrutiny at re-entry has increased.
+
+## Legal alternatives
+B-1 business visa: limited business activities allowed (meetings, conferences), still not paid work.
+O-1 or H-1B: actual work visas, irrelevant for short tournament trips.
+L-1: intra-company transfer; not applicable for short stays.
+
+## Practical advice
+Take genuine PTO for your tournament trip. Notify your employer of your travel dates and confirm you are not expected to work. Reset your laptop usage during the trip if you are concerned about logged activity.
+
+## What about freelancers
+Freelance contractors face the same constraint. Bill clients before and after your US trip; do not log new hours during the US stay. The IRS does not pursue individual short-stay enforcement, but CBP entry questioning has.
+
+## If your stay extends
+Beyond 90 days on VWP you need a different status. Most fans attending the full tournament arc do so under multiple shorter trips with returns to their home country in between.`,
+    faqs: [
+      {
+        q: 'Can I work remotely from the US during the 2026 World Cup on an ESTA or B-2?',
+        a: 'No. Both statuses explicitly forbid paid work while physically in the US, including remote work for non-US employers. Take genuine PTO instead.',
+      },
+      {
+        q: 'What happens if I work remotely from the US without authorization?',
+        a: 'Risk varies. For short stays the practical enforcement is low; for repeated short stays with visible online presence, CBP can deny re-entry and revoke ESTA. The safer path is genuine PTO.',
+      },
+    ],
+  },
 );
 
 // Build-time filter: any guide with a future publishedAt is hidden from
