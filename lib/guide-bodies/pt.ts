@@ -3056,4 +3056,197 @@ Tentar trabalhar horário integral enquanto vai aos jogos. Não dizer nada com a
       { q: "Posso trabalhar async em torno dos horários dos jogos durante a Copa do Mundo?", a: "Por uma semana, sim. Além disso, horas deslocadas de forma sustentada degradam a qualidade do trabalho. Tire PTO para os jogos mais importantes e trabalhe em horário normal o resto do torneio." },
     ],
   },
+  'world-cup-2026-esta-visa-for-international-fans': {
+    body: `Onze das dezesseis cidades-sede da Copa do Mundo 2026 estão nos Estados Unidos. Torcedores internacionais precisam de um ESTA ou de um visto B-2 para participar. Os prazos de processamento e os requisitos de documentação ficaram mais rígidos em 2026; planejar com antecedência faz diferença.
+
+## ESTA: países do Visa Waiver Program
+Se você tem passaporte de um país do Visa Waiver Program (a maioria da UE, Reino Unido, Austrália, Japão, Coreia do Sul, Singapura, etc.), o ESTA é o caminho. Solicite online pelo site oficial da CBP, taxa em torno de 21 USD, aprovação tipicamente em até 72 horas, embora a Customs and Border Protection peça pelo menos 7 dias de antecedência antes da viagem.
+
+## Validade do ESTA
+Válido por 2 anos ou até a expiração do passaporte, o que ocorrer primeiro. Cada visita deve ter no máximo 90 dias. Múltiplas entradas são permitidas dentro do período de validade.
+
+## Visto B-2: para todos os outros
+Viajantes de países fora do VWP precisam de um visto de turismo B-2. Solicite pela embaixada dos EUA no seu país: formulário DS-160, entrevista presencial, biometria. Os prazos de processamento em 2026 variam de 60 a 180 dias dependendo da embaixada; a embaixada da Cidade do México está entre as mais rápidas, enquanto várias embaixadas sul-americanas têm filas de meses.
+
+## O que levar na entrada
+Passaporte válido por pelo menos 6 meses após a viagem. ESTA aprovado ou visto B-2 no passaporte. Comprovante de hospedagem, voo de volta e meios financeiros. Confirmações de ingressos de jogos ajudam mas não são estritamente exigidas.
+
+## O que você não pode fazer com ESTA ou B-2
+Trabalhar, incluindo trabalho remoto para clientes não americanos enquanto estiver fisicamente nos EUA. O IRS e a CBP se alinharam de forma mais rígida nesse ponto; não registre horas pagas enquanto estiver nos EUA em status de turista. Apenas assistir aos jogos e fazer turismo.
+
+## Travessias para Canadá ou México
+O ESTA não permite automaticamente a reentrada após viagens paralelas. Permaneça nos EUA durante toda a viagem se ela for curta; se for multi-país, verifique as orientações mais recentes da CBP sobre janelas de reentrada.`,
+    faqs: [
+      { q: "Quanto tempo leva para o ESTA ser aprovado para a Copa do Mundo 2026?", a: "A maioria das aprovações sai em até 72 horas. A CBP pede pelo menos 7 dias de antecedência antes da viagem, e o processamento ficou mais lento em 2026 devido ao volume do torneio. Solicite com pelo menos 2 semanas de antecedência." },
+      { q: "Posso trabalhar remotamente dos EUA durante a Copa do Mundo 2026 com um ESTA?", a: "Não. Os status ESTA e B-2 não permitem nenhum trabalho remunerado, incluindo trabalho remoto para empregadores estrangeiros enquanto você estiver fisicamente nos Estados Unidos. Limite-se ao turismo." },
+    ],
+  },
+  'world-cup-2026-us-host-cities-public-transit-guide': {
+    body: `As 11 cidades-sede americanas da Copa do Mundo 2026 variam enormemente na qualidade do transporte público. Algumas têm trem funcional até o estádio; outras exigem carro ou aplicativo de transporte por padrão. Planejar a abordagem certa economiza horas.
+
+## Cidades com bom transporte ao estádio
+NYC / Nova Jersey (MetLife): trem NJ Transit a partir da Penn Station em Manhattan, 35 minutos até o portão do estádio. Boston (Gillette em Foxborough): trem de subúrbio a partir da South Station, 50 minutos. Filadélfia (Lincoln Financial Field): SEPTA Broad Street Line direto.
+
+## Cidades com transporte utilizável mas mais lento
+Seattle (Lumen Field): Sound Transit Link, trem leve a uma distância caminhável. Área da Baía de São Francisco (Levi's Stadium): VTA light rail mais caminhada mais longa; melhor usar os ônibus expressos dedicados. Atlanta (Mercedes-Benz Stadium): trem MARTA até a estação GWCC/CNN Center, caminhável.
+
+## Cidades onde você realmente precisa de carro ou aplicativo
+Dallas (AT&T Stadium em Arlington): sem trem ao estádio. Planeje de 60 a 90 minutos de Uber a partir do centro de Dallas, mais em dia de jogo. Houston (NRG Stadium): existe trem leve mas é lento; aplicativo de transporte é mais rápido. Kansas City (Arrowhead Stadium): sem trem. A maioria dos torcedores estaciona; preços dinâmicos de aplicativos em dias de jogo.
+
+## Los Angeles (SoFi Stadium): planeje com antecedência
+A Metro K Line para a uma distância caminhável. O trânsito em dia de jogo é o pior do país; reserve 2 horas a partir de qualquer ponto a oeste do centro de LA. Ou use o people-mover do LAX se chegar de voo no mesmo dia.
+
+## Miami (Hard Rock Stadium)
+Sem trem direto. Aplicativo de transporte ou direção com estacionamento do estádio reservado com antecedência. Planeje 45 minutos a partir de South Beach fora do pico, mais de 90 em dias de jogo.
+
+## O que fazer
+Reserve antecipadamente seu retorno do estádio. Os preços dinâmicos do Uber/Lyft atingem de 3 a 5 vezes na saída em dia de jogo. O transporte público em NYC, Filadélfia e Boston é o mais barato e muitas vezes o mais rápido. Em LA, Dallas, Houston e Miami, aceite que 90 minutos de margem é realista.`,
+    faqs: [
+      { q: "Qual cidade-sede americana da Copa do Mundo 2026 tem o acesso mais fácil ao estádio por transporte público?", a: "Nova York / Nova Jersey (trem NJ Transit direto da Penn Station em Manhattan) e Filadélfia (SEPTA Broad Street Line) são as mais fáceis. Boston vem logo atrás via trem de subúrbio." },
+      { q: "Preciso alugar um carro para ir aos jogos nas cidades-sede americanas da Copa do Mundo 2026?", a: "Em Dallas, Houston, Kansas City e Miami, sim, para o acesso ao estádio. Atlanta, NYC, Filadélfia, Boston, Seattle e a área da Baía de SF têm transporte viável. LA é um caso especial que exige planejamento." },
+    ],
+  },
+  'world-cup-2026-us-stadium-comparison': {
+    body: `Os 11 estádios americanos da Copa do Mundo 2026 receberão 78 dos 104 jogos do torneio. Eles diferem em capacidade, uso principal e experiência do torcedor. A análise abaixo ajuda se você tem flexibilidade sobre qual jogo assistir.
+
+## Maior capacidade
+MetLife Stadium (NY/NJ): 82.500, recebe a final
+AT&T Stadium (Dallas): 80.000, recebe uma semifinal
+Mercedes-Benz Stadium (Atlanta): 71.000
+NRG Stadium (Houston): 72.220
+SoFi Stadium (Los Angeles): 70.240
+
+## Capacidade intermediária
+Lumen Field (Seattle): 68.740
+Levi's Stadium (Baía de São Francisco): 68.500
+Lincoln Financial Field (Filadélfia): 67.594
+Gillette Stadium (Boston): 65.878
+Hard Rock Stadium (Miami): 65.326
+Arrowhead Stadium (Kansas City): 76.416
+
+## Superfície
+Todos os 11 locais estão convertendo para grama natural para o torneio. SoFi, MetLife e AT&T Stadium são tipicamente sintéticos; as regras do torneio exigem gramado natural, então cada um está colocando grama sobre a superfície existente durante o período.
+
+## Experiência no estádio
+Teto fechado (clima controlado): SoFi, AT&T, NRG, Mercedes-Benz, MetLife (parcial).
+A céu aberto: Lumen, Levi's, Lincoln Financial, Gillette, Hard Rock, Arrowhead.
+
+## Jogos famosos agendados
+Final: MetLife Stadium, NY/NJ
+Semifinal: AT&T Stadium, Dallas
+Sedes das fases eliminatórias: SoFi, MetLife, AT&T, Lumen, Hard Rock, NRG, Mercedes-Benz
+
+## Melhor atmosfera
+Mercedes-Benz Stadium (Atlanta) e Gillette Stadium (Boston) consistentemente aparecem no topo da atmosfera de futebol entre os estádios regulares da MLS. SoFi tem as instalações mais novas para o torcedor. MetLife é o maior, mas mais impessoal devido ao tamanho.
+
+## Comida e bebida mais acessíveis
+O Mercedes-Benz Stadium opera um famoso modelo de preço único em que a maioria da comida e bebida fica abaixo de 10 USD. Os outros todos têm o tradicional preço premium de estádio.`,
+    faqs: [
+      { q: "Qual estádio americano da Copa do Mundo 2026 recebe a final?", a: "O MetLife Stadium em East Rutherford, Nova Jersey recebe a final em 19 de julho de 2026. Capacidade em torno de 82.500." },
+      { q: "Os estádios americanos da Copa do Mundo 2026 são de grama natural ou sintética?", a: "Todos os 11 estão usando grama natural para o torneio. Vários (SoFi, MetLife, AT&T) tipicamente usam grama sintética e estão colocando grama natural sobre a superfície existente para a Copa do Mundo." },
+    ],
+  },
+  'world-cup-2026-us-east-coast-multi-city-itinerary': {
+    body: `Cinco cidades-sede americanas ficam na Costa Leste a distâncias razoáveis de viagem: Boston, NY/NJ, Filadélfia, Atlanta e Miami. O roteiro abaixo funciona para torcedores planejando de 7 a 14 dias para acompanhar vários jogos.
+
+## A lógica geográfica
+Boston, NY/NJ e Filadélfia formam um triângulo apertado no nordeste (cada par com menos de 4 horas de Amtrak ou carro). Atlanta e Miami ficam mais ao sul, cada uma a um voo do triângulo mas próximas entre si por voo ou 10 horas de carro.
+
+## Roteiro sugerido de 10 dias
+Dias 1-3: Nova York como base. Caminhando pela cidade, assistindo a um jogo no MetLife.
+Dias 4-5: Filadélfia. 2 horas de trem, assista a um jogo no Lincoln Financial.
+Dias 6-7: Boston via trem (4 horas). Assista a um jogo no Gillette.
+Dias 8-9: Voe para Atlanta. Assista a um jogo no Mercedes-Benz.
+Dia 10: Voe para Miami para o trecho final ou volte para casa.
+
+## Onde se hospedar
+Hospede-se nos centros das cidades, não perto dos estádios. Hotéis próximos aos estádios triplicam de preço em dias de jogo. Hospedagens no centro são mais baratas, opções de comida e transporte são melhores, e o trânsito do centro até o estádio é bem organizado.
+
+## Transporte entre cidades
+Amtrak Acela: corredor Boston-NYC-Filadélfia-DC. Rápido, confortável, sem segurança de aeroporto. Reserve cedo para os preços do período do torneio.
+Voos domésticos: trechos curtos NYC-Atlanta-Miami. Atenção a problemas de conexão em ATL; o aeroporto está entre os mais movimentados do mundo durante o torneio.
+Aluguel de carro: só se você planeja viagens paralelas. As cidades do Nordeste funcionam melhor com transporte do que com carro.
+
+## Dicas práticas de dinheiro
+Conta multimoeda (carteira USD Wise) evita perdas de 2 a 4 por cento em câmbio com vendedores diversos. Hotéis em NYC e Miami ficam caros rapidamente; reserve com 6 meses de antecedência para as datas do torneio.
+
+## Estratégia de ingressos
+O mercado secundário oficial da FIFA é a fonte mais segura. Evite sites de cambistas; casos de ingressos falsificados na Copa do Mundo 2022 foram generalizados.
+
+## Tempo a reservar por jogo
+4 horas entre transporte ao estádio, jogo e volta. Planeje de acordo; um dia de jogo consome a maior parte de um dia mesmo com bom planejamento.`,
+    faqs: [
+      { q: "Posso fazer vários jogos da Copa do Mundo 2026 nos EUA em uma única viagem?", a: "Sim, especialmente na Costa Leste, onde Boston, NYC/NJ e Filadélfia estão muito bem conectadas pela Amtrak. Uma viagem de 7 a 10 dias pode confortavelmente cobrir de 3 a 4 jogos entre cidades." },
+      { q: "O Amtrak Acela é mais rápido que voar entre as cidades-sede americanas da Costa Leste?", a: "Para Boston-NYC-Filadélfia-DC, sim, quando você inclui segurança do aeroporto e deslocamentos. Para Atlanta e Miami, você precisa voar." },
+    ],
+  },
+  'world-cup-2026-us-watch-parties-and-fan-zones': {
+    body: `A maioria dos torcedores na Copa do Mundo 2026 não vai assistir a todos os jogos presencialmente, mas vai acompanhar em fan zones, bares e festas de visualização nas cidades-sede. A estrutura varia bastante por cidade.
+
+## Locais oficiais do FIFA Fan Festival
+A FIFA opera locais oficiais do Fan Festival em cada cidade-sede com telões gigantes, comida, ativações de patrocinadores e entrada gratuita. Locais anunciados por cidade:
+- NYC: Liberty State Park (lado de Jersey City)
+- LA: Exposition Park
+- Atlanta: Centennial Olympic Park
+- Boston: Boston Common
+- Dallas: AT&T Discovery District
+- Houston: Discovery Green
+- Kansas City: terrenos do National WWI Museum and Memorial
+- Miami: Bayfront Park
+- Filadélfia: Independence Mall
+- Área da Baía de São Francisco: Plaza de César Chávez em San Jose
+- Seattle: Seattle Center
+
+## Fan zones não oficiais
+Grandes sports bars em cada cidade promovem festas de visualização. A cena de bares de Atlanta na Edgewood Avenue e a de Boston ao redor de Fenway atraem grandes multidões. Os locais Soccer City de LA e os pubs irlandeses de Hell's Kitchen em NYC são opções confiáveis para apoio das principais seleções.
+
+## Específico por seleção
+Cada país tem alguns bares de destaque nos EUA onde os torcedores se reúnem: French Toast em NYC para a França, Banger's em Austin para a Argentina, Ole Ole em Miami para o México, o distrito de churrascarias brasileiras em Chicago para o Brasil. Grupos específicos por país e eventos organizados por embaixadas listam a maioria desses locais.
+
+## Custo
+Os Fan Festivals oficiais têm entrada gratuita. As festas de visualização em bares geralmente não têm couvert, mas os preços das bebidas inflacionam em dias de jogo (10 a 15 USD por cerveja). Alguns hotéis fazem festas privadas de visualização para hóspedes.
+
+## Reservas
+Os Fan Festivals funcionam por ordem de chegada; chegue 2 horas antes do início para jogos de grande relevância. Mesas reservadas para festas de visualização em bares exigem depósito antes de jogos de grande importância (decisivos de grupo, mata-mata).
+
+## Conectividade
+O WiFi nos Fan Festivals fica sobrecarregado durante os jogos de pico. Leve um power bank carregado; conte com os dados do seu chip local para acesso ao aplicativo de ingressos ou aplicativos de transporte.`,
+    faqs: [
+      { q: "Os locais do FIFA Fan Festival têm entrada gratuita?", a: "Sim, os Fan Festivals oficiais da FIFA em todas as 11 cidades-sede americanas têm entrada gratuita. Espere longas filas e multidões lotadas para jogos de grande relevância." },
+      { q: "Onde torcedores de seleções específicas assistem à Copa do Mundo 2026 nas cidades americanas?", a: "Bares específicos por país se concentram em cada grande cidade dos EUA. French Toast em NYC, Banger's em Austin para a Argentina, Ole Ole em Miami para o México são exemplos conhecidos. Grupos de chat por país organizam a maioria dos eventos." },
+    ],
+  },
+  'world-cup-2026-working-remote-from-us-as-foreign-fan': {
+    body: `Torcedores estrangeiros que planejam estadias prolongadas nos EUA durante a Copa do Mundo 2026 muitas vezes querem combinar a presença nos jogos com a continuidade do trabalho remoto. O quadro legal é mais restrito do que a maioria imagina.
+
+## ESTA e B-2 não permitem trabalho
+O Visa Waiver Program (ESTA) e o visto de turista B-2 proíbem explicitamente trabalho remunerado enquanto você estiver fisicamente nos Estados Unidos. Isso inclui trabalho remoto para empregadores não americanos e trabalho freelance para clientes não americanos. A fiscalização da Customs and Border Protection sobre isso ficou mais rígida em 2026.
+
+## O que é permitido
+Turismo, ir a jogos, encontrar amigos, participar de eventos. Correspondência pessoal e redes sociais estão liberadas. A residência fiscal no seu país de origem não muda com uma estadia curta nos EUA sob o VWP.
+
+## O que não é permitido
+Registrar horas faturáveis para um empregador ou cliente enquanto estiver fisicamente nos EUA, mesmo que o trabalho seja feito para uma entidade não americana e pago em moeda não americana. O local de execução é o que importa sob a lei americana.
+
+## O perfil de risco
+Para estadias curtas (menos de 30 dias) e funcionários sênior de grandes empresas não americanas, a fiscalização é praticamente zero. Para nômades digitais com presença online visível e múltiplas estadias curtas, o escrutínio na reentrada aumentou.
+
+## Alternativas legais
+Visto de negócios B-1: atividades de negócios limitadas permitidas (reuniões, conferências), ainda assim sem trabalho remunerado.
+O-1 ou H-1B: vistos de trabalho de fato, irrelevantes para viagens curtas de torneio.
+L-1: transferência intracorporativa; não se aplica a estadias curtas.
+
+## Conselho prático
+Tire PTO de verdade para a sua viagem do torneio. Avise seu empregador das datas e confirme que você não é esperado para trabalhar. Resete o uso do seu laptop durante a viagem se você estiver preocupado com a atividade registrada.
+
+## E sobre freelancers
+Contratados freelance enfrentam a mesma restrição. Fature clientes antes e depois da sua estadia nos EUA; não registre novas horas durante a permanência no país. O IRS não persegue casos individuais de estadia curta, mas o questionamento da CBP na entrada aumentou.
+
+## Se sua estadia se estender
+Além de 90 dias no VWP, você precisa de um status diferente. A maioria dos torcedores que acompanha todo o arco do torneio faz isso por meio de várias viagens mais curtas com retornos ao país de origem entre elas.`,
+    faqs: [
+      { q: "Posso trabalhar remotamente dos EUA durante a Copa do Mundo 2026 com um ESTA ou B-2?", a: "Não. Ambos os status proíbem explicitamente o trabalho remunerado enquanto você estiver fisicamente nos EUA, incluindo trabalho remoto para empregadores não americanos. Tire PTO de verdade no lugar." },
+      { q: "O que acontece se eu trabalhar remotamente dos EUA sem autorização?", a: "O risco varia. Para estadias curtas, a fiscalização prática é baixa; para estadias curtas repetidas com presença online visível, a CBP pode negar reentrada e revogar o ESTA. O caminho mais seguro é tirar PTO de verdade." },
+    ],
+  },
 };
