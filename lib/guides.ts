@@ -3134,7 +3134,6 @@ If a deal you want appears at full lifetime price in March, the same vendor ofte
     title: 'Beehiiv vs Substack for newsletter monetisation in 2026',
     description: 'Direct comparison of how Beehiiv and Substack handle monetisation for a tech newsletter operator.',
     category: 'career',
-    publishedAt: '2026-06-16T03:00:00Z',
     body: `Beehiiv and Substack both publish newsletters but the monetisation surface differs sharply. The right platform depends on your strategy.
 
 ## Substack: paid-subscription focused
@@ -3175,7 +3174,6 @@ You can move from Substack to Beehiiv (and vice versa). Subscribers transfer cle
     title: 'Claude prompt patterns developers actually use',
     description: 'The handful of prompt patterns that consistently produce useful output when using Claude for development work.',
     category: 'tools',
-    publishedAt: '2026-06-17T03:00:00Z',
     body: `Most prompt-engineering content is generic. The patterns that work for developers using Claude in actual project work are narrower and concrete.
 
 ## Pattern 1: anchor with constraints
@@ -3214,7 +3212,6 @@ Most experienced developers integrate Claude through one of: terminal CLI, IDE a
     title: 'Handling common Fiverr buyer objections that kill orders',
     description: 'The five buyer objections that come up most on developer gigs in 2026 and the replies that close the order.',
     category: 'freelance',
-    publishedAt: '2026-06-18T03:00:00Z',
     body: `Most lost Fiverr orders die in the messaging step, not at the gig page. Five buyer objections come up repeatedly on developer gigs. Knowing how to handle each closes more orders without lowering rate.
 
 ## Objection 1: "Can you do it cheaper?"
@@ -3253,7 +3250,6 @@ If the buyer\\'s communication style suggests scope creep, midnight messages, or
     title: 'Wise debit card tips for travelling developers',
     description: 'How the Wise debit card actually works abroad, the fees that surprise new users, and the spending pattern that works.',
     category: 'freelance',
-    publishedAt: '2026-06-19T03:00:00Z',
     body: `The Wise debit card is one of the most-used cards in the nomad and remote-worker stack. The way it works in practice is more nuanced than the marketing suggests.
 
 ## How spending works
@@ -3294,7 +3290,6 @@ Card spend is just spending; no income tax implication. But every spend in a for
     title: 'How Mercor scores evaluator quality, explained',
     description: 'The signals Mercor uses to rate evaluator quality and what to do with each one to climb the rate ladder.',
     category: 'freelance',
-    publishedAt: '2026-06-20T03:00:00Z',
     body: `Mercor pays evaluators differently based on a quality score that combines several signals. Understanding each lets you optimise where it matters and ignore the noise.
 
 ## Signal 1: inter-rater agreement
@@ -3333,7 +3328,6 @@ Sustained inter-rater agreement below threshold across multiple tracks. Justific
     title: 'AppSumo code stacking explained for buyers in 2026',
     description: 'When AppSumo lifetime deal codes can stack to higher tiers, when they cannot, and how to plan around it.',
     category: 'tools',
-    publishedAt: '2026-06-21T03:00:00Z',
     body: `Many AppSumo lifetime deals allow buyers to stack multiple codes from the same deal to unlock higher tiers. The mechanics are simple but the planning is where most buyers lose money.
 
 ## What stacking is
@@ -3369,7 +3363,6 @@ Buy Tier 1. Use it in real workflow for 2 weeks. If the tool clicks and the cap 
     title: 'Picking a tech newsletter niche that still works in 2026',
     description: 'How to choose a tech newsletter niche that has enough audience to grow and enough scarcity to stand out.',
     category: 'career',
-    publishedAt: '2026-06-22T03:00:00Z',
     body: `The hardest decision when starting a tech newsletter is the niche. Pick too broad and you compete with established giants. Pick too narrow and you run out of audience. The pattern that works in 2026 is below.
 
 ## The two failure modes
@@ -3409,7 +3402,6 @@ You will publish 50 times in the first year. Pick a niche you find genuinely int
     title: 'SafetyWing and pre-existing conditions: what is covered',
     description: 'How SafetyWing handles pre-existing conditions in 2026 and what to disclose at signup.',
     category: 'visa',
-    publishedAt: '2026-06-23T03:00:00Z',
     body: `Pre-existing conditions are the most-misunderstood part of nomad insurance. The SafetyWing 2026 policy treats them specifically; understanding the rules avoids surprise denials.
 
 ## What counts as pre-existing
@@ -3448,7 +3440,6 @@ If you have a chronic condition that needs ongoing care, SafetyWing alone is ins
     title: 'Running multiple Fiverr gigs without diluting any of them',
     description: 'How to run several Fiverr gigs from the same seller account in 2026 without weakening conversion on any individual gig.',
     category: 'freelance',
-    publishedAt: '2026-06-24T03:00:00Z',
     body: `Many sellers try to run 5+ gigs at once and find that none of them performs well. The pattern that works in 2026 is more disciplined.
 
 ## How many gigs to run
@@ -3484,7 +3475,6 @@ A gig that has not produced an order in 90 days and has fewer than 10 impression
     title: 'Wise Business vs Revolut Business for freelance developers',
     description: 'A direct comparison of the two leading business accounts for freelance developers in 2026.',
     category: 'freelance',
-    publishedAt: '2026-06-25T03:00:00Z',
     body: `Both Wise Business and Revolut Business serve the freelance-developer market but they optimise for different things. Picking the right one matters at scale.
 
 ## Wise Business
@@ -3528,7 +3518,6 @@ Putting all volume through one account if cross-border. The redundancy is worth 
     title: 'Mercor vs Tortoise vs Outlier: AI evaluation platforms compared',
     description: 'Three growing AI evaluation platforms compared on acceptance bar, hourly rate and task supply.',
     category: 'freelance',
-    publishedAt: '2026-06-26T03:00:00Z',
     body: `The AI evaluation market has expanded beyond Mercor and Scale in 2026. Three platforms account for most expert paid evaluation work: Mercor, Tortoise, and Outlier (Scale AI brand).
 
 ## Mercor
@@ -3571,7 +3560,6 @@ Premium domains (formal verification, advanced math, specific legal) command hig
     title: 'AppSumo buying guide for indie hackers in 2026',
     description: 'How indie hackers should approach AppSumo deals in 2026 to maximise value and avoid stack bloat.',
     category: 'tools',
-    publishedAt: '2026-06-27T03:00:00Z',
     body: `Indie hackers are the core AppSumo audience but also the most exposed to over-buying. The 2026 buying discipline below maximises value and avoids stack bloat.
 
 ## Rule 1: never buy theoretical
@@ -3615,7 +3603,6 @@ An indie hacker who spends more than 1,000 USD per year on lifetime deals is pro
     title: 'Cross-promoting a tech newsletter and blog for compound growth',
     description: 'How to structure the relationship between a tech newsletter and a public blog so they amplify each other.',
     category: 'career',
-    publishedAt: '2026-06-28T03:00:00Z',
     body: `The strongest tech newsletters run a public blog in parallel. Done right, the two feed each other and reach a long-term ceiling much higher than either alone. The structural patterns are below.
 
 ## Blog feeds search; newsletter feeds engagement
@@ -3657,7 +3644,6 @@ Year 3+: the two channels each drive 50 percent of growth and revenue.`,
     title: 'Nomad insurance by country tier: where standard plans fall short',
     description: 'How nomad insurance coverage and reimbursement experience varies by country, with a tier framework for picking the right cover.',
     category: 'visa',
-    publishedAt: '2026-06-29T03:00:00Z',
     body: `Standard nomad insurance (SafetyWing, Genki, IATI) covers most countries adequately but the experience varies sharply by destination. The country-tier framework below helps you pick coverage that actually works where you go.
 
 ## Tier A (works well with standard nomad insurance)
@@ -3693,7 +3679,6 @@ Even where the policy covers, getting reimbursed requires paying upfront in most
     title: 'Fiverr Pro application checklist for 2026',
     description: 'The portfolio, profile, and proof points that pass the Fiverr Pro review in 2026.',
     category: 'freelance',
-    publishedAt: '2026-06-30T03:00:00Z',
     body: `Fiverr Pro is the curated, manually-vetted tier for high-end sellers. The 2026 application bar is higher than at launch; preparing properly is worth the upfront work.
 
 ## What Fiverr Pro is
@@ -3736,7 +3721,6 @@ If rejected, you can re-apply after 6 months. Use the gap to strengthen the spec
     title: 'Receiving Stripe payouts as a non-US developer in 2026',
     description: 'How non-US developers can accept Stripe payouts and what the alternatives are in 2026.',
     category: 'freelance',
-    publishedAt: '2026-07-01T03:00:00Z',
     body: `Stripe processes most online developer payments globally but the payout side differs by country. Non-US developers in 2026 have a few clean paths.
 
 ## Where Stripe operates directly
@@ -3775,7 +3759,6 @@ Stripe (direct or via Atlas) → multi-currency account (Wise) → local bank fo
     title: 'AI pair-programming tools compared: Cursor, Claude, Copilot',
     description: 'A practical comparison of the three most-used AI pair-programming tools for developers in 2026.',
     category: 'tools',
-    publishedAt: '2026-07-02T03:00:00Z',
     body: `Three tools dominate AI pair-programming in 2026: Cursor (IDE), Claude (chat or CLI), and GitHub Copilot. Each is best for a specific workflow; mixing them is common but expensive.
 
 ## Cursor
@@ -3823,7 +3806,6 @@ Switching tools weekly. Long generated outputs you do not read. Trusting complet
     title: 'Genki vs SafetyWing claims experience compared',
     description: 'How the actual claim process differs between Genki and SafetyWing, with real-world reimbursement timelines.',
     category: 'visa',
-    publishedAt: '2026-07-03T03:00:00Z',
     body: `Genki and SafetyWing both sell subscription nomad insurance at similar price points but the claim experience differs meaningfully.
 
 ## Genki claim flow
@@ -3869,7 +3851,6 @@ Subscription cancel-anytime model. Mobile-first claim submission. Standard exclu
     title: 'Remote tech interview loops in 2026: what changed',
     description: 'The current shape of remote technical interviews in 2026 and how the changes affect preparation.',
     category: 'finding',
-    publishedAt: '2026-07-04T03:00:00Z',
     body: `Remote technical interview loops have settled into a specific shape in 2026 that differs meaningfully from 2022-2023. The changes affect how to prepare and what to expect.
 
 ## The typical loop in 2026
@@ -3914,7 +3895,6 @@ Mismatched salary expectations surfacing late. Inconsistent answers across round
     title: 'How to quit a remote job without burning bridges',
     description: 'The practical playbook for resigning cleanly from a remote engineering role in 2026.',
     category: 'career',
-    publishedAt: '2026-07-05T03:00:00Z',
     body: `Resigning cleanly from a remote job matters more than from an in-office one because the remote tech world is small and the same people surface again. The 2026 playbook below.
 
 ## Notice period
@@ -3953,7 +3933,6 @@ The way you exit determines whether former colleagues recommend you, hire you ag
     title: 'Surviving remote team meetings in 2026',
     description: 'How to reduce, structure, and survive the meeting load on a remote engineering team.',
     category: 'lifestyle',
-    publishedAt: '2026-07-06T03:00:00Z',
     body: `Remote teams that have not actively pruned their meeting load drift toward 4-6 hours of meetings per day. The teams that thrive aggressively reduce, restructure, and protect maker time.
 
 ## The default trap
@@ -4001,7 +3980,6 @@ A manager who actively cancels meetings, ships written memos instead, and protec
     title: 'How to take a tech sabbatical in 2026',
     description: 'The practical setup for taking a multi-month sabbatical from a tech career without permanently damaging it.',
     category: 'career',
-    publishedAt: '2026-07-07T03:00:00Z',
     body: `Tech sabbaticals (3 to 12 months off) have become more common in 2026 as the field matures. Done well, a sabbatical refreshes your career; done poorly, it leaves a hard-to-explain gap.
 
 ## The financial setup
