@@ -55,6 +55,7 @@ export const metadata: Metadata = {
 const CF_ANALYTICS_TOKEN =
   process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN ?? 'c936ca5662e240edb31f83de853086de';
 const AHREFS_KEY = process.env.NEXT_PUBLIC_AHREFS_KEY ?? 'UHRiRpUtDUeXqcHIFhdjcA';
+const GA_ID = 'G-E3GBH13T19';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -64,9 +65,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="https://logo.clearbit.com" />
         <link rel="preconnect" href="https://static.cloudflareinsights.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
       </head>
       <body className="min-h-screen bg-bg text-ink antialiased font-sans">
         {children}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+        </Script>
         {CF_ANALYTICS_TOKEN && (
           <Script
             strategy="afterInteractive"
