@@ -94,6 +94,24 @@ export function generateStaticParams() {
   return LOCALES.flatMap((lang) => GUIDES.map((g) => ({ lang, slug: g.slug })));
 }
 
+const CAT_CONTEXT: Record<string, string> = {
+  finding: 'remote job search tactics, resume tips and application strategies for tech roles',
+  salary: 'salary benchmarks, equity, and negotiation strategies for remote engineering roles',
+  career: 'career paths, required skills, and roadmaps for remote tech professionals',
+  visa: 'visa options, eligibility requirements, and relocation guides for remote workers',
+  tax: 'tax planning, deductions, and cross-border considerations for remote tech workers',
+  lifestyle: 'productivity, async workflows, and lifestyle design for distributed teams',
+  tools: 'tools, software, and home-office setups for remote engineering teams',
+  freelance: 'freelancing strategies, platforms, pricing, and client-finding for tech professionals',
+};
+
+function guideMetaDesc(base: string, category: string): string {
+  if (base.length >= 130) return base;
+  const ctx = CAT_CONTEXT[category] ?? 'strategies and advice for remote tech workers in 2026';
+  const suffix = ` Covers ${ctx}.`;
+  return (base + suffix).slice(0, 160);
+}
+
 export function generateMetadata({
   params,
 }: {
@@ -101,11 +119,12 @@ export function generateMetadata({
 }): Metadata {
   const g = GUIDE_MAP[params.slug];
   if (!g) return { title: 'Guide not found' };
+  const base = tGuide(g.slug, params.lang, 'description', g.description);
   return buildMetadata({
     locale: params.lang,
     path: `guides/${params.slug}`,
     title: tGuide(g.slug, params.lang, 'title', g.title),
-    description: tGuide(g.slug, params.lang, 'description', g.description),
+    description: guideMetaDesc(base, g.category),
   });
 }
 
