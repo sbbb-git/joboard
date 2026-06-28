@@ -89,8 +89,8 @@ jobs:
             exit 0
           fi
           count=$(echo "$urls" | wc -l)
-          echo "Submitting $count URLs to IndexNow"
-          echo "$urls" | split -l 1000 - /tmp/indexnow-batch-
+          echo "Submitting $count URLs to IndexNow (batches of 10)"
+          echo "$urls" | split -l 10 - /tmp/indexnow-batch-
           for f in /tmp/indexnow-batch-*; do
             urlList=$(jq -R -s -c 'split("\n") | map(select(length > 0))' < "$f")
             payload=$(jq -n --arg host "slateremote.com" --arg key "$INDEXNOW_KEY" --arg keyLocation "$SITE_URL/$INDEXNOW_KEY.txt" --argjson urlList "$urlList" \

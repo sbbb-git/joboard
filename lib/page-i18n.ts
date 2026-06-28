@@ -13,49 +13,49 @@ type WithCategories = Index & { categories: Record<string, string> };
 export const CITIES_I18N: Record<Locale, Index> = {
   en: {
     metaTitle: 'Best cities for remote tech workers',
-    metaDescription: (n) => `In-depth profiles of ${n} cities curated for remote tech workers: cost of living, visa, internet speed, tech ecosystem.`,
+    metaDescription: (n) => `In-depth profiles of ${n} cities curated for remote tech workers: cost of living, visa options, internet speed, coworking hubs and local tech ecosystem.`,
     eyebrow: 'Cities',
     h1: 'Best cities for remote tech workers',
     intro: (n) => `Profiles of ${n} top cities for remote engineers: cost of living, visa pathways, internet speed and local tech ecosystem.`,
   },
   fr: {
     metaTitle: 'Meilleures villes pour les travailleurs tech remote',
-    metaDescription: (n) => `Profils détaillés de ${n} villes triées pour les travailleurs tech remote : coût de la vie, visa, vitesse internet, écosystème tech.`,
+    metaDescription: (n) => `Profils détaillés de ${n} villes triées pour les travailleurs tech remote : coût de la vie, options de visa, vitesse internet, coworking et écosystème tech.`,
     eyebrow: 'Villes',
     h1: 'Meilleures villes pour les travailleurs tech remote',
     intro: (n) => `Profils de ${n} villes top pour ingés remote : coût de la vie, options de visa, vitesse internet et écosystème tech local.`,
   },
   es: {
     metaTitle: 'Mejores ciudades para trabajadores tech remotos',
-    metaDescription: (n) => `Perfiles detallados de ${n} ciudades curadas para trabajadores tech remotos: coste de vida, visa, velocidad de internet, ecosistema tech.`,
+    metaDescription: (n) => `Perfiles detallados de ${n} ciudades para trabajadores tech remotos: coste de vida, opciones de visa, velocidad de internet, coworking y ecosistema tech local.`,
     eyebrow: 'Ciudades',
     h1: 'Mejores ciudades para trabajadores tech remotos',
     intro: (n) => `Perfiles de ${n} ciudades top para ingenieros remotos: coste de vida, vías de visado, velocidad de internet y ecosistema tech local.`,
   },
   de: {
     metaTitle: 'Beste Städte für Remote-Tech-Worker',
-    metaDescription: (n) => `Detaillierte Profile von ${n} Städten, kuratiert für Remote-Tech-Worker: Lebenshaltungskosten, Visa, Internetgeschwindigkeit, Tech-Ökosystem.`,
+    metaDescription: (n) => `Detaillierte Profile von ${n} Städten für Remote-Tech-Worker: Lebenshaltungskosten, Visa-Optionen, Internetgeschwindigkeit, Coworking und Tech-Ökosystem.`,
     eyebrow: 'Städte',
     h1: 'Beste Städte für Remote-Tech-Worker',
     intro: (n) => `Profile von ${n} Top-Städten für Remote-Engineers: Lebenshaltungskosten, Visa-Optionen, Internetgeschwindigkeit und lokales Tech-Ökosystem.`,
   },
   pt: {
     metaTitle: 'Melhores cidades para trabalhadores tech remotos',
-    metaDescription: (n) => `Perfis detalhados de ${n} cidades curadas para trabalhadores tech remotos: custo de vida, visto, velocidade da internet, ecossistema tech.`,
+    metaDescription: (n) => `Perfis detalhados de ${n} cidades para trabalhadores tech remotos: custo de vida, opções de visto, velocidade da internet, coworking e ecossistema tech.`,
     eyebrow: 'Cidades',
     h1: 'Melhores cidades para trabalhadores tech remotos',
     intro: (n) => `Perfis de ${n} cidades top para engenheiros remotos: custo de vida, caminhos de visto, velocidade da internet e ecossistema tech local.`,
   },
   it: {
     metaTitle: 'Migliori città per lavoratori tech remote',
-    metaDescription: (n) => `Profili dettagliati di ${n} città curate per lavoratori tech remote: costo della vita, visto, velocità internet, ecosistema tech.`,
+    metaDescription: (n) => `Profili dettagliati di ${n} città per lavoratori tech remote: costo della vita, opzioni visto, velocità internet, coworking e ecosistema tech locale.`,
     eyebrow: 'Città',
     h1: 'Migliori città per lavoratori tech remote',
     intro: (n) => `Profili di ${n} città top per ingegneri remote: costo della vita, opzioni visto, velocità internet ed ecosistema tech locale.`,
   },
   pl: {
     metaTitle: 'Najlepsze miasta dla zdalnych pracowników tech',
-    metaDescription: (n) => `Szczegółowe profile ${n} miast wyselekcjonowanych dla zdalnych pracowników tech: koszt życia, wiza, szybkość internetu, ekosystem tech.`,
+    metaDescription: (n) => `Szczegółowe profile ${n} miast dla zdalnych pracowników tech: koszt życia, opcje wizowe, szybkość internetu, coworking i lokalny ekosystem tech.`,
     eyebrow: 'Miasta',
     h1: 'Najlepsze miasta dla zdalnych pracowników tech',
     intro: (n) => `Profile ${n} najlepszych miast dla zdalnych inżynierów: koszt życia, ścieżki wizowe, szybkość internetu i lokalny ekosystem tech.`,
@@ -65,7 +65,7 @@ export const CITIES_I18N: Record<Locale, Index> = {
 export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }> = {
   en: {
     metaTitle: 'Remote tech jobs by skill',
-    metaDescription: () => 'Browse remote engineering jobs by language, framework, cloud, database, AI/ML stack. Updated daily.',
+    metaDescription: () => 'Browse remote engineering jobs by language, framework, cloud, database and AI/ML stack. Updated daily from eight job board APIs. Free, no signup.',
     eyebrow: 'By skill',
     h1: 'Remote tech jobs by skill',
     intro: (n) => `${n} skill categories tracked across the index. Pick a stack to see open positions and salary ranges.`,
@@ -74,7 +74,7 @@ export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }
   },
   fr: {
     metaTitle: 'Offres tech remote par compétence',
-    metaDescription: () => 'Parcourez les offres tech remote par langage, framework, cloud, base de données, stack IA/ML. Mis à jour chaque jour.',
+    metaDescription: () => 'Parcourez les offres tech remote par langage, framework, cloud, base de données et stack IA/ML. Mis à jour chaque jour depuis huit APIs. Gratuit, sans inscription.',
     eyebrow: 'Par compétence',
     h1: 'Offres tech remote par compétence',
     intro: (n) => `${n} catégories de compétences suivies dans l'index. Choisissez une stack pour voir postes et fourchettes salariales.`,
@@ -83,7 +83,7 @@ export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }
   },
   es: {
     metaTitle: 'Empleos tech remotos por skill',
-    metaDescription: () => 'Explora empleos tech remotos por lenguaje, framework, cloud, base de datos, stack IA/ML. Actualizado a diario.',
+    metaDescription: () => 'Explora empleos tech remotos por lenguaje, framework, cloud, base de datos y stack IA/ML. Actualizado a diario desde ocho APIs de empleo. Gratis, sin registro.',
     eyebrow: 'Por skill',
     h1: 'Empleos tech remotos por skill',
     intro: (n) => `${n} categorías de skills seguidas en el índice. Elige un stack para ver puestos y rangos salariales.`,
@@ -92,7 +92,7 @@ export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }
   },
   de: {
     metaTitle: 'Remote Tech-Jobs nach Skill',
-    metaDescription: () => 'Durchsuchen Sie Remote-Engineering-Jobs nach Sprache, Framework, Cloud, Datenbank, KI/ML-Stack. Täglich aktualisiert.',
+    metaDescription: () => 'Remote-Engineering-Jobs nach Sprache, Framework, Cloud, Datenbank und KI/ML-Stack durchsuchen. Täglich aus acht Job-APIs aktualisiert. Kostenlos, ohne Anmeldung.',
     eyebrow: 'Nach Skill',
     h1: 'Remote Tech-Jobs nach Skill',
     intro: (n) => `${n} Skill-Kategorien im Index. Wählen Sie einen Stack, um offene Stellen und Gehaltsspannen zu sehen.`,
@@ -101,7 +101,7 @@ export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }
   },
   pt: {
     metaTitle: 'Vagas tech remotas por skill',
-    metaDescription: () => 'Navegue vagas tech remotas por linguagem, framework, cloud, banco de dados, stack IA/ML. Atualizado todo dia.',
+    metaDescription: () => 'Navegue vagas tech remotas por linguagem, framework, cloud, banco de dados e stack IA/ML. Atualizado todo dia via oito APIs de emprego. Grátis, sem cadastro.',
     eyebrow: 'Por skill',
     h1: 'Vagas tech remotas por skill',
     intro: (n) => `${n} categorias de skills acompanhadas no índice. Escolha um stack para ver vagas e faixas salariais.`,
@@ -110,7 +110,7 @@ export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }
   },
   it: {
     metaTitle: 'Lavori tech remote per skill',
-    metaDescription: () => 'Sfoglia lavori tech remote per linguaggio, framework, cloud, database, stack IA/ML. Aggiornato ogni giorno.',
+    metaDescription: () => 'Sfoglia lavori tech remote per linguaggio, framework, cloud, database e stack IA/ML. Aggiornato ogni giorno da otto API di offerte. Gratuito, senza registrazione.',
     eyebrow: 'Per skill',
     h1: 'Lavori tech remote per skill',
     intro: (n) => `${n} categorie di skill tracciate nell\'indice. Scegli uno stack per vedere posizioni aperte e fasce salariali.`,
@@ -119,7 +119,7 @@ export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }
   },
   pl: {
     metaTitle: 'Zdalne oferty tech według umiejętności',
-    metaDescription: () => 'Przeglądaj zdalne oferty inżynierskie według języka, frameworka, chmury, bazy danych, stacku AI/ML. Aktualizowane codziennie.',
+    metaDescription: () => 'Przeglądaj zdalne oferty inżynierskie według języka, frameworka, chmury, bazy danych i stacku AI/ML. Aktualizowane codziennie z ośmiu API. Bezpłatnie, bez rejestracji.',
     eyebrow: 'Według umiejętności',
     h1: 'Zdalne oferty tech według umiejętności',
     intro: (n) => `${n} kategorii umiejętności śledzonych w indeksie. Wybierz stack, aby zobaczyć oferty i widełki płacowe.`,
@@ -131,7 +131,7 @@ export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }
 export const GUIDES_I18N: Record<Locale, WithCategories> = {
   en: {
     metaTitle: 'Guides for remote tech workers',
-    metaDescription: () => 'Long-form guides on finding remote tech jobs, salaries, visas, taxes, tools and lifestyle for remote engineers.',
+    metaDescription: () => 'Long-form guides on finding remote tech jobs, salaries, visas, taxes, tools and lifestyle for remote engineers. Free, updated regularly, no signup needed.',
     eyebrow: 'Guides',
     h1: 'Guides for remote tech workers',
     intro: (n) => `${n} long-form, opinionated guides on every topic that matters for landing and sustaining a remote tech career.`,
@@ -139,7 +139,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
   },
   fr: {
     metaTitle: 'Guides pour les travailleurs tech remote',
-    metaDescription: () => 'Guides longs sur la recherche de jobs tech remote, salaires, visas, taxes, outils et lifestyle pour ingés remote.',
+    metaDescription: () => 'Guides longs sur la recherche de jobs tech remote, salaires, visas, taxes, outils et lifestyle pour ingés remote. Gratuit, mis à jour régulièrement, sans inscription.',
     eyebrow: 'Guides',
     h1: 'Guides pour les travailleurs tech remote',
     intro: (n) => `${n} guides longs et tranchés sur tous les sujets qui comptent pour décrocher et tenir une carrière tech remote.`,
@@ -147,7 +147,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
   },
   es: {
     metaTitle: 'Guías para trabajadores tech remotos',
-    metaDescription: () => 'Guías largas sobre encontrar empleos tech remotos, salarios, visas, impuestos, herramientas y lifestyle para ingenieros remotos.',
+    metaDescription: () => 'Guías largas sobre encontrar empleos tech remotos, salarios, visas, impuestos, herramientas y lifestyle para ingenieros remotos. Gratis, sin registro requerido.',
     eyebrow: 'Guías',
     h1: 'Guías para trabajadores tech remotos',
     intro: (n) => `${n} guías largas y con opinión sobre cada tema que importa para conseguir y sostener una carrera tech remota.`,
@@ -155,7 +155,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
   },
   de: {
     metaTitle: 'Guides für Remote-Tech-Worker',
-    metaDescription: () => 'Ausführliche Guides zum Finden von Remote-Tech-Jobs, Gehältern, Visa, Steuern, Tools und Lifestyle für Remote-Engineers.',
+    metaDescription: () => 'Ausführliche Guides zum Finden von Remote-Tech-Jobs, Gehältern, Visa, Steuern, Tools und Lifestyle für Remote-Engineers. Kostenlos, regelmäßig aktualisiert.',
     eyebrow: 'Guides',
     h1: 'Guides für Remote-Tech-Worker',
     intro: (n) => `${n} ausführliche, meinungsstarke Guides zu jedem Thema, das für eine Remote-Tech-Karriere zählt.`,
@@ -163,7 +163,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
   },
   pt: {
     metaTitle: 'Guias para trabalhadores tech remotos',
-    metaDescription: () => 'Guias longos sobre encontrar vagas tech remotas, salários, vistos, impostos, ferramentas e lifestyle para engenheiros remotos.',
+    metaDescription: () => 'Guias longos sobre encontrar vagas tech remotas, salários, vistos, impostos, ferramentas e lifestyle para engenheiros remotos. Gratuito, sem cadastro necessário.',
     eyebrow: 'Guias',
     h1: 'Guias para trabalhadores tech remotos',
     intro: (n) => `${n} guias longos e opinativos sobre cada tópico que importa para conseguir e sustentar uma carreira tech remota.`,
@@ -171,7 +171,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
   },
   it: {
     metaTitle: 'Guide per lavoratori tech remote',
-    metaDescription: () => 'Guide lunghe su come trovare lavori tech remote, stipendi, visti, tasse, strumenti e lifestyle per ingegneri remote.',
+    metaDescription: () => 'Guide lunghe su come trovare lavori tech remote, stipendi, visti, tasse, strumenti e lifestyle per ingegneri remote. Gratuite, aggiornate regolarmente, senza registrazione.',
     eyebrow: 'Guide',
     h1: 'Guide per lavoratori tech remote',
     intro: (n) => `${n} guide lunghe e schierate su ogni tema che conta per ottenere e sostenere una carriera tech remote.`,
@@ -179,7 +179,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
   },
   pl: {
     metaTitle: 'Poradniki dla zdalnych pracowników tech',
-    metaDescription: () => 'Długie poradniki o znajdowaniu zdalnych ofert tech, wynagrodzeniach, wizach, podatkach, narzędziach i lifestyle\'u dla zdalnych inżynierów.',
+    metaDescription: () => 'Długie poradniki o znajdowaniu zdalnych ofert tech, wynagrodzeniach, wizach, podatkach, narzędziach i lifestyle dla zdalnych inżynierów. Bezpłatnie, bez rejestracji.',
     eyebrow: 'Poradniki',
     h1: 'Poradniki dla zdalnych pracowników tech',
     intro: (n) => `${n} długich, opiniowych poradników o każdym temacie istotnym dla zdobycia i utrzymania zdalnej kariery tech.`,
@@ -190,7 +190,7 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
 export const GLOSSARY_I18N: Record<Locale, WithCategories & { missingPre: string; missingLink: string; missingPost: string }> = {
   en: {
     metaTitle: 'Remote work glossary',
-    metaDescription: (n) => `${n} terms every remote tech worker should know: RTO, EOR, async, DNV, OKR, RSU, geo-arbitrage and more.`,
+    metaDescription: (n) => `${n} essential terms every remote tech worker should know: RTO, EOR, async, DNV, OKR, RSU, geo-arbitrage and more. Short definitions with deeper context.`,
     eyebrow: 'Glossary',
     h1: 'Remote work glossary',
     intro: (n) => `${n} terms every remote tech worker should know, organised by category. Short definitions for the quick lookup, longer explanations for the parts that actually differ from in-office work.`,
@@ -201,7 +201,7 @@ export const GLOSSARY_I18N: Record<Locale, WithCategories & { missingPre: string
   },
   fr: {
     metaTitle: 'Glossaire du travail remote',
-    metaDescription: (n) => `${n} termes que chaque travailleur tech remote devrait connaître : RTO, EOR, async, DNV, OKR, RSU, géo-arbitrage et plus.`,
+    metaDescription: (n) => `${n} termes essentiels que chaque travailleur tech remote devrait connaître : RTO, EOR, async, DNV, OKR, RSU, géo-arbitrage et plus. Définitions courtes et contexte approfondi.`,
     eyebrow: 'Glossaire',
     h1: 'Glossaire du travail remote',
     intro: (n) => `${n} termes que tout travailleur tech remote devrait connaître, organisés par catégorie. Définitions courtes pour la recherche rapide, explications plus longues pour ce qui diffère vraiment du bureau.`,
@@ -212,7 +212,7 @@ export const GLOSSARY_I18N: Record<Locale, WithCategories & { missingPre: string
   },
   es: {
     metaTitle: 'Glosario del trabajo remoto',
-    metaDescription: (n) => `${n} términos que todo trabajador tech remoto debería conocer: RTO, EOR, async, DNV, OKR, RSU, geo-arbitraje y más.`,
+    metaDescription: (n) => `${n} términos esenciales que todo trabajador tech remoto debería conocer: RTO, EOR, async, DNV, OKR, RSU, geo-arbitraje y más. Definiciones breves con contexto ampliado.`,
     eyebrow: 'Glosario',
     h1: 'Glosario del trabajo remoto',
     intro: (n) => `${n} términos que todo trabajador tech remoto debería conocer, organizados por categoría. Definiciones cortas para consulta rápida, explicaciones más largas para lo que realmente difiere del trabajo en oficina.`,
@@ -223,7 +223,7 @@ export const GLOSSARY_I18N: Record<Locale, WithCategories & { missingPre: string
   },
   de: {
     metaTitle: 'Remote-Work-Glossar',
-    metaDescription: (n) => `${n} Begriffe, die jeder Remote-Tech-Worker kennen sollte: RTO, EOR, async, DNV, OKR, RSU, Geo-Arbitrage und mehr.`,
+    metaDescription: (n) => `${n} unverzichtbare Begriffe, die jeder Remote-Tech-Worker kennen sollte: RTO, EOR, async, DNV, OKR, RSU, Geo-Arbitrage und mehr. Kurze Definitionen mit tieferem Kontext.`,
     eyebrow: 'Glossar',
     h1: 'Remote-Work-Glossar',
     intro: (n) => `${n} Begriffe, die jeder Remote-Tech-Worker kennen sollte, nach Kategorien geordnet. Kurze Definitionen zum schnellen Nachschlagen, längere Erklärungen für die Aspekte, die sich wirklich von der Büroarbeit unterscheiden.`,
@@ -234,7 +234,7 @@ export const GLOSSARY_I18N: Record<Locale, WithCategories & { missingPre: string
   },
   pt: {
     metaTitle: 'Glossário do trabalho remoto',
-    metaDescription: (n) => `${n} termos que todo trabalhador tech remoto deveria saber: RTO, EOR, async, DNV, OKR, RSU, geo-arbitragem e mais.`,
+    metaDescription: (n) => `${n} termos essenciais que todo trabalhador tech remoto deveria saber: RTO, EOR, async, DNV, OKR, RSU, geo-arbitragem e mais. Definições breves com contexto aprofundado.`,
     eyebrow: 'Glossário',
     h1: 'Glossário do trabalho remoto',
     intro: (n) => `${n} termos que todo trabalhador tech remoto deveria saber, organizados por categoria. Definições curtas para consulta rápida, explicações mais longas para o que de fato difere do trabalho no escritório.`,
@@ -245,7 +245,7 @@ export const GLOSSARY_I18N: Record<Locale, WithCategories & { missingPre: string
   },
   it: {
     metaTitle: 'Glossario del lavoro remote',
-    metaDescription: (n) => `${n} termini che ogni lavoratore tech remote dovrebbe sapere: RTO, EOR, async, DNV, OKR, RSU, geo-arbitraggio e altro.`,
+    metaDescription: (n) => `${n} termini essenziali che ogni lavoratore tech remote dovrebbe sapere: RTO, EOR, async, DNV, OKR, RSU, geo-arbitraggio e altro. Definizioni brevi con contesto approfondito.`,
     eyebrow: 'Glossario',
     h1: 'Glossario del lavoro remote',
     intro: (n) => `${n} termini che ogni lavoratore tech remote dovrebbe sapere, organizzati per categoria. Definizioni brevi per la consultazione rapida, spiegazioni più lunghe per ciò che davvero differisce dal lavoro in ufficio.`,
@@ -256,7 +256,7 @@ export const GLOSSARY_I18N: Record<Locale, WithCategories & { missingPre: string
   },
   pl: {
     metaTitle: 'Słownik pracy zdalnej',
-    metaDescription: (n) => `${n} terminów, które każdy zdalny pracownik tech powinien znać: RTO, EOR, async, DNV, OKR, RSU, geo-arbitraż i więcej.`,
+    metaDescription: (n) => `${n} kluczowych terminów, które każdy zdalny pracownik tech powinien znać: RTO, EOR, async, DNV, OKR, RSU, geo-arbitraż i więcej. Zwięzłe definicje i szerszy kontekst.`,
     eyebrow: 'Słownik',
     h1: 'Słownik pracy zdalnej',
     intro: (n) => `${n} terminów, które każdy zdalny pracownik tech powinien znać, zorganizowanych według kategorii. Krótkie definicje do szybkiego sprawdzenia, dłuższe wyjaśnienia dla tego, co naprawdę różni się od pracy w biurze.`,
