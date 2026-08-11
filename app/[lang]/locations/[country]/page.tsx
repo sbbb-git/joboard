@@ -3,6 +3,7 @@ import { JobCard } from '@/components/JobCard';
 import { allJobs, topCountries } from '@/lib/jobs';
 import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
+import { countryLabel } from '@/lib/labels';
 import type { Locale } from '@/lib/types';
 import { NomadCTA } from '@/components/NomadCTA';
 import { NomadEssentials } from '@/components/NomadEssentials';
@@ -21,12 +22,12 @@ export function generateMetadata({
 }: {
   params: { lang: Locale; country: string };
 }): Metadata {
-  const country = params.country.replace(/-/g, ' ');
+  const country = countryLabel(params.country);
   return buildMetadata({
     locale: params.lang,
     path: `locations/${params.country}`,
-    title: `Remote tech jobs · ${country}`,
-    description: `Open remote tech positions available for candidates based in ${country}.`,
+    title: `Remote tech jobs in ${country}`,
+    description: `Open remote engineering, data, design and product roles hiring candidates based in ${country}. Aggregated from public job board APIs and updated daily.`,
   });
 }
 

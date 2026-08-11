@@ -5,6 +5,7 @@ import { allJobs } from '@/lib/jobs';
 import { ROLES, type Locale, type Role } from '@/lib/types';
 import { LOCALES } from '@/lib/i18n';
 import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
+import { roleLabel, countryLabel } from '@/lib/labels';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -35,8 +36,8 @@ export function generateMetadata({
 }: {
   params: { lang: Locale; role: string; country: string };
 }): Metadata {
-  const role = params.role.replace(/-/g, ' ');
-  const country = params.country.replace(/-/g, ' ');
+  const role = roleLabel(params.lang, params.role);
+  const country = countryLabel(params.country);
   return buildMetadata({
     locale: params.lang,
     path: `salaries/${params.role}/${params.country}`,
@@ -83,7 +84,8 @@ export default function SalaryByCountry({
 }) {
   if (!ROLES.includes(params.role as Role)) notFound();
   const role = params.role as Role;
-  const country = params.country.replace(/-/g, ' ');
+  const country = countryLabel(params.country);
+  const roleName = roleLabel(params.lang, params.role);
   const { jobs, results } = statsFor(role, params.country);
 
   const breadcrumb = breadcrumbJsonLd([
@@ -102,8 +104,8 @@ export default function SalaryByCountry({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
       <header className="border-b border-line pb-4">
-        <h1 className="text-2xl md:text-3xl font-semibold capitalize">
-          Remote {role.replace('-', ' ')} salaries in {country}
+        <h1 className="text-2xl md:text-3xl font-semibold">
+          Remote {roleName} salaries in {country}
         </h1>
         <p className="text-muted text-sm mt-2">
           Computed live from {jobs.length} {jobs.length === 1 ? 'listing' : 'listings'} in our
@@ -114,13 +116,13 @@ export default function SalaryByCountry({
       {results.length === 0 ? (
         <section className="text-sm text-muted leading-relaxed space-y-3">
           <p>
-            Not enough salary data yet for remote {role.replace('-', ' ')} positions targeting
+            Not enough salary data yet for remote {roleName} positions targeting
             candidates in {country}. As the index grows, this page populates automatically.
           </p>
           <p>
             In the meantime, the{' '}
             <Link href={`/${params.lang}/salaries/${role}`} className="text-forest hover:underline">
-              global {role.replace('-', ' ')} salary page
+              global {roleName} salary page
             </Link>{' '}
             shows broader benchmark numbers across all countries.
           </p>

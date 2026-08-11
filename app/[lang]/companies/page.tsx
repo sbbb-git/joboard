@@ -70,7 +70,7 @@ export default function CompaniesPage({ params }: { params: { lang: Locale } }) 
         <CompanySection
           title="Single posting"
           subtitle="1 open role each"
-          companies={tier3.slice(0, 200)}
+          companies={tier3}
           locale={params.lang}
           compact
         />

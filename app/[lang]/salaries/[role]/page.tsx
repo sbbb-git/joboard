@@ -1,9 +1,27 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { salaryStats } from '@/lib/jobs';
 import { ROLES, type Locale, type Role } from '@/lib/types';
-import { LOCALES, t } from '@/lib/i18n';
+import { LOCALES, t, localePath } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
+import { roleLabel, countryLabel } from '@/lib/labels';
+
+// Kept in sync with the country list in salaries/[role]/[country].
+const TOP_COUNTRIES = [
+  'united-states',
+  'united-kingdom',
+  'germany',
+  'france',
+  'spain',
+  'portugal',
+  'netherlands',
+  'canada',
+  'mexico',
+  'brazil',
+  'india',
+  'australia',
+];
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -21,6 +39,9 @@ type SalaryCopy = {
   median: string;
   average: string;
   p75: string;
+  byCountryHeading: string;
+  byCountryBlurb: string;
+  otherRolesHeading: string;
 };
 
 const SALARY_I18N: Record<Locale, SalaryCopy> = {
@@ -40,6 +61,9 @@ const SALARY_I18N: Record<Locale, SalaryCopy> = {
     median: 'Median',
     average: 'Average',
     p75: '75th pct',
+    byCountryHeading: 'Salaries by country',
+    byCountryBlurb: 'Includes a country-by-country breakdown across 12 major hiring markets.',
+    otherRolesHeading: 'Other roles',
   },
   fr: {
     metaTitle: (r) => `Salaires remote ${r}`,
@@ -57,6 +81,9 @@ const SALARY_I18N: Record<Locale, SalaryCopy> = {
     median: 'Médiane',
     average: 'Moyenne',
     p75: '75e pct',
+    byCountryHeading: 'Salaires par pays',
+    byCountryBlurb: 'Inclut une ventilation pays par pays sur 12 grands marchés du recrutement.',
+    otherRolesHeading: 'Autres rôles',
   },
   es: {
     metaTitle: (r) => `Salarios remote ${r}`,
@@ -74,6 +101,9 @@ const SALARY_I18N: Record<Locale, SalaryCopy> = {
     median: 'Mediana',
     average: 'Promedio',
     p75: 'Percentil 75',
+    byCountryHeading: 'Salarios por país',
+    byCountryBlurb: 'Incluye un desglose país por país en 12 grandes mercados de contratación.',
+    otherRolesHeading: 'Otros roles',
   },
   de: {
     metaTitle: (r) => `Remote-${r}-Gehälter`,
@@ -91,6 +121,9 @@ const SALARY_I18N: Record<Locale, SalaryCopy> = {
     median: 'Median',
     average: 'Durchschnitt',
     p75: '75. Pzt.',
+    byCountryHeading: 'Gehälter nach Land',
+    byCountryBlurb: 'Enthält eine Aufschlüsselung nach Ländern über 12 große Einstellungsmärkte.',
+    otherRolesHeading: 'Andere Rollen',
   },
   pt: {
     metaTitle: (r) => `Salários remote ${r}`,
@@ -108,6 +141,9 @@ const SALARY_I18N: Record<Locale, SalaryCopy> = {
     median: 'Mediana',
     average: 'Média',
     p75: 'Percentil 75',
+    byCountryHeading: 'Salários por país',
+    byCountryBlurb: 'Inclui uma análise país a país em 12 grandes mercados de contratação.',
+    otherRolesHeading: 'Outros cargos',
   },
   it: {
     metaTitle: (r) => `Stipendi remote ${r}`,
@@ -125,6 +161,9 @@ const SALARY_I18N: Record<Locale, SalaryCopy> = {
     median: 'Mediana',
     average: 'Media',
     p75: '75° pct',
+    byCountryHeading: 'Stipendi per paese',
+    byCountryBlurb: 'Include un\'analisi paese per paese su 12 grandi mercati del lavoro.',
+    otherRolesHeading: 'Altri ruoli',
   },
   pl: {
     metaTitle: (r) => `Wynagrodzenia zdalne ${r}`,
@@ -142,6 +181,9 @@ const SALARY_I18N: Record<Locale, SalaryCopy> = {
     median: 'Mediana',
     average: 'Średnia',
     p75: '75. percentyl',
+    byCountryHeading: 'Wynagrodzenia według kraju',
+    byCountryBlurb: 'Zawiera podział na kraje w 12 największych rynkach rekrutacyjnych.',
+    otherRolesHeading: 'Inne role',
   },
 };
 
@@ -155,12 +197,12 @@ export function generateMetadata({
   params: { lang: Locale; role: string };
 }): Metadata {
   const c = SALARY_I18N[params.lang];
-  const role = params.role.replace('-', ' ');
+  const role = roleLabel(params.lang, params.role);
   return buildMetadata({
     locale: params.lang,
     path: `salaries/${params.role}`,
-    title: c.metaTitle(role),
-    description: c.metaDescription(role),
+    title: `${c.metaTitle(role)} in 2026`,
+    description: `${c.metaDescription(role)} ${c.byCountryBlurb}`,
   });
 }
 
@@ -168,14 +210,14 @@ export default function SalaryPage({ params }: { params: { lang: Locale; role: s
   if (!ROLES.includes(params.role as Role)) notFound();
   const role = params.role as Role;
   const c = SALARY_I18N[params.lang];
-  const roleLabel = role.replace('-', ' ');
+  const roleName = roleLabel(params.lang, params.role);
   const usd = salaryStats(role, 'USD');
   const eur = salaryStats(role, 'EUR');
   return (
     <div className="space-y-8 max-w-2xl">
       <header>
-        <h1 className="text-2xl font-semibold capitalize">
-          {c.h1(roleLabel)}
+        <h1 className="text-2xl font-semibold">
+          {c.h1(roleName)}
         </h1>
         <p className="text-muted text-sm mt-1">{c.subtitle}</p>
       </header>
@@ -187,8 +229,40 @@ export default function SalaryPage({ params }: { params: { lang: Locale; role: s
         <SalaryTable currency="EUR" stats={eur} locale={params.lang} c={c} />
       )}
       {!usd && !eur && (
-        <p className="text-muted text-sm">{c.noData(roleLabel)}</p>
+        <p className="text-muted text-sm">{c.noData(roleName)}</p>
       )}
+
+      <section>
+        <h2 className="text-base font-semibold text-ink mb-3">{c.byCountryHeading}</h2>
+        <ul className="flex flex-wrap gap-2">
+          {TOP_COUNTRIES.map((country) => (
+            <li key={country}>
+              <Link
+                href={localePath(params.lang, `salaries/${role}/${country}`)}
+                className="inline-block text-sm px-3 py-1 rounded-full bg-sand border border-line text-graphite hover:border-ink hover:text-ink"
+              >
+                {countryLabel(country)}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-base font-semibold text-ink mb-3">{c.otherRolesHeading}</h2>
+        <ul className="flex flex-wrap gap-2">
+          {ROLES.filter((r) => r !== role).map((r) => (
+            <li key={r}>
+              <Link
+                href={localePath(params.lang, `salaries/${r}`)}
+                className="inline-block text-sm px-3 py-1 rounded-full bg-sand border border-line text-graphite hover:border-ink hover:text-ink"
+              >
+                {roleLabel(params.lang, r)}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <section className="text-sm text-muted leading-relaxed">
         <h2 className="text-base font-semibold text-ink mb-2">{c.howCalculated}</h2>

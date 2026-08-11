@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { JobSearch } from '@/components/JobSearch';
 import { allJobs } from '@/lib/jobs';
-import { t } from '@/lib/i18n';
+import { t, localePath } from '@/lib/i18n';
 import { buildMetadata, itemListJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 
@@ -13,6 +14,8 @@ type JobsCopy = {
   metaDescription: string;
   eyebrow: string;
   intro: (n: string) => string;
+  recentHeading: string;
+  recentIntro: string;
 };
 
 const COPY: Record<Locale, JobsCopy> = {
@@ -23,6 +26,8 @@ const COPY: Record<Locale, JobsCopy> = {
     eyebrow: 'Search',
     intro: (n) =>
       `${n} active remote tech jobs. Filter by role, country, level, contract type and salary, all in the browser. No signup needed.`,
+    recentHeading: 'Latest remote tech jobs',
+    recentIntro: 'The most recently posted roles in the index. Use the filters above to search all of them.',
   },
   fr: {
     metaTitle: 'Rechercher des offres tech remote',
@@ -31,6 +36,8 @@ const COPY: Record<Locale, JobsCopy> = {
     eyebrow: 'Recherche',
     intro: (n) =>
       `${n} offres tech remote actives. Filtrez par rôle, pays, niveau, type de contrat et salaire, le tout dans le navigateur. Sans inscription.`,
+    recentHeading: 'Dernières offres tech remote',
+    recentIntro: "Les postes les plus récemment publiés dans l'index. Utilisez les filtres ci-dessus pour tout chercher.",
   },
   es: {
     metaTitle: 'Buscar empleos tech remotos',
@@ -39,6 +46,8 @@ const COPY: Record<Locale, JobsCopy> = {
     eyebrow: 'Búsqueda',
     intro: (n) =>
       `${n} empleos tech remotos activos. Filtra por rol, país, nivel, tipo de contrato y salario, todo en el navegador. Sin registro.`,
+    recentHeading: 'Últimos empleos tech remotos',
+    recentIntro: 'Los puestos publicados más recientemente en el índice. Usa los filtros de arriba para buscarlos todos.',
   },
   de: {
     metaTitle: 'Remote-Tech-Jobs suchen',
@@ -47,6 +56,8 @@ const COPY: Record<Locale, JobsCopy> = {
     eyebrow: 'Suche',
     intro: (n) =>
       `${n} aktive Remote-Tech-Jobs. Filtere nach Rolle, Land, Level, Vertragsart und Gehalt, alles im Browser. Keine Anmeldung nötig.`,
+    recentHeading: 'Neueste Remote-Tech-Jobs',
+    recentIntro: 'Die zuletzt veröffentlichten Stellen im Index. Nutzen Sie die Filter oben, um alle zu durchsuchen.',
   },
   pt: {
     metaTitle: 'Buscar vagas tech remotas',
@@ -55,6 +66,8 @@ const COPY: Record<Locale, JobsCopy> = {
     eyebrow: 'Busca',
     intro: (n) =>
       `${n} vagas tech remotas ativas. Filtre por cargo, país, nível, tipo de contrato e salário, tudo no navegador. Sem cadastro.`,
+    recentHeading: 'Vagas tech remotas mais recentes',
+    recentIntro: 'As vagas publicadas mais recentemente no índice. Use os filtros acima para buscar todas.',
   },
   it: {
     metaTitle: 'Cerca lavori tech remote',
@@ -63,6 +76,8 @@ const COPY: Record<Locale, JobsCopy> = {
     eyebrow: 'Ricerca',
     intro: (n) =>
       `${n} lavori tech remote attivi. Filtra per ruolo, paese, livello, tipo di contratto e stipendio, tutto nel browser. Nessuna registrazione.`,
+    recentHeading: 'Ultimi lavori tech remote',
+    recentIntro: "Le posizioni pubblicate più di recente nell'indice. Usa i filtri sopra per cercarle tutte.",
   },
   pl: {
     metaTitle: 'Szukaj zdalnych ofert tech',
@@ -71,6 +86,8 @@ const COPY: Record<Locale, JobsCopy> = {
     eyebrow: 'Szukaj',
     intro: (n) =>
       `${n} aktywnych zdalnych ofert tech. Filtruj według roli, kraju, poziomu, typu umowy i wynagrodzenia, wszystko w przeglądarce. Bez rejestracji.`,
+    recentHeading: 'Najnowsze zdalne oferty tech',
+    recentIntro: 'Ostatnio opublikowane oferty w indeksie. Użyj filtrów powyżej, aby przeszukać wszystkie.',
   },
 };
 
@@ -88,6 +105,9 @@ export default function JobsList({ params }: { params: { lang: Locale } }) {
   const locale = params.lang;
   const c = COPY[locale];
   const all = allJobs();
+  const recent = [...all]
+    .sort((a, b) => Date.parse(b.postedAt) - Date.parse(a.postedAt))
+    .slice(0, 200);
   const itemList = itemListJsonLd(
     all.slice(0, 30).map((j) => ({
       name: `${j.title} at ${j.company}`,
@@ -110,6 +130,24 @@ export default function JobsList({ params }: { params: { lang: Locale } }) {
         </p>
       </header>
       <JobSearch locale={locale} />
+
+      <section className="border-t border-line pt-8">
+        <h2 className="text-lg font-semibold text-ink">{c.recentHeading}</h2>
+        <p className="text-sm text-muted mt-1 max-w-prose">{c.recentIntro}</p>
+        <ul className="mt-4 grid sm:grid-cols-2 gap-x-6 gap-y-2">
+          {recent.map((j) => (
+            <li key={j.id} className="text-sm">
+              <Link
+                href={localePath(locale, `job/${j.id}`)}
+                className="text-graphite hover:text-ink hover:underline"
+              >
+                {j.title}
+              </Link>{' '}
+              <span className="text-muted">· {j.company}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
     </div>
   );
 }

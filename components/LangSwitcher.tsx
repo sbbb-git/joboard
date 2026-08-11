@@ -1,9 +1,17 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { LOCALES } from '@/lib/i18n';
 import type { Locale } from '@/lib/types';
 
 export function LangSwitcher({ current, path }: { current: Locale; path: string }) {
-  const clean = path.replace(/^\/(en|fr|es|de|pt|it|pl)/, '').replace(/^\/+/, '');
+  // The layout can only pass `/{locale}`, so the `path` prop alone always
+  // resolved to the locale homepage and the switcher sent every visitor back
+  // to the top of the site instead of the same page in another language.
+  const pathname = usePathname();
+  const source = pathname || path;
+  const clean = source.replace(/^\/(en|fr|es|de|pt|it|pl)(?=\/|$)/, '').replace(/^\/+/, '');
   const others = LOCALES.filter((l) => l !== current);
 
   return (

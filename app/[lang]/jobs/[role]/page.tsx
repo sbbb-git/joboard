@@ -5,6 +5,7 @@ import { jobsByRole } from '@/lib/jobs';
 import { ROLES, type Locale, type Role } from '@/lib/types';
 import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
+import { roleLabel } from '@/lib/labels';
 import { NomadCTA } from '@/components/NomadCTA';
 import { AiToolsCTA } from '@/components/AiToolsCTA';
 import { EarnWithAi } from '@/components/EarnWithAi';
@@ -23,12 +24,12 @@ export function generateMetadata({
 }: {
   params: { lang: Locale; role: string };
 }): Metadata {
-  const role = params.role.replace('-', ' ');
+  const role = roleLabel(params.lang, params.role);
   return buildMetadata({
     locale: params.lang,
     path: `jobs/${params.role}`,
-    title: `Remote ${role} jobs`,
-    description: `Open remote ${role} positions aggregated from public job boards. Updated daily.`,
+    title: `Remote ${role} jobs, updated daily`,
+    description: `Browse open remote ${role} positions aggregated from public job board APIs. Filter by seniority, salary and timezone. Updated every day, free to browse, no signup.`,
   });
 }
 

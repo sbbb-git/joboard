@@ -11,13 +11,32 @@ export function absoluteUrl(path: string): string {
   return `${SITE_URL}${clean}`;
 }
 
+// next.config sets trailingSlash:false, so every served URL has no trailing
+// slash. Canonical, hreflang and sitemap URLs must all agree with that or
+// Google drops the hreflang cluster and treats the canonical as non
+// self-referential. Collapses duplicate slashes too.
+export function canonicalPath(locale: Locale, path: string): string {
+  const clean = path.replace(/^\/+/, '').replace(/\/+$/, '');
+  return `/${locale}${clean ? `/${clean}` : ''}`.replace(/\/{2,}/g, '/');
+}
+
+// OG spec wants language_TERRITORY, not a bare language subtag.
+const OG_LOCALE: Record<Locale, string> = {
+  en: 'en_US',
+  fr: 'fr_FR',
+  es: 'es_ES',
+  de: 'de_DE',
+  pt: 'pt_BR',
+  it: 'it_IT',
+  pl: 'pl_PL',
+};
+
 export function hreflangAlternates(pathWithoutLocale: string): Record<string, string> {
-  const clean = pathWithoutLocale.replace(/^\/+/, '');
   const alternates: Record<string, string> = {};
   for (const l of LOCALES) {
-    alternates[l] = absoluteUrl(`/${l}/${clean}`.replace(/\/+$/, '') || `/${l}`);
+    alternates[l] = absoluteUrl(canonicalPath(l, pathWithoutLocale));
   }
-  alternates['x-default'] = absoluteUrl(`/en/${clean}`.replace(/\/+$/, '') || '/en');
+  alternates['x-default'] = absoluteUrl(canonicalPath('en', pathWithoutLocale));
   return alternates;
 }
 
@@ -30,7 +49,7 @@ export function buildMetadata(opts: {
   description: string;
   index?: boolean;
 }): Metadata {
-  const url = absoluteUrl(`/${opts.locale}/${opts.path.replace(/^\/+/, '')}`);
+  const url = absoluteUrl(canonicalPath(opts.locale, opts.path));
   return {
     title: opts.title,
     description: opts.description,
@@ -44,7 +63,7 @@ export function buildMetadata(opts: {
       description: opts.description,
       url,
       siteName: SITE_NAME,
-      locale: opts.locale,
+      locale: OG_LOCALE[opts.locale],
       type: 'website',
       images: [{ url: STATIC_OG, width: 1200, height: 630 }],
     },
