@@ -1,10 +1,24 @@
 name: scrape-and-deploy
 
-# Daily auto-publish has been disabled. The workflow now runs only on
-# pushes to main (so code changes still deploy) and manual workflow_dispatch
-# (so you can refresh the job index on demand from the Actions UI).
+# Weekly job refresh, Mondays 04:00 UTC.
+#
+# Google Jobs (JobPosting structured data) is where ~90% of this site's search
+# impressions come from. While the scrape was off between 2026-06-19 and
+# 2026-09-01, 98% of the 525 indexed postings passed their validThrough date,
+# expired postings render noindex and drop out of the sitemap, and impressions
+# fell from ~40/day to ~2/day. The index has to keep moving for that channel
+# to exist at all.
+#
+# Weekly rather than daily: postings carry a 60-day minimum validity window
+# (68-day median), so a 7-day refresh cycle never lets the index go stale
+# enough to matter, at a seventh of the Actions minutes and commits.
+#
+# push  -> rebuild and deploy code changes only, no scrape (see the `if`s below)
+# schedule / workflow_dispatch -> full scrape, commit, rebuild, deploy
 
 on:
+  schedule:
+    - cron: '0 4 * * 1'
   push:
     branches: [main]
   workflow_dispatch: {}

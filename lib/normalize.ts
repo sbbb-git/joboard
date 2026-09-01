@@ -24,8 +24,11 @@ const ROLE_PATTERNS: Array<[Role, RegExp]> = [
   ['design', /\b(ux|ui|product designer|graphic designer)\b/i],
 ];
 
-export function detectRole(title: string, tags: string[] = []): Role {
-  const haystack = `${title} ${tags.join(' ')}`;
+// tags is nullable, not just optional: several upstream APIs send an explicit
+// null for their category field, and a default parameter only fills in for
+// undefined. That threw on tags.join() and took out the whole source.
+export function detectRole(title: string, tags?: string[] | null): Role {
+  const haystack = `${title} ${(tags ?? []).join(' ')}`;
   for (const [role, re] of ROLE_PATTERNS) {
     if (re.test(haystack)) return role;
   }
@@ -96,19 +99,34 @@ export function normalizeLocation(raw: string | undefined | null): {
   return { location: cleaned };
 }
 
-export function stripHtml(html: string): string {
-  return html
-    .replace(/<script[\s\S]*?<\/script>/gi, '')
-    .replace(/<style[\s\S]*?<\/style>/gi, '')
-    .replace(/<br\s*\/?>/gi, '\n')
-    .replace(/<\/p>/gi, '\n\n')
-    .replace(/<li>/gi, '- ')
-    .replace(/<[^>]+>/g, '')
+// Upstream feeds send HTML-encoded plain text in fields that are not HTML:
+// a company called "Hook &amp; Ladder" was rendering literally as "&amp;" on
+// the page, in the JobPosting hiringOrganization, and as "hook-amp-ladder" in
+// the URL. Decoding belongs in its own function so it can be applied to plain
+// text fields (company, title) and not only to descriptions.
+export function decodeEntities(text: string): string {
+  return text
     .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"')
+    .replace(/&#0*39;|&apos;|&#x0*27;/gi, "'")
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    // Ampersand last: decoding it first would let "&amp;lt;" become "<".
+    .replace(/&amp;/g, '&');
+}
+
+export function stripHtml(html: string): string {
+  return decodeEntities(
+    html
+      .replace(/<script[\s\S]*?<\/script>/gi, '')
+      .replace(/<style[\s\S]*?<\/style>/gi, '')
+      .replace(/<br\s*\/?>/gi, '\n')
+      .replace(/<\/p>/gi, '\n\n')
+      .replace(/<li>/gi, '- ')
+      .replace(/<[^>]+>/g, ''),
+  )
     .replace(/\n{3,}/g, '\n\n')
     .trim();
 }

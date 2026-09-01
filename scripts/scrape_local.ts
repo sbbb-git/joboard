@@ -9,7 +9,22 @@ import path from 'node:path';
 import { runAllScrapers } from '../lib/scrapers';
 import { dedupe } from '../lib/dedupe';
 import { filterActive } from '../lib/filters';
-import type { JobsFile } from '../lib/types';
+import { decodeEntities, slugify } from '../lib/normalize';
+import type { JobNormalized, JobsFile } from '../lib/types';
+
+// Feeds vary in whether they HTML-encode plain text fields. Each adapter
+// decodes its own description via stripHtml, but company and title were left
+// encoded, so "&amp;" leaked into headings, structured data and URL slugs.
+// Normalising here covers every source at once.
+function decodeTextFields(job: JobNormalized): JobNormalized {
+  const company = decodeEntities(job.company);
+  return {
+    ...job,
+    company,
+    companySlug: company === job.company ? job.companySlug : slugify(company),
+    title: decodeEntities(job.title),
+  };
+}
 
 const MAX_JOBS = 5000;
 const HEALTHY_FLOOR = 50; // refuse to write below this; index would lose 80%+ of content
@@ -31,7 +46,7 @@ async function main() {
     console.log(`${r.ok ? 'OK ' : 'ERR'} ${r.source.padEnd(16)} ${r.count} jobs ${r.error ?? ''}`);
   }
 
-  const raw = results.flatMap((r) => r.jobs);
+  const raw = results.flatMap((r) => r.jobs).map(decodeTextFields);
   const filtered = filterActive(raw);
   const deduped = dedupe(filtered).slice(0, MAX_JOBS);
 

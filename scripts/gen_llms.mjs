@@ -18,8 +18,11 @@ async function readTs(rel) {
 // blocks we control). The objects are simple data, so a JSON-like extraction
 // works without an actual ts loader.
 function extractArray(src, exportName) {
-  // Matches: export const NAME[: Type] = [ ... ];
-  const re = new RegExp(`export const ${exportName}[^=]*=\\s*\\[`);
+  // Matches: [export] const NAME[: Type] = [ ... ];
+  // The export keyword is optional: lib/guides.ts declares a private
+  // ALL_GUIDES array and exports only a filtered view of it, so requiring
+  // `export` silently matched nothing and shipped llms.txt with zero guides.
+  const re = new RegExp(`(?:export\\s+)?const ${exportName}[^=]*=\\s*\\[`);
   const m = src.match(re);
   if (!m) return '';
   const start = m.index + m[0].length - 1; // include [
@@ -89,7 +92,7 @@ function objects(arrayText, fields) {
 }
 
 const guidesSrc = await readTs('lib/guides.ts');
-const guides = objects(extractArray(guidesSrc, 'GUIDES'), [
+const guides = objects(extractArray(guidesSrc, 'ALL_GUIDES'), [
   'slug',
   'title',
   'description',

@@ -56,6 +56,6 @@ function mapJob(j: HimalayasJob): JobNormalized {
     postedAt: j.pubDate ? new Date(j.pubDate).toISOString() : new Date().toISOString(),
     expiresAt: new Date(Date.now() + 60 * 86_400_000).toISOString(),
     description,
-    tags: j.categories,
+    tags: j.categories ?? undefined,
   };
 }
