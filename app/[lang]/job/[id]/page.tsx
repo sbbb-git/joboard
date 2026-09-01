@@ -5,6 +5,7 @@ import { jobById, allJobs } from '@/lib/jobs';
 import type { Locale } from '@/lib/types';
 import { t, localePath } from '@/lib/i18n';
 import { buildMetadata, jobPostingJsonLd, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
+import { roleLabel } from '@/lib/labels';
 import { isExpired } from '@/lib/filters';
 import { flagFor } from '@/lib/flags';
 import { NomadCTA } from '@/components/NomadCTA';
@@ -237,7 +238,7 @@ export function generateMetadata({
   const cleanBody = job.description.replace(/\s+/g, ' ').trim();
   const bodyExcerpt = cleanBody.slice(0, 140);
   const description =
-    `Remote ${job.role.replace('-', ' ')} role at ${job.company}${job.locationCountry ? ` for candidates in ${job.locationCountry}` : ''}. ${bodyExcerpt}`.slice(0, 160);
+    `Remote ${roleLabel(params.lang, job.role)} role at ${job.company}${job.locationCountry ? ` for candidates in ${job.locationCountry}` : ''}. ${bodyExcerpt}`.slice(0, 160);
   return buildMetadata({
     locale: params.lang,
     path: `job/${params.id}`,
@@ -297,13 +298,13 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
     .filter((j) => j.id !== job.id && j.role === job.role)
     .slice(0, 5);
 
-  const roleLabel = job.role.replace('-', ' ');
+  const roleName = roleLabel(params.lang, job.role);
 
   const crumbItems = [
     { label: c.home, href: localePath(params.lang) },
     { label: t(params.lang, 'nav.jobs'), href: localePath(params.lang, 'jobs') },
     {
-      label: roleLabel,
+      label: roleName,
       href: localePath(params.lang, `jobs/${job.role}`),
     },
     { label: job.title },
@@ -368,7 +369,7 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
 
           <div className="mt-5 flex flex-wrap gap-2 text-xs">
             <span className="px-3 py-1 rounded-full bg-forestSoft text-forest font-semibold capitalize">
-              {roleLabel}
+              {roleName}
             </span>
             <span className="px-3 py-1 rounded-full bg-sand text-graphite border border-line font-medium capitalize">
               {job.seniority}
@@ -419,7 +420,7 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
                 {c.quickFacts}
               </h3>
               <dl className="space-y-2.5 text-sm">
-                <Fact label={c.factRole} value={roleLabel} />
+                <Fact label={c.factRole} value={roleName} />
                 <Fact label={c.factSeniority} value={job.seniority} />
                 <Fact label={c.factType} value={job.employmentType.replace('_', ' ').toLowerCase()} />
                 {salary && <Fact label={c.factSalary} value={salary} />}
@@ -432,7 +433,7 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
             {related.length > 0 && (
               <div className="rounded-2xl border border-line bg-paper shadow-soft p-5">
                 <h3 className="text-[10px] uppercase tracking-wider text-subtle font-semibold mb-3">
-                  {c.moreJobs(roleLabel)}
+                  {c.moreJobs(roleName)}
                 </h3>
                 <ul className="space-y-2">
                   {related.map((r) => (
@@ -453,7 +454,7 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
                   href={localePath(params.lang, `jobs/${job.role}`)}
                   className="text-xs text-forest hover:underline mt-3 inline-block"
                 >
-                  {c.seeAll(roleLabel)}
+                  {c.seeAll(roleName)}
                 </Link>
               </div>
             )}

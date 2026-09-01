@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { localePath } from '@/lib/i18n';
+import { roleLabel } from '@/lib/labels';
 import { flagFor } from '@/lib/flags';
 import type { JobNormalized, Locale } from '@/lib/types';
 import { CompanyLogo } from './CompanyLogo';
@@ -56,7 +57,7 @@ export function JobCard({ job, locale }: { job: JobNormalized; locale: Locale })
             <span className="text-subtle"> · {flag} {job.location}</span>
           </p>
           <div className="mt-3 flex flex-wrap items-center gap-1.5 text-[11px]">
-            <Tag tone="forest">{job.role.replace('-', ' ')}</Tag>
+            <Tag tone="forest">{roleLabel(locale, job.role)}</Tag>
             <Tag tone="neutral">{job.seniority}</Tag>
             {salary && <Tag tone="amber">{salary}</Tag>}
             <span className="ml-auto flex items-center gap-1 text-subtle">

@@ -37,7 +37,7 @@ export default function RolePage({ params }: { params: { lang: Locale; role: str
   if (!ROLES.includes(params.role as Role)) notFound();
   const role = params.role as Role;
   const jobs = jobsByRole(role);
-  const label = role.replace('-', ' ');
+  const label = roleLabel(params.lang, role);
   return (
     <div className="space-y-8">
       <header className="border-b border-line pb-5">

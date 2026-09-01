@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { flagFor } from '@/lib/flags';
+import { roleLabel } from '@/lib/labels';
 import { ROLES, type Locale, type Role, type Seniority } from '@/lib/types';
 import { CompanyLogo } from './CompanyLogo';
 
@@ -303,7 +304,7 @@ export function JobSearch({ locale }: { locale: Locale }) {
 
   const activeChips: Array<{ label: string; clear: () => void }> = [];
   if (q) activeChips.push({ label: `"${q.slice(0, 24)}"`, clear: () => setQ('') });
-  if (role) activeChips.push({ label: role.replace('-', ' '), clear: () => setRole('') });
+  if (role) activeChips.push({ label: roleLabel(locale, role), clear: () => setRole('') });
   if (country) activeChips.push({ label: `${flagFor(country)} ${country}`, clear: () => setCountry('') });
   if (seniority) activeChips.push({ label: cap(seniority), clear: () => setSeniority('') });
   if (employment) activeChips.push({ label: empLabel(employment, t), clear: () => setEmployment('') });
@@ -508,7 +509,7 @@ export function JobSearch({ locale }: { locale: Locale }) {
             <div className="flex-1 overflow-y-auto px-5 py-5 space-y-6">
               <FilterGroup title={t.groupRole}>
                 <RadioGrid
-                  options={[{ value: '', label: t.any }, ...ROLES.map((r) => ({ value: r, label: r.replace('-', ' ') }))]}
+                  options={[{ value: '', label: t.any }, ...ROLES.map((r) => ({ value: r, label: roleLabel(locale, r) }))]}
                   value={role}
                   onChange={(v) => setRole(v as Role | '')}
                 />
@@ -794,7 +795,7 @@ function SlimJobCard({ job, locale, t }: { job: SlimJob; locale: Locale; t: Sear
           </p>
           <div className="mt-3 flex flex-wrap gap-1.5 text-[11px]">
             <span className="px-2 py-0.5 rounded-full font-medium capitalize bg-forestSoft text-forest">
-              {job.r.replace('-', ' ')}
+              {roleLabel(locale, job.r)}
             </span>
             <span className="px-2 py-0.5 rounded-full font-medium capitalize bg-sand text-graphite border border-line">
               {job.s}
