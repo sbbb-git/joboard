@@ -42,7 +42,8 @@ export type HomeCopy = {
 export const HOME: Record<Locale, HomeCopy> = {
   en: {
     metaTitle: 'Remote tech jobs from across the web, refreshed daily',
-    metaDescription: 'Browse remote engineering, data, design and product jobs aggregated from ten public job board APIs. Updated every day in 7 languages. Salary, city and skill pages included.',
+    metaDescription:
+      'Remote engineering, data, design and product jobs aggregated daily from ten public job boards, with salary bands, city guides and skill pages.',
     badge: (n) => `Updated every 24 hours · ${n} active jobs`,
     h1a: 'Find your next ', h1em: 'remote tech role', h1b: ', fresh every day.',
     browseJobs: (n) => `Browse ${n} jobs →`, seeSalary: 'See salary data',
@@ -61,7 +62,8 @@ export const HOME: Record<Locale, HomeCopy> = {
   },
   fr: {
     metaTitle: 'Offres tech remote du web entier, mises à jour chaque jour',
-    metaDescription: "Parcourez les offres remote en ingénierie, data, design et produit agrégées depuis dix APIs publiques. Mises à jour chaque jour en 7 langues. Pages salaires, villes et compétences incluses.",
+    metaDescription:
+      "Offres remote en ingénierie, data, design et produit agrégées chaque jour depuis dix job boards publics, avec salaires, guides de villes et compétences.",
     badge: (n) => `Mis à jour toutes les 24h · ${n} offres actives`,
     h1a: 'Trouvez votre prochain ', h1em: 'rôle tech remote', h1b: ', frais chaque jour.',
     browseJobs: (n) => `Parcourir ${n} offres →`, seeSalary: 'Voir les salaires',
@@ -80,7 +82,8 @@ export const HOME: Record<Locale, HomeCopy> = {
   },
   es: {
     metaTitle: 'Empleos tech remotos de toda la web, actualizados cada día',
-    metaDescription: 'Explora empleos remotos de ingeniería, data, diseño y producto agregados desde diez APIs públicas. Actualizado cada día en 7 idiomas. Páginas de salario, ciudad y skill incluidas.',
+    metaDescription:
+      'Empleos remotos de ingeniería, datos, diseño y producto agregados a diario desde diez portales públicos, con salarios, guías de ciudades y skills.',
     badge: (n) => `Actualizado cada 24h · ${n} empleos activos`,
     h1a: 'Encuentra tu próximo ', h1em: 'rol tech remoto', h1b: ', fresco cada día.',
     browseJobs: (n) => `Ver ${n} empleos →`, seeSalary: 'Ver datos de salario',
@@ -99,7 +102,8 @@ export const HOME: Record<Locale, HomeCopy> = {
   },
   de: {
     metaTitle: 'Remote-Tech-Jobs aus dem ganzen Web, täglich aktualisiert',
-    metaDescription: 'Durchsuchen Sie Remote-Stellen in Engineering, Data, Design und Product, aggregiert aus zehn öffentlichen APIs. Täglich aktualisiert in 7 Sprachen. Gehalts-, Stadt- und Skill-Seiten inklusive.',
+    metaDescription:
+      'Remote-Jobs in Engineering, Data, Design und Product, täglich aus zehn öffentlichen Jobbörsen aggregiert, mit Gehaltsbändern, Städte- und Skill-Seiten.',
     badge: (n) => `Alle 24h aktualisiert · ${n} aktive Jobs`,
     h1a: 'Finden Sie Ihre nächste ', h1em: 'Remote-Tech-Rolle', h1b: ', täglich frisch.',
     browseJobs: (n) => `${n} Jobs durchsuchen →`, seeSalary: 'Gehaltsdaten ansehen',
@@ -118,7 +122,8 @@ export const HOME: Record<Locale, HomeCopy> = {
   },
   pt: {
     metaTitle: 'Vagas tech remotas de toda a web, atualizadas todos os dias',
-    metaDescription: 'Navegue vagas remotas de engenharia, data, design e produto agregadas de dez APIs públicas. Atualizado todo dia em 7 idiomas. Páginas de salário, cidade e skill incluídas.',
+    metaDescription:
+      'Vagas remotas de engenharia, dados, design e produto agregadas diariamente de dez portais públicos, com faixas salariais, guias de cidades e skills.',
     badge: (n) => `Atualizado a cada 24h · ${n} vagas ativas`,
     h1a: 'Encontre sua próxima ', h1em: 'vaga tech remota', h1b: ', fresca todo dia.',
     browseJobs: (n) => `Ver ${n} vagas →`, seeSalary: 'Ver dados de salário',
@@ -137,7 +142,8 @@ export const HOME: Record<Locale, HomeCopy> = {
   },
   it: {
     metaTitle: 'Lavori tech remote da tutto il web, aggiornati ogni giorno',
-    metaDescription: 'Sfoglia lavori remote in ingegneria, data, design e prodotto aggregati da dieci API pubbliche. Aggiornato ogni giorno in 7 lingue. Pagine su stipendi, città e skill incluse.',
+    metaDescription:
+      'Lavori remote in ingegneria, dati, design e prodotto aggregati ogni giorno da dieci job board pubbliche, con fasce salariali, guide città e skill.',
     badge: (n) => `Aggiornato ogni 24h · ${n} lavori attivi`,
     h1a: 'Trova il tuo prossimo ', h1em: 'ruolo tech remote', h1b: ', fresco ogni giorno.',
     browseJobs: (n) => `Sfoglia ${n} lavori →`, seeSalary: 'Vedi dati stipendi',
@@ -156,7 +162,8 @@ export const HOME: Record<Locale, HomeCopy> = {
   },
   pl: {
     metaTitle: 'Zdalne oferty tech z całej sieci, aktualizowane codziennie',
-    metaDescription: 'Przeglądaj zdalne oferty w inżynierii, data, designie i produkcie agregowane z dziesięciu publicznych API. Aktualizowane codziennie w 7 językach. Strony wynagrodzeń, miast i umiejętności w zestawie.',
+    metaDescription:
+      'Zdalne oferty w inżynierii, danych, designie i produkcie, agregowane codziennie z dziesięciu publicznych portali, z widełkami płac i profilami miast.',
     badge: (n) => `Aktualizowane co 24h · ${n} aktywnych ofert`,
     h1a: 'Znajdź swoją następną ', h1em: 'zdalną rolę tech', h1b: ', świeżą każdego dnia.',
     browseJobs: (n) => `Przeglądaj ${n} ofert →`, seeSalary: 'Zobacz dane o płacach',

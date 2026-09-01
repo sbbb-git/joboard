@@ -118,15 +118,23 @@ export function decodeEntities(text: string): string {
 }
 
 export function stripHtml(html: string): string {
-  return decodeEntities(
-    html
-      .replace(/<script[\s\S]*?<\/script>/gi, '')
-      .replace(/<style[\s\S]*?<\/style>/gi, '')
-      .replace(/<br\s*\/?>/gi, '\n')
-      .replace(/<\/p>/gi, '\n\n')
-      .replace(/<li>/gi, '- ')
-      .replace(/<[^>]+>/g, ''),
-  )
+  // Decode BEFORE stripping, then again after. Several feeds (We Work
+  // Remotely's RSS among them) deliver entity-encoded markup, so stripping
+  // first found no tags to remove and the later decode turned "&lt;p&gt;"
+  // into a literal "<p>" in the visible text and in the JobPosting
+  // description. Decoding first turns that markup back into real tags the
+  // stripper can remove; the second pass handles entities that were only
+  // encoded once. Output is rendered as escaped JSX text, so surfacing tags
+  // here can only remove markup, never introduce live HTML.
+  const tags = decodeEntities(html)
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>/gi, '')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<\/p>/gi, '\n\n')
+    .replace(/<li>/gi, '- ')
+    .replace(/<[^>]+>/g, '');
+  return decodeEntities(tags)
+    .replace(/[ \t]+\n/g, '\n')
     .replace(/\n{3,}/g, '\n\n')
     .trim();
 }

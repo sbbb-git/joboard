@@ -18,23 +18,13 @@ import { roleLabel } from '@/lib/labels';
 export const dynamicParams = false;
 export const revalidate = false;
 
-const META_DESCRIPTION: Record<Locale, string> = {
-  en: 'Remote engineering, data, design and product jobs aggregated daily from ten public job boards, with salary bands, city guides and skill pages.',
-  fr: "Offres remote en ingénierie, data, design et produit agrégées chaque jour depuis dix job boards publics, avec salaires, guides de villes et compétences.",
-  es: 'Empleos remotos de ingeniería, datos, diseño y producto agregados a diario desde diez portales públicos, con salarios, guías de ciudades y skills.',
-  de: 'Remote-Jobs in Engineering, Data, Design und Product, täglich aus zehn öffentlichen Jobbörsen aggregiert, mit Gehaltsbändern, Städte- und Skill-Seiten.',
-  pt: 'Vagas remotas de engenharia, dados, design e produto agregadas diariamente de dez portais públicos, com faixas salariais, guias de cidades e skills.',
-  it: 'Lavori remote in ingegneria, dati, design e prodotto aggregati ogni giorno da dieci job board pubbliche, con fasce salariali, guide città e skill.',
-  pl: 'Zdalne oferty w inżynierii, danych, designie i produkcie, agregowane codziennie z dziesięciu publicznych portali, z widełkami płac i profilami miast.',
-};
-
 export function generateMetadata({ params }: { params: { lang: Locale } }): Metadata {
   const h = HOME[params.lang];
   return buildMetadata({
     locale: params.lang,
     path: '',
     title: h.metaTitle,
-    description: META_DESCRIPTION[params.lang],
+    description: h.metaDescription,
   });
 }
 

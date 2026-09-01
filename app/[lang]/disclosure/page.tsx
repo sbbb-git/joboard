@@ -39,8 +39,8 @@ type Copy = {
 
 const COPY: Record<Locale, Copy> = {
   en: {
-    metaTitle: 'Affiliate disclosure',
-    metaDescription: 'Full list of affiliate partnerships used across slateremote.com, how we are compensated, and why these specific picks.',
+    metaTitle: 'Affiliate disclosure and how we get paid',
+    metaDescription: 'Every affiliate partnership behind slateremote.com, what each program pays us per signup, the three revenue channels we use, and what we refuse to do.',
     eyebrow: 'Transparency',
     h1: 'Affiliate disclosure',
     intro: 'Every product slateremote.com recommends is either a tool we use ourselves or one we have vetted carefully for the remote tech audience. Some of those product links pay us a commission. This page lists every commercial relationship, in full.',
@@ -69,8 +69,8 @@ const COPY: Record<Locale, Copy> = {
     bodyQuestionPost: '. We remove partners that drift in quality.',
   },
   fr: {
-    metaTitle: 'Divulgation des affiliations',
-    metaDescription: 'Liste complète des partenariats affiliés utilisés sur slateremote.com, comment nous sommes rémunérés, et pourquoi ces choix.',
+    metaTitle: 'Divulgation des affiliations et rémunération',
+    metaDescription: "Tous les partenariats affiliés derrière slateremote.com, ce que chaque programme nous paie par inscription, nos trois canaux de revenus et nos limites.",
     eyebrow: 'Transparence',
     h1: 'Divulgation des affiliations',
     intro: "Chaque produit recommandé par slateremote.com est soit un outil que nous utilisons nous-mêmes, soit un service que nous avons soigneusement examiné pour l'audience tech remote. Certains de ces liens nous rémunèrent. Cette page liste toutes les relations commerciales, intégralement.",
@@ -99,8 +99,8 @@ const COPY: Record<Locale, Copy> = {
     bodyQuestionPost: '. Nous retirons les partenaires dont la qualité baisse.',
   },
   es: {
-    metaTitle: 'Divulgación de afiliados',
-    metaDescription: 'Lista completa de partnerships de afiliados usados en slateremote.com, cómo nos pagan y por qué estas elecciones.',
+    metaTitle: 'Divulgación de afiliados y cómo nos pagan',
+    metaDescription: 'Todas las partnerships de afiliados detrás de slateremote.com, lo que cada programa nos paga por registro, nuestros tres canales de ingresos y límites.',
     eyebrow: 'Transparencia',
     h1: 'Divulgación de afiliados',
     intro: 'Cada producto que slateremote.com recomienda es o una herramienta que usamos o un servicio que hemos evaluado cuidadosamente para la audiencia tech remota. Algunos de esos enlaces nos pagan comisión. Esta página lista cada relación comercial, completa.',
@@ -129,8 +129,8 @@ const COPY: Record<Locale, Copy> = {
     bodyQuestionPost: '. Retiramos partners que pierden calidad.',
   },
   de: {
-    metaTitle: 'Affiliate-Offenlegung',
-    metaDescription: 'Vollständige Liste der Affiliate-Partnerschaften auf slateremote.com, wie wir vergütet werden und warum diese Auswahl.',
+    metaTitle: 'Affiliate-Offenlegung und unsere Vergütung',
+    metaDescription: 'Alle Affiliate-Partnerschaften hinter slateremote.com, was jedes Programm uns pro Anmeldung zahlt, unsere drei Einnahmekanäle und was wir nicht tun.',
     eyebrow: 'Transparenz',
     h1: 'Affiliate-Offenlegung',
     intro: 'Jedes Produkt, das slateremote.com empfiehlt, ist entweder ein Tool, das wir selbst nutzen, oder ein Dienst, den wir sorgfältig für die Remote-Tech-Audience geprüft haben. Einige dieser Produktlinks zahlen uns eine Provision. Diese Seite listet jede kommerzielle Beziehung vollständig auf.',
@@ -159,8 +159,8 @@ const COPY: Record<Locale, Copy> = {
     bodyQuestionPost: '. Wir entfernen Partner, deren Qualität nachlässt.',
   },
   pt: {
-    metaTitle: 'Divulgação de afiliados',
-    metaDescription: 'Lista completa das parcerias de afiliados usadas no slateremote.com, como somos compensados e por que essas escolhas.',
+    metaTitle: 'Divulgação de afiliados e como somos pagos',
+    metaDescription: 'Todas as parcerias de afiliados por trás do slateremote.com, quanto cada programa nos paga por cadastro, nossos três canais de receita e nossos limites.',
     eyebrow: 'Transparência',
     h1: 'Divulgação de afiliados',
     intro: 'Cada produto que o slateremote.com recomenda é uma ferramenta que usamos ou um serviço que avaliamos cuidadosamente para a audiência tech remota. Alguns desses links nos pagam comissão. Esta página lista toda relação comercial, por completo.',
@@ -189,8 +189,8 @@ const COPY: Record<Locale, Copy> = {
     bodyQuestionPost: '. Removemos parceiros que perdem qualidade.',
   },
   it: {
-    metaTitle: 'Divulgazione affiliati',
-    metaDescription: 'Lista completa delle partnership di affiliazione su slateremote.com, come veniamo pagati e perché queste scelte.',
+    metaTitle: 'Divulgazione affiliati e come veniamo pagati',
+    metaDescription: 'Tutte le partnership di affiliazione dietro slateremote.com, quanto ogni programma ci paga per iscrizione, i tre canali di ricavo e i nostri limiti.',
     eyebrow: 'Trasparenza',
     h1: 'Divulgazione affiliati',
     intro: 'Ogni prodotto raccomandato da slateremote.com è uno strumento che usiamo o un servizio che abbiamo valutato attentamente per l\'audience tech remote. Alcuni di questi link ci pagano una commissione. Questa pagina elenca ogni relazione commerciale, per intero.',
@@ -219,8 +219,8 @@ const COPY: Record<Locale, Copy> = {
     bodyQuestionPost: '. Rimuoviamo i partner la cui qualità cala.',
   },
   pl: {
-    metaTitle: 'Ujawnienie afiliacji',
-    metaDescription: 'Pełna lista partnerstw afiliacyjnych używanych na slateremote.com, jak jesteśmy wynagradzani i dlaczego te wybory.',
+    metaTitle: 'Ujawnienie afiliacji i jak na tym zarabiamy',
+    metaDescription: 'Wszystkie partnerstwa afiliacyjne stojące za slateremote.com, ile każdy program płaci nam za rejestrację, nasze trzy kanały przychodu i nasze granice.',
     eyebrow: 'Przejrzystość',
     h1: 'Ujawnienie afiliacji',
     intro: 'Każdy produkt, który slateremote.com poleca, to albo narzędzie, którego sami używamy, albo usługa, którą starannie sprawdziliśmy dla zdalnej publiczności tech. Niektóre z tych linków produktowych płacą nam prowizję. Ta strona wymienia każdą relację komercyjną w całości.',

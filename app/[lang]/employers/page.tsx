@@ -175,9 +175,9 @@ type Copy = {
 
 const COPY: Record<Locale, Copy> = {
   en: {
-    metaTitle: 'Hire remote tech talent · why post on slateremote.com',
+    metaTitle: 'Hire remote tech talent · post a job for $49',
     metaDescription:
-      'Reach engineers, designers, data and product candidates already searching for remote roles. Distribution across 7 languages, 6300+ indexed pages, and a daily-refreshed audience.',
+      'Put a remote role in front of engineers, data, design and product candidates already searching. 30 days for $49, across 7 languages and 6,300+ pages.',
     eyebrow: 'For employers',
     h1: 'Hire engineers who already chose remote.',
     intro:
@@ -267,9 +267,9 @@ const COPY: Record<Locale, Copy> = {
     finalCta: 'Post a job for $49 →',
   },
   fr: {
-    metaTitle: 'Recruter en tech remote · pourquoi publier sur slateremote.com',
+    metaTitle: 'Recruter en tech remote · publier une offre pour 49 $',
     metaDescription:
-      "Atteignez ingénieurs, designers, data et candidats produit qui cherchent déjà du remote. Diffusion en 7 langues, 6300+ pages indexées, audience rafraîchie chaque jour.",
+      "Placez une offre remote devant des ingénieurs, data, design et produit déjà en recherche. 30 jours pour 49 $, en 7 langues et sur 6 300+ pages.",
     eyebrow: 'Espace recruteurs',
     h1: 'Recrutez des ingénieurs qui ont déjà choisi le remote.',
     intro:
@@ -359,9 +359,9 @@ const COPY: Record<Locale, Copy> = {
     finalCta: 'Publier pour 49 $ →',
   },
   es: {
-    metaTitle: 'Contrata talento tech remoto · por qué publicar en slateremote.com',
+    metaTitle: 'Contratar talento tech remoto · publica por 49 $',
     metaDescription:
-      'Llega a ingenieros, diseñadores, data y candidatos product que ya buscan remoto. Distribución en 7 idiomas, 6300+ páginas indexadas, audiencia actualizada cada día.',
+      'Pon una oferta remota ante ingenieros, data, diseño y producto que ya buscan. 30 días por 49 $, en 7 idiomas y sobre 6.300+ páginas indexadas.',
     eyebrow: 'Para empresas',
     h1: 'Contrata ingenieros que ya eligieron lo remoto.',
     intro:
@@ -451,9 +451,9 @@ const COPY: Record<Locale, Copy> = {
     finalCta: 'Publicar por 49 $ →',
   },
   de: {
-    metaTitle: 'Remote Tech-Talente einstellen · warum auf slateremote.com posten',
+    metaTitle: 'Remote-Tech-Talente einstellen · Anzeige für 49 $',
     metaDescription:
-      'Erreichen Sie Engineers, Designer, Data- und Product-Kandidaten, die bereits aktiv nach Remote suchen. Verteilung in 7 Sprachen, 6300+ indexierte Seiten, täglich aktualisierte Audience.',
+      'Zeigen Sie eine Remote-Stelle Engineers, Data-, Design- und Product-Kandidaten, die schon suchen. 30 Tage für 49 $, in 7 Sprachen, 6.300+ Seiten.',
     eyebrow: 'Für Arbeitgeber',
     h1: 'Stellen Sie Engineers ein, die sich schon für Remote entschieden haben.',
     intro:
@@ -543,9 +543,9 @@ const COPY: Record<Locale, Copy> = {
     finalCta: 'Job posten für 49 $ →',
   },
   pt: {
-    metaTitle: 'Contrate talento tech remoto · por que publicar no slateremote.com',
+    metaTitle: 'Contratar talento tech remoto · publique por 49 $',
     metaDescription:
-      'Alcance engenheiros, designers, data e candidatos product que já buscam remoto. Distribuição em 7 idiomas, 6300+ páginas indexadas, audiência atualizada diariamente.',
+      'Coloque uma vaga remota diante de engenheiros, data, design e produto que já procuram. 30 dias por 49 $, em 7 idiomas e mais de 6.300 páginas.',
     eyebrow: 'Para empresas',
     h1: 'Contrate engenheiros que já escolheram o remoto.',
     intro:
@@ -635,9 +635,9 @@ const COPY: Record<Locale, Copy> = {
     finalCta: 'Publicar por 49 $ →',
   },
   it: {
-    metaTitle: 'Assumi talento tech remote · perché pubblicare su slateremote.com',
+    metaTitle: 'Assumere talenti tech remote · annuncio a 49 $',
     metaDescription:
-      'Raggiungi ingegneri, designer, data e candidati product che già cercano remote. Distribuzione in 7 lingue, 6300+ pagine indicizzate, audience aggiornata ogni giorno.',
+      'Metti un ruolo remote davanti a ingegneri, data, design e product già in cerca. 30 giorni per 49 $, in 7 lingue e su oltre 6.300 pagine indicizzate.',
     eyebrow: 'Per le aziende',
     h1: 'Assumi ingegneri che hanno già scelto il remote.',
     intro:
@@ -727,9 +727,9 @@ const COPY: Record<Locale, Copy> = {
     finalCta: 'Pubblica per 49 $ →',
   },
   pl: {
-    metaTitle: 'Zatrudnij zdalny talent tech · dlaczego publikować na slateremote.com',
+    metaTitle: 'Zatrudnij talenty tech remote · ogłoszenie za 49 $',
     metaDescription:
-      'Dotrzyj do inżynierów, projektantów, data i kandydatów product szukających już zdalnej pracy. Dystrybucja w 7 językach, 6300+ zaindeksowanych stron, codziennie odświeżana publiczność.',
+      'Pokaż zdalną ofertę inżynierom oraz kandydatom data, design i product, którzy już szukają. 30 dni za 49 $, w 7 językach i na ponad 6300 stronach.',
     eyebrow: 'Dla pracodawców',
     h1: 'Zatrudnij inżynierów, którzy już wybrali zdalną pracę.',
     intro:

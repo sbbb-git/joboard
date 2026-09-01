@@ -32,9 +32,9 @@ type Copy = {
 
 const COPY: Record<Locale, Copy> = {
   en: {
-    metaTitle: 'Earn online as a developer: the four routes that pay in 2026',
+    metaTitle: 'Earn online as a developer: four routes that pay',
     metaDescription:
-      'Four practical routes for a developer to earn online in 2026: a remote tech job, freelance services on Fiverr, lifetime SaaS deals on AppSumo, and a monetized newsletter.',
+      'Four ways a developer earns online in 2026: a remote tech job, freelance gigs on Fiverr, lifetime SaaS deals on AppSumo, and a paid tech newsletter.',
     eyebrow: 'Earn online',
     h1: 'Four routes to earn online as a developer',
     intro:
@@ -63,9 +63,9 @@ const COPY: Record<Locale, Copy> = {
     readGuide: 'Read the guide →',
   },
   fr: {
-    metaTitle: "Gagner en ligne quand on est développeur : les 4 voies qui paient en 2026",
+    metaTitle: 'Gagner en ligne comme développeur : 4 voies qui paient',
     metaDescription:
-      "Quatre voies concrètes pour gagner en ligne quand on est développeur en 2026 : un job tech remote, du freelance sur Fiverr, des deals SaaS à vie sur AppSumo, et une newsletter monétisée.",
+      "Quatre façons de gagner en ligne en 2026 : un job tech remote, du freelance sur Fiverr, des deals SaaS à vie sur AppSumo et une newsletter payante.",
     eyebrow: 'Gagner en ligne',
     h1: 'Quatre voies pour gagner en ligne quand on est développeur',
     intro:
@@ -94,9 +94,9 @@ const COPY: Record<Locale, Copy> = {
     readGuide: 'Lire le guide →',
   },
   es: {
-    metaTitle: 'Ganar en línea como desarrollador: las 4 vías que pagan en 2026',
+    metaTitle: 'Ganar en línea como desarrollador: 4 vías que pagan',
     metaDescription:
-      'Cuatro vías prácticas para ganar en línea como desarrollador en 2026: un empleo tech remoto, servicios freelance en Fiverr, deals SaaS de por vida en AppSumo y una newsletter monetizada.',
+      'Cuatro formas de ganar en línea en 2026: un empleo tech remoto, freelance en Fiverr, deals SaaS de por vida en AppSumo y una newsletter de pago.',
     eyebrow: 'Ganar en línea',
     h1: 'Cuatro vías para ganar en línea como desarrollador',
     intro:
@@ -125,9 +125,9 @@ const COPY: Record<Locale, Copy> = {
     readGuide: 'Leer la guía →',
   },
   de: {
-    metaTitle: 'Online verdienen als Entwickler: die 4 Wege, die 2026 zahlen',
+    metaTitle: 'Online verdienen als Entwickler: 4 Wege, die zahlen',
     metaDescription:
-      'Vier praktische Wege, um 2026 als Entwickler online zu verdienen: ein Remote-Tech-Job, Freelance-Services auf Fiverr, Lifetime-SaaS-Deals auf AppSumo und ein monetisierter Newsletter.',
+      'Vier Wege, 2026 online zu verdienen: ein Remote-Tech-Job, Freelance auf Fiverr, Lifetime-SaaS-Deals auf AppSumo und ein bezahlter Tech-Newsletter.',
     eyebrow: 'Online verdienen',
     h1: 'Vier Wege, um als Entwickler online zu verdienen',
     intro:
@@ -156,9 +156,9 @@ const COPY: Record<Locale, Copy> = {
     readGuide: 'Guide lesen →',
   },
   pt: {
-    metaTitle: 'Ganhar online como desenvolvedor: as 4 rotas que pagam em 2026',
+    metaTitle: 'Ganhar online como desenvolvedor: 4 rotas que pagam',
     metaDescription:
-      'Quatro rotas práticas para um desenvolvedor ganhar online em 2026: uma vaga tech remota, serviços freelance no Fiverr, deals vitalícios de SaaS no AppSumo e uma newsletter monetizada.',
+      'Quatro formas de ganhar online em 2026: uma vaga tech remota, freelance no Fiverr, deals vitalícios de SaaS no AppSumo e uma newsletter paga.',
     eyebrow: 'Ganhar online',
     h1: 'Quatro rotas para ganhar online como desenvolvedor',
     intro:
@@ -187,9 +187,9 @@ const COPY: Record<Locale, Copy> = {
     readGuide: 'Ler o guia →',
   },
   it: {
-    metaTitle: 'Guadagnare online da sviluppatore: le 4 vie che pagano nel 2026',
+    metaTitle: 'Guadagnare online da sviluppatore: 4 vie che pagano',
     metaDescription:
-      'Quattro vie pratiche per guadagnare online da sviluppatore nel 2026: un lavoro tech remote, servizi freelance su Fiverr, offerte a vita su AppSumo e una newsletter monetizzata.',
+      'Quattro modi per guadagnare online nel 2026: un lavoro tech remote, freelance su Fiverr, offerte a vita su AppSumo e una newsletter a pagamento.',
     eyebrow: 'Guadagnare online',
     h1: 'Quattro vie per guadagnare online da sviluppatore',
     intro:
@@ -218,9 +218,9 @@ const COPY: Record<Locale, Copy> = {
     readGuide: 'Leggi la guida →',
   },
   pl: {
-    metaTitle: 'Zarabianie online jako deweloper: 4 ścieżki, które płacą w 2026',
+    metaTitle: 'Zarabianie online jako deweloper: 4 skuteczne ścieżki',
     metaDescription:
-      'Cztery praktyczne ścieżki zarabiania online dla dewelopera w 2026: zdalna praca tech, usługi freelance na Fiverr, dożywotnie oferty SaaS na AppSumo i monetyzowany newsletter.',
+      'Cztery sposoby zarabiania online w 2026: zdalna praca tech, freelance na Fiverr, dożywotnie oferty SaaS na AppSumo i płatny newsletter techniczny.',
     eyebrow: 'Zarabianie online',
     h1: 'Cztery ścieżki zarabiania online jako deweloper',
     intro:

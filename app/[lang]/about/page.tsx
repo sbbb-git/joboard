@@ -34,8 +34,8 @@ type Copy = {
 
 const COPY: Record<Locale, Copy> = {
   en: {
-    metaTitle: 'About slateremote.com',
-    metaDescription: 'How slateremote.com is built, what data it aggregates, and how the index is kept fresh.',
+    metaTitle: 'About slateremote.com: sources and method',
+    metaDescription: 'How slateremote.com builds its remote job index: the ten public APIs it pulls from, the daily refresh at 04:00 UTC, and how salary bands are computed.',
     h1: 'About slateremote.com',
     subtitle: 'A curated index of remote tech jobs, aggregated from public job board APIs.',
     h2What: 'What this is',
@@ -65,8 +65,8 @@ const COPY: Record<Locale, Copy> = {
     bodyContactLink: 'contact page',
   },
   fr: {
-    metaTitle: 'À propos de slateremote.com',
-    metaDescription: "Comment slateremote.com est construit, quelles données il agrège, et comment l'index reste à jour.",
+    metaTitle: 'À propos de slateremote.com : sources et méthode',
+    metaDescription: "Comment slateremote.com construit son index d'offres remote : les dix APIs publiques, la mise à jour quotidienne à 04:00 UTC et le calcul des salaires.",
     h1: 'À propos de slateremote.com',
     subtitle: 'Un index curé des offres tech remote, agrégé depuis les APIs publiques des job boards.',
     h2What: 'De quoi il s\'agit',
@@ -96,8 +96,8 @@ const COPY: Record<Locale, Copy> = {
     bodyContactLink: 'page contact',
   },
   es: {
-    metaTitle: 'Acerca de slateremote.com',
-    metaDescription: 'Cómo se construye slateremote.com, qué datos agrega y cómo se mantiene fresco el índice.',
+    metaTitle: 'Acerca de slateremote.com: fuentes y método',
+    metaDescription: 'Cómo slateremote.com construye su índice de empleos remotos: las diez APIs públicas, la actualización diaria a las 04:00 UTC y el cálculo de salarios.',
     h1: 'Acerca de slateremote.com',
     subtitle: 'Un índice curado de empleos tech remotos, agregado desde APIs públicas de portales de empleo.',
     h2What: 'Qué es esto',
@@ -127,8 +127,8 @@ const COPY: Record<Locale, Copy> = {
     bodyContactLink: 'página de contacto',
   },
   de: {
-    metaTitle: 'Über slateremote.com',
-    metaDescription: 'Wie slateremote.com aufgebaut ist, welche Daten aggregiert werden und wie der Index aktuell bleibt.',
+    metaTitle: 'Über slateremote.com: Quellen und Methode',
+    metaDescription: 'Wie slateremote.com seinen Remote-Job-Index baut: die zehn öffentlichen APIs, das tägliche Update um 04:00 UTC und die Berechnung der Gehaltsbänder.',
     h1: 'Über slateremote.com',
     subtitle: 'Ein kuratierter Index für Remote-Tech-Jobs, aggregiert aus öffentlichen Job-Board-APIs.',
     h2What: 'Was das ist',
@@ -158,8 +158,8 @@ const COPY: Record<Locale, Copy> = {
     bodyContactLink: 'Kontaktseite',
   },
   pt: {
-    metaTitle: 'Sobre o slateremote.com',
-    metaDescription: 'Como o slateremote.com é construído, que dados agrega e como o índice se mantém atualizado.',
+    metaTitle: 'Sobre o slateremote.com: fontes e método',
+    metaDescription: 'Como o slateremote.com constrói seu índice de vagas remotas: as dez APIs públicas, a atualização diária às 04:00 UTC e o cálculo das faixas salariais.',
     h1: 'Sobre o slateremote.com',
     subtitle: 'Um índice curado de vagas tech remotas, agregado de APIs públicas de portais de emprego.',
     h2What: 'O que é isso',
@@ -189,8 +189,8 @@ const COPY: Record<Locale, Copy> = {
     bodyContactLink: 'página de contato',
   },
   it: {
-    metaTitle: 'Su slateremote.com',
-    metaDescription: 'Come è costruito slateremote.com, quali dati aggrega e come mantiene fresco l\'indice.',
+    metaTitle: 'Su slateremote.com: fonti e metodo',
+    metaDescription: "Come slateremote.com costruisce il suo indice di lavori remote: le dieci API pubbliche, l'aggiornamento quotidiano alle 04:00 UTC e il calcolo dei salari.",
     h1: 'Su slateremote.com',
     subtitle: 'Un indice curato di lavori tech remote, aggregato dalle API pubbliche delle job board.',
     h2What: 'Cos\'è',
@@ -220,8 +220,8 @@ const COPY: Record<Locale, Copy> = {
     bodyContactLink: 'pagina contatti',
   },
   pl: {
-    metaTitle: 'O slateremote.com',
-    metaDescription: 'Jak zbudowany jest slateremote.com, jakie dane agreguje i jak utrzymuje świeży indeks.',
+    metaTitle: 'O slateremote.com: źródła i metoda',
+    metaDescription: 'Jak slateremote.com buduje indeks zdalnych ofert: dziesięć publicznych API, codzienna aktualizacja o 04:00 UTC i sposób liczenia widełek wynagrodzeń.',
     h1: 'O slateremote.com',
     subtitle: 'Wyselekcjonowany indeks zdalnych ofert tech, agregowany z publicznych API portali pracy.',
     h2What: 'Czym to jest',

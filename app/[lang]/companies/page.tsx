@@ -8,13 +8,22 @@ import type { Locale } from '@/lib/types';
 export const dynamicParams = false;
 export const revalidate = false;
 
+const META_DESCRIPTION: Record<Locale, string> = {
+  en: 'Every company posting remote tech jobs in our index, grouped by how many openings they have, from teams hiring five or more roles down to single listings.',
+  fr: "Toutes les entreprises qui publient des offres tech remote dans notre index, classées par nombre de postes ouverts, de cinq et plus à une seule annonce.",
+  es: 'Todas las empresas que publican empleos tech remotos en nuestro índice, agrupadas por número de vacantes, desde cinco o más hasta una sola oferta.',
+  de: 'Alle Unternehmen mit Remote-Tech-Stellen in unserem Index, gruppiert nach Anzahl offener Positionen, von fünf und mehr bis hin zu einzelnen Anzeigen.',
+  pt: 'Todas as empresas com vagas tech remotas no nosso índice, agrupadas pelo número de posições abertas, de cinco ou mais até um único anúncio publicado.',
+  it: 'Tutte le aziende con annunci tech remote nel nostro indice, raggruppate per numero di posizioni aperte, da cinque o più fino a un singolo annuncio.',
+  pl: 'Wszystkie firmy publikujące zdalne oferty tech w naszym indeksie, pogrupowane według liczby otwartych stanowisk, od pięciu i więcej do jednej oferty.',
+};
+
 export function generateMetadata({ params }: { params: { lang: Locale } }): Metadata {
   return buildMetadata({
     locale: params.lang,
     path: 'companies',
     title: 'Remote-friendly companies hiring now',
-    description:
-      'Every company currently posting remote tech jobs in our index, grouped by how many openings they have.',
+    description: META_DESCRIPTION[params.lang],
   });
 }
 

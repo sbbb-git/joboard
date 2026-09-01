@@ -44,7 +44,7 @@ const SECTION_IDS: Array<{ id: string; categories: AffiliateEntry['category'][] 
 const COPY: Record<Locale, Copy> = {
   en: {
     metaTitle: 'The remote work stack we actually use',
-    metaDescription: 'Every tool, bank, insurance, VPN and AI service the slateremote.com team uses or recommends to remote tech workers in 2026. Categorised, with our affiliate disclosure.',
+    metaDescription: 'The tools, banks, insurance, VPNs and AI services the slateremote.com team actually uses in 2026, grouped by category with full affiliate disclosure.',
     eyebrow: 'Discover',
     h1: 'The remote stack we run on',
     introPre: (n) => `${n} tools, banks, insurances, VPNs and AI services we use ourselves or recommend to remote tech workers around us. Affiliate links throughout, full transparency on `,
@@ -68,7 +68,7 @@ const COPY: Record<Locale, Copy> = {
   },
   fr: {
     metaTitle: 'Le stack remote que nous utilisons vraiment',
-    metaDescription: "Tous les outils, banques, assurances, VPN et services IA que l'équipe slateremote.com utilise ou recommande aux travailleurs tech remote en 2026. Catégorisé, avec notre disclosure d'affiliation.",
+    metaDescription: "Les outils, banques, assurances, VPN et services IA que l'équipe slateremote.com utilise vraiment en 2026, par catégorie, avec notre disclosure.",
     eyebrow: 'Découvrir',
     h1: 'Le stack remote qui nous fait tourner',
     introPre: (n) => `${n} outils, banques, assurances, VPN et services IA que nous utilisons nous-mêmes ou recommandons aux travailleurs tech remote autour de nous. Liens affiliés partout, transparence totale sur `,
@@ -92,7 +92,7 @@ const COPY: Record<Locale, Copy> = {
   },
   es: {
     metaTitle: 'El stack remoto que de verdad usamos',
-    metaDescription: 'Cada herramienta, banco, seguro, VPN y servicio IA que el equipo slateremote.com usa o recomienda a trabajadores tech remotos en 2026. Categorizado, con nuestra disclosure de afiliados.',
+    metaDescription: 'Las herramientas, bancos, seguros, VPN y servicios IA que el equipo de slateremote.com usa de verdad en 2026, por categoría y con disclosure completa.',
     eyebrow: 'Descubre',
     h1: 'El stack remoto sobre el que funcionamos',
     introPre: (n) => `${n} herramientas, bancos, seguros, VPN y servicios IA que usamos o recomendamos a trabajadores tech remotos. Enlaces de afiliado en todo el sitio, transparencia total en `,
@@ -116,7 +116,7 @@ const COPY: Record<Locale, Copy> = {
   },
   de: {
     metaTitle: 'Der Remote-Stack, den wir wirklich nutzen',
-    metaDescription: 'Jedes Tool, jede Bank, Versicherung, VPN und KI-Service, das das slateremote.com-Team nutzt oder Remote-Tech-Workern 2026 empfiehlt. Kategorisiert, mit unserer Affiliate-Offenlegung.',
+    metaDescription: 'Die Tools, Banken, Versicherungen, VPNs und KI-Dienste, die das slateremote.com-Team 2026 wirklich nutzt, nach Kategorie und mit voller Offenlegung.',
     eyebrow: 'Entdecken',
     h1: 'Der Remote-Stack, auf dem wir laufen',
     introPre: (n) => `${n} Tools, Banken, Versicherungen, VPNs und KI-Services, die wir selbst nutzen oder Remote-Tech-Workern empfehlen. Affiliate-Links überall, volle Transparenz auf `,
@@ -140,7 +140,7 @@ const COPY: Record<Locale, Copy> = {
   },
   pt: {
     metaTitle: 'O stack remoto que realmente usamos',
-    metaDescription: 'Cada ferramenta, banco, seguro, VPN e serviço IA que a equipe slateremote.com usa ou recomenda para trabalhadores tech remotos em 2026. Categorizado, com nossa divulgação de afiliados.',
+    metaDescription: 'As ferramentas, bancos, seguros, VPNs e serviços de IA que a equipe do slateremote.com realmente usa em 2026, por categoria e com divulgação completa.',
     eyebrow: 'Descubra',
     h1: 'O stack remoto sobre o qual rodamos',
     introPre: (n) => `${n} ferramentas, bancos, seguros, VPNs e serviços IA que usamos ou recomendamos a trabalhadores tech remotos ao nosso redor. Links de afiliado em todo o site, transparência total em `,
@@ -164,7 +164,7 @@ const COPY: Record<Locale, Copy> = {
   },
   it: {
     metaTitle: 'Lo stack remote che usiamo davvero',
-    metaDescription: 'Ogni strumento, banca, assicurazione, VPN e servizio IA che il team slateremote.com usa o raccomanda ai lavoratori tech remote nel 2026. Categorizzato, con la nostra divulgazione affiliati.',
+    metaDescription: 'Gli strumenti, le banche, le assicurazioni, le VPN e i servizi IA che il team di slateremote.com usa davvero nel 2026, per categoria e con divulgazione.',
     eyebrow: 'Scopri',
     h1: 'Lo stack remote su cui giriamo',
     introPre: (n) => `${n} strumenti, banche, assicurazioni, VPN e servizi IA che usiamo o raccomandiamo ai lavoratori tech remote attorno a noi. Link affiliati ovunque, trasparenza totale su `,
@@ -188,7 +188,7 @@ const COPY: Record<Locale, Copy> = {
   },
   pl: {
     metaTitle: 'Zdalny stack, którego naprawdę używamy',
-    metaDescription: 'Każde narzędzie, bank, ubezpieczenie, VPN i usługa AI, której zespół slateremote.com używa lub poleca zdalnym pracownikom tech w 2026. Skategoryzowane, z naszą deklaracją afiliacji.',
+    metaDescription: 'Narzędzia, banki, ubezpieczenia, VPN-y i usługi AI, z których zespół slateremote.com naprawdę korzysta w 2026, według kategorii i z pełną deklaracją.',
     eyebrow: 'Odkryj',
     h1: 'Zdalny stack, na którym jedziemy',
     introPre: (n) => `${n} narzędzi, banków, ubezpieczeń, VPN i usług AI, których używamy lub polecamy zdalnym pracownikom tech wokół nas. Linki afiliacyjne wszędzie, pełna przejrzystość na `,

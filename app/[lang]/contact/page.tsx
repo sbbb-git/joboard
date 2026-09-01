@@ -27,8 +27,8 @@ type Copy = {
 
 const COPY: Record<Locale, Copy> = {
   en: {
-    metaTitle: 'Contact slateremote.com',
-    metaDescription: 'Reach out for corrections, takedown requests, or partnership inquiries.',
+    metaTitle: 'Contact slateremote.com: corrections and takedowns',
+    metaDescription: 'Email slateremote.com about an inaccurate or expired listing, an employer takedown request handled within 48 hours, or a partnership and integration idea.',
     h1: 'Contact',
     fastestPre: 'The fastest way to reach us is by email:',
     h2Takedowns: 'Corrections and takedowns',
@@ -41,8 +41,8 @@ const COPY: Record<Locale, Copy> = {
     bodyPartnerships: 'For partnership and integration inquiries, email us with a brief description of what you have in mind.',
   },
   fr: {
-    metaTitle: 'Contacter slateremote.com',
-    metaDescription: 'Contactez-nous pour corrections, retraits ou partenariats.',
+    metaTitle: 'Contacter slateremote.com : corrections et retraits',
+    metaDescription: "Écrivez à slateremote.com pour une annonce inexacte ou périmée, une demande de retrait employeur traitée sous 48 heures, ou un projet de partenariat.",
     h1: 'Contact',
     fastestPre: 'Le plus rapide pour nous joindre, c\'est par email :',
     h2Takedowns: 'Corrections et retraits',
@@ -55,8 +55,8 @@ const COPY: Record<Locale, Copy> = {
     bodyPartnerships: "Pour partenariats et intégrations, envoyez-nous un email avec une brève description de ce que vous avez en tête.",
   },
   es: {
-    metaTitle: 'Contacto slateremote.com',
-    metaDescription: 'Contáctanos para correcciones, retiradas o consultas de partnership.',
+    metaTitle: 'Contacto slateremote.com: correcciones y retiradas',
+    metaDescription: 'Escríbenos por una oferta incorrecta o caducada, una retirada solicitada por el empleador que procesamos en 48 horas, o una propuesta de partnership.',
     h1: 'Contacto',
     fastestPre: 'La forma más rápida de contactarnos es por email:',
     h2Takedowns: 'Correcciones y retiradas',
@@ -69,8 +69,8 @@ const COPY: Record<Locale, Copy> = {
     bodyPartnerships: 'Para partnerships e integraciones, envíanos un email con una descripción breve de lo que tienes en mente.',
   },
   de: {
-    metaTitle: 'Kontakt slateremote.com',
-    metaDescription: 'Schreiben Sie uns für Korrekturen, Löschanfragen oder Partnerschaftsanfragen.',
+    metaTitle: 'Kontakt slateremote.com: Korrekturen und Löschungen',
+    metaDescription: 'Schreiben Sie uns zu einem falschen oder abgelaufenen Inserat, zu einer Löschanfrage, die wir binnen 48 Stunden bearbeiten, oder zu einer Partnerschaft.',
     h1: 'Kontakt',
     fastestPre: 'Am schnellsten erreichen Sie uns per E-Mail:',
     h2Takedowns: 'Korrekturen und Löschungen',
@@ -83,8 +83,8 @@ const COPY: Record<Locale, Copy> = {
     bodyPartnerships: 'Für Partnerschafts- und Integrationsanfragen schicken Sie uns eine kurze Beschreibung Ihres Anliegens per E-Mail.',
   },
   pt: {
-    metaTitle: 'Contato slateremote.com',
-    metaDescription: 'Fale conosco para correções, pedidos de remoção ou parcerias.',
+    metaTitle: 'Contato slateremote.com: correções e remoções',
+    metaDescription: 'Fale conosco sobre um anúncio incorreto ou vencido, um pedido de remoção do empregador processado em 48 horas, ou uma proposta de parceria e integração.',
     h1: 'Contato',
     fastestPre: 'A forma mais rápida de nos contatar é por email:',
     h2Takedowns: 'Correções e remoções',
@@ -97,8 +97,8 @@ const COPY: Record<Locale, Copy> = {
     bodyPartnerships: 'Para parcerias e integrações, nos envie um email com uma breve descrição do que você tem em mente.',
   },
   it: {
-    metaTitle: 'Contatto slateremote.com',
-    metaDescription: 'Contattaci per correzioni, richieste di rimozione o partnership.',
+    metaTitle: 'Contatto slateremote.com: correzioni e rimozioni',
+    metaDescription: "Scrivici per un annuncio scorretto o scaduto, per una richiesta di rimozione del datore di lavoro evasa entro 48 ore, o per una proposta di partnership.",
     h1: 'Contatto',
     fastestPre: 'Il modo più veloce per contattarci è via email:',
     h2Takedowns: 'Correzioni e rimozioni',
@@ -111,8 +111,8 @@ const COPY: Record<Locale, Copy> = {
     bodyPartnerships: 'Per partnership e integrazioni, inviaci un\'email con una breve descrizione di cosa hai in mente.',
   },
   pl: {
-    metaTitle: 'Kontakt slateremote.com',
-    metaDescription: 'Skontaktuj się w sprawie poprawek, usunięć lub partnerstwa.',
+    metaTitle: 'Kontakt slateremote.com: poprawki i usunięcia',
+    metaDescription: 'Napisz do nas w sprawie błędnej lub nieaktualnej oferty, wniosku pracodawcy o usunięcie rozpatrywanego w 48 godzin, albo propozycji partnerstwa.',
     h1: 'Kontakt',
     fastestPre: 'Najszybszy sposób kontaktu to email:',
     h2Takedowns: 'Poprawki i usunięcia',

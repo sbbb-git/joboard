@@ -42,6 +42,22 @@ export function hreflangAlternates(pathWithoutLocale: string): Record<string, st
 
 const STATIC_OG = '/og.png';
 
+// Google truncates around 160 characters. Templates interpolate values of
+// unpredictable length (a company called "BBHT Beratungsgesellschaft mbH &
+// Co. KG", a role like "machine learning engineer"), so clamping per template
+// is whack-a-mole. Clamp once, here, on the way out. Cuts on a word boundary
+// so the description ends as a readable phrase rather than mid-word.
+const DESCRIPTION_MAX = 160;
+
+export function clampDescription(text: string, max = DESCRIPTION_MAX): string {
+  const clean = text.replace(/\s+/g, ' ').trim();
+  if (clean.length <= max) return clean;
+  const cut = clean.slice(0, max - 1);
+  const lastSpace = cut.lastIndexOf(' ');
+  const body = (lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).replace(/[\s,;:.·-]+$/, '');
+  return `${body}…`;
+}
+
 export function buildMetadata(opts: {
   locale: Locale;
   path: string;
@@ -50,9 +66,10 @@ export function buildMetadata(opts: {
   index?: boolean;
 }): Metadata {
   const url = absoluteUrl(canonicalPath(opts.locale, opts.path));
+  const description = clampDescription(opts.description);
   return {
     title: opts.title,
-    description: opts.description,
+    description,
     metadataBase: new URL(SITE_URL),
     alternates: {
       canonical: url,
@@ -60,7 +77,7 @@ export function buildMetadata(opts: {
     },
     openGraph: {
       title: opts.title,
-      description: opts.description,
+      description,
       url,
       siteName: SITE_NAME,
       locale: OG_LOCALE[opts.locale],
@@ -70,7 +87,7 @@ export function buildMetadata(opts: {
     twitter: {
       card: 'summary_large_image',
       title: opts.title,
-      description: opts.description,
+      description,
       images: [STATIC_OG],
     },
     robots: opts.index === false ? { index: false, follow: true } : { index: true, follow: true },
