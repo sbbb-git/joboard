@@ -13,9 +13,20 @@ import { CITIES } from '@/lib/cities';
 import { GUIDES } from '@/lib/guides';
 import { tGuide } from '@/lib/guides-i18n';
 import { HOME } from '@/lib/home-i18n';
+import { roleLabel } from '@/lib/labels';
 
 export const dynamicParams = false;
 export const revalidate = false;
+
+const META_DESCRIPTION: Record<Locale, string> = {
+  en: 'Remote engineering, data, design and product jobs aggregated daily from ten public job boards, with salary bands, city guides and skill pages.',
+  fr: "Offres remote en ingénierie, data, design et produit agrégées chaque jour depuis dix job boards publics, avec salaires, guides de villes et compétences.",
+  es: 'Empleos remotos de ingeniería, datos, diseño y producto agregados a diario desde diez portales públicos, con salarios, guías de ciudades y skills.',
+  de: 'Remote-Jobs in Engineering, Data, Design und Product, täglich aus zehn öffentlichen Jobbörsen aggregiert, mit Gehaltsbändern, Städte- und Skill-Seiten.',
+  pt: 'Vagas remotas de engenharia, dados, design e produto agregadas diariamente de dez portais públicos, com faixas salariais, guias de cidades e skills.',
+  it: 'Lavori remote in ingegneria, dati, design e prodotto aggregati ogni giorno da dieci job board pubbliche, con fasce salariali, guide città e skill.',
+  pl: 'Zdalne oferty w inżynierii, danych, designie i produkcie, agregowane codziennie z dziesięciu publicznych portali, z widełkami płac i profilami miast.',
+};
 
 export function generateMetadata({ params }: { params: { lang: Locale } }): Metadata {
   const h = HOME[params.lang];
@@ -23,7 +34,7 @@ export function generateMetadata({ params }: { params: { lang: Locale } }): Meta
     locale: params.lang,
     path: '',
     title: h.metaTitle,
-    description: h.metaDescription,
+    description: META_DESCRIPTION[params.lang],
   });
 }
 
@@ -107,7 +118,7 @@ export default function Home({ params }: { params: { lang: Locale } }) {
               href={localePath(locale, `jobs/${r.role}`)}
               className="text-sm px-4 py-2 rounded-full bg-paper border border-line text-graphite hover:border-ink hover:text-ink transition-colors capitalize"
             >
-              {String(r.role).replace('-', ' ')}
+              {roleLabel(locale, r.role)}
               {r.count > 0 && <span className="ml-1.5 text-subtle">· {r.count}</span>}
             </Link>
           ))}
