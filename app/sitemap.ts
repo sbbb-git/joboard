@@ -71,6 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   add('/earn-online', now, 0.75);
   add('/world-cup-2026', now, 0.8);
   for (const city of WC2026_CITIES) add(`/world-cup-2026/${city.slug}`, now, 0.75);
+  add('/network', now, 0.5);
   add('/about', now, 0.5);
   add('/contact', now, 0.4);
   add('/disclosure', now, 0.3);

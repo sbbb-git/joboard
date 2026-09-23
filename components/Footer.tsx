@@ -69,6 +69,7 @@ export function Footer({ locale }: { locale: Locale }) {
             <FooterLink href={localePath(locale, 'submit')}>{t(locale, 'nav.postJob')}</FooterLink>
             <FooterLink href={localePath(locale, 'glossary')}>{t(locale, 'footer.glossary')}</FooterLink>
             <FooterLink href={localePath(locale, 'disclosure')}>{t(locale, 'footer.disclosure')}</FooterLink>
+            <FooterLink href={localePath(locale, 'network')}>{t(locale, 'footer.network')}</FooterLink>
             <FooterLink href={localePath(locale, 'about')}>{t(locale, 'footer.about')}</FooterLink>
             <FooterLink href={localePath(locale, 'contact')}>{t(locale, 'footer.contact')}</FooterLink>
           </FooterCol>
