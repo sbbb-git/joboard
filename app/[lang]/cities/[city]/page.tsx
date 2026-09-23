@@ -23,43 +23,53 @@ type CityMetaCopy = {
   // description comes from tCityBlurb() and is already translated.
   metaTitle: (city: string) => string;
   metaSuffix: (city: string) => string;
+  // Short blurbs leave the description well under the ~150 characters Google
+  // renders, so this tops it up when there is room for it.
+  metaExtra: string;
 };
 
 const CITY_META_I18N: Record<Locale, CityMetaCopy> = {
   en: {
     metaTitle: (c) => `Remote tech jobs in ${c}`,
     metaSuffix: (c) =>
-      `Cost of living, visa options, internet quality and the remote tech roles currently open to candidates in ${c}.`,
+      `Cost of living, visa options, internet quality and remote roles open to candidates in ${c}.`,
+    metaExtra: 'Updated every day.',
   },
   fr: {
     metaTitle: (c) => `Emplois tech en remote : ${c}`,
     metaSuffix: (c) =>
-      `Coût de la vie, options de visa, qualité de la connexion et les postes tech remote actuellement ouverts pour ${c}.`,
+      `Coût de la vie, visas, qualité de la connexion et les postes remote ouverts pour ${c}.`,
+    metaExtra: 'À jour chaque jour.',
   },
   es: {
     metaTitle: (c) => `Empleos tech remotos: ${c}`,
     metaSuffix: (c) =>
-      `Coste de vida, opciones de visado, calidad de internet y los puestos tech remotos abiertos ahora para ${c}.`,
+      `Coste de vida, visados, calidad de internet y los puestos remotos abiertos para ${c}.`,
+    metaExtra: 'Al día, cada día.',
   },
   de: {
     metaTitle: (c) => `Remote-Tech-Jobs: ${c}`,
     metaSuffix: (c) =>
-      `Lebenshaltungskosten, Visa-Optionen, Internetqualität und die aktuell offenen Remote-Tech-Stellen für ${c}.`,
+      `Lebenshaltungskosten, Visa, Internetqualität und die offenen Remote-Stellen für ${c}.`,
+    metaExtra: 'Jeden Tag aktuell.',
   },
   pt: {
     metaTitle: (c) => `Vagas tech remotas: ${c}`,
     metaSuffix: (c) =>
-      `Custo de vida, opções de visto, qualidade da internet e as vagas tech remotas abertas agora para ${c}.`,
+      `Custo de vida, vistos, qualidade da internet e as vagas remotas abertas agora para ${c}.`,
+    metaExtra: 'Atualizado todo dia.',
   },
   it: {
     metaTitle: (c) => `Lavori tech remote: ${c}`,
     metaSuffix: (c) =>
-      `Costo della vita, opzioni di visto, qualità della rete e le posizioni tech remote aperte ora per ${c}.`,
+      `Costo della vita, visti, qualità della rete e le posizioni remote aperte per ${c}.`,
+    metaExtra: 'Sempre aggiornato.',
   },
   pl: {
     metaTitle: (c) => `Zdalne oferty tech: ${c}`,
     metaSuffix: (c) =>
-      `Koszt życia, opcje wizowe, jakość internetu i aktualnie otwarte zdalne oferty tech dla miasta: ${c}.`,
+      `Koszt życia, wizy, jakość internetu i otwarte zdalne oferty tech dla miasta: ${c}.`,
+    metaExtra: 'Zawsze aktualne.',
   },
 };
 
@@ -75,11 +85,14 @@ export function generateMetadata({
   const c = CITY_MAP[params.city];
   if (!c) return { title: 'City not found' };
   const copy = CITY_META_I18N[params.lang];
+  const body = `${tCityBlurb(c.slug, params.lang, c.blurb)} ${copy.metaSuffix(c.name)}`;
+  const description =
+    body.length + 1 + copy.metaExtra.length <= 160 ? `${body} ${copy.metaExtra}` : body;
   return buildMetadata({
     locale: params.lang,
     path: `cities/${params.city}`,
     title: copy.metaTitle(c.name),
-    description: `${tCityBlurb(c.slug, params.lang, c.blurb)} ${copy.metaSuffix(c.name)}`,
+    description,
   });
 }
 

@@ -45,7 +45,7 @@ const ROLE_I18N: Record<Locale, RoleCopy> = {
   es: {
     metaTitle: (r) => `Empleos remotos de ${r}, al día`,
     metaDescription: (r) =>
-      `Explora puestos remotos de ${r} agregados desde las APIs públicas de portales de empleo. Filtra por nivel, salario y franja horaria. Actualizado a diario.`,
+      `Explora puestos remotos de ${r} agregados desde las APIs públicas de portales de empleo. Filtra por nivel, salario y franja horaria.`,
     eyebrow: 'Rol',
     h1: (r) => `Empleos remotos de ${r}`,
     openPositions: (n) => `${n} puesto${n === 1 ? '' : 's'} abierto${n === 1 ? '' : 's'}`,

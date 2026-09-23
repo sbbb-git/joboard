@@ -21,43 +21,53 @@ type SkillMetaCopy = {
   // description comes from tSkillBlurb() and is already translated.
   metaTitle: (skill: string) => string;
   metaSuffix: (skill: string) => string;
+  // Short blurbs leave the description well under the ~150 characters Google
+  // renders, so this tops it up when there is room for it.
+  metaExtra: string;
 };
 
 const SKILL_META_I18N: Record<Locale, SkillMetaCopy> = {
   en: {
     metaTitle: (s) => `Remote ${s} jobs`,
     metaSuffix: (s) =>
-      `Browse open remote positions that require ${s}, with salary ranges, seniority levels and direct application links.`,
+      `Browse open remote positions that require ${s}, with salary ranges and seniority levels.`,
+    metaExtra: 'Updated every day.',
   },
   fr: {
     metaTitle: (s) => `Offres d'emploi ${s} en remote`,
     metaSuffix: (s) =>
-      `Parcourez les postes remote qui demandent ${s}, avec fourchettes salariales, niveaux et liens de candidature directs.`,
+      `Parcourez les postes remote qui demandent ${s}, avec fourchettes salariales et niveaux.`,
+    metaExtra: 'À jour chaque jour.',
   },
   es: {
     metaTitle: (s) => `Empleos remotos de ${s}`,
     metaSuffix: (s) =>
-      `Explora puestos remotos que piden ${s}, con rangos salariales, niveles de seniority y enlaces directos de candidatura.`,
+      `Explora puestos remotos que piden ${s}, con rangos salariales y niveles de seniority.`,
+    metaExtra: 'Al día, cada día.',
   },
   de: {
     metaTitle: (s) => `Remote-Jobs mit ${s}`,
     metaSuffix: (s) =>
-      `Offene Remote-Stellen mit ${s}, inklusive Gehaltsspannen, Level und direkten Bewerbungslinks, täglich aktualisiert.`,
+      `Offene Remote-Stellen mit ${s}, inklusive Gehaltsspannen, Level und Bewerbungslinks.`,
+    metaExtra: 'Jeden Tag aktuell.',
   },
   pt: {
     metaTitle: (s) => `Vagas remotas de ${s}`,
     metaSuffix: (s) =>
-      `Veja vagas remotas que pedem ${s}, com faixas salariais, níveis de senioridade e links diretos de candidatura.`,
+      `Veja as vagas remotas que pedem ${s}, com faixas salariais e níveis de senioridade.`,
+    metaExtra: 'Atualizado todo dia.',
   },
   it: {
     metaTitle: (s) => `Lavoro remote con ${s}`,
     metaSuffix: (s) =>
-      `Sfoglia le posizioni remote che richiedono ${s}, con fasce di stipendio, livelli e link diretti per candidarsi.`,
+      `Sfoglia le posizioni remote che richiedono ${s}, con fasce di stipendio, livelli e sedi.`,
+    metaExtra: 'Sempre aggiornato.',
   },
   pl: {
     metaTitle: (s) => `Praca zdalna: ${s}`,
     metaSuffix: (s) =>
-      `Przeglądaj zdalne oferty wymagające ${s}, z widełkami płacowymi, poziomami i bezpośrednimi linkami do aplikacji.`,
+      `Przeglądaj zdalne oferty wymagające ${s}, z widełkami płacowymi i poziomami stanowisk.`,
+    metaExtra: 'Zawsze aktualne.',
   },
 };
 
@@ -73,11 +83,14 @@ export function generateMetadata({
   const s = SKILL_MAP[params.skill];
   if (!s) return { title: 'Skill not found' };
   const copy = SKILL_META_I18N[params.lang];
+  const body = `${tSkillBlurb(s.slug, params.lang, s.blurb)} ${copy.metaSuffix(s.name)}`;
+  const description =
+    body.length + 1 + copy.metaExtra.length <= 160 ? `${body} ${copy.metaExtra}` : body;
   return buildMetadata({
     locale: params.lang,
     path: `skills/${params.skill}`,
     title: copy.metaTitle(s.name),
-    description: `${tSkillBlurb(s.slug, params.lang, s.blurb)} ${copy.metaSuffix(s.name)}`,
+    description,
   });
 }
 

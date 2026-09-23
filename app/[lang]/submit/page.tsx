@@ -35,7 +35,7 @@ const COPY: Record<Locale, Copy> = {
   en: {
     metaTitle: 'Submit a remote tech job · featured placement',
     metaDescription:
-      'Get your job featured across slateremote.com for 30 days: front-page slot, role-page top, and city-page top placement.',
+      'Get your job featured across slateremote.com for 30 days: front-page slot, role-page top and city-page top placement. Seen by remote engineers in 7 languages.',
     h1: 'Submit a remote tech job',
     subtitle: 'Reach engineers, designers and product candidates across slateremote.com.',
     intro1:
@@ -99,7 +99,7 @@ const COPY: Record<Locale, Copy> = {
   es: {
     metaTitle: 'Publica un empleo tech remoto · colocación destacada',
     metaDescription:
-      'Destaca tu oferta en slateremote.com durante 30 días: portada, página de rol y página de ciudad.',
+      'Destaca tu oferta en slateremote.com durante 30 días: portada, primera posición en la página de rol y en la de ciudad. La ven ingenieros remotos en 7 idiomas.',
     h1: 'Publica un empleo tech remoto',
     subtitle: 'Llega a ingenieros, diseñadores y candidatos de producto en slateremote.com.',
     intro1:
@@ -131,7 +131,7 @@ const COPY: Record<Locale, Copy> = {
   de: {
     metaTitle: 'Remote Tech Job veröffentlichen · hervorgehobene Platzierung',
     metaDescription:
-      'Heben Sie Ihren Job 30 Tage lang auf slateremote.com hervor: Startseite, Rollen-Seite und Stadt-Seite ganz oben.',
+      'Heben Sie Ihre Stelle 30 Tage lang auf slateremote.com hervor: Startseite, oberste Position auf Rollen- und Stadtseite. Gesehen von Remote-Engineers in 7 Sprachen.',
     h1: 'Remote Tech Job veröffentlichen',
     subtitle: 'Erreichen Sie Engineers, Designer und Product-Kandidaten auf slateremote.com.',
     intro1:
@@ -195,7 +195,7 @@ const COPY: Record<Locale, Copy> = {
   it: {
     metaTitle: 'Pubblica un lavoro tech remote · posizionamento in evidenza',
     metaDescription:
-      'Metti in evidenza il tuo annuncio su slateremote.com per 30 giorni: home, pagina ruolo e pagina città in cima.',
+      'Metti in evidenza il tuo annuncio su slateremote.com per 30 giorni: home, cima della pagina ruolo e della pagina città. Lo vedono ingegneri remote in 7 lingue.',
     h1: 'Pubblica un lavoro tech remote',
     subtitle: 'Raggiungi ingegneri, designer e candidati product su slateremote.com.',
     intro1:
@@ -227,7 +227,7 @@ const COPY: Record<Locale, Copy> = {
   pl: {
     metaTitle: 'Opublikuj zdalną pracę tech · wyróżnione miejsce',
     metaDescription:
-      'Wyróżnij swoje ogłoszenie na slateremote.com przez 30 dni: góra strony głównej, góra strony roli i góra strony miasta.',
+      'Wyróżnij swoje ogłoszenie na slateremote.com przez 30 dni: strona główna, góra strony roli i strony miasta. Widzą je zdalni inżynierowie w 7 językach.',
     h1: 'Opublikuj zdalną pracę tech',
     subtitle: 'Dotrzyj do inżynierów, projektantów i kandydatów produktowych na slateremote.com.',
     intro1:
