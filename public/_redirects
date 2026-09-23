@@ -1,0 +1,20 @@
+# Cloudflare Pages redirects.
+#
+# www to apex, 301. Both hostnames serve the full site with a 200, so every
+# one of the ~8,700 pages exists at two URLs. Search Console shows Google has
+# indexed the www copies (www.slateremote.com/ and www.slateremote.com/en/jobs
+# both drew impressions), which splits ranking signals across two hosts and
+# spends crawl budget on duplicates.
+#
+# Canonical tags already point at the apex, so this makes the served response
+# agree with what the pages declare. :splat preserves the rest of the path.
+#
+# NOTE: hostname matching in _redirects is only honoured when the www domain
+# is attached to this Pages project. If www resolves through a different
+# route, this rule never matches and the duplicate stays live. Verify after
+# deploy with:  curl -sSI https://www.slateremote.com/en | head -3
+# It must answer 301 with `location: https://slateremote.com/en`. If it still
+# answers 200, add a Redirect Rule in the Cloudflare dashboard instead
+# (Rules > Redirect Rules: hostname equals www.slateremote.com ->
+# https://slateremote.com/${http.request.uri.path}, 301).
+https://www.slateremote.com/* https://slateremote.com/:splat 301

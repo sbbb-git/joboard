@@ -18,6 +18,51 @@ import { localePath } from '@/lib/i18n';
 export const dynamicParams = false;
 export const revalidate = false;
 
+type CityMetaCopy = {
+  // Only the template wording lives here. The city blurb that opens the
+  // description comes from tCityBlurb() and is already translated.
+  metaTitle: (city: string) => string;
+  metaSuffix: (city: string) => string;
+};
+
+const CITY_META_I18N: Record<Locale, CityMetaCopy> = {
+  en: {
+    metaTitle: (c) => `Remote tech jobs in ${c}`,
+    metaSuffix: (c) =>
+      `Cost of living, visa options, internet quality and the remote tech roles currently open to candidates in ${c}.`,
+  },
+  fr: {
+    metaTitle: (c) => `Emplois tech en remote : ${c}`,
+    metaSuffix: (c) =>
+      `Coût de la vie, options de visa, qualité de la connexion et les postes tech remote actuellement ouverts pour ${c}.`,
+  },
+  es: {
+    metaTitle: (c) => `Empleos tech remotos: ${c}`,
+    metaSuffix: (c) =>
+      `Coste de vida, opciones de visado, calidad de internet y los puestos tech remotos abiertos ahora para ${c}.`,
+  },
+  de: {
+    metaTitle: (c) => `Remote-Tech-Jobs: ${c}`,
+    metaSuffix: (c) =>
+      `Lebenshaltungskosten, Visa-Optionen, Internetqualität und die aktuell offenen Remote-Tech-Stellen für ${c}.`,
+  },
+  pt: {
+    metaTitle: (c) => `Vagas tech remotas: ${c}`,
+    metaSuffix: (c) =>
+      `Custo de vida, opções de visto, qualidade da internet e as vagas tech remotas abertas agora para ${c}.`,
+  },
+  it: {
+    metaTitle: (c) => `Lavori tech remote: ${c}`,
+    metaSuffix: (c) =>
+      `Costo della vita, opzioni di visto, qualità della rete e le posizioni tech remote aperte ora per ${c}.`,
+  },
+  pl: {
+    metaTitle: (c) => `Zdalne oferty tech: ${c}`,
+    metaSuffix: (c) =>
+      `Koszt życia, opcje wizowe, jakość internetu i aktualnie otwarte zdalne oferty tech dla miasta: ${c}.`,
+  },
+};
+
 export function generateStaticParams() {
   return LOCALES.flatMap((lang) => CITIES.map((c) => ({ lang, city: c.slug })));
 }
@@ -29,11 +74,12 @@ export function generateMetadata({
 }): Metadata {
   const c = CITY_MAP[params.city];
   if (!c) return { title: 'City not found' };
+  const copy = CITY_META_I18N[params.lang];
   return buildMetadata({
     locale: params.lang,
     path: `cities/${params.city}`,
-    title: `Remote tech jobs in ${c.name}`,
-    description: `${tCityBlurb(c.slug, params.lang, c.blurb)} Cost of living, visa options, internet quality, and current open remote positions for ${c.name}.`,
+    title: copy.metaTitle(c.name),
+    description: `${tCityBlurb(c.slug, params.lang, c.blurb)} ${copy.metaSuffix(c.name)}`,
   });
 }
 

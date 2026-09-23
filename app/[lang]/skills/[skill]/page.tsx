@@ -16,6 +16,51 @@ import { localePath } from '@/lib/i18n';
 export const dynamicParams = false;
 export const revalidate = false;
 
+type SkillMetaCopy = {
+  // Only the template wording lives here. The skill blurb that opens the
+  // description comes from tSkillBlurb() and is already translated.
+  metaTitle: (skill: string) => string;
+  metaSuffix: (skill: string) => string;
+};
+
+const SKILL_META_I18N: Record<Locale, SkillMetaCopy> = {
+  en: {
+    metaTitle: (s) => `Remote ${s} jobs`,
+    metaSuffix: (s) =>
+      `Browse open remote positions that require ${s}, with salary ranges, seniority levels and direct application links.`,
+  },
+  fr: {
+    metaTitle: (s) => `Offres d'emploi ${s} en remote`,
+    metaSuffix: (s) =>
+      `Parcourez les postes remote qui demandent ${s}, avec fourchettes salariales, niveaux et liens de candidature directs.`,
+  },
+  es: {
+    metaTitle: (s) => `Empleos remotos de ${s}`,
+    metaSuffix: (s) =>
+      `Explora puestos remotos que piden ${s}, con rangos salariales, niveles de seniority y enlaces directos de candidatura.`,
+  },
+  de: {
+    metaTitle: (s) => `Remote-Jobs mit ${s}`,
+    metaSuffix: (s) =>
+      `Offene Remote-Stellen mit ${s}, inklusive Gehaltsspannen, Level und direkten Bewerbungslinks, täglich aktualisiert.`,
+  },
+  pt: {
+    metaTitle: (s) => `Vagas remotas de ${s}`,
+    metaSuffix: (s) =>
+      `Veja vagas remotas que pedem ${s}, com faixas salariais, níveis de senioridade e links diretos de candidatura.`,
+  },
+  it: {
+    metaTitle: (s) => `Lavoro remote con ${s}`,
+    metaSuffix: (s) =>
+      `Sfoglia le posizioni remote che richiedono ${s}, con fasce di stipendio, livelli e link diretti per candidarsi.`,
+  },
+  pl: {
+    metaTitle: (s) => `Praca zdalna: ${s}`,
+    metaSuffix: (s) =>
+      `Przeglądaj zdalne oferty wymagające ${s}, z widełkami płacowymi, poziomami i bezpośrednimi linkami do aplikacji.`,
+  },
+};
+
 export function generateStaticParams() {
   return LOCALES.flatMap((lang) => SKILLS.map((s) => ({ lang, skill: s.slug })));
 }
@@ -27,11 +72,12 @@ export function generateMetadata({
 }): Metadata {
   const s = SKILL_MAP[params.skill];
   if (!s) return { title: 'Skill not found' };
+  const copy = SKILL_META_I18N[params.lang];
   return buildMetadata({
     locale: params.lang,
     path: `skills/${params.skill}`,
-    title: `Remote ${s.name} jobs`,
-    description: `${tSkillBlurb(s.slug, params.lang, s.blurb)} Browse open remote positions requiring ${s.name}, updated daily.`,
+    title: copy.metaTitle(s.name),
+    description: `${tSkillBlurb(s.slug, params.lang, s.blurb)} ${copy.metaSuffix(s.name)}`,
   });
 }
 

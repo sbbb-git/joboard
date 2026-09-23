@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { allJobs, topCompanies, topCountries } from '@/lib/jobs';
+import { allJobs, topCompanies, topCountries, hasCountrySalaryData } from '@/lib/jobs';
 import { ROLES } from '@/lib/types';
 import { LOCALES, DEFAULT_LOCALE } from '@/lib/i18n';
 import { SITE_URL, canonicalPath } from '@/lib/seo';
@@ -36,14 +36,24 @@ type SitemapEntry = MetadataRoute.Sitemap[number];
 //
 // URLs are built with canonicalPath so they match the page-level canonical
 // exactly. trailingSlash is false, so no URL here may end in a slash.
-function localeUrls(path: string, lastModified: Date, priority: number): SitemapEntry[] {
+//
+// lastModified is omitted for editorial pages. Stamping every URL with the
+// build time told Google all 8,700 pages changed on every deploy, which is
+// false for guides, city profiles and comparisons and teaches it to discount
+// the signal. Only pages whose content actually moves with the job index
+// carry a date.
+function localeUrls(
+  path: string,
+  lastModified: Date | undefined,
+  priority: number,
+): SitemapEntry[] {
   const languages: Record<string, string> = {
     'x-default': `${SITE_URL}${canonicalPath(DEFAULT_LOCALE, path)}`,
   };
   for (const l of LOCALES) languages[l] = `${SITE_URL}${canonicalPath(l, path)}`;
   return LOCALES.map((l) => ({
     url: `${SITE_URL}${canonicalPath(l, path)}`,
-    lastModified,
+    ...(lastModified ? { lastModified } : {}),
     // Non-default locales rank slightly below the English original.
     priority: l === DEFAULT_LOCALE ? priority : Math.max(0.1, Math.round((priority - 0.1) * 100) / 100),
     alternates: { languages },
@@ -53,8 +63,10 @@ function localeUrls(path: string, lastModified: Date, priority: number): Sitemap
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const out: MetadataRoute.Sitemap = [];
-  const add = (path: string, lastModified: Date, priority: number) =>
+  const add = (path: string, lastModified: Date | undefined, priority: number) =>
     out.push(...localeUrls(path, lastModified, priority));
+  // Editorial pages: no lastmod, they do not change when the index refreshes.
+  const addStatic = (path: string, priority: number) => add(path, undefined, priority);
 
   add('', now, 1);
   add('/jobs', now, 0.9);
@@ -63,30 +75,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
   add('/guides', now, 0.85);
   add('/salaries', now, 0.85);
   add('/locations', now, 0.8);
-  add('/compare', now, 0.8);
+  addStatic('/compare', 0.8);
   add('/companies', now, 0.7);
-  add('/glossary', now, 0.7);
-  add('/submit', now, 0.6);
-  add('/employers', now, 0.6);
-  add('/earn-online', now, 0.75);
-  add('/world-cup-2026', now, 0.8);
-  for (const city of WC2026_CITIES) add(`/world-cup-2026/${city.slug}`, now, 0.75);
-  add('/network', now, 0.5);
-  add('/about', now, 0.5);
-  add('/contact', now, 0.4);
-  add('/disclosure', now, 0.3);
+  addStatic('/glossary', 0.7);
+  addStatic('/submit', 0.6);
+  addStatic('/employers', 0.6);
+  addStatic('/earn-online', 0.75);
+  addStatic('/world-cup-2026', 0.8);
+  for (const city of WC2026_CITIES) addStatic(`/world-cup-2026/${city.slug}`, 0.75);
+  addStatic('/network', 0.5);
+  addStatic('/about', 0.5);
+  addStatic('/contact', 0.4);
+  addStatic('/disclosure', 0.3);
 
   for (const role of ROLES) {
     add(`/jobs/${role}`, now, 0.8);
     add(`/salaries/${role}`, now, 0.75);
     for (const country of TOP_COUNTRY_SLUGS) {
+      // Same rule the page applies via buildMetadata's index flag: a
+      // combination with no published salary band anywhere renders a stub,
+      // so listing it would point Google at a page we ask it not to index.
+      if (!hasCountrySalaryData(role, country)) continue;
       add(`/salaries/${role}/${country}`, now, 0.6);
     }
   }
   for (const s of SKILLS) add(`/skills/${s.slug}`, now, 0.7);
-  for (const c of CITIES) add(`/cities/${c.slug}`, now, 0.7);
-  for (const g of GUIDES) add(`/guides/${g.slug}`, now, 0.7);
-  for (const cmp of COMPARISONS) add(`/compare/${cmp.slug}`, now, 0.65);
+  for (const c of CITIES) addStatic(`/cities/${c.slug}`, 0.7);
+  for (const g of GUIDES) addStatic(`/guides/${g.slug}`, 0.7);
+  for (const cmp of COMPARISONS) addStatic(`/compare/${cmp.slug}`, 0.65);
   for (const c of topCountries(1000)) add(`/locations/${c.slug}`, now, 0.6);
   for (const c of topCompanies(10000)) add(`/companies/${c.slug}`, now, 0.5);
 

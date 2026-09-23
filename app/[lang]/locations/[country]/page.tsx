@@ -12,6 +12,77 @@ import { NomadBanking } from '@/components/NomadBanking';
 export const dynamicParams = false;
 export const revalidate = false;
 
+type LocationCopy = {
+  // Country names themselves stay in their English form (countryLabel only
+  // title-cases the slug), so every template puts the country behind a
+  // separator instead of a preposition that would need to agree with it.
+  metaTitle: (country: string) => string;
+  metaDescription: (country: string) => string;
+  eyebrow: string;
+  h1: (country: string) => string;
+  openPositions: (n: number) => string;
+};
+
+const LOCATION_I18N: Record<Locale, LocationCopy> = {
+  en: {
+    metaTitle: (c) => `Remote tech jobs in ${c}`,
+    metaDescription: (c) =>
+      `Open remote engineering, data, design and product roles hiring candidates based in ${c}. Aggregated from public job board APIs and updated daily.`,
+    eyebrow: 'Location',
+    h1: (c) => `Remote tech jobs · ${c}`,
+    openPositions: (n) => `${n} open position${n === 1 ? '' : 's'}`,
+  },
+  fr: {
+    metaTitle: (c) => `Emplois tech en remote : ${c}`,
+    metaDescription: (c) =>
+      `${c} : offres remote en ingénierie, data, design et produit pour les candidats locaux. Agrégées depuis des APIs publiques, actualisées chaque jour.`,
+    eyebrow: 'Lieu',
+    h1: (c) => `Emplois tech en remote · ${c}`,
+    openPositions: (n) => `${n} poste${n === 1 ? '' : 's'} ouvert${n === 1 ? '' : 's'}`,
+  },
+  es: {
+    metaTitle: (c) => `Empleos tech remotos: ${c}`,
+    metaDescription: (c) =>
+      `${c}: puestos remotos de ingeniería, datos, diseño y producto abiertos a candidatos locales. Agregados desde APIs públicas y actualizados a diario.`,
+    eyebrow: 'Ubicación',
+    h1: (c) => `Empleos tech remotos · ${c}`,
+    openPositions: (n) => `${n} puesto${n === 1 ? '' : 's'} abierto${n === 1 ? '' : 's'}`,
+  },
+  de: {
+    metaTitle: (c) => `Remote-Tech-Jobs: ${c}`,
+    metaDescription: (c) =>
+      `${c}: offene Remote-Stellen in Engineering, Data, Design und Produkt für Kandidaten vor Ort. Aus öffentlichen Job-Board-APIs, täglich aktualisiert.`,
+    eyebrow: 'Standort',
+    h1: (c) => `Remote-Tech-Jobs · ${c}`,
+    openPositions: (n) => `${n} offene Stelle${n === 1 ? '' : 'n'}`,
+  },
+  pt: {
+    metaTitle: (c) => `Vagas tech remotas: ${c}`,
+    metaDescription: (c) =>
+      `${c}: vagas remotas de engenharia, dados, design e produto abertas a candidatos locais. Agregadas de APIs públicas e atualizadas todos os dias.`,
+    eyebrow: 'Localização',
+    h1: (c) => `Vagas tech remotas · ${c}`,
+    openPositions: (n) => `${n} vaga${n === 1 ? '' : 's'} aberta${n === 1 ? '' : 's'}`,
+  },
+  it: {
+    metaTitle: (c) => `Lavori tech remote: ${c}`,
+    metaDescription: (c) =>
+      `${c}: posizioni remote in ingegneria, dati, design e prodotto aperte ai candidati sul posto. Aggregate da API pubbliche e aggiornate ogni giorno.`,
+    eyebrow: 'Località',
+    h1: (c) => `Lavori tech remote · ${c}`,
+    openPositions: (n) =>
+      `${n} posizione${n === 1 ? '' : 'i'} apert${n === 1 ? 'a' : 'e'}`,
+  },
+  pl: {
+    metaTitle: (c) => `Zdalne oferty tech: ${c}`,
+    metaDescription: (c) =>
+      `${c}: zdalne oferty w inżynierii, danych, designie i produkcie dla kandydatów na miejscu. Zbierane z publicznych API i aktualizowane codziennie.`,
+    eyebrow: 'Lokalizacja',
+    h1: (c) => `Zdalne oferty tech · ${c}`,
+    openPositions: (n) => `${n} otwart${n === 1 ? 'a oferta' : 'ych ofert'}`,
+  },
+};
+
 export function generateStaticParams() {
   const all = topCountries(1000).map((c) => c.slug);
   return LOCALES.flatMap((lang) => all.map((country) => ({ lang, country })));
@@ -23,11 +94,12 @@ export function generateMetadata({
   params: { lang: Locale; country: string };
 }): Metadata {
   const country = countryLabel(params.country);
+  const c = LOCATION_I18N[params.lang];
   return buildMetadata({
     locale: params.lang,
     path: `locations/${params.country}`,
-    title: `Remote tech jobs in ${country}`,
-    description: `Open remote engineering, data, design and product roles hiring candidates based in ${country}. Aggregated from public job board APIs and updated daily.`,
+    title: c.metaTitle(country),
+    description: c.metaDescription(country),
   });
 }
 
@@ -39,14 +111,15 @@ export default function LocationPage({
   const target = decodeURIComponent(params.country).replace(/-/g, ' ').toLowerCase();
   const labelTitle = target.replace(/\b\w/g, (c) => c.toUpperCase());
   const jobs = allJobs().filter((j) => j.locationCountry?.toLowerCase() === target);
+  const c = LOCATION_I18N[params.lang];
   return (
     <div className="space-y-8">
       <header className="border-b border-line pb-5">
-        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">Location</p>
+        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{c.eyebrow}</p>
         <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1">
-          Remote tech jobs · {labelTitle}
+          {c.h1(labelTitle)}
         </h1>
-        <p className="text-graphite text-sm mt-2">{jobs.length} open positions</p>
+        <p className="text-graphite text-sm mt-2">{c.openPositions(jobs.length)}</p>
       </header>
       {jobs.length === 0 ? (
         <p className="text-muted text-sm">{t(params.lang, 'list.empty')}</p>

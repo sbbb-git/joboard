@@ -61,7 +61,67 @@ export function detectEmployment(input: string): EmploymentType {
   return 'FULL_TIME';
 }
 
+// Ordered: the first needle found in the location string wins, so more
+// specific entries must come before the ones they would otherwise collide
+// with ("Indiana" before "India", "Austria" before nothing that contains it).
+// Only unambiguous mappings belong here. Regions (EMEA, LATAM, "North
+// America") and non-places ("Homeoffice", "CET +/- 3 hours") are left
+// unresolved on purpose rather than guessed at, because locationCountry
+// feeds applicantLocationRequirements in the JobPosting structured data and
+// a wrong country there is worse than an absent one.
 const COUNTRY_MAP: Array<[string, string]> = [
+  // US states and cities seen in the feeds, before the broader needles.
+  ['Indiana', 'United States'],
+  ['Texas', 'United States'],
+  ['Illinois', 'United States'],
+  ['California', 'United States'],
+  ['Missouri', 'United States'],
+  ['Carlsbad', 'United States'],
+  // Unambiguous country names the original map was missing.
+  ['Argentina', 'Argentina'],
+  ['Philippines', 'Philippines'],
+  ['Bangladesh', 'Bangladesh'],
+  ['Belgium', 'Belgium'],
+  ['Switzerland', 'Switzerland'],
+  ['South Korea', 'South Korea'],
+  ['Egypt', 'Egypt'],
+  ['Austria', 'Austria'],
+  ['Vietnam', 'Vietnam'],
+  ['Japan', 'Japan'],
+  ['Israel', 'Israel'],
+  ['Estonia', 'Estonia'],
+  ['Indonesia', 'Indonesia'],
+  ['Ethiopia', 'Ethiopia'],
+  ['Hong Kong', 'Hong Kong'],
+  ['Colombia', 'Colombia'],
+  ['Albania', 'Albania'],
+  ['Cambodia', 'Cambodia'],
+  // Major cities that map to exactly one country.
+  ['Hamburg', 'Germany'],
+  ['Berlin', 'Germany'],
+  ['Munich', 'Germany'],
+  ['Leipzig', 'Germany'],
+  ['Frankfurt', 'Germany'],
+  ['Barcelona', 'Spain'],
+  ['Albufeira', 'Portugal'],
+  ['Buenos Aires', 'Argentina'],
+  ['Medellin', 'Colombia'],
+  ['Bogota', 'Colombia'],
+  ['Phnom Penh', 'Cambodia'],
+  ['Tirana', 'Albania'],
+  ['Edinburgh', 'United Kingdom'],
+  ['Dunfermline', 'United Kingdom'],
+  ['Southampton', 'United Kingdom'],
+  ['Warrington', 'United Kingdom'],
+  ['Oxford', 'United Kingdom'],
+  ['Corby', 'United Kingdom'],
+  ['Chennai', 'India'],
+  ['Telangana', 'India'],
+  ['Nagpur', 'India'],
+  ['Ludhiana', 'India'],
+  ['Adelaide', 'Australia'],
+  ['Hobart', 'Australia'],
+  ['Shepparton', 'Australia'],
   ['United States', 'United States'],
   ['USA', 'United States'],
   ['US ', 'United States'],

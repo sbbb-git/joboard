@@ -14,10 +14,21 @@ import { BookmarkButton } from '@/components/BookmarkButton';
 import { CompanyLogo } from '@/components/CompanyLogo';
 import { SourceLogo } from '@/components/SourceLogo';
 
+const PSEUDO_COUNTRIES = new Set(['Worldwide', 'Europe']);
+
 export const dynamicParams = false;
 export const revalidate = false;
 
 type JobCopy = {
+  // SEO description template. The body excerpt is already trimmed by the
+  // caller; this only supplies the locale-specific framing around it, so a
+  // French job page no longer ships an English sentence to Google.
+  metaDescription: (
+    role: string,
+    company: string,
+    country: string | undefined,
+    excerpt: string,
+  ) => string;
   postedLabel: string;
   via: string;
   applyOn: (source: string) => string;
@@ -45,6 +56,8 @@ type JobCopy = {
 
 const JOB_I18N: Record<Locale, JobCopy> = {
   en: {
+    metaDescription: (role, company, country, excerpt) =>
+      `Remote ${role} role at ${company}${country ? ` for candidates in ${country}` : ''}. ${excerpt}`,
     postedLabel: 'Posted',
     via: 'via',
     applyOn: (s) => `Apply on ${s} →`,
@@ -70,6 +83,8 @@ const JOB_I18N: Record<Locale, JobCopy> = {
     home: 'Home',
   },
   fr: {
+    metaDescription: (role, company, country, excerpt) =>
+      `Poste de ${role} en remote chez ${company}${country ? `, candidats basés dans ce pays : ${country}` : ''}. ${excerpt}`,
     postedLabel: 'Publiée',
     via: 'via',
     applyOn: (s) => `Postuler sur ${s} →`,
@@ -95,6 +110,8 @@ const JOB_I18N: Record<Locale, JobCopy> = {
     home: 'Accueil',
   },
   es: {
+    metaDescription: (role, company, country, excerpt) =>
+      `Puesto de ${role} en remoto en ${company}${country ? `, abierto a candidatos en ${country}` : ''}. ${excerpt}`,
     postedLabel: 'Publicada',
     via: 'vía',
     applyOn: (s) => `Aplicar en ${s} →`,
@@ -120,6 +137,8 @@ const JOB_I18N: Record<Locale, JobCopy> = {
     home: 'Inicio',
   },
   de: {
+    metaDescription: (role, company, country, excerpt) =>
+      `Remote-Stelle als ${role} bei ${company}${country ? `, offen für Bewerber in ${country}` : ''}. ${excerpt}`,
     postedLabel: 'Veröffentlicht',
     via: 'via',
     applyOn: (s) => `Bewerben auf ${s} →`,
@@ -145,6 +164,8 @@ const JOB_I18N: Record<Locale, JobCopy> = {
     home: 'Startseite',
   },
   pt: {
+    metaDescription: (role, company, country, excerpt) =>
+      `Vaga remota de ${role} na ${company}${country ? `, aberta a candidatos em ${country}` : ''}. ${excerpt}`,
     postedLabel: 'Publicada',
     via: 'via',
     applyOn: (s) => `Candidatar em ${s} →`,
@@ -170,6 +191,8 @@ const JOB_I18N: Record<Locale, JobCopy> = {
     home: 'Início',
   },
   it: {
+    metaDescription: (role, company, country, excerpt) =>
+      `Posizione remote come ${role} in ${company}${country ? `, aperta ai candidati in ${country}` : ''}. ${excerpt}`,
     postedLabel: 'Pubblicata',
     via: 'via',
     applyOn: (s) => `Candidati su ${s} →`,
@@ -195,6 +218,8 @@ const JOB_I18N: Record<Locale, JobCopy> = {
     home: 'Home',
   },
   pl: {
+    metaDescription: (role, company, country, excerpt) =>
+      `Zdalna praca jako ${role} w firmie ${company}${country ? `, lokalizacja: ${country}` : ''}. ${excerpt}`,
     postedLabel: 'Opublikowano',
     via: 'via',
     applyOn: (s) => `Aplikuj na ${s} →`,
@@ -237,8 +262,17 @@ export function generateMetadata({
   const title = fullTitle.length <= 60 ? fullTitle : fullTitle.slice(0, 57).trimEnd() + '…';
   const cleanBody = job.description.replace(/\s+/g, ' ').trim();
   const bodyExcerpt = cleanBody.slice(0, 140);
-  const description =
-    `Remote ${roleLabel(params.lang, job.role)} role at ${job.company}${job.locationCountry ? ` for candidates in ${job.locationCountry}` : ''}. ${bodyExcerpt}`.slice(0, 160);
+  // normalizeLocation buckets location-agnostic postings under pseudo
+  // countries ("Worldwide", "Europe"). Feeding those into the "for candidates
+  // in X" clause produced "candidats basés dans ce pays : Worldwide", so drop
+  // the clause for them: the description already says the role is remote.
+  const realCountry =
+    job.locationCountry && !PSEUDO_COUNTRIES.has(job.locationCountry)
+      ? job.locationCountry
+      : undefined;
+  const description = JOB_I18N[params.lang]
+    .metaDescription(roleLabel(params.lang, job.role), job.company, realCountry, bodyExcerpt)
+    .slice(0, 160);
   return buildMetadata({
     locale: params.lang,
     path: `job/${params.id}`,
