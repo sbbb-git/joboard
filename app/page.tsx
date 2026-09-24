@@ -21,9 +21,9 @@ const LOCALE_NAMES: Record<string, string> = {
 };
 
 export const metadata: Metadata = {
-  title: 'slateremote.com · Remote tech jobs, refreshed weekly',
+  title: 'slateremote.com · Guides for remote tech workers',
   description:
-    'Remote engineering, data, design and product jobs from public job board APIs, refreshed weekly in English, French and German. Free, no signup.',
+    'Practical guides for remote tech workers, in English, French and German: talent platforms, cross-border payments, insurance and tools.',
   metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: `${SITE_URL}/en`,
@@ -40,7 +40,7 @@ export default function RootIndex() {
       <main className="mx-auto max-w-2xl px-5 py-16 space-y-6">
         <h1 className="font-display text-3xl tracking-tighter text-ink">slateremote.com</h1>
         <p className="text-graphite">
-          Remote tech jobs, refreshed weekly. Choose a language to continue.
+          Guides for remote tech workers. Choose a language to continue.
         </p>
         <ul className="flex flex-wrap gap-2">
           {LOCALES.map((l) => (

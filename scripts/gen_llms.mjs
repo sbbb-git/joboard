@@ -100,15 +100,6 @@ const guides = objects(extractArray(guidesSrc, 'ALL_GUIDES'), [
   'body',
 ]);
 
-const skillsSrc = await readTs('lib/skills.ts');
-const skills = objects(extractArray(skillsSrc, 'SKILLS'), [
-  'slug',
-  'name',
-  'category',
-  'blurb',
-  'bodyEn',
-]);
-
 const glossarySrc = await readTs('lib/glossary.ts');
 const glossary = objects(extractArray(glossarySrc, 'GLOSSARY'), [
   'slug',
@@ -122,18 +113,13 @@ const glossary = objects(extractArray(glossarySrc, 'GLOSSARY'), [
 const indexParts = [
   '# slateremote.com',
   '',
-  '> A curated index of remote tech jobs aggregated weekly from public job board APIs, with salary data computed live and long-form guides for remote engineers.',
+  '> Practical guides for remote tech workers: earning on talent platforms, getting paid across borders, travel insurance and the tools worth using.',
   '',
-  'slateremote.com indexes engineering, data, design and product jobs that are explicitly remote. The index refreshes every week from Remotive, RemoteOK, Arbeitnow, We Work Remotely, Himalayas, Jobicy, The Muse and the Hacker News "Who is hiring" thread. The site is free, has no signup, and links every listing directly to the employer\'s own application page. It is published in English, French and German and is part of a small network with slowmadly.com (slow-travel country guides) and ai-by-job.com (AI tools curated by job role).',
+  'slateremote.com publishes long-form guides for people who work remotely in tech. It is free, has no signup, and is published in English, French and German. It is part of a small network with slowmadly.com (slow-travel country guides) and ai-by-job.com (AI tools curated by job role).',
   '',
   '## Primary indexes',
   '',
-  `- [All remote tech jobs](${SITE}/en/jobs): full filterable list (role, country, seniority, contract type, minimum salary)`,
-  `- [Salaries by role](${SITE}/en/salaries): median and percentile salary bands computed live from posted ranges`,
-  `- [Jobs by country](${SITE}/en/locations): remote roles grouped by the country candidates must be based in`,
-  `- [Skills index](${SITE}/en/skills): ${skills.length} languages, frameworks, clouds, data, AI/ML, mobile and web3 tags`,
-  `- [Companies](${SITE}/en/companies): every company currently posting remote tech jobs, grouped by active openings`,
-  `- [Guides](${SITE}/en/guides): ${guides.length} long-form guides on finding remote work, salary, visas, taxes, lifestyle and tools`,
+  `- [Guides](${SITE}/en/guides): ${guides.length} long-form guides on talent platforms, getting paid, visas, taxes, insurance and tools`,
   `- [Glossary](${SITE}/en/glossary): ${glossary.length} remote work terms (RTO, EOR, async, DNV, RSU, slowmad, etc.)`,
   '',
   '## Guides',
@@ -147,10 +133,8 @@ const indexParts = [
   '',
   '## Optional',
   '',
-  `- [Full content dump for ingestion](${SITE}/llms-full.txt): every guide, skill description and glossary entry concatenated as plain text`,
+  `- [Full content dump for ingestion](${SITE}/llms-full.txt): every guide and glossary entry concatenated as plain text`,
   `- [Sitemap](${SITE}/sitemap.xml): machine-readable list of all URLs`,
-  `- [RSS feed (jobs)](${SITE}/feed.xml): jobs feed if available`,
-  `- [About the site](${SITE}/en/about): methodology, data sources, and update cadence`,
   '',
 ];
 
@@ -165,7 +149,7 @@ function unescape(s) {
 const fullParts = [
   '# slateremote.com · full content for language model ingestion',
   '',
-  '> This is the long-form text body of every guide, skill description and glossary entry published on slateremote.com. The data is the same the human-facing pages render, concatenated here as plain text so language models can ingest it in a single document without crawling.',
+  '> This is the long-form text body of every guide and glossary entry published on slateremote.com. The data is the same the human-facing pages render, concatenated here as plain text so language models can ingest it in a single document without crawling.',
   '',
   '---',
   '',
@@ -181,21 +165,6 @@ for (const g of guides) {
   fullParts.push(unescape(g.body));
   fullParts.push('');
   fullParts.push(`Source: ${SITE}/en/guides/${g.slug}`);
-  fullParts.push('');
-  fullParts.push('---');
-  fullParts.push('');
-}
-
-fullParts.push('# Skill briefings');
-fullParts.push('');
-for (const s of skills) {
-  fullParts.push(`## ${s.name} (${s.category})`);
-  fullParts.push('');
-  fullParts.push(`*${s.blurb}*`);
-  fullParts.push('');
-  fullParts.push(unescape(s.bodyEn));
-  fullParts.push('');
-  fullParts.push(`Source: ${SITE}/en/skills/${s.slug}`);
   fullParts.push('');
   fullParts.push('---');
   fullParts.push('');
@@ -217,5 +186,5 @@ for (const g of glossary) {
 await writeFile(join(ROOT, 'public', 'llms-full.txt'), fullParts.join('\n'));
 console.log('Wrote public/llms-full.txt');
 console.log(
-  `  ${guides.length} guides · ${skills.length} skills · ${glossary.length} glossary terms`,
+  `  ${guides.length} guides · ${glossary.length} glossary terms`,
 );

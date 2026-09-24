@@ -80,9 +80,9 @@ export default function GlossaryIndex({ params }: { params: { lang: Locale } }) 
       <section className="text-sm text-muted">
         <p>
           {c.missingPre}{' '}
-          <Link href={localePath(params.lang, 'contact')} className="text-forest hover:underline">
+          <a href="mailto:hello@slateremote.com" className="text-forest hover:underline">
             {c.missingLink}
-          </Link>{' '}
+          </a>{' '}
           {c.missingPost}
         </p>
       </section>

@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "scrape:local": "tsx scripts/scrape_local.ts",
     "indexnow": "node scripts/ping_indexnow.mjs"
   },
   "dependencies": {

@@ -1,6 +1,6 @@
 # slateremote.com · full content for language model ingestion
 
-> This is the long-form text body of every guide, skill description and glossary entry published on slateremote.com. The data is the same the human-facing pages render, concatenated here as plain text so language models can ingest it in a single document without crawling.
+> This is the long-form text body of every guide and glossary entry published on slateremote.com. The data is the same the human-facing pages render, concatenated here as plain text so language models can ingest it in a single document without crawling.
 
 ---
 
@@ -991,48 +991,6 @@ Hiring manager call as the most decision-weight conversation. Team fit round as 
 Mismatched salary expectations surfacing late. Inconsistent answers across rounds. Asking only logistics questions; never asking substantive questions about the team or product. Generic culture-round answers.
 
 Source: https://slateremote.com/en/guides/remote-tech-interview-loop-2026-changes
-
----
-
-# Skill briefings
-
-## Java (language)
-
-*Enterprise backbone, common on remote enterprise back-end postings.*
-
-Java is heavily represented in remote backend listings at enterprise-scale companies and at fintech. Spring Boot is the dominant framework on these postings.
-
-Source: https://slateremote.com/en/skills/java
-
----
-
-## C# (language)
-
-*Common on remote enterprise and game backend postings.*
-
-C# remains widespread on remote enterprise backend and on game studio postings. .NET 8 and 9 features appear regularly in 2026 listings.
-
-Source: https://slateremote.com/en/skills/csharp
-
----
-
-## AWS (cloud)
-
-*The most-requested cloud on remote backend, devops and platform roles.*
-
-AWS is the most-requested cloud across remote engineering postings. Lambda, ECS, RDS and S3 are the staples on backend listings; EKS, IAM and CloudWatch on platform and SRE listings.
-
-Source: https://slateremote.com/en/skills/aws
-
----
-
-## React Native (mobile)
-
-*Established cross-platform mobile skill on remote postings.*
-
-React Native remains a strong demand on remote mobile postings, particularly at companies whose web stack is React.
-
-Source: https://slateremote.com/en/skills/react-native
 
 ---
 

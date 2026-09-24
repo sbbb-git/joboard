@@ -1,44 +1,104 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { JobCard } from '@/components/JobCard';
-import { Newsletter } from '@/components/Newsletter';
-import { HomeFaq } from '@/components/HomeFaq';
-import { allJobs, rolesWithCounts, topCompanies, topCountries, locationCountries } from '@/lib/jobs';
-import { localePath, t } from '@/lib/i18n';
+import { LOCALES, localePath } from '@/lib/i18n';
 import { buildMetadata, organizationJsonLd, websiteJsonLd } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
-import { SKILLS } from '@/lib/skills';
 import { GUIDES } from '@/lib/guides';
 import { tGuide } from '@/lib/guides-i18n';
-import { HOME } from '@/lib/home-i18n';
-import { roleLabel } from '@/lib/labels';
 
 export const dynamicParams = false;
 export const revalidate = false;
 
+export function generateStaticParams() {
+  return LOCALES.map((lang) => ({ lang }));
+}
+
+// The site now publishes guides only (the job board was retired in 2026-09).
+// The homepage stays a short landing rather than a copy of /guides: it
+// features the guides that actually draw search impressions (Search Console
+// and Bing exports, 2026-09) and sends everything else to the full index.
+const FEATURED = [
+  'mercor-vs-scale-vs-surge-ai',
+  'mercor-application-timeline-2026',
+  'niche-fiverr-gigs-that-still-pay-in-2026',
+  'safetywing-real-claim-process-2026',
+  'mercor-tax-and-payout-guide-2026',
+  'wise-borderless-account-explained-2026',
+];
+
+type HomeCopy = {
+  metaTitle: string;
+  metaDescription: string;
+  eyebrow: string;
+  h1: string;
+  intro: string;
+  featuredHeading: string;
+  allGuides: (n: number) => string;
+  glossaryPre: string;
+  glossaryLink: string;
+};
+
+const COPY: Record<Locale, HomeCopy> = {
+  en: {
+    metaTitle: 'Remote work guides: getting paid, platforms and tools',
+    metaDescription:
+      'Practical guides for remote tech workers: earning on Mercor and Fiverr, getting paid across borders with Wise, travel insurance and the tools worth using.',
+    eyebrow: 'Guides',
+    h1: 'Practical guides for remote tech workers',
+    intro:
+      'How to earn on talent platforms, get paid across borders, stay insured while travelling and pick the tools that matter. Each guide is written to be acted on, not skimmed.',
+    featuredHeading: 'Most read',
+    allGuides: (n) => `All ${n} guides →`,
+    glossaryPre: 'New to the vocabulary? The',
+    glossaryLink: 'remote work glossary',
+  },
+  fr: {
+    metaTitle: 'Guides du travail à distance : paiements, plateformes, outils',
+    metaDescription:
+      'Guides pratiques pour les travailleurs tech à distance : gagner sur Mercor et Fiverr, se faire payer à l’étranger avec Wise, assurance voyage et outils utiles.',
+    eyebrow: 'Guides',
+    h1: 'Des guides pratiques pour travailler à distance',
+    intro:
+      'Gagner sur les plateformes de talents, se faire payer depuis l’étranger, rester assuré en voyage et choisir les bons outils. Chaque guide est écrit pour passer à l’action.',
+    featuredHeading: 'Les plus lus',
+    allGuides: (n) => `Les ${n} guides →`,
+    glossaryPre: 'Besoin du vocabulaire ? Le',
+    glossaryLink: 'glossaire du travail à distance',
+  },
+  de: {
+    metaTitle: 'Remote-Work-Guides: Bezahlung, Plattformen und Tools',
+    metaDescription:
+      'Praktische Guides für Remote-Tech-Worker: Geld verdienen auf Mercor und Fiverr, mit Wise grenzüberschreitend bezahlt werden, Reiseversicherung und nützliche Tools.',
+    eyebrow: 'Guides',
+    h1: 'Praktische Guides für Remote-Tech-Worker',
+    intro:
+      'Auf Talent-Plattformen verdienen, grenzüberschreitend bezahlt werden, auf Reisen versichert bleiben und die richtigen Tools wählen. Jeder Guide ist zum Umsetzen geschrieben.',
+    featuredHeading: 'Meistgelesen',
+    allGuides: (n) => `Alle ${n} Guides →`,
+    glossaryPre: 'Neu im Vokabular? Das',
+    glossaryLink: 'Remote-Work-Glossar',
+  },
+};
+
 export function generateMetadata({ params }: { params: { lang: Locale } }): Metadata {
-  const h = HOME[params.lang];
+  const c = COPY[params.lang];
   return buildMetadata({
     locale: params.lang,
     path: '',
-    title: h.metaTitle,
-    description: h.metaDescription,
+    title: c.metaTitle,
+    description: c.metaDescription,
   });
 }
 
 export default function Home({ params }: { params: { lang: Locale } }) {
   const locale = params.lang;
-  const h = HOME[locale];
-  const all = allJobs();
-  const jobs = all.slice(0, 12);
-  const roles = rolesWithCounts().filter((r) => r.count > 0).slice(0, 8);
-  const countries = locationCountries().slice(0, 8);
-  const companies = topCompanies(8);
-  const featuredSkills = SKILLS.slice(0, 14);
-  const featuredGuides = GUIDES.slice(0, 6);
+  const c = COPY[locale];
+  const featured = FEATURED.map((slug) => GUIDES.find((g) => g.slug === slug)).filter(
+    (g): g is (typeof GUIDES)[number] => Boolean(g),
+  );
 
   return (
-    <div className="space-y-20 animate-fadein">
+    <div className="space-y-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
@@ -48,288 +108,46 @@ export default function Home({ params }: { params: { lang: Locale } }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
       />
 
-      {/* HERO */}
-      <section className="relative -mt-8 pt-12 pb-12 px-1">
-        <div className="absolute inset-0 -z-10 bg-mesh rounded-3xl" />
-        <div className="grid lg:grid-cols-[1.4fr_1fr] gap-10 items-center">
-          <div>
-            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-forestSoft text-forest mb-5">
-              <span className="w-1.5 h-1.5 rounded-full bg-forest animate-pulse" />
-              {h.badge(all.length)}
-            </span>
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tightest leading-[1.04] text-ink">
-              {h.h1a}
-              <em className="font-display italic text-forest">{h.h1em}</em>{h.h1b}
-            </h1>
-            <p className="mt-5 text-lg text-graphite max-w-prose">
-              {t(locale, 'site.intro')}
-            </p>
-            <div className="mt-7 flex flex-wrap gap-2">
+      <header className="border-b border-line pb-8">
+        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{c.eyebrow}</p>
+        <h1 className="font-display text-4xl md:text-5xl font-normal tracking-tighter text-ink mt-2 leading-tight">
+          {c.h1}
+        </h1>
+        <p className="text-graphite text-base mt-4 max-w-prose">{c.intro}</p>
+      </header>
+
+      <section className="space-y-4">
+        <h2 className="font-display text-2xl tracking-tighter text-ink">{c.featuredHeading}</h2>
+        <ul className="grid sm:grid-cols-2 gap-3">
+          {featured.map((g) => (
+            <li key={g.slug}>
               <Link
-                href={localePath(locale, 'jobs')}
-                className="inline-flex items-center px-5 py-2.5 bg-ink text-bg rounded-full text-sm font-semibold hover:bg-forest transition-colors"
+                href={localePath(locale, `guides/${g.slug}`)}
+                className="block h-full rounded-2xl border border-line bg-paper p-5 hover-lift hover:border-ink"
               >
-                {h.browseJobs(all.length)}
+                <h3 className="font-semibold text-ink">{tGuide(g.slug, locale, 'title', g.title)}</h3>
+                <p className="text-sm text-graphite mt-2">
+                  {tGuide(g.slug, locale, 'description', g.description)}
+                </p>
               </Link>
-              <Link
-                href={localePath(locale, 'salaries/developer')}
-                className="inline-flex items-center px-5 py-2.5 bg-paper border border-line text-ink rounded-full text-sm font-semibold hover:border-ink transition-colors"
-              >
-                {h.seeSalary}
-              </Link>
-            </div>
-          </div>
-
-          {/* Stats card */}
-          <div className="rounded-2xl bg-paper border border-line shadow-soft p-6 grid grid-cols-2 gap-5">
-            {/* Real totals. These used to read the display lists (sliced to 8),
-                so the homepage claimed "8+ countries" and, via a `* 10`,
-                "80+ companies" against actual counts of 22 and 253. */}
-            <Stat number={all.length} label={h.stat.jobs} />
-            <Stat number={topCountries(1000).length} label={h.stat.countries} />
-            <Stat number={topCompanies(10000).length} label={h.stat.companies} />
-            <Stat number={GUIDES.length} label={h.stat.guides} />
-          </div>
-        </div>
-
-        {/* role chips below hero */}
-        <div className="mt-10 flex flex-wrap gap-2">
-          {(roles.length > 0
-            ? roles
-            : ['developer', 'frontend', 'backend', 'fullstack', 'data', 'devops', 'ml-ai', 'design'].map((r) => ({
-                role: r as never,
-                count: 0,
-              }))
-          ).map((r) => (
-            <Link
-              key={r.role}
-              href={localePath(locale, `jobs/${r.role}`)}
-              className="text-sm px-4 py-2 rounded-full bg-paper border border-line text-graphite hover:border-ink hover:text-ink transition-colors capitalize"
-            >
-              {roleLabel(locale, r.role)}
-              {r.count > 0 && <span className="ml-1.5 text-subtle">· {r.count}</span>}
-            </Link>
+            </li>
           ))}
-        </div>
-      </section>
-
-      {/* LATEST JOBS */}
-      <section>
-        <SectionHeader
-          eyebrow={h.latest}
-          title={t(locale, 'nav.jobs')}
-          link={{ href: localePath(locale, 'jobs'), label: `${t(locale, 'cta.viewAll')} →` }}
-        />
-        {jobs.length === 0 ? (
-          <p className="text-muted text-sm">{t(locale, 'list.empty')}</p>
-        ) : (
-          <div className="grid gap-3 md:grid-cols-2">
-            {jobs.map((j) => (
-              <JobCard key={j.id} job={j} locale={locale} />
-            ))}
-          </div>
-        )}
-      </section>
-
-      {/* NEWSLETTER */}
-      <Newsletter locale={locale} />
-
-      {/* BENTO HIGHLIGHTS */}
-      <section>
-        <SectionHeader
-          eyebrow={h.bentoEyebrow}
-          title={h.bentoTitle}
-        />
-        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[140px] md:auto-rows-[170px] gap-3">
-          <BentoTile className="col-span-2 md:col-span-2 md:row-span-2 bg-gradient-to-br from-forestSoft to-paper">
-            <div>
-              <p className="text-[10px] uppercase tracking-wider text-forest font-bold">
-                {h.dailyRefresh}
-              </p>
-              <p className="font-display text-4xl md:text-5xl font-normal text-ink leading-none mt-2">
-                {all.length.toLocaleString()}
-              </p>
-              <p className="text-graphite text-sm mt-1">{h.jobsRightNow}</p>
-            </div>
-            <Link
-              href={localePath(locale, 'jobs')}
-              className="text-sm text-forest font-medium hover:underline self-end"
-            >
-              {h.browseAll}
-            </Link>
-          </BentoTile>
-
-          <BentoTile className="col-span-1 md:col-span-2 bg-paper border border-line">
-            <div>
-              <p className="text-[10px] uppercase tracking-wider text-terracotta font-bold">
-                {h.findStack}
-              </p>
-              <p className="font-display text-2xl md:text-3xl font-normal text-ink mt-2 leading-tight">
-                {h.browseBySkillTile}
-              </p>
-              <p className="text-xs text-muted mt-1">
-                {h.skillsSub(SKILLS.length)}
-              </p>
-            </div>
-            <Link
-              href={localePath(locale, 'skills')}
-              className="text-sm text-terracotta font-medium hover:underline self-end"
-            >
-              {h.exploreSkills}
-            </Link>
-          </BentoTile>
-
-          <BentoTile className="col-span-1 md:col-span-2 bg-paper border border-line">
-            <div>
-              <p className="text-[10px] uppercase tracking-wider text-amber font-bold">
-                {h.salaryData}
-              </p>
-              <p className="font-display text-xl font-normal text-ink mt-1.5 leading-tight">
-                {h.whatPays}
-              </p>
-            </div>
-            <Link
-              href={localePath(locale, 'salaries/developer')}
-              className="text-xs text-amber font-medium hover:underline self-end"
-            >
-              {h.seeBands}
-            </Link>
-          </BentoTile>
-
-
-          <BentoTile className="col-span-2 md:col-span-4 bg-gradient-to-r from-paper to-terracottaSoft border border-line">
-            <div>
-              <p className="text-[10px] uppercase tracking-wider text-terracotta font-bold">
-                {h.freeForever}
-              </p>
-              <p className="font-display text-2xl md:text-3xl font-normal text-ink mt-2 leading-tight italic">
-                {h.browseFilterApply}
-              </p>
-            </div>
-            <span className="text-sm text-graphite hidden md:inline">
-              Sources: Remotive · RemoteOK · WWR · Arbeitnow · Himalayas · Jobicy · The Muse · HN
-            </span>
-          </BentoTile>
-        </div>
-      </section>
-
-      {/* SKILLS */}
-      <section>
-        <SectionHeader
-          eyebrow={h.skillsEyebrow}
-          title={h.skillsTitle}
-          link={{ href: localePath(locale, 'skills'), label: h.allSkills(SKILLS.length) }}
-        />
-        <div className="flex flex-wrap gap-2">
-          {featuredSkills.map((s) => (
-            <Link
-              key={s.slug}
-              href={localePath(locale, `skills/${s.slug}`)}
-              className="text-sm px-4 py-2 rounded-xl border border-line bg-paper hover:border-ink hover:bg-sand transition-colors"
-            >
-              {s.name}
-            </Link>
-          ))}
-        </div>
-      </section>
-
-
-      {/* COUNTRIES */}
-      {countries.length > 0 && (
-        <section>
-          <SectionHeader eyebrow={h.countryEyebrow} title={t(locale, 'nav.locations')} />
-          <div className="flex flex-wrap gap-2">
-            {countries.map((c) => (
-              <Link
-                key={c.slug}
-                href={localePath(locale, `locations/${c.slug}`)}
-                className="text-sm px-4 py-2 rounded-xl border border-line bg-paper hover:border-ink hover:bg-sand transition-colors"
-              >
-                {c.name} <span className="text-subtle">· {c.count}</span>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* GUIDES */}
-      <section>
-        <SectionHeader
-          eyebrow={h.guidesEyebrow}
-          title={t(locale, 'nav.guides')}
-          link={{ href: localePath(locale, 'guides'), label: h.allGuides(GUIDES.length) }}
-        />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {featuredGuides.map((g) => (
-            <Link
-              key={g.slug}
-              href={localePath(locale, `guides/${g.slug}`)}
-              className="block rounded-2xl border border-line bg-paper shadow-soft hover-lift hover:shadow-lift hover:border-ink/20 p-5"
-            >
-              <p className="text-[10px] uppercase tracking-wider text-forest font-semibold">{g.category}</p>
-              <h3 className="font-semibold text-ink mt-1.5 leading-snug">{tGuide(g.slug, locale, 'title', g.title)}</h3>
-              <p className="text-xs text-muted mt-2 leading-relaxed line-clamp-3">{tGuide(g.slug, locale, 'description', g.description)}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <HomeFaq locale={locale} />
-    </div>
-  );
-}
-
-function Stat({ number, label, suffix }: { number: number; label: string; suffix?: string }) {
-  return (
-    <div>
-      <div className="font-display stat-num text-4xl md:text-5xl font-normal text-ink leading-none">
-        {number.toLocaleString()}
-        {suffix && <span className="text-forest">{suffix}</span>}
-      </div>
-      <div className="text-xs text-muted mt-2 uppercase tracking-wider">{label}</div>
-    </div>
-  );
-}
-
-function BentoTile({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return (
-    <div
-      className={`rounded-2xl p-5 flex flex-col justify-between shadow-soft hover-lift hover:shadow-lift transition relative overflow-hidden ${className ?? ''}`}
-    >
-      {children}
-    </div>
-  );
-}
-
-function SectionHeader({
-  eyebrow,
-  title,
-  link,
-}: {
-  eyebrow: string;
-  title: string;
-  link?: { href: string; label: string };
-}) {
-  return (
-    <div className="flex items-end justify-between mb-5 gap-4 flex-wrap">
-      <div>
-        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{eyebrow}</p>
-        <h2 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1">
-          {title}
-        </h2>
-      </div>
-      {link && (
-        <Link href={link.href} className="text-sm font-medium text-forest hover:text-forestDark whitespace-nowrap">
-          {link.label}
+        </ul>
+        <Link
+          href={localePath(locale, 'guides')}
+          className="inline-block text-sm text-forest font-semibold hover:underline"
+        >
+          {c.allGuides(GUIDES.length)}
         </Link>
-      )}
+      </section>
+
+      <p className="text-sm text-muted">
+        {c.glossaryPre}{' '}
+        <Link href={localePath(locale, 'glossary')} className="text-forest hover:underline">
+          {c.glossaryLink}
+        </Link>
+        .
+      </p>
     </div>
   );
 }

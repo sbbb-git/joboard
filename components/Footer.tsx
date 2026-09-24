@@ -1,63 +1,24 @@
 import Link from 'next/link';
-import { readJobs } from '@/lib/jobs';
 import { localePath, t } from '@/lib/i18n';
 import type { Locale } from '@/lib/types';
-import { ROLES } from '@/lib/types';
-import { SKILLS } from '@/lib/skills';
-import { roleLabel } from '@/lib/labels';
 import { Logo } from './Logo';
 import { SISTER_NOMAD, SISTER_AI, slowmadlyHomeUrl, aiByJobHomeUrl } from '@/lib/sister-sites';
 
 export function Footer({ locale }: { locale: Locale }) {
-  const meta = readJobs();
-  const refreshed = new Date(meta.generatedAt).toISOString().slice(0, 10);
-  const topSkills = SKILLS.slice(0, 16);
-  const topRoles = ROLES;
-
   return (
     <footer className="border-t border-line bg-sand mt-20">
       <div className="mx-auto max-w-6xl px-5 py-12 space-y-10">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-10">
-          <div className="col-span-2 sm:col-span-3 lg:col-span-1">
+        <div className="grid sm:grid-cols-3 gap-8 lg:gap-10">
+          <div className="sm:col-span-2">
             <Logo size="md" withMark />
-            <p className="text-xs text-muted mt-3 leading-relaxed">{t(locale, 'footer.byline')}</p>
-            <div className="mt-4 flex gap-2 text-xs">
-              <span className="inline-block w-2 h-2 rounded-full bg-forest mt-1.5"></span>
-              <span className="text-muted">
-                {meta.count} {t(locale, 'footer.activeJobs')} {refreshed}
-              </span>
-            </div>
+            <p className="text-xs text-muted mt-3 leading-relaxed max-w-md">{t(locale, 'footer.byline')}</p>
           </div>
-
-          <FooterCol title={t(locale, 'footer.section.roles')}>
-            {topRoles.map((r) => (
-              <FooterLink key={r} href={localePath(locale, `jobs/${r}`)}>
-                <span className="capitalize">{roleLabel(locale, r)}</span>
-              </FooterLink>
-            ))}
-          </FooterCol>
-
-          <FooterCol title={t(locale, 'footer.section.skills')}>
-            {topSkills.map((s) => (
-              <FooterLink key={s.slug} href={localePath(locale, `skills/${s.slug}`)}>
-                {s.name}
-              </FooterLink>
-            ))}
-          </FooterCol>
-
 
           <FooterCol title={t(locale, 'footer.section.site')}>
             <FooterLink href={localePath(locale, 'guides')}>{t(locale, 'nav.guides')}</FooterLink>
-            <FooterLink href={localePath(locale, 'earn-online')}>{t(locale, 'footer.earn')}</FooterLink>
-            <FooterLink href={localePath(locale, 'salaries')}>{t(locale, 'nav.salaries')}</FooterLink>
-            <FooterLink href={localePath(locale, 'locations')}>{t(locale, 'nav.locations')}</FooterLink>
-            <FooterLink href={localePath(locale, 'stack')}>{t(locale, 'footer.stack')}</FooterLink>
-            <FooterLink href={localePath(locale, 'companies')}>{t(locale, 'nav.companies')}</FooterLink>
             <FooterLink href={localePath(locale, 'glossary')}>{t(locale, 'footer.glossary')}</FooterLink>
-            <FooterLink href={localePath(locale, 'disclosure')}>{t(locale, 'footer.disclosure')}</FooterLink>
             <FooterLink href={localePath(locale, 'network')}>{t(locale, 'footer.network')}</FooterLink>
-            <FooterLink href={localePath(locale, 'about')}>{t(locale, 'footer.about')}</FooterLink>
-            <FooterLink href={localePath(locale, 'contact')}>{t(locale, 'footer.contact')}</FooterLink>
+            <FooterLink href={localePath(locale, 'disclosure')}>{t(locale, 'footer.disclosure')}</FooterLink>
           </FooterCol>
         </div>
 

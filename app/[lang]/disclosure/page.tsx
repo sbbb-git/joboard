@@ -42,7 +42,7 @@ const COPY: Record<Locale, Copy> = {
     h1: 'Affiliate disclosure',
     intro: 'Every product slateremote.com recommends is either a tool we use ourselves or one we have vetted carefully for the remote tech audience. Some of those product links pay us a commission. This page lists every commercial relationship, in full.',
     h2Paid: 'How we get paid',
-    bodyPaid: 'slateremote.com is free to browse, has no ads, and never charges candidates. The site covers its own costs (domain, hosting is free on Cloudflare Pages) through two channels:',
+    bodyPaid: 'slateremote.com is free to browse, has no ads, and never charges readers. The site covers its own costs (domain, hosting is free on Cloudflare Pages) through two channels:',
     paidAffiliates: 'Affiliate partnerships. We earn a small commission if you sign up to one of the listed services through a link on this site. The full list is below.',
     paidSister: 'Sister sites. slateremote.com is part of a small network with slowmadly.com (slow-travel guides) and ai-by-job.com (AI tools by job). Each can earn from its own monetisation channels.',
     h2WillNot: 'What we will not do',
@@ -50,7 +50,7 @@ const COPY: Record<Locale, Copy> = {
       'Recommend a product solely because it pays us better.',
       'Hide affiliate relationships. Every affiliate link is tagged rel="sponsored".',
       'Add tracking pixels beyond Cloudflare and Ahrefs analytics for our own page-view stats.',
-      'Sell candidate data. We do not collect it.',
+      'Sell reader data. We do not collect it.',
     ],
     h2List: 'Full list of affiliate partners',
     bodyList: (n) => `${n} active programs. Commission column shows what the program pays us per successful signup (not what you pay).`,
@@ -58,8 +58,8 @@ const COPY: Record<Locale, Copy> = {
     thCategory: 'Category',
     thCommission: 'Our commission',
     h2Question: 'Question or concern?',
-    bodyQuestionPre: 'If you spot a recommendation that looks off, email us via',
-    bodyQuestionLink: 'the contact page',
+    bodyQuestionPre: 'If you spot a recommendation that looks off,',
+    bodyQuestionLink: 'email us',
     bodyQuestionPost: '. We remove partners that drift in quality.',
   },
   fr: {
@@ -69,7 +69,7 @@ const COPY: Record<Locale, Copy> = {
     h1: 'Divulgation des affiliations',
     intro: "Chaque produit recommandé par slateremote.com est soit un outil que nous utilisons nous-mêmes, soit un service que nous avons soigneusement examiné pour l'audience tech remote. Certains de ces liens nous rémunèrent. Cette page liste toutes les relations commerciales, intégralement.",
     h2Paid: 'Comment nous sommes payés',
-    bodyPaid: "slateremote.com est gratuit, sans pub, et ne facture jamais les candidats. Le site couvre ses coûts (le domaine, l'hébergement est gratuit sur Cloudflare Pages) via deux canaux :",
+    bodyPaid: "slateremote.com est gratuit, sans pub, et ne facture jamais ses lecteurs. Le site couvre ses coûts (le domaine, l'hébergement est gratuit sur Cloudflare Pages) via deux canaux :",
     paidAffiliates: 'Partenariats affiliés. Nous touchons une petite commission si vous vous inscrivez à un des services listés via un lien du site. La liste complète est ci-dessous.',
     paidSister: 'Sites jumeaux. slateremote.com fait partie d\'un petit réseau avec slowmadly.com (guides de slow-travel) et ai-by-job.com (outils IA par métier). Chacun a ses propres canaux de monétisation.',
     h2WillNot: 'Ce que nous ne ferons pas',
@@ -77,7 +77,7 @@ const COPY: Record<Locale, Copy> = {
       'Recommander un produit uniquement parce qu\'il nous paye mieux.',
       'Cacher les relations d\'affiliation. Chaque lien affilié est tagué rel="sponsored".',
       'Ajouter des pixels de tracking au-delà des analytics Cloudflare et Ahrefs pour nos propres stats de pages vues.',
-      'Vendre des données candidat. Nous n\'en collectons pas.',
+      'Vendre des données de lecteurs. Nous n\'en collectons pas.',
     ],
     h2List: 'Liste complète des partenaires affiliés',
     bodyList: (n) => `${n} programmes actifs. La colonne commission indique ce que le programme nous paye par inscription validée (pas ce que vous payez).`,
@@ -85,8 +85,8 @@ const COPY: Record<Locale, Copy> = {
     thCategory: 'Catégorie',
     thCommission: 'Notre commission',
     h2Question: 'Question ou réserve ?',
-    bodyQuestionPre: 'Si vous repérez une recommandation qui paraît douteuse, contactez-nous via',
-    bodyQuestionLink: 'la page contact',
+    bodyQuestionPre: 'Si vous repérez une recommandation qui paraît douteuse,',
+    bodyQuestionLink: 'écrivez-nous',
     bodyQuestionPost: '. Nous retirons les partenaires dont la qualité baisse.',
   },
   de: {
@@ -96,7 +96,7 @@ const COPY: Record<Locale, Copy> = {
     h1: 'Affiliate-Offenlegung',
     intro: 'Jedes Produkt, das slateremote.com empfiehlt, ist entweder ein Tool, das wir selbst nutzen, oder ein Dienst, den wir sorgfältig für die Remote-Tech-Audience geprüft haben. Einige dieser Produktlinks zahlen uns eine Provision. Diese Seite listet jede kommerzielle Beziehung vollständig auf.',
     h2Paid: 'Wie wir bezahlt werden',
-    bodyPaid: 'slateremote.com ist kostenlos nutzbar, hat keine Werbung und berechnet Kandidaten nie etwas. Die Seite deckt ihre Kosten (Domain, Hosting ist kostenlos auf Cloudflare Pages) über zwei Kanäle:',
+    bodyPaid: 'slateremote.com ist kostenlos nutzbar, hat keine Werbung und berechnet Lesern nie etwas. Die Seite deckt ihre Kosten (Domain, Hosting ist kostenlos auf Cloudflare Pages) über zwei Kanäle:',
     paidAffiliates: 'Affiliate-Partnerschaften. Wir erhalten eine kleine Provision, wenn Sie sich über einen Link dieser Seite bei einem der gelisteten Dienste anmelden. Die vollständige Liste finden Sie unten.',
     paidSister: 'Schwesterseiten. slateremote.com ist Teil eines kleinen Netzwerks mit slowmadly.com (Slow-Travel-Guides) und ai-by-job.com (AI-Tools nach Job). Jede Seite kann über eigene Monetarisierungskanäle verdienen.',
     h2WillNot: 'Was wir nicht tun werden',
@@ -104,7 +104,7 @@ const COPY: Record<Locale, Copy> = {
       'Ein Produkt nur empfehlen, weil es uns besser bezahlt.',
       'Affiliate-Beziehungen verstecken. Jeder Affiliate-Link ist mit rel="sponsored" markiert.',
       'Tracking-Pixel über Cloudflare- und Ahrefs-Analytics hinaus für unsere eigenen Page-View-Statistiken hinzufügen.',
-      'Kandidatendaten verkaufen. Wir sammeln keine.',
+      'Leserdaten verkaufen. Wir sammeln keine.',
     ],
     h2List: 'Vollständige Liste der Affiliate-Partner',
     bodyList: (n) => `${n} aktive Programme. Die Provisionsspalte zeigt, was das Programm uns pro erfolgreicher Anmeldung zahlt (nicht, was Sie zahlen).`,
@@ -112,8 +112,8 @@ const COPY: Record<Locale, Copy> = {
     thCategory: 'Kategorie',
     thCommission: 'Unsere Provision',
     h2Question: 'Frage oder Bedenken?',
-    bodyQuestionPre: 'Wenn Ihnen eine Empfehlung komisch vorkommt, schreiben Sie uns über',
-    bodyQuestionLink: 'die Kontaktseite',
+    bodyQuestionPre: 'Wenn Ihnen eine Empfehlung komisch vorkommt,',
+    bodyQuestionLink: 'schreiben Sie uns',
     bodyQuestionPost: '. Wir entfernen Partner, deren Qualität nachlässt.',
   },
 };
@@ -189,7 +189,7 @@ export default function DisclosurePage({ params }: { params: { lang: Locale } })
         <h2>{c.h2Question}</h2>
         <p>
           {c.bodyQuestionPre}{' '}
-          <a href={localePath(params.lang, 'contact')}>{c.bodyQuestionLink}</a>
+          <a href="mailto:hello@slateremote.com">{c.bodyQuestionLink}</a>
           {c.bodyQuestionPost}
         </p>
       </section>

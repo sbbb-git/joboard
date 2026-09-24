@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import type { JobNormalized, Locale } from './types';
+import type { Locale } from './types';
 import { LOCALES } from './types';
-import { salaryStats } from './jobs';
 
 export const SITE_URL = process.env.SITE_URL || 'https://slateremote.com';
 export const SITE_NAME = 'slateremote.com';
@@ -103,137 +102,6 @@ export function itemListJsonLd(items: Array<{ name: string; url: string }>) {
   };
 }
 
-// Conservative 2026 remote-market USD bands per role, used as ultimate
-// fallback when neither the listing nor our index has salary data.
-const DEFAULT_BANDS_USD: Record<string, [number, number]> = {
-  developer: [70_000, 150_000],
-  frontend: [70_000, 140_000],
-  backend: [80_000, 160_000],
-  fullstack: [75_000, 150_000],
-  mobile: [80_000, 150_000],
-  data: [90_000, 170_000],
-  'ml-ai': [130_000, 250_000],
-  devops: [100_000, 180_000],
-  security: [110_000, 200_000],
-  qa: [60_000, 120_000],
-  product: [100_000, 180_000],
-  design: [70_000, 130_000],
-};
-
-// Build Google-compliant baseSalary. Prefers the listing's published range;
-// when absent, falls back to the role+currency market median computed from
-// our own aggregated index so JobPosting structured-data validation passes.
-function buildBaseSalary(job: JobNormalized) {
-  const currency = job.currency ?? 'USD';
-  if (job.salaryMin || job.salaryMax) {
-    const value: Record<string, unknown> = {
-      '@type': 'QuantitativeValue',
-      unitText: 'YEAR',
-    };
-    if (job.salaryMin && job.salaryMax) {
-      value.minValue = job.salaryMin;
-      value.maxValue = job.salaryMax;
-    } else if (job.salaryMin) {
-      value.minValue = job.salaryMin;
-      value.value = job.salaryMin;
-    } else if (job.salaryMax) {
-      value.maxValue = job.salaryMax;
-      value.value = job.salaryMax;
-    }
-    return { '@type': 'MonetaryAmount', currency, value };
-  }
-  // Fallback to aggregated market band for this role + currency so the
-  // baseSalary field is always present and validation does not flag it.
-  const native = salaryStats(job.role, currency);
-  const stats = native ?? salaryStats(job.role, 'USD');
-  if (stats) {
-    return {
-      '@type': 'MonetaryAmount',
-      currency: native ? currency : 'USD',
-      value: {
-        '@type': 'QuantitativeValue',
-        minValue: Math.round(stats.p25),
-        maxValue: Math.round(stats.p75),
-        unitText: 'YEAR',
-      },
-    };
-  }
-  // Ultimate fallback: hard-coded 2026 market band per role.
-  const band = DEFAULT_BANDS_USD[job.role];
-  if (!band) return undefined;
-  return {
-    '@type': 'MonetaryAmount',
-    currency: 'USD',
-    value: {
-      '@type': 'QuantitativeValue',
-      minValue: band[0],
-      maxValue: band[1],
-      unitText: 'YEAR',
-    },
-  };
-}
-
-// Postings scoped to a region rather than a country ("North America Only",
-// "South America", "LATAM") resolve to no single country, and a TELECOMMUTE
-// JobPosting with no applicantLocationRequirements lacks the location field
-// Google Jobs requires for remote roles. These regions have well-defined
-// member countries, so list them. Broad ones (EMEA, APAC) are left unresolved
-// rather than approximated.
-const SOUTH_AMERICA = [
-  'Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador',
-  'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela',
-];
-const REGION_COUNTRIES: Array<[RegExp, string[]]> = [
-  [/\bnorth america\b/i, ['United States', 'Canada']],
-  [/\bsouth america\b/i, SOUTH_AMERICA],
-  [/\blatam\b|\blatin america\b/i, [
-    ...SOUTH_AMERICA, 'Mexico', 'Costa Rica', 'Panama', 'Guatemala', 'Honduras', 'El Salvador', 'Nicaragua',
-  ]],
-];
-
-function applicantLocations(job: JobNormalized) {
-  if (job.locationCountry) return { '@type': 'Country', name: job.locationCountry };
-  for (const [re, countries] of REGION_COUNTRIES) {
-    if (re.test(job.location)) return countries.map((name) => ({ '@type': 'Country', name }));
-  }
-  return undefined;
-}
-
-export function jobPostingJsonLd(job: JobNormalized) {
-  const employmentMap: Record<string, string> = {
-    FULL_TIME: 'FULL_TIME',
-    PART_TIME: 'PART_TIME',
-    CONTRACTOR: 'CONTRACTOR',
-    INTERN: 'INTERN',
-  };
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'JobPosting',
-    title: job.title,
-    description: job.description,
-    datePosted: job.postedAt,
-    validThrough: job.expiresAt,
-    employmentType: employmentMap[job.employmentType] ?? 'FULL_TIME',
-    hiringOrganization: {
-      '@type': 'Organization',
-      name: job.company,
-    },
-    jobLocationType: job.remote === 'full' ? 'TELECOMMUTE' : undefined,
-    applicantLocationRequirements: applicantLocations(job),
-    jobLocation:
-      job.remote !== 'full'
-        ? {
-            '@type': 'Place',
-            address: { '@type': 'PostalAddress', addressLocality: job.location },
-          }
-        : undefined,
-    baseSalary: buildBaseSalary(job),
-    directApply: false,
-    url: job.url,
-    identifier: { '@type': 'PropertyValue', name: job.source, value: job.id },
-  };
-}
-
 export function breadcrumbJsonLd(items: Array<{ name: string; url: string }>) {
   return {
     '@context': 'https://schema.org',
@@ -255,7 +123,7 @@ export function organizationJsonLd() {
     url: SITE_URL,
     logo: absoluteUrl('/icon.svg'),
     description:
-      'Remote tech jobs aggregated from ten public job board APIs, refreshed weekly. Free, multi-locale, no signup.',
+      'Practical guides for remote tech workers: earning on talent platforms, getting paid across borders, insurance and tools.',
     foundingDate: '2025',
     sameAs: [
       'https://slowmadly.com',
@@ -272,15 +140,7 @@ export function websiteJsonLd() {
     name: SITE_NAME,
     url: SITE_URL,
     description:
-      'Remote tech jobs from across the web, refreshed weekly. Free, no signup, in English, French and German.',
+      'Practical guides for remote tech workers, in English, French and German.',
     inLanguage: [...LOCALES],
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${SITE_URL}/en/jobs?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
   };
 }

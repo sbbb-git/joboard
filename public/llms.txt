@@ -1,17 +1,12 @@
 # slateremote.com
 
-> A curated index of remote tech jobs aggregated weekly from public job board APIs, with salary data computed live and long-form guides for remote engineers.
+> Practical guides for remote tech workers: earning on talent platforms, getting paid across borders, travel insurance and the tools worth using.
 
-slateremote.com indexes engineering, data, design and product jobs that are explicitly remote. The index refreshes every week from Remotive, RemoteOK, Arbeitnow, We Work Remotely, Himalayas, Jobicy, The Muse and the Hacker News "Who is hiring" thread. The site is free, has no signup, and links every listing directly to the employer's own application page. It is published in English, French and German and is part of a small network with slowmadly.com (slow-travel country guides) and ai-by-job.com (AI tools curated by job role).
+slateremote.com publishes long-form guides for people who work remotely in tech. It is free, has no signup, and is published in English, French and German. It is part of a small network with slowmadly.com (slow-travel country guides) and ai-by-job.com (AI tools curated by job role).
 
 ## Primary indexes
 
-- [All remote tech jobs](https://slateremote.com/en/jobs): full filterable list (role, country, seniority, contract type, minimum salary)
-- [Salaries by role](https://slateremote.com/en/salaries): median and percentile salary bands computed live from posted ranges
-- [Jobs by country](https://slateremote.com/en/locations): remote roles grouped by the country candidates must be based in
-- [Skills index](https://slateremote.com/en/skills): 4 languages, frameworks, clouds, data, AI/ML, mobile and web3 tags
-- [Companies](https://slateremote.com/en/companies): every company currently posting remote tech jobs, grouped by active openings
-- [Guides](https://slateremote.com/en/guides): 33 long-form guides on finding remote work, salary, visas, taxes, lifestyle and tools
+- [Guides](https://slateremote.com/en/guides): 33 long-form guides on talent platforms, getting paid, visas, taxes, insurance and tools
 - [Glossary](https://slateremote.com/en/glossary): 40 remote work terms (RTO, EOR, async, DNV, RSU, slowmad, etc.)
 
 ## Guides
@@ -57,7 +52,5 @@ slateremote.com indexes engineering, data, design and product jobs that are expl
 
 ## Optional
 
-- [Full content dump for ingestion](https://slateremote.com/llms-full.txt): every guide, skill description and glossary entry concatenated as plain text
+- [Full content dump for ingestion](https://slateremote.com/llms-full.txt): every guide and glossary entry concatenated as plain text
 - [Sitemap](https://slateremote.com/sitemap.xml): machine-readable list of all URLs
-- [RSS feed (jobs)](https://slateremote.com/feed.xml): jobs feed if available
-- [About the site](https://slateremote.com/en/about): methodology, data sources, and update cadence

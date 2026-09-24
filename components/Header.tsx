@@ -13,10 +13,8 @@ export function Header({ locale, path }: { locale: Locale; path: string }) {
           <Logo size="md" withMark />
         </Link>
         <nav className="flex items-center gap-0.5 sm:gap-1 text-sm">
-          <NavLink href={localePath(locale, 'jobs')}>{t(locale, 'nav.jobs')}</NavLink>
-          <NavLink href={localePath(locale, 'skills')} hide="sm">{t(locale, 'nav.skills')}</NavLink>
-          <NavLink href={localePath(locale, 'salaries/developer')} hide="lg">{t(locale, 'nav.salaries')}</NavLink>
-          <NavLink href={localePath(locale, 'guides')} hide="sm">{t(locale, 'nav.guides')}</NavLink>
+          <NavLink href={localePath(locale, 'guides')}>{t(locale, 'nav.guides')}</NavLink>
+          <NavLink href={localePath(locale, 'glossary')} hide="sm">{t(locale, 'footer.glossary')}</NavLink>
           <a
             href={slowmadlyHomeUrl(locale)}
             target="_blank"

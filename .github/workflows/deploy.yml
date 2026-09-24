@@ -1,34 +1,22 @@
-name: scrape-and-deploy
+name: deploy
 
-# Weekly job refresh, Mondays 04:00 UTC.
+# Build and deploy the site on every push to main (and on demand).
 #
-# Google Jobs (JobPosting structured data) is where ~90% of this site's search
-# impressions come from. While the scrape was off between 2026-06-19 and
-# 2026-09-01, 98% of the 525 indexed postings passed their validThrough date,
-# expired postings render noindex and drop out of the sitemap, and impressions
-# fell from ~40/day to ~2/day. The index has to keep moving for that channel
-# to exist at all.
-#
-# Weekly rather than daily: postings carry a 60-day minimum validity window
-# (68-day median), so a 7-day refresh cycle never lets the index go stale
-# enough to matter, at a seventh of the Actions minutes and commits.
-#
-# push  -> rebuild and deploy code changes only, no scrape (see the `if`s below)
-# schedule / workflow_dispatch -> full scrape, commit, rebuild, deploy
+# The job board and its scraper were retired in 2026-09: the site now
+# publishes guides only, so there is nothing to refresh on a schedule. No
+# cron, no scrape, no commit back to the repo, hence read-only permissions.
 
 on:
-  schedule:
-    - cron: '0 4 * * 1'
   push:
     branches: [main]
   workflow_dispatch: {}
 
 jobs:
-  scrape-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -42,36 +30,13 @@ jobs:
 
       - run: npm ci
 
-      - name: Scrape (skip on push-only runs)
-        if: github.event_name != 'push'
-        run: npm run scrape:local
-
-      - name: Commit refreshed jobs
-        if: github.event_name != 'push'
-        run: |
-          set -euo pipefail
-          if git diff --quiet data/jobs.json; then
-            echo "No changes to commit"
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/jobs.json
-          git commit -m "chore(jobs): refresh $(date -u +%F)"
-          git push origin main
-
-      - name: Generate client-side search index
-        run: node scripts/gen_search_index.mjs
-
       - name: Generate llms.txt + llms-full.txt
         run: node scripts/gen_llms.mjs
-
 
       - name: Build static site
         env:
           SITE_URL: https://slateremote.com
           NEXT_PUBLIC_CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
-          NEXT_PUBLIC_BEEHIIV_EMBED: ${{ secrets.BEEHIIV_EMBED }}
         run: npm run build
 
       - name: Patch <html lang> per locale

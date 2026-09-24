@@ -10,36 +10,6 @@ type Index = {
 
 type WithCategories = Index & { categories: Record<string, string> };
 
-export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }> = {
-  en: {
-    metaTitle: 'Remote tech jobs by skill',
-    metaDescription: () => 'Browse remote engineering jobs by language, framework, cloud, database and AI/ML stack. Updated weekly from ten job board APIs. Free, no signup.',
-    eyebrow: 'By skill',
-    h1: 'Remote tech jobs by skill',
-    intro: (n) => `${n} skill categories tracked across the index. Pick a stack to see open positions and salary ranges.`,
-    countLabel: 'skills',
-    categories: { language: 'Languages', framework: 'Frameworks', cloud: 'Cloud platforms', data: 'Data & databases', devops: 'DevOps & platform', ai: 'AI & ML', mobile: 'Mobile', web3: 'API & Web3' },
-  },
-  fr: {
-    metaTitle: 'Offres tech remote par compétence',
-    metaDescription: () => 'Parcourez les offres tech remote par langage, framework, cloud, base de données et stack IA/ML. Mis à jour chaque semaine depuis dix APIs. Gratuit, sans inscription.',
-    eyebrow: 'Par compétence',
-    h1: 'Offres tech remote par compétence',
-    intro: (n) => `${n} catégories de compétences suivies dans l'index. Choisissez une stack pour voir postes et fourchettes salariales.`,
-    countLabel: 'compétences',
-    categories: { language: 'Langages', framework: 'Frameworks', cloud: 'Plateformes cloud', data: 'Data & bases', devops: 'DevOps & plateforme', ai: 'IA & ML', mobile: 'Mobile', web3: 'API & Web3' },
-  },
-  de: {
-    metaTitle: 'Remote Tech-Jobs nach Skill',
-    metaDescription: () => 'Remote-Engineering-Jobs nach Sprache, Framework, Cloud, Datenbank und KI/ML-Stack durchsuchen. Wöchentlich aus zehn Job-APIs aktualisiert. Kostenlos, ohne Anmeldung.',
-    eyebrow: 'Nach Skill',
-    h1: 'Remote Tech-Jobs nach Skill',
-    intro: (n) => `${n} Skill-Kategorien im Index. Wählen Sie einen Stack, um offene Stellen und Gehaltsspannen zu sehen.`,
-    countLabel: 'Skills',
-    categories: { language: 'Sprachen', framework: 'Frameworks', cloud: 'Cloud-Plattformen', data: 'Data & Datenbanken', devops: 'DevOps & Plattform', ai: 'KI & ML', mobile: 'Mobile', web3: 'API & Web3' },
-  },
-};
-
 export const GUIDES_I18N: Record<Locale, WithCategories> = {
   en: {
     metaTitle: 'Guides for remote tech workers',
