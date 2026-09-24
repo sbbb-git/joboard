@@ -35,7 +35,7 @@ const COPY: Record<Locale, Copy> = {
   en: {
     metaTitle: 'Submit a remote tech job · featured placement',
     metaDescription:
-      'Get your job featured across slateremote.com for 30 days: front-page slot, role-page top and city-page top placement. Seen by remote engineers in 7 languages.',
+      'Get your job featured across slateremote.com for 30 days: front-page slot, role-page top and city-page top placement. Published in English, French and German.',
     h1: 'Submit a remote tech job',
     subtitle: 'Reach engineers, designers and product candidates across slateremote.com.',
     intro1:
@@ -96,42 +96,10 @@ const COPY: Record<Locale, Copy> = {
     howBody:
       "Paiement via Stripe, puis envoyez-nous l'URL de votre offre par email. La mise en avant est en ligne sous 24 h. Nous n'acceptons que les vraies offres tech compatibles remote ; les annonces trompeuses sont remboursées et retirées.",
   },
-  es: {
-    metaTitle: 'Publica un empleo tech remoto · colocación destacada',
-    metaDescription:
-      'Destaca tu oferta en slateremote.com durante 30 días: portada, primera posición en la página de rol y en la de ciudad. La ven ingenieros remotos en 7 idiomas.',
-    h1: 'Publica un empleo tech remoto',
-    subtitle: 'Llega a ingenieros, diseñadores y candidatos de producto en slateremote.com.',
-    intro1:
-      'slateremote.com agrega automáticamente ofertas de diez portales públicos. Si tu puesto ya está en Remotive, RemoteOK, We Work Remotely, Arbeitnow, Himalayas, Jobicy, The Muse, Hacker News, Working Nomads o Jobspresso, aparece aquí en menos de 24 h, gratis.',
-    intro2: 'Para mayor visibilidad, elige una de las opciones siguientes.',
-    featuredTitle: 'Anuncio destacado',
-    featuredDuration: '30 días',
-    featuredBullets: [
-      'Arriba de la portada durante 30 días',
-      'Arriba de la página del rol correspondiente',
-      'Arriba de la página de ciudad correspondiente si aplica',
-      'Estilo destacado en todas las listas',
-    ],
-    featuredCta: 'Comprar destacado →',
-    sponsoredTitle: 'Colocación patrocinada',
-    sponsoredDuration: 'Por semana',
-    perWeek: '/sem',
-    sponsoredBullets: [
-      'Fijado en lo más alto de todas las páginas relevantes',
-      'Etiqueta de patrocinador distinta',
-      'Distribución en todos los idiomas (en, fr, es, de, pt, it, pl)',
-      'Cancelable en cualquier momento',
-    ],
-    sponsoredCta: 'Comprar colocación patrocinada →',
-    howTitle: 'Cómo funciona',
-    howBody:
-      'Paga con Stripe y envíanos la URL del empleo por correo. La colocación destacada se activa en 24 h. Solo aceptamos puestos tech remote legítimos; los anuncios engañosos se reembolsan y se retiran.',
-  },
   de: {
     metaTitle: 'Remote Tech Job veröffentlichen · hervorgehobene Platzierung',
     metaDescription:
-      'Heben Sie Ihre Stelle 30 Tage lang auf slateremote.com hervor: Startseite, oberste Position auf Rollen- und Stadtseite. Gesehen von Remote-Engineers in 7 Sprachen.',
+      'Heben Sie Ihre Stelle 30 Tage lang auf slateremote.com hervor: Startseite, oberste Position auf Rollen- und Stadtseite. Veröffentlicht auf Englisch, Französisch und Deutsch.',
     h1: 'Remote Tech Job veröffentlichen',
     subtitle: 'Erreichen Sie Engineers, Designer und Product-Kandidaten auf slateremote.com.',
     intro1:
@@ -159,102 +127,6 @@ const COPY: Record<Locale, Copy> = {
     howTitle: 'So funktioniert es',
     howBody:
       'Zahlen Sie per Stripe und senden Sie uns die Job-URL per E-Mail. Die Platzierung ist innerhalb von 24 Stunden live. Wir akzeptieren nur seriöse remote-freundliche Tech-Stellen; irreführende Inserate werden erstattet und entfernt.',
-  },
-  pt: {
-    metaTitle: 'Publicar uma vaga tech remota · destaque',
-    metaDescription:
-      'Coloque sua vaga em destaque no slateremote.com por 30 dias: topo da página inicial, topo da página de cargo e topo da página de cidade.',
-    h1: 'Publicar uma vaga tech remota',
-    subtitle: 'Alcance engenheiros, designers e candidatos de produto no slateremote.com.',
-    intro1:
-      'O slateremote.com agrega automaticamente vagas de dez job boards públicos. Se sua vaga já estiver na Remotive, RemoteOK, We Work Remotely, Arbeitnow, Himalayas, Jobicy, The Muse, Hacker News, Working Nomads ou Jobspresso, ela aparece aqui em até 24 h, gratuitamente.',
-    intro2: 'Para mais visibilidade, escolha uma das opções abaixo.',
-    featuredTitle: 'Vaga em destaque',
-    featuredDuration: '30 dias',
-    featuredBullets: [
-      'Topo da página inicial por 30 dias',
-      'Topo da página de cargo correspondente',
-      'Topo da página de cidade correspondente quando relevante',
-      'Estilo destacado em todas as listagens',
-    ],
-    featuredCta: 'Comprar destaque →',
-    sponsoredTitle: 'Colocação patrocinada',
-    sponsoredDuration: 'Por semana',
-    perWeek: '/sem',
-    sponsoredBullets: [
-      'Fixada no topo de todas as páginas relevantes',
-      'Selo de patrocinador distinto',
-      'Distribuição em todos os idiomas (en, fr, es, de, pt, it, pl)',
-      'Cancelável a qualquer momento',
-    ],
-    sponsoredCta: 'Comprar colocação patrocinada →',
-    howTitle: 'Como funciona',
-    howBody:
-      'Pague via Stripe e nos envie a URL da vaga por email. O destaque entra no ar em 24 h. Aceitamos apenas vagas tech remote-friendly legítimas; anúncios enganosos são reembolsados e removidos.',
-  },
-  it: {
-    metaTitle: 'Pubblica un lavoro tech remote · posizionamento in evidenza',
-    metaDescription:
-      'Metti in evidenza il tuo annuncio su slateremote.com per 30 giorni: home, cima della pagina ruolo e della pagina città. Lo vedono ingegneri remote in 7 lingue.',
-    h1: 'Pubblica un lavoro tech remote',
-    subtitle: 'Raggiungi ingegneri, designer e candidati product su slateremote.com.',
-    intro1:
-      'slateremote.com aggrega automaticamente i lavori da dieci job board pubblici. Se la tua posizione è già su Remotive, RemoteOK, We Work Remotely, Arbeitnow, Himalayas, Jobicy, The Muse, Hacker News, Working Nomads o Jobspresso, appare qui entro 24 ore, gratuitamente.',
-    intro2: 'Per più visibilità, scegli una delle opzioni qui sotto.',
-    featuredTitle: 'Annuncio in evidenza',
-    featuredDuration: '30 giorni',
-    featuredBullets: [
-      'In cima alla home per 30 giorni',
-      'In cima alla pagina del ruolo corrispondente',
-      'In cima alla pagina città corrispondente quando rilevante',
-      'Stile evidenziato in ogni lista',
-    ],
-    featuredCta: 'Acquista lo slot in evidenza →',
-    sponsoredTitle: 'Posizionamento sponsorizzato',
-    sponsoredDuration: 'A settimana',
-    perWeek: '/sett',
-    sponsoredBullets: [
-      'Fissato in cima a tutte le pagine rilevanti',
-      'Tag sponsor distinto',
-      'Distribuzione in tutte le lingue (en, fr, es, de, pt, it, pl)',
-      'Cancellabile in qualsiasi momento',
-    ],
-    sponsoredCta: 'Acquista lo slot sponsorizzato →',
-    howTitle: 'Come funziona',
-    howBody:
-      "Paga con Stripe e inviaci l'URL del lavoro via email. Il posizionamento è online entro 24 ore. Accettiamo solo posizioni tech remote-friendly legittime; gli annunci ingannevoli vengono rimborsati e rimossi.",
-  },
-  pl: {
-    metaTitle: 'Opublikuj zdalną pracę tech · wyróżnione miejsce',
-    metaDescription:
-      'Wyróżnij swoje ogłoszenie na slateremote.com przez 30 dni: strona główna, góra strony roli i strony miasta. Widzą je zdalni inżynierowie w 7 językach.',
-    h1: 'Opublikuj zdalną pracę tech',
-    subtitle: 'Dotrzyj do inżynierów, projektantów i kandydatów produktowych na slateremote.com.',
-    intro1:
-      'slateremote.com automatycznie agreguje oferty z dziesięciu publicznych portali pracy. Jeśli twoja oferta jest już na Remotive, RemoteOK, We Work Remotely, Arbeitnow, Himalayas, Jobicy, The Muse, Hacker News, Working Nomads lub Jobspresso, pojawi się tu w ciągu 24 h, za darmo.',
-    intro2: 'Dla większej widoczności wybierz jedną z opcji poniżej.',
-    featuredTitle: 'Wyróżnione ogłoszenie',
-    featuredDuration: '30 dni',
-    featuredBullets: [
-      'Góra strony głównej przez 30 dni',
-      'Góra strony pasującej roli',
-      'Góra strony pasującego miasta, gdy istotne',
-      'Wyróżniony styl na każdej liście',
-    ],
-    featuredCta: 'Kup wyróżnione miejsce →',
-    sponsoredTitle: 'Sponsorowane miejsce',
-    sponsoredDuration: 'Tygodniowo',
-    perWeek: '/tydz',
-    sponsoredBullets: [
-      'Przypięte na samej górze wszystkich istotnych stron',
-      'Wyraźna etykieta sponsora',
-      'Dystrybucja we wszystkich językach (en, fr, es, de, pt, it, pl)',
-      'Można anulować w dowolnym momencie',
-    ],
-    sponsoredCta: 'Kup sponsorowane miejsce →',
-    howTitle: 'Jak to działa',
-    howBody:
-      'Zapłać przez Stripe, a następnie wyślij nam adres URL oferty mailem. Wyróżnienie aktywuje się w ciągu 24 h. Akceptujemy tylko prawdziwe zdalne oferty tech; mylące ogłoszenia są zwracane i usuwane.',
   },
 };
 

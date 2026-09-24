@@ -21,11 +21,7 @@ export function generateStaticParams() {
 const META_TITLE: Record<Locale, string> = {
   en: 'Remote work glossary for tech professionals',
   fr: 'Glossaire du travail remote pour la tech',
-  es: 'Glosario del trabajo remoto para perfiles tech',
   de: 'Remote-Work-Glossar für Tech-Fachkräfte',
-  pt: 'Glossário do trabalho remoto para a área tech',
-  it: 'Glossario del lavoro remote per chi lavora nel tech',
-  pl: 'Słownik pracy zdalnej dla branży tech',
 };
 
 export function generateMetadata({ params }: { params: { lang: Locale } }): Metadata {

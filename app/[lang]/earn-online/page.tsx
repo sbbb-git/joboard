@@ -93,37 +93,6 @@ const COPY: Record<Locale, Copy> = {
     home: 'Accueil',
     readGuide: 'Lire le guide →',
   },
-  es: {
-    metaTitle: 'Ganar en línea como desarrollador: 4 vías que pagan',
-    metaDescription:
-      'Cuatro formas de ganar en línea en 2026: un empleo tech remoto, freelance en Fiverr, deals SaaS de por vida en AppSumo y una newsletter de pago.',
-    eyebrow: 'Ganar en línea',
-    h1: 'Cuatro vías para ganar en línea como desarrollador',
-    intro:
-      'Los ingresos remotos nunca han sido tan accesibles para los perfiles técnicos. Las cuatro vías de abajo cubren las opciones realistas en 2026, del flujo regular al upside compuesto.',
-    remoteJobs: {
-      title: 'Conseguir un empleo tech remoto',
-      body: 'La vía más predecible. Agregamos cada oferta tech remota activa desde las APIs públicas de ocho job boards, actualizado cada día. Filtra por rol, país, salario y seniority en el navegador, sin registro.',
-    },
-    remoteJobsCta: 'Ver los empleos remotos →',
-    freelance: {
-      title: 'Vender servicios dev en Fiverr',
-      body: 'Fiverr es la forma más rápida de empezar a ganar ingresos independientes con código. Publica un servicio repetible, entrega con fiabilidad y sube los niveles. El playbook lo desglosa.',
-    },
-    saasDeals: {
-      title: 'Reducir el gasto SaaS con deals de por vida en AppSumo',
-      body: 'Paga una vez, evita suscripciones para siempre en las herramientas correctas. Para founders bootstrap y operadores solo la matemática suma rápido. Empieza por la guía que explica cómo funcionan.',
-    },
-    newsletter: {
-      title: 'Construir una newsletter tech que pague',
-      body: 'Es la más lenta al inicio pero la de mayor techo a largo plazo. Una newsletter tech enfocada combina audiencia duradera con varias vías de monetización. El cluster de cinco guías cubre desde la plataforma hasta la escala.',
-    },
-    closingTitle: 'Elige una y profundiza',
-    closingBody:
-      'El error clásico es probar las cuatro a la vez. Elige la que encaje con tu tiempo y tu tolerancia al riesgo, comprométete al menos seis meses y solo añade la segunda cuando la primera produce.',
-    home: 'Inicio',
-    readGuide: 'Leer la guía →',
-  },
   de: {
     metaTitle: 'Online verdienen als Entwickler: 4 Wege, die zahlen',
     metaDescription:
@@ -154,99 +123,6 @@ const COPY: Record<Locale, Copy> = {
       'Der häufigste Fehler: alle vier gleichzeitig probieren. Wähle den Weg, der zu deiner Zeit und Risikotoleranz passt, halte sechs Monate durch und füge den zweiten erst hinzu, wenn der erste liefert.',
     home: 'Startseite',
     readGuide: 'Guide lesen →',
-  },
-  pt: {
-    metaTitle: 'Ganhar online como desenvolvedor: 4 rotas que pagam',
-    metaDescription:
-      'Quatro formas de ganhar online em 2026: uma vaga tech remota, freelance no Fiverr, deals vitalícios de SaaS no AppSumo e uma newsletter paga.',
-    eyebrow: 'Ganhar online',
-    h1: 'Quatro rotas para ganhar online como desenvolvedor',
-    intro:
-      'A renda remota nunca foi tão acessível para perfis técnicos. As quatro rotas abaixo cobrem as opções realistas em 2026, do cash estável ao upside que compõe ao longo do tempo.',
-    remoteJobs: {
-      title: 'Conseguir uma vaga tech remota',
-      body: 'A rota mais previsível. Agregamos cada vaga tech remota ativa das APIs públicas de oito job boards, atualizada todo dia. Filtre por cargo, país, salário e senioridade no navegador, sem cadastro.',
-    },
-    remoteJobsCta: 'Ver as vagas remotas →',
-    freelance: {
-      title: 'Vender serviços dev no Fiverr',
-      body: 'O Fiverr é a forma mais rápida de começar a gerar renda independente com código. Publique um serviço repetível, entregue com confiabilidade e suba os níveis. O playbook detalha a mecânica.',
-    },
-    saasDeals: {
-      title: 'Cortar gastos de SaaS com deals vitalícios do AppSumo',
-      body: 'Pague uma vez, evite assinaturas para sempre nas ferramentas certas. Para founders bootstrap e operadores solo a conta compõe rápido. Comece pelo guia que explica como funcionam.',
-    },
-    newsletter: {
-      title: 'Construir uma newsletter tech que paga',
-      body: 'É a mais lenta para começar, com o teto mais alto a longo prazo. Uma newsletter tech focada combina audiência durável com várias vias de monetização. O cluster de cinco guias cobre da plataforma à escala.',
-    },
-    closingTitle: 'Escolha uma e vá fundo',
-    closingBody:
-      'O erro clássico é experimentar as quatro ao mesmo tempo. Escolha a rota que encaixa no seu tempo e tolerância a risco, comprometa-se por pelo menos seis meses e só adicione a segunda quando a primeira produz.',
-    home: 'Início',
-    readGuide: 'Ler o guia →',
-  },
-  it: {
-    metaTitle: 'Guadagnare online da sviluppatore: 4 vie che pagano',
-    metaDescription:
-      'Quattro modi per guadagnare online nel 2026: un lavoro tech remote, freelance su Fiverr, offerte a vita su AppSumo e una newsletter a pagamento.',
-    eyebrow: 'Guadagnare online',
-    h1: 'Quattro vie per guadagnare online da sviluppatore',
-    intro:
-      'Il reddito remote non è mai stato così accessibile per i profili tech. Le quattro vie sotto coprono le opzioni realistiche nel 2026, dal cash regolare allo upside che compone nel tempo.',
-    remoteJobs: {
-      title: 'Trovare un lavoro tech remote',
-      body: 'La via più prevedibile. Aggreghiamo ogni annuncio tech remote attivo dalle API pubbliche di otto job board, aggiornato ogni giorno. Filtra per ruolo, paese, stipendio e seniority nel browser, senza registrazione.',
-    },
-    remoteJobsCta: 'Sfoglia i lavori remote →',
-    freelance: {
-      title: 'Vendere servizi dev su Fiverr',
-      body: 'Fiverr è il modo più veloce per iniziare a generare reddito indipendente con il codice. Pubblica un servizio ripetibile, consegna con affidabilità, scala il sistema dei livelli. Il playbook spiega la meccanica.',
-    },
-    saasDeals: {
-      title: 'Ridurre la spesa SaaS con le offerte a vita di AppSumo',
-      body: 'Paga una volta, evita gli abbonamenti per sempre sugli strumenti giusti. Per founder bootstrap e operatori solo i conti tornano in fretta. Inizia dalla guida che spiega come funzionano.',
-    },
-    newsletter: {
-      title: 'Costruire una newsletter tech che paga',
-      body: 'La più lenta da avviare, con il tetto più alto sul lungo termine. Una newsletter tech focalizzata unisce audience duratura a più flussi di monetizzazione. Il cluster di cinque guide copre dalla piattaforma alla scala.',
-    },
-    closingTitle: 'Scegline una e vai in profondità',
-    closingBody:
-      "L'errore classico è provarle tutte e quattro insieme. Scegli la via che si adatta al tuo tempo e alla tua tolleranza al rischio, impegnati per almeno sei mesi e aggiungi la seconda solo quando la prima produce.",
-    home: 'Home',
-    readGuide: 'Leggi la guida →',
-  },
-  pl: {
-    metaTitle: 'Zarabianie online jako deweloper: 4 skuteczne ścieżki',
-    metaDescription:
-      'Cztery sposoby zarabiania online w 2026: zdalna praca tech, freelance na Fiverr, dożywotnie oferty SaaS na AppSumo i płatny newsletter techniczny.',
-    eyebrow: 'Zarabianie online',
-    h1: 'Cztery ścieżki zarabiania online jako deweloper',
-    intro:
-      'Zdalny dochód nigdy nie był tak dostępny dla profili tech. Cztery ścieżki poniżej obejmują realistyczne opcje w 2026, od stabilnego cashflow do upside-u, który składa się w czasie.',
-    remoteJobs: {
-      title: 'Zdobyć zdalną pracę tech',
-      body: 'Najbardziej przewidywalna ścieżka. Agregujemy każdą aktywną zdalną ofertę tech z publicznych API ośmiu job boardów i aktualizujemy codziennie. Filtruj według roli, kraju, wynagrodzenia i poziomu w przeglądarce, bez rejestracji.',
-    },
-    remoteJobsCta: 'Przeglądaj zdalne oferty →',
-    freelance: {
-      title: 'Sprzedawać usługi dev na Fiverr',
-      body: 'Fiverr to najszybszy sposób, aby zacząć zarabiać niezależnie dzięki kodowi. Wystaw jedną powtarzalną usługę, dostarczaj niezawodnie i wspinaj się po systemie poziomów. Playbook poniżej rozkłada to na czynniki pierwsze.',
-    },
-    saasDeals: {
-      title: 'Obniżyć wydatki SaaS dzięki dożywotnim ofertom AppSumo',
-      body: 'Zapłać raz, omijaj subskrypcje na zawsze na właściwych narzędziach. Dla bootstrap founderów i solo operatorów rachunek szybko się składa. Zacznij od przewodnika, który wyjaśnia jak to działa.',
-    },
-    newsletter: {
-      title: 'Zbudować newsletter tech, który płaci',
-      body: 'Najwolniejsza na starcie, z najwyższym pułapem długoterminowym. Skoncentrowany newsletter tech łączy trwały wzrost audytorium z kilkoma strumieniami monetyzacji. Klaster pięciu poradników obejmuje od wyboru platformy do skali.',
-    },
-    closingTitle: 'Wybierz jedną i idź w głąb',
-    closingBody:
-      'Klasyczny błąd to próbowanie wszystkich czterech naraz. Wybierz ścieżkę pasującą do twojego czasu i tolerancji ryzyka, zaangażuj się na co najmniej sześć miesięcy i dodaj drugą dopiero gdy pierwsza zacznie produkować.',
-    home: 'Strona główna',
-    readGuide: 'Czytaj przewodnik →',
   },
 };
 

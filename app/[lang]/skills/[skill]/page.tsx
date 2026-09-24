@@ -39,35 +39,11 @@ const SKILL_META_I18N: Record<Locale, SkillMetaCopy> = {
       `Parcourez les postes remote qui demandent ${s}, avec fourchettes salariales et niveaux.`,
     metaExtra: 'À jour chaque jour.',
   },
-  es: {
-    metaTitle: (s) => `Empleos remotos de ${s}`,
-    metaSuffix: (s) =>
-      `Explora puestos remotos que piden ${s}, con rangos salariales y niveles de seniority.`,
-    metaExtra: 'Al día, cada día.',
-  },
   de: {
     metaTitle: (s) => `Remote-Jobs mit ${s}`,
     metaSuffix: (s) =>
       `Offene Remote-Stellen mit ${s}, inklusive Gehaltsspannen, Level und Bewerbungslinks.`,
     metaExtra: 'Jeden Tag aktuell.',
-  },
-  pt: {
-    metaTitle: (s) => `Vagas remotas de ${s}`,
-    metaSuffix: (s) =>
-      `Veja as vagas remotas que pedem ${s}, com faixas salariais e níveis de senioridade.`,
-    metaExtra: 'Atualizado todo dia.',
-  },
-  it: {
-    metaTitle: (s) => `Lavoro remote con ${s}`,
-    metaSuffix: (s) =>
-      `Sfoglia le posizioni remote che richiedono ${s}, con fasce di stipendio, livelli e sedi.`,
-    metaExtra: 'Sempre aggiornato.',
-  },
-  pl: {
-    metaTitle: (s) => `Praca zdalna: ${s}`,
-    metaSuffix: (s) =>
-      `Przeglądaj zdalne oferty wymagające ${s}, z widełkami płacowymi i poziomami stanowisk.`,
-    metaExtra: 'Zawsze aktualne.',
   },
 };
 

@@ -10,58 +10,6 @@ type Index = {
 
 type WithCategories = Index & { categories: Record<string, string> };
 
-export const CITIES_I18N: Record<Locale, Index> = {
-  en: {
-    metaTitle: 'Best cities for remote tech workers',
-    metaDescription: (n) => `In-depth profiles of ${n} cities curated for remote tech workers: cost of living, visa options, internet speed, coworking hubs and local tech ecosystem.`,
-    eyebrow: 'Cities',
-    h1: 'Best cities for remote tech workers',
-    intro: (n) => `Profiles of ${n} top cities for remote engineers: cost of living, visa pathways, internet speed and local tech ecosystem.`,
-  },
-  fr: {
-    metaTitle: 'Meilleures villes pour les travailleurs tech remote',
-    metaDescription: (n) => `Profils détaillés de ${n} villes triées pour les travailleurs tech remote : coût de la vie, options de visa, vitesse internet, coworking et écosystème tech.`,
-    eyebrow: 'Villes',
-    h1: 'Meilleures villes pour les travailleurs tech remote',
-    intro: (n) => `Profils de ${n} villes top pour ingés remote : coût de la vie, options de visa, vitesse internet et écosystème tech local.`,
-  },
-  es: {
-    metaTitle: 'Mejores ciudades para trabajadores tech remotos',
-    metaDescription: (n) => `Perfiles detallados de ${n} ciudades para trabajadores tech remotos: coste de vida, opciones de visa, velocidad de internet, coworking y ecosistema tech local.`,
-    eyebrow: 'Ciudades',
-    h1: 'Mejores ciudades para trabajadores tech remotos',
-    intro: (n) => `Perfiles de ${n} ciudades top para ingenieros remotos: coste de vida, vías de visado, velocidad de internet y ecosistema tech local.`,
-  },
-  de: {
-    metaTitle: 'Beste Städte für Remote-Tech-Worker',
-    metaDescription: (n) => `Detaillierte Profile von ${n} Städten für Remote-Tech-Worker: Lebenshaltungskosten, Visa-Optionen, Internetgeschwindigkeit, Coworking und Tech-Ökosystem.`,
-    eyebrow: 'Städte',
-    h1: 'Beste Städte für Remote-Tech-Worker',
-    intro: (n) => `Profile von ${n} Top-Städten für Remote-Engineers: Lebenshaltungskosten, Visa-Optionen, Internetgeschwindigkeit und lokales Tech-Ökosystem.`,
-  },
-  pt: {
-    metaTitle: 'Melhores cidades para trabalhadores tech remotos',
-    metaDescription: (n) => `Perfis detalhados de ${n} cidades para trabalhadores tech remotos: custo de vida, opções de visto, velocidade da internet, coworking e ecossistema tech.`,
-    eyebrow: 'Cidades',
-    h1: 'Melhores cidades para trabalhadores tech remotos',
-    intro: (n) => `Perfis de ${n} cidades top para engenheiros remotos: custo de vida, caminhos de visto, velocidade da internet e ecossistema tech local.`,
-  },
-  it: {
-    metaTitle: 'Migliori città per lavoratori tech remote',
-    metaDescription: (n) => `Profili dettagliati di ${n} città per lavoratori tech remote: costo della vita, opzioni visto, velocità internet, coworking e ecosistema tech locale.`,
-    eyebrow: 'Città',
-    h1: 'Migliori città per lavoratori tech remote',
-    intro: (n) => `Profili di ${n} città top per ingegneri remote: costo della vita, opzioni visto, velocità internet ed ecosistema tech locale.`,
-  },
-  pl: {
-    metaTitle: 'Najlepsze miasta dla zdalnych pracowników tech',
-    metaDescription: (n) => `Szczegółowe profile ${n} miast dla zdalnych pracowników tech: koszt życia, opcje wizowe, szybkość internetu, coworking i lokalny ekosystem tech.`,
-    eyebrow: 'Miasta',
-    h1: 'Najlepsze miasta dla zdalnych pracowników tech',
-    intro: (n) => `Profile ${n} najlepszych miast dla zdalnych inżynierów: koszt życia, ścieżki wizowe, szybkość internetu i lokalny ekosystem tech.`,
-  },
-};
-
 export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }> = {
   en: {
     metaTitle: 'Remote tech jobs by skill',
@@ -81,15 +29,6 @@ export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }
     countLabel: 'compétences',
     categories: { language: 'Langages', framework: 'Frameworks', cloud: 'Plateformes cloud', data: 'Data & bases', devops: 'DevOps & plateforme', ai: 'IA & ML', mobile: 'Mobile', web3: 'API & Web3' },
   },
-  es: {
-    metaTitle: 'Empleos tech remotos por skill',
-    metaDescription: () => 'Explora empleos tech remotos por lenguaje, framework, cloud, base de datos y stack IA/ML. Actualizado a diario desde ocho APIs de empleo. Gratis, sin registro.',
-    eyebrow: 'Por skill',
-    h1: 'Empleos tech remotos por skill',
-    intro: (n) => `${n} categorías de skills seguidas en el índice. Elige un stack para ver puestos y rangos salariales.`,
-    countLabel: 'skills',
-    categories: { language: 'Lenguajes', framework: 'Frameworks', cloud: 'Plataformas cloud', data: 'Data y bases', devops: 'DevOps y plataforma', ai: 'IA y ML', mobile: 'Móvil', web3: 'API y Web3' },
-  },
   de: {
     metaTitle: 'Remote Tech-Jobs nach Skill',
     metaDescription: () => 'Remote-Engineering-Jobs nach Sprache, Framework, Cloud, Datenbank und KI/ML-Stack durchsuchen. Täglich aus acht Job-APIs aktualisiert. Kostenlos, ohne Anmeldung.',
@@ -98,33 +37,6 @@ export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }
     intro: (n) => `${n} Skill-Kategorien im Index. Wählen Sie einen Stack, um offene Stellen und Gehaltsspannen zu sehen.`,
     countLabel: 'Skills',
     categories: { language: 'Sprachen', framework: 'Frameworks', cloud: 'Cloud-Plattformen', data: 'Data & Datenbanken', devops: 'DevOps & Plattform', ai: 'KI & ML', mobile: 'Mobile', web3: 'API & Web3' },
-  },
-  pt: {
-    metaTitle: 'Vagas tech remotas por skill',
-    metaDescription: () => 'Navegue vagas tech remotas por linguagem, framework, cloud, banco de dados e stack IA/ML. Atualizado todo dia via oito APIs de emprego. Grátis, sem cadastro.',
-    eyebrow: 'Por skill',
-    h1: 'Vagas tech remotas por skill',
-    intro: (n) => `${n} categorias de skills acompanhadas no índice. Escolha um stack para ver vagas e faixas salariais.`,
-    countLabel: 'skills',
-    categories: { language: 'Linguagens', framework: 'Frameworks', cloud: 'Plataformas cloud', data: 'Data e bancos', devops: 'DevOps e plataforma', ai: 'IA e ML', mobile: 'Mobile', web3: 'API e Web3' },
-  },
-  it: {
-    metaTitle: 'Lavori tech remote per skill',
-    metaDescription: () => 'Sfoglia lavori tech remote per linguaggio, framework, cloud, database e stack IA/ML. Aggiornato ogni giorno da otto API di offerte. Gratuito, senza registrazione.',
-    eyebrow: 'Per skill',
-    h1: 'Lavori tech remote per skill',
-    intro: (n) => `${n} categorie di skill tracciate nell\'indice. Scegli uno stack per vedere posizioni aperte e fasce salariali.`,
-    countLabel: 'skill',
-    categories: { language: 'Linguaggi', framework: 'Framework', cloud: 'Piattaforme cloud', data: 'Data e database', devops: 'DevOps e piattaforma', ai: 'IA e ML', mobile: 'Mobile', web3: 'API e Web3' },
-  },
-  pl: {
-    metaTitle: 'Zdalne oferty tech według umiejętności',
-    metaDescription: () => 'Przeglądaj zdalne oferty inżynierskie według języka, frameworka, chmury, bazy danych i stacku AI/ML. Aktualizowane codziennie z ośmiu API. Bezpłatnie, bez rejestracji.',
-    eyebrow: 'Według umiejętności',
-    h1: 'Zdalne oferty tech według umiejętności',
-    intro: (n) => `${n} kategorii umiejętności śledzonych w indeksie. Wybierz stack, aby zobaczyć oferty i widełki płacowe.`,
-    countLabel: 'umiejętności',
-    categories: { language: 'Języki', framework: 'Frameworki', cloud: 'Platformy chmurowe', data: 'Data i bazy', devops: 'DevOps i platforma', ai: 'AI i ML', mobile: 'Mobile', web3: 'API i Web3' },
   },
 };
 
@@ -145,14 +57,6 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
     intro: (n) => `${n} guides longs et tranchés sur tous les sujets qui comptent pour décrocher et tenir une carrière tech remote.`,
     categories: { finding: 'Trouver un job', salary: 'Salaires et négociation', career: 'Trajectoires de carrière', freelance: 'Freelance et Fiverr', visa: 'Visas', tax: 'Impôts', lifestyle: 'Lifestyle', tools: 'Outils et setup' },
   },
-  es: {
-    metaTitle: 'Guías para trabajadores tech remotos',
-    metaDescription: () => 'Guías largas sobre encontrar empleos tech remotos, salarios, visas, impuestos, herramientas y lifestyle para ingenieros remotos. Gratis, sin registro requerido.',
-    eyebrow: 'Guías',
-    h1: 'Guías para trabajadores tech remotos',
-    intro: (n) => `${n} guías largas y con opinión sobre cada tema que importa para conseguir y sostener una carrera tech remota.`,
-    categories: { finding: 'Encontrar empleo', salary: 'Salarios y negociación', career: 'Trayectorias', freelance: 'Freelance y Fiverr', visa: 'Visas', tax: 'Impuestos', lifestyle: 'Lifestyle', tools: 'Herramientas y setup' },
-  },
   de: {
     metaTitle: 'Guides für Remote-Tech-Worker',
     metaDescription: () => 'Ausführliche Guides zum Finden von Remote-Tech-Jobs, Gehältern, Visa, Steuern, Tools und Lifestyle für Remote-Engineers. Kostenlos, regelmäßig aktualisiert.',
@@ -160,30 +64,6 @@ export const GUIDES_I18N: Record<Locale, WithCategories> = {
     h1: 'Guides für Remote-Tech-Worker',
     intro: (n) => `${n} ausführliche, meinungsstarke Guides zu jedem Thema, das für eine Remote-Tech-Karriere zählt.`,
     categories: { finding: 'Job finden', salary: 'Gehälter & Verhandlung', career: 'Karrierepfade', freelance: 'Freelancing & Fiverr', visa: 'Visa', tax: 'Steuern', lifestyle: 'Lifestyle', tools: 'Tools & Setup' },
-  },
-  pt: {
-    metaTitle: 'Guias para trabalhadores tech remotos',
-    metaDescription: () => 'Guias longos sobre encontrar vagas tech remotas, salários, vistos, impostos, ferramentas e lifestyle para engenheiros remotos. Gratuito, sem cadastro necessário.',
-    eyebrow: 'Guias',
-    h1: 'Guias para trabalhadores tech remotos',
-    intro: (n) => `${n} guias longos e opinativos sobre cada tópico que importa para conseguir e sustentar uma carreira tech remota.`,
-    categories: { finding: 'Encontrar vaga', salary: 'Salários e negociação', career: 'Trajetórias', freelance: 'Freelance e Fiverr', visa: 'Vistos', tax: 'Impostos', lifestyle: 'Lifestyle', tools: 'Ferramentas e setup' },
-  },
-  it: {
-    metaTitle: 'Guide per lavoratori tech remote',
-    metaDescription: () => 'Guide lunghe su come trovare lavori tech remote, stipendi, visti, tasse, strumenti e lifestyle per ingegneri remote. Gratuite, aggiornate regolarmente, senza registrazione.',
-    eyebrow: 'Guide',
-    h1: 'Guide per lavoratori tech remote',
-    intro: (n) => `${n} guide lunghe e schierate su ogni tema che conta per ottenere e sostenere una carriera tech remote.`,
-    categories: { finding: 'Trovare lavoro', salary: 'Stipendi e negoziazione', career: 'Percorsi di carriera', freelance: 'Freelance e Fiverr', visa: 'Visti', tax: 'Tasse', lifestyle: 'Lifestyle', tools: 'Strumenti e setup' },
-  },
-  pl: {
-    metaTitle: 'Poradniki dla zdalnych pracowników tech',
-    metaDescription: () => 'Długie poradniki o znajdowaniu zdalnych ofert tech, wynagrodzeniach, wizach, podatkach, narzędziach i lifestyle dla zdalnych inżynierów. Bezpłatnie, bez rejestracji.',
-    eyebrow: 'Poradniki',
-    h1: 'Poradniki dla zdalnych pracowników tech',
-    intro: (n) => `${n} długich, opiniowych poradników o każdym temacie istotnym dla zdobycia i utrzymania zdalnej kariery tech.`,
-    categories: { finding: 'Znalezienie pracy', salary: 'Wynagrodzenia i negocjacje', career: 'Ścieżki kariery', freelance: 'Freelancing i Fiverr', visa: 'Wizy', tax: 'Podatki', lifestyle: 'Lifestyle', tools: 'Narzędzia i setup' },
   },
 };
 
@@ -210,17 +90,6 @@ export const GLOSSARY_I18N: Record<Locale, WithCategories & { missingPre: string
     missingLink: 'Écrivez-nous',
     missingPost: 'et nous l\'ajoutons.',
   },
-  es: {
-    metaTitle: 'Glosario del trabajo remoto',
-    metaDescription: (n) => `${n} términos esenciales que todo trabajador tech remoto debería conocer: RTO, EOR, async, DNV, OKR, RSU, geo-arbitraje y más. Definiciones breves con contexto ampliado.`,
-    eyebrow: 'Glosario',
-    h1: 'Glosario del trabajo remoto',
-    intro: (n) => `${n} términos que todo trabajador tech remoto debería conocer, organizados por categoría. Definiciones cortas para consulta rápida, explicaciones más largas para lo que realmente difiere del trabajo en oficina.`,
-    categories: { work: 'Modelos de trabajo', comp: 'Compensación', legal: 'Legal y visas', culture: 'Cultura', tech: 'Tech' },
-    missingPre: '¿Falta un término?',
-    missingLink: 'Envíanos email',
-    missingPost: 'y lo añadimos.',
-  },
   de: {
     metaTitle: 'Remote-Work-Glossar',
     metaDescription: (n) => `${n} unverzichtbare Begriffe, die jeder Remote-Tech-Worker kennen sollte: RTO, EOR, async, DNV, OKR, RSU, Geo-Arbitrage und mehr. Kurze Definitionen mit tieferem Kontext.`,
@@ -232,89 +101,5 @@ export const GLOSSARY_I18N: Record<Locale, WithCategories & { missingPre: string
     missingLink: 'Schreiben Sie uns',
     missingPost: 'und wir fügen ihn hinzu.',
   },
-  pt: {
-    metaTitle: 'Glossário do trabalho remoto',
-    metaDescription: (n) => `${n} termos essenciais que todo trabalhador tech remoto deveria saber: RTO, EOR, async, DNV, OKR, RSU, geo-arbitragem e mais. Definições breves com contexto aprofundado.`,
-    eyebrow: 'Glossário',
-    h1: 'Glossário do trabalho remoto',
-    intro: (n) => `${n} termos que todo trabalhador tech remoto deveria saber, organizados por categoria. Definições curtas para consulta rápida, explicações mais longas para o que de fato difere do trabalho no escritório.`,
-    categories: { work: 'Modelos de trabalho', comp: 'Remuneração', legal: 'Legal e vistos', culture: 'Cultura', tech: 'Tech' },
-    missingPre: 'Falta um termo?',
-    missingLink: 'Envie-nos um email',
-    missingPost: 'e adicionamos.',
-  },
-  it: {
-    metaTitle: 'Glossario del lavoro remote',
-    metaDescription: (n) => `${n} termini essenziali che ogni lavoratore tech remote dovrebbe sapere: RTO, EOR, async, DNV, OKR, RSU, geo-arbitraggio e altro. Definizioni brevi con contesto approfondito.`,
-    eyebrow: 'Glossario',
-    h1: 'Glossario del lavoro remote',
-    intro: (n) => `${n} termini che ogni lavoratore tech remote dovrebbe sapere, organizzati per categoria. Definizioni brevi per la consultazione rapida, spiegazioni più lunghe per ciò che davvero differisce dal lavoro in ufficio.`,
-    categories: { work: 'Modelli di lavoro', comp: 'Retribuzione', legal: 'Legale e visti', culture: 'Cultura', tech: 'Tech' },
-    missingPre: 'Manca un termine?',
-    missingLink: 'Scrivici',
-    missingPost: 'e lo aggiungiamo.',
-  },
-  pl: {
-    metaTitle: 'Słownik pracy zdalnej',
-    metaDescription: (n) => `${n} kluczowych terminów, które każdy zdalny pracownik tech powinien znać: RTO, EOR, async, DNV, OKR, RSU, geo-arbitraż i więcej. Zwięzłe definicje i szerszy kontekst.`,
-    eyebrow: 'Słownik',
-    h1: 'Słownik pracy zdalnej',
-    intro: (n) => `${n} terminów, które każdy zdalny pracownik tech powinien znać, zorganizowanych według kategorii. Krótkie definicje do szybkiego sprawdzenia, dłuższe wyjaśnienia dla tego, co naprawdę różni się od pracy w biurze.`,
-    categories: { work: 'Modele pracy', comp: 'Wynagrodzenie', legal: 'Prawne i wizy', culture: 'Kultura', tech: 'Tech' },
-    missingPre: 'Brakuje terminu?',
-    missingLink: 'Napisz do nas',
-    missingPost: 'a dodamy.',
-  },
 };
 
-export const COMPARE_I18N: Record<Locale, Index> = {
-  en: {
-    metaTitle: 'Remote tech career comparisons',
-    metaDescription: () => 'Head-to-head comparisons on the trade-offs that matter for remote tech workers: remote vs hybrid, freelance vs full-time, startup vs big tech, and more.',
-    eyebrow: 'Compare',
-    h1: 'Remote tech career comparisons',
-    intro: (n) => `${n} head-to-head breakdowns on the trade-offs that actually matter for remote tech careers.`,
-  },
-  fr: {
-    metaTitle: 'Comparaisons de carrières tech remote',
-    metaDescription: () => "Comparaisons sur les arbitrages qui comptent pour les travailleurs tech remote : remote vs hybride, freelance vs salarié, startup vs big tech, et plus.",
-    eyebrow: 'Comparer',
-    h1: 'Comparaisons de carrières tech remote',
-    intro: (n) => `${n} comparaisons frontales sur les arbitrages qui comptent vraiment pour les carrières tech remote.`,
-  },
-  es: {
-    metaTitle: 'Comparaciones de carrera tech remota',
-    metaDescription: () => 'Comparaciones cara a cara sobre los trade-offs que importan a trabajadores tech remotos: remoto vs híbrido, freelance vs full-time, startup vs big tech, y más.',
-    eyebrow: 'Comparar',
-    h1: 'Comparaciones de carrera tech remota',
-    intro: (n) => `${n} comparaciones cara a cara sobre los trade-offs que realmente importan en las carreras tech remotas.`,
-  },
-  de: {
-    metaTitle: 'Remote-Tech-Karriere-Vergleiche',
-    metaDescription: () => 'Direkte Vergleiche zu den Trade-offs, die für Remote-Tech-Worker zählen: Remote vs. Hybrid, Freelance vs. Vollzeit, Startup vs. Big Tech und mehr.',
-    eyebrow: 'Vergleichen',
-    h1: 'Remote-Tech-Karriere-Vergleiche',
-    intro: (n) => `${n} direkte Vergleiche zu den Trade-offs, die für Remote-Tech-Karrieren wirklich zählen.`,
-  },
-  pt: {
-    metaTitle: 'Comparações de carreira tech remota',
-    metaDescription: () => 'Comparações lado a lado sobre os trade-offs que importam para trabalhadores tech remotos: remoto vs híbrido, freelance vs full-time, startup vs big tech, e mais.',
-    eyebrow: 'Comparar',
-    h1: 'Comparações de carreira tech remota',
-    intro: (n) => `${n} análises lado a lado sobre os trade-offs que realmente importam para carreiras tech remotas.`,
-  },
-  it: {
-    metaTitle: 'Confronti di carriera tech remote',
-    metaDescription: () => 'Confronti diretti sui compromessi che contano per i lavoratori tech remote: remote vs ibrido, freelance vs full-time, startup vs big tech, e altro.',
-    eyebrow: 'Confronta',
-    h1: 'Confronti di carriera tech remote',
-    intro: (n) => `${n} confronti diretti sui compromessi che contano davvero per le carriere tech remote.`,
-  },
-  pl: {
-    metaTitle: 'Porównania karier zdalnych tech',
-    metaDescription: () => 'Bezpośrednie porównania kompromisów istotnych dla zdalnych pracowników tech: zdalna vs hybryda, freelance vs etat, startup vs big tech i więcej.',
-    eyebrow: 'Porównaj',
-    h1: 'Porównania karier zdalnych tech',
-    intro: (n) => `${n} bezpośrednich porównań kompromisów, które naprawdę liczą się w zdalnych karierach tech.`,
-  },
-};

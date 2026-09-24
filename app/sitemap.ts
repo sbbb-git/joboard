@@ -8,12 +8,12 @@ import {
 } from '@/lib/jobs';
 import { ROLES } from '@/lib/types';
 import { LOCALES, DEFAULT_LOCALE } from '@/lib/i18n';
+import type { Locale } from '@/lib/types';
 import { SITE_URL, canonicalPath } from '@/lib/seo';
 import { isExpired } from '@/lib/filters';
 import { SKILLS } from '@/lib/skills';
-import { CITIES } from '@/lib/cities';
 import { GUIDES } from '@/lib/guides';
-import { COMPARISONS } from '@/lib/comparisons';
+import { hasGuideTranslation } from '@/lib/guides-body-i18n';
 
 export const dynamic = 'force-static';
 
@@ -51,12 +51,13 @@ function localeUrls(
   path: string,
   lastModified: Date | undefined,
   priority: number,
+  locales: readonly Locale[] = LOCALES,
 ): SitemapEntry[] {
   const languages: Record<string, string> = {
     'x-default': `${SITE_URL}${canonicalPath(DEFAULT_LOCALE, path)}`,
   };
-  for (const l of LOCALES) languages[l] = `${SITE_URL}${canonicalPath(l, path)}`;
-  return LOCALES.map((l) => ({
+  for (const l of locales) languages[l] = `${SITE_URL}${canonicalPath(l, path)}`;
+  return locales.map((l) => ({
     url: `${SITE_URL}${canonicalPath(l, path)}`,
     ...(lastModified ? { lastModified } : {}),
     // Non-default locales rank slightly below the English original.
@@ -76,11 +77,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   add('', now, 1);
   add('/jobs', now, 0.9);
   add('/skills', now, 0.85);
-  add('/cities', now, 0.85);
   add('/guides', now, 0.85);
   add('/salaries', now, 0.85);
   add('/locations', now, 0.8);
-  addStatic('/compare', 0.8);
   add('/companies', now, 0.7);
   addStatic('/glossary', 0.7);
   addStatic('/submit', 0.6);
@@ -103,9 +102,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
   for (const s of SKILLS) add(`/skills/${s.slug}`, now, 0.7);
-  for (const c of CITIES) addStatic(`/cities/${c.slug}`, 0.7);
-  for (const g of GUIDES) addStatic(`/guides/${g.slug}`, 0.7);
-  for (const cmp of COMPARISONS) addStatic(`/compare/${cmp.slug}`, 0.65);
+  // Only the locales a guide is actually translated into; the rest render
+  // noindex because they would be English text under a French/German URL.
+  for (const g of GUIDES) {
+    const langs = LOCALES.filter((l) => hasGuideTranslation(g.slug, l));
+    out.push(...localeUrls(`/guides/${g.slug}`, undefined, 0.7, langs));
+  }
   for (const c of topCountries(1000)) add(`/locations/${c.slug}`, now, 0.6);
   // Same threshold the company page applies: single-opening companies render
   // noindex, so listing them would point Google at pages we ask it to skip.

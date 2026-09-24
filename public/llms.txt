@@ -1,222 +1,54 @@
 # slateremote.com
 
-> A curated index of remote tech jobs aggregated daily from eight public job board APIs, with salary data computed live, city profiles, and long-form guides for remote engineers.
+> A curated index of remote tech jobs aggregated weekly from public job board APIs, with salary data computed live and long-form guides for remote engineers.
 
-slateremote.com indexes engineering, data, design and product jobs that are explicitly remote. The index refreshes every day from Remotive, RemoteOK, Arbeitnow, We Work Remotely, Himalayas, Jobicy, The Muse and the Hacker News "Who is hiring" thread. The site is free, has no signup, and links every listing directly to the employer's own application page. It is published in seven languages (English, French, Spanish, German, Portuguese, Italian, Polish) and is part of a small network with slowmadly.com (slow-travel country guides) and ai-by-job.com (AI tools curated by job role).
+slateremote.com indexes engineering, data, design and product jobs that are explicitly remote. The index refreshes every week from Remotive, RemoteOK, Arbeitnow, We Work Remotely, Himalayas, Jobicy, The Muse and the Hacker News "Who is hiring" thread. The site is free, has no signup, and links every listing directly to the employer's own application page. It is published in English, French and German and is part of a small network with slowmadly.com (slow-travel country guides) and ai-by-job.com (AI tools curated by job role).
 
 ## Primary indexes
 
 - [All remote tech jobs](https://slateremote.com/en/jobs): full filterable list (role, country, seniority, contract type, minimum salary)
-- [Salaries by role](https://slateremote.com/en/salaries/developer): median and percentile salary bands computed live from posted ranges
-- [Cities for remote tech workers](https://slateremote.com/en/cities): 49 cities profiled with cost, internet, visa, timezone
-- [Skills index](https://slateremote.com/en/skills): 60 languages, frameworks, clouds, data, AI/ML, mobile and web3 tags
+- [Salaries by role](https://slateremote.com/en/salaries): median and percentile salary bands computed live from posted ranges
+- [Jobs by country](https://slateremote.com/en/locations): remote roles grouped by the country candidates must be based in
+- [Skills index](https://slateremote.com/en/skills): 4 languages, frameworks, clouds, data, AI/ML, mobile and web3 tags
 - [Companies](https://slateremote.com/en/companies): every company currently posting remote tech jobs, grouped by active openings
-- [Guides](https://slateremote.com/en/guides): 129 long-form guides on finding remote work, salary, visas, taxes, lifestyle and tools
-- [Compare](https://slateremote.com/en/compare): 16 head-to-head comparisons (remote vs hybrid, Lisbon vs Barcelona, Portugal D8 vs Spain DNV, etc.)
+- [Guides](https://slateremote.com/en/guides): 33 long-form guides on finding remote work, salary, visas, taxes, lifestyle and tools
 - [Glossary](https://slateremote.com/en/glossary): 40 remote work terms (RTO, EOR, async, DNV, RSU, slowmad, etc.)
 
 ## Guides
 
-- [How to find a remote tech job in 2026](https://slateremote.com/en/guides/finding-a-remote-tech-job): A practical walkthrough for landing a remote engineering, data or product role from scratch.
 - [Remote developer salary guide for 2026](https://slateremote.com/en/guides/remote-developer-salary-guide): How to read salary bands on remote job postings, and what numbers to expect by seniority.
-- [How to become a remote developer](https://slateremote.com/en/guides/how-to-become-a-remote-developer): A roadmap from first line of code to first remote engineering offer.
-- [How to become a remote data engineer](https://slateremote.com/en/guides/how-to-become-a-data-engineer): The skills and path that map to remote data engineering postings in 2026.
-- [How to become a remote ML engineer](https://slateremote.com/en/guides/how-to-become-an-ml-engineer): The path into remote ML engineering in 2026.
-- [How to become a remote DevOps or SRE](https://slateremote.com/en/guides/how-to-become-a-devops-engineer): The skill set and path into remote platform and reliability engineering.
-- [How to become a remote front-end developer](https://slateremote.com/en/guides/how-to-become-a-frontend-developer): The current state of the remote front-end labor market and how to enter it.
-- [How to become a remote backend developer](https://slateremote.com/en/guides/how-to-become-a-backend-developer): The remote backend market in 2026 and the skill path to enter it.
-- [How to become a remote full-stack developer](https://slateremote.com/en/guides/how-to-become-a-fullstack-developer): The remote full-stack path in 2026.
-- [How to become a remote mobile developer](https://slateremote.com/en/guides/how-to-become-a-mobile-developer): The remote mobile engineering path in 2026.
-- [How to become a remote product manager](https://slateremote.com/en/guides/how-to-become-a-product-manager): The path into remote PM roles in 2026.
-- [How to become a remote product designer](https://slateremote.com/en/guides/how-to-become-a-designer): The remote product design path in 2026.
-- [Portugal D8 Digital Nomad Visa for tech workers](https://slateremote.com/en/guides/digital-nomad-visa-portugal): Complete guide to the Portuguese D8 visa for remote tech workers in 2026.
-- [Spain Digital Nomad Visa for tech workers](https://slateremote.com/en/guides/digital-nomad-visa-spain): How to apply for the Spanish Digital Nomad Visa as a remote tech worker.
-- [Germany freelance and Blue Card pathways](https://slateremote.com/en/guides/digital-nomad-visa-germany): The two main routes into Germany for remote tech workers.
-- [Mexico Temporary Resident visa for remote workers](https://slateremote.com/en/guides/digital-nomad-visa-mexico): How US-timezone remote workers use Mexico Temporary Resident status.
 - [Georgia one-year visa-free stay for remote workers](https://slateremote.com/en/guides/digital-nomad-visa-georgia): How remote tech workers use the Georgian visa-free policy and Individual Entrepreneur status.
-- [Remote work taxes for EU-resident tech workers](https://slateremote.com/en/guides/remote-work-taxes-eu): How EU tax residency interacts with foreign remote employment.
-- [Remote work taxes for US-resident tech workers](https://slateremote.com/en/guides/remote-work-taxes-us): State and federal considerations for US-based remote tech workers.
-- [Remote work equipment expenses and deductions](https://slateremote.com/en/guides/remote-work-equipment-deduction): How freelance and employed remote workers can structure equipment expenses.
-- [Remote work timezone strategies that actually work](https://slateremote.com/en/guides/remote-work-timezone-strategies): Practical patterns for engineers working across substantial timezone differences.
-- [Home office setup for remote tech workers](https://slateremote.com/en/guides/remote-work-home-office-setup): What actually matters versus what does not in a home office setup.
-- [Async communication patterns for remote tech teams](https://slateremote.com/en/guides/remote-work-async-communication): The async patterns that distinguish productive remote teams.
 - [Best laptops for remote developers in 2026](https://slateremote.com/en/guides/best-laptops-for-remote-developers): A practical comparison of the laptop choices that actually serve remote engineers.
-- [Software tools every remote developer ends up using](https://slateremote.com/en/guides/best-tools-for-remote-developers): The tooling that has become near-default across remote engineering teams.
 - [Best countries for remote tech workers in 2026](https://slateremote.com/en/guides/best-countries-for-remote-tech-workers): A practical comparison of the top destinations based on visa, tax, cost and infrastructure.
-- [Remote job cover letter templates that actually work](https://slateremote.com/en/guides/remote-job-cover-letter-templates): Cover letter patterns that lift response rates on remote tech postings.
-- [Remote tech interview preparation in 2026](https://slateremote.com/en/guides/remote-tech-interview-preparation): How remote interview loops have stabilized and what to prepare for.
-- [Remote job salary negotiation playbook](https://slateremote.com/en/guides/remote-job-salary-negotiation): How to negotiate a remote tech offer in 2026.
-- [Freelance vs employee for remote tech workers](https://slateremote.com/en/guides/freelance-vs-employee-remote): The trade-offs between contracting and employment for remote engineers.
-- [Mental health practices for remote tech workers](https://slateremote.com/en/guides/remote-work-mental-health): What actually helps sustain remote engineering work over multi-year horizons.
 - [AI engineer salary in 2026](https://slateremote.com/en/guides/ai-engineer-salary-2026): Current salary bands for remote AI and ML engineers in 2026.
-- [Where to find remote junior developer jobs](https://slateremote.com/en/guides/remote-junior-developer-jobs): A practical guide to landing a first remote engineering job at the junior level in 2026.
-- [Remote tech jobs without a degree](https://slateremote.com/en/guides/no-degree-remote-tech-jobs): A realistic view of which remote tech roles still hire candidates without a four-year degree.
-- [Best cities for digital nomads in 2026](https://slateremote.com/en/guides/best-cities-digital-nomad-2026): A ranked guide to the top digital nomad destinations for remote tech workers in 2026.
-- [Digital nomad visa comparison for tech workers in 2026](https://slateremote.com/en/guides/remote-work-visa-comparison-2026): A side-by-side look at the major digital nomad visas available to remote tech workers.
-- [Best time of year to look for a remote tech job](https://slateremote.com/en/guides/best-time-to-look-for-remote-jobs): When companies actually hire and when applications convert.
-- [How to recover from remote tech job rejection](https://slateremote.com/en/guides/remote-tech-job-rejection-recovery): A practical playbook for handling rejection during a remote tech job search.
-- [Remote tech jobs with stock options](https://slateremote.com/en/guides/remote-tech-jobs-with-stock-options): Where to find remote tech roles that still meaningfully grant equity.
-- [Best resume format for remote tech applications](https://slateremote.com/en/guides/best-resume-format-remote-tech): The resume patterns that convert on remote tech applications in 2026.
-- [How to handle remote tech recruiter outreach](https://slateremote.com/en/guides/remote-tech-recruiter-outreach): Cold recruiter messages and how to convert them efficiently.
-- [Best time zones for remote tech workers](https://slateremote.com/en/guides/best-time-zones-for-remote-tech-workers): Time zone selection trade-offs for remote engineering work.
-- [Portfolio projects that convert on remote tech applications](https://slateremote.com/en/guides/remote-tech-portfolio-projects): Which kinds of public projects actually move response rates on remote applications.
-- [Remote developer interview preparation, end to end](https://slateremote.com/en/guides/remote-developer-interview-prep): How to prepare for the four to six round remote engineering interview loop in 2026.
-- [Counter-offer playbook for remote tech offers](https://slateremote.com/en/guides/remote-job-counter-offer-playbook): How to counter on cash, equity, and benefits without burning the offer.
-- [Async standup vs sync standup](https://slateremote.com/en/guides/async-vs-sync-standup): Which standup format actually works for distributed engineering teams.
-- [How to pitch going remote to your current employer](https://slateremote.com/en/guides/how-to-pitch-remote-to-employer): A practical playbook for converting an on-site or hybrid role into fully remote without changing employers.
-- [Mental health and isolation when working fully remote](https://slateremote.com/en/guides/remote-mental-health-isolation): Practical patterns that protect against the silent productivity tax of remote isolation.
-- [Equipment and stipend negotiation for remote engineers](https://slateremote.com/en/guides/remote-equipment-stipend-negotiation): Standard remote benefits, how they vary, and what to ask for at signing.
-- [Searching for a remote job while living abroad](https://slateremote.com/en/guides/remote-job-search-from-abroad): How to make a remote tech job search work when you are not in the country where most employers are.
-- [Second passport and residency for remote workers](https://slateremote.com/en/guides/second-passport-residency-remote-workers): The realistic options for getting a second residency or passport as a remote worker.
-- [Remote onboarding: the first 90 days](https://slateremote.com/en/guides/remote-onboarding-first-90-days): How to start a fully remote engineering role and convert the trial period reliably.
-- [How much tax remote workers actually pay by country](https://slateremote.com/en/guides/remote-worker-tax-by-country): A realistic comparison of effective tax burdens for remote tech workers across major destination countries.
 - [How to start on Fiverr as a developer in 2026](https://slateremote.com/en/guides/how-to-start-on-fiverr-as-a-developer): A step-by-step path to launching your first tech gig on Fiverr and landing paying buyers.
 - [How to build a Fiverr profile that wins orders](https://slateremote.com/en/guides/fiverr-profile-that-wins-orders): The profile and gig elements that move buyers from browsing to ordering.
-- [The best Fiverr gigs for programmers in 2026](https://slateremote.com/en/guides/best-fiverr-gigs-for-programmers): The highest-demand, best-paying service categories for developers selling on Fiverr.
 - [How to get your first Fiverr order](https://slateremote.com/en/guides/how-to-get-your-first-fiverr-order): Practical tactics to land that crucial first sale and break the zero-review barrier.
-- [Fiverr pricing strategy for developers](https://slateremote.com/en/guides/fiverr-pricing-strategy-for-developers): How to package and price your gigs so buyers pick the tier you want them to.
-- [How to make money on Fiverr as a developer](https://slateremote.com/en/guides/how-to-make-money-on-fiverr-as-a-developer): A realistic playbook for turning Fiverr gigs into consistent monthly income.
 - [Fiverr gig SEO: how to rank your gig in search](https://slateremote.com/en/guides/fiverr-gig-seo-ranking-guide): How Fiverr search works and the levers that move your gig to the first page.
-- [Fiverr vs Upwork for developers: which to choose](https://slateremote.com/en/guides/fiverr-vs-upwork-for-developers): A practical comparison of the two largest freelance platforms for selling tech services.
-- [How to become a Fiverr Top Rated Seller](https://slateremote.com/en/guides/how-to-become-a-fiverr-top-rated-seller): The requirements and habits that move you up the seller levels to Top Rated.
 - [How to sell AI services on Fiverr in 2026](https://slateremote.com/en/guides/sell-ai-services-on-fiverr-2026): The most profitable AI service categories on Fiverr and how to package them.
-- [AppSumo lifetime deals explained: how they work and who they are for](https://slateremote.com/en/guides/appsumo-lifetime-deals-explained): How AppSumo lifetime deals work, what is actually included, and how to decide whether a deal is worth buying.
 - [The best AppSumo deals for developers in 2026](https://slateremote.com/en/guides/appsumo-best-deals-for-developers-2026): Which AppSumo deals genuinely help developers and remote engineers ship faster and spend less.
 - [AppSumo vs SaaS subscription: which actually saves more](https://slateremote.com/en/guides/appsumo-vs-saas-subscription-which-saves-more): A clear-headed comparison of lifetime deals against recurring SaaS subscriptions for remote workers and small teams.
-- [How to spot a quality AppSumo deal (and skip the duds)](https://slateremote.com/en/guides/how-to-spot-quality-appsumo-deals): The signals that separate a deal worth buying from one that will be abandoned in three months.
-- [The best AppSumo deals for remote workers](https://slateremote.com/en/guides/appsumo-deals-for-remote-workers): The lifetime deals that pay off fastest for remote-first individuals and distributed teams.
-- [Build a startup stack on AppSumo for under $500](https://slateremote.com/en/guides/building-a-startup-stack-with-appsumo): A concrete playbook for assembling a working SaaS stack from AppSumo lifetime deals on a small budget.
-- [How to launch your SaaS on AppSumo as a founder](https://slateremote.com/en/guides/selling-on-appsumo-as-a-founder): What the AppSumo launch process looks like from the seller side and how to decide if it fits your product.
-- [How to start a tech newsletter in 2026](https://slateremote.com/en/guides/how-to-start-a-tech-newsletter-2026): A concrete plan for launching a tech newsletter that grows and pays from day one.
-- [How to monetize a tech newsletter](https://slateremote.com/en/guides/how-to-monetize-a-tech-newsletter): The four reliable revenue streams for a tech newsletter and when each one starts working.
-- [The best newsletter platforms for developers](https://slateremote.com/en/guides/best-newsletter-platforms-for-developers): A side-by-side comparison of Beehiiv, Substack, Ghost and ConvertKit for technical writers.
-- [Tech newsletter growth tactics that still work in 2026](https://slateremote.com/en/guides/tech-newsletter-growth-tactics-2026): The handful of growth channels that consistently move subscriber count for technical newsletters.
-- [Newsletter vs blog: which earns more in 2026](https://slateremote.com/en/guides/newsletter-vs-blog-which-earns-more): A direct comparison of newsletter and blog economics for technical writers.
 - [How to get accepted on Mercor as an AI evaluator](https://slateremote.com/en/guides/how-to-get-accepted-on-mercor): What Mercor actually screens for and how to position your profile to pass the bar in 2026.
 - [How much does Mercor actually pay AI evaluators in 2026](https://slateremote.com/en/guides/how-much-does-mercor-pay-in-2026): Realistic hourly rates on Mercor for developers and domain experts, what drives the range, and how the rate climbs over time.
 - [Mercor vs Scale AI vs Surge AI: which pays AI evaluators more](https://slateremote.com/en/guides/mercor-vs-scale-vs-surge-ai): A practical comparison of the three biggest AI-evaluation platforms for developers and domain experts in 2026.
 - [How to maximize your earnings on Mercor as a developer](https://slateremote.com/en/guides/maximize-earnings-on-mercor-as-a-developer): Practical levers to push your Mercor hourly rate and weekly hours after the first month.
-- [How to prepare for the Mercor screening test](https://slateremote.com/en/guides/mercor-screening-test-prep): The format of the Mercor screening test in 2026 and how to walk in ready.
 - [Mercor payouts and taxes guide for 2026](https://slateremote.com/en/guides/mercor-tax-and-payout-guide-2026): How Mercor pays you, supported payment methods, and what you owe in tax as a US or EU evaluator.
-- [The best-paid domains on Mercor in 2026](https://slateremote.com/en/guides/best-paid-domains-on-mercor-2026): Which evaluator tracks pay the highest rates on Mercor right now and what makes a domain scarce enough to command a premium.
 - [Running Mercor as a side hustle while working full-time](https://slateremote.com/en/guides/mercor-side-hustle-while-working-full-time): How to fit Mercor evaluation work around a full-time job: hours, contracts, energy management, and the legal angle.
 - [Fiverr gig conversion optimisation: lift orders without raising traffic](https://slateremote.com/en/guides/fiverr-gig-conversion-optimisation-2026): The handful of changes that move impressions to orders on Fiverr gigs in 2026.
-- [Multi-currency banking for freelance developers in 2026](https://slateremote.com/en/guides/multi-currency-banking-for-freelance-developers): How to set up a banking stack that handles client payments in USD, EUR and GBP without losing 3 percent on every conversion.
-- [Mercor domain application strategy: which track to apply into](https://slateremote.com/en/guides/mercor-domain-application-strategy): How to pick the Mercor track that maximises your acceptance odds and your post-acceptance hourly rate.
-- [AppSumo bundles vs individual deals: which actually saves you money](https://slateremote.com/en/guides/appsumo-bundles-vs-individual-deals-2026): When AppSumo bundles deliver real value and when buying the individual deals separately wins.
-- [How to invoice international clients as a developer](https://slateremote.com/en/guides/how-to-invoice-international-clients-as-a-developer): A clean invoicing setup for freelance developers billing clients in multiple currencies across the EU, US and UK.
-- [Fiverr message templates for developer gigs that actually close](https://slateremote.com/en/guides/fiverr-message-templates-for-developer-gigs): The replies and questions that turn Fiverr inquiries into orders, with templates you can adapt for your gig.
-- [SafetyWing vs IATI vs Genki: nomad insurance comparison 2026](https://slateremote.com/en/guides/safetywing-vs-iati-vs-genki-insurance-comparison): A direct comparison of the three most-used health insurances for remote workers and digital nomads in 2026.
-- [The SaaS stack for newsletter operators in 2026](https://slateremote.com/en/guides/saas-stack-for-newsletter-operators-2026): The handful of tools serious newsletter operators run, what each one does, and which deliver lifetime deal value.
 - [Remote work tax residency strategies for 2026](https://slateremote.com/en/guides/remote-work-tax-residency-strategies-2026): How tax residency works for remote tech workers in 2026 and the strategies that hold up legally.
 - [Niche Fiverr gigs that still pay well in 2026](https://slateremote.com/en/guides/niche-fiverr-gigs-that-still-pay-in-2026): Underserved Fiverr gig categories where developers can still command strong rates with low competition.
-- [The AppSumo deals bootstrapped SaaS founders actually use](https://slateremote.com/en/guides/appsumo-deals-for-bootstrapped-saas-founders): A practical shortlist of AppSumo deals that show up in real bootstrapped SaaS stacks in 2026.
-- [Multi-currency invoicing for remote developers](https://slateremote.com/en/guides/multi-currency-invoicing-for-remote-developers): The practical setup for invoicing clients across USD, EUR and GBP without losing margin to FX or chasing late payments.
-- [How I built a tech newsletter side income that pays the bills](https://slateremote.com/en/guides/how-i-built-a-tech-newsletter-side-income): A breakdown of how a focused tech newsletter compounds into meaningful side income over 18 months.
-- [Fiverr vs Upwork: bidding and quoting strategies compared](https://slateremote.com/en/guides/fiverr-vs-upwork-bid-strategy-comparison): How to win work on each platform without burning hours on dead-end proposals or low-margin gigs.
 - [Wise multi-currency account explained for remote workers in 2026](https://slateremote.com/en/guides/wise-borderless-account-explained-2026): How the Wise multi-currency account actually works for remote workers, freelancers and digital nomads.
-- [A solopreneur SaaS stack on AppSumo for under $1000](https://slateremote.com/en/guides/appsumo-stack-for-solopreneurs-under-1000): A concrete shopping list for a solopreneur building a one-person SaaS stack from AppSumo lifetime deals.
-- [How freelance developers actually use Claude in client work](https://slateremote.com/en/guides/claude-for-freelance-developer-workflow): Real workflows where LLMs like Claude lift a freelance developer throughput without compromising code quality.
-- [Portugal NHR for remote tech workers in 2026](https://slateremote.com/en/guides/digital-nomad-tax-portugal-nhr-2026): How the post-reform Portugal tax regime treats remote tech workers and the practical setup that holds up legally.
 - [SafetyWing claim process in 2026: what to expect](https://slateremote.com/en/guides/safetywing-real-claim-process-2026): What submitting a SafetyWing claim actually looks like, how long it takes, and what to keep on file.
-- [Passive income stack for remote developers in 2026](https://slateremote.com/en/guides/passive-income-stack-for-remote-developers-2026): The handful of income streams a remote developer can layer on top of a day job without compromising it.
-- [The Fiverr portfolio that actually converts buyers](https://slateremote.com/en/guides/fiverr-portfolio-essentials-for-developers): What buyers look for in a developer Fiverr portfolio in 2026, and how to assemble one from scratch.
 - [Wise vs Payoneer for freelance developers in 2026](https://slateremote.com/en/guides/wise-vs-payoneer-for-developers): Two of the most-used international payment platforms compared on the criteria that matter for freelance developers.
 - [Mercor application timeline 2026: realistic expectations](https://slateremote.com/en/guides/mercor-application-timeline-2026): From application to first paid task, how long the Mercor onboarding actually takes in 2026.
-- [When AppSumo runs its best deals: the calendar pattern](https://slateremote.com/en/guides/appsumo-best-deals-by-month-pattern-2026): How AppSumo deal quality and discounts cycle through the year, and when to wait for a better one.
-- [Beehiiv vs Substack for newsletter monetisation in 2026](https://slateremote.com/en/guides/beehiiv-vs-substack-monetisation-2026): Direct comparison of how Beehiiv and Substack handle monetisation for a tech newsletter operator.
 - [Claude prompt patterns developers actually use](https://slateremote.com/en/guides/claude-prompt-patterns-for-developers): The handful of prompt patterns that consistently produce useful output when using Claude for development work.
 - [Handling common Fiverr buyer objections that kill orders](https://slateremote.com/en/guides/fiverr-buyer-objections-handling-guide): The five buyer objections that come up most on developer gigs in 2026 and the replies that close the order.
-- [Wise debit card tips for travelling developers](https://slateremote.com/en/guides/wise-debit-card-spending-tips): How the Wise debit card actually works abroad, the fees that surprise new users, and the spending pattern that works.
 - [How Mercor scores evaluator quality, explained](https://slateremote.com/en/guides/mercor-evaluator-quality-rubrics-explained): The signals Mercor uses to rate evaluator quality and what to do with each one to climb the rate ladder.
-- [AppSumo code stacking explained for buyers in 2026](https://slateremote.com/en/guides/appsumo-stacking-codes-explained): When AppSumo lifetime deal codes can stack to higher tiers, when they cannot, and how to plan around it.
-- [Picking a tech newsletter niche that still works in 2026](https://slateremote.com/en/guides/tech-newsletter-niche-selection-2026): How to choose a tech newsletter niche that has enough audience to grow and enough scarcity to stand out.
 - [SafetyWing and pre-existing conditions: what is covered](https://slateremote.com/en/guides/safetywing-pre-existing-conditions-guide): How SafetyWing handles pre-existing conditions in 2026 and what to disclose at signup.
-- [Running multiple Fiverr gigs without diluting any of them](https://slateremote.com/en/guides/fiverr-gig-multiples-strategy-2026): How to run several Fiverr gigs from the same seller account in 2026 without weakening conversion on any individual gig.
-- [Wise Business vs Revolut Business for freelance developers](https://slateremote.com/en/guides/wise-vs-revolut-business-comparison-2026): A direct comparison of the two leading business accounts for freelance developers in 2026.
 - [Mercor vs Tortoise vs Outlier: AI evaluation platforms compared](https://slateremote.com/en/guides/mercor-vs-tortoise-eval-platforms): Three growing AI evaluation platforms compared on acceptance bar, hourly rate and task supply.
-- [AppSumo buying guide for indie hackers in 2026](https://slateremote.com/en/guides/appsumo-for-indie-hackers-buying-guide-2026): How indie hackers should approach AppSumo deals in 2026 to maximise value and avoid stack bloat.
-- [Cross-promoting a tech newsletter and blog for compound growth](https://slateremote.com/en/guides/how-to-cross-promote-newsletter-with-tech-blog): How to structure the relationship between a tech newsletter and a public blog so they amplify each other.
-- [Nomad insurance by country tier: where standard plans fall short](https://slateremote.com/en/guides/nomad-insurance-by-country-tier-2026): How nomad insurance coverage and reimbursement experience varies by country, with a tier framework for picking the right cover.
 - [Fiverr Pro application checklist for 2026](https://slateremote.com/en/guides/fiverr-pro-application-checklist-2026): The portfolio, profile, and proof points that pass the Fiverr Pro review in 2026.
 - [Receiving Stripe payouts as a non-US developer in 2026](https://slateremote.com/en/guides/how-to-receive-stripe-payouts-as-non-us): How non-US developers can accept Stripe payouts and what the alternatives are in 2026.
-- [AI pair-programming tools compared: Cursor, Claude, Copilot](https://slateremote.com/en/guides/ai-pair-programming-comparison-cursor-claude): A practical comparison of the three most-used AI pair-programming tools for developers in 2026.
-- [Genki vs SafetyWing claims experience compared](https://slateremote.com/en/guides/genki-vs-safetywing-claims-experience): How the actual claim process differs between Genki and SafetyWing, with real-world reimbursement timelines.
 - [Remote tech interview loops in 2026: what changed](https://slateremote.com/en/guides/remote-tech-interview-loop-2026-changes): The current shape of remote technical interviews in 2026 and how the changes affect preparation.
-- [How to quit a remote job without burning bridges](https://slateremote.com/en/guides/how-to-quit-without-burning-bridges-remote): The practical playbook for resigning cleanly from a remote engineering role in 2026.
-- [Surviving remote team meetings in 2026](https://slateremote.com/en/guides/remote-team-meetings-survival-guide-2026): How to reduce, structure, and survive the meeting load on a remote engineering team.
-- [How to take a tech sabbatical in 2026](https://slateremote.com/en/guides/how-to-take-a-tech-sabbatical-2026): The practical setup for taking a multi-month sabbatical from a tech career without permanently damaging it.
-
-## Cities
-
-- [Lisbon, Portugal](https://slateremote.com/en/cities/lisbon): Top remote tech hub in Western Europe with the D8 nomad visa.
-- [Berlin, Germany](https://slateremote.com/en/cities/berlin): Largest remote-friendly tech city in continental Europe.
-- [Barcelona, Spain](https://slateremote.com/en/cities/barcelona): Mediterranean coast hub with the Spanish nomad visa.
-- [Madrid, Spain](https://slateremote.com/en/cities/madrid): Capital and largest tech market in Spain.
-- [Mexico City, Mexico](https://slateremote.com/en/cities/mexico-city): Top Latin American hub with US-friendly timezone.
-- [Medellín, Colombia](https://slateremote.com/en/cities/medellin): Year-round mild climate hub for remote engineers in LatAm.
-- [Austin, United States](https://slateremote.com/en/cities/austin): Largest US remote-friendly tech city outside the coasts.
-- [London, United Kingdom](https://slateremote.com/en/cities/london): Largest European tech market for remote and hybrid engineering.
-- [Amsterdam, Netherlands](https://slateremote.com/en/cities/amsterdam): Premier remote tech market in the Netherlands.
-- [Bali, Indonesia](https://slateremote.com/en/cities/bali): Top Asian remote tech destination, particularly Canggu and Ubud.
-- [Chiang Mai, Thailand](https://slateremote.com/en/cities/chiang-mai): Long-standing low-cost remote tech base in Thailand.
-- [Singapore, Singapore](https://slateremote.com/en/cities/singapore): Premier Asian tech hub with excellent infrastructure.
-- [Tokyo, Japan](https://slateremote.com/en/cities/tokyo): Major Asian tech market with the new digital nomad visa.
-- [Dubai, United Arab Emirates](https://slateremote.com/en/cities/dubai): Tax-free remote tech base in the Middle East.
-- [Cape Town, South Africa](https://slateremote.com/en/cities/cape-town): Top African remote tech base with EU-aligned timezone.
-- [Tbilisi, Georgia](https://slateremote.com/en/cities/tbilisi): Low-cost remote tech base with one-year visa-free stay.
-- [Warsaw, Poland](https://slateremote.com/en/cities/warsaw): Largest EU remote tech market at moderate cost.
-- [Prague, Czech Republic](https://slateremote.com/en/cities/prague): EU tech base with the Zivno self-employment visa.
-- [Budapest, Hungary](https://slateremote.com/en/cities/budapest): Hungarian tech base with the White Card nomad visa.
-- [Tallinn, Estonia](https://slateremote.com/en/cities/tallinn): Premier digital-native base with e-Residency.
-- [Buenos Aires, Argentina](https://slateremote.com/en/cities/buenos-aires): LatAm base with strong tech talent pool.
-- [Rio de Janeiro, Brazil](https://slateremote.com/en/cities/rio-de-janeiro): Coastal Brazilian base with the digital nomad visa.
-- [São Paulo, Brazil](https://slateremote.com/en/cities/sao-paulo): Largest tech market in Latin America.
-- [Porto, Portugal](https://slateremote.com/en/cities/porto): Smaller, lower-cost alternative to Lisbon.
-- [Valencia, Spain](https://slateremote.com/en/cities/valencia): Lower-cost Mediterranean alternative to Barcelona.
-- [Málaga, Spain](https://slateremote.com/en/cities/malaga): Coastal Andalusian remote tech hub.
-- [Paris, France](https://slateremote.com/en/cities/paris): Largest French tech market with strong AI ecosystem.
-- [Munich, Germany](https://slateremote.com/en/cities/munich): Premium German tech market anchored by enterprise.
-- [Copenhagen, Denmark](https://slateremote.com/en/cities/copenhagen): High-salary Nordic tech market with strong remote culture.
-- [Stockholm, Sweden](https://slateremote.com/en/cities/stockholm): Largest Nordic tech market with English-friendly culture.
-- [Helsinki, Finland](https://slateremote.com/en/cities/helsinki): Nordic tech base with strong gaming and platform ecosystem.
-- [Dublin, Ireland](https://slateremote.com/en/cities/dublin): EU base for many US tech HQs and remote-friendly subsidiaries.
-- [New York, United States](https://slateremote.com/en/cities/new-york): Largest US East Coast tech market.
-- [San Francisco, United States](https://slateremote.com/en/cities/san-francisco): Highest US tech salary bands, increasingly hybrid.
-- [Seattle, United States](https://slateremote.com/en/cities/seattle): Major Pacific Northwest tech hub with no state income tax.
-- [Denver, United States](https://slateremote.com/en/cities/denver): Mid-mountain US tech hub popular with remote engineers.
-- [Miami, United States](https://slateremote.com/en/cities/miami): US East Coast crypto and remote tech hub, no state income tax.
-- [Toronto, Canada](https://slateremote.com/en/cities/toronto): Largest Canadian tech market with US-aligned timezone.
-- [Vancouver, Canada](https://slateremote.com/en/cities/vancouver): Pacific Canadian tech base with US Pacific timezone alignment.
-- [Las Palmas, Spain](https://slateremote.com/en/cities/las-palmas): Year-round mild climate hub on the Atlantic, growing remote tech scene.
-- [Tenerife, Spain](https://slateremote.com/en/cities/tenerife): Volcanic Canary Island alternative to Las Palmas with stronger nomad community.
-- [Funchal (Madeira), Portugal](https://slateremote.com/en/cities/madeira): Atlantic Portuguese island with the original Digital Nomad Village.
-- [Bangkok, Thailand](https://slateremote.com/en/cities/bangkok): Urban Thai alternative to Chiang Mai with stronger tech ecosystem.
-- [Kuala Lumpur, Malaysia](https://slateremote.com/en/cities/kuala-lumpur): English-friendly Asian remote tech base with the DE Rantau pass.
-- [Da Nang, Vietnam](https://slateremote.com/en/cities/da-nang): Beach plus fiber Vietnamese hub for cost-conscious remote workers.
-- [Taipei, Taiwan](https://slateremote.com/en/cities/taipei): Clean tech ecosystem in Asia, world-class fiber.
-- [Seoul, South Korea](https://slateremote.com/en/cities/seoul): Major Asian tech market with new workation visa.
-- [Marrakech, Morocco](https://slateremote.com/en/cities/marrakech): EU-adjacent timezone at half the EU cost of living.
-- [Antalya, Turkey](https://slateremote.com/en/cities/antalya): Mediterranean Turkey base with low cost and EU-compatible hours.
-
-## Comparisons
-
-- [Remote vs hybrid work in tech](https://slateremote.com/en/compare/remote-vs-hybrid): The differences that matter when choosing between fully remote and hybrid roles.
-- [Remote vs onsite tech jobs](https://slateremote.com/en/compare/remote-vs-onsite): The trade-offs between fully remote and fully onsite tech employment.
-- [Freelance vs full-time remote tech work](https://slateremote.com/en/compare/freelance-vs-fulltime): How the freelance and full-time tracks differ for remote tech workers.
-- [US vs EU remote tech companies](https://slateremote.com/en/compare/us-vs-eu-remote-tech-companies): How US-headquartered and EU-headquartered remote tech employers compare on compensation, culture, and operations.
-- [Junior vs senior remote tech jobs](https://slateremote.com/en/compare/junior-vs-senior-remote-jobs): How remote hiring differs by experience level in 2026.
-- [React vs Vue remote job market](https://slateremote.com/en/compare/react-vs-vue-jobs): How React and Vue compare on remote tech postings in 2026.
-- [Python vs Go for remote backend work](https://slateremote.com/en/compare/python-vs-go-backend): How Python and Go compare on remote backend postings in 2026.
-- [Startup vs big tech remote engineering](https://slateremote.com/en/compare/startup-vs-bigtech-remote): How startup and large-company remote engineering differ in 2026.
-- [AWS vs GCP remote job demand](https://slateremote.com/en/compare/aws-vs-gcp-remote-jobs): Comparing the major cloud platforms by remote hiring demand in 2026.
-- [Snowflake vs BigQuery for remote data engineers](https://slateremote.com/en/compare/snowflake-vs-bigquery): How the leading cloud data warehouses split on remote data engineering postings.
-- [Employer of record vs direct employment for remote tech workers](https://slateremote.com/en/compare/employer-of-record-vs-direct): When to use an employer of record service versus direct employment.
-- [In-house vs agency remote tech roles](https://slateremote.com/en/compare/in-house-vs-agency-remote): How agency and in-house remote engineering compare.
-- [Lisbon vs Barcelona for remote tech workers](https://slateremote.com/en/compare/lisbon-vs-barcelona-remote): How the two leading Mediterranean remote tech hubs actually compare.
-- [Portugal D8 vs Spain Digital Nomad Visa](https://slateremote.com/en/compare/portugal-vs-spain-nomad-visa): Side-by-side comparison of the two leading EU nomad visa programs.
-- [Lisbon vs Mexico City for remote tech workers](https://slateremote.com/en/compare/lisbon-vs-mexico-city-remote): European versus Latin American remote tech hub: timezone is the deciding factor.
-- [Bali vs Chiang Mai for remote tech workers](https://slateremote.com/en/compare/bali-vs-chiang-mai-remote): The two longest-running Southeast Asian remote work hubs compared.
 
 ## Sister sites
 
@@ -225,7 +57,7 @@ slateremote.com indexes engineering, data, design and product jobs that are expl
 
 ## Optional
 
-- [Full content dump for ingestion](https://slateremote.com/llms-full.txt): every guide, city profile, skill description, glossary entry and comparison concatenated as plain text
+- [Full content dump for ingestion](https://slateremote.com/llms-full.txt): every guide, skill description and glossary entry concatenated as plain text
 - [Sitemap](https://slateremote.com/sitemap.xml): machine-readable list of all URLs
 - [RSS feed (jobs)](https://slateremote.com/feed.xml): jobs feed if available
 - [About the site](https://slateremote.com/en/about): methodology, data sources, and update cadence

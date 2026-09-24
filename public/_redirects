@@ -18,3 +18,16 @@
 # (Rules > Redirect Rules: hostname equals www.slateremote.com ->
 # https://slateremote.com/${http.request.uri.path}, 301).
 https://www.slateremote.com/* https://slateremote.com/:splat 301
+
+# Locales removed in 2026-09 (es, pt, it, pl). Every route exists under /en
+# with the same path, so each old URL maps 1:1 and Google can transfer what
+# little signal those pages had instead of hitting a 404. /pl/ alone had
+# drawn 218 impressions; they consolidate onto the /en/ equivalent.
+/es /en 301
+/es/* /en/:splat 301
+/pt /en 301
+/pt/* /en/:splat 301
+/it /en 301
+/it/* /en/:splat 301
+/pl /en 301
+/pl/* /en/:splat 301

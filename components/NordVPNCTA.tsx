@@ -21,35 +21,11 @@ const COPY: Record<Locale, Copy> = {
     body: '6 000+ serveurs dans le monde, assez rapides pour pousser du code depuis n\'importe quel café ou coworking. À utiliser sur chaque réseau public auquel vous vous connectez et pour accéder aux outils dev, portails de paiement et APIs géo-restreints sans coupure.',
     cta: 'Obtenir NordVPN →',
   },
-  es: {
-    eyebrow: 'Privacidad para remote',
-    title: 'Asegura el Wi-Fi público y desbloquea herramientas geo-restringidas con NordVPN',
-    body: '6 000+ servidores en el mundo, lo bastante rápidos para hacer push desde cualquier café o coworking. Úsalo en cada red pública a la que te conectes y para acceder a herramientas dev, portales de pago y APIs geo-restringidos sin caídas.',
-    cta: 'Conseguir NordVPN →',
-  },
   de: {
     eyebrow: 'Privacy für Remote',
     title: 'Sichere öffentliches WLAN und entsperre regionsbeschränkte Tools mit NordVPN',
     body: '6.000+ Server weltweit, schnell genug um Code aus jedem Café oder Coworking zu pushen. Nutze es in jedem öffentlichen Netzwerk und für regionsbeschränkte Dev-Tools, Zahlungsportale und APIs ohne Verbindungsabbrüche.',
     cta: 'NordVPN holen →',
-  },
-  pt: {
-    eyebrow: 'Privacidade para remoto',
-    title: 'Proteja o Wi-Fi público e desbloqueie ferramentas com restrição regional usando NordVPN',
-    body: '6.000+ servidores no mundo, rápidos o suficiente para fazer push de qualquer café ou coworking. Use em toda rede pública que conectar e para acessar ferramentas dev, portais de pagamento e APIs com restrição regional sem quedas.',
-    cta: 'Pegar NordVPN →',
-  },
-  it: {
-    eyebrow: 'Privacy per il remote',
-    title: 'Proteggi il Wi-Fi pubblico e sblocca strumenti geo-bloccati con NordVPN',
-    body: '6.000+ server nel mondo, abbastanza veloci per fare push da qualunque caffè o coworking. Usalo su ogni rete pubblica e per accedere a strumenti dev, portali di pagamento e API geo-bloccati senza interruzioni.',
-    cta: 'Ottenere NordVPN →',
-  },
-  pl: {
-    eyebrow: 'Prywatność dla pracy zdalnej',
-    title: 'Zabezpiecz publiczne Wi-Fi i odblokuj narzędzia z ograniczeniami regionalnymi z NordVPN',
-    body: '6000+ serwerów na świecie, dość szybkich, by wypchnąć kod z dowolnej kawiarni lub coworkingu. Używaj w każdej publicznej sieci i do narzędzi dev, portali płatniczych i API z ograniczeniami regionalnymi bez przerw.',
-    cta: 'Pobrać NordVPN →',
   },
 };
 

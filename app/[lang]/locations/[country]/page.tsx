@@ -40,14 +40,6 @@ const LOCATION_I18N: Record<Locale, LocationCopy> = {
     h1: (c) => `Emplois tech en remote · ${c}`,
     openPositions: (n) => `${n} poste${n === 1 ? '' : 's'} ouvert${n === 1 ? '' : 's'}`,
   },
-  es: {
-    metaTitle: (c) => `Empleos tech remotos: ${c}`,
-    metaDescription: (c) =>
-      `${c}: puestos remotos de ingeniería, datos, diseño y producto abiertos a candidatos locales. Agregados desde APIs públicas y actualizados a diario.`,
-    eyebrow: 'Ubicación',
-    h1: (c) => `Empleos tech remotos · ${c}`,
-    openPositions: (n) => `${n} puesto${n === 1 ? '' : 's'} abierto${n === 1 ? '' : 's'}`,
-  },
   de: {
     metaTitle: (c) => `Remote-Tech-Jobs: ${c}`,
     metaDescription: (c) =>
@@ -55,31 +47,6 @@ const LOCATION_I18N: Record<Locale, LocationCopy> = {
     eyebrow: 'Standort',
     h1: (c) => `Remote-Tech-Jobs · ${c}`,
     openPositions: (n) => `${n} offene Stelle${n === 1 ? '' : 'n'}`,
-  },
-  pt: {
-    metaTitle: (c) => `Vagas tech remotas: ${c}`,
-    metaDescription: (c) =>
-      `${c}: vagas remotas de engenharia, dados, design e produto abertas a candidatos locais. Agregadas de APIs públicas e atualizadas todos os dias.`,
-    eyebrow: 'Localização',
-    h1: (c) => `Vagas tech remotas · ${c}`,
-    openPositions: (n) => `${n} vaga${n === 1 ? '' : 's'} aberta${n === 1 ? '' : 's'}`,
-  },
-  it: {
-    metaTitle: (c) => `Lavori tech remote: ${c}`,
-    metaDescription: (c) =>
-      `${c}: posizioni remote in ingegneria, dati, design e prodotto aperte ai candidati sul posto. Aggregate da API pubbliche e aggiornate ogni giorno.`,
-    eyebrow: 'Località',
-    h1: (c) => `Lavori tech remote · ${c}`,
-    openPositions: (n) =>
-      `${n} posizione${n === 1 ? '' : 'i'} apert${n === 1 ? 'a' : 'e'}`,
-  },
-  pl: {
-    metaTitle: (c) => `Zdalne oferty tech: ${c}`,
-    metaDescription: (c) =>
-      `${c}: zdalne oferty w inżynierii, danych, designie i produkcie dla kandydatów na miejscu. Zbierane z publicznych API i aktualizowane codziennie.`,
-    eyebrow: 'Lokalizacja',
-    h1: (c) => `Zdalne oferty tech · ${c}`,
-    openPositions: (n) => `${n} otwart${n === 1 ? 'a oferta' : 'ych ofert'}`,
   },
 };
 

@@ -11,7 +11,8 @@ export function LangSwitcher({ current, path }: { current: Locale; path: string 
   // to the top of the site instead of the same page in another language.
   const pathname = usePathname();
   const source = pathname || path;
-  const clean = source.replace(/^\/(en|fr|es|de|pt|it|pl)(?=\/|$)/, '').replace(/^\/+/, '');
+  const localeRe = new RegExp(`^/(${LOCALES.join('|')})(?=/|$)`);
+  const clean = source.replace(localeRe, '').replace(/^\/+/, '');
   const others = LOCALES.filter((l) => l !== current);
 
   return (

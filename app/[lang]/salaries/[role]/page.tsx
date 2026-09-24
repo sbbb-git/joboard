@@ -85,26 +85,6 @@ const SALARY_I18N: Record<Locale, SalaryCopy> = {
     byCountryBlurb: 'Inclut une ventilation pays par pays sur 12 grands marchés du recrutement.',
     otherRolesHeading: 'Autres rôles',
   },
-  es: {
-    metaTitle: (r) => `Salarios remote ${r}`,
-    metaDescription: (r) =>
-      `Rangos salariales medianos y percentiles para puestos remote ${r}, calculados desde las ofertas de empleo actuales.`,
-    h1: (r) => `Salarios remote ${r}`,
-    subtitle: 'Calculado en vivo desde las ofertas activas de nuestro índice.',
-    noData: (r) =>
-      `Aún no hay suficientes datos salariales para ${r}. Vuelve cuando el índice crezca.`,
-    basedOn: (n) => `basado en ${n} ofertas`,
-    howCalculated: 'Cómo se calcula',
-    methodology:
-      'Promediamos el mínimo y máximo de cada oferta que publica una banda salarial. Los valores percentiles provienen de la distribución ordenada de esos puntos medios. Las ofertas sin salario se excluyen. No se aplica conversión de divisas; cada divisa se calcula de forma aislada.',
-    p25: 'Percentil 25',
-    median: 'Mediana',
-    average: 'Promedio',
-    p75: 'Percentil 75',
-    byCountryHeading: 'Salarios por país',
-    byCountryBlurb: 'Incluye un desglose país por país en 12 grandes mercados de contratación.',
-    otherRolesHeading: 'Otros roles',
-  },
   de: {
     metaTitle: (r) => `Remote-${r}-Gehälter`,
     metaDescription: (r) =>
@@ -124,66 +104,6 @@ const SALARY_I18N: Record<Locale, SalaryCopy> = {
     byCountryHeading: 'Gehälter nach Land',
     byCountryBlurb: 'Enthält eine Aufschlüsselung nach Ländern über 12 große Einstellungsmärkte.',
     otherRolesHeading: 'Andere Rollen',
-  },
-  pt: {
-    metaTitle: (r) => `Salários remote ${r}`,
-    metaDescription: (r) =>
-      `Faixas salariais medianas e percentis para vagas remote ${r}, calculadas a partir das ofertas de emprego atuais.`,
-    h1: (r) => `Salários remote ${r}`,
-    subtitle: 'Calculado ao vivo das vagas abertas no nosso índice.',
-    noData: (r) =>
-      `Ainda não há dados salariais suficientes para ${r}. Volte quando o índice crescer.`,
-    basedOn: (n) => `baseado em ${n} vagas`,
-    howCalculated: 'Como é calculado',
-    methodology:
-      'Fazemos a média do mínimo e máximo de cada vaga que publica uma faixa salarial. Os valores de percentil vêm da distribuição ordenada desses pontos médios. Vagas sem salário são excluídas. Conversão de moeda não é aplicada; cada moeda é calculada isoladamente.',
-    p25: 'Percentil 25',
-    median: 'Mediana',
-    average: 'Média',
-    p75: 'Percentil 75',
-    byCountryHeading: 'Salários por país',
-    byCountryBlurb: 'Inclui uma análise país a país em 12 grandes mercados de contratação.',
-    otherRolesHeading: 'Outros cargos',
-  },
-  it: {
-    metaTitle: (r) => `Stipendi remote ${r}`,
-    metaDescription: (r) =>
-      `Fasce di stipendio mediane e percentili per ruoli remote ${r}, calcolate dalle offerte di lavoro attuali.`,
-    h1: (r) => `Stipendi remote ${r}`,
-    subtitle: "Calcolato in tempo reale dalle offerte aperte nel nostro indice.",
-    noData: (r) =>
-      `Non ci sono ancora abbastanza dati sugli stipendi per ${r}. Ricontrolla quando l'indice crescerà.`,
-    basedOn: (n) => `basato su ${n} offerte`,
-    howCalculated: 'Come viene calcolato',
-    methodology:
-      "Facciamo la media del minimo e massimo di ogni offerta che pubblica una fascia salariale. I valori percentili provengono dalla distribuzione ordinata di quei punti medi. Le offerte senza stipendio sono escluse. La conversione valutaria non viene applicata; ogni valuta è calcolata in isolamento.",
-    p25: '25° pct',
-    median: 'Mediana',
-    average: 'Media',
-    p75: '75° pct',
-    byCountryHeading: 'Stipendi per paese',
-    byCountryBlurb: 'Include un\'analisi paese per paese su 12 grandi mercati del lavoro.',
-    otherRolesHeading: 'Altri ruoli',
-  },
-  pl: {
-    metaTitle: (r) => `Wynagrodzenia zdalne ${r}`,
-    metaDescription: (r) =>
-      `Mediany, średnie i percentyle widełek wynagrodzeń dla zdalnych stanowisk ${r}, obliczone z aktualnych ofert pracy.`,
-    h1: (r) => `Wynagrodzenia zdalne ${r}`,
-    subtitle: 'Obliczone na żywo z aktywnych ofert w naszym indeksie.',
-    noData: (r) =>
-      `Jeszcze za mało danych o wynagrodzeniach dla ${r}. Wróć, gdy indeks urośnie.`,
-    basedOn: (n) => `na podstawie ${n} ofert`,
-    howCalculated: 'Jak to jest obliczane',
-    methodology:
-      'Uśredniamy minimum i maksimum każdej oferty, która publikuje widełki wynagrodzenia. Wartości percentylowe pochodzą z posortowanego rozkładu tych punktów środkowych. Oferty bez wynagrodzenia są wykluczone. Konwersja walut nie jest stosowana; każda waluta jest obliczana oddzielnie.',
-    p25: '25. percentyl',
-    median: 'Mediana',
-    average: 'Średnia',
-    p75: '75. percentyl',
-    byCountryHeading: 'Wynagrodzenia według kraju',
-    byCountryBlurb: 'Zawiera podział na kraje w 12 największych rynkach rekrutacyjnych.',
-    otherRolesHeading: 'Inne role',
   },
 };
 

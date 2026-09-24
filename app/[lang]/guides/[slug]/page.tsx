@@ -6,7 +6,7 @@ import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { GUIDES, GUIDE_MAP } from '@/lib/guides';
 import { tGuide } from '@/lib/guides-i18n';
-import { tGuideBody, tGuideFaqs } from '@/lib/guides-body-i18n';
+import { tGuideBody, tGuideFaqs, hasGuideTranslation } from '@/lib/guides-body-i18n';
 import { NomadBanking } from '@/components/NomadBanking';
 import { NomadEssentials } from '@/components/NomadEssentials';
 import { NomadCTA } from '@/components/NomadCTA';
@@ -78,11 +78,7 @@ const AI_KEYWORDS = /\b(ai|ml|machine learning|llm|prompt|data scientist|ml engi
 const GUIDE_LABELS: Record<Locale, { faq: string; related: string }> = {
   en: { faq: 'Frequently asked questions', related: 'Related guides' },
   fr: { faq: 'Questions fréquentes', related: 'Guides liés' },
-  es: { faq: 'Preguntas frecuentes', related: 'Guías relacionadas' },
   de: { faq: 'Häufige Fragen', related: 'Verwandte Guides' },
-  pt: { faq: 'Perguntas frequentes', related: 'Guias relacionados' },
-  it: { faq: 'Domande frequenti', related: 'Guide correlate' },
-  pl: { faq: 'Często zadawane pytania', related: 'Powiązane poradniki' },
 };
 
 export const dynamicParams = false;
@@ -123,6 +119,7 @@ export function generateMetadata({
     path: `guides/${params.slug}`,
     title: tGuide(g.slug, params.lang, 'title', g.title),
     description: guideMetaDesc(base, g.category),
+    index: hasGuideTranslation(g.slug, params.lang),
   });
 }
 

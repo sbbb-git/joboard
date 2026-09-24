@@ -39,16 +39,6 @@ const COPY: Record<Locale, JobsCopy> = {
     recentHeading: 'Dernières offres tech remote',
     recentIntro: "Les postes les plus récemment publiés dans l'index. Utilisez les filtres ci-dessus pour tout chercher.",
   },
-  es: {
-    metaTitle: 'Buscar empleos tech remotos',
-    metaDescription:
-      'Filtra cada empleo tech remoto activo de nuestro índice por rol, país, nivel, tipo de empleo y salario. Actualizado cada día.',
-    eyebrow: 'Búsqueda',
-    intro: (n) =>
-      `${n} empleos tech remotos activos. Filtra por rol, país, nivel, tipo de contrato y salario, todo en el navegador. Sin registro.`,
-    recentHeading: 'Últimos empleos tech remotos',
-    recentIntro: 'Los puestos publicados más recientemente en el índice. Usa los filtros de arriba para buscarlos todos.',
-  },
   de: {
     metaTitle: 'Remote-Tech-Jobs suchen',
     metaDescription:
@@ -58,36 +48,6 @@ const COPY: Record<Locale, JobsCopy> = {
       `${n} aktive Remote-Tech-Jobs. Filtere nach Rolle, Land, Level, Vertragsart und Gehalt, alles im Browser. Keine Anmeldung nötig.`,
     recentHeading: 'Neueste Remote-Tech-Jobs',
     recentIntro: 'Die zuletzt veröffentlichten Stellen im Index. Nutzen Sie die Filter oben, um alle zu durchsuchen.',
-  },
-  pt: {
-    metaTitle: 'Buscar vagas tech remotas',
-    metaDescription:
-      'Filtre cada vaga tech remota ativa do nosso índice por cargo, país, nível, tipo de contratação e salário. Atualizado todo dia.',
-    eyebrow: 'Busca',
-    intro: (n) =>
-      `${n} vagas tech remotas ativas. Filtre por cargo, país, nível, tipo de contrato e salário, tudo no navegador. Sem cadastro.`,
-    recentHeading: 'Vagas tech remotas mais recentes',
-    recentIntro: 'As vagas publicadas mais recentemente no índice. Use os filtros acima para buscar todas.',
-  },
-  it: {
-    metaTitle: 'Cerca lavori tech remote',
-    metaDescription:
-      'Filtra ogni lavoro tech remote attivo nel nostro indice per ruolo, paese, livello, tipo di contratto e stipendio. Aggiornato ogni giorno.',
-    eyebrow: 'Ricerca',
-    intro: (n) =>
-      `${n} lavori tech remote attivi. Filtra per ruolo, paese, livello, tipo di contratto e stipendio, tutto nel browser. Nessuna registrazione.`,
-    recentHeading: 'Ultimi lavori tech remote',
-    recentIntro: "Le posizioni pubblicate più di recente nell'indice. Usa i filtri sopra per cercarle tutte.",
-  },
-  pl: {
-    metaTitle: 'Szukaj zdalnych ofert tech',
-    metaDescription:
-      'Filtruj każdą aktywną zdalną ofertę tech w naszym indeksie według roli, kraju, poziomu, typu zatrudnienia i wynagrodzenia. Aktualizowane codziennie.',
-    eyebrow: 'Szukaj',
-    intro: (n) =>
-      `${n} aktywnych zdalnych ofert tech. Filtruj według roli, kraju, poziomu, typu umowy i wynagrodzenia, wszystko w przeglądarce. Bez rejestracji.`,
-    recentHeading: 'Najnowsze zdalne oferty tech',
-    recentIntro: 'Ostatnio opublikowane oferty w indeksie. Użyj filtrów powyżej, aby przeszukać wszystkie.',
   },
 };
 

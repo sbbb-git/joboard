@@ -17,17 +17,13 @@ export const dynamic = 'force-static';
 const LOCALE_NAMES: Record<string, string> = {
   en: 'English',
   fr: 'Français',
-  es: 'Español',
   de: 'Deutsch',
-  pt: 'Português',
-  it: 'Italiano',
-  pl: 'Polski',
 };
 
 export const metadata: Metadata = {
   title: 'slateremote.com · Remote tech jobs, refreshed weekly',
   description:
-    'Remote engineering, data, design and product jobs aggregated from public job board APIs and refreshed every week, in seven languages. Free to browse, no signup.',
+    'Remote engineering, data, design and product jobs aggregated from public job board APIs and refreshed every week, in English, French and German. Free to browse, no signup.',
   metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: `${SITE_URL}/en`,

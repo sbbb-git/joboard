@@ -24,11 +24,7 @@ export function canonicalPath(locale: Locale, path: string): string {
 const OG_LOCALE: Record<Locale, string> = {
   en: 'en_US',
   fr: 'fr_FR',
-  es: 'es_ES',
   de: 'de_DE',
-  pt: 'pt_BR',
-  it: 'it_IT',
-  pl: 'pl_PL',
 };
 
 export function hreflangAlternates(pathWithoutLocale: string): Record<string, string> {
@@ -252,8 +248,8 @@ export function websiteJsonLd() {
     name: SITE_NAME,
     url: SITE_URL,
     description:
-      'Remote tech jobs from across the web, refreshed daily. Free, no signup, available in 7 languages.',
-    inLanguage: ['en', 'fr', 'es', 'de', 'pt', 'it', 'pl'],
+      'Remote tech jobs from across the web, refreshed weekly. Free, no signup, in English, French and German.',
+    inLanguage: [...LOCALES],
     potentialAction: {
       '@type': 'SearchAction',
       target: {

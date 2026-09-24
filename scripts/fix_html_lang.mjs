@@ -8,7 +8,7 @@ import { readdir, readFile, writeFile, stat } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const ROOT = join(process.cwd(), 'out');
-const LOCALES = new Set(['en', 'fr', 'es', 'de', 'pt', 'it', 'pl']);
+const LOCALES = new Set(['en', 'fr', 'de']);
 
 async function walk(dir) {
   const entries = await readdir(dir);
@@ -34,7 +34,7 @@ async function patch(file) {
   if (LOCALES.has(seg)) {
     locale = seg;
   } else {
-    const m = rel.match(/^(en|fr|es|de|pt|it|pl)\.html$/);
+    const m = rel.match(/^(en|fr|de)\.html$/);
     if (m) locale = m[1];
   }
   if (!locale) {

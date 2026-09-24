@@ -42,14 +42,6 @@ const ROLE_I18N: Record<Locale, RoleCopy> = {
     h1: (r) => `Offres ${r} en remote`,
     openPositions: (n) => `${n} poste${n === 1 ? '' : 's'} ouvert${n === 1 ? '' : 's'}`,
   },
-  es: {
-    metaTitle: (r) => `Empleos remotos de ${r}, al día`,
-    metaDescription: (r) =>
-      `Explora puestos remotos de ${r} agregados desde las APIs públicas de portales de empleo. Filtra por nivel, salario y franja horaria.`,
-    eyebrow: 'Rol',
-    h1: (r) => `Empleos remotos de ${r}`,
-    openPositions: (n) => `${n} puesto${n === 1 ? '' : 's'} abierto${n === 1 ? '' : 's'}`,
-  },
   de: {
     metaTitle: (r) => `Remote-Jobs als ${r}, täglich neu`,
     metaDescription: (r) =>
@@ -57,31 +49,6 @@ const ROLE_I18N: Record<Locale, RoleCopy> = {
     eyebrow: 'Rolle',
     h1: (r) => `Remote-Jobs als ${r}`,
     openPositions: (n) => `${n} offene Stelle${n === 1 ? '' : 'n'}`,
-  },
-  pt: {
-    metaTitle: (r) => `Vagas remotas de ${r}, todo dia`,
-    metaDescription: (r) =>
-      `Veja as vagas remotas de ${r} agregadas das APIs públicas dos job boards. Filtre por senioridade, salário e fuso horário. Todo dia.`,
-    eyebrow: 'Cargo',
-    h1: (r) => `Vagas remotas de ${r}`,
-    openPositions: (n) => `${n} vaga${n === 1 ? '' : 's'} aberta${n === 1 ? '' : 's'}`,
-  },
-  it: {
-    metaTitle: (r) => `Offerte di lavoro remote per ${r}`,
-    metaDescription: (r) =>
-      `Sfoglia tutte le posizioni remote per ${r} aggregate dalle API pubbliche dei job board. Filtra per livello, stipendio, sede e fuso orario.`,
-    eyebrow: 'Ruolo',
-    h1: (r) => `Lavoro remote per ${r}`,
-    openPositions: (n) =>
-      `${n} posizione${n === 1 ? '' : 'i'} apert${n === 1 ? 'a' : 'e'}`,
-  },
-  pl: {
-    metaTitle: (r) => `Praca zdalna: ${r}, aktualne oferty`,
-    metaDescription: (r) =>
-      `Przeglądaj aktualne zdalne oferty dla ${r} zebrane z publicznych API job boardów. Filtruj po poziomie, wynagrodzeniu i strefie czasowej.`,
-    eyebrow: 'Rola',
-    h1: (r) => `Praca zdalna: ${r}`,
-    openPositions: (n) => `${n} otwart${n === 1 ? 'a oferta' : 'ych ofert'}`,
   },
 };
 

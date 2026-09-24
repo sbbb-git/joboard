@@ -11,11 +11,7 @@ type RelCopy = { today: string; days: (n: number) => string; months: (n: number)
 const REL: Record<Locale, RelCopy> = {
   en: { today: 'today', days: (n) => `${n}d ago`, months: (n) => `${n}mo ago` },
   fr: { today: "auj.", days: (n) => `il y a ${n}j`, months: (n) => `il y a ${n}m` },
-  es: { today: 'hoy', days: (n) => `hace ${n}d`, months: (n) => `hace ${n}m` },
   de: { today: 'heute', days: (n) => `vor ${n}T`, months: (n) => `vor ${n}M` },
-  pt: { today: 'hoje', days: (n) => `há ${n}d`, months: (n) => `há ${n}m` },
-  it: { today: 'oggi', days: (n) => `${n}g fa`, months: (n) => `${n}m fa` },
-  pl: { today: 'dziś', days: (n) => `${n}d temu`, months: (n) => `${n}mies temu` },
 };
 
 function relativeDate(iso: string, locale: Locale): string {

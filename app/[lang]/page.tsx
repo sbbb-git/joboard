@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { JobCard } from '@/components/JobCard';
-import { CityCard } from '@/components/CityCard';
 import { Newsletter } from '@/components/Newsletter';
 import { HomeFaq } from '@/components/HomeFaq';
 import { allJobs, rolesWithCounts, topCompanies, topCountries } from '@/lib/jobs';
@@ -9,7 +8,6 @@ import { localePath, t } from '@/lib/i18n';
 import { buildMetadata, organizationJsonLd, websiteJsonLd } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { SKILLS } from '@/lib/skills';
-import { CITIES } from '@/lib/cities';
 import { GUIDES } from '@/lib/guides';
 import { tGuide } from '@/lib/guides-i18n';
 import { HOME } from '@/lib/home-i18n';
@@ -37,7 +35,6 @@ export default function Home({ params }: { params: { lang: Locale } }) {
   const countries = topCountries(8);
   const companies = topCompanies(8);
   const featuredSkills = SKILLS.slice(0, 14);
-  const featuredCities = CITIES.slice(0, 6);
   const featuredGuides = GUIDES.slice(0, 6);
 
   return (
@@ -85,11 +82,12 @@ export default function Home({ params }: { params: { lang: Locale } }) {
 
           {/* Stats card */}
           <div className="rounded-2xl bg-paper border border-line shadow-soft p-6 grid grid-cols-2 gap-5">
+            {/* Real totals. These used to read the display lists (sliced to 8),
+                so the homepage claimed "8+ countries" and, via a `* 10`,
+                "80+ companies" against actual counts of 22 and 253. */}
             <Stat number={all.length} label={h.stat.jobs} />
-            <Stat number={countries.length} label={h.stat.countries} suffix="+" />
-            <Stat number={companies.length * 10} label={h.stat.companies} suffix="+" />
-            <Stat number={SKILLS.length} label={h.stat.skills} />
-            <Stat number={CITIES.length} label={h.stat.cities} />
+            <Stat number={topCountries(1000).length} label={h.stat.countries} />
+            <Stat number={topCompanies(10000).length} label={h.stat.companies} />
             <Stat number={GUIDES.length} label={h.stat.guides} />
           </div>
         </div>
@@ -181,7 +179,7 @@ export default function Home({ params }: { params: { lang: Locale } }) {
             </Link>
           </BentoTile>
 
-          <BentoTile className="col-span-1 md:col-span-1 bg-paper border border-line">
+          <BentoTile className="col-span-1 md:col-span-2 bg-paper border border-line">
             <div>
               <p className="text-[10px] uppercase tracking-wider text-amber font-bold">
                 {h.salaryData}
@@ -198,22 +196,6 @@ export default function Home({ params }: { params: { lang: Locale } }) {
             </Link>
           </BentoTile>
 
-          <BentoTile className="col-span-1 md:col-span-1 bg-gradient-to-br from-amberSoft to-paper">
-            <div>
-              <p className="text-[10px] uppercase tracking-wider text-amber font-bold">
-                {h.moveWork}
-              </p>
-              <p className="font-display text-xl font-normal text-ink mt-1.5 leading-tight">
-                {h.citiesProfiled(CITIES.length)}
-              </p>
-            </div>
-            <Link
-              href={localePath(locale, 'cities')}
-              className="text-xs text-amber font-medium hover:underline self-end"
-            >
-              {h.citiesLink}
-            </Link>
-          </BentoTile>
 
           <BentoTile className="col-span-2 md:col-span-4 bg-gradient-to-r from-paper to-terracottaSoft border border-line">
             <div>
@@ -251,19 +233,6 @@ export default function Home({ params }: { params: { lang: Locale } }) {
         </div>
       </section>
 
-      {/* CITIES */}
-      <section>
-        <SectionHeader
-          eyebrow={h.citiesEyebrow}
-          title={h.citiesTitle}
-          link={{ href: localePath(locale, 'cities'), label: h.allCities(CITIES.length) }}
-        />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {featuredCities.map((c) => (
-            <CityCard key={c.slug} city={c} locale={locale} />
-          ))}
-        </div>
-      </section>
 
       {/* COUNTRIES */}
       {countries.length > 0 && (
