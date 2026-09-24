@@ -84,7 +84,7 @@ export default function RolePage({ params }: { params: { lang: Locale; role: str
         <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1">
           {c.h1(label)}
         </h1>
-        <p className="text-graphite text-sm mt-2">{c.openPositions(jobs.length)}</p>
+        <h2 className="font-normal text-graphite text-sm mt-2">{c.openPositions(jobs.length)}</h2>
       </header>
 
       {jobs.length === 0 ? (

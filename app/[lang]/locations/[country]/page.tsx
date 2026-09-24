@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { JobCard } from '@/components/JobCard';
-import { allJobs, topCountries } from '@/lib/jobs';
+import { allJobs, locationCountries } from '@/lib/jobs';
 import { LOCALES, t } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import { countryLabel } from '@/lib/labels';
@@ -51,7 +51,7 @@ const LOCATION_I18N: Record<Locale, LocationCopy> = {
 };
 
 export function generateStaticParams() {
-  const all = topCountries(1000).map((c) => c.slug);
+  const all = locationCountries().map((c) => c.slug);
   return LOCALES.flatMap((lang) => all.map((country) => ({ lang, country })));
 }
 
@@ -86,7 +86,7 @@ export default function LocationPage({
         <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1">
           {c.h1(labelTitle)}
         </h1>
-        <p className="text-graphite text-sm mt-2">{c.openPositions(jobs.length)}</p>
+        <h2 className="font-normal text-graphite text-sm mt-2">{c.openPositions(jobs.length)}</h2>
       </header>
       {jobs.length === 0 ? (
         <p className="text-muted text-sm">{t(params.lang, 'list.empty')}</p>

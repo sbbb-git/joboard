@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import {
   allJobs,
   topCompanies,
-  topCountries,
+  locationCountries,
   hasCountrySalaryData,
   COMPANY_INDEX_MIN_JOBS,
 } from '@/lib/jobs';
@@ -106,7 +106,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const langs = LOCALES.filter((l) => hasGuideTranslation(g.slug, l));
     out.push(...localeUrls(`/guides/${g.slug}`, undefined, 0.7, langs));
   }
-  for (const c of topCountries(1000)) add(`/locations/${c.slug}`, now, 0.6);
+  for (const c of locationCountries()) add(`/locations/${c.slug}`, now, 0.6);
   // Same threshold the company page applies: single-opening companies render
   // noindex, so listing them would point Google at pages we ask it to skip.
   for (const c of topCompanies(10000)) {

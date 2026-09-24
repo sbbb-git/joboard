@@ -78,7 +78,7 @@ export default function CompanyPage({ params }: { params: { lang: Locale; name: 
     <div className="space-y-6">
       <header>
         <h1 className="text-2xl font-semibold">{company}</h1>
-        <p className="text-muted text-sm mt-1">{c.openPositions(jobs.length)}</p>
+        <h2 className="font-normal text-muted text-sm mt-1">{c.openPositions(jobs.length)}</h2>
       </header>
       <div className="grid gap-3 md:grid-cols-2">
         {jobs.map((j) => (

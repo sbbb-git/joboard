@@ -173,6 +173,32 @@ function buildBaseSalary(job: JobNormalized) {
   };
 }
 
+// Postings scoped to a region rather than a country ("North America Only",
+// "South America", "LATAM") resolve to no single country, and a TELECOMMUTE
+// JobPosting with no applicantLocationRequirements lacks the location field
+// Google Jobs requires for remote roles. These regions have well-defined
+// member countries, so list them. Broad ones (EMEA, APAC) are left unresolved
+// rather than approximated.
+const SOUTH_AMERICA = [
+  'Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador',
+  'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela',
+];
+const REGION_COUNTRIES: Array<[RegExp, string[]]> = [
+  [/\bnorth america\b/i, ['United States', 'Canada']],
+  [/\bsouth america\b/i, SOUTH_AMERICA],
+  [/\blatam\b|\blatin america\b/i, [
+    ...SOUTH_AMERICA, 'Mexico', 'Costa Rica', 'Panama', 'Guatemala', 'Honduras', 'El Salvador', 'Nicaragua',
+  ]],
+];
+
+function applicantLocations(job: JobNormalized) {
+  if (job.locationCountry) return { '@type': 'Country', name: job.locationCountry };
+  for (const [re, countries] of REGION_COUNTRIES) {
+    if (re.test(job.location)) return countries.map((name) => ({ '@type': 'Country', name }));
+  }
+  return undefined;
+}
+
 export function jobPostingJsonLd(job: JobNormalized) {
   const employmentMap: Record<string, string> = {
     FULL_TIME: 'FULL_TIME',
@@ -193,9 +219,7 @@ export function jobPostingJsonLd(job: JobNormalized) {
       name: job.company,
     },
     jobLocationType: job.remote === 'full' ? 'TELECOMMUTE' : undefined,
-    applicantLocationRequirements: job.locationCountry
-      ? { '@type': 'Country', name: job.locationCountry }
-      : undefined,
+    applicantLocationRequirements: applicantLocations(job),
     jobLocation:
       job.remote !== 'full'
         ? {

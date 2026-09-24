@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import type { Locale } from '@/lib/types';
 import { LOCALES, localePath } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
-import { topCountries } from '@/lib/jobs';
+import { locationCountries } from '@/lib/jobs';
 import { LOCATIONS_INDEX_I18N } from '@/lib/locations-i18n';
 
 export const dynamicParams = false;
@@ -15,7 +15,7 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: { params: { lang: Locale } }): Metadata {
   const c = LOCATIONS_INDEX_I18N[params.lang];
-  const n = topCountries(1000).length;
+  const n = locationCountries().length;
   return buildMetadata({
     locale: params.lang,
     path: 'locations',
@@ -28,7 +28,7 @@ export default function LocationsIndex({ params }: { params: { lang: Locale } })
   const c = LOCATIONS_INDEX_I18N[params.lang];
   // Every country the index has jobs for. This page is the only hub linking
   // them, so it must not truncate.
-  const countries = topCountries(1000);
+  const countries = locationCountries();
 
   return (
     <div className="space-y-6">

@@ -128,6 +128,7 @@ const COUNTRY_MAP: Array<[string, string]> = [
   ['UK', 'United Kingdom'],
   ['United Kingdom', 'United Kingdom'],
   ['Germany', 'Germany'],
+  ['Deutschland', 'Germany'],
   ['France', 'France'],
   ['Spain', 'Spain'],
   ['Portugal', 'Portugal'],
@@ -145,6 +146,96 @@ const COUNTRY_MAP: Array<[string, string]> = [
   ['Global', 'Worldwide'],
 ];
 
+// Second pass for anything COUNTRY_MAP misses: every country by its common
+// English name (ASCII, since the name becomes a /locations/ URL slug), plus a
+// few aliases. Hand-maintained lists kept falling behind the feeds, leaving
+// postings with no country and therefore no applicantLocationRequirements in
+// their JobPosting data, which Google Jobs requires for remote roles.
+//
+// Matched on word boundaries so "Oman" does not fire inside "Romania",
+// "Iran" inside "Tirana" or "Niger" inside "Nigeria", and longest names first
+// so "South Sudan" wins over "Sudan". Georgia is left out on purpose: it is
+// also a US state and shows up in US postings.
+const COUNTRY_NAMES = (
+  'Afghanistan,Albania,Algeria,Andorra,Angola,Antigua and Barbuda,Argentina,Armenia,Australia,Austria,' +
+  'Azerbaijan,Bahamas,Bahrain,Bangladesh,Barbados,Belarus,Belgium,Belize,Benin,Bhutan,Bolivia,' +
+  'Bosnia and Herzegovina,Botswana,Brazil,Brunei,Bulgaria,Burkina Faso,Burundi,Cambodia,Cameroon,Canada,' +
+  'Cape Verde,Central African Republic,Chad,Chile,China,Colombia,Comoros,Costa Rica,Croatia,Cuba,Cyprus,' +
+  'Czechia,Denmark,Djibouti,Dominica,Dominican Republic,Ecuador,Egypt,El Salvador,Equatorial Guinea,Eritrea,' +
+  'Estonia,Eswatini,Ethiopia,Fiji,Finland,France,Gabon,Gambia,Germany,Ghana,Greece,Grenada,Guatemala,Guinea,' +
+  'Guinea-Bissau,Guyana,Haiti,Honduras,Hong Kong,Hungary,Iceland,India,Indonesia,Iran,Iraq,Ireland,Israel,Italy,' +
+  'Ivory Coast,Jamaica,Japan,Jordan,Kazakhstan,Kenya,Kosovo,Kuwait,Kyrgyzstan,Laos,Latvia,Lebanon,Lesotho,' +
+  'Liberia,Libya,Liechtenstein,Lithuania,Luxembourg,Madagascar,Malawi,Malaysia,Maldives,Mali,Malta,Mauritania,' +
+  'Mauritius,Mexico,Moldova,Monaco,Mongolia,Montenegro,Morocco,Mozambique,Myanmar,Namibia,Nepal,Netherlands,' +
+  'New Zealand,Nicaragua,Niger,Nigeria,North Macedonia,Norway,Oman,Pakistan,Palestine,Panama,Papua New Guinea,' +
+  'Paraguay,Peru,Philippines,Poland,Portugal,Puerto Rico,Qatar,Romania,Russia,Rwanda,Saint Lucia,Samoa,' +
+  'San Marino,Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Singapore,Slovakia,Slovenia,Somalia,' +
+  'South Africa,South Korea,South Sudan,Spain,Sri Lanka,Sudan,Suriname,Sweden,Switzerland,Syria,Taiwan,' +
+  'Tajikistan,Tanzania,Thailand,Togo,Trinidad and Tobago,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,' +
+  'United Arab Emirates,United Kingdom,United States,Uruguay,Uzbekistan,Venezuela,Vietnam,Yemen,Zambia,Zimbabwe'
+).split(',');
+
+const COUNTRY_ALIASES: Array<[string, string]> = [
+  ['Türkiye', 'Turkey'],
+  ['Turkiye', 'Turkey'],
+  ['Czech Republic', 'Czechia'],
+  ["Côte d'Ivoire", 'Ivory Coast'],
+  ['Viet Nam', 'Vietnam'],
+  ['UAE', 'United Arab Emirates'],
+];
+
+// Major cities that name exactly one country, for postings that give only a
+// city. Deliberately short and unambiguous: Melbourne (AU or Florida),
+// Cambridge, Portland, Vancouver (BC or WA) and similar are left out.
+const MAJOR_CITIES: Array<[string, string]> = [
+  ['New York City', 'United States'], ['San Francisco', 'United States'], ['Los Angeles', 'United States'],
+  ['Redwood City', 'United States'], ['Boston', 'United States'], ['Seattle', 'United States'],
+  ['Chicago', 'United States'], ['Cincinnati', 'United States'], ['Wichita', 'United States'],
+  ['Denver', 'United States'], ['Philadelphia', 'United States'], ['San Diego', 'United States'],
+  ['San Jose', 'United States'], ['Palo Alto', 'United States'], ['Mountain View', 'United States'],
+  ['Toronto', 'Canada'], ['Montreal', 'Canada'], ['Ottawa', 'Canada'], ['Calgary', 'Canada'],
+  ['Greater London', 'United Kingdom'], ['London', 'United Kingdom'], ['Manchester', 'United Kingdom'],
+  ['Dublin', 'Ireland'], ['Paris', 'France'], ['Lyon', 'France'], ['Amsterdam', 'Netherlands'],
+  ['Madrid', 'Spain'], ['Lisbon', 'Portugal'], ['Warsaw', 'Poland'], ['Krakow', 'Poland'],
+  ['Prague', 'Czechia'], ['Budapest', 'Hungary'], ['Vienna', 'Austria'], ['Zurich', 'Switzerland'],
+  ['Stockholm', 'Sweden'], ['Copenhagen', 'Denmark'], ['Oslo', 'Norway'], ['Helsinki', 'Finland'],
+  ['Bucharest', 'Romania'], ['Athens', 'Greece'], ['Kyiv', 'Ukraine'], ['Istanbul', 'Turkey'],
+  ['Tel Aviv', 'Israel'], ['Dubai', 'United Arab Emirates'], ['Abu Dhabi', 'United Arab Emirates'],
+  ['Riyadh', 'Saudi Arabia'], ['Cairo', 'Egypt'], ['Lagos', 'Nigeria'], ['Nairobi', 'Kenya'],
+  ['Cape Town', 'South Africa'], ['Johannesburg', 'South Africa'],
+  ['Bangalore', 'India'], ['Bengaluru', 'India'], ['Mumbai', 'India'], ['New Delhi', 'India'],
+  ['Hyderabad', 'India'], ['Pune', 'India'], ['Agra', 'India'], ['Dehradun', 'India'], ['Kolkata', 'India'],
+  ['Seoul', 'South Korea'], ['Tokyo', 'Japan'], ['Bangkok', 'Thailand'], ['Manila', 'Philippines'],
+  ['Jakarta', 'Indonesia'], ['Kuala Lumpur', 'Malaysia'], ['Ho Chi Minh City', 'Vietnam'], ['Hanoi', 'Vietnam'],
+  ['Taipei', 'Taiwan'], ['Shanghai', 'China'], ['Beijing', 'China'], ['Sydney', 'Australia'],
+  ['Auckland', 'New Zealand'], ['Sao Paulo', 'Brazil'], ['São Paulo', 'Brazil'], ['Mexico City', 'Mexico'],
+  ['Lima', 'Peru'], ['Santiago', 'Chile'],
+  // Arabic-script names seen in the feeds.
+  ['مسقط', 'Oman'], ['عمان', 'Oman'], ['دبي', 'United Arab Emirates'], ['الرياض', 'Saudi Arabia'],
+];
+
+const escapeRe = (x: string) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const COUNTRY_MATCHERS: Array<[RegExp, string]> = [
+  ...COUNTRY_ALIASES,
+  ...COUNTRY_NAMES.map((n): [string, string] => [n, n]),
+  ...MAJOR_CITIES,
+]
+  .sort((a, b) => b[0].length - a[0].length)
+  .map(([needle, mapped]) => [new RegExp(`(^|[^\\p{L}])${escapeRe(needle)}($|[^\\p{L}])`, 'iu'), mapped]);
+
+// Short upper-case codes (US, USA, UK, EU) must match as whole words and in
+// capitals. As case-insensitive substrings they fired inside other words:
+// "Kyiv, Ukraine" became United Kingdom, "Deutschland" became Europe and
+// "Belarus / Russia" became United States, and those countries went straight
+// into the JobPosting structured data. Names keep the original substring rule.
+function matchesNeedle(text: string, needle: string): boolean {
+  const code = needle.trim();
+  if (/^[A-Z]{2,3}$/.test(code)) {
+    return new RegExp(`(^|[^A-Za-z])${code}($|[^A-Za-z])`).test(text);
+  }
+  return text.toLowerCase().includes(needle.toLowerCase());
+}
+
 export function normalizeLocation(raw: string | undefined | null): {
   location: string;
   country?: string;
@@ -152,10 +243,14 @@ export function normalizeLocation(raw: string | undefined | null): {
   if (!raw) return { location: 'Worldwide', country: 'Worldwide' };
   const cleaned = raw.trim();
   for (const [needle, mapped] of COUNTRY_MAP) {
-    if (cleaned.toLowerCase().includes(needle.toLowerCase())) {
-      return { location: cleaned, country: mapped };
-    }
+    if (matchesNeedle(cleaned, needle)) return { location: cleaned, country: mapped };
   }
+  for (const [re, mapped] of COUNTRY_MATCHERS) {
+    if (re.test(cleaned)) return { location: cleaned, country: mapped };
+  }
+  // "Remote - US", "US only". Case-sensitive on purpose so the pronoun "us"
+  // never matches.
+  if (/(^|[^A-Za-z])(US|USA)($|[^A-Za-z])/.test(cleaned)) return { location: cleaned, country: 'United States' };
   return { location: cleaned };
 }
 
@@ -164,6 +259,23 @@ export function normalizeLocation(raw: string | undefined | null): {
 // the page, in the JobPosting hiringOrganization, and as "hook-amp-ladder" in
 // the URL. Decoding belongs in its own function so it can be applied to plain
 // text fields (company, title) and not only to descriptions.
+// RemoteOK's API returns text that is already mojibake: UTF-8 bytes that were
+// decoded as Latin-1 somewhere upstream, so "You’ll" arrives as "You\u00e2\u0080\u0099ll"
+// and Arabic place names as runs of "\u00d9\u0085\u00d8...". Repair each run by
+// turning its code points back into bytes and reading them as UTF-8. A run is
+// only replaced when it decodes cleanly, so genuine accented text ("Zürich",
+// "Côte") is left alone.
+const utf8 = new TextDecoder('utf-8', { fatal: true });
+export function fixMojibake(text: string): string {
+  return text.replace(/[\u00C2-\u00F4][\u0080-\u00BF]{1,3}/g, (run) => {
+    try {
+      return utf8.decode(Uint8Array.from(run, (ch) => ch.charCodeAt(0)));
+    } catch {
+      return run;
+    }
+  });
+}
+
 export function decodeEntities(text: string): string {
   return text
     .replace(/&nbsp;/g, ' ')

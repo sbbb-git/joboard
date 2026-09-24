@@ -72,6 +72,8 @@ export function CompanyLogo({ company, companySlug, role, size = 44, className =
       loading="lazy"
       referrerPolicy="no-referrer"
       onError={() => setErrored(true)}
+      width={size}
+      height={size}
       style={dim}
       className={`flex-shrink-0 rounded-xl object-cover bg-sand ${className}`}
     />

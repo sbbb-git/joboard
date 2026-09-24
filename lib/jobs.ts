@@ -56,6 +56,15 @@ export function topCountries(
     .slice(0, limit);
 }
 
+// Countries with enough openings to carry a /locations/ page. A one-posting
+// country page restates a job already indexed on its own /job/ page (same
+// reasoning as COMPANY_INDEX_MIN_JOBS). Shared by the page's static params,
+// the locations hub, the homepage and the sitemap so they cannot disagree.
+export const LOCATION_PAGE_MIN_JOBS = 2;
+export function locationCountries(): Array<{ slug: string; name: string; count: number }> {
+  return topCountries(1000).filter((c) => c.count >= LOCATION_PAGE_MIN_JOBS);
+}
+
 export function rolesWithCounts(): Array<{ role: Role; count: number }> {
   const map = new Map<Role, number>();
   for (const r of ROLES) map.set(r, 0);

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { JobCard } from '@/components/JobCard';
 import { Newsletter } from '@/components/Newsletter';
 import { HomeFaq } from '@/components/HomeFaq';
-import { allJobs, rolesWithCounts, topCompanies, topCountries } from '@/lib/jobs';
+import { allJobs, rolesWithCounts, topCompanies, topCountries, locationCountries } from '@/lib/jobs';
 import { localePath, t } from '@/lib/i18n';
 import { buildMetadata, organizationJsonLd, websiteJsonLd } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
@@ -32,7 +32,7 @@ export default function Home({ params }: { params: { lang: Locale } }) {
   const all = allJobs();
   const jobs = all.slice(0, 12);
   const roles = rolesWithCounts().filter((r) => r.count > 0).slice(0, 8);
-  const countries = topCountries(8);
+  const countries = locationCountries().slice(0, 8);
   const companies = topCompanies(8);
   const featuredSkills = SKILLS.slice(0, 14);
   const featuredGuides = GUIDES.slice(0, 6);

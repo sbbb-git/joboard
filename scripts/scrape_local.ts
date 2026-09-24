@@ -9,7 +9,7 @@ import path from 'node:path';
 import { runAllScrapers } from '../lib/scrapers';
 import { dedupe } from '../lib/dedupe';
 import { filterActive } from '../lib/filters';
-import { decodeEntities, slugify } from '../lib/normalize';
+import { decodeEntities, fixMojibake, slugify } from '../lib/normalize';
 import type { JobNormalized, JobsFile } from '../lib/types';
 
 // Feeds vary in whether they HTML-encode plain text fields. Each adapter
@@ -17,12 +17,14 @@ import type { JobNormalized, JobsFile } from '../lib/types';
 // encoded, so "&amp;" leaked into headings, structured data and URL slugs.
 // Normalising here covers every source at once.
 function decodeTextFields(job: JobNormalized): JobNormalized {
-  const company = decodeEntities(job.company);
+  const company = fixMojibake(decodeEntities(job.company));
   return {
     ...job,
     company,
     companySlug: company === job.company ? job.companySlug : slugify(company),
-    title: decodeEntities(job.title),
+    title: fixMojibake(decodeEntities(job.title)),
+    location: fixMojibake(job.location),
+    description: fixMojibake(job.description),
   };
 }
 
