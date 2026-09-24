@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { LOCALES, localePath } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
-import { readJobs, topCountries } from '@/lib/jobs';
+import { readJobs } from '@/lib/jobs';
 import { SCRAPERS } from '@/lib/scrapers';
 import { TrustBlock } from '@/components/TrustBlock';
 
@@ -79,7 +79,6 @@ export function generateStaticParams() {
 
 type Bullet = { title: string; body: string };
 type Faq = { q: string; a: string };
-type Bar = { label: string; pct: number };
 
 type Copy = {
   metaTitle: string;
@@ -93,13 +92,6 @@ type Copy = {
   whyH2: string;
   whyIntro: string;
   why: Bullet[];
-  audienceH2: string;
-  audienceIntro: string;
-  roleMixTitle: string;
-  seniorityMixTitle: string;
-  roleBars: Bar[];
-  seniorityBars: Bar[];
-  audienceFootnote: (n: number) => string;
   compareH2: string;
   compareHeaders: [string, string, string, string];
   compareRows: Array<[string, string, string, string]>;
@@ -140,41 +132,21 @@ const COPY: Record<Locale, Copy> = {
     ],
     whyH2: 'Why post here instead of LinkedIn or Indeed',
     whyIntro:
-      'The generic boards bury your remote role under 400 office jobs. We do the opposite: everything we list is remote, and the audience self-selected for it.',
+      'The generic boards bury your remote role under 400 office jobs. We do the opposite: everything we list is fully remote, so your role is never buried under office jobs.',
     why: [
-      { title: '100% remote audience', body: 'No commuters, no relocation tire-kickers. Every visitor landed here looking specifically for remote work. Your listing is read by candidates who already opted into the lifestyle.' },
-      { title: 'Multilingual reach by default', body: 'Your role auto-appears across en, fr, es, de, pt, it and pl pages, with proper hreflang. You get European candidates without paying for seven different boards.' },
+      { title: 'A remote-only index', body: 'Every listing in the index is fully remote, so your role is not competing with office jobs for attention.' },
+      { title: 'Three languages from one post', body: 'Your role appears on the English, French and German editions, with proper hreflang, so it reaches candidates across Europe without paying three different boards.' },
       { title: 'SEO that compounds', body: 'Every listing gets its own static page with JobPosting structured data, which makes it eligible for Google Jobs. Your slot stays live for 30 days instead of sinking after 48 hours on a feed.' },
-      { title: 'Engineering-heavy mix', body: 'Audience skews senior IC: backend, frontend, fullstack, devops, data, ML. The exact people who are hard to source on generic platforms.' },
-      { title: 'Triangulated distribution', body: 'Cross-promoted on slowmadly.com (digital nomad guides) and ai-by-job.com (AI careers). One post, three audiences.' },
+      { title: 'Sourced from tech boards', body: 'The index is built from remote tech job boards, so your role sits alongside engineering, data, design and product openings rather than general listings.' },
+      { title: 'Candidates apply with you', body: 'Every apply button goes straight to your own application page. We never collect applications or sit between you and a candidate.' },
       { title: 'Pricing that respects the test', body: "$49 buys you 30 days. No annual contract, no sales call, no negotiated MSA. If it works, you renew. If it doesn't, you move on." },
     ],
-    audienceH2: "Who's reading your listing",
-    audienceIntro: 'Snapshot of the candidate side of the platform, based on session behaviour and recurring search queries.',
-    roleMixTitle: 'Role mix',
-    seniorityMixTitle: 'Seniority mix',
-    roleBars: [
-      { label: 'Backend / Fullstack engineers', pct: 38 },
-      { label: 'Frontend / Mobile', pct: 22 },
-      { label: 'Data / ML / AI', pct: 16 },
-      { label: 'DevOps / Platform / Security', pct: 11 },
-      { label: 'Product / Design', pct: 9 },
-      { label: 'Other tech', pct: 4 },
-    ],
-    seniorityBars: [
-      { label: 'Senior (5+ yrs)', pct: 48 },
-      { label: 'Mid (2-5 yrs)', pct: 31 },
-      { label: 'Staff / Principal', pct: 12 },
-      { label: 'Junior', pct: 9 },
-    ],
-    audienceFootnote: (n) =>
-      `Distribution reach: candidates connecting from ${n}+ countries, with the largest cohorts in Western Europe, North America, LATAM and South-East Asia.`,
     compareH2: 'How a sponsored slot compares',
     compareHeaders: ['', 'slateremote.com', 'LinkedIn promoted', 'Indeed sponsored'],
     compareRows: [
       ['Starting price', '$49 / 30 days', '$300+ / 30 days', '$0.10-$1 / click'],
       ['Audience', 'Remote tech only', 'All industries', 'All industries'],
-      ['Languages', '7 (auto)', '1 per post', '1 per post'],
+      ['Languages', '3 (auto)', '1 per post', '1 per post'],
       ['SEO indexing', 'Permanent, static page', 'Behind login wall', 'Expires fast'],
       ['Sales call required', 'No', 'For enterprise', 'No'],
       ['Free aggregation tier', "Yes, if you're on Remotive/RemoteOK/etc", 'No', 'No'],
@@ -232,41 +204,21 @@ const COPY: Record<Locale, Copy> = {
     ],
     whyH2: 'Pourquoi publier ici plutôt que sur LinkedIn ou Indeed',
     whyIntro:
-      "Les job boards généralistes noient votre offre remote sous 400 postes en présentiel. Nous faisons l'inverse : tout ce que nous listons est remote, et l'audience est venue exprès pour ça.",
+      "Les job boards généralistes noient votre offre remote sous 400 postes en présentiel. Nous faisons l'inverse : tout ce que nous listons est en full remote, votre offre n'est jamais noyée sous des postes en présentiel.",
     why: [
-      { title: '100 % audience remote', body: 'Aucun candidat en quête de bureau, aucun touriste de la relocation. Chaque visiteur est venu chercher du remote. Votre offre est lue par des candidats déjà convaincus.' },
-      { title: 'Portée multilingue par défaut', body: 'Votre offre apparaît automatiquement en en, fr, es, de, pt, it et pl, avec hreflang propre. Vous touchez les candidats européens sans payer sept boards différents.' },
+      { title: 'Un index 100 % remote', body: 'Toutes les offres de l’index sont en full remote : votre poste n’est pas en concurrence avec des offres en présentiel.' },
+      { title: 'Trois langues pour une annonce', body: 'Votre offre apparaît sur les éditions anglaise, française et allemande, avec hreflang propre. Vous touchez les candidats européens sans payer trois boards différents.' },
       { title: 'Un SEO qui compose', body: 'Chaque offre a sa propre page statique avec des données structurées JobPosting, ce qui la rend éligible à Google Jobs. Votre slot reste en ligne 30 jours au lieu de couler après 48 h dans un flux.' },
-      { title: 'Mix très ingénierie', body: 'Audience plutôt senior IC : backend, frontend, fullstack, devops, data, ML. Exactement les profils difficiles à sourcer sur les plateformes généralistes.' },
-      { title: 'Distribution triangulée', body: "Co-promu sur slowmadly.com (guides nomades) et ai-by-job.com (carrières IA). Une seule annonce, trois audiences." },
+      { title: 'Issu de job boards tech', body: 'L’index est construit à partir de job boards tech remote : votre offre côtoie des postes en ingénierie, data, design et produit plutôt que des annonces généralistes.' },
+      { title: 'Les candidats postulent chez vous', body: "Chaque bouton de candidature mène directement à votre propre page de recrutement. Nous ne collectons aucune candidature et ne nous interposons jamais." },
       { title: 'Un pricing qui respecte le test', body: '49 $ pour 30 jours. Pas de contrat annuel, pas de call commercial, pas de MSA négocié. Si ça marche, vous renouvelez. Sinon, vous passez à autre chose.' },
     ],
-    audienceH2: 'Qui lit votre annonce',
-    audienceIntro: "Aperçu du côté candidat de la plateforme, basé sur les comportements de session et les requêtes récurrentes.",
-    roleMixTitle: 'Répartition par rôle',
-    seniorityMixTitle: 'Répartition par séniorité',
-    roleBars: [
-      { label: 'Backend / Fullstack', pct: 38 },
-      { label: 'Frontend / Mobile', pct: 22 },
-      { label: 'Data / ML / IA', pct: 16 },
-      { label: 'DevOps / Platform / Sécurité', pct: 11 },
-      { label: 'Produit / Design', pct: 9 },
-      { label: 'Autres tech', pct: 4 },
-    ],
-    seniorityBars: [
-      { label: 'Senior (5+ ans)', pct: 48 },
-      { label: 'Mid (2-5 ans)', pct: 31 },
-      { label: 'Staff / Principal', pct: 12 },
-      { label: 'Junior', pct: 9 },
-    ],
-    audienceFootnote: (n) =>
-      `Portée : candidats connectés depuis ${n}+ pays, principalement Europe de l'Ouest, Amérique du Nord, LATAM et Asie du Sud-Est.`,
     compareH2: 'Comment se compare un slot sponsorisé',
     compareHeaders: ['', 'slateremote.com', 'LinkedIn promu', 'Indeed sponsorisé'],
     compareRows: [
       ['Prix de départ', '49 $ / 30 jours', '300+ $ / 30 jours', '0,10-1 $ / clic'],
       ['Audience', 'Tech remote uniquement', 'Toutes industries', 'Toutes industries'],
-      ['Langues', '7 (auto)', '1 par annonce', '1 par annonce'],
+      ['Langues', '3 (auto)', '1 par annonce', '1 par annonce'],
       ['Indexation SEO', 'Page statique permanente', 'Derrière login', 'Expire vite'],
       ['Call commercial requis', 'Non', 'En entreprise', 'Non'],
       ['Tier agrégation gratuit', 'Oui, si vous êtes sur Remotive/RemoteOK/etc', 'Non', 'Non'],
@@ -324,41 +276,21 @@ const COPY: Record<Locale, Copy> = {
     ],
     whyH2: 'Warum hier posten statt LinkedIn oder Indeed',
     whyIntro:
-      'Die generischen Boards begraben Ihre Remote-Stelle unter 400 Büro-Jobs. Wir machen das Gegenteil: alles bei uns ist Remote, und die Audience hat sich genau dafür entschieden.',
+      'Die generischen Boards begraben Ihre Remote-Stelle unter 400 Büro-Jobs. Wir machen das Gegenteil: alles bei uns ist vollständig remote, Ihre Stelle geht nie unter Büro-Jobs unter.',
     why: [
-      { title: '100 % Remote-Audience', body: 'Keine Pendler, keine Relocation-Touristen. Jeder Besucher kam gezielt für Remote-Arbeit. Ihre Stelle lesen Kandidaten, die längst überzeugt sind.' },
-      { title: 'Mehrsprachige Reichweite by default', body: 'Ihre Stelle erscheint automatisch auf en-, fr-, es-, de-, pt-, it- und pl-Seiten, mit sauberem hreflang. Sie erreichen europäische Kandidaten, ohne sieben verschiedene Boards zu zahlen.' },
+      { title: 'Ein reiner Remote-Index', body: 'Jede Stelle im Index ist vollständig remote, Ihre Stelle konkurriert also nicht mit Büro-Jobs um Aufmerksamkeit.' },
+      { title: 'Drei Sprachen mit einem Inserat', body: 'Ihre Stelle erscheint in der englischen, französischen und deutschen Ausgabe, mit sauberem hreflang. Sie erreichen europäische Kandidaten, ohne drei verschiedene Boards zu zahlen.' },
       { title: 'SEO mit Zinseszins', body: 'Jede Stelle erhält eine eigene statische Seite mit JobPosting-Strukturdaten und ist damit für Google Jobs geeignet. Ihr Slot bleibt 30 Tage sichtbar, statt nach 48 Stunden in einem Feed zu versinken.' },
-      { title: 'Engineering-lastiger Mix', body: 'Audience eher Senior IC: Backend, Frontend, Fullstack, DevOps, Data, ML. Genau die Profile, die auf generischen Plattformen schwer zu sourcen sind.' },
-      { title: 'Triangulierte Distribution', body: 'Cross-Promotion auf slowmadly.com (Digital Nomad Guides) und ai-by-job.com (AI Careers). Ein Post, drei Audiences.' },
+      { title: 'Aus Tech-Jobbörsen', body: 'Der Index speist sich aus Remote-Tech-Jobbörsen, Ihre Stelle steht also neben Engineering-, Data-, Design- und Product-Rollen statt neben allgemeinen Anzeigen.' },
+      { title: 'Bewerbungen landen bei Ihnen', body: 'Jeder Bewerben-Button führt direkt zu Ihrer eigenen Bewerbungsseite. Wir sammeln keine Bewerbungen und stellen uns nie zwischen Sie und Kandidaten.' },
       { title: 'Preise, die den Test respektieren', body: '49 $ für 30 Tage. Kein Jahresvertrag, kein Sales-Call, kein verhandelter MSA. Funktioniert es, verlängern Sie. Wenn nicht, gehen Sie weiter.' },
     ],
-    audienceH2: 'Wer Ihre Stelle liest',
-    audienceIntro: 'Momentaufnahme der Kandidatenseite, basierend auf Session-Verhalten und wiederkehrenden Suchanfragen.',
-    roleMixTitle: 'Rollenmix',
-    seniorityMixTitle: 'Senioritätsmix',
-    roleBars: [
-      { label: 'Backend / Fullstack', pct: 38 },
-      { label: 'Frontend / Mobile', pct: 22 },
-      { label: 'Data / ML / KI', pct: 16 },
-      { label: 'DevOps / Platform / Security', pct: 11 },
-      { label: 'Product / Design', pct: 9 },
-      { label: 'Sonstige Tech', pct: 4 },
-    ],
-    seniorityBars: [
-      { label: 'Senior (5+ Jahre)', pct: 48 },
-      { label: 'Mid (2-5 Jahre)', pct: 31 },
-      { label: 'Staff / Principal', pct: 12 },
-      { label: 'Junior', pct: 9 },
-    ],
-    audienceFootnote: (n) =>
-      `Reichweite: Kandidaten aus ${n}+ Ländern, größte Kohorten in Westeuropa, Nordamerika, LATAM und Südostasien.`,
     compareH2: 'Wie sich ein gesponserter Slot vergleicht',
     compareHeaders: ['', 'slateremote.com', 'LinkedIn promoted', 'Indeed sponsored'],
     compareRows: [
       ['Einstiegspreis', '49 $ / 30 Tage', '300+ $ / 30 Tage', '0,10-1 $ / Klick'],
       ['Audience', 'Nur Remote-Tech', 'Alle Branchen', 'Alle Branchen'],
-      ['Sprachen', '7 (auto)', '1 pro Post', '1 pro Post'],
+      ['Sprachen', '3 (auto)', '1 pro Post', '1 pro Post'],
       ['SEO-Indexierung', 'Permanente statische Seite', 'Hinter Login', 'Läuft schnell ab'],
       ['Sales-Call nötig', 'Nein', 'Für Enterprise', 'Nein'],
       ['Kostenlose Aggregationsstufe', 'Ja, wenn auf Remotive/RemoteOK/etc', 'Nein', 'Nein'],
@@ -416,7 +348,6 @@ export default function EmployersPage({ params }: { params: { lang: Locale } }) 
   const meta = readJobs();
   const liveJobs = meta.count;
   const sourceCount = SCRAPERS.length;
-  const countryCount = topCountries(500).length;
 
   return (
     <div className="space-y-16">
@@ -500,25 +431,6 @@ export default function EmployersPage({ params }: { params: { lang: Locale } }) 
         </div>
       </section>
 
-      <section className="rounded-2xl border border-line bg-paper p-6 md:p-8">
-        <h2 className="font-display text-2xl md:text-3xl font-normal tracking-tighter text-ink">{c.audienceH2}</h2>
-        <p className="text-graphite mt-2 max-w-2xl">{c.audienceIntro}</p>
-        <div className="grid md:grid-cols-2 gap-8 mt-6">
-          <div>
-            <h3 className="text-xs uppercase tracking-wider text-muted font-semibold mb-3">{c.roleMixTitle}</h3>
-            {c.roleBars.map((b) => (
-              <BarRow key={b.label} label={b.label} pct={b.pct} />
-            ))}
-          </div>
-          <div>
-            <h3 className="text-xs uppercase tracking-wider text-muted font-semibold mb-3">{c.seniorityMixTitle}</h3>
-            {c.seniorityBars.map((b) => (
-              <BarRow key={b.label} label={b.label} pct={b.pct} />
-            ))}
-          </div>
-        </div>
-        <p className="text-xs text-muted mt-6">{c.audienceFootnote(countryCount)}</p>
-      </section>
 
       <section>
         <h2 className="font-display text-2xl md:text-3xl font-normal tracking-tighter text-ink">{c.compareH2}</h2>
@@ -629,16 +541,3 @@ function Why({ title, body }: { title: string; body: string }) {
   );
 }
 
-function BarRow({ label, pct }: { label: string; pct: number }) {
-  return (
-    <div className="mb-2.5">
-      <div className="flex justify-between text-xs mb-1">
-        <span className="text-graphite">{label}</span>
-        <span className="text-muted">{pct}%</span>
-      </div>
-      <div className="h-1.5 bg-sand rounded-full overflow-hidden">
-        <div className="h-full bg-forest rounded-full" style={{ width: `${pct}%` }} />
-      </div>
-    </div>
-  );
-}

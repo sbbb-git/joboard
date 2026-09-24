@@ -1,24 +1,25 @@
 import { LOCALES, type Locale } from '@/lib/types';
 
-// Honest, verifiable numbers pulled from Cloudflare zone analytics.
-// Update the constants below as the index grows; everything else recomputes.
-const MONTHLY_UNIQUES = 85_000;
-const WEEKLY_PAGEVIEWS = 56_000;
-const INDEXED_PAGES = 6_800;
+// Only claims that can be checked against the code or the build.
+//
+// This block used to show advertisers "85,000 unique visitors per month",
+// "56,000 page views per week" and "1,200 to 2,400 views per featured listing".
+// Those came from Cloudflare zone analytics, which counts every request
+// including crawlers and bots, not people, while Search Console showed about
+// 15 impressions a day. Presenting bot traffic as audience to someone paying
+// for a listing is misleading, so the traffic figures are gone. Put numbers
+// back only from a source that counts humans (the GA4 property), and only the
+// real ones.
 const LOCALES_COUNT = LOCALES.length;
 const SISTER_SITES_COUNT = 3;
-const FEATURED_30D_VIEWS_LOW = 1_200;
-const FEATURED_30D_VIEWS_HIGH = 2_400;
 
 type Copy = {
   eyebrow: string;
   title: string;
-  reach: (uniques: number, pv: number) => string;
-  pages: (n: number, langs: number) => string;
+  pages: (langs: number) => string;
   network: (n: number) => string;
   audience: string;
   fresh: string;
-  featured: (lo: number, hi: number) => string;
   featuredNote: string;
 };
 
@@ -26,48 +27,36 @@ const COPY: Record<Locale, Copy> = {
   en: {
     eyebrow: 'Why post here',
     title: 'Where your listing will be seen',
-    reach: (u, pv) =>
-      `${u.toLocaleString('en-US')} unique visitors per month and roughly ${pv.toLocaleString('en-US')} page views per week, growing.`,
-    pages: (n, langs) =>
-      `${n.toLocaleString('en-US')}+ statically prerendered pages across ${langs} natively translated languages.`,
+    pages: (langs) =>
+      `Each listing gets its own static page with JobPosting structured data, eligible for Google Jobs, in ${langs} languages.`,
     network: (n) =>
       `Part of a ${n}-site remote-work network (slateremote.com, slowmadly.com, ai-by-job.com) with cross-linking on relevant pages.`,
-    audience: 'Audience filtered for developers, data, design and product roles, all 100% remote.',
+    audience: 'Every listing is fully remote, across engineering, data, design and product roles.',
     fresh: 'Index refreshed weekly, sitemap submitted to Google and Bing, hreflang across English, French and German.',
-    featured: (lo, hi) =>
-      `Average featured listing: ${lo.toLocaleString('en-US')}–${hi.toLocaleString('en-US')} page views over 30 days.`,
     featuredNote:
       'Featured listings appear on the homepage, the role page, and all three language editions. Sponsored top slots add the homepage hero in all three.',
   },
   fr: {
     eyebrow: 'Pourquoi publier ici',
     title: 'Où votre offre sera vue',
-    reach: (u, pv) =>
-      `${u.toLocaleString('fr-FR')} visiteurs uniques par mois et environ ${pv.toLocaleString('fr-FR')} pages vues par semaine, en croissance.`,
-    pages: (n, langs) =>
-      `${n.toLocaleString('fr-FR')}+ pages pré-rendues statiquement dans ${langs} langues traduites nativement.`,
+    pages: (langs) =>
+      `Chaque offre a sa propre page statique avec des données structurées JobPosting, éligible à Google Jobs, en ${langs} langues.`,
     network: (n) =>
       `Partie d'un réseau de ${n} sites remote-work (slateremote.com, slowmadly.com, ai-by-job.com) avec maillage croisé sur les pages pertinentes.`,
-    audience: 'Audience filtrée : développeurs, data, design et produit, 100% remote.',
+    audience: 'Toutes les offres sont en full remote, en ingénierie, data, design et produit.',
     fresh: "Index actualisé chaque semaine, sitemap soumis à Google et Bing, hreflang en anglais, français et allemand.",
-    featured: (lo, hi) =>
-      `Annonce Featured moyenne : ${lo.toLocaleString('fr-FR')}–${hi.toLocaleString('fr-FR')} pages vues sur 30 jours.`,
     featuredNote:
       "Les annonces Featured apparaissent sur la home, la page du rôle et les trois éditions linguistiques. Les slots Sponsored top ajoutent le hero de la home dans les trois.",
   },
   de: {
     eyebrow: 'Warum hier posten',
     title: 'Wo deine Stelle gesehen wird',
-    reach: (u, pv) =>
-      `${u.toLocaleString('de-DE')} eindeutige Besucher pro Monat und rund ${pv.toLocaleString('de-DE')} Seitenaufrufe pro Woche, wachsend.`,
-    pages: (n, langs) =>
-      `${n.toLocaleString('de-DE')}+ statisch vorgerenderte Seiten in ${langs} nativ übersetzten Sprachen.`,
+    pages: (langs) =>
+      `Jede Stelle erhält eine eigene statische Seite mit JobPosting-Strukturdaten, geeignet für Google Jobs, in ${langs} Sprachen.`,
     network: (n) =>
       `Teil eines ${n}-Site-Remote-Work-Netzwerks (slateremote.com, slowmadly.com, ai-by-job.com) mit Cross-Linking auf relevanten Seiten.`,
-    audience: 'Zielgruppe gefiltert: Entwickler, Data, Design und Product, 100% remote.',
+    audience: 'Alle Stellen sind vollständig remote, in Engineering, Data, Design und Product.',
     fresh: 'Index wöchentlich aktualisiert, Sitemap an Google und Bing übermittelt, hreflang auf Englisch, Französisch und Deutsch.',
-    featured: (lo, hi) =>
-      `Durchschnittliche Featured-Stelle: ${lo.toLocaleString('de-DE')}–${hi.toLocaleString('de-DE')} Seitenaufrufe in 30 Tagen.`,
     featuredNote:
       'Featured-Stellen erscheinen auf der Homepage, der Rollen-Seite und allen drei Sprachausgaben. Sponsored-Top-Slots erweitern um den Homepage-Hero in allen drei.',
   },
@@ -84,11 +73,7 @@ export function TrustBlock({ locale }: { locale: Locale }) {
       <ul className="mt-5 space-y-2.5 text-sm text-graphite">
         <li className="flex items-start gap-2">
           <Check />
-          <span>{c.reach(MONTHLY_UNIQUES, WEEKLY_PAGEVIEWS)}</span>
-        </li>
-        <li className="flex items-start gap-2">
-          <Check />
-          <span>{c.pages(INDEXED_PAGES, LOCALES_COUNT)}</span>
+          <span>{c.pages(LOCALES_COUNT)}</span>
         </li>
         <li className="flex items-start gap-2">
           <Check />
@@ -104,8 +89,7 @@ export function TrustBlock({ locale }: { locale: Locale }) {
         </li>
       </ul>
       <div className="mt-6 pt-5 border-t border-line">
-        <p className="text-ink font-semibold text-sm">{c.featured(FEATURED_30D_VIEWS_LOW, FEATURED_30D_VIEWS_HIGH)}</p>
-        <p className="text-xs text-muted mt-1.5 leading-relaxed">{c.featuredNote}</p>
+        <p className="text-xs text-muted leading-relaxed">{c.featuredNote}</p>
       </div>
     </section>
   );
