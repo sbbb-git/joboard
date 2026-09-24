@@ -1,5 +1,11 @@
 import type { MetadataRoute } from 'next';
-import { allJobs, topCompanies, topCountries, hasCountrySalaryData } from '@/lib/jobs';
+import {
+  allJobs,
+  topCompanies,
+  topCountries,
+  hasCountrySalaryData,
+  COMPANY_INDEX_MIN_JOBS,
+} from '@/lib/jobs';
 import { ROLES } from '@/lib/types';
 import { LOCALES, DEFAULT_LOCALE } from '@/lib/i18n';
 import { SITE_URL, canonicalPath } from '@/lib/seo';
@@ -8,7 +14,6 @@ import { SKILLS } from '@/lib/skills';
 import { CITIES } from '@/lib/cities';
 import { GUIDES } from '@/lib/guides';
 import { COMPARISONS } from '@/lib/comparisons';
-import { WC2026_CITIES } from '@/lib/world-cup-2026';
 
 export const dynamic = 'force-static';
 
@@ -81,8 +86,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   addStatic('/submit', 0.6);
   addStatic('/employers', 0.6);
   addStatic('/earn-online', 0.75);
-  addStatic('/world-cup-2026', 0.8);
-  for (const city of WC2026_CITIES) addStatic(`/world-cup-2026/${city.slug}`, 0.75);
   addStatic('/network', 0.5);
   addStatic('/about', 0.5);
   addStatic('/contact', 0.4);
@@ -104,7 +107,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const g of GUIDES) addStatic(`/guides/${g.slug}`, 0.7);
   for (const cmp of COMPARISONS) addStatic(`/compare/${cmp.slug}`, 0.65);
   for (const c of topCountries(1000)) add(`/locations/${c.slug}`, now, 0.6);
-  for (const c of topCompanies(10000)) add(`/companies/${c.slug}`, now, 0.5);
+  // Same threshold the company page applies: single-opening companies render
+  // noindex, so listing them would point Google at pages we ask it to skip.
+  for (const c of topCompanies(10000)) {
+    if (c.count < COMPANY_INDEX_MIN_JOBS) continue;
+    add(`/companies/${c.slug}`, now, 0.5);
+  }
 
   // Active job postings only. Expired ones render noindex, so listing them
   // would send Google to pages we explicitly ask it not to index.

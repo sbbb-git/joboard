@@ -11,7 +11,7 @@ slateremote.com indexes engineering, data, design and product jobs that are expl
 - [Cities for remote tech workers](https://slateremote.com/en/cities): 49 cities profiled with cost, internet, visa, timezone
 - [Skills index](https://slateremote.com/en/skills): 60 languages, frameworks, clouds, data, AI/ML, mobile and web3 tags
 - [Companies](https://slateremote.com/en/companies): every company currently posting remote tech jobs, grouped by active openings
-- [Guides](https://slateremote.com/en/guides): 139 long-form guides on finding remote work, salary, visas, taxes, lifestyle and tools
+- [Guides](https://slateremote.com/en/guides): 129 long-form guides on finding remote work, salary, visas, taxes, lifestyle and tools
 - [Compare](https://slateremote.com/en/compare): 16 head-to-head comparisons (remote vs hybrid, Lisbon vs Barcelona, Portugal D8 vs Spain DNV, etc.)
 - [Glossary](https://slateremote.com/en/glossary): 40 remote work terms (RTO, EOR, async, DNV, RSU, slowmad, etc.)
 
@@ -146,16 +146,6 @@ slateremote.com indexes engineering, data, design and product jobs that are expl
 - [How to quit a remote job without burning bridges](https://slateremote.com/en/guides/how-to-quit-without-burning-bridges-remote): The practical playbook for resigning cleanly from a remote engineering role in 2026.
 - [Surviving remote team meetings in 2026](https://slateremote.com/en/guides/remote-team-meetings-survival-guide-2026): How to reduce, structure, and survive the meeting load on a remote engineering team.
 - [How to take a tech sabbatical in 2026](https://slateremote.com/en/guides/how-to-take-a-tech-sabbatical-2026): The practical setup for taking a multi-month sabbatical from a tech career without permanently damaging it.
-- [Working remote from a 2026 World Cup host city: practical setup](https://slateremote.com/en/guides/world-cup-2026-remote-work-from-host-cities): Which 2026 World Cup host cities work for a remote tech worker chasing matches, and what to plan before showing up.
-- [Travel insurance for the 2026 World Cup across USA, Canada, Mexico](https://slateremote.com/en/guides/world-cup-2026-travel-insurance-multi-country): How to pick travel and health insurance that covers all three 2026 World Cup host countries for fans attending matches in multiple cities.
-- [Spending across USD, CAD, MXN during the 2026 World Cup](https://slateremote.com/en/guides/world-cup-2026-multi-currency-spending-usa-canada-mexico): A practical setup for spending in three currencies during the 2026 World Cup without losing 3 percent on every transaction.
-- [Time off and async strategies for remote developers during the 2026 World Cup](https://slateremote.com/en/guides/world-cup-2026-remote-developer-time-off-strategies): How remote developers can attend or follow the 2026 World Cup without burning all their PTO or compromising delivery.
-- [ESTA and B-2 visa for international fans at the 2026 World Cup in the USA](https://slateremote.com/en/guides/world-cup-2026-esta-visa-for-international-fans): How international fans can enter the United States for the 2026 World Cup: ESTA, B-2, processing time, and the documents that matter.
-- [Public transit at the 11 US host cities for the 2026 World Cup](https://slateremote.com/en/guides/world-cup-2026-us-host-cities-public-transit-guide): How to get to each US stadium for the 2026 World Cup using public transit, ride share, or rental car.
-- [All 11 US 2026 World Cup stadiums compared](https://slateremote.com/en/guides/world-cup-2026-us-stadium-comparison): A direct comparison of the 11 US World Cup 2026 stadiums on capacity, sightlines, surface, fan experience and access.
-- [East Coast US multi-city itinerary for the 2026 World Cup](https://slateremote.com/en/guides/world-cup-2026-us-east-coast-multi-city-itinerary): A practical multi-city itinerary chaining East Coast US host cities for fans attending several 2026 World Cup matches.
-- [Watch parties and fan zones across US host cities for the 2026 World Cup](https://slateremote.com/en/guides/world-cup-2026-us-watch-parties-and-fan-zones): Official and unofficial watch parties, fan zones, and bar guides for fans attending or watching the 2026 World Cup in US host cities.
-- [Working remote from the US during the 2026 World Cup as a foreign fan](https://slateremote.com/en/guides/world-cup-2026-working-remote-from-us-as-foreign-fan): The visa and tax constraints on working remotely from the US during the 2026 World Cup as a foreign visitor.
 
 ## Cities
 

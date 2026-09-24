@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { JobCard } from '@/components/JobCard';
-import { jobsByCompany, topCompanies } from '@/lib/jobs';
+import { jobsByCompany, topCompanies, COMPANY_INDEX_MIN_JOBS } from '@/lib/jobs';
 import { LOCALES } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import { roleLabel } from '@/lib/labels';
@@ -83,6 +83,12 @@ export function generateMetadata({
     path: `companies/${params.name}`,
     title: c.metaTitle(companyName),
     description: c.metaDescription(companyName, jobs.length, roles),
+    // A company with a single opening restates that one posting, which is
+    // already indexed in full on its own /job/ page. 222 of 289 companies are
+    // in that position, so indexing them means 1,554 near-duplicate pages
+    // across 7 locales for 12 impressions. Kept crawlable and linked, just
+    // not indexed; a company flips back the moment it lists a second role.
+    index: jobs.length >= COMPANY_INDEX_MIN_JOBS,
   });
 }
 

@@ -87,6 +87,12 @@ export function salaryStats(role: Role, currency = 'USD') {
 // combinations currently have no published salary at all, and an indexable
 // "not enough data yet" page repeated across 7 locales is 903 near-duplicate
 // thin pages competing for a crawl budget the job pages need.
+// Minimum openings for a company page to carry its own weight in the index.
+// Below this a company page just restates the single posting that is already
+// indexed in full on its own /job/ page. Shared by the company page and the
+// sitemap so they cannot disagree.
+export const COMPANY_INDEX_MIN_JOBS = 2;
+
 export function salaryStatsByCountry(role: Role, countrySlug: string) {
   const target = countrySlug.replace(/-/g, ' ').toLowerCase();
   const byCurrency = new Map<string, number[]>();
