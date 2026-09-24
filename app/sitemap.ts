@@ -82,8 +82,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   add('/locations', now, 0.8);
   add('/companies', now, 0.7);
   addStatic('/glossary', 0.7);
-  addStatic('/submit', 0.6);
-  addStatic('/employers', 0.6);
   addStatic('/earn-online', 0.75);
   addStatic('/network', 0.5);
   addStatic('/about', 0.5);

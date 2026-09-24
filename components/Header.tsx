@@ -25,12 +25,6 @@ export function Header({ locale, path }: { locale: Locale; path: string }) {
           >
             {t(locale, 'nav.travel')} ↗
           </a>
-          <Link
-            href={localePath(locale, 'employers')}
-            className="ml-1 px-2.5 sm:px-3 py-1.5 text-xs font-semibold text-bg bg-ink rounded-full hover:bg-forest transition-colors whitespace-nowrap"
-          >
-            {t(locale, 'nav.postJob')}
-          </Link>
           <span className="ml-1.5 sm:ml-2 pl-1.5 sm:pl-2 border-l border-line">
             <LangSwitcher current={locale} path={path} />
           </span>

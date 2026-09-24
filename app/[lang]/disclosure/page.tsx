@@ -19,9 +19,6 @@ type Copy = {
   intro: string;
   h2Paid: string;
   bodyPaid: string;
-  paidFeaturedPre: string;
-  paidFeaturedLink: string;
-  paidFeaturedPost: string;
   paidAffiliates: string;
   paidSister: string;
   h2WillNot: string;
@@ -45,10 +42,7 @@ const COPY: Record<Locale, Copy> = {
     h1: 'Affiliate disclosure',
     intro: 'Every product slateremote.com recommends is either a tool we use ourselves or one we have vetted carefully for the remote tech audience. Some of those product links pay us a commission. This page lists every commercial relationship, in full.',
     h2Paid: 'How we get paid',
-    bodyPaid: 'slateremote.com is free to browse, has no ads, and never charges candidates. The site covers its own costs (domain, hosting is free on Cloudflare Pages) through three channels:',
-    paidFeaturedPre: 'Featured job postings. Employers can pay to highlight a role across the site. See',
-    paidFeaturedLink: 'the submit page',
-    paidFeaturedPost: '.',
+    bodyPaid: 'slateremote.com is free to browse, has no ads, and never charges candidates. The site covers its own costs (domain, hosting is free on Cloudflare Pages) through two channels:',
     paidAffiliates: 'Affiliate partnerships. We earn a small commission if you sign up to one of the listed services through a link on this site. The full list is below.',
     paidSister: 'Sister sites. slateremote.com is part of a small network with slowmadly.com (slow-travel guides) and ai-by-job.com (AI tools by job). Each can earn from its own monetisation channels.',
     h2WillNot: 'What we will not do',
@@ -75,10 +69,7 @@ const COPY: Record<Locale, Copy> = {
     h1: 'Divulgation des affiliations',
     intro: "Chaque produit recommandé par slateremote.com est soit un outil que nous utilisons nous-mêmes, soit un service que nous avons soigneusement examiné pour l'audience tech remote. Certains de ces liens nous rémunèrent. Cette page liste toutes les relations commerciales, intégralement.",
     h2Paid: 'Comment nous sommes payés',
-    bodyPaid: "slateremote.com est gratuit, sans pub, et ne facture jamais les candidats. Le site couvre ses coûts (le domaine, l'hébergement est gratuit sur Cloudflare Pages) via trois canaux :",
-    paidFeaturedPre: "Annonces mises en avant. Les employeurs peuvent payer pour mettre une offre en avant sur le site. Voir",
-    paidFeaturedLink: 'la page publication',
-    paidFeaturedPost: '.',
+    bodyPaid: "slateremote.com est gratuit, sans pub, et ne facture jamais les candidats. Le site couvre ses coûts (le domaine, l'hébergement est gratuit sur Cloudflare Pages) via deux canaux :",
     paidAffiliates: 'Partenariats affiliés. Nous touchons une petite commission si vous vous inscrivez à un des services listés via un lien du site. La liste complète est ci-dessous.',
     paidSister: 'Sites jumeaux. slateremote.com fait partie d\'un petit réseau avec slowmadly.com (guides de slow-travel) et ai-by-job.com (outils IA par métier). Chacun a ses propres canaux de monétisation.',
     h2WillNot: 'Ce que nous ne ferons pas',
@@ -105,10 +96,7 @@ const COPY: Record<Locale, Copy> = {
     h1: 'Affiliate-Offenlegung',
     intro: 'Jedes Produkt, das slateremote.com empfiehlt, ist entweder ein Tool, das wir selbst nutzen, oder ein Dienst, den wir sorgfältig für die Remote-Tech-Audience geprüft haben. Einige dieser Produktlinks zahlen uns eine Provision. Diese Seite listet jede kommerzielle Beziehung vollständig auf.',
     h2Paid: 'Wie wir bezahlt werden',
-    bodyPaid: 'slateremote.com ist kostenlos nutzbar, hat keine Werbung und berechnet Kandidaten nie etwas. Die Seite deckt ihre Kosten (Domain, Hosting ist kostenlos auf Cloudflare Pages) über drei Kanäle:',
-    paidFeaturedPre: 'Hervorgehobene Stellenanzeigen. Arbeitgeber können zahlen, um eine Stelle auf der Seite hervorzuheben. Siehe',
-    paidFeaturedLink: 'die Veröffentlichungs-Seite',
-    paidFeaturedPost: '.',
+    bodyPaid: 'slateremote.com ist kostenlos nutzbar, hat keine Werbung und berechnet Kandidaten nie etwas. Die Seite deckt ihre Kosten (Domain, Hosting ist kostenlos auf Cloudflare Pages) über zwei Kanäle:',
     paidAffiliates: 'Affiliate-Partnerschaften. Wir erhalten eine kleine Provision, wenn Sie sich über einen Link dieser Seite bei einem der gelisteten Dienste anmelden. Die vollständige Liste finden Sie unten.',
     paidSister: 'Schwesterseiten. slateremote.com ist Teil eines kleinen Netzwerks mit slowmadly.com (Slow-Travel-Guides) und ai-by-job.com (AI-Tools nach Job). Jede Seite kann über eigene Monetarisierungskanäle verdienen.',
     h2WillNot: 'Was wir nicht tun werden',
@@ -154,11 +142,6 @@ export default function DisclosurePage({ params }: { params: { lang: Locale } })
         <h2>{c.h2Paid}</h2>
         <p>{c.bodyPaid}</p>
         <ul>
-          <li>
-            <strong>{c.paidFeaturedPre}</strong>{' '}
-            <a href={localePath(params.lang, 'submit')}>{c.paidFeaturedLink}</a>
-            {c.paidFeaturedPost}
-          </li>
           <li>{c.paidAffiliates}</li>
           <li>{c.paidSister}</li>
         </ul>

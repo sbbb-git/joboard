@@ -19,8 +19,6 @@ type Copy = {
   bodyTakedowns: string;
   h2Listing: string;
   bodyListingPre: string;
-  bodyListingLink: string;
-  bodyListingPost: string;
   h2Partnerships: string;
   bodyPartnerships: string;
 };
@@ -34,9 +32,7 @@ const COPY: Record<Locale, Copy> = {
     h2Takedowns: 'Corrections and takedowns',
     bodyTakedowns: 'If a listing is incorrect, outdated, or you are the employer and would like it removed, email us with the job URL. We process takedown requests within 48 hours.',
     h2Listing: 'Listing a job',
-    bodyListingPre: 'slateremote.com indexes jobs from public job board APIs. To list yours, simply publish on any of our source sites and it appears here within 24 hours. For featured placement across the site, see the',
-    bodyListingLink: 'submit page',
-    bodyListingPost: '.',
+    bodyListingPre: 'slateremote.com indexes jobs from public job board APIs. To list yours, publish it on any of our source sites and it appears here within a week.',
     h2Partnerships: 'Partnerships',
     bodyPartnerships: 'For partnership and integration inquiries, email us with a brief description of what you have in mind.',
   },
@@ -48,9 +44,7 @@ const COPY: Record<Locale, Copy> = {
     h2Takedowns: 'Corrections et retraits',
     bodyTakedowns: "Si une annonce est inexacte, périmée, ou si vous êtes l'employeur et souhaitez son retrait, envoyez-nous l'URL de l'offre par email. Les demandes de retrait sont traitées sous 48 h.",
     h2Listing: 'Publier une offre',
-    bodyListingPre: 'slateremote.com indexe les offres depuis des APIs publiques. Pour publier la vôtre, postez simplement sur l\'un de nos sites sources et elle apparaît ici sous 24 h. Pour une mise en avant payante, voir la',
-    bodyListingLink: 'page publication',
-    bodyListingPost: '.',
+    bodyListingPre: 'slateremote.com indexe les offres depuis des APIs publiques. Pour publier la vôtre, postez-la sur l\'un de nos sites sources et elle apparaît ici sous une semaine.',
     h2Partnerships: 'Partenariats',
     bodyPartnerships: "Pour partenariats et intégrations, envoyez-nous un email avec une brève description de ce que vous avez en tête.",
   },
@@ -62,9 +56,7 @@ const COPY: Record<Locale, Copy> = {
     h2Takedowns: 'Korrekturen und Löschungen',
     bodyTakedowns: 'Wenn ein Inserat falsch oder veraltet ist, oder Sie der Arbeitgeber sind und es entfernen lassen möchten, senden Sie uns die Job-URL per E-Mail. Löschanfragen bearbeiten wir innerhalb von 48 Stunden.',
     h2Listing: 'Job veröffentlichen',
-    bodyListingPre: 'slateremote.com indexiert Jobs aus öffentlichen Job-Board-APIs. Um Ihren zu listen, veröffentlichen Sie ihn einfach auf einer unserer Quellseiten und er erscheint innerhalb von 24 Stunden hier. Für hervorgehobene Platzierung siehe die',
-    bodyListingLink: 'Veröffentlichungs-Seite',
-    bodyListingPost: '.',
+    bodyListingPre: 'slateremote.com indexiert Jobs aus öffentlichen Job-Board-APIs. Um Ihren zu listen, veröffentlichen Sie ihn einfach auf einer unserer Quellseiten und er erscheint innerhalb von einer Woche hier.',
     h2Partnerships: 'Partnerschaften',
     bodyPartnerships: 'Für Partnerschafts- und Integrationsanfragen schicken Sie uns eine kurze Beschreibung Ihres Anliegens per E-Mail.',
   },
@@ -103,11 +95,7 @@ export default function ContactPage({ params }: { params: { lang: Locale } }) {
 
         <h2 className="text-lg font-semibold">{c.h2Listing}</h2>
         <p>
-          {c.bodyListingPre}{' '}
-          <a href={localePath(params.lang, 'submit')} className="text-forest hover:underline">
-            {c.bodyListingLink}
-          </a>
-          {c.bodyListingPost}
+          {c.bodyListingPre}
         </p>
 
         <h2 className="text-lg font-semibold">{c.h2Partnerships}</h2>

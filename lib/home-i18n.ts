@@ -38,7 +38,7 @@ export const HOME: Record<Locale, HomeCopy> = {
     metaTitle: 'Remote tech jobs from across the web, refreshed weekly',
     metaDescription:
       'Remote engineering, data, design and product jobs aggregated weekly from ten public job boards, with salary bands, company pages and guides for remote workers.',
-    badge: (n) => `Updated every 24 hours · ${n} active jobs`,
+    badge: (n) => `Updated weekly · ${n} active jobs`,
     h1a: 'Find your next ', h1em: 'remote tech role', h1b: ', fresh every week.',
     browseJobs: (n) => `Browse ${n} jobs →`, seeSalary: 'See salary data',
     stat: { jobs: 'active jobs', countries: 'countries', companies: 'companies', guides: 'long-form guides' },
@@ -56,7 +56,7 @@ export const HOME: Record<Locale, HomeCopy> = {
     metaTitle: 'Offres tech remote du web entier, mises à jour chaque semaine',
     metaDescription:
       "Offres remote en ingénierie, data, design et produit agrégées chaque semaine depuis dix job boards publics, avec fourchettes salariales, fiches entreprises et guides pour travailler en remote.",
-    badge: (n) => `Mis à jour toutes les 24h · ${n} offres actives`,
+    badge: (n) => `Mis à jour chaque semaine · ${n} offres actives`,
     h1a: 'Trouvez votre prochain ', h1em: 'rôle tech remote', h1b: ', frais chaque semaine.',
     browseJobs: (n) => `Parcourir ${n} offres →`, seeSalary: 'Voir les salaires',
     stat: { jobs: 'offres actives', countries: 'pays', companies: 'entreprises', guides: 'guides longs' },
@@ -74,7 +74,7 @@ export const HOME: Record<Locale, HomeCopy> = {
     metaTitle: 'Remote-Tech-Jobs aus dem ganzen Web, wöchentlich aktualisiert',
     metaDescription:
       'Remote-Jobs in Engineering, Data, Design und Product, wöchentlich aus zehn öffentlichen Jobbörsen aggregiert, mit Gehaltsbändern, Unternehmensseiten und Guides für Remote-Arbeit.',
-    badge: (n) => `Alle 24h aktualisiert · ${n} aktive Jobs`,
+    badge: (n) => `Wöchentlich aktualisiert · ${n} aktive Jobs`,
     h1a: 'Finden Sie Ihre nächste ', h1em: 'Remote-Tech-Rolle', h1b: ', wöchentlich frisch.',
     browseJobs: (n) => `${n} Jobs durchsuchen →`, seeSalary: 'Gehaltsdaten ansehen',
     stat: { jobs: 'aktive Jobs', countries: 'Länder', companies: 'Unternehmen', guides: 'ausführliche Guides' },
