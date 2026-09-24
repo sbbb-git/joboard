@@ -22,7 +22,7 @@ const COPY: Record<Locale, JobsCopy> = {
   en: {
     metaTitle: 'Search remote tech jobs',
     metaDescription:
-      'Filter every active remote tech job in our index by role, country, seniority, employment type, and salary. Updated daily.',
+      'Filter every active remote tech job in our index by role, country, seniority, employment type, and salary. Updated weekly.',
     eyebrow: 'Search',
     intro: (n) =>
       `${n} active remote tech jobs. Filter by role, country, level, contract type and salary, all in the browser. No signup needed.`,
@@ -32,7 +32,7 @@ const COPY: Record<Locale, JobsCopy> = {
   fr: {
     metaTitle: 'Rechercher des offres tech remote',
     metaDescription:
-      'Filtrez toutes les offres tech remote actives de notre index par rôle, pays, niveau, type de contrat et salaire. Mis à jour chaque jour.',
+      'Filtrez toutes les offres tech remote actives de notre index par rôle, pays, niveau, type de contrat et salaire. Mis à jour chaque semaine.',
     eyebrow: 'Recherche',
     intro: (n) =>
       `${n} offres tech remote actives. Filtrez par rôle, pays, niveau, type de contrat et salaire, le tout dans le navigateur. Sans inscription.`,
@@ -42,7 +42,7 @@ const COPY: Record<Locale, JobsCopy> = {
   de: {
     metaTitle: 'Remote-Tech-Jobs suchen',
     metaDescription:
-      'Filtere jeden aktiven Remote-Tech-Job in unserem Index nach Rolle, Land, Level, Anstellungsart und Gehalt. Täglich aktualisiert.',
+      'Filtere jeden aktiven Remote-Tech-Job in unserem Index nach Rolle, Land, Level, Anstellungsart und Gehalt. Wöchentlich aktualisiert.',
     eyebrow: 'Suche',
     intro: (n) =>
       `${n} aktive Remote-Tech-Jobs. Filtere nach Rolle, Land, Level, Vertragsart und Gehalt, alles im Browser. Keine Anmeldung nötig.`,
@@ -65,9 +65,12 @@ export default function JobsList({ params }: { params: { lang: Locale } }) {
   const locale = params.lang;
   const c = COPY[locale];
   const all = allJobs();
-  const recent = [...all]
-    .sort((a, b) => Date.parse(b.postedAt) - Date.parse(a.postedAt))
-    .slice(0, 200);
+  // Every active posting, not just the most recent. This is the one page that
+  // links them all, so capping it orphans whatever falls past the cap: at 200,
+  // 51 postings per locale were reachable only through their single-opening
+  // company page, and those pages are no longer built. Job pages carry ~90% of
+  // search impressions, so none can be left without an inbound link.
+  const recent = [...all].sort((a, b) => Date.parse(b.postedAt) - Date.parse(a.postedAt));
   const itemList = itemListJsonLd(
     all.slice(0, 30).map((j) => ({
       name: `${j.title} at ${j.company}`,

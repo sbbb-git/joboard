@@ -130,12 +130,12 @@ const COPY: Record<Locale, Copy> = {
     h1: 'Hire engineers who already chose remote.',
     intro:
       'slateremote.com is a focused remote tech job network. We index every remote-friendly role across the major public boards, then publish them in English, French and German with full SEO coverage. Your sponsored listing rides on top of that distribution.',
-    ctaPrimary: 'Post a job — from $49',
+    ctaPrimary: 'Post a job · from $49',
     ctaSecondary: 'Talk to us',
     statLabels: [
       'Active remote jobs indexed today',
       'SEO-indexed pages across the site',
-      'Public job sources aggregated daily',
+      'Public job sources aggregated weekly',
       'Languages (en · fr · es · de · pt · it · pl)',
     ],
     whyH2: 'Why post here instead of LinkedIn or Indeed',
@@ -222,12 +222,12 @@ const COPY: Record<Locale, Copy> = {
     h1: 'Recrutez des ingénieurs qui ont déjà choisi le remote.',
     intro:
       "slateremote.com est un réseau d'emploi tech remote spécialisé. Nous indexons chaque poste remote-friendly des grands job boards publics, puis nous le publions en anglais, français et allemand avec une couverture SEO complète. Votre annonce sponsorisée surfe sur cette distribution.",
-    ctaPrimary: 'Publier une offre — à partir de 49 $',
+    ctaPrimary: 'Publier une offre · à partir de 49 $',
     ctaSecondary: 'Nous contacter',
     statLabels: [
       "Offres remote indexées aujourd'hui",
       'Pages indexées par Google',
-      'Sources publiques agrégées chaque jour',
+      'Sources publiques agrégées chaque semaine',
       'Langues (en · fr · es · de · pt · it · pl)',
     ],
     whyH2: 'Pourquoi publier ici plutôt que sur LinkedIn ou Indeed',
@@ -314,12 +314,12 @@ const COPY: Record<Locale, Copy> = {
     h1: 'Stellen Sie Engineers ein, die sich schon für Remote entschieden haben.',
     intro:
       'slateremote.com ist ein fokussiertes Remote-Tech-Jobnetzwerk. Wir indexieren jede remote-freundliche Stelle der großen öffentlichen Boards und veröffentlichen sie auf Englisch, Französisch und Deutsch mit vollständiger SEO-Abdeckung. Ihr gesponserter Eintrag fährt auf dieser Distribution mit.',
-    ctaPrimary: 'Job posten — ab 49 $',
+    ctaPrimary: 'Job posten · ab 49 $',
     ctaSecondary: 'Sprechen wir',
     statLabels: [
       'Heute indexierte Remote-Jobs',
       'SEO-indexierte Seiten',
-      'Täglich aggregierte öffentliche Quellen',
+      'Wöchentlich aggregierte öffentliche Quellen',
       'Sprachen (en · fr · es · de · pt · it · pl)',
     ],
     whyH2: 'Warum hier posten statt LinkedIn oder Indeed',

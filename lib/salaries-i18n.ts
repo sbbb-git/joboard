@@ -35,7 +35,7 @@ export const SALARIES_INDEX_I18N: Record<Locale, SalariesIndexCopy> = {
   en: {
     metaTitle: 'Remote tech salary benchmarks by role and country',
     metaDescription: (r, c) =>
-      `Median, average and percentile salary ranges for ${r} remote tech roles across ${c} hiring markets, computed live from current job listings. Free, updated daily.`,
+      `Median, average and percentile salary ranges for ${r} remote tech roles across ${c} hiring markets, computed live from current job listings. Free, updated weekly.`,
     eyebrow: 'Salaries',
     h1: 'Remote tech salary benchmarks',
     intro: (r, c) =>
@@ -53,7 +53,7 @@ export const SALARIES_INDEX_I18N: Record<Locale, SalariesIndexCopy> = {
   fr: {
     metaTitle: 'Benchmarks de salaires tech remote par rôle et pays',
     metaDescription: (r, c) =>
-      `Fourchettes salariales médianes et percentiles pour ${r} rôles tech remote sur ${c} marchés du recrutement, calculées depuis les offres actives. Gratuit, mis à jour chaque jour.`,
+      `Fourchettes salariales médianes et percentiles pour ${r} rôles tech remote sur ${c} marchés du recrutement, calculées depuis les offres actives. Gratuit, mis à jour chaque semaine.`,
     eyebrow: 'Salaires',
     h1: 'Benchmarks de salaires tech remote',
     intro: (r, c) =>
@@ -71,7 +71,7 @@ export const SALARIES_INDEX_I18N: Record<Locale, SalariesIndexCopy> = {
   de: {
     metaTitle: 'Remote-Tech-Gehalts-Benchmarks nach Rolle und Land',
     metaDescription: (r, c) =>
-      `Median-, Durchschnitts- und Perzentil-Gehaltsspannen für ${r} Remote-Tech-Rollen in ${c} Einstellungsmärkten, live aus aktuellen Stellenanzeigen berechnet. Täglich aktualisiert.`,
+      `Median-, Durchschnitts- und Perzentil-Gehaltsspannen für ${r} Remote-Tech-Rollen in ${c} Einstellungsmärkten, live aus aktuellen Stellenanzeigen berechnet. Wöchentlich aktualisiert.`,
     eyebrow: 'Gehälter',
     h1: 'Remote-Tech-Gehalts-Benchmarks',
     intro: (r, c) =>

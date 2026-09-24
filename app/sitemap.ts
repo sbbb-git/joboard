@@ -44,7 +44,7 @@ type SitemapEntry = MetadataRoute.Sitemap[number];
 //
 // lastModified is omitted for editorial pages. Stamping every URL with the
 // build time told Google all 8,700 pages changed on every deploy, which is
-// false for guides, city profiles and comparisons and teaches it to discount
+// false for guides and other editorial pages and teaches it to discount
 // the signal. Only pages whose content actually moves with the job index
 // carry a date.
 function localeUrls(

@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { salaryStats } from '@/lib/jobs';
+import { salaryStats, hasCountrySalaryData } from '@/lib/jobs';
 import { ROLES, type Locale, type Role } from '@/lib/types';
 import { LOCALES, t, localePath } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
@@ -131,6 +131,7 @@ export default function SalaryPage({ params }: { params: { lang: Locale; role: s
   const role = params.role as Role;
   const c = SALARY_I18N[params.lang];
   const roleName = roleLabel(params.lang, params.role);
+  const countriesWithData = TOP_COUNTRIES.filter((country) => hasCountrySalaryData(role, country));
   const usd = salaryStats(role, 'USD');
   const eur = salaryStats(role, 'EUR');
   return (
@@ -152,21 +153,23 @@ export default function SalaryPage({ params }: { params: { lang: Locale; role: s
         <p className="text-muted text-sm">{c.noData(roleName)}</p>
       )}
 
-      <section>
-        <h2 className="text-base font-semibold text-ink mb-3">{c.byCountryHeading}</h2>
-        <ul className="flex flex-wrap gap-2">
-          {TOP_COUNTRIES.map((country) => (
-            <li key={country}>
-              <Link
-                href={localePath(params.lang, `salaries/${role}/${country}`)}
-                className="inline-block text-sm px-3 py-1 rounded-full bg-sand border border-line text-graphite hover:border-ink hover:text-ink"
-              >
-                {countryLabel(country)}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
+      {countriesWithData.length > 0 && (
+        <section>
+          <h2 className="text-base font-semibold text-ink mb-3">{c.byCountryHeading}</h2>
+          <ul className="flex flex-wrap gap-2">
+            {countriesWithData.map((country) => (
+              <li key={country}>
+                <Link
+                  href={localePath(params.lang, `salaries/${role}/${country}`)}
+                  className="inline-block text-sm px-3 py-1 rounded-full bg-sand border border-line text-graphite hover:border-ink hover:text-ink"
+                >
+                  {countryLabel(country)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section>
         <h2 className="text-base font-semibold text-ink mb-3">{c.otherRolesHeading}</h2>
@@ -187,7 +190,7 @@ export default function SalaryPage({ params }: { params: { lang: Locale; role: s
       <section className="text-sm text-muted leading-relaxed">
         <h2 className="text-base font-semibold text-ink mb-2">{c.howCalculated}</h2>
         <p>
-          {c.methodology} {t(params.lang, 'footer.refreshed')} daily.
+          {c.methodology} {t(params.lang, 'footer.refreshed')} weekly.
         </p>
       </section>
     </div>

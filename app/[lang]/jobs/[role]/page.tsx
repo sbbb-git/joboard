@@ -27,9 +27,9 @@ type RoleCopy = {
 
 const ROLE_I18N: Record<Locale, RoleCopy> = {
   en: {
-    metaTitle: (r) => `Remote ${r} jobs, updated daily`,
+    metaTitle: (r) => `Remote ${r} jobs, updated weekly`,
     metaDescription: (r) =>
-      `Browse open remote ${r} positions aggregated from public job board APIs. Filter by seniority, salary and timezone. Updated daily, free.`,
+      `Browse open remote ${r} positions aggregated from public job board APIs. Filter by seniority, salary and timezone. Updated weekly, free.`,
     eyebrow: 'Role',
     h1: (r) => `Remote ${r} jobs`,
     openPositions: (n) => `${n} open position${n === 1 ? '' : 's'}`,
@@ -43,9 +43,9 @@ const ROLE_I18N: Record<Locale, RoleCopy> = {
     openPositions: (n) => `${n} poste${n === 1 ? '' : 's'} ouvert${n === 1 ? '' : 's'}`,
   },
   de: {
-    metaTitle: (r) => `Remote-Jobs als ${r}, täglich neu`,
+    metaTitle: (r) => `Remote-Jobs als ${r}, wöchentlich neu`,
     metaDescription: (r) =>
-      `Offene Remote-Stellen als ${r}, aggregiert aus öffentlichen Job-Board-APIs. Filtere nach Level, Gehalt und Zeitzone. Täglich aktualisiert.`,
+      `Offene Remote-Stellen als ${r}, aggregiert aus öffentlichen Job-Board-APIs. Filtere nach Level, Gehalt und Zeitzone. Wöchentlich aktualisiert.`,
     eyebrow: 'Rolle',
     h1: (r) => `Remote-Jobs als ${r}`,
     openPositions: (n) => `${n} offene Stelle${n === 1 ? '' : 'n'}`,

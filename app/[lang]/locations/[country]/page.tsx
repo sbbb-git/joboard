@@ -27,7 +27,7 @@ const LOCATION_I18N: Record<Locale, LocationCopy> = {
   en: {
     metaTitle: (c) => `Remote tech jobs in ${c}`,
     metaDescription: (c) =>
-      `Open remote engineering, data, design and product roles hiring candidates based in ${c}. Aggregated from public job board APIs and updated daily.`,
+      `Open remote engineering, data, design and product roles hiring candidates based in ${c}. Aggregated from public job board APIs and updated weekly.`,
     eyebrow: 'Location',
     h1: (c) => `Remote tech jobs · ${c}`,
     openPositions: (n) => `${n} open position${n === 1 ? '' : 's'}`,
@@ -35,7 +35,7 @@ const LOCATION_I18N: Record<Locale, LocationCopy> = {
   fr: {
     metaTitle: (c) => `Emplois tech en remote : ${c}`,
     metaDescription: (c) =>
-      `${c} : offres remote en ingénierie, data, design et produit pour les candidats locaux. Agrégées depuis des APIs publiques, actualisées chaque jour.`,
+      `${c} : offres remote en ingénierie, data, design et produit pour les candidats locaux. Agrégées depuis des APIs publiques, actualisées chaque semaine.`,
     eyebrow: 'Lieu',
     h1: (c) => `Emplois tech en remote · ${c}`,
     openPositions: (n) => `${n} poste${n === 1 ? '' : 's'} ouvert${n === 1 ? '' : 's'}`,
@@ -43,7 +43,7 @@ const LOCATION_I18N: Record<Locale, LocationCopy> = {
   de: {
     metaTitle: (c) => `Remote-Tech-Jobs: ${c}`,
     metaDescription: (c) =>
-      `${c}: offene Remote-Stellen in Engineering, Data, Design und Produkt für Kandidaten vor Ort. Aus öffentlichen Job-Board-APIs, täglich aktualisiert.`,
+      `${c}: offene Remote-Stellen in Engineering, Data, Design und Produkt für Kandidaten vor Ort. Aus öffentlichen Job-Board-APIs, wöchentlich aktualisiert.`,
     eyebrow: 'Standort',
     h1: (c) => `Remote-Tech-Jobs · ${c}`,
     openPositions: (n) => `${n} offene Stelle${n === 1 ? '' : 'n'}`,

@@ -31,19 +31,19 @@ const SKILL_META_I18N: Record<Locale, SkillMetaCopy> = {
     metaTitle: (s) => `Remote ${s} jobs`,
     metaSuffix: (s) =>
       `Browse open remote positions that require ${s}, with salary ranges and seniority levels.`,
-    metaExtra: 'Updated every day.',
+    metaExtra: 'Updated every week.',
   },
   fr: {
     metaTitle: (s) => `Offres d'emploi ${s} en remote`,
     metaSuffix: (s) =>
       `Parcourez les postes remote qui demandent ${s}, avec fourchettes salariales et niveaux.`,
-    metaExtra: 'À jour chaque jour.',
+    metaExtra: 'À jour chaque semaine.',
   },
   de: {
     metaTitle: (s) => `Remote-Jobs mit ${s}`,
     metaSuffix: (s) =>
       `Offene Remote-Stellen mit ${s}, inklusive Gehaltsspannen, Level und Bewerbungslinks.`,
-    metaExtra: 'Jeden Tag aktuell.',
+    metaExtra: 'Jede Woche aktuell.',
   },
 };
 

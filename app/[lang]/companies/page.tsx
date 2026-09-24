@@ -39,7 +39,6 @@ export default function CompaniesPage({ params }: { params: { lang: Locale } }) 
   const all = topCompanies(500);
   const tier1 = all.filter((c) => c.count >= 5);
   const tier2 = all.filter((c) => c.count >= 2 && c.count < 5);
-  const tier3 = all.filter((c) => c.count === 1);
 
   return (
     <div className="space-y-10">
@@ -69,15 +68,6 @@ export default function CompaniesPage({ params }: { params: { lang: Locale } }) 
           subtitle="2-4 open roles"
           companies={tier2}
           locale={params.lang}
-        />
-      )}
-      {tier3.length > 0 && (
-        <CompanySection
-          title="Single posting"
-          subtitle="1 open role each"
-          companies={tier3}
-          locale={params.lang}
-          compact
         />
       )}
     </div>

@@ -13,7 +13,7 @@ type WithCategories = Index & { categories: Record<string, string> };
 export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }> = {
   en: {
     metaTitle: 'Remote tech jobs by skill',
-    metaDescription: () => 'Browse remote engineering jobs by language, framework, cloud, database and AI/ML stack. Updated daily from eight job board APIs. Free, no signup.',
+    metaDescription: () => 'Browse remote engineering jobs by language, framework, cloud, database and AI/ML stack. Updated weekly from ten job board APIs. Free, no signup.',
     eyebrow: 'By skill',
     h1: 'Remote tech jobs by skill',
     intro: (n) => `${n} skill categories tracked across the index. Pick a stack to see open positions and salary ranges.`,
@@ -22,7 +22,7 @@ export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }
   },
   fr: {
     metaTitle: 'Offres tech remote par compétence',
-    metaDescription: () => 'Parcourez les offres tech remote par langage, framework, cloud, base de données et stack IA/ML. Mis à jour chaque jour depuis huit APIs. Gratuit, sans inscription.',
+    metaDescription: () => 'Parcourez les offres tech remote par langage, framework, cloud, base de données et stack IA/ML. Mis à jour chaque semaine depuis dix APIs. Gratuit, sans inscription.',
     eyebrow: 'Par compétence',
     h1: 'Offres tech remote par compétence',
     intro: (n) => `${n} catégories de compétences suivies dans l'index. Choisissez une stack pour voir postes et fourchettes salariales.`,
@@ -31,7 +31,7 @@ export const SKILLS_I18N: Record<Locale, WithCategories & { countLabel: string }
   },
   de: {
     metaTitle: 'Remote Tech-Jobs nach Skill',
-    metaDescription: () => 'Remote-Engineering-Jobs nach Sprache, Framework, Cloud, Datenbank und KI/ML-Stack durchsuchen. Täglich aus acht Job-APIs aktualisiert. Kostenlos, ohne Anmeldung.',
+    metaDescription: () => 'Remote-Engineering-Jobs nach Sprache, Framework, Cloud, Datenbank und KI/ML-Stack durchsuchen. Wöchentlich aus zehn Job-APIs aktualisiert. Kostenlos, ohne Anmeldung.',
     eyebrow: 'Nach Skill',
     h1: 'Remote Tech-Jobs nach Skill',
     intro: (n) => `${n} Skill-Kategorien im Index. Wählen Sie einen Stack, um offene Stellen und Gehaltsspannen zu sehen.`,

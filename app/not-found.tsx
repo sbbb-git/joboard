@@ -9,7 +9,7 @@ export default function NotFound() {
           <h1 className="text-3xl font-semibold">Page not found</h1>
           <p className="text-muted text-sm">
             This page does not exist. The job posting may have expired, or the URL is mistyped.
-            Our index refreshes every day from eight public job board APIs.
+            Our index refreshes every week from ten public job board APIs.
           </p>
           <div className="flex flex-wrap gap-2 justify-center pt-2">
             <Link

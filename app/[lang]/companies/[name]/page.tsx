@@ -23,25 +23,32 @@ const COMPANY_I18N: Record<Locale, CompanyCopy> = {
   en: {
     metaTitle: (c) => `${c} remote jobs and open positions`,
     metaDescription: (c, n, r) =>
-      `${n} open remote ${n === 1 ? 'role' : 'roles'} at ${c}${r ? ` across ${r}` : ''}. Salary ranges, locations and direct application links, aggregated from public job boards and updated daily.`,
+      `${n} open remote ${n === 1 ? 'role' : 'roles'} at ${c}${r ? ` across ${r}` : ''}. Salary ranges, locations and direct application links, aggregated from public job boards and updated weekly.`,
     openPositions: (n) => `${n} open remote position${n === 1 ? '' : 's'}`,
   },
   fr: {
     metaTitle: (c) => `${c} : offres remote et postes ouverts`,
     metaDescription: (c, n, r) =>
-      `${n} poste${n === 1 ? '' : 's'} remote ouvert${n === 1 ? '' : 's'} chez ${c}${r ? ` en ${r}` : ''}. Fourchettes salariales, localisations et liens de candidature directs, mis à jour chaque jour.`,
+      `${n} poste${n === 1 ? '' : 's'} remote ouvert${n === 1 ? '' : 's'} chez ${c}${r ? ` en ${r}` : ''}. Fourchettes salariales, localisations et liens de candidature directs, mis à jour chaque semaine.`,
     openPositions: (n) => `${n} poste${n === 1 ? '' : 's'} remote ouvert${n === 1 ? '' : 's'}`,
   },
   de: {
     metaTitle: (c) => `${c}: Remote-Jobs und offene Stellen`,
     metaDescription: (c, n, r) =>
-      `${n} offene Remote-Stelle${n === 1 ? '' : 'n'} bei ${c}${r ? ` in ${r}` : ''}. Gehaltsspannen, Standorte und direkte Bewerbungslinks, aus öffentlichen Job-Boards aggregiert und täglich aktualisiert.`,
+      `${n} offene Remote-Stelle${n === 1 ? '' : 'n'} bei ${c}${r ? ` in ${r}` : ''}. Gehaltsspannen, Standorte und direkte Bewerbungslinks, aus öffentlichen Job-Boards aggregiert und wöchentlich aktualisiert.`,
     openPositions: (n) => `${n} offene Remote-Stelle${n === 1 ? '' : 'n'}`,
   },
 };
 
+// Only companies with enough openings to be worth a page of their own. A
+// single-opening company page restates a posting already indexed in full on
+// its /job/ page; these used to be generated and marked noindex, which still
+// cost a crawl each for nothing. Now they are simply not built, and a company
+// gets its page back automatically on the build after it lists a second role.
 export function generateStaticParams() {
-  const all = topCompanies(10000).map((c) => c.slug);
+  const all = topCompanies(10000)
+    .filter((c) => c.count >= COMPANY_INDEX_MIN_JOBS)
+    .map((c) => c.slug);
   return LOCALES.flatMap((lang) => all.map((name) => ({ lang, name })));
 }
 
@@ -59,12 +66,6 @@ export function generateMetadata({
     path: `companies/${params.name}`,
     title: c.metaTitle(companyName),
     description: c.metaDescription(companyName, jobs.length, roles),
-    // A company with a single opening restates that one posting, which is
-    // already indexed in full on its own /job/ page. 222 of 289 companies are
-    // in that position, so indexing them means 1,554 near-duplicate pages
-    // across 7 locales for 12 impressions. Kept crawlable and linked, just
-    // not indexed; a company flips back the moment it lists a second role.
-    index: jobs.length >= COMPANY_INDEX_MIN_JOBS,
   });
 }
 

@@ -35,7 +35,7 @@ type Copy = {
 const COPY: Record<Locale, Copy> = {
   en: {
     metaTitle: 'About slateremote.com: sources and method',
-    metaDescription: 'How slateremote.com builds its remote job index: the ten public APIs it pulls from, the daily refresh at 04:00 UTC, and how salary bands are computed.',
+    metaDescription: 'How slateremote.com builds its remote job index: the ten public APIs it pulls from, the weekly refresh on Mondays at 04:00 UTC, and how salary bands are computed.',
     h1: 'About slateremote.com',
     subtitle: 'A curated index of remote tech jobs, aggregated from public job board APIs.',
     h2What: 'What this is',
@@ -55,7 +55,7 @@ const COPY: Record<Locale, Copy> = {
       'Jobspresso · public RSS feeds',
     ],
     h2Updates: 'How often it updates',
-    bodyUpdates: 'A scheduled job runs once a day at 04:00 UTC. It pulls fresh listings from all ten sources, deduplicates them, removes spam and expired entries, and commits the result. A new build deploys automatically after each commit.',
+    bodyUpdates: 'A scheduled job runs once a week, on Mondays at 04:00 UTC. It pulls fresh listings from all ten sources, deduplicates them, removes spam and expired entries, and commits the result. A new build deploys automatically after each commit.',
     h2Salaries: 'Salary numbers',
     bodySalaries: 'Salary pages compute median, average and percentile bands live from the postings that publish a salary range. Currency conversion is not applied; each currency is reported in isolation. Pages with too few data points display the global benchmark instead.',
     h2Applying: 'Applying',
@@ -66,7 +66,7 @@ const COPY: Record<Locale, Copy> = {
   },
   fr: {
     metaTitle: 'À propos de slateremote.com : sources et méthode',
-    metaDescription: "Comment slateremote.com construit son index d'offres remote : les dix APIs publiques, la mise à jour quotidienne à 04:00 UTC et le calcul des salaires.",
+    metaDescription: "Comment slateremote.com construit son index d'offres remote : les dix APIs publiques, la mise à jour hebdomadaire du lundi à 04:00 UTC et le calcul des salaires.",
     h1: 'À propos de slateremote.com',
     subtitle: 'Un index curé des offres tech remote, agrégé depuis les APIs publiques des job boards.',
     h2What: 'De quoi il s\'agit',
@@ -86,7 +86,7 @@ const COPY: Record<Locale, Copy> = {
       'Jobspresso · flux RSS publics',
     ],
     h2Updates: 'Fréquence de mise à jour',
-    bodyUpdates: "Un job planifié tourne une fois par jour à 04:00 UTC. Il récupère les annonces fraîches des dix sources, les déduplique, supprime spam et entrées expirées, et commit le résultat. Un nouveau build se déploie automatiquement après chaque commit.",
+    bodyUpdates: "Un job planifié tourne une fois par semaine, le lundi à 04:00 UTC. Il récupère les annonces fraîches des dix sources, les déduplique, supprime spam et entrées expirées, et commit le résultat. Un nouveau build se déploie automatiquement après chaque commit.",
     h2Salaries: 'Données salariales',
     bodySalaries: "Les pages salaires calculent médiane, moyenne et percentiles en direct depuis les annonces qui publient une fourchette. Aucune conversion de devise n'est appliquée ; chaque devise est rapportée isolément. Les pages avec trop peu de points affichent le benchmark global à la place.",
     h2Applying: 'Postuler',
@@ -97,7 +97,7 @@ const COPY: Record<Locale, Copy> = {
   },
   de: {
     metaTitle: 'Über slateremote.com: Quellen und Methode',
-    metaDescription: 'Wie slateremote.com seinen Remote-Job-Index baut: die zehn öffentlichen APIs, das tägliche Update um 04:00 UTC und die Berechnung der Gehaltsbänder.',
+    metaDescription: 'Wie slateremote.com seinen Remote-Job-Index baut: die zehn öffentlichen APIs, das wöchentliche Update montags um 04:00 UTC und die Berechnung der Gehaltsbänder.',
     h1: 'Über slateremote.com',
     subtitle: 'Ein kuratierter Index für Remote-Tech-Jobs, aggregiert aus öffentlichen Job-Board-APIs.',
     h2What: 'Was das ist',
@@ -117,7 +117,7 @@ const COPY: Record<Locale, Copy> = {
       'Jobspresso · öffentliche RSS-Feeds',
     ],
     h2Updates: 'Wie oft aktualisiert wird',
-    bodyUpdates: 'Ein geplanter Job läuft einmal täglich um 04:00 UTC. Er holt frische Listings aus allen zehn Quellen, dedupliziert, entfernt Spam und abgelaufene Einträge und committet das Ergebnis. Ein neuer Build wird nach jedem Commit automatisch deployed.',
+    bodyUpdates: 'Ein geplanter Job läuft einmal pro Woche, montags um 04:00 UTC. Er holt frische Listings aus allen zehn Quellen, dedupliziert, entfernt Spam und abgelaufene Einträge und committet das Ergebnis. Ein neuer Build wird nach jedem Commit automatisch deployed.',
     h2Salaries: 'Gehaltszahlen',
     bodySalaries: 'Gehaltsseiten berechnen Median, Durchschnitt und Perzentile live aus den Inseraten, die eine Gehaltsspanne veröffentlichen. Es wird keine Währungsumrechnung angewandt; jede Währung wird isoliert berichtet. Seiten mit zu wenig Datenpunkten zeigen stattdessen den globalen Benchmark.',
     h2Applying: 'Bewerben',

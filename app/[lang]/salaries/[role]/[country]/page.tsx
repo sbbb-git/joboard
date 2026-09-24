@@ -25,9 +25,19 @@ const TOP_COUNTRIES = [
   'australia',
 ];
 
+// Only role x country combinations with at least one published salary band.
+// The rest used to be generated as noindex stubs ("no data yet"); 129 of 144
+// were in that state. Not building them removes the dead weight entirely, and
+// a combination is built again automatically once a salary shows up.
 export function generateStaticParams() {
   return LOCALES.flatMap((lang) =>
-    ROLES.flatMap((role) => TOP_COUNTRIES.map((country) => ({ lang, role, country }))),
+    ROLES.flatMap((role) =>
+      TOP_COUNTRIES.filter((country) => hasCountrySalaryData(role, country)).map((country) => ({
+        lang,
+        role,
+        country,
+      })),
+    ),
   );
 }
 
@@ -107,9 +117,6 @@ export function generateMetadata({
     path: `salaries/${params.role}/${params.country}`,
     title: c.metaTitle(role, country),
     description: c.metaDescription(role, country),
-    // Without a single published salary band there is nothing here a search
-    // result could usefully show, so keep it out of the index until there is.
-    index: hasCountrySalaryData(params.role as Role, params.country),
   });
 }
 

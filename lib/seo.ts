@@ -231,7 +231,7 @@ export function organizationJsonLd() {
     url: SITE_URL,
     logo: absoluteUrl('/icon.svg'),
     description:
-      'Remote tech jobs aggregated from eight public job board APIs, refreshed daily. Free, multi-locale, no signup.',
+      'Remote tech jobs aggregated from ten public job board APIs, refreshed weekly. Free, multi-locale, no signup.',
     foundingDate: '2025',
     sameAs: [
       'https://slowmadly.com',

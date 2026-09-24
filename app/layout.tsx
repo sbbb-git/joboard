@@ -27,7 +27,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL || 'https://slateremote.com'),
   title: {
-    default: 'slateremote.com · Remote tech jobs, refreshed daily',
+    default: 'slateremote.com · Remote tech jobs, refreshed weekly',
     // Page titles are used verbatim. A ' · slateremote.com' suffix here added
     // 18 chars to every title on the site and pushed ~1,000 of them past the
     // ~60-char point where Google truncates in the SERP. The domain already
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     template: '%s',
   },
   description:
-    'A curated index of remote engineering, data, design and product jobs, aggregated from eight public job board APIs and refreshed every day.',
+    'A curated index of remote engineering, data, design and product jobs, aggregated from ten public job board APIs and refreshed every week.',
   applicationName: 'slateremote.com',
   formatDetection: { telephone: false, email: false, address: false },
   manifest: '/manifest.json',

@@ -13,7 +13,7 @@ export const LOCATIONS_INDEX_I18N: Record<Locale, LocationsIndexCopy> = {
   en: {
     metaTitle: 'Remote tech jobs by country',
     metaDescription: (n) =>
-      `Browse remote engineering, data, design and product roles by hiring country across ${n} markets. Aggregated from public job board APIs and updated every day.`,
+      `Browse remote engineering, data, design and product roles by hiring country across ${n} markets. Aggregated from public job board APIs and updated every week.`,
     eyebrow: 'Countries',
     h1: 'Remote tech jobs by country',
     intro: (n) =>
@@ -23,7 +23,7 @@ export const LOCATIONS_INDEX_I18N: Record<Locale, LocationsIndexCopy> = {
   fr: {
     metaTitle: 'Offres tech remote par pays',
     metaDescription: (n) =>
-      `Parcourez les offres remote en ingénierie, data, design et produit par pays de recrutement sur ${n} marchés. Agrégées depuis des APIs publiques, mises à jour chaque jour.`,
+      `Parcourez les offres remote en ingénierie, data, design et produit par pays de recrutement sur ${n} marchés. Agrégées depuis des APIs publiques, mises à jour chaque semaine.`,
     eyebrow: 'Pays',
     h1: 'Offres tech remote par pays',
     intro: (n) =>
@@ -33,7 +33,7 @@ export const LOCATIONS_INDEX_I18N: Record<Locale, LocationsIndexCopy> = {
   de: {
     metaTitle: 'Remote-Tech-Jobs nach Land',
     metaDescription: (n) =>
-      `Remote-Stellen in Engineering, Data, Design und Product nach Einstellungsland in ${n} Märkten durchsuchen. Aus öffentlichen Job-APIs aggregiert, täglich aktualisiert.`,
+      `Remote-Stellen in Engineering, Data, Design und Product nach Einstellungsland in ${n} Märkten durchsuchen. Aus öffentlichen Job-APIs aggregiert, wöchentlich aktualisiert.`,
     eyebrow: 'Länder',
     h1: 'Remote-Tech-Jobs nach Land',
     intro: (n) =>

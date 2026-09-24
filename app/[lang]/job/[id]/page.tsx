@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { jobById, allJobs } from '@/lib/jobs';
+import { jobById, allJobs, jobsByCompany, COMPANY_INDEX_MIN_JOBS } from '@/lib/jobs';
 import type { Locale } from '@/lib/types';
 import { t, localePath } from '@/lib/i18n';
 import { buildMetadata, jobPostingJsonLd, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
@@ -274,12 +274,17 @@ export default function JobPage({ params }: { params: { lang: Locale; id: string
           <div className="flex items-start gap-4">
             <CompanyLogo company={job.company} companySlug={job.companySlug} role={job.role} size={56} />
             <div className="flex-1 min-w-0">
-              <Link
-                href={localePath(params.lang, `companies/${job.companySlug}`)}
-                className="text-sm font-semibold text-graphite hover:text-ink"
-              >
-                {job.company}
-              </Link>
+              {/* Single-opening companies have no page of their own. */}
+              {jobsByCompany(job.companySlug).length >= COMPANY_INDEX_MIN_JOBS ? (
+                <Link
+                  href={localePath(params.lang, `companies/${job.companySlug}`)}
+                  className="text-sm font-semibold text-graphite hover:text-ink"
+                >
+                  {job.company}
+                </Link>
+              ) : (
+                <span className="text-sm font-semibold text-graphite">{job.company}</span>
+              )}
               <h1 className="font-display text-2xl md:text-4xl font-normal tracking-tighter text-ink mt-1 leading-tight">
                 {job.title}
               </h1>

@@ -4,7 +4,7 @@ import { ROLES, type Locale } from '@/lib/types';
 import { LOCALES, localePath } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import { roleLabel, countryLabel } from '@/lib/labels';
-import { salaryStats } from '@/lib/jobs';
+import { salaryStats, hasCountrySalaryData } from '@/lib/jobs';
 import { SALARIES_INDEX_I18N, SALARY_COUNTRIES } from '@/lib/salaries-i18n';
 
 export const dynamicParams = false;
@@ -26,6 +26,7 @@ export function generateMetadata({ params }: { params: { lang: Locale } }): Meta
 
 export default function SalariesIndex({ params }: { params: { lang: Locale } }) {
   const c = SALARIES_INDEX_I18N[params.lang];
+  const devCountries = SALARY_COUNTRIES.filter((country) => hasCountrySalaryData('developer', country));
 
   return (
     <div className="space-y-8">
@@ -58,22 +59,24 @@ export default function SalariesIndex({ params }: { params: { lang: Locale } }) 
         })}
       </ul>
 
-      <section>
-        <h2 className="text-base font-semibold text-ink mb-3">{c.byCountryHeading}</h2>
-        <p className="text-sm text-muted mb-3 max-w-prose">{c.byCountryIntro}</p>
-        <ul className="flex flex-wrap gap-2">
-          {SALARY_COUNTRIES.map((country) => (
-            <li key={country}>
-              <Link
-                href={localePath(params.lang, `salaries/developer/${country}`)}
-                className="inline-block text-sm px-3 py-1 rounded-full bg-sand border border-line text-graphite hover:border-ink hover:text-ink"
-              >
-                {countryLabel(country)}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
+      {devCountries.length > 0 && (
+        <section>
+          <h2 className="text-base font-semibold text-ink mb-3">{c.byCountryHeading}</h2>
+          <p className="text-sm text-muted mb-3 max-w-prose">{c.byCountryIntro}</p>
+          <ul className="flex flex-wrap gap-2">
+            {devCountries.map((country) => (
+              <li key={country}>
+                <Link
+                  href={localePath(params.lang, `salaries/developer/${country}`)}
+                  className="inline-block text-sm px-3 py-1 rounded-full bg-sand border border-line text-graphite hover:border-ink hover:text-ink"
+                >
+                  {countryLabel(country)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section className="text-sm text-muted leading-relaxed max-w-prose">
         <h2 className="text-base font-semibold text-ink mb-2">{c.methodologyHeading}</h2>

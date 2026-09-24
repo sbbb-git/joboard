@@ -10,7 +10,7 @@ const FAQS_BY_LOCALE: Record<Locale, { heading: string; eyebrow: string; faqs: F
     eyebrow: 'FAQ',
     heading: 'Frequently asked questions',
     faqs: [
-      { q: 'How often is the index updated?', a: 'Every day at 04:00 UTC. A scheduled job pulls fresh listings from ten public job board APIs, dedupes them, removes spam and expired entries, and rebuilds the site.' },
+      { q: 'How often is the index updated?', a: 'Every Monday at 04:00 UTC. A scheduled job pulls fresh listings from ten public job board APIs, dedupes them, removes spam and expired entries, and rebuilds the site.' },
       { q: 'Where do the jobs come from?', a: 'Ten public sources: Remotive, Remote OK, Arbeitnow, We Work Remotely, Himalayas, Jobicy, The Muse, Hacker News "Who is hiring", Working Nomads and Jobspresso. We only pull from documented public APIs.' },
       { q: 'Is it free to browse?', a: 'Yes. Browsing every job, salary page, city profile and guide is free, with no signup required. Employers can pay for featured placement; candidates never pay.' },
       { q: 'How do you compute the salary numbers?', a: 'Live from postings that publish a salary range. Each posting contributes the midpoint of its band. Percentile values come from the sorted distribution. Currency conversion is not applied; each currency is computed in isolation.' },
@@ -23,7 +23,7 @@ const FAQS_BY_LOCALE: Record<Locale, { heading: string; eyebrow: string; faqs: F
     eyebrow: 'FAQ',
     heading: 'Questions fréquentes',
     faqs: [
-      { q: "À quelle fréquence l'index est-il mis à jour ?", a: 'Tous les jours à 04:00 UTC. Un job planifié récupère les nouvelles offres depuis dix APIs publiques, déduplique, retire spam et entrées expirées, et reconstruit le site.' },
+      { q: "À quelle fréquence l'index est-il mis à jour ?", a: 'Chaque lundi à 04:00 UTC. Un job planifié récupère les nouvelles offres depuis dix APIs publiques, déduplique, retire spam et entrées expirées, et reconstruit le site.' },
       { q: "D'où viennent les offres ?", a: 'Dix sources publiques : Remotive, Remote OK, Arbeitnow, We Work Remotely, Himalayas, Jobicy, The Muse, Hacker News "Who is hiring", Working Nomads et Jobspresso. Uniquement depuis des APIs publiques documentées.' },
       { q: 'Est-ce gratuit ?', a: "Oui. Parcourir les offres, les pages salaires, les profils de villes et les guides est gratuit, sans inscription. Les employeurs peuvent payer pour une mise en avant ; les candidats ne paient jamais." },
       { q: 'Comment calculez-vous les salaires ?', a: 'En direct depuis les annonces qui publient une fourchette. Chaque annonce contribue le milieu de sa fourchette. Les percentiles viennent de la distribution triée. Aucune conversion de devise ; chaque devise est calculée isolément.' },
@@ -36,7 +36,7 @@ const FAQS_BY_LOCALE: Record<Locale, { heading: string; eyebrow: string; faqs: F
     eyebrow: 'FAQ',
     heading: 'Häufige Fragen',
     faqs: [
-      { q: 'Wie oft wird der Index aktualisiert?', a: 'Jeden Tag um 04:00 UTC. Ein geplanter Job zieht frische Listings aus zehn öffentlichen APIs, dedupliziert, entfernt Spam und abgelaufene Einträge und baut die Site neu.' },
+      { q: 'Wie oft wird der Index aktualisiert?', a: 'Jeden Montag um 04:00 UTC. Ein geplanter Job zieht frische Listings aus zehn öffentlichen APIs, dedupliziert, entfernt Spam und abgelaufene Einträge und baut die Site neu.' },
       { q: 'Woher kommen die Jobs?', a: 'Zehn öffentliche Quellen: Remotive, Remote OK, Arbeitnow, We Work Remotely, Himalayas, Jobicy, The Muse, Hacker News "Who is hiring", Working Nomads und Jobspresso. Nur aus dokumentierten öffentlichen APIs.' },
       { q: 'Ist die Nutzung kostenlos?', a: 'Ja. Jeden Job, jede Gehaltsseite, jedes Stadtprofil und jeden Guide zu durchsuchen ist kostenlos, ohne Anmeldung. Arbeitgeber können für hervorgehobene Platzierung zahlen; Kandidaten zahlen nie.' },
       { q: 'Wie werden die Gehaltszahlen berechnet?', a: 'Live aus Anzeigen, die eine Gehaltsspanne veröffentlichen. Jede Anzeige steuert den Mittelpunkt ihrer Spanne bei. Perzentile aus der sortierten Verteilung. Keine Währungsumrechnung; jede Währung wird isoliert berechnet.' },

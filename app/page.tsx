@@ -23,7 +23,7 @@ const LOCALE_NAMES: Record<string, string> = {
 export const metadata: Metadata = {
   title: 'slateremote.com · Remote tech jobs, refreshed weekly',
   description:
-    'Remote engineering, data, design and product jobs aggregated from public job board APIs and refreshed every week, in English, French and German. Free to browse, no signup.',
+    'Remote engineering, data, design and product jobs from public job board APIs, refreshed weekly in English, French and German. Free, no signup.',
   metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: `${SITE_URL}/en`,

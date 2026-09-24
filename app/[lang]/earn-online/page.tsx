@@ -41,7 +41,7 @@ const COPY: Record<Locale, Copy> = {
       'Remote-friendly income is more accessible than ever for technical workers. The four routes below cover the realistic options in 2026, ranked from steady cash to compounding upside.',
     remoteJobs: {
       title: 'Land a remote tech job',
-      body: 'The most predictable path. We aggregate every active remote tech listing from eight public job board APIs and refresh once a day. Filter by role, country, salary and seniority, all in the browser, no signup.',
+      body: 'The most predictable path. We aggregate every active remote tech listing from ten public job board APIs and refresh once a week. Filter by role, country, salary and seniority, all in the browser, no signup.',
     },
     remoteJobsCta: 'Browse remote jobs →',
     freelance: {
@@ -72,7 +72,7 @@ const COPY: Record<Locale, Copy> = {
       "Les revenus remote n'ont jamais été aussi accessibles pour les profils tech. Les quatre voies ci-dessous couvrent les options réalistes en 2026, du cash régulier au upside qui compose dans le temps.",
     remoteJobs: {
       title: 'Décrocher un job tech remote',
-      body: "La voie la plus prévisible. Nous agrégeons chaque offre tech remote active depuis les API publiques de huit job boards, mise à jour chaque jour. Filtrez par rôle, pays, salaire et niveau, dans le navigateur, sans inscription.",
+      body: "La voie la plus prévisible. Nous agrégeons chaque offre tech remote active depuis les API publiques de dix job boards, mise à jour chaque semaine. Filtrez par rôle, pays, salaire et niveau, dans le navigateur, sans inscription.",
     },
     remoteJobsCta: 'Parcourir les offres remote →',
     freelance: {
@@ -103,7 +103,7 @@ const COPY: Record<Locale, Copy> = {
       'Remote-Einkommen war für Tech-Profile nie zugänglicher. Die vier Wege unten decken die realistischen Optionen 2026 ab, vom stetigen Cashflow bis zum kompoundierenden Upside.',
     remoteJobs: {
       title: 'Einen Remote-Tech-Job finden',
-      body: 'Der berechenbarste Weg. Wir aggregieren jede aktive Remote-Tech-Stelle aus den öffentlichen APIs von acht Job Boards und aktualisieren täglich. Filtere nach Rolle, Land, Gehalt und Senioritätsstufe, alles im Browser, ohne Anmeldung.',
+      body: 'Der berechenbarste Weg. Wir aggregieren jede aktive Remote-Tech-Stelle aus den öffentlichen APIs von zehn Job Boards und aktualisieren wöchentlich. Filtere nach Rolle, Land, Gehalt und Senioritätsstufe, alles im Browser, ohne Anmeldung.',
     },
     remoteJobsCta: 'Remote-Jobs durchstöbern →',
     freelance: {

@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'slateremote.com',
     short_name: 'slateremote',
-    description: 'Remote tech jobs from across the web, refreshed daily.',
+    description: 'Remote tech jobs from across the web, refreshed weekly.',
     start_url: '/en',
     display: 'standalone',
     background_color: '#fafaf8',
