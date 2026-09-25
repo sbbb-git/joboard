@@ -21,35 +21,11 @@ const COPY: Record<Locale, BeehiivCopy> = {
     body: 'Beehiiv est la plateforme que nous utilisons pour notre propre newsletter. Pensée pour l\'écriture monétisée : pubs natives, abonnements payants, programme de parrainage. Gratuit sur le tier starter.',
     cta: 'Lancer votre newsletter sur Beehiiv →',
   },
-  es: {
-    eyebrow: 'Plataforma de newsletter',
-    title: 'Lanza tu newsletter tech en Beehiiv',
-    body: 'Beehiiv es la plataforma que usamos para nuestra propia newsletter. Pensada para escribir y monetizar: anuncios nativos, suscripciones de pago y programa de referidos. Sin cuota mensual en el tier starter.',
-    cta: 'Lanza tu newsletter en Beehiiv →',
-  },
   de: {
     eyebrow: 'Newsletter-Plattform',
     title: 'Starte deinen Tech-Newsletter auf Beehiiv',
     body: 'Beehiiv ist die Plattform, auf der wir unseren eigenen Newsletter betreiben. Gebaut für monetisiertes Schreiben: native Ads, Paid-Abos und ein Empfehlungsprogramm. Im Starter-Tarif ohne Monatsgebühr.',
     cta: 'Newsletter auf Beehiiv starten →',
-  },
-  pt: {
-    eyebrow: 'Plataforma de newsletter',
-    title: 'Comece sua newsletter tech no Beehiiv',
-    body: 'O Beehiiv é a plataforma que usamos para a nossa newsletter. Feita para escrever e monetizar: anúncios nativos, assinaturas pagas e programa de indicação. Sem mensalidade no plano starter.',
-    cta: 'Comece sua newsletter no Beehiiv →',
-  },
-  it: {
-    eyebrow: 'Piattaforma newsletter',
-    title: 'Lancia la tua newsletter tech su Beehiiv',
-    body: 'Beehiiv è la piattaforma che usiamo per la nostra newsletter. Pensata per scrivere e monetizzare: annunci nativi, abbonamenti a pagamento, programma di referral. Nessun canone mensile sul tier starter.',
-    cta: 'Lancia la tua newsletter su Beehiiv →',
-  },
-  pl: {
-    eyebrow: 'Platforma newsletterowa',
-    title: 'Uruchom swój newsletter tech na Beehiiv',
-    body: 'Beehiiv to platforma, na której prowadzimy nasz własny newsletter. Stworzona do monetyzowanego pisania: natywne reklamy, płatne subskrypcje i program poleceń. Bez miesięcznej opłaty w pakiecie starter.',
-    cta: 'Uruchom newsletter na Beehiiv →',
   },
 };
 

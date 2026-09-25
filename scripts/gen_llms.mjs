@@ -18,8 +18,11 @@ async function readTs(rel) {
 // blocks we control). The objects are simple data, so a JSON-like extraction
 // works without an actual ts loader.
 function extractArray(src, exportName) {
-  // Matches: export const NAME[: Type] = [ ... ];
-  const re = new RegExp(`export const ${exportName}[^=]*=\\s*\\[`);
+  // Matches: [export] const NAME[: Type] = [ ... ];
+  // The export keyword is optional: lib/guides.ts declares a private
+  // ALL_GUIDES array and exports only a filtered view of it, so requiring
+  // `export` silently matched nothing and shipped llms.txt with zero guides.
+  const re = new RegExp(`(?:export\\s+)?const ${exportName}[^=]*=\\s*\\[`);
   const m = src.match(re);
   if (!m) return '';
   const start = m.index + m[0].length - 1; // include [
@@ -89,30 +92,12 @@ function objects(arrayText, fields) {
 }
 
 const guidesSrc = await readTs('lib/guides.ts');
-const guides = objects(extractArray(guidesSrc, 'GUIDES'), [
+const guides = objects(extractArray(guidesSrc, 'ALL_GUIDES'), [
   'slug',
   'title',
   'description',
   'category',
   'body',
-]);
-
-const citiesSrc = await readTs('lib/cities.ts');
-const cities = objects(extractArray(citiesSrc, 'CITIES'), [
-  'slug',
-  'name',
-  'country',
-  'blurb',
-  'bodyEn',
-]);
-
-const skillsSrc = await readTs('lib/skills.ts');
-const skills = objects(extractArray(skillsSrc, 'SKILLS'), [
-  'slug',
-  'name',
-  'category',
-  'blurb',
-  'bodyEn',
 ]);
 
 const glossarySrc = await readTs('lib/glossary.ts');
@@ -124,44 +109,22 @@ const glossary = objects(extractArray(glossarySrc, 'GLOSSARY'), [
   'long',
 ]);
 
-const comparisonsSrc = await readTs('lib/comparisons.ts');
-const comparisons = objects(extractArray(comparisonsSrc, 'COMPARISONS'), [
-  'slug',
-  'title',
-  'description',
-  'body',
-]);
-
 // llms.txt: the lightweight index
 const indexParts = [
   '# slateremote.com',
   '',
-  '> A curated index of remote tech jobs aggregated daily from eight public job board APIs, with salary data computed live, city profiles, and long-form guides for remote engineers.',
+  '> Practical guides for remote tech workers: earning on talent platforms, getting paid across borders, travel insurance and the tools worth using.',
   '',
-  'slateremote.com indexes engineering, data, design and product jobs that are explicitly remote. The index refreshes every day from Remotive, RemoteOK, Arbeitnow, We Work Remotely, Himalayas, Jobicy, The Muse and the Hacker News "Who is hiring" thread. The site is free, has no signup, and links every listing directly to the employer\'s own application page. It is published in seven languages (English, French, Spanish, German, Portuguese, Italian, Polish) and is part of a small network with slowmadly.com (slow-travel country guides) and ai-by-job.com (AI tools curated by job role).',
+  'slateremote.com publishes long-form guides for people who work remotely in tech. It is free, has no signup, and is published in English, French and German. It is part of a small network with slowmadly.com (slow-travel country guides) and ai-by-job.com (AI tools curated by job role).',
   '',
   '## Primary indexes',
   '',
-  `- [All remote tech jobs](${SITE}/en/jobs): full filterable list (role, country, seniority, contract type, minimum salary)`,
-  `- [Salaries by role](${SITE}/en/salaries/developer): median and percentile salary bands computed live from posted ranges`,
-  `- [Cities for remote tech workers](${SITE}/en/cities): ${cities.length} cities profiled with cost, internet, visa, timezone`,
-  `- [Skills index](${SITE}/en/skills): ${skills.length} languages, frameworks, clouds, data, AI/ML, mobile and web3 tags`,
-  `- [Companies](${SITE}/en/companies): every company currently posting remote tech jobs, grouped by active openings`,
-  `- [Guides](${SITE}/en/guides): ${guides.length} long-form guides on finding remote work, salary, visas, taxes, lifestyle and tools`,
-  `- [Compare](${SITE}/en/compare): ${comparisons.length} head-to-head comparisons (remote vs hybrid, Lisbon vs Barcelona, Portugal D8 vs Spain DNV, etc.)`,
+  `- [Guides](${SITE}/en/guides): ${guides.length} long-form guides on talent platforms, getting paid, visas, taxes, insurance and tools`,
   `- [Glossary](${SITE}/en/glossary): ${glossary.length} remote work terms (RTO, EOR, async, DNV, RSU, slowmad, etc.)`,
   '',
   '## Guides',
   '',
   ...guides.map((g) => `- [${g.title}](${SITE}/en/guides/${g.slug}): ${g.description}`),
-  '',
-  '## Cities',
-  '',
-  ...cities.map((c) => `- [${c.name}, ${c.country}](${SITE}/en/cities/${c.slug}): ${c.blurb}`),
-  '',
-  '## Comparisons',
-  '',
-  ...comparisons.map((c) => `- [${c.title}](${SITE}/en/compare/${c.slug}): ${c.description}`),
   '',
   '## Sister sites',
   '',
@@ -170,10 +133,8 @@ const indexParts = [
   '',
   '## Optional',
   '',
-  `- [Full content dump for ingestion](${SITE}/llms-full.txt): every guide, city profile, skill description, glossary entry and comparison concatenated as plain text`,
+  `- [Full content dump for ingestion](${SITE}/llms-full.txt): every guide and glossary entry concatenated as plain text`,
   `- [Sitemap](${SITE}/sitemap.xml): machine-readable list of all URLs`,
-  `- [RSS feed (jobs)](${SITE}/feed.xml): jobs feed if available`,
-  `- [About the site](${SITE}/en/about): methodology, data sources, and update cadence`,
   '',
 ];
 
@@ -188,7 +149,7 @@ function unescape(s) {
 const fullParts = [
   '# slateremote.com · full content for language model ingestion',
   '',
-  '> This is the long-form text body of every guide, city profile, skill description, glossary entry and comparison published on slateremote.com. The data is the same the human-facing pages render, concatenated here as plain text so language models can ingest it in a single document without crawling.',
+  '> This is the long-form text body of every guide and glossary entry published on slateremote.com. The data is the same the human-facing pages render, concatenated here as plain text so language models can ingest it in a single document without crawling.',
   '',
   '---',
   '',
@@ -199,56 +160,11 @@ const fullParts = [
 for (const g of guides) {
   fullParts.push(`## ${g.title}`);
   fullParts.push('');
-  fullParts.push(`*${g.description}* — category: ${g.category}`);
+  fullParts.push(`*${g.description}* (category: ${g.category})`);
   fullParts.push('');
   fullParts.push(unescape(g.body));
   fullParts.push('');
   fullParts.push(`Source: ${SITE}/en/guides/${g.slug}`);
-  fullParts.push('');
-  fullParts.push('---');
-  fullParts.push('');
-}
-
-fullParts.push('# City profiles');
-fullParts.push('');
-for (const c of cities) {
-  fullParts.push(`## ${c.name}, ${c.country}`);
-  fullParts.push('');
-  fullParts.push(`*${c.blurb}*`);
-  fullParts.push('');
-  fullParts.push(unescape(c.bodyEn));
-  fullParts.push('');
-  fullParts.push(`Source: ${SITE}/en/cities/${c.slug}`);
-  fullParts.push('');
-  fullParts.push('---');
-  fullParts.push('');
-}
-
-fullParts.push('# Skill briefings');
-fullParts.push('');
-for (const s of skills) {
-  fullParts.push(`## ${s.name} (${s.category})`);
-  fullParts.push('');
-  fullParts.push(`*${s.blurb}*`);
-  fullParts.push('');
-  fullParts.push(unescape(s.bodyEn));
-  fullParts.push('');
-  fullParts.push(`Source: ${SITE}/en/skills/${s.slug}`);
-  fullParts.push('');
-  fullParts.push('---');
-  fullParts.push('');
-}
-
-fullParts.push('# Comparisons');
-fullParts.push('');
-for (const c of comparisons) {
-  fullParts.push(`## ${c.title}`);
-  fullParts.push('');
-  fullParts.push(`*${c.description}*`);
-  fullParts.push('');
-  fullParts.push(unescape(c.body));
-  fullParts.push('');
-  fullParts.push(`Source: ${SITE}/en/compare/${c.slug}`);
   fullParts.push('');
   fullParts.push('---');
   fullParts.push('');
@@ -270,5 +186,5 @@ for (const g of glossary) {
 await writeFile(join(ROOT, 'public', 'llms-full.txt'), fullParts.join('\n'));
 console.log('Wrote public/llms-full.txt');
 console.log(
-  `  ${guides.length} guides · ${cities.length} cities · ${skills.length} skills · ${comparisons.length} comparisons · ${glossary.length} glossary terms`,
+  `  ${guides.length} guides · ${glossary.length} glossary terms`,
 );

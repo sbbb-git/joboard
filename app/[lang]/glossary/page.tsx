@@ -18,12 +18,18 @@ export function generateStaticParams() {
   return LOCALES.map((lang) => ({ lang }));
 }
 
+const META_TITLE: Record<Locale, string> = {
+  en: 'Remote work glossary for tech professionals',
+  fr: 'Glossaire du travail remote pour la tech',
+  de: 'Remote-Work-Glossar für Tech-Fachkräfte',
+};
+
 export function generateMetadata({ params }: { params: { lang: Locale } }): Metadata {
   const c = GLOSSARY_I18N[params.lang];
   return buildMetadata({
     locale: params.lang,
     path: 'glossary',
-    title: c.metaTitle,
+    title: META_TITLE[params.lang],
     description: c.metaDescription(GLOSSARY.length),
   });
 }
@@ -74,9 +80,9 @@ export default function GlossaryIndex({ params }: { params: { lang: Locale } }) 
       <section className="text-sm text-muted">
         <p>
           {c.missingPre}{' '}
-          <Link href={localePath(params.lang, 'contact')} className="text-forest hover:underline">
+          <a href="mailto:hello@slateremote.com" className="text-forest hover:underline">
             {c.missingLink}
-          </Link>{' '}
+          </a>{' '}
           {c.missingPost}
         </p>
       </section>

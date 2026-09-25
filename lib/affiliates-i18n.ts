@@ -56,27 +56,6 @@ export const AFFILIATE_COPY: Record<Locale, AffiliateCopy> = {
     earnIntro:
       "Deux options si l'IA entre en jeu : être payé par Mercor pour évaluer des sorties de modèles, ou travailler avec Claude sur votre propre produit.",
   },
-  es: {
-    badge: 'Afiliado · divulgación abajo',
-    disclaimer:
-      'Podemos ganar una pequeña comisión si te registras a través de estos enlaces. Los precios y funciones no cambian.',
-    essentialsTitle: 'Lo esencial para trabajar desde cualquier lugar',
-    essentialsIntro: (city) =>
-      city
-        ? `Dos cosas que conviene resolver antes de empezar a trabajar desde ${city}: un seguro de salud que te acompañe y una VPN para el Wi-Fi público.`
-        : 'Dos cosas que resolver cuando trabajas desde cualquier lugar: un seguro portátil y una VPN fiable.',
-    bankingTitle: 'Banca para trabajadores remotos',
-    bankingIntro: (ctx) =>
-      ctx
-        ? `Herramientas multidivisa útiles si te mudas a ${ctx} o ganas dinero desde allí.`
-        : 'Herramientas multidivisa para recibir pagos a través de fronteras.',
-    toolsTitle: 'Herramientas que los remotos usan de verdad',
-    toolsIntro:
-      'El software con el que montamos nuestro propio stack, más las mejores opciones que recomendamos a los ingenieros remotos.',
-    earnTitle: 'Gana con IA (o construye con ella)',
-    earnIntro:
-      'Dos opciones si la IA está presente: cobra de Mercor por evaluar salidas de modelos, o trabaja junto a Claude en tu propio producto.',
-  },
   de: {
     badge: 'Affiliate · Offenlegung unten',
     disclaimer:
@@ -97,68 +76,5 @@ export const AFFILIATE_COPY: Record<Locale, AffiliateCopy> = {
     earnTitle: 'Mit KI verdienen (oder damit bauen)',
     earnIntro:
       'Zwei Optionen, wenn KI im Spiel ist: lass dich von Mercor fürs Bewerten von Modellausgaben bezahlen oder arbeite mit Claude an deinem eigenen Produkt.',
-  },
-  pt: {
-    badge: 'Afiliado · divulgação abaixo',
-    disclaimer:
-      'Podemos receber uma pequena comissão se você se inscrever por estes links. Preços e recursos permanecem inalterados.',
-    essentialsTitle: 'O essencial para trabalhar de qualquer lugar',
-    essentialsIntro: (city) =>
-      city
-        ? `Duas coisas para resolver antes de começar a trabalhar de ${city}: um seguro de saúde que te acompanha e uma VPN para o Wi-Fi público.`
-        : 'Duas coisas para resolver quando você trabalha de qualquer lugar: um seguro portátil e uma VPN confiável.',
-    bankingTitle: 'Banco para trabalhadores remotos',
-    bankingIntro: (ctx) =>
-      ctx
-        ? `Ferramentas multimoeda úteis se você está se mudando para ${ctx} ou ganhando de lá.`
-        : 'Ferramentas multimoeda para receber pagamentos entre países.',
-    toolsTitle: 'Ferramentas que os remotos realmente usam',
-    toolsIntro:
-      'O software com que rodamos nosso próprio stack, mais as melhores escolhas que recomendamos a engenheiros remotos.',
-    earnTitle: 'Ganhe com IA (ou construa com ela)',
-    earnIntro:
-      'Duas opções se a IA estiver no jogo: seja pago pela Mercor para avaliar saídas de modelos, ou trabalhe ao lado do Claude no seu próprio produto.',
-  },
-  it: {
-    badge: 'Affiliato · divulgazione sotto',
-    disclaimer:
-      'Potremmo ricevere una piccola commissione se ti registri tramite questi link. Prezzi e funzionalità restano invariati.',
-    essentialsTitle: "L'essenziale per lavorare da ovunque",
-    essentialsIntro: (city) =>
-      city
-        ? `Due cose da sistemare prima di iniziare a lavorare da ${city}: un'assicurazione sanitaria che ti segue e una VPN per il Wi-Fi pubblico.`
-        : "Due cose da sistemare quando lavori da ovunque: un'assicurazione portatile e una VPN affidabile.",
-    bankingTitle: 'Banca per lavoratori remote',
-    bankingIntro: (ctx) =>
-      ctx
-        ? `Strumenti multivaluta utili se ti trasferisci a ${ctx} o guadagni da lì.`
-        : 'Strumenti multivaluta per ricevere pagamenti tra paesi.',
-    toolsTitle: 'Strumenti che i remote usano davvero',
-    toolsIntro:
-      'Il software con cui gestiamo il nostro stack, più le scelte migliori che consigliamo agli ingegneri remote.',
-    earnTitle: "Guadagna con l'IA (o costruisci con essa)",
-    earnIntro:
-      "Due opzioni se l'IA è coinvolta: farti pagare da Mercor per valutare gli output dei modelli, o lavorare con Claude sul tuo prodotto.",
-  },
-  pl: {
-    badge: 'Afiliacja · informacja poniżej',
-    disclaimer:
-      'Możemy otrzymać niewielką prowizję, jeśli zarejestrujesz się przez te linki. Ceny i funkcje pozostają bez zmian.',
-    essentialsTitle: 'Niezbędnik do pracy z dowolnego miejsca',
-    essentialsIntro: (city) =>
-      city
-        ? `Dwie rzeczy do ogarnięcia, zanim zaczniesz pracować z ${city}: ubezpieczenie zdrowotne, które podróżuje z tobą, i VPN do publicznego Wi-Fi.`
-        : 'Dwie rzeczy do ogarnięcia, gdy pracujesz z dowolnego miejsca: przenośne ubezpieczenie i niezawodny VPN.',
-    bankingTitle: 'Bankowość dla pracowników zdalnych',
-    bankingIntro: (ctx) =>
-      ctx
-        ? `Narzędzia wielowalutowe przydatne, gdy przeprowadzasz się do ${ctx} lub tam zarabiasz.`
-        : 'Narzędzia wielowalutowe do odbierania płatności między krajami.',
-    toolsTitle: 'Narzędzia, których naprawdę używają pracownicy zdalni',
-    toolsIntro:
-      'Oprogramowanie, na którym opieramy własny stack, plus lepsze rekomendacje dla zdalnych inżynierów.',
-    earnTitle: 'Zarabiaj z AI (lub buduj z nią)',
-    earnIntro:
-      'Dwie opcje, gdy w grę wchodzi AI: otrzymuj zapłatę od Mercor za ocenę wyników modeli lub pracuj z Claude nad własnym produktem.',
   },
 };

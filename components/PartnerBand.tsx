@@ -21,11 +21,7 @@ type Copy = {
 const COPY: Record<Locale, Copy> = {
   en: { eyebrow: 'Partners we use', disclosure: 'Affiliate. See full disclosure' },
   fr: { eyebrow: 'Partenaires que nous utilisons', disclosure: 'Affilié. Voir la divulgation complète' },
-  es: { eyebrow: 'Partners que usamos', disclosure: 'Afiliado. Ver divulgación completa' },
   de: { eyebrow: 'Partner, die wir nutzen', disclosure: 'Affiliate. Vollständige Offenlegung' },
-  pt: { eyebrow: 'Parceiros que usamos', disclosure: 'Afiliado. Ver divulgação completa' },
-  it: { eyebrow: 'Partner che usiamo', disclosure: 'Affiliato. Vedi divulgazione completa' },
-  pl: { eyebrow: 'Partnerzy, których używamy', disclosure: 'Afiliacja. Pełna informacja' },
 };
 
 const PARTNERS: Partner[] = [
@@ -35,20 +31,12 @@ const PARTNERS: Partner[] = [
     blurb: {
       en: 'Records and summarises every meeting. Skip the call, read the summary.',
       fr: 'Enregistre et résume chaque meeting. Sautez la réunion, lisez le résumé.',
-      es: 'Graba y resume cada reunión. Sáltate la llamada, lee el resumen.',
       de: 'Zeichnet jedes Meeting auf und fasst es zusammen. Spar dir den Call.',
-      pt: 'Grava e resume cada reunião. Pule a call, leia o resumo.',
-      it: 'Registra e riassume ogni meeting. Salta la call, leggi il riassunto.',
-      pl: 'Nagrywa i podsumowuje każde spotkanie. Pomiń call, przeczytaj podsumowanie.',
     },
     cta: {
       en: 'Try free →',
       fr: 'Essayer gratuitement →',
-      es: 'Probar gratis →',
       de: 'Kostenlos testen →',
-      pt: 'Testar grátis →',
-      it: 'Provare gratis →',
-      pl: 'Wypróbuj za darmo →',
     },
   },
   {
@@ -57,20 +45,12 @@ const PARTNERS: Partner[] = [
     blurb: {
       en: 'The LLM we use to draft content and debug scrapers.',
       fr: "Le LLM que nous utilisons pour rédiger et déboguer.",
-      es: 'El LLM que usamos para redactar y depurar.',
       de: 'Der LLM, den wir zum Schreiben und Debuggen nutzen.',
-      pt: 'O LLM que usamos para redigir e depurar.',
-      it: "L'LLM che usiamo per scrivere e debuggare.",
-      pl: 'LLM, którego używamy do pisania i debugowania.',
     },
     cta: {
       en: 'Try Claude →',
       fr: 'Essayer Claude →',
-      es: 'Probar Claude →',
       de: 'Claude testen →',
-      pt: 'Testar Claude →',
-      it: 'Provare Claude →',
-      pl: 'Wypróbuj Claude →',
     },
   },
   {
@@ -79,20 +59,12 @@ const PARTNERS: Partner[] = [
     blurb: {
       en: 'Run a paid community with courses, events and a leaderboard.',
       fr: 'Lance une communauté payante : cours, events, leaderboard.',
-      es: 'Lanza una comunidad de pago: cursos, eventos, leaderboard.',
       de: 'Starte eine Paid-Community mit Kursen, Events und Leaderboard.',
-      pt: 'Lance uma comunidade paga: cursos, eventos, leaderboard.',
-      it: 'Lancia una community a pagamento: corsi, eventi, leaderboard.',
-      pl: 'Uruchom płatną społeczność: kursy, wydarzenia, ranking.',
     },
     cta: {
       en: 'Start a community →',
       fr: 'Lancer une communauté →',
-      es: 'Empezar una comunidad →',
       de: 'Community starten →',
-      pt: 'Começar uma comunidade →',
-      it: 'Avviare una community →',
-      pl: 'Uruchom społeczność →',
     },
   },
   {
@@ -101,20 +73,12 @@ const PARTNERS: Partner[] = [
     blurb: {
       en: 'Established email marketing with strong deliverability. Free up to 500.',
       fr: 'Email marketing établi, forte délivrabilité. Gratuit jusqu\'à 500.',
-      es: 'Email marketing establecido, alta entregabilidad. Gratis hasta 500.',
       de: 'Etabliertes E-Mail-Marketing mit guter Zustellrate. Gratis bis 500.',
-      pt: 'Email marketing estabelecido, alta entregabilidade. Grátis até 500.',
-      it: 'Email marketing affermato, alta deliverability. Gratis fino a 500.',
-      pl: 'Sprawdzony email marketing, wysoka dostarczalność. Darmowo do 500.',
     },
     cta: {
       en: 'Try AWeber →',
       fr: 'Essayer AWeber →',
-      es: 'Probar AWeber →',
       de: 'AWeber testen →',
-      pt: 'Testar AWeber →',
-      it: 'Provare AWeber →',
-      pl: 'Wypróbuj AWeber →',
     },
   },
   {
@@ -123,20 +87,12 @@ const PARTNERS: Partner[] = [
     blurb: {
       en: 'Health insurance for nomads. 180+ countries, monthly billing.',
       fr: 'Assurance santé pour nomades. 180+ pays, facturation mensuelle.',
-      es: 'Seguro de salud para nómadas. 180+ países, mensual.',
       de: 'Krankenversicherung für Nomaden. 180+ Länder, monatlich.',
-      pt: 'Seguro de saúde para nômades. 180+ países, mensal.',
-      it: 'Assicurazione sanitaria per nomadi. 180+ paesi, mensile.',
-      pl: 'Ubezpieczenie zdrowotne dla nomadów. 180+ krajów, miesięcznie.',
     },
     cta: {
       en: 'Get covered →',
       fr: 'Souscrire →',
-      es: 'Contratar →',
       de: 'Versichern →',
-      pt: 'Contratar →',
-      it: 'Attivare →',
-      pl: 'Wykup →',
     },
   },
   {
@@ -145,20 +101,12 @@ const PARTNERS: Partner[] = [
     blurb: {
       en: 'VPN with 6,000+ servers. Public Wi-Fi safety + geo-unlocking.',
       fr: 'VPN avec 6 000+ serveurs. Sécurité Wi-Fi public + déblocage géo.',
-      es: 'VPN con 6 000+ servidores. Seguridad Wi-Fi público + geo-desbloqueo.',
       de: 'VPN mit 6.000+ Servern. Öffentliches-WLAN-Schutz + Geo-Unlock.',
-      pt: 'VPN com 6.000+ servidores. Segurança Wi-Fi público + geo-unlock.',
-      it: 'VPN con 6.000+ server. Sicurezza Wi-Fi pubblico + geo-unlock.',
-      pl: 'VPN z 6000+ serwerów. Bezpieczeństwo publicznego Wi-Fi + geo-unlock.',
     },
     cta: {
       en: 'Get NordVPN →',
       fr: 'Obtenir NordVPN →',
-      es: 'Conseguir NordVPN →',
       de: 'NordVPN holen →',
-      pt: 'Pegar NordVPN →',
-      it: 'Ottenere NordVPN →',
-      pl: 'Pobrać NordVPN →',
     },
   },
 ];

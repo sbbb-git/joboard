@@ -6,7 +6,7 @@ import { buildMetadata, breadcrumbJsonLd, absoluteUrl } from '@/lib/seo';
 import type { Locale } from '@/lib/types';
 import { GUIDES, GUIDE_MAP } from '@/lib/guides';
 import { tGuide } from '@/lib/guides-i18n';
-import { tGuideBody, tGuideFaqs } from '@/lib/guides-body-i18n';
+import { tGuideBody, tGuideFaqs, hasGuideTranslation } from '@/lib/guides-body-i18n';
 import { NomadBanking } from '@/components/NomadBanking';
 import { NomadEssentials } from '@/components/NomadEssentials';
 import { NomadCTA } from '@/components/NomadCTA';
@@ -54,8 +54,6 @@ const WISE_SLUGS = new Set([
   'wise-debit-card-spending-tips',
   'wise-vs-revolut-business-comparison-2026',
   'how-to-receive-stripe-payouts-as-non-us',
-  'world-cup-2026-multi-currency-spending-usa-canada-mexico',
-  'world-cup-2026-remote-work-from-host-cities',
 ]);
 
 const MERCOR_SLUGS = new Set([
@@ -80,11 +78,7 @@ const AI_KEYWORDS = /\b(ai|ml|machine learning|llm|prompt|data scientist|ml engi
 const GUIDE_LABELS: Record<Locale, { faq: string; related: string }> = {
   en: { faq: 'Frequently asked questions', related: 'Related guides' },
   fr: { faq: 'Questions fréquentes', related: 'Guides liés' },
-  es: { faq: 'Preguntas frecuentes', related: 'Guías relacionadas' },
   de: { faq: 'Häufige Fragen', related: 'Verwandte Guides' },
-  pt: { faq: 'Perguntas frequentes', related: 'Guias relacionados' },
-  it: { faq: 'Domande frequenti', related: 'Guide correlate' },
-  pl: { faq: 'Często zadawane pytania', related: 'Powiązane poradniki' },
 };
 
 export const dynamicParams = false;
@@ -94,6 +88,24 @@ export function generateStaticParams() {
   return LOCALES.flatMap((lang) => GUIDES.map((g) => ({ lang, slug: g.slug })));
 }
 
+const CAT_CONTEXT: Record<string, string> = {
+  finding: 'remote job search tactics, resume tips and application strategies for tech roles',
+  salary: 'salary benchmarks, equity, and negotiation strategies for remote engineering roles',
+  career: 'career paths, required skills, and roadmaps for remote tech professionals',
+  visa: 'visa options, eligibility requirements, and relocation guides for remote workers',
+  tax: 'tax planning, deductions, and cross-border considerations for remote tech workers',
+  lifestyle: 'productivity, async workflows, and lifestyle design for distributed teams',
+  tools: 'tools, software, and home-office setups for remote engineering teams',
+  freelance: 'freelancing strategies, platforms, pricing, and client-finding for tech professionals',
+};
+
+function guideMetaDesc(base: string, category: string): string {
+  if (base.length >= 130) return base;
+  const ctx = CAT_CONTEXT[category] ?? 'strategies and advice for remote tech workers in 2026';
+  const suffix = ` Covers ${ctx}.`;
+  return (base + suffix).slice(0, 160);
+}
+
 export function generateMetadata({
   params,
 }: {
@@ -101,11 +113,13 @@ export function generateMetadata({
 }): Metadata {
   const g = GUIDE_MAP[params.slug];
   if (!g) return { title: 'Guide not found' };
+  const base = tGuide(g.slug, params.lang, 'description', g.description);
   return buildMetadata({
     locale: params.lang,
     path: `guides/${params.slug}`,
     title: tGuide(g.slug, params.lang, 'title', g.title),
-    description: tGuide(g.slug, params.lang, 'description', g.description),
+    description: guideMetaDesc(base, g.category),
+    index: hasGuideTranslation(g.slug, params.lang),
   });
 }
 

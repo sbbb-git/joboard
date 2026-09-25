@@ -1,8 +1,10 @@
-name: scrape-and-deploy
+name: deploy
 
-# Daily auto-publish has been disabled. The workflow now runs only on
-# pushes to main (so code changes still deploy) and manual workflow_dispatch
-# (so you can refresh the job index on demand from the Actions UI).
+# Build and deploy the site on every push to main (and on demand).
+#
+# The job board and its scraper were retired in 2026-09: the site now
+# publishes guides only, so there is nothing to refresh on a schedule. No
+# cron, no scrape, no commit back to the repo, hence read-only permissions.
 
 on:
   push:
@@ -10,11 +12,11 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  scrape-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -28,38 +30,13 @@ jobs:
 
       - run: npm ci
 
-      - name: Scrape (skip on push-only runs)
-        if: github.event_name != 'push'
-        run: npm run scrape:local
-
-      - name: Commit refreshed jobs
-        if: github.event_name != 'push'
-        run: |
-          set -euo pipefail
-          if git diff --quiet data/jobs.json; then
-            echo "No changes to commit"
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/jobs.json
-          git commit -m "chore(jobs): refresh $(date -u +%F)"
-          git push origin main
-
-      - name: Generate client-side search index
-        run: node scripts/gen_search_index.mjs
-
       - name: Generate llms.txt + llms-full.txt
         run: node scripts/gen_llms.mjs
-
 
       - name: Build static site
         env:
           SITE_URL: https://slateremote.com
           NEXT_PUBLIC_CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
-          NEXT_PUBLIC_STRIPE_FEATURED_30D: ${{ secrets.STRIPE_FEATURED_30D }}
-          NEXT_PUBLIC_STRIPE_SPONSORED_TOP: ${{ secrets.STRIPE_SPONSORED_TOP }}
-          NEXT_PUBLIC_BEEHIIV_EMBED: ${{ secrets.BEEHIIV_EMBED }}
         run: npm run build
 
       - name: Patch <html lang> per locale
@@ -89,8 +66,8 @@ jobs:
             exit 0
           fi
           count=$(echo "$urls" | wc -l)
-          echo "Submitting $count URLs to IndexNow"
-          echo "$urls" | split -l 1000 - /tmp/indexnow-batch-
+          echo "Submitting $count URLs to IndexNow (batches of 10)"
+          echo "$urls" | split -l 10 - /tmp/indexnow-batch-
           for f in /tmp/indexnow-batch-*; do
             urlList=$(jq -R -s -c 'split("\n") | map(select(length > 0))' < "$f")
             payload=$(jq -n --arg host "slateremote.com" --arg key "$INDEXNOW_KEY" --arg keyLocation "$SITE_URL/$INDEXNOW_KEY.txt" --argjson urlList "$urlList" \

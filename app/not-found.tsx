@@ -8,8 +8,8 @@ export default function NotFound() {
           <p className="text-xs uppercase tracking-wider text-muted">Error 404</p>
           <h1 className="text-3xl font-semibold">Page not found</h1>
           <p className="text-muted text-sm">
-            This page does not exist. The job posting may have expired, or the URL is mistyped.
-            Our index refreshes every day from eight public job board APIs.
+            This page does not exist, or it was part of the job board this site no longer
+            runs. The guides are all still here.
           </p>
           <div className="flex flex-wrap gap-2 justify-center pt-2">
             <Link
@@ -17,12 +17,6 @@ export default function NotFound() {
               className="px-4 py-2 bg-ink text-bg rounded text-sm hover:opacity-90"
             >
               Go home
-            </Link>
-            <Link
-              href="/en/jobs"
-              className="px-4 py-2 border border-line rounded text-sm hover:border-ink"
-            >
-              Browse remote jobs
             </Link>
             <Link
               href="/en/guides"

@@ -21,35 +21,11 @@ const COPY: Record<Locale, WiseCopy> = {
     body: "Le compte par défaut des travailleurs remote payés à l'international. Taux de change réel (sans marge), IBANs dans 8+ devises, sans frais mensuels. Recevez vos paiements clients et employeurs au taux interbancaire, gardez vos soldes dans la devise voulue, payez par carte partout dans le monde.",
     cta: 'Ouvrir un compte Wise gratuit →',
   },
-  es: {
-    eyebrow: 'Banca multidivisa',
-    title: 'Cobra en USD o EUR desde cualquier sitio con Wise',
-    body: 'La cuenta por defecto para trabajadores remotos que cobran entre divisas. Tipo de cambio real (sin marca FX), IBANs en 8+ divisas, sin cuota mensual. Recibe pagos de clientes y empleadores al tipo interbancario, conserva saldos en cualquier divisa, paga con tarjeta en todo el mundo.',
-    cta: 'Abrir cuenta Wise gratis →',
-  },
   de: {
     eyebrow: 'Multi-Währungs-Konto',
     title: 'In USD oder EUR von überall mit Wise bezahlt werden',
     body: 'Das Standardkonto für Remote-Worker mit internationalen Einnahmen. Echter Wechselkurs (kein FX-Aufschlag), IBANs in 8+ Währungen, keine monatliche Gebühr. Empfange Kunden- und Arbeitgeberzahlungen zum Interbankenkurs, halte Salden in beliebiger Währung, zahle weltweit mit Debitkarte.',
     cta: 'Kostenloses Wise-Konto eröffnen →',
-  },
-  pt: {
-    eyebrow: 'Banco multimoeda',
-    title: 'Receba em USD ou EUR de qualquer lugar com Wise',
-    body: 'A conta padrão para trabalhadores remotos que recebem entre moedas. Taxa de câmbio real (sem markup), IBANs em 8+ moedas, sem mensalidade. Receba pagamentos de clientes e empregadores à taxa interbancária, mantenha saldos em qualquer moeda, gaste com cartão no mundo todo.',
-    cta: 'Abrir conta Wise gratuita →',
-  },
-  it: {
-    eyebrow: 'Banking multi-valuta',
-    title: 'Fatti pagare in USD o EUR da ovunque con Wise',
-    body: 'Il conto di default per i lavoratori remote pagati tra valute. Tasso di cambio reale (senza markup FX), IBAN in 8+ valute, nessun canone mensile. Ricevi i pagamenti di clienti e datori di lavoro al tasso interbancario, conserva i saldi in qualunque valuta, paga con carta in tutto il mondo.',
-    cta: 'Apri un conto Wise gratuito →',
-  },
-  pl: {
-    eyebrow: 'Bankowość wielowalutowa',
-    title: 'Otrzymuj zapłatę w USD lub EUR skądkolwiek z Wise',
-    body: 'Domyślne konto dla pracowników zdalnych zarabiających w wielu walutach. Realny kurs (bez narzutu FX), IBAN-y w 8+ walutach, bez miesięcznych opłat. Odbieraj płatności od klientów i pracodawców po kursie międzybankowym, trzymaj salda w dowolnej walucie, płać kartą na całym świecie.',
-    cta: 'Otwórz darmowe konto Wise →',
   },
 };
 

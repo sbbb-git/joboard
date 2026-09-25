@@ -1,42 +1,14 @@
 # slateremote.com · full content for language model ingestion
 
-> This is the long-form text body of every guide, city profile, skill description, glossary entry and comparison published on slateremote.com. The data is the same the human-facing pages render, concatenated here as plain text so language models can ingest it in a single document without crawling.
+> This is the long-form text body of every guide and glossary entry published on slateremote.com. The data is the same the human-facing pages render, concatenated here as plain text so language models can ingest it in a single document without crawling.
 
 ---
 
 # Guides
 
-## How to find a remote tech job in 2026
-
-*A practical walkthrough for landing a remote engineering, data or product role from scratch.* — category: finding
-
-Remote hiring in tech has matured. The companies still posting truly distributed roles in 2026 are a smaller, more selective set than at the 2021 peak, but the bar to apply has dropped: most accept candidates from anywhere within compatible timezones.
-
-## Where to look first
-Start with aggregators that pull from company applicant tracking systems directly. The signal-to-noise ratio is far higher on listings sourced from Greenhouse, Lever or Workday than on generic job boards. The eight APIs powering this site cover the largest portion of that catalog.
-
-## Tailoring the application
-Hiring managers screen for two things on remote applications: written communication and async judgment. A short, well-structured cover letter that names the team's recent shipped work outperforms a generic CV cold-send by an order of magnitude.
-
-## Salary expectations
-Remote does not mean discounted. Companies pay either to the candidate's local market or to a fixed band; the bands at well-funded scale-ups remain within 10 to 15 percent of in-office equivalents for senior engineers.
-
-## Timezones
-The single most filtered criterion in 2026 is timezone overlap. Four hours of overlap with the company's core hub is the working minimum for engineering roles, two for individual-contributor data roles.
-
-## Interview preparation
-Remote interview loops have stabilized at four to six rounds. Expect a recruiter screen, a hiring manager call, two to three technical rounds, and a final values or team-fit round. Coding screens have moved away from leetcode-style puzzles toward pairing sessions on realistic problems.
-
-## Closing the offer
-The compensation conversation on remote roles requires more research than in-office. Ask for the band before disclosing your target, and verify whether the offer is location-adjusted.
-
-Source: https://slateremote.com/en/guides/finding-a-remote-tech-job
-
----
-
 ## Remote developer salary guide for 2026
 
-*How to read salary bands on remote job postings, and what numbers to expect by seniority.* — category: salary
+*How to read salary bands on remote job postings, and what numbers to expect by seniority.* (category: salary)
 
 Most remote postings now publish a band. Reading them correctly matters more than negotiating against them.
 
@@ -59,281 +31,9 @@ Source: https://slateremote.com/en/guides/remote-developer-salary-guide
 
 ---
 
-## How to become a remote developer
-
-*A roadmap from first line of code to first remote engineering offer.* — category: career
-
-Becoming a remote-employable developer is a different path than becoming a developer in general. The skills the market rewards on remote postings emphasize written communication and async ownership in addition to technical depth.
-
-## Foundation
-Spend the first six to twelve months on one ecosystem deeply rather than sampling many. The fastest-converting paths to remote employment in 2026 are full-stack JavaScript or TypeScript (with React and Node), Python with Django or FastAPI for backend, or Go for platform-leaning roles.
-
-## Building portfolio
-Three substantial projects deployed publicly beat ten tutorial completions. Each should solve a real problem, have clear documentation, and demonstrate testing and deployment practice.
-
-## Open source
-Even three accepted pull requests to a recognized open-source project change the texture of an application materially.
-
-## First job vs first remote job
-The fastest path to a first remote job is often a non-remote first job. Six to twelve months in any engineering environment delivers the unstated requirement most remote postings encode: prior production experience.
-
-Source: https://slateremote.com/en/guides/how-to-become-a-remote-developer
-
----
-
-## How to become a remote data engineer
-
-*The skills and path that map to remote data engineering postings in 2026.* — category: career
-
-Remote data engineering postings have stabilized around a clear skill stack. The path to employment is shorter than for ML engineering because the role intersects with established analytics and platform engineering work that has existed for years.
-
-## Core skills
-SQL fluency at an advanced level (window functions, CTEs, query optimization). Python for pipeline scripting and orchestration. One major cloud (AWS, GCP or Azure) and one warehouse (Snowflake or BigQuery on most postings). dbt for transformation. Airflow or Dagster for orchestration.
-
-## Distinguishing skills
-Data modeling experience, particularly dimensional modeling and slowly changing dimensions, is the senior signal. Cost optimization on cloud warehouses is rapidly rising in importance.
-
-## Path
-Many remote data engineers come from analytics or backend backgrounds. Demonstrating production pipeline ownership, even on a single significant project, accelerates the transition.
-
-Source: https://slateremote.com/en/guides/how-to-become-a-data-engineer
-
----
-
-## How to become a remote ML engineer
-
-*The path into remote ML engineering in 2026.* — category: career
-
-Remote ML engineering postings have narrowed in skill expectation since 2023. Most postings expect production deployment experience, not research credentials.
-
-## Core skills
-Python and PyTorch are baseline. Production deployment knowledge (containerization, model serving, monitoring) matters more than the research depth that dominated earlier hiring rounds.
-
-## LLM specialization
-Listings in LLM engineering have grown sharply. Familiarity with retrieval-augmented generation, evaluation frameworks, fine-tuning workflows and inference optimization separates LLM engineering applications from generalist ML applications.
-
-## Path
-A meaningful share of remote ML engineering applicants in 2026 came from software engineering rather than data science backgrounds. The reverse is also common but requires demonstrating production software depth.
-
-Source: https://slateremote.com/en/guides/how-to-become-an-ml-engineer
-
----
-
-## How to become a remote DevOps or SRE
-
-*The skill set and path into remote platform and reliability engineering.* — category: career
-
-Remote DevOps and SRE postings cluster around a clear technical stack and a smaller number of philosophical concerns (incident response culture, on-call rotation health, automation discipline).
-
-## Technical stack
-Kubernetes and one major cloud (AWS most common, GCP and Azure both meaningful). Terraform for infrastructure-as-code. CI/CD pipeline experience (GitHub Actions most listed). Observability tooling (Prometheus, Grafana, Datadog).
-
-## Programming
-Go is the most-listed language on remote SRE postings, followed by Python.
-
-## Path
-The most common path is from backend engineering through platform team membership. Pure operations backgrounds increasingly require a substantial software engineering component to compete for remote senior listings.
-
-Source: https://slateremote.com/en/guides/how-to-become-a-devops-engineer
-
----
-
-## How to become a remote front-end developer
-
-*The current state of the remote front-end labor market and how to enter it.* — category: career
-
-Remote front-end postings remain the largest single hiring category in remote tech. The path is well-documented but competitive at the junior level.
-
-## Core stack
-TypeScript, React, Next.js, Tailwind. CSS fundamentals at a level above what most boot-camp curricula deliver. Accessibility familiarity is now an explicit requirement on most senior listings.
-
-## Differentiators
-Design system contribution and Storybook authorship. Performance optimization track record. Direct collaboration experience with designers.
-
-## Path
-Substantial public deployments beat tutorial completions for both response rate and interview performance.
-
-Source: https://slateremote.com/en/guides/how-to-become-a-frontend-developer
-
----
-
-## How to become a remote backend developer
-
-*The remote backend market in 2026 and the skill path to enter it.* — category: career
-
-Remote backend postings are large in volume but more fragmented across language ecosystems than front-end. Picking a single ecosystem and depth-first specialization is the working strategy.
-
-## Stacks
-TypeScript with Node or NestJS. Python with FastAPI or Django. Go for platform-leaning backends. Java with Spring for enterprise. Each ecosystem has enough remote listings to sustain a career.
-
-## Skills beyond the framework
-Database design at a level beyond ORM usage. Distributed systems literacy. API design and versioning practice. Observability and on-call experience.
-
-## Path
-A first non-remote backend job for one to two years remains the fastest converter to a senior remote backend role.
-
-Source: https://slateremote.com/en/guides/how-to-become-a-backend-developer
-
----
-
-## How to become a remote full-stack developer
-
-*The remote full-stack path in 2026.* — category: career
-
-Full-stack remains the most common posting category at smaller remote-first companies. The role demands breadth, and the hiring market rewards demonstrated end-to-end ownership.
-
-## Core skills
-React or one major front-end framework. Node, Python or Go on the backend. SQL. One major cloud. Comfortable shipping a feature from spec to deployment without help.
-
-## What employers look for
-Full ownership stories, not feature lists. Senior full-stack postings select for breadth of ownership over deep specialization in any single layer.
-
-Source: https://slateremote.com/en/guides/how-to-become-a-fullstack-developer
-
----
-
-## How to become a remote mobile developer
-
-*The remote mobile engineering path in 2026.* — category: career
-
-Remote mobile postings split into native iOS, native Android, and cross-platform. Each has a distinct hiring market.
-
-## Native iOS
-Swift and SwiftUI. UIKit familiarity for legacy maintenance. Combine or async/await for concurrency.
-
-## Native Android
-Kotlin with Jetpack Compose. Coroutines for concurrency. Material 3 fluency.
-
-## Cross-platform
-Flutter dominates new cross-platform listings since 2023. React Native remains strong at companies with React web stacks.
-
-## App store experience
-Demonstrated app store publication is the strongest single signal on a mobile application.
-
-Source: https://slateremote.com/en/guides/how-to-become-a-mobile-developer
-
----
-
-## How to become a remote product manager
-
-*The path into remote PM roles in 2026.* — category: career
-
-Remote PM hiring is selective, with most postings requiring prior PM experience. The conversion path from engineering or design backgrounds is well-trodden.
-
-## Core skills
-Customer interview practice. Roadmap and prioritization frameworks. Async written communication at a level above most engineering and design roles.
-
-## Senior signal
-Track record of shipping. Demonstrated business outcomes tied to product decisions.
-
-## Path
-Most successful first-PM transitions in 2026 came from senior engineering or senior design roles at the same company.
-
-Source: https://slateremote.com/en/guides/how-to-become-a-product-manager
-
----
-
-## How to become a remote product designer
-
-*The remote product design path in 2026.* — category: career
-
-Remote design postings concentrate on product design rather than visual or brand design. Figma fluency is universally expected.
-
-## Core skills
-Figma at an advanced level (auto-layout, variants, design tokens). Prototyping fluency. Design system experience. User research practice.
-
-## Senior signal
-Design system ownership. Cross-functional partnership skills. Track record of measurable product outcomes.
-
-Source: https://slateremote.com/en/guides/how-to-become-a-designer
-
----
-
-## Portugal D8 Digital Nomad Visa for tech workers
-
-*Complete guide to the Portuguese D8 visa for remote tech workers in 2026.* — category: visa
-
-Portugal's D8 visa, launched in late 2022, is the most-used digital nomad pathway for remote tech workers in Europe.
-
-## Eligibility
-Proof of remote work for a non-Portuguese employer or as a freelancer. Minimum monthly income of around four times the Portuguese minimum wage (approximately 3 280 EUR in 2026).
-
-## Application
-Apply at the Portuguese consulate in your country of residence. Processing typically takes 60 to 90 days.
-
-## Tax implications
-The NHR (Non-Habitual Resident) tax regime was substantially reformed in 2024. New applicants now fall under a narrower successor program that still offers preferential treatment for specific high-value activities including most software engineering work.
-
-## After arrival
-The visa converts to a residence permit upon arrival. Renewal cycles run two years initially, then three.
-
-Source: https://slateremote.com/en/guides/digital-nomad-visa-portugal
-
----
-
-## Spain Digital Nomad Visa for tech workers
-
-*How to apply for the Spanish Digital Nomad Visa as a remote tech worker.* — category: visa
-
-Spain's Digital Nomad Visa launched in January 2023 under the Startup Law. It has become one of the most popular European nomad pathways.
-
-## Eligibility
-Remote work for a foreign employer that has operated for at least one year, or freelance work for foreign clients (foreign income must be at least 80 percent of total). Minimum income of around 200 percent of the Spanish minimum wage.
-
-## Tax benefits
-Holders can opt into a reduced 24 percent flat tax on Spanish-source income up to 600 000 EUR for the first six years (the Beckham Law extension for nomads).
-
-## Application
-Apply from inside Spain on a tourist entry or from a Spanish consulate abroad. Approval typically arrives within 20 days for in-country applications.
-
-## Family
-Spouses and dependents can be included in the same application.
-
-Source: https://slateremote.com/en/guides/digital-nomad-visa-spain
-
----
-
-## Germany freelance and Blue Card pathways
-
-*The two main routes into Germany for remote tech workers.* — category: visa
-
-Germany does not have a dedicated digital nomad visa as of 2026. Two adjacent pathways serve remote tech workers.
-
-## Freiberufler visa
-For self-employed engineers. Requires demonstrating client demand in Germany, German bank account, and registered tax presence.
-
-## Blue Card
-For employed engineers with a job offer from a German company. Faster processing and a 21-month path to permanent residency if German language requirements are met.
-
-## Tax
-Germany taxes worldwide income for residents. The progressive rate reaches 42 percent at modest income levels by US standards, plus solidarity surcharge and health insurance contributions.
-
-Source: https://slateremote.com/en/guides/digital-nomad-visa-germany
-
----
-
-## Mexico Temporary Resident visa for remote workers
-
-*How US-timezone remote workers use Mexico Temporary Resident status.* — category: visa
-
-Mexico does not have a branded digital nomad visa, but the Temporary Resident visa serves the same purpose and is widely used by US-based remote tech workers.
-
-## Eligibility
-Demonstrate monthly income above approximately 4 500 USD or savings of approximately 75 000 USD. Both must be sustained over the preceding six to twelve months on bank statements.
-
-## Process
-Apply at a Mexican consulate outside Mexico. Approval typically within two to four weeks. Within 30 days of arrival, exchange for the residency card.
-
-## Tax
-The Temporary Resident visa does not by itself create tax residency. Tax residency requires spending more than 183 days per year in Mexico.
-
-Source: https://slateremote.com/en/guides/digital-nomad-visa-mexico
-
----
-
 ## Georgia one-year visa-free stay for remote workers
 
-*How remote tech workers use the Georgian visa-free policy and Individual Entrepreneur status.* — category: visa
+*How remote tech workers use the Georgian visa-free policy and Individual Entrepreneur status.* (category: visa)
 
 Georgia offers visa-free entry of up to one year for citizens of around 100 countries, including most EU and US passports. This has made Tbilisi a long-standing remote tech base.
 
@@ -347,129 +47,9 @@ Source: https://slateremote.com/en/guides/digital-nomad-visa-georgia
 
 ---
 
-## Remote work taxes for EU-resident tech workers
-
-*How EU tax residency interacts with foreign remote employment.* — category: tax
-
-EU tax residency is determined country by country but most member states apply similar tests centered on the 183-day rule and the location of permanent home and personal interests.
-
-## Employment from a non-EU company
-If the employer has no EU presence, the worker typically must register as either self-employed or use an employer-of-record service. The employer-of-record approach simplifies social charges but reduces net.
-
-## Social security
-EU/EEA bilateral agreements coordinate social security across borders. The A1 certificate documents which country's system the worker contributes to.
-
-## Special regimes
-Several EU countries (Spain, Italy, Portugal in narrower form) offer reduced tax regimes for inbound remote workers. These can materially reduce effective tax for the first five to ten years of residency.
-
-Source: https://slateremote.com/en/guides/remote-work-taxes-eu
-
----
-
-## Remote work taxes for US-resident tech workers
-
-*State and federal considerations for US-based remote tech workers.* — category: tax
-
-US federal tax treats remote work like any other employment: the W-2 income lands in the same bucket regardless of work location.
-
-## State tax
-The complication is state tax. Working remotely from a state different from the employer's location may create tax obligations in both, depending on each state's nexus rules.
-
-## Convenience of the employer rule
-A handful of states (New York, Pennsylvania, Delaware) apply the convenience of the employer rule, taxing remote workers as if they worked at the employer's location. This can produce double taxation that requires credit claims to resolve.
-
-## Foreign-resident US citizens
-US citizens working remotely from abroad still owe US tax on worldwide income. The Foreign Earned Income Exclusion (around 130 000 USD in 2026) and Foreign Tax Credit reduce double taxation.
-
-Source: https://slateremote.com/en/guides/remote-work-taxes-us
-
----
-
-## Remote work equipment expenses and deductions
-
-*How freelance and employed remote workers can structure equipment expenses.* — category: tax
-
-Equipment treatment depends on employment structure.
-
-## W-2 employees in the US
-Federal home office and unreimbursed employee expense deductions remain unavailable through 2025 under the TCJA. Some states (California, New York) allow them. Most remote-friendly employers reimburse equipment directly.
-
-## Self-employed and freelance
-Equipment is deductible as a business expense. Computers and monitors typically depreciate over five years or qualify for Section 179 immediate expensing depending on jurisdiction.
-
-## EU
-Most EU jurisdictions allow either employer reimbursement or self-employed deduction with similar rules.
-
-Source: https://slateremote.com/en/guides/remote-work-equipment-deduction
-
----
-
-## Remote work timezone strategies that actually work
-
-*Practical patterns for engineers working across substantial timezone differences.* — category: lifestyle
-
-Successful remote engineering across timezones is less about tools than scheduling discipline.
-
-## The four-hour overlap rule
-Four hours of overlap with the team's core timezone is the working minimum for engineering roles. Two hours works for ICs operating largely async; under that, productivity and team integration degrade measurably.
-
-## Anchor meetings
-Two or three weekly anchor meetings at the overlap window absorb almost all synchronous needs at most well-functioning remote teams.
-
-## Async documentation
-Decisions made in synchronous meetings should be written down within 24 hours. This single discipline accounts for most of the difference between remote teams that work and those that grind.
-
-## Calendar boundaries
-Hard-stop calendar boundaries are easier to defend than soft preferences. Most remote-mature teams accept declined meetings without negotiation.
-
-Source: https://slateremote.com/en/guides/remote-work-timezone-strategies
-
----
-
-## Home office setup for remote tech workers
-
-*What actually matters versus what does not in a home office setup.* — category: lifestyle
-
-Diminishing returns set in earlier than most spending guides suggest.
-
-## What matters most
-Comfortable chair (the single highest-leverage spend). Monitor at eye level. Camera at eye level. Microphone close to mouth. Stable broadband.
-
-## What matters second
-Quiet room or sound treatment. Climate control. Adjustable desk if you alternate sitting and standing.
-
-## What matters less than people think
-Multiple monitors past the second. Mechanical keyboards. RGB peripherals. High-end webcams beyond mid-tier 1080p.
-
-Source: https://slateremote.com/en/guides/remote-work-home-office-setup
-
----
-
-## Async communication patterns for remote tech teams
-
-*The async patterns that distinguish productive remote teams.* — category: lifestyle
-
-Async communication is a learned skill at both the individual and team level.
-
-## Writing first
-Default to a written artifact before scheduling a meeting. Most decisions can be made without a meeting if the writeup is clear.
-
-## Decision documents
-A short decision document with context, options, recommendation and decision converges discussions that would otherwise drift across chat for days.
-
-## Status, not standup
-A short written status posted at the start of the day replaces most standups without measurable productivity loss.
-
-## Response time expectations
-Setting team norms on response time windows (e.g. same-day for chat, 24 hours for review requests) reduces the constant interruption tax of always-on chat.
-
-Source: https://slateremote.com/en/guides/remote-work-async-communication
-
----
-
 ## Best laptops for remote developers in 2026
 
-*A practical comparison of the laptop choices that actually serve remote engineers.* — category: tools
+*A practical comparison of the laptop choices that actually serve remote engineers.* (category: tools)
 
 Laptop choice for remote engineers depends on stack and travel pattern more than benchmark specs.
 
@@ -492,34 +72,9 @@ Source: https://slateremote.com/en/guides/best-laptops-for-remote-developers
 
 ---
 
-## Software tools every remote developer ends up using
-
-*The tooling that has become near-default across remote engineering teams.* — category: tools
-
-Tooling convergence has narrowed in 2026. Most successful remote engineering teams settle on a small, predictable set.
-
-## Editor
-VS Code or Cursor for AI-assisted workflows. JetBrains IDEs at enterprise teams and for JVM and Python.
-
-## Terminal
-Warp, iTerm2, or Ghostty. Tmux for persistent multi-pane sessions.
-
-## Notes
-Obsidian, Notion or Logseq. The shared team brain in many remote-first teams sits in Notion.
-
-## Communication
-Slack remains dominant. Discord at smaller dev-tools companies. Zoom and Google Meet for synchronous calls.
-
-## Version control
-Git via GitHub for the majority of remote engineering teams.
-
-Source: https://slateremote.com/en/guides/best-tools-for-remote-developers
-
----
-
 ## Best countries for remote tech workers in 2026
 
-*A practical comparison of the top destinations based on visa, tax, cost and infrastructure.* — category: lifestyle
+*A practical comparison of the top destinations based on visa, tax, cost and infrastructure.* (category: lifestyle)
 
 Country choice for a remote tech worker is rarely a single-variable optimization. The leading destinations each trade differently along visa friction, tax burden, cost of living, internet quality and lifestyle factors.
 
@@ -548,122 +103,9 @@ Source: https://slateremote.com/en/guides/best-countries-for-remote-tech-workers
 
 ---
 
-## Remote job cover letter templates that actually work
-
-*Cover letter patterns that lift response rates on remote tech postings.* — category: finding
-
-Generic cover letters lift application volume but not response rate. The patterns that move response rate are short, specific and tied to demonstrable work.
-
-## Structure
-Open with one sentence on why this company. One paragraph on relevant shipped work with a measurable outcome. One paragraph on the specific role and what you would tackle first. Close with availability and a link to a portfolio.
-
-## Length
-Under 200 words. Recruiters scan, not read.
-
-## What to avoid
-Generic enthusiasm language. Restating the resume. Claims of unique fit without specifics.
-
-## Customization minimum
-Naming the company's recent product launch, blog post or hiring announcement signals attention without requiring deep insider knowledge.
-
-Source: https://slateremote.com/en/guides/remote-job-cover-letter-templates
-
----
-
-## Remote tech interview preparation in 2026
-
-*How remote interview loops have stabilized and what to prepare for.* — category: finding
-
-Remote tech interview loops have converged on a four to six round pattern.
-
-## Round 1: Recruiter screen
-30 minutes. Confirm fit on basics: salary expectations, location, work authorization.
-
-## Round 2: Hiring manager
-45 minutes. Conversational. Past projects, motivations, and the specific role.
-
-## Round 3 to 5: Technical
-Mix of system design, coding, and team-specific deep dives. Live coding has shifted toward pairing-style problems rather than leetcode puzzles at most well-run remote teams.
-
-## Round 6: Final
-Often called values, culture or executive. Increasingly a check on async judgment and written communication for fully remote roles.
-
-Source: https://slateremote.com/en/guides/remote-tech-interview-preparation
-
----
-
-## Remote job salary negotiation playbook
-
-*How to negotiate a remote tech offer in 2026.* — category: salary
-
-Salary negotiation on remote offers requires different preparation than in-office offers.
-
-## Anchor research
-Use posted bands across comparable companies. The eight APIs powering this site cover the bulk of published bands.
-
-## Location disclosure
-Some companies adjust offers based on location. Disclose only when asked, and verify whether the offer is location-adjusted before counter-offering.
-
-## Total comp
-Equity grant value at private companies is highly uncertain. Discount accordingly when comparing offers across funding stages.
-
-## Counter pattern
-Counter once, with specific reasoning, and accept the second offer if it is materially above your minimum. Multiple counters at the same level tend to harden the recruiter rather than move the offer.
-
-Source: https://slateremote.com/en/guides/remote-job-salary-negotiation
-
----
-
-## Freelance vs employee for remote tech workers
-
-*The trade-offs between contracting and employment for remote engineers.* — category: career
-
-The freelance versus employee decision has shifted in 2026 toward a more even split, after employee dominance through 2018-2022 and contractor dominance in 2023.
-
-## Income
-Freelance day rates have stabilized at around 1.5 to 2 times the equivalent employed annual rate divided by working days. Senior contract rates remain higher relative to full-time at companies that previously over-relied on contractors.
-
-## Stability
-Employment provides income smoothing. Freelance income has materially higher variance.
-
-## Benefits
-Employer-paid health insurance, retirement contributions and equity make total compensation closer than the headline numbers suggest.
-
-## Tax
-Freelance allows more expense deductions but typically pays more in social charges.
-
-## Tooling and process
-Some teams will not allow contractors access to certain systems or decisions. This can materially affect career development.
-
-Source: https://slateremote.com/en/guides/freelance-vs-employee-remote
-
----
-
-## Mental health practices for remote tech workers
-
-*What actually helps sustain remote engineering work over multi-year horizons.* — category: lifestyle
-
-Remote work isolates by default. The people who sustain it over five or ten years tend to share a small set of practices.
-
-## Daily structure
-A consistent start time and a hard end time. Lunch eaten away from the desk.
-
-## Physical movement
-Daily walks or workouts at fixed times.
-
-## Social anchors
-Recurring in-person interactions outside work, scheduled with the same priority as meetings.
-
-## Quarterly travel or office time
-Most remote-mature teams now budget for periodic team gatherings. Engineers who sustain remote work tend to take advantage of these.
-
-Source: https://slateremote.com/en/guides/remote-work-mental-health
-
----
-
 ## AI engineer salary in 2026
 
-*Current salary bands for remote AI and ML engineers in 2026.* — category: salary
+*Current salary bands for remote AI and ML engineers in 2026.* (category: salary)
 
 AI engineering salaries have remained at premium levels through 2026 despite broader tech market softness.
 
@@ -683,1905 +125,872 @@ Source: https://slateremote.com/en/guides/ai-engineer-salary-2026
 
 ---
 
-## Where to find remote junior developer jobs
+## How to start on Fiverr as a developer in 2026
 
-*A practical guide to landing a first remote engineering job at the junior level in 2026.* — category: finding
+*A step-by-step path to launching your first tech gig on Fiverr and landing paying buyers.* (category: freelance)
 
-Remote junior developer hiring has tightened since 2022. The companies still hiring fully remote at junior levels are a smaller subset of the broader remote-friendly market, but they exist.
+Fiverr remains one of the fastest ways for a developer to start earning independent income. Unlike client networks that require interviews and vetting, you can publish a gig the same day and be discoverable to buyers within hours.
 
-## Where they hire
-Remote-mature scale-ups with formal mentorship programs. Open source-adjacent companies (developer tools, infra, platforms). Some startups under 50 engineers.
+## Why Fiverr works for developers
+Buyers on Fiverr arrive with a specific task and a budget already in mind. For a developer this means less selling and more delivering: bug fixes, small scripts, API integrations, landing pages, automations. The platform handles payments, disputes and discovery, so you focus on the work.
 
-## Skills that matter
-Demonstrable async communication. Public portfolio with at least three substantial deployed projects. Written work (blog posts, technical READMEs, accepted PRs).
+## Pick one service to start
+The biggest mistake new sellers make is offering everything. Start with one narrow, repeatable service you can deliver reliably, for example "I will fix bugs in your React app" or "I will build a Python automation script". Narrow gigs rank better and convert higher.
 
-## Path
-Many engineers who eventually work remotely at junior level get there via a six to twelve month stint at a local company, then transition. The talent friction at fully remote junior is high enough that going hybrid first is often faster.
+## Set up the account
+Create a seller account, complete your profile fully, and verify your identity. A complete profile with a real photo and a clear description ranks ahead of half-finished ones in Fiverr search.
 
-Source: https://slateremote.com/en/guides/remote-junior-developer-jobs
+## Publish your first gig
+Write a clear title, pick the right category, add three pricing tiers, and include a portfolio sample. Even a single strong sample lifts conversion sharply.
 
----
-
-## Remote tech jobs without a degree
-
-*A realistic view of which remote tech roles still hire candidates without a four-year degree.* — category: finding
-
-The "no degree required" trend in tech hiring softened slightly since 2022 but the underlying market remains accessible.
-
-## Roles where it does not matter
-Front-end engineering, full-stack at smaller companies, design, product management at startups. Track record substitutes for credentials at most of these roles.
-
-## Roles where it still matters
-ML and AI research roles. Many large enterprise companies retain degree requirements.
-
-## Substitutes
-Demonstrated open-source contributions. Substantial public deployed projects. Technical writing or speaking presence.
-
-## Verification
-Many companies have moved to "or equivalent experience" language explicitly. This is real, not boilerplate.
-
-Source: https://slateremote.com/en/guides/no-degree-remote-tech-jobs
-
----
-
-## Best cities for digital nomads in 2026
-
-*A ranked guide to the top digital nomad destinations for remote tech workers in 2026.* — category: lifestyle
-
-The digital nomad city rankings have stabilized somewhat since the post-pandemic shuffle. The top destinations now offer well-tested infrastructure for remote tech workers.
-
-## Tier 1 (well-established, full-service)
-Lisbon, Mexico City, Bali, Chiang Mai, Medellín. Each has dense remote tech expat communities, established co-working scenes, and well-documented visa pathways.
-
-## Tier 2 (growing fast)
-Tbilisi, Buenos Aires, Cape Town, Tallinn, Budapest. Lower costs, smaller communities, less mature infrastructure.
-
-## Choosing
-Match on timezone (most US-anchored remote workers prefer LatAm; EU-anchored prefer Mediterranean Europe). Then on cost of living and visa friction.
-
-Source: https://slateremote.com/en/guides/best-cities-digital-nomad-2026
-
----
-
-## Digital nomad visa comparison for tech workers in 2026
-
-*A side-by-side look at the major digital nomad visas available to remote tech workers.* — category: visa
-
-Dozens of countries now offer dedicated remote work visas. The trade-offs between them rarely come down to a single variable.
-
-## Income thresholds
-Portugal D8: ~3 280 EUR/month. Spain DNV: ~2 760 EUR/month. Mexico Temporary Resident: ~4 500 USD/month. Estonia DNV: ~3 504 EUR/month. UAE Remote: 3 500 USD/month. Greece DNV: ~3 500 EUR/month.
-
-## Length
-Portugal D8: 2 years renewable to 5, then permanent. Spain DNV: 3 years renewable. Mexico TR: 1 year renewable to 4. Estonia DNV: 1 year, no renewal. UAE Remote: 1 year renewable.
-
-## Tax pathway
-Portugal has the strongest preferential tax regime for the long term. Spain Beckham Law extension lasts 6 years. Mexico requires 183-day residency for tax effects.
-
-## Family
-Most allow spouse and dependents. Mexico, Spain, and Portugal are most family-friendly.
-
-Source: https://slateremote.com/en/guides/remote-work-visa-comparison-2026
-
----
-
-## Best time of year to look for a remote tech job
-
-*When companies actually hire and when applications convert.* — category: finding
-
-Remote hiring follows the broader engineering hiring cycle with minor differences.
-
-## Strongest months
-January and February. Companies hit new headcount budgets. Most new requisitions open in this window.
-
-## Second peak
-September and October. Post-summer back-to-business cycle. Strong for senior hiring.
-
-## Slow months
-Mid-July to mid-August (summer slowdown). Mid-December to early January (holidays).
-
-## Async hiring continues year-round
-Unlike traditional office hiring, fully remote hiring has less seasonality. Senior remote roles fill more evenly across the year because they require longer searches anyway.
-
-Source: https://slateremote.com/en/guides/best-time-to-look-for-remote-jobs
-
----
-
-## How to recover from remote tech job rejection
-
-*A practical playbook for handling rejection during a remote tech job search.* — category: finding
-
-Most remote job searches involve multiple rejections. The differentiator between successful and unsuccessful searches is recovery speed, not initial fit.
-
-## The numbers
-A typical experienced remote engineering search runs 80 to 150 applications, 10 to 25 first-round interviews, 4 to 8 full loops, 1 to 3 offers.
-
-## After a rejection
-Ask for specific feedback. Most companies provide little, but the ones that do offer the highest-signal data points in the search.
-
-## Pattern recognition
-After every 10 rejections, audit. Are recruiter screens converting? Are technical rounds? Are final rounds? The bottleneck shifts.
-
-## Mental discipline
-The rejection rate is high enough that taking each one personally compounds into search-ending fatigue. Treat each as data, not verdict.
-
-Source: https://slateremote.com/en/guides/remote-tech-job-rejection-recovery
-
----
-
-## Remote tech jobs with stock options
-
-*Where to find remote tech roles that still meaningfully grant equity.* — category: salary
-
-Equity grants on remote offers compressed in 2023-2024 and have partially recovered since. The companies that still grant meaningful equity remotely cluster in identifiable categories.
-
-## Pre-IPO scale-ups
-Series B through F companies remain the strongest source of meaningful equity grants for remote engineers. Senior equity grants at this stage typically vest over four years.
-
-## Public companies
-RSU grants at remote-friendly public companies are real income. Senior grants commonly cluster between 100 and 400 thousand USD per year vesting over four years.
-
-## Startups
-Pre-seed and seed equity grants for remote employees are typically too small to value meaningfully despite percentage figures.
-
-## Verification
-Always verify the strike price, total options outstanding, and current preferred share price before treating an equity grant as material compensation.
-
-Source: https://slateremote.com/en/guides/remote-tech-jobs-with-stock-options
-
----
-
-## Best resume format for remote tech applications
-
-*The resume patterns that convert on remote tech applications in 2026.* — category: finding
-
-Resume conventions for remote tech applications have converged on a clear set of practices.
-
-## Length
-One page for engineers under five years experience. Two pages maximum for senior and staff candidates.
-
-## Structure
-Reverse chronological work history. Skills section at the top or right column. Education at the bottom.
-
-## What to include
-Quantified impact lines on each role. Concrete technologies used. Public links (GitHub, portfolio).
-
-## What to remove
-Objective statements. References. Personal photos. Unrelated early-career roles for senior candidates.
-
-## Format
-PDF, not Word. Plain typography, dark on light. ATS-readable (no graphics, columns scan correctly).
-
-Source: https://slateremote.com/en/guides/best-resume-format-remote-tech
-
----
-
-## How to handle remote tech recruiter outreach
-
-*Cold recruiter messages and how to convert them efficiently.* — category: finding
-
-Recruiter outreach volume has stayed high through 2026 for mid-level and senior remote engineers. Filter and convert efficiently.
-
-## First filter
-Five-second check: is this a real company, a real role, and a real fit?
-
-## Reply patterns
-For real fits: short interested response with availability. For unclear fits: ask three questions (compensation band, team size, remote policy) before commitment.
-
-## When not to reply
-Generic "great opportunity" boilerplate without role specifics. Recruiters who refuse to name the client. Mass outreach with no personalization.
-
-## Building a recruiter pipeline
-A small number of recruiters who specialize in your stack and seniority become high-value relationships. Invest in 3 to 5 such relationships over a 12-month horizon.
-
-Source: https://slateremote.com/en/guides/remote-tech-recruiter-outreach
-
----
-
-## Best time zones for remote tech workers
-
-*Time zone selection trade-offs for remote engineering work.* — category: lifestyle
-
-Time zone choice for remote engineers is more constrained than candidates often realize.
-
-## US-anchored companies
-Most US-headquartered remote-first companies require at least four hours of overlap with US Pacific or US Eastern. That maps to working hours from roughly UTC-8 to UTC+3 maximum.
-
-## EU-anchored companies
-EU-headquartered companies typically expect overlap with CET. UTC-4 to UTC+5 is the working range.
-
-## Asia-anchored companies
-Smaller pool. Singapore-based companies often accept candidates from UTC+5 to UTC+11.
-
-## Choosing a base
-If targeting US employers: stay west of UTC+3. If targeting EU: anywhere UTC-4 to UTC+5 works. Truly global hires (anywhere in the world) remain a minority of remote postings.
-
-Source: https://slateremote.com/en/guides/best-time-zones-for-remote-tech-workers
-
----
-
-## Portfolio projects that convert on remote tech applications
-
-*Which kinds of public projects actually move response rates on remote applications.* — category: finding
-
-Portfolio projects function as filters. The ones that lift response rate share characteristics that often are not the ones candidates intuit.
-
-## What converts
-Substantial deployments solving real problems, with documentation showing decision tradeoffs. Open source contributions to recognized projects. Technical writeups explaining work shipped at previous roles (within NDA limits).
-
-## What does not convert
-Tutorial clones (todo apps, weather apps). Personal blog with thin content. Side projects with no users.
-
-## Volume vs depth
-One substantial project (six months of work, real users) outperforms five tutorial clones consistently in screening data.
-
-## Public visibility
-The benefit of a portfolio is partly that it gets read. Projects buried on GitHub with no traffic generate less signal than the same projects with even modest visibility (a few hundred GitHub stars or active users).
-
-Source: https://slateremote.com/en/guides/remote-tech-portfolio-projects
-
----
-
-## Remote developer interview preparation, end to end
-
-*How to prepare for the four to six round remote engineering interview loop in 2026.* — category: finding
-
-Remote engineering interview loops have stabilized around a clear pattern. Preparation pays off most on the rounds that have the highest predictive power for the hiring decision.
-
-## The round that decides
-The third or fourth round (the deep technical pairing) carries roughly half the hiring signal. Spend the most preparation time on this format.
-
-## What changed in 2026
-Live coding has moved from leetcode-style puzzles to realistic pairing sessions. Most senior interviews now use a deliberately ambiguous problem with conversation as the main signal.
-
-## System design rounds
-Senior and staff candidates almost always get one. Prepare on two axes: drawing trade-offs cleanly, and asking sharp clarifying questions before drawing anything.
-
-## Behavioral signal
-Async-friendly companies dig into past collaboration through specific examples. Prepare three stories per common theme (conflict, ambiguity, ownership) tied to shipped work.
-
-## Final round
-Increasingly a check on written communication. Expect either a written response exercise or a verbal walkthrough of how you'd document a recent technical decision.
-
-Source: https://slateremote.com/en/guides/remote-developer-interview-prep
-
----
-
-## Counter-offer playbook for remote tech offers
-
-*How to counter on cash, equity, and benefits without burning the offer.* — category: salary
-
-The counter-offer is one decision point with disproportionate impact on total compensation over a multi-year horizon. Treat it as a single high-leverage interaction.
-
-## Counter once
-Counter once with specific reasoning, then accept the second offer if it is materially above your minimum. Repeated counters tend to harden the recruiter rather than move the offer.
-
-## What to counter on
-Cash is the easiest lever for the recruiter to move. Equity grants at private companies move less frequently but more meaningfully when they do. Benefits (vacation, equipment budget, learning budget) are often pulled from a different bucket and can stack on top of cash.
-
-## Anchoring research
-Use posted bands across comparable companies. Cite the source bracket clearly. Vague "market rate" claims do not move offers.
-
-## When to walk
-If the gap between the offer and your minimum is more than 15 to 20 percent and the recruiter cannot close it, the offer is genuinely below market and the company likely cannot adjust. Walking with grace preserves the relationship.
-
-Source: https://slateremote.com/en/guides/remote-job-counter-offer-playbook
-
----
-
-## Async standup vs sync standup
-
-*Which standup format actually works for distributed engineering teams.* — category: lifestyle
-
-Most remote engineering teams that work well have settled on async written standups. The teams that still hold daily synchronous standups split into two groups: those who actively need them, and those who haven't questioned the habit.
-
-## When sync wins
-Junior-heavy teams. Teams with active incidents. Teams whose timezone overlap is wide enough that the meeting is cheap.
-
-## When async wins
-Senior IC teams. Teams across more than four timezones. Teams whose work is mostly individual contributor depth rather than coordination.
-
-## The async format that works
-A short message in a shared channel: what I shipped yesterday, what I'm shipping today, blockers. Read within the working hours by whoever needs to read it. Comments inline if relevant.
-
-## What does not work
-Async standup that nobody reads. Synchronous standup that exists out of habit. Both are quiet productivity sinks.
-
-Source: https://slateremote.com/en/guides/async-vs-sync-standup
-
----
-
-## How to pitch going remote to your current employer
-
-*A practical playbook for converting an on-site or hybrid role into fully remote without changing employers.* — category: career
-
-Many tech workers' fastest path to remote is the company they already work for. The conversion succeeds or fails on framing more than on the underlying request.
-
-## Lead with productivity, not preference
-Frame the change as a productivity decision (focus time, less commute, more deep work) before any lifestyle reason. Lifestyle reasons land badly with most managers.
-
-## Pick the moment
-Ask after a clear win. Performance-review time, after shipping a major feature, or right after a promotion. Avoid asking during stressed periods or while organizational changes are pending.
-
-## Propose a trial
-A three-month trial converts more frequently than a permanent ask. The trial reduces the manager's perceived risk by 90 percent.
-
-## Have a fallback
-Hybrid (one to two days remote per week) is a common compromise that still meaningfully changes daily life. Going in with this in mind helps the negotiation.
-
-Source: https://slateremote.com/en/guides/how-to-pitch-remote-to-employer
-
----
-
-## Mental health and isolation when working fully remote
-
-*Practical patterns that protect against the silent productivity tax of remote isolation.* — category: lifestyle
-
-Fully remote work isolates by default. The engineers who sustain it over five and ten years tend to share a small set of habits that look unimpressive in isolation but compound powerfully.
-
-## Daily anchors
-A consistent start time. A consistent end time. Lunch eaten away from the desk. None of this is optional past year one of remote.
-
-## Weekly anchors
-Two or three recurring in-person interactions outside work. A weekly call with a friend who is not a colleague. A shared physical activity (gym, sport, hobby) with set times.
-
-## Detect early
-Burnout from isolation does not look like burnout from overwork. It looks like productivity decay over weeks, dreading meetings that used to feel neutral, social anxiety creeping into Slack reactions. Naming it early matters.
-
-## Team gatherings
-Most remote-mature companies budget for periodic in-person team weeks. The engineers who sustain remote work tend to attend these even when it is inconvenient. The signal-to-noise on three days in person is exceptional.
-
-Source: https://slateremote.com/en/guides/remote-mental-health-isolation
-
----
-
-## Equipment and stipend negotiation for remote engineers
-
-*Standard remote benefits, how they vary, and what to ask for at signing.* — category: salary
-
-Most remote-mature companies budget for home-office setup. The ranges and structures vary widely, and asking explicitly at signing nets meaningful additional value.
-
-## Common buckets in 2026
-One-time equipment budget at start: 1 500 to 3 500 USD. Annual replacement budget: 500 to 1 500. Monthly internet or coworking stipend: 50 to 150. Annual learning budget: 1 000 to 3 000. Annual team gathering budget: separate, often 2 000 to 4 000 per engineer.
-
-## What to ask for
-Ask at the offer stage, not after starting. Bring specific numbers from publicly documented offers at comparable companies. Most recruiters can stretch on at least one of these buckets even when cash is capped.
-
-## What to skip
-Tax-coded benefits in countries where the employer's reimbursement is taxable (US W-2, some EU). These add complexity for limited net.
-
-Source: https://slateremote.com/en/guides/remote-equipment-stipend-negotiation
-
----
-
-## Searching for a remote job while living abroad
-
-*How to make a remote tech job search work when you are not in the country where most employers are.* — category: finding
-
-Looking for a remote job from a country with limited local tech employer presence requires a deliberately different approach than the equivalent search from a major tech hub.
-
-## Timezone disclosure
-Surface your timezone in the first message to recruiters. Burying it leads to wasted interviews when the company turns out to need broader overlap than you can offer.
-
-## US employers from non-US locations
-Most US-headquartered remote employers can only legally employ contractors or use an employer-of-record service. Understand which one applies to a posting before investing time.
-
-## EU employers from non-EU locations
-EU companies have more flexibility for non-EU contractors but typically prefer EU residents. The Spanish, Portuguese and German nomad and Blue Card paths give you EU residency without requiring local employment.
-
-## Network signal
-Recommendations from someone the employer trusts outweigh location concerns at most companies. Invest in two to three warm intros per month rather than 20 cold applications.
-
-Source: https://slateremote.com/en/guides/remote-job-search-from-abroad
-
----
-
-## Second passport and residency for remote workers
-
-*The realistic options for getting a second residency or passport as a remote worker.* — category: visa
-
-A second residency or passport buys optionality. The realistic options for a remote tech worker fall into a small number of categories.
-
-## Fast residency (under 2 years)
-Portugal D8 visa (path to residency in 5 years). Spain DNV (path in 5 years). Greece DNV (path in 7 years). Malta nomad residence (renewable annually).
-
-## Faster but more expensive
-UAE Golden Visa (10-year residency from 540 000 AED investment). Portugal Golden Visa (still possible via select investment routes after 2024 reforms).
-
-## Citizenship paths
-Most EU nomad visas lead to citizenship in 5 to 10 years (Portugal 5, Spain 10, Germany 8 with C1 German). St. Kitts and Grenada citizenship-by-investment cost 150 to 250 000 USD and grant a passport in 4 to 6 months.
-
-## Tax considerations
-Holding a second residency does not by itself change tax residency. Tax residency depends on the 183-day test plus the substantive home test in most jurisdictions.
-
-Source: https://slateremote.com/en/guides/second-passport-residency-remote-workers
-
----
-
-## Remote onboarding: the first 90 days
-
-*How to start a fully remote engineering role and convert the trial period reliably.* — category: career
-
-The first 90 days at a remote engineering role determine whether you slot into the team or drift toward isolation. The pattern that works for most engineers is structured and slightly extroverted.
-
-## First two weeks
-Schedule one 30-minute call with every direct teammate and every interface partner. Ask the same three questions: what is broken, what are you proud of shipping recently, what do you wish a new engineer would do differently.
-
-## First month
-Ship something small but visible. A polish PR, a small feature, a docs improvement. The point is to demonstrate working speed and earn early trust.
-
-## Month two
-Take ownership of a moderate piece of scope. Run it end to end. Communicate progress publicly more than feels natural.
-
-## Month three
-Have a documented opinion on at least one architectural decision in the team's scope. Without an opinion, you read as a senior IC without conviction.
-
-## What to avoid
-Long stretches of solo work without check-ins. Suggesting major changes before two months in. Going dark for any reason.
-
-Source: https://slateremote.com/en/guides/remote-onboarding-first-90-days
-
----
-
-## How much tax remote workers actually pay by country
-
-*A realistic comparison of effective tax burdens for remote tech workers across major destination countries.* — category: tax
-
-Headline rates differ less than the effective rates remote workers actually pay, which depend on preferential regimes, social charges, and what counts as taxable.
-
-## Effective rate brackets at ~100k EUR income
-Portugal NHR successor regime: ~20 to 25 percent. Spain Beckham extension: 24 percent on Spanish-source up to 600k EUR. Italy impatriate regime: ~25 to 30 percent. Greece DNV regime: ~25 percent. Germany (no special regime): 38 to 42 percent. France (no special regime): 35 to 40 percent. Netherlands 30 percent ruling: ~36 percent net.
-
-## Off-Europe options
-Dubai: 0 percent on personal income, 9 percent corporate above 375k AED. Singapore: 15 to 22 percent depending on residency. US tax-free states: 22 to 32 percent federal, 0 state (TX, FL, WA, NV, TN, NH).
-
-## Hidden costs to model
-Health insurance contributions. Pension contributions. Solidarity surcharges. These add 5 to 12 percentage points to nominal income tax in most EU countries.
-
-Source: https://slateremote.com/en/guides/remote-worker-tax-by-country
-
----
-
-# City profiles
-
-## Lisbon, Portugal
-
-*Top remote tech hub in Western Europe with the D8 nomad visa.*
-
-Lisbon has cemented its position as the dominant remote tech hub in Western Europe. The D8 digital nomad visa, low cost of living relative to other capital cities, mild climate and strong fiber infrastructure make it the preferred base for remote engineers relocating from higher-cost markets. The startup ecosystem around the Beato Innovation District and Cais do Sodré has matured into a stable network of co-working spaces and meetups in 2026. Rents have risen sharply since 2022 but remain below Paris, Amsterdam or Dublin equivalents.
-
-Source: https://slateremote.com/en/cities/lisbon
-
----
-
-## Berlin, Germany
-
-*Largest remote-friendly tech city in continental Europe.*
-
-Berlin remains the largest tech hub in continental Europe by remote engineering headcount. The Freiberufler visa for freelancers and the Blue Card for employed engineers give straightforward paths in. The cost of living is moderate compared to other major capitals, though rents have risen significantly. The local English-speaking startup scene is dense enough that day-to-day life as a remote worker without German is workable.
-
-Source: https://slateremote.com/en/cities/berlin
-
----
-
-## Barcelona, Spain
-
-*Mediterranean coast hub with the Spanish nomad visa.*
-
-Barcelona combines coastal living with a substantial local tech ecosystem. The Spanish Digital Nomad Visa launched in 2023 has made the city a preferred destination for remote engineers from outside the EU. Cost of living is materially lower than Madrid, with rents around 25 to 35 percent below central Madrid.
-
-Source: https://slateremote.com/en/cities/barcelona
-
----
-
-## Madrid, Spain
-
-*Capital and largest tech market in Spain.*
-
-Madrid is the larger of the two Spanish tech markets and the easier city for engineers needing a wider local job network alongside their remote role. Fiber connectivity is excellent, and the Spanish Digital Nomad Visa is widely used here.
-
-Source: https://slateremote.com/en/cities/madrid
-
----
-
-## Mexico City, Mexico
-
-*Top Latin American hub with US-friendly timezone.*
-
-Mexico City offers near-perfect timezone overlap with US-based remote employers, a substantial local engineering scene, and a cost of living roughly half that of comparable US cities. The Temporary Resident visa is straightforward for engineers with stable remote income. Neighborhoods like Roma, Condesa and Polanco concentrate the remote tech expat scene.
-
-Source: https://slateremote.com/en/cities/mexico-city
-
----
-
-## Medellín, Colombia
-
-*Year-round mild climate hub for remote engineers in LatAm.*
-
-Medellín has become the second-most popular LatAm destination for remote engineers after Mexico City. The year-round mild climate (around 22 °C average), low cost of living and a dedicated Colombian Digital Nomad Visa launched in 2023 are the main draws.
-
-Source: https://slateremote.com/en/cities/medellin
-
----
-
-## Austin, United States
-
-*Largest US remote-friendly tech city outside the coasts.*
-
-Austin remains the largest non-coastal US city for remote-friendly tech employment. The combination of no state income tax, a deep local startup ecosystem and substantial out-of-state tech HQ presence makes it a default landing for US-based remote engineers.
-
-Source: https://slateremote.com/en/cities/austin
-
----
-
-## London, United Kingdom
-
-*Largest European tech market for remote and hybrid engineering.*
-
-London remains the largest single tech labor market in Europe. Many UK remote postings are technically hybrid, requiring one to two days per week on site. The Global Talent visa offers a fast path for senior engineers and researchers.
-
-Source: https://slateremote.com/en/cities/london
-
----
-
-## Amsterdam, Netherlands
-
-*Premier remote tech market in the Netherlands.*
-
-Amsterdam attracts remote engineers via the Dutch-American Friendship Treaty (for US citizens starting a business) and the Highly Skilled Migrant program for employed engineers. The Dutch tech ecosystem is dense and English-friendly.
-
-Source: https://slateremote.com/en/cities/amsterdam
-
----
-
-## Bali, Indonesia
-
-*Top Asian remote tech destination, particularly Canggu and Ubud.*
-
-Bali, particularly the Canggu and Ubud areas, remains the largest concentration of remote tech workers in Southeast Asia. The 2023 Second Home Visa formalized longer-term stays. Internet quality has improved sharply in 2024-2026 with dedicated co-working fiber.
-
-Source: https://slateremote.com/en/cities/bali
-
----
-
-## Chiang Mai, Thailand
-
-*Long-standing low-cost remote tech base in Thailand.*
-
-Chiang Mai has been a remote work destination since the early 2010s. The 2024 Destination Thailand Visa simplified longer stays for remote workers. Cost of living is among the lowest in any major remote tech hub.
-
-Source: https://slateremote.com/en/cities/chiang-mai
-
----
-
-## Singapore, Singapore
-
-*Premier Asian tech hub with excellent infrastructure.*
-
-Singapore offers world-class fiber, English-language operations, low corruption and an established Tech.Pass program for senior engineers. Cost of living is among the highest in Asia.
-
-Source: https://slateremote.com/en/cities/singapore
-
----
-
-## Tokyo, Japan
-
-*Major Asian tech market with the new digital nomad visa.*
-
-Tokyo launched its Digital Nomad Visa in 2024, opening shorter-term remote work options. The Highly Skilled Professional path remains the primary route for engineers relocating long-term.
-
-Source: https://slateremote.com/en/cities/tokyo
-
----
-
-## Dubai, United Arab Emirates
-
-*Tax-free remote tech base in the Middle East.*
-
-Dubai offers a tax-free environment for remote engineers via its Remote Work Visa launched in 2021. Cost of living is high but with no income tax the net benefit can be substantial for senior earners.
-
-Source: https://slateremote.com/en/cities/dubai
-
----
-
-## Cape Town, South Africa
-
-*Top African remote tech base with EU-aligned timezone.*
-
-Cape Town is the largest concentration of remote tech workers in Africa, helped by a timezone aligned with European working hours. The 2024 Remote Work Visa simplified longer stays.
-
-Source: https://slateremote.com/en/cities/cape-town
-
----
-
-## Tbilisi, Georgia
-
-*Low-cost remote tech base with one-year visa-free stay.*
-
-Tbilisi offers a one-year visa-free stay for most passports, low cost of living and a growing English-speaking remote tech community. Banking and registration for individual entrepreneurs is straightforward.
-
-Source: https://slateremote.com/en/cities/tbilisi
-
----
-
-## Warsaw, Poland
-
-*Largest EU remote tech market at moderate cost.*
-
-Warsaw combines a sizable local tech ecosystem with EU mobility benefits and moderate cost of living. Poland Business Harbour streamlined relocation for engineers from select non-EU countries.
-
-Source: https://slateremote.com/en/cities/warsaw
-
----
-
-## Prague, Czech Republic
-
-*EU tech base with the Zivno self-employment visa.*
-
-Prague is a popular European base for freelance and contracted remote engineers, with the Zivnostensky list (trade license) providing a clear self-employment path.
-
-Source: https://slateremote.com/en/cities/prague
-
----
-
-## Budapest, Hungary
-
-*Hungarian tech base with the White Card nomad visa.*
-
-Budapest introduced the White Card digital nomad visa in 2022. Cost of living is among the lowest in EU capitals.
-
-Source: https://slateremote.com/en/cities/budapest
-
----
-
-## Tallinn, Estonia
-
-*Premier digital-native base with e-Residency.*
-
-Estonia pioneered the e-Residency program and the Digital Nomad Visa. Tallinn remains the most digitally mature European capital for setting up a freelance business remotely.
-
-Source: https://slateremote.com/en/cities/tallinn
-
----
-
-## Buenos Aires, Argentina
-
-*LatAm base with strong tech talent pool.*
-
-Buenos Aires has a substantial local tech talent pool and a Digital Nomad Visa launched in 2022. Cost of living for USD earners has been exceptionally low through 2024-2026 currency dynamics.
-
-Source: https://slateremote.com/en/cities/buenos-aires
-
----
-
-## Rio de Janeiro, Brazil
-
-*Coastal Brazilian base with the digital nomad visa.*
-
-Rio de Janeiro pairs Atlantic coastal living with a tech ecosystem concentrated in the South Zone. The Brazilian Digital Nomad Visa launched in 2022 simplifies longer stays for remote engineers.
-
-Source: https://slateremote.com/en/cities/rio-de-janeiro
-
----
-
-## São Paulo, Brazil
-
-*Largest tech market in Latin America.*
-
-São Paulo is the largest tech market in Latin America, with a deep local engineering ecosystem and a dense international company presence.
-
-Source: https://slateremote.com/en/cities/sao-paulo
-
----
-
-## Porto, Portugal
-
-*Smaller, lower-cost alternative to Lisbon.*
-
-Porto offers the same D8 nomad visa pathway as Lisbon at materially lower cost of living. The tech scene is smaller but growing, and rents are 30 to 40 percent below Lisbon equivalents.
-
-Source: https://slateremote.com/en/cities/porto
-
----
-
-## Valencia, Spain
-
-*Lower-cost Mediterranean alternative to Barcelona.*
-
-Valencia attracts remote engineers seeking the Mediterranean lifestyle at materially lower cost than Barcelona. Internet connectivity is among the best in the country.
-
-Source: https://slateremote.com/en/cities/valencia
-
----
-
-## Málaga, Spain
-
-*Coastal Andalusian remote tech hub.*
-
-Málaga has positioned itself as a 'tech coast' destination on the Costa del Sol, with growing co-working infrastructure and a Mediterranean climate.
-
-Source: https://slateremote.com/en/cities/malaga
-
----
-
-## Paris, France
-
-*Largest French tech market with strong AI ecosystem.*
-
-Paris hosts the largest concentration of French tech employers and a strong AI research ecosystem around La Défense and Station F. The Passeport Talent program gives a clear path for senior engineers.
-
-Source: https://slateremote.com/en/cities/paris
-
----
-
-## Munich, Germany
-
-*Premium German tech market anchored by enterprise.*
-
-Munich is the second German tech market after Berlin, anchored by enterprise and automotive employers. Salaries trend higher than Berlin but so do rents.
-
-Source: https://slateremote.com/en/cities/munich
-
----
-
-## Copenhagen, Denmark
-
-*High-salary Nordic tech market with strong remote culture.*
-
-Copenhagen offers a strong concentration of remote-friendly Nordic tech companies and consistently high salary bands. Cost of living is among the highest in Europe.
-
-Source: https://slateremote.com/en/cities/copenhagen
-
----
-
-## Stockholm, Sweden
-
-*Largest Nordic tech market with English-friendly culture.*
-
-Stockholm hosts the largest Nordic tech ecosystem, with English-friendly operations across most international companies and a long tradition of remote-friendly work culture.
-
-Source: https://slateremote.com/en/cities/stockholm
-
----
-
-## Helsinki, Finland
-
-*Nordic tech base with strong gaming and platform ecosystem.*
-
-Helsinki has a particularly strong games industry and platform engineering ecosystem. Internet quality and English fluency are among the highest in Europe.
-
-Source: https://slateremote.com/en/cities/helsinki
-
----
-
-## Dublin, Ireland
-
-*EU base for many US tech HQs and remote-friendly subsidiaries.*
-
-Dublin hosts the European HQ of many US tech companies, making it a frequent destination for engineers wanting EU residency with US-anchored work culture.
-
-Source: https://slateremote.com/en/cities/dublin
-
----
-
-## New York, United States
-
-*Largest US East Coast tech market.*
-
-New York remains the largest tech labor market on the US East Coast. Many remote postings in financial services and media are anchored here.
-
-Source: https://slateremote.com/en/cities/new-york
-
----
-
-## San Francisco, United States
-
-*Highest US tech salary bands, increasingly hybrid.*
-
-San Francisco retains the highest US tech salary bands. Most well-funded local companies have shifted from fully remote to hybrid since 2023.
-
-Source: https://slateremote.com/en/cities/san-francisco
-
----
-
-## Seattle, United States
-
-*Major Pacific Northwest tech hub with no state income tax.*
-
-Seattle combines major tech employer presence with no state income tax. Remote postings from local HQs are common, though many have shifted to hybrid for nearby engineers.
-
-Source: https://slateremote.com/en/cities/seattle
-
----
-
-## Denver, United States
-
-*Mid-mountain US tech hub popular with remote engineers.*
-
-Denver has attracted significant remote tech worker inflows since 2020. Cost of living is moderate by US standards and outdoor lifestyle factors weigh heavily in relocation decisions.
-
-Source: https://slateremote.com/en/cities/denver
-
----
-
-## Miami, United States
-
-*US East Coast crypto and remote tech hub, no state income tax.*
-
-Miami became a notable remote tech destination during the 2020-2023 wave, particularly in crypto and fintech. No state income tax remains a long-term driver.
-
-Source: https://slateremote.com/en/cities/miami
-
----
-
-## Toronto, Canada
-
-*Largest Canadian tech market with US-aligned timezone.*
-
-Toronto is the largest tech labor market in Canada, with US-aligned timezone and the Global Talent Stream offering a 2-week processing path for senior engineers.
-
-Source: https://slateremote.com/en/cities/toronto
-
----
-
-## Vancouver, Canada
-
-*Pacific Canadian tech base with US Pacific timezone alignment.*
-
-Vancouver shares its timezone with the US Pacific tech ecosystem and offers an alternative for engineers wanting Canadian residency while collaborating with US-based teams.
-
-Source: https://slateremote.com/en/cities/vancouver
-
----
-
-## Las Palmas, Spain
-
-*Year-round mild climate hub on the Atlantic, growing remote tech scene.*
-
-Las Palmas, on Gran Canaria, has emerged since 2020 as one of the most active remote work hubs in the Atlantic. The combination of year-round 22 °C average, low cost of living relative to mainland Spain, and the Spanish Digital Nomad Visa pathway makes it a strong pick for engineers wanting a Mediterranean lifestyle with better weather. Co-working scene around Triana and Vegueta is well established, with several dedicated nomad coliving spaces.
-
-Source: https://slateremote.com/en/cities/las-palmas
-
----
-
-## Tenerife, Spain
-
-*Volcanic Canary Island alternative to Las Palmas with stronger nomad community.*
-
-Tenerife pairs the Canary Islands fiscal regime with a remote nomad community that has grown rapidly since 2021. Puerto de la Cruz and the southern coast around Costa Adeje concentrate most of the remote workers. Internet quality is excellent across the island, and the Spanish DNV applies here as in mainland Spain.
-
-Source: https://slateremote.com/en/cities/tenerife
-
----
-
-## Funchal (Madeira), Portugal
-
-*Atlantic Portuguese island with the original Digital Nomad Village.*
-
-Madeira launched the original "Digital Nomad Village" in Ponta do Sol in 2021. The Portuguese D8 visa applies here as on the mainland, and the island offers excellent fiber, a dedicated coworking infrastructure, and one of the most stable remote nomad communities in Europe.
-
-Source: https://slateremote.com/en/cities/madeira
-
----
-
-## Bangkok, Thailand
-
-*Urban Thai alternative to Chiang Mai with stronger tech ecosystem.*
-
-Bangkok offers Thailand\
-
-Source: https://slateremote.com/en/cities/bangkok
-
----
-
-## Kuala Lumpur, Malaysia
-
-*English-friendly Asian remote tech base with the DE Rantau pass.*
-
-Kuala Lumpur introduced the DE Rantau Nomad Pass in 2022. English is widely spoken across the city, costs are moderate, fiber is excellent, and Mont Kiara plus Bangsar areas concentrate most of the international remote workforce.
-
-Source: https://slateremote.com/en/cities/kuala-lumpur
-
----
-
-## Da Nang, Vietnam
-
-*Beach plus fiber Vietnamese hub for cost-conscious remote workers.*
-
-Da Nang has overtaken Ho Chi Minh City as the preferred Vietnamese remote work destination. The combination of beach, modern infrastructure, very low cost of living, and a growing English-speaking community drives the inflow. Visa is straightforward, and the 90-day extension paths are well documented.
-
-Source: https://slateremote.com/en/cities/da-nang
-
----
-
-## Taipei, Taiwan
-
-*Clean tech ecosystem in Asia, world-class fiber.*
-
-Taipei pairs world-class internet (gigabit broadly available) with a clean and English-friendly tech ecosystem. The Taiwan Employment Gold Card is a fast residency path for senior engineers, valid 1 to 3 years and easily renewable.
-
-Source: https://slateremote.com/en/cities/taipei
-
----
-
-## Seoul, South Korea
-
-*Major Asian tech market with new workation visa.*
-
-Seoul launched its dedicated workation visa in 2024, opening shorter-term legal stays for remote workers. The local tech market is one of the largest in Asia, and internet quality is unmatched. Itaewon and Hannam areas concentrate the international remote scene.
-
-Source: https://slateremote.com/en/cities/seoul
-
----
-
-## Marrakech, Morocco
-
-*EU-adjacent timezone at half the EU cost of living.*
-
-Marrakech offers EU-aligned working hours at roughly half the cost of EU equivalents. The Gueliz district concentrates the digital nomad community. Internet quality has improved sharply since 2022 with widespread fiber rollout.
-
-Source: https://slateremote.com/en/cities/marrakech
-
----
-
-## Antalya, Turkey
-
-*Mediterranean Turkey base with low cost and EU-compatible hours.*
-
-Antalya combines the Mediterranean coastline with very low cost of living for USD or EUR earners. Working hours align with most of Europe. Internet quality is solid across the city, and the short-term residence permit can be extended for multi-year stays.
-
-Source: https://slateremote.com/en/cities/antalya
-
----
-
-# Skill briefings
-
-## React (framework)
-
-*The dominant front-end library on remote engineering postings.*
-
-React still leads the front-end stack on remote job postings in 2026. Roughly two thirds of remote front-end roles ask for React experience, with Next.js explicitly named in about one in three. Senior salary bands cluster between 130 and 190 thousand USD for fully remote positions at US-headquartered companies, and 70 to 110 thousand EUR at EU-based employers.
-
-Source: https://slateremote.com/en/skills/react
-
----
-
-## TypeScript (language)
-
-*Default language for new web and Node services on remote teams.*
-
-TypeScript is now the baseline for new web services in remote-first companies. Listings that mention TypeScript as required pay on average 8 to 12 percent above their JavaScript-only equivalents at the same seniority. Strong typing fits async, distributed teams: it reduces context-loss cost between reviewers.
-
-Source: https://slateremote.com/en/skills/typescript
-
----
-
-## JavaScript (language)
-
-*The universal web language, still strongest on broad front-end and Node postings.*
-
-JavaScript remains the most commonly tagged language on remote engineering postings. Most of these listings now expect TypeScript familiarity in practice, but JavaScript proficiency is the door.
-
-Source: https://slateremote.com/en/skills/javascript
-
----
-
-## Python (language)
-
-*The dominant language for remote data, ML, and backend roles.*
-
-Python tops the remote postings list when filtering for data engineering, machine learning and backend roles. ML and AI engineering roles add a substantial premium: Python-tagged ML engineer positions typically sit 30 to 50 percent above generalist Python backend bands.
-
-Source: https://slateremote.com/en/skills/python
-
----
-
-## Rust (language)
-
-*Premium-paid systems language with growing remote demand.*
-
-Rust roles are still a smaller share of total remote postings but pay among the highest bands in the index. Senior Rust positions at fintech, infrastructure and cryptography companies sit at 180 to 260 thousand USD remotely.
-
-Source: https://slateremote.com/en/skills/rust
-
----
-
-## Go (language)
-
-*Backbone of remote-first infrastructure and platform engineering.*
-
-Go dominates platform engineering listings at remote-first companies. If you read a remote SRE or infra posting in 2026, there is a roughly 60 percent chance it asks for Go.
-
-Source: https://slateremote.com/en/skills/go
-
----
-
-## Java (language)
-
-*Enterprise backbone, common on remote enterprise back-end postings.*
-
-Java is heavily represented in remote backend listings at enterprise-scale companies and at fintech. Spring Boot is the dominant framework on these postings.
-
-Source: https://slateremote.com/en/skills/java
-
----
-
-## Kotlin (language)
-
-*Primary language for remote Android and JVM backend work.*
-
-Kotlin appears on most remote Android postings and increasingly on JVM backend roles replacing legacy Java services.
-
-Source: https://slateremote.com/en/skills/kotlin
-
----
-
-## Swift (mobile)
-
-*Required for almost every remote iOS engineering role.*
-
-Swift is required across remote iOS engineering postings. SwiftUI experience is increasingly listed as a hard requirement on new postings since 2024.
-
-Source: https://slateremote.com/en/skills/swift
-
----
-
-## C# (language)
-
-*Common on remote enterprise and game backend postings.*
-
-C# remains widespread on remote enterprise backend and on game studio postings. .NET 8 and 9 features appear regularly in 2026 listings.
-
-Source: https://slateremote.com/en/skills/csharp
-
----
-
-## Ruby (language)
+## First week expectations
+Most sellers get their first order within one to three weeks if their gig is well-targeted and priced for entry. Treat the first few orders as reputation investments: over-deliver, earn five-star reviews, and use that momentum to raise prices.
 
-*Strong remote presence at established SaaS companies.*
+Source: https://slateremote.com/en/guides/how-to-start-on-fiverr-as-a-developer
 
-Ruby and Ruby on Rails postings are concentrated at established remote-first SaaS companies. The market is smaller than five years ago but pays well at senior levels.
-
-Source: https://slateremote.com/en/skills/ruby
-
----
-
-## PHP (language)
-
-*Stable demand on remote backend and Laravel postings.*
-
-PHP remote demand is steady, with Laravel being the dominant framework on new listings. Symfony is common on European postings.
-
-Source: https://slateremote.com/en/skills/php
-
----
-
-## Next.js (framework)
-
-*The default React meta-framework on remote front-end postings.*
-
-Next.js is explicitly named on the majority of remote React job postings since 2023. App Router experience is now the differentiator on senior listings.
-
-Source: https://slateremote.com/en/skills/nextjs
-
----
-
-## Vue (framework)
-
-*Second front-end framework on remote postings, strong in EU.*
-
-Vue is the second most-requested front-end framework on remote postings, with particularly strong demand at EU-based companies.
-
-Source: https://slateremote.com/en/skills/vue
-
----
-
-## Svelte (framework)
-
-*Smaller but growing remote demand at modern web teams.*
-
-Svelte and SvelteKit postings remain a smaller share of remote front-end demand but grow steadily, particularly at scrappy product teams.
-
-Source: https://slateremote.com/en/skills/svelte
-
----
-
-## Angular (framework)
-
-*Mature framework, common on remote enterprise front-end postings.*
-
-Angular postings cluster at enterprise-scale companies and at established financial services firms with remote engineering offices.
-
-Source: https://slateremote.com/en/skills/angular
-
----
-
-## Node.js (framework)
-
-*Default JavaScript runtime on remote backend postings.*
-
-Node.js anchors the JavaScript backend stack on remote postings. Express, Fastify and NestJS dominate the framework choices.
-
-Source: https://slateremote.com/en/skills/nodejs
-
----
-
-## Django (framework)
-
-*Primary Python web framework on remote backend postings.*
-
-Django is the most-listed Python web framework on remote backend postings, especially in fintech and content-heavy SaaS companies.
-
-Source: https://slateremote.com/en/skills/django
-
----
-
-## FastAPI (framework)
-
-*Growing Python framework on modern remote backend roles.*
-
-FastAPI listings have overtaken Flask on new remote Python backend postings. ML serving and lightweight API teams favor it.
-
-Source: https://slateremote.com/en/skills/fastapi
-
----
-
-## Spring (framework)
-
-*Dominant Java framework on remote backend postings.*
-
-Spring and Spring Boot are explicitly named on nearly all remote Java backend listings. Microservices architectures with Spring Cloud are typical.
-
-Source: https://slateremote.com/en/skills/spring
-
----
-
-## AWS (cloud)
-
-*The most-requested cloud on remote backend, devops and platform roles.*
-
-AWS is the most-requested cloud across remote engineering postings. Lambda, ECS, RDS and S3 are the staples on backend listings; EKS, IAM and CloudWatch on platform and SRE listings.
-
-Source: https://slateremote.com/en/skills/aws
-
----
-
-## GCP (cloud)
-
-*Second cloud on remote data, ML and infra postings.*
-
-GCP appears on roughly one in three remote infra and data postings, often as a primary cloud for data warehouse-heavy stacks built on BigQuery.
-
-Source: https://slateremote.com/en/skills/gcp
-
----
-
-## Azure (cloud)
-
-*Common on remote enterprise and .NET-heavy postings.*
-
-Azure dominates remote postings at enterprise-grade and .NET-centric companies. Azure DevOps, App Service and AKS appear most frequently.
-
-Source: https://slateremote.com/en/skills/azure
-
----
-
-## Kubernetes (devops)
-
-*Baseline orchestration skill on remote platform and SRE roles.*
-
-Kubernetes is now baseline on remote platform and SRE postings. The differentiator at senior levels is multi-cluster, multi-region operations experience.
-
-Source: https://slateremote.com/en/skills/kubernetes
-
----
-
-## Docker (devops)
-
-*Ubiquitous container tooling on remote engineering postings.*
-
-Docker is ubiquitous on remote engineering listings. Container literacy is now an entry-level expectation, not a senior differentiator.
-
-Source: https://slateremote.com/en/skills/docker
-
----
-
-## Terraform (devops)
-
-*Primary IaC tool on remote platform postings.*
-
-Terraform appears on nearly all remote platform engineering postings as the infrastructure-as-code tool. OpenTofu adoption is rising on more security-conscious teams.
-
-Source: https://slateremote.com/en/skills/terraform
-
----
-
-## Ansible (devops)
-
-*Common configuration management tool on remote ops roles.*
-
-Ansible appears on remote ops postings that manage long-running VM fleets and on hybrid cloud environments.
-
-Source: https://slateremote.com/en/skills/ansible
-
----
-
-## PostgreSQL (data)
-
-*Default OLTP database across remote backend postings.*
-
-PostgreSQL is the default OLTP database in remote postings. Knowledge of advanced features (logical replication, partial indexes, RLS) marks senior listings.
-
-Source: https://slateremote.com/en/skills/postgres
-
----
-
-## MongoDB (data)
-
-*Common document store on remote backend postings.*
-
-MongoDB demand is steady but smaller than five years ago. New listings often pair it with caching layers and event streaming.
-
-Source: https://slateremote.com/en/skills/mongodb
-
----
-
-## MySQL (data)
-
-*Widespread on remote backend postings at established companies.*
-
-MySQL and MariaDB demand on remote postings is steady, particularly at established consumer SaaS and at content-heavy platforms.
-
-Source: https://slateremote.com/en/skills/mysql
-
----
-
-## Redis (data)
-
-*Ubiquitous caching and queuing primitive on remote backend roles.*
-
-Redis appears on most remote backend postings as the caching, session and lightweight queueing primitive.
-
-Source: https://slateremote.com/en/skills/redis
-
----
-
-## Elasticsearch (data)
-
-*Search and log analytics skill across remote backend postings.*
-
-Elasticsearch and its OpenSearch fork are commonly listed on remote backend postings for search, logging and analytics workloads.
-
-Source: https://slateremote.com/en/skills/elasticsearch
-
 ---
 
-## Kafka (data)
+## How to build a Fiverr profile that wins orders
 
-*Premium event streaming skill on remote data platform postings.*
+*The profile and gig elements that move buyers from browsing to ordering.* (category: freelance)
 
-Kafka shows up on remote data platform and event-driven backend postings. Senior remote postings name it as a hard requirement for distributed systems roles.
+Your Fiverr profile is a conversion page, not a CV. Buyers skim it in seconds and decide whether to trust you with their money. Every element should reduce risk and signal competence.
 
-Source: https://slateremote.com/en/skills/kafka
+## Profile photo and tagline
+Use a clear, friendly headshot. Faces convert better than logos for individual sellers. Your tagline should state the outcome you deliver, not your job title.
 
----
-
-## Snowflake (data)
-
-*Leading data warehouse on remote data engineering postings.*
-
-Snowflake leads the remote data warehouse listings. Knowledge of cost optimization and access control patterns is the senior differentiator.
-
-Source: https://slateremote.com/en/skills/snowflake
-
----
-
-## BigQuery (data)
-
-*Default warehouse on remote GCP-anchored data teams.*
-
-BigQuery anchors remote data engineering listings at GCP-centric companies. Familiarity with slot management and BI Engine is the senior signal.
-
-Source: https://slateremote.com/en/skills/bigquery
-
----
-
-## dbt (data)
-
-*Default transformation layer on remote analytics engineering roles.*
-
-dbt is now ubiquitous on remote analytics engineering postings. Most postings expect both Core and Cloud familiarity.
-
-Source: https://slateremote.com/en/skills/dbt
-
----
-
-## Apache Spark (data)
-
-*Distributed processing skill on remote data engineering roles.*
-
-Spark and PySpark remain dominant on remote data engineering postings dealing with large-scale batch and streaming pipelines.
-
-Source: https://slateremote.com/en/skills/spark
-
----
-
-## Apache Airflow (data)
-
-*Most-listed orchestrator on remote data engineering roles.*
-
-Airflow is the most-listed workflow orchestrator on remote data engineering postings. Prefect and Dagster appear on a growing minority of newer listings.
-
-Source: https://slateremote.com/en/skills/airflow
-
----
-
-## PyTorch (ai)
-
-*Default ML framework on remote ML engineering postings.*
-
-PyTorch is the dominant deep learning framework on remote ML engineering postings since 2022. Familiarity with distributed training and serving is the senior signal.
-
-Source: https://slateremote.com/en/skills/pytorch
-
----
-
-## TensorFlow (ai)
-
-*Established ML framework on remote ML engineering postings.*
-
-TensorFlow demand remains on remote ML postings, particularly at enterprise companies maintaining established production pipelines.
-
-Source: https://slateremote.com/en/skills/tensorflow
-
----
-
-## LLM Engineering (ai)
-
-*The fastest-growing remote AI specialty since 2023.*
-
-LLM engineering listings on remote postings have grown sharply since 2023. Production experience with retrieval-augmented generation, fine-tuning and evals is the senior differentiator. Salaries on dedicated LLM engineering postings sit at 180 to 280 thousand USD remotely at well-funded companies.
-
-Source: https://slateremote.com/en/skills/llm
-
----
-
-## RAG (ai)
-
-*Production retrieval skill across remote AI engineering postings.*
-
-Retrieval-augmented generation experience is named on most remote AI engineering postings since 2024. Vector database familiarity and embedding choice tradeoffs are typical interview topics.
-
-Source: https://slateremote.com/en/skills/rag
-
----
-
-## Hugging Face (ai)
-
-*Default ML model platform on remote ML engineering postings.*
-
-Hugging Face Transformers, Datasets and Hub appear on most remote ML engineering postings. Model fine-tuning experience using their stack is a common requirement.
-
-Source: https://slateremote.com/en/skills/huggingface
-
----
-
-## GraphQL (web3)
-
-*API layer skill on remote full-stack postings.*
-
-GraphQL remains on a meaningful minority of remote full-stack postings. Apollo and urql are the most-named clients.
+## Description that sells outcomes
+Open with the buyer's problem, not your biography. State what you build, who it is for, and why ordering from you is low-risk. Keep it short and scannable.
 
-Source: https://slateremote.com/en/skills/graphql
+## Gig titles and tags
+Titles should match how buyers search: "I will build a responsive landing page in React" beats "Web development services". Use all available tags with the exact keywords buyers type.
 
----
-
-## Tailwind CSS (framework)
-
-*Default CSS framework on modern remote front-end roles.*
-
-Tailwind CSS is now the default styling system on most new remote front-end postings, often paired with shadcn or other component libraries.
-
-Source: https://slateremote.com/en/skills/tailwind
-
----
-
-## Redux (framework)
-
-*Established React state management on remote front-end roles.*
-
-Redux and Redux Toolkit appear on a meaningful share of remote React postings, particularly at established product teams maintaining mature applications.
-
-Source: https://slateremote.com/en/skills/redux
-
----
-
-## Flutter (mobile)
-
-*Primary cross-platform mobile skill on remote mobile postings.*
-
-Flutter dominates the cross-platform mobile category on remote postings, ahead of React Native at most of the newer listings since 2023.
+## Pricing tiers
+Offer three packages. The middle tier should be the one most buyers pick, so anchor it deliberately. The top tier exists to make the middle look reasonable and to capture high-budget buyers.
 
-Source: https://slateremote.com/en/skills/flutter
+## Portfolio and proof
+Add real samples to the gig gallery. Screenshots, before-and-after comparisons, and short demo videos all lift conversion. Social proof from reviews compounds over time, so prioritize early five-star ratings.
 
----
-
-## React Native (mobile)
-
-*Established cross-platform mobile skill on remote postings.*
-
-React Native remains a strong demand on remote mobile postings, particularly at companies whose web stack is React.
+## Response time
+Fiverr rewards fast responders in search and buyers notice. Enable notifications and aim to reply within an hour during your working day.
 
-Source: https://slateremote.com/en/skills/react-native
+Source: https://slateremote.com/en/guides/fiverr-profile-that-wins-orders
 
 ---
-
-## Unity (framework)
-
-*Primary game engine on remote gameplay engineering postings.*
-
-Unity remains the dominant engine on remote gameplay engineering postings at indie and mid-size studios.
-
-Source: https://slateremote.com/en/skills/unity
 
----
+## How to get your first Fiverr order
 
-## Unreal Engine (framework)
+*Practical tactics to land that crucial first sale and break the zero-review barrier.* (category: freelance)
 
-*AAA-tier engine on remote gameplay engineering postings.*
+The hardest order on Fiverr is the first one. Buyers favor sellers with reviews, so a new gig starts at a disadvantage. These tactics break through the cold-start problem.
 
-Unreal Engine 5 listings on remote postings are smaller in count but pay among the highest bands for gameplay engineers.
+## Price for entry, not for profit
+Your first few orders are reputation purchases. Price slightly below the market to remove the buyer's risk, then raise prices once you have five-star reviews.
 
-Source: https://slateremote.com/en/skills/unreal
+## Use Buyer Requests and Briefs
+Fiverr surfaces buyer needs directly. Respond quickly with a specific, tailored offer that names the buyer's exact problem. Generic copy-paste pitches lose; specific ones win.
 
----
+## Optimize for search from day one
+Match your title and tags to real buyer searches. A gig nobody can find gets no orders regardless of quality.
 
-## Solidity (web3)
+## Promote externally
+Share your gig where your target buyers already are: relevant subreddits, Discord servers, X, and developer communities. External traffic that converts also signals quality to Fiverr's algorithm.
 
-*Primary smart contract language on remote crypto postings.*
+## Over-deliver on the first orders
+Deliver faster than promised, add a small extra, and communicate proactively. Early five-star reviews with positive comments are worth far more than the order value itself.
 
-Solidity remains the primary smart contract language on remote crypto and DeFi postings. Audit-grade experience commands the highest bands in the category.
+## Be responsive
+Reply to messages within minutes when possible. Fast, helpful responses convert browsing buyers into paying ones and improve your search ranking.
 
-Source: https://slateremote.com/en/skills/solidity
+Source: https://slateremote.com/en/guides/how-to-get-your-first-fiverr-order
 
 ---
-
-## Cybersecurity (devops)
-
-*Premium-paid remote category with shortage of senior candidates.*
 
-Remote cybersecurity postings remain underserved by candidates at senior levels. AppSec, cloud security and detection engineering are the most active sub-categories on remote postings.
+## Fiverr gig SEO: how to rank your gig in search
 
-Source: https://slateremote.com/en/skills/cybersecurity
+*How Fiverr search works and the levers that move your gig to the first page.* (category: freelance)
 
----
-
-## Figma (framework)
+Most Fiverr orders come from search, so ranking is everything. Fiverr's algorithm rewards gigs that match buyer intent and then convert and deliver well.
 
-*Universal design tool on remote product design postings.*
+## Keyword research
+Find the exact phrases buyers type. Use Fiverr's own search autocomplete and study the titles of top-ranked gigs in your category. Target one primary keyword per gig.
 
-Figma is universally listed on remote product design postings. Design system maintenance experience is the senior signal.
+## Title, tags and category
+Place your primary keyword in the gig title naturally. Fill every tag slot with relevant search terms. Pick the most accurate category and subcategory, since mismatched categories suppress ranking.
 
-Source: https://slateremote.com/en/skills/figma
-
----
+## Conversion signals
+Fiverr tracks how many people who view your gig actually order. A high click-to-order rate pushes your gig up. This is why strong gig images, clear pricing, and proof matter for ranking, not just for buyers.
 
-## Storybook (framework)
+## Delivery and review velocity
+On-time delivery, low cancellation rates, and a steady stream of recent five-star reviews are major ranking factors. A burst of good reviews early can lift a new gig quickly.
 
-*Common UI component documentation tool on remote front-end roles.*
+## Response rate and time
+Fast, consistent responses improve both ranking and conversion. Fiverr surfaces responsive sellers more often.
 
-Storybook appears on most remote front-end postings that mention a design system or component library.
+## Freshness and consistency
+Active gigs with recent orders rank better than dormant ones. Staying online, updating gig content, and maintaining order flow all help. New gigs also get a temporary visibility boost, so launch with a plan to convert it into reviews.
 
-Source: https://slateremote.com/en/skills/storybook
+Source: https://slateremote.com/en/guides/fiverr-gig-seo-ranking-guide
 
 ---
 
-## CI/CD (devops)
+## How to sell AI services on Fiverr in 2026
 
-*Pipeline skills required across remote engineering postings.*
+*The most profitable AI service categories on Fiverr and how to package them.* (category: freelance)
 
-CI/CD pipeline literacy is now a baseline expectation on remote engineering postings. GitHub Actions is the most-listed tool, with GitLab CI second.
+AI services are the fastest-growing developer category on Fiverr in 2026. Buyer demand has outpaced the supply of sellers who can actually deliver, which means strong prices and steady orders for those who can.
 
-Source: https://slateremote.com/en/skills/cicd
+## Chatbot and assistant builds
+Custom chatbots and AI assistants for websites and support are in heavy demand from small businesses. Integrating an LLM with a knowledge base and deploying it is a high-value, repeatable gig.
 
----
-
-## SQL (data)
-
-*Foundational data skill on remote analytics, data and backend roles.*
-
-SQL remains the foundational data skill on remote postings across backend, data and analytics. Window functions and CTEs are now expected at all levels.
+## Custom GPT and prompt engineering
+Buyers want tailored GPTs, prompt libraries, and workflow automations. These are quick to deliver and command good prices because most buyers cannot build them themselves.
 
-Source: https://slateremote.com/en/skills/sql
+## LLM app integration
+Wiring an LLM into an existing product, adding retrieval-augmented generation, or building an internal AI tool are premium gigs. Production deployment experience separates you from the crowd.
 
----
-
-## Machine Learning (ai)
+## AI automation
+Combining LLMs with automation tools to handle content, data processing, or customer workflows sells well to non-technical buyers focused on time saved.
 
-*Broadest AI category on remote engineering postings.*
+## How to package AI gigs
+Productize a specific outcome rather than selling vague AI consulting. "I will build a customer support chatbot trained on your docs" converts far better than "AI services". Offer a Basic setup, a Standard with integration, and a Premium with ongoing tuning.
 
-Machine learning is the broadest AI tag on remote postings. Generalist ML engineering and applied ML on production systems dominate the listings.
+## Why now
+The supply of qualified AI sellers is still thin relative to demand. Sellers who establish reviews in AI categories now build a durable ranking advantage as the category grows.
 
-Source: https://slateremote.com/en/skills/machine-learning
+Source: https://slateremote.com/en/guides/sell-ai-services-on-fiverr-2026
 
 ---
-
-## Data Engineering (data)
-
-*Premium-paid remote data category with steady demand.*
 
-Data engineering postings on remote listings cluster around pipeline ownership, warehouse modeling and platform reliability. Snowflake, dbt and Airflow appear together on most listings.
+## The best AppSumo deals for developers in 2026
 
-Source: https://slateremote.com/en/skills/data-engineering
+*Which AppSumo deals genuinely help developers and remote engineers ship faster and spend less.* (category: tools)
 
----
-
-## Prompt Engineering (ai)
+AppSumo has hundreds of SaaS deals at any time. Most are not built for developers. The ones that are can replace expensive subscriptions on tools you use every week.
 
-*Specialized AI skill peaking on remote applied AI postings.*
+## API and integration platforms
+Deals on workflow automation tools (think no-code automation with API steps) sit on AppSumo regularly. For developers and side-project builders, they replace recurring Zapier or Make bills on internal workflows.
 
-Dedicated prompt engineering postings remain a small share, with most demand absorbed into broader AI and LLM engineering roles. The skill is still explicitly named on a meaningful minority of remote AI listings.
+## Database and backend tooling
+Lifetime deals on managed Postgres dashboards, SQL editors, and database design tools surface periodically. These are particularly useful for solo devs who do not want to operate a full DevOps stack.
 
-Source: https://slateremote.com/en/skills/prompt-engineering
+## Error tracking and monitoring
+Smaller alternatives to Sentry or Datadog appear on AppSumo at lifetime prices. They are not enterprise-grade but cover side projects and small SaaS deployments well.
 
----
+## AI builder tools
+Custom chatbot platforms, AI agent builders, and LLM workflow tools have flooded AppSumo in 2026. The good ones reduce time-to-prototype for AI features inside existing apps.
 
-## WebGL (framework)
+## Email and transactional sending
+Lifetime deals on transactional email platforms let solo founders avoid Mailgun or SendGrid bills on early projects.
 
-*Specialized graphics skill on remote front-end and 3D postings.*
+## SEO and content tools
+Tools for keyword research, on-page SEO, and content briefs come to AppSumo regularly. They pay back fast for developers building content sites or marketing one-person SaaS.
 
-WebGL and Three.js appear on a minority of remote front-end postings, with demand concentrated at 3D product configurators, design tools and game studios.
+## How to choose
+Pick deals that map to a tool you would actually pay for monthly anyway. The savings only materialize when the lifetime deal replaces a real recurring spend, not when it adds another login to manage.
 
-Source: https://slateremote.com/en/skills/webgl
+Source: https://slateremote.com/en/guides/appsumo-best-deals-for-developers-2026
 
 ---
-
-# Comparisons
-
-## Remote vs hybrid work in tech
-
-*The differences that matter when choosing between fully remote and hybrid roles.*
-
-## Geographic flexibility
-Fully remote roles allow choosing any compatible-timezone city. Hybrid roles tie residence to commuting distance.
-
-## Compensation
-Fully remote bands at well-funded companies sit within 10 to 15 percent of in-office equivalents. Hybrid roles typically match in-office bands.
 
-## Career velocity
-Hybrid roles still produce faster promotion velocity at most companies, though the gap has narrowed since 2022. The mechanism is informal visibility rather than explicit policy.
+## AppSumo vs SaaS subscription: which actually saves more
 
-## Team integration
-Hybrid teams reach informal alignment faster. Fully remote teams require deliberate process to match this.
+*A clear-headed comparison of lifetime deals against recurring SaaS subscriptions for remote workers and small teams.* (category: tools)
 
-## Choice in 2026
-The choice now depends less on availability (both are abundant) and more on lifestyle and career stage preferences.
+The lifetime deal vs subscription debate is mostly about time horizon and certainty. Both models can be the right choice depending on how long you plan to use a tool and how stable your need is.
 
-Source: https://slateremote.com/en/compare/remote-vs-hybrid
+## The break-even math
+A lifetime deal replaces a subscription when total cost over your usage horizon is lower. A $69 deal replacing a $19 a month subscription breaks even in less than four months. Anything beyond that is pure savings.
 
----
-
-## Remote vs onsite tech jobs
+## When subscriptions win
+Subscriptions win when your need is short, uncertain, or you require strong support guarantees. Enterprise features, dedicated success managers, and uptime SLAs are usually subscription-only.
 
-*The trade-offs between fully remote and fully onsite tech employment.*
+## When lifetime deals win
+Lifetime deals win when the tool sits in your daily stack, the company is stable enough to ship for years, and your needs are unlikely to outgrow the tier limits. For solo founders and freelancers this hits often.
 
-## Geographic flexibility
-Remote removes the geographic constraint entirely. Onsite locks residence to commute distance.
+## Hidden costs to factor in
+Some lifetime deals have hard caps that force you to subscribe later if you scale. Read the tier limits carefully. Also, a lifetime deal is a sunk cost: the temptation to keep using a worse tool because you paid once is real.
 
-## Compensation
-At equivalent companies and seniority, onsite bands run slightly higher (typically 5 to 15 percent). The gap has narrowed since 2022.
+## The blended approach
+Most remote operators end up blending: lifetime deals for the foundational stack (note-taking, automation, transactional email, simple CRM) and subscriptions for high-stakes infrastructure (hosting, payments, monitoring).
 
-## Career development
-Onsite roles still confer mentorship and informal learning advantages, particularly early-career. The gap is smallest at remote-mature companies.
+## The refund safety net
+AppSumo's 60-day refund window makes the bet asymmetric. The downside on a bad deal is the time spent testing, not the money.
 
-## Lifestyle
-Remote removes commute time. Onsite provides structural separation between work and home.
+Source: https://slateremote.com/en/guides/appsumo-vs-saas-subscription-which-saves-more
 
-Source: https://slateremote.com/en/compare/remote-vs-onsite
-
 ---
-
-## Freelance vs full-time remote tech work
-
-*How the freelance and full-time tracks differ for remote tech workers.*
-
-## Income
-Freelance day rates are typically 1.5 to 2x the equivalent annual full-time rate divided by working days. Variance is much higher.
-
-## Benefits
-Full-time roles include health insurance, retirement and equity. These narrow the apparent income gap materially.
-
-## Project depth
-Full-time roles allow deeper ownership of long-running systems. Freelance roles tend toward shorter scoped engagements.
 
-## Tax
-Freelance allows business expense deductions but typically pays more in social charges.
+## How to get accepted on Mercor as an AI evaluator
 
-## Time to first contract vs first job
-Freelance contracts can convert faster initially but compound more slowly. Full-time roles compound career capital faster at established employers.
+*What Mercor actually screens for and how to position your profile to pass the bar in 2026.* (category: freelance)
 
-Source: https://slateremote.com/en/compare/freelance-vs-fulltime
+Mercor pays vetted experts to evaluate the outputs of frontier AI models. The work is async, remote, paid in USD, and the hourly rates beat almost any other remote gig if your domain is in demand. The catch is that Mercor screens hard. Most applicants do not pass.
 
----
-
-## US vs EU remote tech companies
+## What Mercor evaluators actually do
+You read a prompt, look at the model output, and rate it on rubrics specific to the task (correctness, faithfulness, safety, code quality, reasoning). For developers, the bulk of work is code-evaluation tasks: pairs of model completions where you judge which is better and why, often with a written justification.
 
-*How US-headquartered and EU-headquartered remote tech employers compare on compensation, culture, and operations.*
+## What Mercor screens for
+Three things show up across most acceptance interviews:
+1. Demonstrable depth in at least one technical or domain area (engineering, ML, biology, law, finance, etc.).
+2. Written judgment under ambiguity (the application includes short written tasks).
+3. Reliability signals (LinkedIn or GitHub profile that confirms what you claim).
 
-## Compensation
-US-headquartered remote tech employers pay higher cash bands at equivalent seniority, typically 30 to 60 percent above EU equivalents in raw dollars.
+## How to position your profile
+List specifics rather than generalities. A profile that says "Senior Python developer with 6 years at Stripe building risk systems" converts better than "Software engineer with broad experience". For technical reviewers, GitHub history with substantial commits weighs more than degrees.
 
-## Benefits
-EU employers provide more statutory benefits (paid vacation, healthcare, parental leave) that narrow the total compensation gap meaningfully.
+## The screening flow
+You apply, complete a short written or coding screen, and if you pass you are invited to a paid trial task. Your first few tasks set your reliability rating; consistent quality unlocks more work and higher rates.
 
-## Vacation
-US companies typically offer 15 to 25 days; EU companies 25 to 35 days plus statutory holidays.
+## Typical timeline
+The full path from application to first paid task usually runs two to four weeks. Domain-scarce profiles (legal expertise, advanced math, niche programming languages) get screened faster.
 
-## Work culture
-US remote-first companies often run faster cadences with longer working hours. EU companies typically enforce stricter working hours norms.
+## What disqualifies fast
+Generic AI-assisted application copy is the fastest disqualifier. Mercor screens for human judgment; submitting LLM-rewritten answers signals exactly the opposite.
 
-## Timezone fit
-US employers generally hire candidates with at least 4 hours of US timezone overlap; EU employers more flexible on candidate timezone.
+Source: https://slateremote.com/en/guides/how-to-get-accepted-on-mercor
 
-Source: https://slateremote.com/en/compare/us-vs-eu-remote-tech-companies
-
 ---
-
-## Junior vs senior remote tech jobs
 
-*How remote hiring differs by experience level in 2026.*
+## How much does Mercor actually pay AI evaluators in 2026
 
-## Availability
-Senior remote roles outnumber junior remote roles substantially. Most fully remote teams hire juniors only when they have a structured mentorship program.
+*Realistic hourly rates on Mercor for developers and domain experts, what drives the range, and how the rate climbs over time.* (category: freelance)
 
-## Compensation
-Junior remote roles cluster at 70 to 110 thousand USD. Senior at 150 to 220. Staff and principal at 220 to 320.
-
-## Hiring bar
-Junior remote hiring places more weight on portfolio quality and async communication, since onboarding investment is higher.
-
-## Path
-Many remote engineers start their careers onsite or hybrid, then transition to fully remote at mid-level.
-
-Source: https://slateremote.com/en/compare/junior-vs-senior-remote-jobs
-
----
+Mercor pays per hour of evaluation work. The published range is 30 to 100 USD/hour, but actual earnings depend on your domain, your quality rating, and how much work you can sustain.
 
-## React vs Vue remote job market
+## The realistic starting range
+New evaluators in software engineering and general technical tracks typically start at 30 to 45 USD per hour. Domain-scarce tracks (advanced math, biology, law) start higher, often 50 to 80 USD.
 
-*How React and Vue compare on remote tech postings in 2026.*
+## What moves the rate up
+Three drivers compound:
+1. Quality consistency. Mercor weights the inter-rater agreement and the depth of your written justifications. High agreement plus thorough explanations push the rate upward over time.
+2. Task complexity. Longer, more nuanced evaluations (multi-turn agent traces, code reasoning chains) pay more per hour than short pairwise comparisons.
+3. Specialisation. Once you are tagged in a high-demand niche (LLM agent evaluation, formal proofs, legal reasoning), the rate jumps because supply is thinner.
 
 ## Volume
-React listings outnumber Vue listings on remote postings by roughly 4 to 1.
+Volume is bursty. Some weeks have many task batches; others are quiet. Expect 5 to 20 hours per week as a realistic sustainable range while keeping a day job. A few experts in scarce domains go to 30+ hours.
 
-## Geographic distribution
-Vue has stronger relative representation on EU postings, particularly in Germany, Netherlands and France.
+## Annualised
+A consistent 10 hours/week at 50 USD/hour is roughly 26,000 USD per year of side income. At 60 USD/hour for 20 hours/week, you hit around 60,000 USD per year, which can rival a full-time engineering job for some markets.
 
-## Salary
-At equivalent seniority and company size, salary bands are similar.
+## When Mercor is not worth it
+If your day job pays more than 100 USD per hour all-in (top-tier US engineering compensation), Mercor side income probably is not worth your evening hours. The math works best for mid-rate engineers, contractors between gigs, or experts in scarce domains.
 
-## Career mobility
-React fluency provides more job options. Vue fluency is highly valued at the smaller pool of teams using it.
+## Payout speed
+Standard payout cycles are weekly to bi-weekly. International transfers via the platform's payment partner; arrival times vary by country, typically two to five business days.
 
-Source: https://slateremote.com/en/compare/react-vs-vue-jobs
-
----
-
-## Python vs Go for remote backend work
-
-*How Python and Go compare on remote backend postings in 2026.*
-
-## Volume
-Python backend listings outnumber Go listings by roughly 3 to 1.
-
-## Domain
-Python dominates data, ML and content-heavy backends. Go dominates platform engineering, infrastructure and high-throughput services.
-
-## Salary
-Go listings pay a modest premium (roughly 10 to 15 percent at senior levels) reflecting smaller talent pool and higher complexity domains.
-
-## Learning curve
-Go has a flatter learning curve to production-readiness. Python has a flatter learning curve to first hire.
-
-Source: https://slateremote.com/en/compare/python-vs-go-backend
+Source: https://slateremote.com/en/guides/how-much-does-mercor-pay-in-2026
 
 ---
 
-## Startup vs big tech remote engineering
+## Mercor vs Scale AI vs Surge AI: which pays AI evaluators more
 
-*How startup and large-company remote engineering differ in 2026.*
+*A practical comparison of the three biggest AI-evaluation platforms for developers and domain experts in 2026.* (category: freelance)
 
-## Compensation
-Big tech still pays higher cash and clearer equity at senior levels. Startups pay variable cash with higher upside (and higher variance) equity.
+Three platforms dominate paid AI evaluation in 2026: Mercor, Scale AI (via its Outlier and Remotasks brands), and Surge AI. They overlap in client base but differ on rate, task type, vetting bar, and reliability of work supply.
 
-## Scope
-Startup engineers ship across the stack with more autonomy. Big tech engineers go deeper on narrower problems.
+## Mercor
+Vetted, expert-led, weekly rates often 30 to 100 USD/hour for software and technical tracks. Application bar is high; once accepted, the work tends to be deeper and longer-form. Best fit for experienced developers and domain experts who value rate over volume.
 
-## Career velocity
-Startup roles can produce faster level-up through scope expansion. Big tech offers more structured progression.
+## Scale AI (Outlier/Remotasks)
+Broader, more volume-oriented. Rates are lower on average (15 to 40 USD/hour for most tracks, premium domains higher). Lower entry bar makes it accessible quickly. Best fit if you want immediate volume and steady weekly hours, less concerned with rate.
 
-## Stability
-Big tech offers materially more income and employment stability.
+## Surge AI
+Positions itself as a quality-focused platform for premium annotation and evaluation. Rates broadly comparable to Mercor for similar skill tiers. Smaller pool of work but consistent for accepted experts.
 
-## Remote culture
-Many big tech companies have moved to hybrid since 2023. Most truly remote-first companies are at the startup to scale-up size.
+## Direct comparison
 
-Source: https://slateremote.com/en/compare/startup-vs-bigtech-remote
+| Factor              | Mercor          | Scale AI            | Surge AI         |
+|---------------------|-----------------|---------------------|------------------|
+| Typical rate (dev)  | 35-80 USD/h     | 18-40 USD/h         | 35-70 USD/h      |
+| Acceptance bar      | High            | Low to medium       | Medium to high   |
+| Volume reliability  | Bursty          | Steady              | Bursty           |
+| Task depth          | Long-form, nuanced | Short, repetitive | Mixed            |
+| Time to first task  | 2-4 weeks       | 1-7 days            | 2-3 weeks        |
 
----
+## How to decide
+If your hourly opportunity cost is high and you can absorb bursty volume, Mercor. If you want fast onboarding and steady weekly hours at lower rate, Scale AI/Outlier. If you have a niche specialty (formal verification, advanced math, specific languages), apply to all three and let the highest-paying offers win your time.
 
-## AWS vs GCP remote job demand
+## Stacking
+Many experts run two platforms in parallel. Mercor + Scale fills gaps in volume; Mercor + Surge spreads platform risk. Avoid signing exclusivity clauses if offered.
 
-*Comparing the major cloud platforms by remote hiring demand in 2026.*
-
-## Volume
-AWS appears on roughly 60 percent of remote backend and platform postings. GCP on roughly 30 percent. Postings naming both are common.
-
-## Domain
-GCP has stronger relative representation in data engineering and ML postings, driven by BigQuery and Vertex AI adoption.
-
-## Salary
-Equivalent cloud certifications carry similar weight. AWS Solutions Architect Professional and GCP Professional Cloud Architect both register as senior signals.
-
-Source: https://slateremote.com/en/compare/aws-vs-gcp-remote-jobs
+Source: https://slateremote.com/en/guides/mercor-vs-scale-vs-surge-ai
 
 ---
 
-## Snowflake vs BigQuery for remote data engineers
+## How to maximize your earnings on Mercor as a developer
 
-*How the leading cloud data warehouses split on remote data engineering postings.*
+*Practical levers to push your Mercor hourly rate and weekly hours after the first month.* (category: freelance)
 
-## Volume
-Snowflake leads Snowflake-or-BigQuery listings on remote postings by a slight margin. Many listings name both.
+Once you are accepted on Mercor, your effective hourly earnings depend less on your initial offer and more on the choices you make in the first three months. The same evaluator can earn double another's pay for the same nominal rate.
 
-## Stack alignment
-Snowflake postings cluster at AWS-anchored stacks. BigQuery dominates GCP-anchored stacks.
+## Lever 1: pick the right tracks
+Mercor segments work into tracks (general code review, agent trace evaluation, formal reasoning, multi-modal, etc.). Some pay materially more per hour. Volunteer for the tracks that match your strongest depth, then ask to be slotted into the most technical or specialised batch within them. The premium for specialisation compounds.
 
-## Skills
-dbt experience is universal across both. SQL window function fluency is universal.
+## Lever 2: deepen your written justifications
+Evaluators who write detailed, specific justifications get re-invited to higher-paying batches. Three sentences of substantive reasoning beat a one-word verdict for both quality scoring and future task offers. This is the single biggest controllable lever.
 
-## Salary
-Equivalent at senior data engineering levels.
+## Lever 3: maintain inter-rater agreement
+Mercor compares your ratings against a calibration set and other experts. Consistent agreement above the platform threshold raises your rate; falling below it caps you. Read the rubric before every batch, do not skim.
 
-Source: https://slateremote.com/en/compare/snowflake-vs-bigquery
+## Lever 4: respond fast on new batch invites
+Batches close as they fill. Evaluators who accept invites within minutes capture the premium-paying tasks before others do. Enable notifications and treat the invites window seriously.
 
----
+## Lever 5: build a specialty profile
+If you can credibly tag yourself as "the LLM agent evaluator" or "the Python type-system specialist", you become first call for that niche. Specialty profiles get invitation-only batches at top of the rate range.
 
-## Employer of record vs direct employment for remote tech workers
+## Lever 6: stack hours strategically
+Mercor's hourly rate does not change with volume per se, but burst weeks (when batches drop) are when premium work flows. Plan to be available in those windows even if you cut hours elsewhere.
 
-*When to use an employer of record service versus direct employment.*
+## Lever 7: do not burn out
+Quality scores tank when you fatigue. Twenty good hours per week beat thirty mediocre ones. Cap your weekly hours and protect your judgment.
 
-## Use case
-EOR services let foreign companies employ workers in countries where they have no legal entity. Direct employment requires the employer to have local presence.
-
-## Cost
-EOR adds a per-employee monthly fee, typically 400 to 900 USD. Borne by the employer in most cases.
-
-## Tax and social charges
-EOR handles local payroll, tax withholding and social contributions. The worker receives clean local payslips.
-
-## Benefits
-EOR-employed workers receive statutory local benefits. Equity and stock options are harder to structure through EOR.
-
-## Choice
-Direct employment is cleaner where the employer has local presence. EOR is the standard solution for international remote hires at smaller companies.
-
-Source: https://slateremote.com/en/compare/employer-of-record-vs-direct
+Source: https://slateremote.com/en/guides/maximize-earnings-on-mercor-as-a-developer
 
 ---
 
-## In-house vs agency remote tech roles
+## Mercor payouts and taxes guide for 2026
 
-*How agency and in-house remote engineering compare.*
+*How Mercor pays you, supported payment methods, and what you owe in tax as a US or EU evaluator.* (category: freelance)
 
-## Project variety
-Agency engineers see more projects per year. In-house engineers see deeper engagement with fewer systems.
+Mercor pays evaluators on a weekly or bi-weekly cycle, in USD, via international transfer. Understanding the payout flow and the tax classification matters before you accept the first task.
 
-## Compensation
-In-house product teams typically pay 10 to 20 percent more for equivalent seniority. Agencies pay variable amounts including utilization bonuses.
+## Payout cycle
+Earnings accrue per task and are batched into a payout run. Most evaluators see funds initiated within a week of task completion, arriving in their account within two to five business days after that. International evaluators may see additional bank-level delays.
 
-## Career capital
-In-house ownership of long-running systems compounds more clearly into senior engineering credentials. Agency variety compounds into a different skill set centered on adapting to constraints quickly.
+## Payout methods
+Mercor partners with international transfer providers. In practice, evaluators receive USD into a local bank account using a routing partner, or via a multi-currency account such as Wise or Payoneer. Wise tends to land cheapest for non-US recipients because the FX spread is tighter than most bank conversions.
 
-## Remote fit
-Both can work fully remote. Agencies have been earlier and more thorough adopters of remote-first operations at most established names.
+## US tax treatment
+US-based evaluators are independent contractors. Earnings are reported on a 1099-NEC if you cross the IRS threshold. Self-employment tax (15.3 percent) applies in addition to federal and state income tax. Set aside roughly 30 percent of gross by default; refine to actual liability with your accountant.
 
-Source: https://slateremote.com/en/compare/in-house-vs-agency-remote
+## EU tax treatment
+For EU evaluators, Mercor income is foreign-source self-employment income. Most jurisdictions require you to register as self-employed (auto-entrepreneur, freiberufler, partita IVA, etc.) and declare gross USD revenue converted at the date of receipt. Local social charges and VAT thresholds vary by country and by activity classification.
 
----
+## Tools that help
+A multi-currency account (Wise) for receipt, a basic accounting tool (QuickBooks self-employed, Indy in France, Holvi in Germany) for monthly reconciliation, and an annual session with a local accountant covers most setups.
 
-## Lisbon vs Barcelona for remote tech workers
+## What Mercor does not withhold
+Mercor does not withhold US or EU taxes on your behalf. The full payment lands in your account; the tax obligation sits entirely with you. Plan cash flow accordingly: spending the full payout each month leaves you short at year end.
 
-*How the two leading Mediterranean remote tech hubs actually compare.*
-
-## Visa
-Portugal D8 and Spain DNV are roughly equivalent in friction. Portugal’s longer-term tax pathway is more clearly defined post-NHR reforms.
-
-## Cost of living
-Lisbon central rents have risen sharply since 2022, partially closing the gap with Barcelona. Barcelona remains 10 to 20 percent more expensive for equivalent apartments.
-
-## Tech ecosystem
-Lisbon’s ecosystem has grown faster since 2020. Barcelona retains a larger local employer base but a smaller share of remote-first companies.
-
-## Lifestyle
-Lisbon: smaller, more walkable, English-friendly. Barcelona: bigger, more international, more nightlife and culture.
-
-## Choice
-For a first move to Mediterranean remote life: Lisbon. For a base with more depth and Spanish exposure: Barcelona.
-
-Source: https://slateremote.com/en/compare/lisbon-vs-barcelona-remote
+Source: https://slateremote.com/en/guides/mercor-tax-and-payout-guide-2026
 
 ---
 
-## Portugal D8 vs Spain Digital Nomad Visa
+## Running Mercor as a side hustle while working full-time
 
-*Side-by-side comparison of the two leading EU nomad visa programs.*
+*How to fit Mercor evaluation work around a full-time job: hours, contracts, energy management, and the legal angle.* (category: freelance)
 
-## Income threshold
-Portugal: ~3 280 EUR/month. Spain: ~2 760 EUR/month.
+For most evaluators, Mercor is a side hustle, not a primary income. Done well, it adds 1,000 to 4,000 USD of monthly net to a full-time engineering salary without consuming your weekends entirely. Done poorly, it burns you out in three months.
 
-## Tax regime
-Portugal’s NHR successor offers preferential treatment for specific high-value activities including most software engineering. Spain’s Beckham Law extension caps Spanish-source income at 24 percent flat for six years.
+## Realistic time budget
+A sustainable side hustle on Mercor runs 6 to 12 hours per week. Most evaluators spread this across two to three evening sessions of 90 minutes each, plus one weekend block. Above 15 hours per week alongside a demanding day job, quality drops and so does effective hourly rate.
+
+## Check your employment contract first
+Before accepting any paid task, read the moonlighting clause in your current employment contract. Most US tech contracts allow outside paid work as long as it does not compete with the employer and does not use the employer's time, hardware, or IP. Some contracts require written approval. EU contracts vary heavily by country and seniority. If in doubt, ask in writing before the first task.
+
+## Stay strictly outside work time
+Do not log Mercor hours during your day-job working hours, even if you have downtime. Use a different device or at minimum a different login. Most legal issues with moonlighting come from blurring the time boundary, not from the work itself.
+
+## Pick tracks that share skills with your day job
+Evaluators are most efficient when the cognitive overhead transfers. A backend engineer doing code-review evaluation reuses their day-job judgment with little context switch. A backend engineer doing legal evaluation pays a steep ramp-up cost.
+
+## Energy management
+Block specific evenings for evaluation work and protect them. Random snippets between Netflix sessions produce low-quality output and miss the deadlines that matter for rate progression.
+
+## Tax and accounting
+Side-hustle income must be reported. In the US that is Schedule C plus self-employment tax. In the EU it usually requires a self-employed registration even at low volume. Budget accordingly from month one.
+
+## When to scale beyond side hustle
+A handful of evaluators eventually leave their day job to evaluate full-time. The math works at 30-plus weekly hours in a premium-rate track. Before quitting, sustain at least 20 hours weekly for two months on Mercor alone to validate that volume and rate hold up.
+
+Source: https://slateremote.com/en/guides/mercor-side-hustle-while-working-full-time
+
+---
+
+## Fiverr gig conversion optimisation: lift orders without raising traffic
+
+*The handful of changes that move impressions to orders on Fiverr gigs in 2026.* (category: freelance)
+
+Most sellers chase more impressions when their actual problem is conversion. A gig with 1,000 impressions and a 1 percent click-to-order rate earns less than the same gig at 500 impressions and 3 percent. Improving conversion is faster and cheaper than fighting for more visibility.
+
+## The five levers that move conversion
+1. Gig image. Buyers decide whether to click in under a second. A clear screenshot of the outcome plus a 4-word benefit header beats a stylised logo or a generic stock image. Test two images side by side and keep the winner.
+2. Title clarity. Lead with the deliverable, not your job title. "I will fix bugs in your React app within 24 hours" converts faster than "Experienced full-stack developer for hire".
+3. Tier anchoring. Most buyers pick the middle tier. Design Basic, Standard, Premium so Standard is the obvious choice. Set Basic narrow enough that it self-disqualifies for serious buyers, and Premium high enough to make Standard look like a bargain.
+4. First two lines of the description. Buyers scan these before scrolling. State the buyer's problem, then your specific solution, in plain English. No throat-clearing.
+5. Reviews recency. Five recent five-star reviews lift conversion more than fifty old ones. Active sellers cycle small orders to keep review freshness high.
+
+## Track the right metric
+The dashboard shows impressions, clicks and orders. The number to optimise is order-to-impression rate. Fiverr's algorithm rewards this directly and so does your bank account.
+
+## What does not move conversion
+- Longer descriptions
+- More gig packages on the same listing
+- Higher visual polish without clearer messaging
+- Adding video without a strong opening 5 seconds
+
+Source: https://slateremote.com/en/guides/fiverr-gig-conversion-optimisation-2026
+
+---
+
+## Remote work tax residency strategies for 2026
+
+*How tax residency works for remote tech workers in 2026 and the strategies that hold up legally.* (category: tax)
+
+Tax residency for remote workers in 2026 is less flexible than it was during the early pandemic years. Most jurisdictions tightened rules; aggressive strategies that worked in 2021 now trigger audits. The strategies that still work are conservative and well-documented.
+
+## What determines tax residency
+Most countries use a combination of physical presence (typically 183 days per year) and centre-of-life criteria (family, primary residence, economic ties). You can be tax resident in a country you spent only 60 days in if your centre of life is there.
+
+## Strategy 1: clean break to a low-tax country
+Establish full residency in a country with favourable tax treatment for remote workers (Portugal NHR, Cyprus non-dom, UAE, Georgia HNWI program). Requires actually moving: real lease, local bank, family registered there. Half-measures trigger your old country to claim you back.
+
+## Strategy 2: structured nomadism with declared base
+Nomad in a structured way while maintaining one declared tax residency. Stay under the trigger thresholds in transit countries (usually 183 days). Keep clear documentation: flight records, lease history, work-location log. This works if your home country has a territorial tax regime or low rates.
+
+## Strategy 3: employer-of-record routing
+Use an EOR service to be formally employed in the country whose tax regime you want. You contract with the EOR, the EOR employs you locally, your client pays the EOR. Clean and well-documented but reduces take-home by 15 to 30 percent due to EOR fees and local social charges.
+
+## What does not work in 2026
+Claiming residency in a country you barely visit. Maintaining a Delaware LLC while living in France and never declaring the income. Multiple-country residency claims that contradict each other. Tax authorities now exchange information aggressively; double-residency conflicts get spotted.
+
+## Get professional advice
+Tax residency at this complexity always warrants a one-time consultation with a cross-border tax accountant before making moves. A few hundred euros up front prevents five-figure surprises later.
+
+Source: https://slateremote.com/en/guides/remote-work-tax-residency-strategies-2026
+
+---
+
+## Niche Fiverr gigs that still pay well in 2026
+
+*Underserved Fiverr gig categories where developers can still command strong rates with low competition.* (category: freelance)
+
+Generic Fiverr categories (build a landing page, fix a WordPress site) have saturated. Specific niches still have thin supply and command strong rates. The opportunity in 2026 is depth, not breadth.
+
+## AI integration into existing apps
+Buyers want LLM features in their existing product but most cannot ship them. Niche gigs around RAG implementation, custom OpenAI/Anthropic integration, and AI moderation pipelines sit at 300 to 1,500 USD per project with low competition.
+
+## Stripe and payment edge cases
+Setting up Stripe for SaaS billing has commoditised. Edge cases have not. Specific gigs around Stripe Tax compliance, subscription migrations, dunning workflows, and multi-currency settlement still pay 200 to 800 USD per scope.
+
+## Database migrations
+Migrating from MySQL to Postgres, from Firebase to Supabase, from MongoDB to Postgres. Each migration has gotchas. Sellers with specific migration experience command 500 to 2,500 USD per project.
+
+## API documentation and SDK
+Companies have APIs but no documentation that converts developers into users. Gigs around writing API docs, generating SDKs from OpenAPI specs, and producing API quickstarts pay 300 to 1,500 USD.
+
+## Webhook reliability and queue setup
+Setting up reliable webhook processing with retry queues, idempotency and observability. Niche but consistently in demand. 200 to 800 USD per setup.
+
+## Cloud cost optimisation
+AWS / GCP / Azure bill reviews and right-sizing audits. Companies routinely overspend by 30 to 60 percent. A solid audit gig pays 500 to 1,500 USD and can lead to ongoing consulting.
+
+## What makes a niche work
+- A specific buyer problem you can name
+- A clear scope you can deliver in days, not weeks
+- A repeatable process so you scale earnings without scaling hours
+- One or two reference samples in your portfolio
+
+Source: https://slateremote.com/en/guides/niche-fiverr-gigs-that-still-pay-in-2026
+
+---
+
+## Wise multi-currency account explained for remote workers in 2026
+
+*How the Wise multi-currency account actually works for remote workers, freelancers and digital nomads.* (category: freelance)
+
+The Wise multi-currency account is the most-used banking layer in the remote-worker stack. It is also the most misunderstood. Here is what it actually is, what it is not, and when to use it.
+
+## What it is
+A holding account with local routing details in multiple currencies. You can receive money as if you had a domestic account in each of those currencies. You can hold balances in each currency. You can convert at the mid-market rate with a small fee.
+
+## What it is not
+A bank account, in the traditional sense. Balances are held with regulated electronic-money institutions, not as bank deposits. Coverage under deposit-insurance schemes varies by jurisdiction; in most cases the protection is different from a high-street bank account.
+
+## How it earns its place in the stack
+1. Receive client payments in their home currency without FX cut
+2. Hold balances across currencies until convenient to convert
+3. Convert at mid-market FX with a small transparent fee, instead of the 2-4 percent hidden spread typical banks take
+4. Spend with a debit card in 40+ currencies without FX markup on the spend
+
+## What it costs
+Account is free. Receiving local payments is free. Converting incurs a transparent fee, typically 0.4 to 0.7 percent. Card spending in the home currency is free; in foreign currency uses mid-market FX with no markup.
+
+## Where it fails
+- Not suitable for parking large sums (no meaningful interest)
+- Not a long-term substitute for a real local bank account in your residency country (lender history, mortgage relationships, regulatory norms)
+- Limited cheque support in countries that still rely on it (rare but exists)
+- Customer support is async and slower than a high-street bank for serious issues
+
+## The pattern that works
+Use Wise as the receiving layer between clients and your real bank account. Convert and sweep to your home-currency bank monthly. Keep small working balances in the currencies you spend in. Move savings elsewhere.
+
+## Alternatives if Wise does not fit
+- Revolut Business (similar feature set, EU-focused)
+- Mercury (US-founders only, true bank account)
+- Payoneer (alternative for clients refusing Wise)
+
+Source: https://slateremote.com/en/guides/wise-borderless-account-explained-2026
+
+---
+
+## SafetyWing claim process in 2026: what to expect
+
+*What submitting a SafetyWing claim actually looks like, how long it takes, and what to keep on file.* (category: visa)
+
+Most nomad-insurance reviews skip the part that matters: what happens when you actually claim. Here is the realistic SafetyWing claim experience in 2026.
+
+## The claim flow
+Log in, open the relevant policy, click "Submit a claim". Upload supporting documents (receipts, medical reports, prescriptions). Fill the standard form (date, location, brief description). Submit and track status in the dashboard.
+
+## What documents you need
+Original itemised receipts in local currency. Medical report from the treating physician, English or translated. Prescription details if applicable. Date of incident and treatment clearly visible. Proof of payment.
 
 ## Processing time
-Portugal: 60 to 90 days from consulate to arrival. Spain: 20 days for in-country applications.
+Simple claims under 500 USD: 5-10 business days. Complex or extra-documentation claims: 2-4 weeks. Inpatient or evacuation: handled through their 24/7 emergency line, often paid directly to the provider.
 
-## Path to permanent residency
-Portugal: 5 years to permanent, 5 years to citizenship. Spain: 5 years to permanent, 10 years to citizenship.
+## What gets denied
+Pre-existing conditions (limited exceptions). Treatment in your home country beyond the 30-day annual cap. Elective procedures (cosmetic, fertility, most non-emergency dental). Excluded activities. Documentation in a non-English language without translation.
 
-## Family
-Both allow dependents. Spain processes spouse applications slightly faster in 2026.
+## How to avoid friction
+Photograph receipts the day you get them. Get the medical report in English at point of care. Submit within 30 days. Track expenses per trip in a single shared folder.
 
-Source: https://slateremote.com/en/compare/portugal-vs-spain-nomad-visa
+## What surprises first-time claimants
+The standard plan reimburses you (pay first, get reimbursed). For inpatient stays, the provider can be billed directly but you must call the emergency line first.
 
----
-
-## Lisbon vs Mexico City for remote tech workers
-
-*European versus Latin American remote tech hub: timezone is the deciding factor.*
-
-## Timezone overlap with US employers
-Lisbon: 3 to 4 hours of US East Coast overlap. Mexico City: 9 hours of full overlap with US Central.
-
-## Cost of living
-Mexico City is roughly 25 percent cheaper than Lisbon for equivalent neighborhoods (Roma/Condesa vs Principe Real).
-
-## Lifestyle
-Lisbon: European city scale, ocean nearby, very walkable. Mexico City: massive metro, food scene unmatched, urban density different from European norms.
-
-## Visa
-Portugal D8 vs Mexico Temporary Resident. Both are straightforward for engineers with stable remote income.
-
-## Choice
-US employers + lower cost: Mexico City. EU employers or eventual EU residency: Lisbon.
-
-Source: https://slateremote.com/en/compare/lisbon-vs-mexico-city-remote
+Source: https://slateremote.com/en/guides/safetywing-real-claim-process-2026
 
 ---
 
-## Bali vs Chiang Mai for remote tech workers
+## Wise vs Payoneer for freelance developers in 2026
 
-*The two longest-running Southeast Asian remote work hubs compared.*
+*Two of the most-used international payment platforms compared on the criteria that matter for freelance developers.* (category: freelance)
 
-## Lifestyle
-Bali: beach plus jungle, larger and louder community, more partying. Chiang Mai: smaller city, mountains, slower pace, more long-term residents.
+Wise and Payoneer dominate cross-border payment for freelance developers. They look similar but the cost structure and feature set diverge in ways that matter at scale.
 
-## Cost
-Chiang Mai is roughly 30 percent cheaper than Bali on like-for-like accommodations and food.
+## Wise: built for transparency
+Real mid-market FX rate. Local routing details in 8+ currencies. Fee taken visibly on conversion only (0.4 to 0.7 percent typical). Debit card spends at FX with no markup. Best fit when you receive payments and convert frequently.
 
-## Visa
-Indonesia: B211a visit visa, Second Home Visa for longer. Thailand: DTV (Destination Thailand Visa) since 2024, valid 5 years multi-entry.
+## Payoneer: built for marketplaces
+Standard fee on marketplace payouts (Upwork, Fiverr, Amazon, etc.). Less FX transparency, with rates usually 1 to 2 percent off mid-market. Local US receiving account for non-US sellers. Best fit when the marketplace partners with Payoneer.
 
-## Internet
-Bali Canggu: 100 to 300 Mbps depending on neighborhood. Chiang Mai: consistent 150 to 200 Mbps citywide.
+## Side by side
 
-## Community
-Bali has more nomad coliving infrastructure. Chiang Mai has a longer-established and more stable community.
+| Factor | Wise | Payoneer |
+|---|---|---|
+| FX spread | 0.4-0.7% | 1-2% |
+| Local routing currencies | USD, EUR, GBP, AUD, NZD, etc. | USD primarily |
+| Marketplace integration | Direct withdrawal | Native on many |
+| Debit card | Mid-market, no markup | 1-2% markup |
+| Monthly fee | None | None on receive |
 
-## Choice
-Younger or shorter-term: Bali. Longer-term or quieter: Chiang Mai.
+## When to use Payoneer
+If your marketplace (Fiverr, Upwork) offers Payoneer as a payout option, the integration is usually smoother than withdrawing to Wise. The FX cost is the tradeoff.
 
-Source: https://slateremote.com/en/compare/bali-vs-chiang-mai-remote
+## When to use Wise
+For direct invoicing of clients, holding multiple currencies, spending abroad with a debit card. The FX savings compound at scale.
+
+## The stack that works
+Many freelance developers run both: Payoneer for marketplace payouts that integrate natively, Wise for direct client invoicing and FX management.
+
+Source: https://slateremote.com/en/guides/wise-vs-payoneer-for-developers
+
+---
+
+## Mercor application timeline 2026: realistic expectations
+
+*From application to first paid task, how long the Mercor onboarding actually takes in 2026.* (category: freelance)
+
+Mercor onboarding is faster than most expect for accepted candidates and slower than most hope for the rest. The realistic 2026 timeline is below.
+
+## Day 0: submit application
+A few personal details, declared expertise, optional LinkedIn or GitHub link. 20 minutes.
+
+## Day 1-3: initial automated screen
+Mercor processes the application algorithmically. Candidates with clear demonstrable expertise in declared areas get fast-tracked; the rest get a longer screening test.
+
+## Day 3-7: written screening test
+Domain-specific exercises (code-quality comparisons, reasoning prompts, written justifications). 45 to 90 minutes.
+
+## Day 7-14: review
+A combination of LLM grading and human review on the borderline cases. Most accepted candidates hear back within this window.
+
+## Day 14-21: paid trial task
+First paid task at the entry rate for the track. Performance here sets your initial reputation score.
+
+## Day 21-30: regular task flow opens
+Sustained quality on the trial task opens regular task invitations. Rate adjustments start happening 4 to 8 weeks in based on quality signals.
+
+## What stalls the timeline
+Generic LLM-rewritten application essays. Mismatched track applications (technical depth in field X but applied to field Y). Missing the response window on the written screen.
+
+## What accelerates
+Domain-scarce specialisation (formal math, OCaml, specific legal jurisdictions, medical credentials). Clear public proof of depth (GitHub commits, technical writing, conference talks).
+
+Source: https://slateremote.com/en/guides/mercor-application-timeline-2026
+
+---
+
+## Claude prompt patterns developers actually use
+
+*The handful of prompt patterns that consistently produce useful output when using Claude for development work.* (category: tools)
+
+Most prompt-engineering content is generic. The patterns that work for developers using Claude in actual project work are narrower and concrete.
+
+## Pattern 1: anchor with constraints
+Start every prompt with the constraints (stack, language version, framework, deployment target). Without them, Claude defaults to mainstream choices that may not fit your stack.
+
+## Pattern 2: ask for adversarial review
+"Here is a function. List five ways this can fail under concurrent load." Adversarial framing produces better edge-case discovery than open-ended review.
+
+## Pattern 3: compare two designs
+"I am choosing between approach A (...) and approach B (...). What are the tradeoffs at 100x scale?" Comparison framing forces explicit reasoning instead of vague suggestions.
+
+## Pattern 4: stepwise reasoning before code
+"Before writing code, list the steps and the edge cases you will handle. Then write the code." Forcing the plan first cuts iteration cycles.
+
+## Pattern 5: post-mortem of your own work
+"Here is a bug that took me 2 hours to find. What signals could I have noticed faster?" Turns past pain into transferable habits.
+
+## What rarely works
+Asking for "best practices" unscoped. Asking for "production-ready" code without testing it. Trusting the first answer for anything security-sensitive. Asking Claude to generate large amounts of unsupervised code.
+
+## Workflow integration
+Most experienced developers integrate Claude through one of: terminal CLI, IDE assistant, dedicated chat. Pick one and use it consistently; switching between three is friction.
+
+Source: https://slateremote.com/en/guides/claude-prompt-patterns-for-developers
+
+---
+
+## Handling common Fiverr buyer objections that kill orders
+
+*The five buyer objections that come up most on developer gigs in 2026 and the replies that close the order.* (category: freelance)
+
+Most lost Fiverr orders die in the messaging step, not at the gig page. Five buyer objections come up repeatedly on developer gigs. Knowing how to handle each closes more orders without lowering rate.
+
+## Objection 1: "Can you do it cheaper?"
+Reply: "I price by scope. If we trim X, the Standard tier covers it. Otherwise the price reflects the work this needs done correctly."
+
+## Objection 2: "Can you do it faster?"
+Reply: "Standard delivery is X days. Express delivery is available as an extra at Y USD because it requires me to reshuffle other commitments."
+
+## Objection 3: "Other sellers offer this at half the price"
+Reply: "There are cheaper options. Mine includes (specific deliverable they do not). If those matter for your case, I am the right pick; if not, the cheaper seller is fine."
+
+## Objection 4: "Can you guarantee X?"
+Reply: "I deliver to the scope we agreed. If something does not match the brief I revise at no extra cost. I cannot guarantee outcomes that depend on (specific external dependency)."
+
+## Objection 5: "Can we discuss this on WhatsApp/Discord/email?"
+Reply: "Fiverr requires all communication on platform. Happy to continue the conversation here." Off-platform contact violates terms of service; refusing politely protects your account.
+
+## What kills more orders than any objection
+Slow responses (over 30 minutes). Generic "Hi, thanks for reaching out" openings. Promising a quote and not following through. Asking the same scope question twice.
+
+## When to walk away
+If the buyer\'s communication style suggests scope creep, midnight messages, or unreasonable expectations, decline politely. A bad order with a cancellation hurts your seller level more than a missed order.
+
+Source: https://slateremote.com/en/guides/fiverr-buyer-objections-handling-guide
+
+---
+
+## How Mercor scores evaluator quality, explained
+
+*The signals Mercor uses to rate evaluator quality and what to do with each one to climb the rate ladder.* (category: freelance)
+
+Mercor pays evaluators differently based on a quality score that combines several signals. Understanding each lets you optimise where it matters and ignore the noise.
+
+## Signal 1: inter-rater agreement
+On calibration sets where ground truth exists or where multiple evaluators rate the same artefact, your agreement rate is measured. Above the threshold (typically high 80s to low 90s percent on most tracks) you advance; below it your rate caps.
+
+## Signal 2: justification depth
+A rating without explanation gets the minimum credit even if correct. A rating with specific, falsifiable reasoning ("the second response misses the off-by-one error on line 14") gets full credit and unlocks higher-paying batches.
+
+## Signal 3: response speed within reasonable limits
+Faster acceptance and completion of task invitations is rewarded. Sustained speed beyond ~24 hours per task average can be a red flag for over-rushing; the system optimises for quality, not pure speed.
+
+## Signal 4: task completion rate
+The percentage of accepted tasks you actually complete. Declining tasks after accepting damages the rate; not accepting in the first place is neutral.
+
+## Signal 5: review feedback from human reviewers
+Periodically a human reviews your evaluations and notes patterns. Constructive criticism applied in subsequent work raises your score.
+
+## What to do
+Read every rubric carefully before the first batch in a new track. Write justifications as if a human reviewer will read them (because one will). Accept only tasks you can complete cleanly within the deadline. Treat the first 10 to 20 tasks in any new track as the calibration window.
+
+## What gets you removed
+Sustained inter-rater agreement below threshold across multiple tracks. Justifications that read as LLM-generated. Accepting and abandoning tasks repeatedly.
+
+Source: https://slateremote.com/en/guides/mercor-evaluator-quality-rubrics-explained
+
+---
+
+## SafetyWing and pre-existing conditions: what is covered
+
+*How SafetyWing handles pre-existing conditions in 2026 and what to disclose at signup.* (category: visa)
+
+Pre-existing conditions are the most-misunderstood part of nomad insurance. The SafetyWing 2026 policy treats them specifically; understanding the rules avoids surprise denials.
+
+## What counts as pre-existing
+Any medical condition that existed, was diagnosed, treated, or experienced symptoms in the period before the policy started. The lookback window is typically 2 years for chronic conditions, shorter for acute ones.
+
+## What is excluded
+Treatment, medication, follow-up care, and any complications directly related to a pre-existing condition. This is the default exclusion.
+
+## What is covered (acute-onset exception)
+Unexpected, sudden emergencies of a pre-existing condition can be covered up to a specific cap, even though the condition itself is excluded. Example: a person with stable diabetes can be covered for an unexpected hyperglycaemic emergency that requires hospital care, even though routine diabetes management is excluded.
+
+## What to disclose at signup
+Everything. The SafetyWing signup form asks about specific conditions. Disclosing fully is the cheapest insurance against later denials. Non-disclosure that surfaces at claim time results in immediate denial and potential cancellation.
+
+## Conditions specifically handled in 2026
+COVID and respiratory: covered as acute under standard rules.
+Mental health: limited coverage, country-dependent.
+Pregnancy: limited to specific complications, with most pregnancy care excluded for nomads.
+Sports injuries: covered unless from an excluded activity (extreme sports, combat sports without rider).
+
+## How to plan
+If you have a chronic condition that needs ongoing care, SafetyWing alone is insufficient. Layer it with a home-country policy or a specialist expat policy that covers your condition specifically.
+
+Source: https://slateremote.com/en/guides/safetywing-pre-existing-conditions-guide
+
+---
+
+## Mercor vs Tortoise vs Outlier: AI evaluation platforms compared
+
+*Three growing AI evaluation platforms compared on acceptance bar, hourly rate and task supply.* (category: freelance)
+
+The AI evaluation market has expanded beyond Mercor and Scale in 2026. Three platforms account for most expert paid evaluation work: Mercor, Tortoise, and Outlier (Scale AI brand).
+
+## Mercor
+High vetting bar. Rates 30 to 100 USD/h for software and technical tracks. Long-form tasks with depth. Best for experienced specialists who value rate over volume.
+
+## Tortoise
+Newer entrant focused on premium tracks (formal reasoning, advanced math, scientific evaluation). Smaller pool of work but high acceptance rate for genuinely scarce profiles. Rates 50 to 150 USD/h for premium tracks.
+
+## Outlier (Scale AI)
+Larger volume, lower acceptance bar. Rates typically 18 to 45 USD/h. Steady weekly volume. Best for evaluators wanting predictable hours over rate.
+
+## Side by side
+
+| Factor | Mercor | Tortoise | Outlier |
+|---|---|---|---|
+| Typical rate (dev) | 35-80 USD/h | 50-150 USD/h | 18-45 USD/h |
+| Acceptance bar | High | Very high (niche-dependent) | Low-medium |
+| Volume reliability | Bursty | Bursty | Steady |
+| Task complexity | Long-form | Premium-niche | Mixed |
+| Best for | Specialists | Scarce-domain experts | Volume seekers |
+
+## Stacking
+Many evaluators run two or three platforms in parallel. Mercor and Tortoise for rate, Outlier for filling gaps. Exclusivity is rare; check before signing.
+
+## What is changing in 2026
+Premium domains (formal verification, advanced math, specific legal) command higher rates everywhere as AI labs push reasoning capabilities. Generic code-review tracks have softened. The gap between top and entry rate is widening.
+
+Source: https://slateremote.com/en/guides/mercor-vs-tortoise-eval-platforms
+
+---
+
+## Fiverr Pro application checklist for 2026
+
+*The portfolio, profile, and proof points that pass the Fiverr Pro review in 2026.* (category: freelance)
+
+Fiverr Pro is the curated, manually-vetted tier for high-end sellers. The 2026 application bar is higher than at launch; preparing properly is worth the upfront work.
+
+## What Fiverr Pro is
+A separate tier with stricter quality review. Pro sellers get higher visibility, premium pricing, and access to enterprise buyers. Listings are reviewed manually by Fiverr staff, not algorithmically.
+
+## What they screen for
+Demonstrable expert-level work in the offered category. Professional presentation (portfolio, bio, samples). Track record of client outcomes, ideally with named brands or substantial projects. English written communication at native or near-native level.
+
+## Application materials
+1. Updated profile with high-quality photo
+2. 3-5 portfolio samples that prove expert-level capability
+3. Bio that names specific companies, projects, or technologies you have shipped
+4. Existing Fiverr track record (most successful applicants have 50+ five-star reviews on standard tier first)
+5. References or external verification (LinkedIn, GitHub, conference talks)
+
+## What disqualifies
+Self-promotional fluff in the bio. Portfolio samples that look like personal projects rather than client work. Inconsistent quality across samples. No external proof of expertise outside of Fiverr.
+
+## Approval timeline
+4 to 8 weeks from submission to decision in 2026. Approval rates are roughly 20-30 percent of applications.
+
+## What changes after approval
+Pro sellers list under separate URLs with the Pro badge. Buyer pool shifts to higher-budget clients. Pricing typically 2-5x the seller\'s standard tier. Pro-only message templates and order management.
+
+## Re-application
+If rejected, you can re-apply after 6 months. Use the gap to strengthen the specific signals the rejection letter cites.
+
+Source: https://slateremote.com/en/guides/fiverr-pro-application-checklist-2026
+
+---
+
+## Receiving Stripe payouts as a non-US developer in 2026
+
+*How non-US developers can accept Stripe payouts and what the alternatives are in 2026.* (category: freelance)
+
+Stripe processes most online developer payments globally but the payout side differs by country. Non-US developers in 2026 have a few clean paths.
+
+## Where Stripe operates directly
+50+ countries including all EU member states, UK, Canada, Australia, New Zealand, Singapore, Japan. Direct local payouts in local currency.
+
+## Where Stripe Atlas helps
+Founders in countries Stripe does not support locally can incorporate a US LLC via Stripe Atlas. Atlas opens a US bank account, registers the LLC, and connects Stripe directly to it. Payouts land in the US account; you transfer to your home country via Wise or similar.
+
+## Cost considerations
+Atlas costs around 500 USD upfront plus annual state filing fees (50-300 USD depending on state). Profitable above a few thousand USD in annual revenue; not worth it for tiny side projects.
+
+## Alternative: Stripe via marketplace
+If you sell through a marketplace (Gumroad, Lemon Squeezy, Paddle), the marketplace acts as Merchant of Record. You receive payouts in your local currency without operating Stripe directly. Higher per-transaction cost; less operational overhead.
+
+## What Stripe replaces
+Stripe + Wise removes most of the legacy "merchant account" pain. PayPal becomes optional rather than required. Local card-acquirer relationships are no longer necessary for most volumes.
+
+## Reporting and tax
+Stripe issues 1099-K equivalents per jurisdiction. Track gross payout volume against your tax filing currency. Multi-currency accounts simplify the reconciliation.
+
+## The clean stack
+Stripe (direct or via Atlas) → multi-currency account (Wise) → local bank for daily spend. Sweep monthly. Reconcile once a year with an accountant.
+
+Source: https://slateremote.com/en/guides/how-to-receive-stripe-payouts-as-non-us
+
+---
+
+## Remote tech interview loops in 2026: what changed
+
+*The current shape of remote technical interviews in 2026 and how the changes affect preparation.* (category: finding)
+
+Remote technical interview loops have settled into a specific shape in 2026 that differs meaningfully from 2022-2023. The changes affect how to prepare and what to expect.
+
+## The typical loop in 2026
+1. Recruiter screen (30 min)
+2. Hiring manager call (45-60 min)
+3. Technical screen, often pairing on real code (60-90 min)
+4. System design or domain-specific round (60-90 min)
+5. Team values / culture round (45 min)
+
+Total: 5-6 hours over 2-3 weeks for senior roles. Junior loops have shrunk to 3-4 rounds at most companies.
+
+## What is new
+- Pairing screens have replaced leetcode-style puzzles at most remote-first companies
+- AI usage during the technical screen is now explicitly disclosed up front; some companies allow it, some forbid it, almost none ignore it
+- Take-home assignments are shorter (1-3 hours, not 8+) due to backlash
+- Async-friendly loops emerging at fully distributed companies (recorded answers to written prompts)
+
+## What is the same
+Hiring manager call as the most decision-weight conversation. Team fit round as the disqualification trap. Recruiter screen as the salary expectations gate.
+
+## How to prepare in 2026
+- Specifically rehearse pairing-screen muscle: working code with someone watching, talking through tradeoffs, accepting feedback in real time
+- Be clear up front about AI usage; ask whether tools like Claude or Copilot are allowed during the technical
+- Have one strong system-design example ready that demonstrates the specific scale and complexity of the role
+- Know your salary number before the recruiter call; never disclose first
+
+## What stalls offers
+Mismatched salary expectations surfacing late. Inconsistent answers across rounds. Asking only logistics questions; never asking substantive questions about the team or product. Generic culture-round answers.
+
+Source: https://slateremote.com/en/guides/remote-tech-interview-loop-2026-changes
 
 ---
 

@@ -18,12 +18,6 @@ export default function NotFound() {
           {t(locale, '404.home')}
         </Link>
         <Link
-          href={localePath(locale, 'jobs')}
-          className="px-4 py-2 border border-line rounded text-sm hover:border-ink"
-        >
-          {t(locale, '404.jobs')}
-        </Link>
-        <Link
           href={localePath(locale, 'guides')}
           className="px-4 py-2 border border-line rounded text-sm hover:border-ink"
         >
