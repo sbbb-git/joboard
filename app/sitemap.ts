@@ -4,6 +4,7 @@ import type { Locale } from '@/lib/types';
 import { SITE_URL, canonicalPath } from '@/lib/seo';
 import { GUIDES } from '@/lib/guides';
 import { hasGuideTranslation } from '@/lib/guides-body-i18n';
+import { GUIDE_PUBLISHED } from '@/lib/guide-dates';
 
 export const dynamic = 'force-static';
 
@@ -14,15 +15,22 @@ type SitemapEntry = MetadataRoute.Sitemap[number];
 // (trailingSlash is false, so none may end in a slash).
 //
 // The site publishes guides only since the job board was retired in 2026-09.
-// Everything here is editorial, so no lastModified: stamping every URL with
-// the build time would claim every page changed on every deploy.
-function localeUrls(path: string, priority: number, locales: readonly Locale[] = LOCALES): SitemapEntry[] {
+// Guides carry their real publication date as lastModified; other pages
+// carry none, since stamping the build time would claim every page changed
+// on every deploy.
+function localeUrls(
+  path: string,
+  priority: number,
+  locales: readonly Locale[] = LOCALES,
+  lastModified?: string,
+): SitemapEntry[] {
   const languages: Record<string, string> = {
     'x-default': `${SITE_URL}${canonicalPath(DEFAULT_LOCALE, path)}`,
   };
   for (const l of locales) languages[l] = `${SITE_URL}${canonicalPath(l, path)}`;
   return locales.map((l) => ({
     url: `${SITE_URL}${canonicalPath(l, path)}`,
+    ...(lastModified ? { lastModified } : {}),
     // Non-default locales rank slightly below the English original.
     priority: l === DEFAULT_LOCALE ? priority : Math.max(0.1, Math.round((priority - 0.1) * 100) / 100),
     alternates: { languages },
@@ -43,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // noindex because they would be English text under a French/German URL.
   for (const g of GUIDES) {
     const langs = LOCALES.filter((l) => hasGuideTranslation(g.slug, l));
-    out.push(...localeUrls(`/guides/${g.slug}`, 0.8, langs));
+    out.push(...localeUrls(`/guides/${g.slug}`, 0.8, langs, GUIDE_PUBLISHED[g.slug]));
   }
 
   return out;

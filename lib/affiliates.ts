@@ -125,7 +125,7 @@ export const AFFILIATES: AffiliateEntry[] = [
     name: 'Claude',
     url: 'https://claude.ai/referral/zUyyYBl9ZQ',
     blurb:
-      'The LLM we use to draft our content, debug our scrapers, and prep applications. Best long-context model in 2026.',
+      'The LLM we use to research and draft our guides. Strong at long documents, code and careful reasoning.',
     cta: 'Try Claude',
     payout: 'Bonus per referral',
     payoutType: 'cash',

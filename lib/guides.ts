@@ -1214,13 +1214,11 @@ Mismatched salary expectations surfacing late. Inconsistent answers across round
       },
     ],
   },
-  // ─── World Cup 2026 topical cluster (immediate release, no publishedAt)
-  // ─── World Cup 2026 USA-focused cluster (immediate release)
 );
 
-// Build-time filter: any guide with a future publishedAt is hidden from
-// this build. The daily scrape-and-deploy cron picks them up on the day
-// their publishedAt timestamp passes.
+// Build-time filter: a guide with a future publishedAt is left out of the
+// build. Nothing rebuilds the site on a schedule any more, so such a guide
+// only appears with the first deploy after that date.
 const BUILD_NOW = Date.now();
 export const GUIDES: GuideEntry[] = ALL_GUIDES.filter(
   (g) => !g.publishedAt || new Date(g.publishedAt).getTime() <= BUILD_NOW,

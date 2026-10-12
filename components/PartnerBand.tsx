@@ -43,9 +43,9 @@ const PARTNERS: Partner[] = [
     slug: 'claude',
     name: 'Claude',
     blurb: {
-      en: 'The LLM we use to draft content and debug scrapers.',
-      fr: "Le LLM que nous utilisons pour rédiger et déboguer.",
-      de: 'Der LLM, den wir zum Schreiben und Debuggen nutzen.',
+      en: 'The LLM we use to research and draft our guides.',
+      fr: "Le LLM que nous utilisons pour préparer et rédiger nos guides.",
+      de: 'Der LLM, mit dem wir unsere Guides recherchieren und schreiben.',
     },
     cta: {
       en: 'Try Claude →',

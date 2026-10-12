@@ -103,7 +103,7 @@ export const NETWORK_I18N: Record<Locale, NetworkCopy> = {
     visit: 'Visit',
     taglines: {
       slowmadly: 'Country guides for nomads who stay a while: visas, cost of living and where to settle for a season.',
-      aibyjob: 'A directory of the best AI tools for each job, organised by role and published in seven languages.',
+      aibyjob: 'A directory of the best AI tools for each job, organised by role and published in English, French and Spanish.',
       shiftplanner: 'Shift and rota planning for distributed teams, with AI assignment that respects each person’s stated availability.',
       talentcare: 'A medical recruitment agency in France, connecting doctors, dentists, midwives and paramedics with health structures that are hiring.',
       opticds: 'Advisory for French health centres: grant recovery, physician recruitment, financial audits and day to day operational management.',
@@ -128,7 +128,7 @@ export const NETWORK_I18N: Record<Locale, NetworkCopy> = {
     visit: 'Visiter',
     taglines: {
       slowmadly: 'Des guides pays pour les nomades qui restent un moment : visas, coût de la vie et où poser ses valises pour une saison.',
-      aibyjob: 'Un annuaire des meilleurs outils IA métier par métier, classés par rôle et publié en sept langues.',
+      aibyjob: 'Un annuaire des meilleurs outils IA métier par métier, classés par rôle et publié en anglais, français et espagnol.',
       shiftplanner: 'La planification des plannings et des gardes pour équipes réparties, avec une affectation par IA qui respecte les disponibilités déclarées.',
       talentcare: 'Un cabinet de recrutement médical en France, qui met en relation médecins, dentistes, sages-femmes et paramédicaux avec les structures de santé qui recrutent.',
       opticds: 'Le conseil aux centres de santé : récupération de subventions, recrutement de praticiens, audits financiers et gestion opérationnelle au quotidien.',
@@ -153,7 +153,7 @@ export const NETWORK_I18N: Record<Locale, NetworkCopy> = {
     visit: 'Besuchen',
     taglines: {
       slowmadly: 'Länderguides für Nomaden, die länger bleiben: Visa, Lebenshaltungskosten und wo man sich für eine Saison niederlässt.',
-      aibyjob: 'Ein Verzeichnis der besten KI-Tools für jeden Beruf, nach Rolle geordnet und in sieben Sprachen veröffentlicht.',
+      aibyjob: 'Ein Verzeichnis der besten KI-Tools für jeden Beruf, nach Rolle geordnet und auf Englisch, Französisch und Spanisch veröffentlicht.',
       shiftplanner: 'Schicht- und Dienstplanung für verteilte Teams, mit KI-Zuteilung, die die angegebene Verfügbarkeit jeder Person berücksichtigt.',
       talentcare: 'Eine medizinische Personalvermittlung in Frankreich, die Ärzte, Zahnärzte, Hebammen und Pflegekräfte mit einstellenden Einrichtungen zusammenbringt.',
       opticds: 'Beratung für französische Gesundheitszentren: Fördermittel, Ärztegewinnung, Finanzprüfungen und operatives Management.',

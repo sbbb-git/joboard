@@ -36,7 +36,7 @@ export function Footer({ locale }: { locale: Locale }) {
             <p className="font-display text-base font-normal tracking-tight text-ink mt-1">
               {t(locale, 'footer.basecamp')} → {SISTER_NOMAD.domain}
             </p>
-            <p className="text-xs text-muted mt-1.5">{SISTER_NOMAD.tagline}</p>
+            <p className="text-xs text-muted mt-1.5">{SISTER_NOMAD.tagline[locale]}</p>
           </a>
           <a
             href={aiByJobHomeUrl(locale)}
@@ -50,7 +50,7 @@ export function Footer({ locale }: { locale: Locale }) {
             <p className="font-display text-base font-normal tracking-tight text-ink mt-1">
               {t(locale, 'footer.aiTools')} → {SISTER_AI.domain}
             </p>
-            <p className="text-xs text-muted mt-1.5">{SISTER_AI.tagline}</p>
+            <p className="text-xs text-muted mt-1.5">{SISTER_AI.tagline[locale]}</p>
           </a>
         </div>
 

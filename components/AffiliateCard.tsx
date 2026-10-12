@@ -1,8 +1,10 @@
 import type { AffiliateEntry } from '@/lib/affiliates';
 import { AFFILIATE_COPY } from '@/lib/affiliates-i18n';
+import { affiliateCopy } from '@/lib/affiliates-locale';
 import type { Locale } from '@/lib/types';
 
-export function AffiliateCard({ entry }: { entry: AffiliateEntry }) {
+export function AffiliateCard({ entry, locale = 'en' }: { entry: AffiliateEntry; locale?: Locale }) {
+  const t = affiliateCopy(entry, locale);
   return (
     <a
       href={entry.url}
@@ -13,12 +15,12 @@ export function AffiliateCard({ entry }: { entry: AffiliateEntry }) {
       <div className="flex items-baseline justify-between gap-2">
         <div className="font-semibold text-ink">{entry.name}</div>
         <span className="text-[10px] uppercase tracking-wider text-subtle">
-          {entry.category}
+          {t.category}
         </span>
       </div>
-      <p className="text-xs text-muted mt-2 leading-relaxed line-clamp-3">{entry.blurb}</p>
+      <p className="text-xs text-muted mt-2 leading-relaxed line-clamp-3">{t.blurb}</p>
       <p className="text-xs font-medium text-forest mt-3 group-hover:text-forestDark transition-colors">
-        {entry.cta} →
+        {t.cta} →
       </p>
     </a>
   );
@@ -50,7 +52,7 @@ export function AffiliateGrid({
         className={`grid grid-cols-1 gap-3 ${entries.length >= 3 ? 'sm:grid-cols-2 lg:grid-cols-3' : 'sm:grid-cols-2'}`}
       >
         {entries.map((e) => (
-          <AffiliateCard key={e.slug} entry={e} />
+          <AffiliateCard key={e.slug} entry={e} locale={locale} />
         ))}
       </div>
       <p className="text-[10px] text-subtle mt-3">{copy.disclaimer}</p>

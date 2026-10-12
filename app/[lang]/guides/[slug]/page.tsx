@@ -71,14 +71,20 @@ const MERCOR_SLUGS = new Set([
   'mercor-vs-tortoise-eval-platforms',
 ]);
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { GuideBody } from '@/components/GuideBody';
 import { localePath } from '@/lib/i18n';
+import { GUIDE_PUBLISHED } from '@/lib/guide-dates';
+import { GUIDES_I18N } from '@/lib/page-i18n';
 
 const AI_KEYWORDS = /\b(ai|ml|machine learning|llm|prompt|data scientist|ml engineer)\b/i;
 
-const GUIDE_LABELS: Record<Locale, { faq: string; related: string }> = {
-  en: { faq: 'Frequently asked questions', related: 'Related guides' },
-  fr: { faq: 'Questions fréquentes', related: 'Guides liés' },
-  de: { faq: 'Häufige Fragen', related: 'Verwandte Guides' },
+const GUIDE_LABELS: Record<
+  Locale,
+  { faq: string; related: string; home: string; guides: string; published: string; dateLocale: string }
+> = {
+  en: { faq: 'Frequently asked questions', related: 'Related guides', home: 'Home', guides: 'Guides', published: 'Published', dateLocale: 'en-GB' },
+  fr: { faq: 'Questions fréquentes', related: 'Guides liés', home: 'Accueil', guides: 'Guides', published: 'Publié le', dateLocale: 'fr-FR' },
+  de: { faq: 'Häufige Fragen', related: 'Verwandte Guides', home: 'Startseite', guides: 'Guides', published: 'Veröffentlicht am', dateLocale: 'de-DE' },
 };
 
 export const dynamicParams = false;
@@ -104,6 +110,38 @@ function guideMetaDesc(base: string, category: string): string {
   const ctx = CAT_CONTEXT[category] ?? 'strategies and advice for remote tech workers in 2026';
   const suffix = ` Covers ${ctx}.`;
   return (base + suffix).slice(0, 160);
+}
+
+// Related guides: same topic first (Mercor, Fiverr, Wise...), then same
+// category, then anything else, so every guide links to four others. The old
+// rule took the first four of the category, which sent all 21 freelance
+// guides (Mercor ones included) to the same four Fiverr guides and left the
+// three guides that are alone in their category with no related links at all.
+// Topic families, matched on slug words. Grouping matters: a lone keyword
+// left the Stripe, tax-residency and interview guides related to nothing.
+const TOPICS: Record<string, string[]> = {
+  mercor: ['mercor'],
+  fiverr: ['fiverr'],
+  money: ['wise', 'stripe', 'payoneer', 'payout', 'tax', 'revolut'],
+  travel: ['safetywing', 'visa', 'countries', 'nomad'],
+  career: ['salary', 'interview', 'engineer'],
+  tools: ['appsumo', 'claude', 'laptop', 'saas'],
+};
+const topicOf = (slug: string) =>
+  Object.keys(TOPICS).filter((t) => TOPICS[t].some((w) => slug.includes(w)));
+function relatedGuides(g: (typeof GUIDES)[number], n = 4) {
+  const mine = topicOf(g.slug);
+  const score = (x: (typeof GUIDES)[number]) =>
+    (topicOf(x.slug).some((t) => mine.includes(t)) ? 2 : 0) + (x.category === g.category ? 1 : 0);
+  // Ties go to the nearest guides in list order, wrapping around, so links
+  // spread across the topic instead of piling onto its first four entries.
+  const me = GUIDES.findIndex((x) => x.slug === g.slug);
+  const dist = (i: number) => (i - me + GUIDES.length) % GUIDES.length;
+  return GUIDES.map((x, i) => ({ x, s: score(x), d: dist(i) }))
+    .filter(({ x }) => x.slug !== g.slug)
+    .sort((a, b) => b.s - a.s || a.d - b.d)
+    .slice(0, n)
+    .map(({ x }) => x);
 }
 
 export function generateMetadata({
@@ -132,12 +170,15 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
   const body = tGuideBody(g.slug, params.lang, g.body);
   const faqs = tGuideFaqs(g.slug, params.lang, g.faqs);
   const labels = GUIDE_LABELS[params.lang];
-  const related = GUIDES.filter((x) => x.category === g.category && x.slug !== g.slug).slice(0, 4);
+  const related = relatedGuides(g);
+  const pageUrl = absoluteUrl(`/${params.lang}/guides/${g.slug}`);
+  const published = GUIDE_PUBLISHED[g.slug];
+  const categoryLabel = GUIDES_I18N[params.lang].categories[g.category] ?? g.category;
 
   const breadcrumb = breadcrumbJsonLd([
-    { name: 'Home', url: absoluteUrl(`/${params.lang}`) },
-    { name: 'Guides', url: absoluteUrl(`/${params.lang}/guides`) },
-    { name: title, url: absoluteUrl(`/${params.lang}/guides/${g.slug}`) },
+    { name: labels.home, url: absoluteUrl(`/${params.lang}`) },
+    { name: labels.guides, url: absoluteUrl(`/${params.lang}/guides`) },
+    { name: title, url: pageUrl },
   ]);
 
   const faqJsonLd = faqs
@@ -158,8 +199,20 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
     headline: title,
     description: description,
     inLanguage: params.lang,
-    url: absoluteUrl(`/${params.lang}/guides/${g.slug}`),
-    publisher: { '@type': 'Organization', name: 'slateremote.com' },
+    url: pageUrl,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+    image: absoluteUrl('/og.png'),
+    articleSection: categoryLabel,
+    // Content has not been revised since publication, so both dates match.
+    ...(published ? { datePublished: published, dateModified: published } : {}),
+    // No named human author: the guides are published by the site itself.
+    author: { '@type': 'Organization', name: 'slateremote.com', url: absoluteUrl('/') },
+    publisher: {
+      '@type': 'Organization',
+      name: 'slateremote.com',
+      url: absoluteUrl('/'),
+      logo: { '@type': 'ImageObject', url: absoluteUrl('/icon.svg') },
+    },
   };
 
   return (
@@ -180,26 +233,36 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
       )}
       <Breadcrumb
         items={[
-          { label: 'Home', href: localePath(params.lang) },
-          { label: 'Guides', href: localePath(params.lang, 'guides') },
+          { label: labels.home, href: localePath(params.lang) },
+          { label: labels.guides, href: localePath(params.lang, 'guides') },
           { label: title },
         ]}
       />
       <header className="border-b border-line pb-4">
-        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{g.category}</p>
+        <p className="text-[11px] uppercase tracking-wider text-forest font-semibold">{categoryLabel}</p>
         <h1 className="font-display text-3xl md:text-4xl font-normal tracking-tighter text-ink mt-1.5 leading-tight">
           {title}
         </h1>
         <p className="text-graphite text-base mt-3">{description}</p>
+        {published && (
+          <p className="text-xs text-muted mt-3">
+            {labels.published}{' '}
+            <time dateTime={published}>
+              {new Date(`${published}T00:00:00Z`).toLocaleDateString(labels.dateLocale, {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+                timeZone: 'UTC',
+              })}
+            </time>
+          </p>
+        )}
       </header>
-      <div className="prose-body whitespace-pre-line text-[0.95rem] leading-relaxed">{body}</div>
+      <GuideBody body={body} />
 
       {AI_KEYWORDS.test(g.title) && (
         <>
-          <AiToolsCTA
-            context={{ type: 'guide', label: g.title.replace(/^(How to become a |Best |Remote )/i, '').toLowerCase() }}
-            locale={params.lang}
-          />
+          <AiToolsCTA context={{ type: 'guide' }} locale={params.lang} />
           <EarnWithAi locale={params.lang} />
         </>
       )}
