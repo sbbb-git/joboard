@@ -11,19 +11,19 @@ type MercorCopy = {
 const COPY: Record<Locale, MercorCopy> = {
   en: {
     eyebrow: 'Get paid by AI labs',
-    title: 'Earn $30-$100/hour evaluating AI model outputs',
+    title: 'Earn $60-$100+/hour evaluating AI model outputs',
     body: 'Mercor matches vetted experts (developers, researchers, domain specialists) with paid evaluation work for frontier AI labs. Async, remote, USD payouts. Best fit if you have technical depth and want flexible high-rate side income.',
     cta: 'Apply to Mercor →',
   },
   fr: {
     eyebrow: 'Soyez payé par les labos IA',
-    title: 'Gagnez 30 à 100 USD/heure en évaluant les sorties des modèles IA',
+    title: 'Gagnez 60 à plus de 100 USD/heure en évaluant des modèles IA',
     body: "Mercor met en relation des experts vérifiés (développeurs, chercheurs, spécialistes métiers) avec du travail d'évaluation rémunéré pour les labos IA. Asynchrone, remote, paiements en USD. Idéal si vous avez de la profondeur technique et que vous voulez un revenu d'appoint flexible et bien payé.",
     cta: 'Postuler à Mercor →',
   },
   de: {
     eyebrow: 'Werde von KI-Laboren bezahlt',
-    title: 'Verdiene 30-100 USD/Stunde mit der Bewertung von KI-Modell-Outputs',
+    title: 'Verdiene 60 bis über 100 USD/Stunde mit der Bewertung von KI-Modellen',
     body: 'Mercor verbindet geprüfte Experten (Entwickler, Forscher, Domain-Spezialisten) mit bezahlter Evaluationsarbeit für führende KI-Labore. Asynchron, remote, Auszahlungen in USD. Beste Wahl, wenn du technische Tiefe hast und ein flexibles, gut bezahltes Nebeneinkommen suchst.',
     cta: 'Bei Mercor bewerben →',
   },

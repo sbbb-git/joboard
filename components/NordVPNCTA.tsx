@@ -12,19 +12,19 @@ const COPY: Record<Locale, Copy> = {
   en: {
     eyebrow: 'Privacy for remote work',
     title: 'Lock down public Wi-Fi and access region-locked tools with NordVPN',
-    body: '6,000+ servers worldwide, fast enough to ship code from any cafe or coworking space. Use it on every public network you connect to and to access region-locked dev tools, payment portals and APIs without dropping packets.',
+    body: '8,000+ servers worldwide, fast enough to ship code from any cafe or coworking space. Use it on every public network you connect to and to access region-locked dev tools, payment portals and APIs without dropping packets.',
     cta: 'Get NordVPN →',
   },
   fr: {
     eyebrow: 'Privacy pour le remote',
     title: 'Sécurisez le Wi-Fi public et débloquez les outils géo-restreints avec NordVPN',
-    body: '6 000+ serveurs dans le monde, assez rapides pour pousser du code depuis n\'importe quel café ou coworking. À utiliser sur chaque réseau public auquel vous vous connectez et pour accéder aux outils dev, portails de paiement et APIs géo-restreints sans coupure.',
+    body: '8 000+ serveurs dans le monde, assez rapides pour pousser du code depuis n\'importe quel café ou coworking. À utiliser sur chaque réseau public auquel vous vous connectez et pour accéder aux outils dev, portails de paiement et APIs géo-restreints sans coupure.',
     cta: 'Obtenir NordVPN →',
   },
   de: {
     eyebrow: 'Privacy für Remote',
     title: 'Sichere öffentliches WLAN und entsperre regionsbeschränkte Tools mit NordVPN',
-    body: '6.000+ Server weltweit, schnell genug um Code aus jedem Café oder Coworking zu pushen. Nutze es in jedem öffentlichen Netzwerk und für regionsbeschränkte Dev-Tools, Zahlungsportale und APIs ohne Verbindungsabbrüche.',
+    body: '8.000+ Server weltweit, schnell genug um Code aus jedem Café oder Coworking zu pushen. Nutze es in jedem öffentlichen Netzwerk und für regionsbeschränkte Dev-Tools, Zahlungsportale und APIs ohne Verbindungsabbrüche.',
     cta: 'NordVPN holen →',
   },
 };

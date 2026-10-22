@@ -40,7 +40,7 @@ export const AFFILIATES: AffiliateEntry[] = [
     name: 'Wise',
     url: 'https://wise.prf.hn/click/camref:1100l5KwDi',
     blurb:
-      'Real exchange rate, IBANs in 8+ currencies. The default account for getting paid in USD or EUR from anywhere.',
+      'Real exchange rate, account details in 20 currencies. The default account for getting paid in USD or EUR from anywhere.',
     cta: 'Open free account',
     payout: 'Variable per signup (Impact)',
     payoutType: 'cash',
@@ -88,7 +88,7 @@ export const AFFILIATES: AffiliateEntry[] = [
     name: 'NordVPN',
     url: 'https://refer-nordvpn.com/duxeAtWzEDy',
     blurb:
-      'Premium VPN with 6000+ servers worldwide. Useful for public Wi-Fi at coworking spaces and for accessing region-locked tools.',
+      'Premium VPN with 8,000+ servers worldwide. Useful for public Wi-Fi at coworking spaces and for accessing region-locked tools.',
     cta: 'Get NordVPN',
     payout: '40-100% new, 30% renewal',
     payoutType: 'cash',
@@ -125,7 +125,7 @@ export const AFFILIATES: AffiliateEntry[] = [
     name: 'Claude',
     url: 'https://claude.ai/referral/zUyyYBl9ZQ',
     blurb:
-      'The LLM we use to draft our content, debug our scrapers, and prep applications. Best long-context model in 2026.',
+      'The LLM we use to research and draft our guides. Strong at long documents, code and careful reasoning.',
     cta: 'Try Claude',
     payout: 'Bonus per referral',
     payoutType: 'cash',
@@ -184,7 +184,7 @@ export const AFFILIATES: AffiliateEntry[] = [
     name: 'Mercor',
     url: 'https://t.mercor.com/sk2JJ',
     blurb:
-      'Get paid to evaluate AI model outputs. Vetted experts earn $30-$100/hour reviewing prompts, code, and reasoning.',
+      'Get paid to evaluate AI model outputs. Vetted experts typically earn $60-$100+/hour reviewing prompts, code, and reasoning.',
     cta: 'Apply to Mercor',
     payout: 'Bonus per successful signup',
     payoutType: 'cash',

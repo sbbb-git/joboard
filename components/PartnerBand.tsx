@@ -43,9 +43,9 @@ const PARTNERS: Partner[] = [
     slug: 'claude',
     name: 'Claude',
     blurb: {
-      en: 'The LLM we use to draft content and debug scrapers.',
-      fr: "Le LLM que nous utilisons pour rédiger et déboguer.",
-      de: 'Der LLM, den wir zum Schreiben und Debuggen nutzen.',
+      en: 'The LLM we use to research and draft our guides.',
+      fr: "Le LLM que nous utilisons pour préparer et rédiger nos guides.",
+      de: 'Der LLM, mit dem wir unsere Guides recherchieren und schreiben.',
     },
     cta: {
       en: 'Try Claude →',
@@ -99,9 +99,9 @@ const PARTNERS: Partner[] = [
     slug: 'nordvpn',
     name: 'NordVPN',
     blurb: {
-      en: 'VPN with 6,000+ servers. Public Wi-Fi safety + geo-unlocking.',
-      fr: 'VPN avec 6 000+ serveurs. Sécurité Wi-Fi public + déblocage géo.',
-      de: 'VPN mit 6.000+ Servern. Öffentliches-WLAN-Schutz + Geo-Unlock.',
+      en: 'VPN with 8,000+ servers. Public Wi-Fi safety + geo-unlocking.',
+      fr: 'VPN avec 8 000+ serveurs. Sécurité Wi-Fi public + déblocage géo.',
+      de: 'VPN mit 8.000+ Servern. Öffentliches-WLAN-Schutz + Geo-Unlock.',
     },
     cta: {
       en: 'Get NordVPN →',

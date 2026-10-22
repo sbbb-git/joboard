@@ -107,7 +107,7 @@ export function NomadCTA({
         <h2 className="font-display text-xl md:text-2xl font-normal tracking-tighter text-ink mt-2">
           {title}
         </h2>
-        <p className="text-sm text-muted mt-2 max-w-prose">{SISTER_NOMAD.tagline}</p>
+        <p className="text-sm text-muted mt-2 max-w-prose">{SISTER_NOMAD.tagline[locale]}</p>
         <a
           href={url}
           target="_blank"

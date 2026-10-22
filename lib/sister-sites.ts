@@ -1,28 +1,38 @@
+import type { Locale } from './types';
+
 export interface SisterSite {
   name: string;
   domain: string;
   url: string;
-  tagline: string;
+  tagline: Record<Locale, string>;
 }
 
 export const SISTER_NOMAD: SisterSite = {
   name: 'Slowmadly',
   domain: 'slowmadly.com',
   url: 'https://slowmadly.com',
-  tagline: 'Country guides for nomads who stay a while.',
+  tagline: {
+    en: 'Country guides for nomads who stay a while.',
+    fr: 'Des guides pays pour les nomades qui restent un moment.',
+    de: 'Länderguides für Nomaden, die länger bleiben.',
+  },
 };
 
 export const SISTER_AI: SisterSite = {
   name: 'AI by Job',
   domain: 'ai-by-job.com',
   url: 'https://ai-by-job.com',
-  tagline: 'The best AI tools for every job, in 7 languages.',
+  tagline: {
+    en: 'The best AI tools for every job, in English, French and Spanish.',
+    fr: 'Les meilleurs outils IA pour chaque métier, en anglais, français et espagnol.',
+    de: 'Die besten KI-Tools für jeden Beruf, auf Englisch, Französisch und Spanisch.',
+  },
 };
 
-// Locales the sister network publishes in. If the current visitor is on a
-// locale outside this set, we fall back to English on the destination site
-// rather than producing a broken URL.
-const SUPPORTED_LOCALES = new Set(['en', 'fr', 'es', 'de', 'pt', 'it', 'pl']);
+// Locales the sister sites actually publish in (checked 2026-10: both serve
+// /en and /fr, and redirect /de to /en). Anything else links straight to the
+// English edition instead of through a redirect hop.
+const SUPPORTED_LOCALES = new Set(['en', 'fr']);
 const DEFAULT_LOCALE = 'en';
 
 function localeSegment(locale?: string | null): string {
