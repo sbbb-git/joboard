@@ -30,12 +30,12 @@ export const AFFILIATE_LOCALE: Record<string, Partial<Record<Exclude<Locale, 'en
     de: { blurb: 'Der größte Marktplatz für Freelance-Tech-Services. Gig einstellen, weltweit Kunden finden, für Code, Automatisierung und KI bezahlt werden.', cta: 'Auf Fiverr verkaufen' },
   },
   mercor: {
-    fr: { blurb: 'Soyez payé pour évaluer les réponses de modèles d’IA. Les experts sélectionnés gagnent 30 à 100 $ de l’heure sur des prompts, du code et du raisonnement.', cta: 'Postuler chez Mercor' },
-    de: { blurb: 'Bezahlt KI-Modellantworten bewerten. Geprüfte Fachleute verdienen 30 bis 100 $ pro Stunde mit Prompts, Code und Reasoning.', cta: 'Bei Mercor bewerben' },
+    fr: { blurb: 'Soyez payé pour évaluer les réponses de modèles d’IA. Les experts sélectionnés gagnent en général de 60 à plus de 100 $ de l’heure sur des prompts, du code et du raisonnement.', cta: 'Postuler chez Mercor' },
+    de: { blurb: 'Bezahlt KI-Modellantworten bewerten. Geprüfte Fachleute verdienen meist 60 bis über 100 $ pro Stunde mit Prompts, Code und Reasoning.', cta: 'Bei Mercor bewerben' },
   },
   nordvpn: {
-    fr: { blurb: 'VPN premium avec plus de 6 000 serveurs. Utile sur le Wi-Fi public des coworkings et pour accéder aux outils restreints par pays.', cta: 'Obtenir NordVPN' },
-    de: { blurb: 'Premium-VPN mit über 6.000 Servern weltweit. Nützlich im öffentlichen Coworking-WLAN und für länderbeschränkte Tools.', cta: 'NordVPN holen' },
+    fr: { blurb: 'VPN premium avec plus de 8 000 serveurs. Utile sur le Wi-Fi public des coworkings et pour accéder aux outils restreints par pays.', cta: 'Obtenir NordVPN' },
+    de: { blurb: 'Premium-VPN mit über 8.000 Servern weltweit. Nützlich im öffentlichen Coworking-WLAN und für länderbeschränkte Tools.', cta: 'NordVPN holen' },
   },
   revolut: {
     fr: { blurb: 'Compte tout-en-un basé en Europe : change de devises, cartes virtuelles, coffres d’épargne. Adapté aux travailleurs remote résidant dans l’UE.', cta: 'Ouvrir un compte gratuit' },
@@ -50,8 +50,8 @@ export const AFFILIATE_LOCALE: Record<string, Partial<Record<Exclude<Locale, 'en
     de: { blurb: 'Bezahlte Community mit integrierten Kursen, Events und Rangliste betreiben. Genutzt von vielen Remote-Tech-Trainern.', cta: 'Community starten' },
   },
   wise: {
-    fr: { blurb: 'Le vrai taux de change et des IBAN dans plus de 8 devises. Le compte de référence pour être payé en USD ou en EUR depuis n’importe où.', cta: 'Ouvrir un compte gratuit' },
-    de: { blurb: 'Echter Wechselkurs und IBANs in über 8 Währungen. Das Standardkonto, um von überall in USD oder EUR bezahlt zu werden.', cta: 'Kostenloses Konto eröffnen' },
+    fr: { blurb: 'Le vrai taux de change et des coordonnées bancaires dans 20 devises. Le compte de référence pour être payé en USD ou en EUR depuis n’importe où.', cta: 'Ouvrir un compte gratuit' },
+    de: { blurb: 'Echter Wechselkurs und Kontodaten in 20 Währungen. Das Standardkonto, um von überall in USD oder EUR bezahlt zu werden.', cta: 'Kostenloses Konto eröffnen' },
   },
   qonto: {
     fr: { blurb: 'Banque pro pour freelances et startups dans l’UE. Justificatifs, gestion des dépenses, comptabilité intégrée.', cta: 'Ouvrir un compte pro' },

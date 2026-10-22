@@ -424,7 +424,7 @@ Generic AI-assisted application copy is the fastest disqualifier. Mercor screens
     title: 'How much does Mercor actually pay AI evaluators in 2026',
     description: 'Realistic hourly rates on Mercor for developers and domain experts, what drives the range, and how the rate climbs over time.',
     category: 'freelance',
-    body: `Mercor pays per hour of evaluation work. The published range is 30 to 100 USD/hour, but actual earnings depend on your domain, your quality rating, and how much work you can sustain.
+    body: `Mercor pays per hour of evaluation work. Listed rates typically run from about 60 to over 100 USD/hour (Mercor reports an average contracted rate of about 100 USD/hour), but actual earnings depend on your domain, your quality rating, and how much work you can sustain.
 
 ## The realistic starting range
 New evaluators in software engineering and general technical tracks typically start at 30 to 45 USD per hour. Domain-scarce tracks (advanced math, biology, law) start higher, often 50 to 80 USD.
@@ -445,7 +445,7 @@ A consistent 10 hours/week at 50 USD/hour is roughly 26,000 USD per year of side
 If your day job pays more than 100 USD per hour all-in (top-tier US engineering compensation), Mercor side income probably is not worth your evening hours. The math works best for mid-rate engineers, contractors between gigs, or experts in scarce domains.
 
 ## Payout speed
-Standard payout cycles are weekly to bi-weekly. International transfers via the platform's payment partner; arrival times vary by country, typically two to five business days.`,
+Hourly contractors are paid weekly, every Wednesday, through Stripe or Wise depending on the country of your bank account. Stripe payouts land within up to five business days; Wise usually within about an hour.`,
     faqs: [
       {
         q: 'What is the average Mercor hourly rate for developers in 2026?',
@@ -462,12 +462,12 @@ Standard payout cycles are weekly to bi-weekly. International transfers via the 
     title: 'Mercor vs Scale AI vs Surge AI: which pays AI evaluators more',
     description: 'A practical comparison of the three biggest AI-evaluation platforms for developers and domain experts in 2026.',
     category: 'freelance',
-    body: `Three platforms dominate paid AI evaluation in 2026: Mercor, Scale AI (via its Outlier and Remotasks brands), and Surge AI. They overlap in client base but differ on rate, task type, vetting bar, and reliability of work supply.
+    body: `Three platforms dominate paid AI evaluation in 2026: Mercor, Scale AI (mainly through Outlier), and Surge AI. They overlap in client base but differ on rate, task type, vetting bar, and reliability of work supply.
 
 ## Mercor
-Vetted, expert-led, weekly rates often 30 to 100 USD/hour for software and technical tracks. Application bar is high; once accepted, the work tends to be deeper and longer-form. Best fit for experienced developers and domain experts who value rate over volume.
+Vetted, expert-led, rates typically 60 to 100+ USD/hour for software and technical tracks. Application bar is high; once accepted, the work tends to be deeper and longer-form. Best fit for experienced developers and domain experts who value rate over volume.
 
-## Scale AI (Outlier/Remotasks)
+## Scale AI (Outlier)
 Broader, more volume-oriented. Rates are lower on average (15 to 40 USD/hour for most tracks, premium domains higher). Lower entry bar makes it accessible quickly. Best fit if you want immediate volume and steady weekly hours, less concerned with rate.
 
 ## Surge AI
@@ -477,7 +477,7 @@ Positions itself as a quality-focused platform for premium annotation and evalua
 
 | Factor              | Mercor          | Scale AI            | Surge AI         |
 |---------------------|-----------------|---------------------|------------------|
-| Typical rate (dev)  | 35-80 USD/h     | 18-40 USD/h         | 35-70 USD/h      |
+| Typical rate (dev)  | 60-100+ USD/h   | 25-50 USD/h         | 35-70 USD/h      |
 | Acceptance bar      | High            | Low to medium       | Medium to high   |
 | Volume reliability  | Bursty          | Steady              | Bursty           |
 | Task depth          | Long-form, nuanced | Short, repetitive | Mixed            |
@@ -491,7 +491,7 @@ Many experts run two platforms in parallel. Mercor + Scale fills gaps in volume;
     faqs: [
       {
         q: 'Which platform pays AI evaluators the most in 2026?',
-        a: 'Per hour, Mercor and Surge AI tend to lead for expert and developer tracks at 35-80 USD/hour. Scale AI/Outlier pays less on average but offers more sustained volume.',
+        a: 'Per hour, Mercor and Surge AI tend to lead for expert and developer tracks, with Mercor typically at 60 to 100+ USD/hour. Scale AI/Outlier pays less on average but offers more sustained volume.',
       },
       {
         q: 'Can I work on Mercor and Scale AI at the same time?',
@@ -542,13 +542,13 @@ Quality scores tank when you fatigue. Twenty good hours per week beat thirty med
     title: 'Mercor payouts and taxes guide for 2026',
     description: 'How Mercor pays you, supported payment methods, and what you owe in tax as a US or EU evaluator.',
     category: 'freelance',
-    body: `Mercor pays evaluators on a weekly or bi-weekly cycle, in USD, via international transfer. Understanding the payout flow and the tax classification matters before you accept the first task.
+    body: `Mercor pays hourly evaluators weekly, every Wednesday, in USD, through Stripe or Wise. Understanding the payout flow and the tax classification matters before you accept the first task.
 
 ## Payout cycle
-Earnings accrue per task and are batched into a payout run. Most evaluators see funds initiated within a week of task completion, arriving in their account within two to five business days after that. International evaluators may see additional bank-level delays.
+Earnings accrue per task and are batched into a payout run. Each Wednesday payout covers the previous work week. Through Stripe, funds reach your bank within up to five business days, and Stripe holds your very first payout for seven days; through Wise they usually arrive within about an hour. International evaluators may see additional bank-level delays.
 
 ## Payout methods
-Mercor partners with international transfer providers. In practice, evaluators receive USD into a local bank account using a routing partner, or via a multi-currency account such as Wise or Payoneer. Wise tends to land cheapest for non-US recipients because the FX spread is tighter than most bank conversions.
+Mercor assigns the payout provider from the country of your bank account, and you cannot choose it: Stripe Connect wherever Stripe supports payouts, Wise elsewhere. Payoneer is not offered. If you are paid through Stripe in USD, holding the funds in a multi-currency account such as Wise before converting is usually cheaper than letting your bank convert.
 
 ## US tax treatment
 US-based evaluators are independent contractors. Earnings are reported on a 1099-NEC if you cross the IRS threshold. Self-employment tax (15.3 percent) applies in addition to federal and state income tax. Set aside roughly 30 percent of gross by default; refine to actual liability with your accountant.
@@ -564,7 +564,7 @@ Mercor does not withhold US or EU taxes on your behalf. The full payment lands i
     faqs: [
       {
         q: 'How does Mercor pay non-US evaluators?',
-        a: 'Mercor pays via international transfer in USD. Most non-US evaluators receive payouts into a multi-currency account such as Wise or Payoneer to minimise FX fees.',
+        a: 'Mercor pays in USD through Stripe or Wise, assigned automatically from the country of your bank account. Payoneer is not offered.',
       },
       {
         q: 'Do I need to be self-employed to work on Mercor in the EU?',
@@ -745,13 +745,13 @@ A bank account, in the traditional sense. Balances are held with regulated elect
 1. Receive client payments in their home currency without FX cut
 2. Hold balances across currencies until convenient to convert
 3. Convert at mid-market FX with a small transparent fee, instead of the 2-4 percent hidden spread typical banks take
-4. Spend with a debit card in 40+ currencies without FX markup on the spend
+4. Spend with a debit card in 40+ currencies, paying only the conversion fee when a currency has to be converted
 
 ## What it costs
-Account is free. Receiving local payments is free. Converting incurs a transparent fee, typically 0.4 to 0.7 percent. Card spending in the home currency is free; in foreign currency uses mid-market FX with no markup.
+Account is free. Receiving local payments is free. Converting incurs a transparent fee, typically 0.4 to 0.7 percent. Spending a currency you already hold is free; otherwise the card converts at the mid-market rate plus a small conversion fee.
 
 ## Where it fails
-- Not suitable for parking large sums (no meaningful interest)
+- Not designed for long-term savings, although interest on balances is offered in some regions
 - Not a long-term substitute for a real local bank account in your residency country (lender history, mortgage relationships, regulatory norms)
 - Limited cheque support in countries that still rely on it (rare but exists)
 - Customer support is async and slower than a high-street bank for serious issues
@@ -761,7 +761,7 @@ Use Wise as the receiving layer between clients and your real bank account. Conv
 
 ## Alternatives if Wise does not fit
 - Revolut Business (similar feature set, EU-focused)
-- Mercury (US-founders only, true bank account)
+- Mercury (for US-registered companies, including those with non-US founders; a fintech working with partner banks, not a bank itself)
 - Payoneer (alternative for clients refusing Wise)`,
     faqs: [
       {
@@ -793,13 +793,13 @@ Original itemised receipts in local currency. Medical report from the treating p
 Simple claims under 500 USD: 5-10 business days. Complex or extra-documentation claims: 2-4 weeks. Inpatient or evacuation: handled through their 24/7 emergency line, often paid directly to the provider.
 
 ## What gets denied
-Pre-existing conditions (limited exceptions). Treatment in your home country beyond the 30-day annual cap. Elective procedures (cosmetic, fertility, most non-emergency dental). Excluded activities. Documentation in a non-English language without translation.
+Pre-existing conditions (limited exceptions). On the Essential plan, treatment in your home country beyond its home-country limit (the Complete plan has no home-country restriction). Elective procedures (cosmetic, fertility, most non-emergency dental). Excluded activities. Documentation in a non-English language without translation.
 
 ## How to avoid friction
 Photograph receipts the day you get them. Get the medical report in English at point of care. Submit within 30 days. Track expenses per trip in a single shared folder.
 
 ## What surprises first-time claimants
-The standard plan reimburses you (pay first, get reimbursed). For inpatient stays, the provider can be billed directly but you must call the emergency line first.`,
+The Essential plan reimburses you (pay first, get reimbursed). For inpatient stays, the provider can be billed directly but you must call the emergency line first.`,
     faqs: [
       {
         q: 'How long does a SafetyWing claim take?',
@@ -820,7 +820,7 @@ The standard plan reimburses you (pay first, get reimbursed). For inpatient stay
     body: `Wise and Payoneer dominate cross-border payment for freelance developers. They look similar but the cost structure and feature set diverge in ways that matter at scale.
 
 ## Wise: built for transparency
-Real mid-market FX rate. Local routing details in 8+ currencies. Fee taken visibly on conversion only (0.4 to 0.7 percent typical). Debit card spends at FX with no markup. Best fit when you receive payments and convert frequently.
+Real mid-market FX rate. Local account details in 20 currencies. Fee taken visibly on conversion only (0.4 to 0.7 percent typical). The debit card spends at the mid-market rate, with a small fee only when it has to convert. Best fit when you receive payments and convert frequently.
 
 ## Payoneer: built for marketplaces
 Standard fee on marketplace payouts (Upwork, Fiverr, Amazon, etc.). Less FX transparency, with rates usually 1 to 2 percent off mid-market. Local US receiving account for non-US sellers. Best fit when the marketplace partners with Payoneer.
@@ -832,7 +832,7 @@ Standard fee on marketplace payouts (Upwork, Fiverr, Amazon, etc.). Less FX tran
 | FX spread | 0.4-0.7% | 1-2% |
 | Local routing currencies | USD, EUR, GBP, AUD, NZD, etc. | USD primarily |
 | Marketplace integration | Direct withdrawal | Native on many |
-| Debit card | Mid-market, no markup | 1-2% markup |
+| Debit card | Mid-market rate plus small conversion fee | 1-2% markup |
 | Monthly fee | None | None on receive |
 
 ## When to use Payoneer
@@ -863,7 +863,7 @@ Many freelance developers run both: Payoneer for marketplace payouts that integr
     body: `Mercor onboarding is faster than most expect for accepted candidates and slower than most hope for the rest. The realistic 2026 timeline is below.
 
 ## Day 0: submit application
-A few personal details, declared expertise, optional LinkedIn or GitHub link. 20 minutes.
+Upload your resume as a PDF, fill in the application form and complete a short AI video interview.
 
 ## Day 1-3: initial automated screen
 Mercor processes the application algorithmically. Candidates with clear demonstrable expertise in declared areas get fast-tracked; the rest get a longer screening test.
@@ -872,7 +872,7 @@ Mercor processes the application algorithmically. Candidates with clear demonstr
 Domain-specific exercises (code-quality comparisons, reasoning prompts, written justifications). 45 to 90 minutes.
 
 ## Day 7-14: review
-A combination of LLM grading and human review on the borderline cases. Most accepted candidates hear back within this window.
+A combination of LLM grading and human review on the borderline cases. Timing varies by role; Mercor notifies you when your application moves to the next stage.
 
 ## Day 14-21: paid trial task
 First paid task at the entry rate for the track. Performance here sets your initial reputation score.
@@ -1056,7 +1056,7 @@ If you have a chronic condition that needs ongoing care, SafetyWing alone is ins
     body: `The AI evaluation market has expanded beyond Mercor and Scale in 2026. Three platforms account for most expert paid evaluation work: Mercor, Tortoise, and Outlier (Scale AI brand).
 
 ## Mercor
-High vetting bar. Rates 30 to 100 USD/h for software and technical tracks. Long-form tasks with depth. Best for experienced specialists who value rate over volume.
+High vetting bar. Rates typically 60 to 100+ USD/h for software and technical tracks. Long-form tasks with depth. Best for experienced specialists who value rate over volume.
 
 ## Tortoise
 Newer entrant focused on premium tracks (formal reasoning, advanced math, scientific evaluation). Smaller pool of work but high acceptance rate for genuinely scarce profiles. Rates 50 to 150 USD/h for premium tracks.
@@ -1068,7 +1068,7 @@ Larger volume, lower acceptance bar. Rates typically 18 to 45 USD/h. Steady week
 
 | Factor | Mercor | Tortoise | Outlier |
 |---|---|---|---|
-| Typical rate (dev) | 35-80 USD/h | 50-150 USD/h | 18-45 USD/h |
+| Typical rate (dev) | 60-100+ USD/h | 50-150 USD/h | 18-45 USD/h |
 | Acceptance bar | High | Very high (niche-dependent) | Low-medium |
 | Volume reliability | Bursty | Bursty | Steady |
 | Task complexity | Long-form | Premium-niche | Mixed |

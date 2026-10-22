@@ -99,9 +99,9 @@ const PARTNERS: Partner[] = [
     slug: 'nordvpn',
     name: 'NordVPN',
     blurb: {
-      en: 'VPN with 6,000+ servers. Public Wi-Fi safety + geo-unlocking.',
-      fr: 'VPN avec 6 000+ serveurs. Sécurité Wi-Fi public + déblocage géo.',
-      de: 'VPN mit 6.000+ Servern. Öffentliches-WLAN-Schutz + Geo-Unlock.',
+      en: 'VPN with 8,000+ servers. Public Wi-Fi safety + geo-unlocking.',
+      fr: 'VPN avec 8 000+ serveurs. Sécurité Wi-Fi public + déblocage géo.',
+      de: 'VPN mit 8.000+ Servern. Öffentliches-WLAN-Schutz + Geo-Unlock.',
     },
     cta: {
       en: 'Get NordVPN →',

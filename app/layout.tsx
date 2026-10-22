@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
+import { Consent } from '@/components/Consent';
 import { Instrument_Serif, Inter } from 'next/font/google';
 import './globals.css';
 
@@ -56,10 +57,13 @@ export const metadata: Metadata = {
   },
 };
 
+// `||`, not `??`: the deploy workflow passes NEXT_PUBLIC_CF_ANALYTICS_TOKEN
+// from a repository secret, and an unset secret arrives as an empty string.
+// With `??` that empty string won, the beacon was never rendered, and
+// Cloudflare Web Analytics recorded nothing for this site in production.
 const CF_ANALYTICS_TOKEN =
-  process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN ?? 'c936ca5662e240edb31f83de853086de';
-const AHREFS_KEY = process.env.NEXT_PUBLIC_AHREFS_KEY ?? 'UHRiRpUtDUeXqcHIFhdjcA';
-const GA_ID = 'G-E3GBH13T19';
+  process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN || 'c936ca5662e240edb31f83de853086de';
+const AHREFS_KEY = process.env.NEXT_PUBLIC_AHREFS_KEY || 'UHRiRpUtDUeXqcHIFhdjcA';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -67,20 +71,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://static.cloudflareinsights.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
       </head>
       <body className="min-h-screen bg-bg text-ink antialiased font-sans">
         {children}
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-        />
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '${GA_ID}');`}
-        </Script>
+        {/* GA4 sets cookies, so it only loads once the reader accepts. */}
+        <Consent />
         {CF_ANALYTICS_TOKEN && (
           <Script
             strategy="afterInteractive"

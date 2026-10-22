@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { localePath, t } from '@/lib/i18n';
 import type { Locale } from '@/lib/types';
 import { Logo } from './Logo';
+import { ConsentLink } from './Consent';
 import { SISTER_NOMAD, SISTER_AI, slowmadlyHomeUrl, aiByJobHomeUrl } from '@/lib/sister-sites';
 
 export function Footer({ locale }: { locale: Locale }) {
@@ -56,6 +57,7 @@ export function Footer({ locale }: { locale: Locale }) {
 
         <div className="border-t border-line pt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-muted">
           <span>{t(locale, 'footer.disclaimer')}</span>
+          <ConsentLink label={t(locale, 'footer.cookies')} />
           <span>© {new Date().getFullYear()} slateremote.com</span>
         </div>
       </div>

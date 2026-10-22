@@ -304,7 +304,7 @@ Generische, KI-unterstützte Bewerbungstexte sind der schnellste Disqualifikatio
     ],
   },
   "how-much-does-mercor-pay-in-2026": {
-    body: `Mercor bezahlt pro Stunde Bewertungsarbeit. Die veröffentlichte Spanne liegt bei 30 bis 100 USD/Stunde, aber die tatsächlichen Einnahmen hängen von Ihrem Fachgebiet, Ihrer Qualitätsbewertung und davon ab, wie viel Arbeit Sie aufrechterhalten können.
+    body: `Mercor bezahlt pro Stunde Bewertungsarbeit. Die ausgeschriebenen Sätze liegen meist zwischen etwa 60 und über 100 USD/Stunde (Mercor nennt einen durchschnittlichen Vertragssatz von etwa 100 USD/Stunde), aber die tatsächlichen Einnahmen hängen von Ihrem Fachgebiet, Ihrer Qualitätsbewertung und davon ab, wie viel Arbeit Sie aufrechterhalten können.
 
 ## Die realistische Einstiegsspanne
 Neue Evaluatoren in Softwareentwicklung und allgemeinen technischen Tracks beginnen üblicherweise bei 30 bis 45 USD pro Stunde. Tracks mit seltenen Fachgebieten (fortgeschrittene Mathematik, Biologie, Recht) starten höher, oft bei 50 bis 80 USD.
@@ -325,7 +325,7 @@ Konstante 10 Stunden/Woche zu 50 USD/Stunde ergeben rund 26.000 USD pro Jahr an 
 Wenn Ihr Hauptjob mehr als 100 USD pro Stunde all-in bezahlt (Top-Vergütung im US-Engineering), lohnen sich Mercor-Nebeneinkünfte Ihre Abendstunden vermutlich nicht. Die Rechnung geht am besten auf für mittelpreisige Ingenieure, Auftragnehmer zwischen Engagements oder Experten in seltenen Fachgebieten.
 
 ## Auszahlungsgeschwindigkeit
-Die Standard-Auszahlungszyklen sind wöchentlich bis zweiwöchentlich. Internationale Überweisungen über den Zahlungspartner der Plattform; Ankunftszeiten variieren je nach Land, typischerweise zwei bis fünf Werktage.`,
+Stundenbasierte Verträge werden wöchentlich bezahlt, jeden Mittwoch, über Stripe oder Wise je nach Land Ihres Bankkontos. Stripe-Auszahlungen kommen innerhalb von höchstens fünf Werktagen an, Wise meist innerhalb von etwa einer Stunde.`,
     faqs: [
       {
         q: "Wie hoch ist der durchschnittliche Mercor-Stundensatz für Entwickler im Jahr 2026?",
@@ -338,12 +338,12 @@ Die Standard-Auszahlungszyklen sind wöchentlich bis zweiwöchentlich. Internati
     ],
   },
   "mercor-vs-scale-vs-surge-ai": {
-    body: `Drei Plattformen dominieren 2026 die bezahlte KI-Bewertung: Mercor, Scale AI (über die Marken Outlier und Remotasks) und Surge AI. Sie überschneiden sich beim Kundenstamm, unterscheiden sich aber bei Satz, Aufgabentyp, Prüfschwelle und Verlässlichkeit des Arbeitsangebots.
+    body: `Drei Plattformen dominieren 2026 die bezahlte KI-Bewertung: Mercor, Scale AI (vor allem über Outlier) und Surge AI. Sie überschneiden sich beim Kundenstamm, unterscheiden sich aber bei Satz, Aufgabentyp, Prüfschwelle und Verlässlichkeit des Arbeitsangebots.
 
 ## Mercor
-Geprüft, expertengetrieben, wöchentliche Sätze oft 30 bis 100 USD/Stunde für Software- und technische Tracks. Bewerbungshürde ist hoch; nach der Annahme ist die Arbeit tendenziell tiefer und länger angelegt. Beste Passung für erfahrene Entwickler und Fachexperten, die Satz über Volumen stellen.
+Geprüft, expertengetrieben, Sätze meist 60 bis über 100 USD/Stunde für Software- und technische Tracks. Bewerbungshürde ist hoch; nach der Annahme ist die Arbeit tendenziell tiefer und länger angelegt. Beste Passung für erfahrene Entwickler und Fachexperten, die Satz über Volumen stellen.
 
-## Scale AI (Outlier/Remotasks)
+## Scale AI (Outlier)
 Breiter, volumenorientierter. Sätze sind im Durchschnitt niedriger (15 bis 40 USD/Stunde für die meisten Tracks, Premium-Domänen höher). Niedrigere Einstiegshürde macht es schnell zugänglich. Beste Passung, wenn Sie sofortiges Volumen und stetige Wochenstunden möchten und sich weniger um den Satz scheren.
 
 ## Surge AI
@@ -353,7 +353,7 @@ Positioniert sich als qualitätsorientierte Plattform für hochwertige Annotatio
 
 | Faktor               | Mercor             | Scale AI            | Surge AI         |
 |----------------------|--------------------|---------------------|------------------|
-| Typischer Satz (Dev) | 35-80 USD/h        | 18-40 USD/h         | 35-70 USD/h      |
+| Typischer Satz (Dev) | 60-100+ USD/h      | 25-50 USD/h         | 35-70 USD/h      |
 | Annahmehürde         | Hoch               | Niedrig bis mittel  | Mittel bis hoch  |
 | Volumen-Verlässlichkeit | Stoßweise       | Stetig              | Stoßweise        |
 | Aufgabentiefe        | Langform, nuanciert | Kurz, repetitiv    | Gemischt         |
@@ -367,7 +367,7 @@ Viele Experten fahren zwei Plattformen parallel. Mercor + Scale füllt Volumenl�
     faqs: [
       {
         q: "Welche Plattform bezahlt KI-Evaluatoren 2026 am besten?",
-        a: "Pro Stunde liegen Mercor und Surge AI bei Experten- und Entwickler-Tracks tendenziell vorne mit 35-80 USD/Stunde. Scale AI/Outlier bezahlt im Schnitt weniger, bietet aber dauerhafteres Volumen.",
+        a: "Pro Stunde liegen Mercor und Surge AI bei Experten- und Entwickler-Tracks tendenziell vorne, Mercor meist mit 60 bis über 100 USD/Stunde. Scale AI/Outlier bezahlt im Schnitt weniger, bietet aber dauerhafteres Volumen.",
       },
       {
         q: "Kann ich gleichzeitig bei Mercor und Scale AI arbeiten?",
@@ -410,13 +410,13 @@ Qualitätsbewertungen brechen ein, wenn Sie ermüden. Zwanzig gute Stunden pro W
     ],
   },
   "mercor-tax-and-payout-guide-2026": {
-    body: `Mercor zahlt Bewerter in einem wöchentlichen oder zweiwöchentlichen Rhythmus aus, in USD, per internationaler Überweisung. Den Auszahlungsablauf und die steuerliche Einordnung zu verstehen ist wichtig, bevor Sie die erste Aufgabe annehmen.
+    body: `Mercor zahlt stundenbasierte Bewerter wöchentlich aus, jeden Mittwoch, in USD, über Stripe oder Wise. Den Auszahlungsablauf und die steuerliche Einordnung zu verstehen ist wichtig, bevor Sie die erste Aufgabe annehmen.
 
 ## Auszahlungszyklus
-Einnahmen werden pro Aufgabe aufgebaut und in einem Auszahlungslauf gebündelt. Die meisten Bewerter sehen die Beträge innerhalb einer Woche nach Abschluss der Aufgabe veranlasst und innerhalb von zwei bis fünf Werktagen danach auf ihrem Konto. Internationale Bewerter müssen mit zusätzlichen Verzögerungen auf Bankebene rechnen.
+Einnahmen werden pro Aufgabe aufgebaut und in einem Auszahlungslauf gebündelt. Jede Mittwochsauszahlung deckt die vorherige Arbeitswoche ab. Über Stripe kommt das Geld innerhalb von höchstens fünf Werktagen auf Ihr Konto, und Stripe hält Ihre allererste Auszahlung sieben Tage zurück; über Wise kommt es meist innerhalb von etwa einer Stunde an. Internationale Bewerter müssen mit zusätzlichen Verzögerungen auf Bankebene rechnen.
 
 ## Auszahlungsmethoden
-Mercor arbeitet mit internationalen Überweisungsanbietern zusammen. In der Praxis erhalten Bewerter USD auf ein lokales Bankkonto über einen Routing-Partner oder über ein Mehrwährungskonto wie Wise oder Payoneer. Wise ist für Empfänger außerhalb der USA tendenziell am günstigsten, weil der FX-Spread enger ist als bei den meisten Bankkonvertierungen.
+Mercor legt den Auszahlungsanbieter anhand des Landes Ihres Bankkontos fest, Sie können ihn nicht wählen: Stripe Connect überall dort, wo Stripe Auszahlungen unterstützt, sonst Wise. Payoneer wird nicht angeboten. Wenn Sie über Stripe in USD bezahlt werden, ist es meist günstiger, das Geld vor dem Umtausch auf einem Mehrwährungskonto wie Wise zu halten, statt Ihre Bank umrechnen zu lassen.
 
 ## US-Steuerbehandlung
 US-basierte Bewerter sind unabhängige Auftragnehmer. Einnahmen werden auf einem 1099-NEC gemeldet, wenn Sie die IRS-Schwelle überschreiten. Die Selbstständigensteuer (15.3 Prozent) fällt zusätzlich zur Bundes- und Landeseinkommensteuer an. Legen Sie standardmäßig etwa 30 Prozent des Bruttobetrags zurück; verfeinern Sie die tatsächliche Steuerlast mit Ihrem Steuerberater.
@@ -432,7 +432,7 @@ Mercor behält keine US- oder EU-Steuern für Sie ein. Der volle Betrag landet a
     faqs: [
       {
         q: "Wie zahlt Mercor Bewerter außerhalb der USA aus?",
-        a: "Mercor zahlt per internationaler Überweisung in USD. Die meisten Bewerter außerhalb der USA erhalten Auszahlungen auf ein Mehrwährungskonto wie Wise oder Payoneer, um FX-Gebühren zu minimieren.",
+        a: "Mercor zahlt in USD über Stripe oder Wise, automatisch festgelegt nach dem Land Ihres Bankkontos. Payoneer wird nicht angeboten.",
       },
       {
         q: "Muss ich selbstständig sein, um in der EU für Mercor zu arbeiten?",
@@ -588,13 +588,13 @@ Ein Bankkonto im traditionellen Sinne. Guthaben werden bei regulierten E-Geld-In
 1. Kundenzahlungen in deren Heimatwährung ohne FX-Abzug empfangen
 2. Guthaben über Währungen hinweg halten, bis es günstig ist zu konvertieren
 3. Zum Mittelkurs mit kleiner transparenter Gebühr konvertieren, statt mit dem versteckten Spread von 2 bis 4 Prozent, den typische Banken nehmen
-4. Mit einer Debitkarte in über 40 Währungen ausgeben, ohne FX-Aufschlag auf die Ausgabe
+4. Mit einer Debitkarte in über 40 Währungen ausgeben und nur dann die Umrechnungsgebühr zahlen, wenn umgerechnet werden muss
 
 ## Was es kostet
-Das Konto ist kostenlos. Der Empfang lokaler Zahlungen ist kostenlos. Konvertieren verursacht eine transparente Gebühr, typischerweise 0,4 bis 0,7 Prozent. Kartenausgaben in der Heimatwährung sind kostenlos; in Fremdwährung wird der Mittelkurs ohne Aufschlag verwendet.
+Das Konto ist kostenlos. Der Empfang lokaler Zahlungen ist kostenlos. Konvertieren verursacht eine transparente Gebühr, typischerweise 0,4 bis 0,7 Prozent. Ausgaben in einer Währung, die Sie bereits halten, sind kostenlos; sonst rechnet die Karte zum Mittelkurs plus einer kleinen Umrechnungsgebühr um.
 
 ## Wo es versagt
-- Nicht geeignet zum Parken großer Summen (keine bedeutsamen Zinsen)
+- Nicht für langfristiges Sparen gedacht, auch wenn in manchen Ländern Zinsen auf Guthaben angeboten werden
 - Kein langfristiger Ersatz für ein echtes lokales Bankkonto in Ihrem Ansässigkeitsland (Kredithistorie, Hypothekenbeziehungen, regulatorische Normen)
 - Eingeschränkte Scheckunterstützung in Ländern, die noch darauf angewiesen sind (selten, aber existiert)
 - Der Kundensupport ist asynchron und bei ernsten Problemen langsamer als bei einer klassischen Bank
@@ -604,7 +604,7 @@ Nutzen Sie Wise als Empfangsschicht zwischen Kunden und Ihrem echten Bankkonto. 
 
 ## Alternativen, falls Wise nicht passt
 - Revolut Business (ähnlicher Funktionsumfang, EU-fokussiert)
-- Mercury (nur US-Gründer, echtes Bankkonto)
+- Mercury (für in den USA registrierte Firmen, auch mit Gründern außerhalb der USA; ein Fintech mit Partnerbanken, keine Bank)
 - Payoneer (Alternative für Kunden, die Wise ablehnen)`,
     faqs: [
       {
@@ -630,13 +630,13 @@ Originale Einzelpostenquittungen in lokaler Währung. Ärztlicher Bericht des be
 Einfache Ansprüche unter 500 USD: 5-10 Werktage. Komplexe oder zusätzliche Dokumentation: 2-4 Wochen. Stationäre Behandlung oder Evakuierung: über die 24/7-Notfallleitung, oft direkt an den Anbieter gezahlt.
 
 ## Was abgelehnt wird
-Vorerkrankungen (begrenzte Ausnahmen). Behandlung in Ihrem Heimatland über die jährliche 30-Tage-Obergrenze hinaus. Elektive Eingriffe (Kosmetik, Fertilität, die meisten nicht-notfallmäßigen Zahnbehandlungen). Ausgeschlossene Aktivitäten. Dokumentation in einer nicht-englischen Sprache ohne Übersetzung.
+Vorerkrankungen (begrenzte Ausnahmen). Im Essential-Tarif die Behandlung in Ihrem Heimatland über dessen Heimatland-Grenze hinaus (der Complete-Tarif hat keine Heimatland-Beschränkung). Elektive Eingriffe (Kosmetik, Fertilität, die meisten nicht-notfallmäßigen Zahnbehandlungen). Ausgeschlossene Aktivitäten. Dokumentation in einer nicht-englischen Sprache ohne Übersetzung.
 
 ## Wie man Reibung vermeidet
 Quittungen am Tag des Erhalts fotografieren. Den ärztlichen Bericht direkt vor Ort auf Englisch einholen. Innerhalb von 30 Tagen einreichen. Ausgaben pro Reise in einem einzigen geteilten Ordner verfolgen.
 
 ## Was Erstantragsteller überrascht
-Der Standardplan erstattet Ihnen (erst zahlen, dann erstatten lassen). Für stationäre Aufenthalte kann der Anbieter direkt abgerechnet werden, aber Sie müssen zuerst die Notfallleitung anrufen.`,
+Der Essential-Tarif erstattet Ihnen (erst zahlen, dann erstatten lassen). Für stationäre Aufenthalte kann der Anbieter direkt abgerechnet werden, aber Sie müssen zuerst die Notfallleitung anrufen.`,
     faqs: [
       {
         q: "Wie lange dauert ein SafetyWing-Anspruch?",
@@ -652,7 +652,7 @@ Der Standardplan erstattet Ihnen (erst zahlen, dann erstatten lassen). Für stat
     body: `Wise und Payoneer dominieren die grenzüberschreitenden Zahlungen für freiberufliche Entwickler. Sie wirken ähnlich, aber die Kostenstruktur und der Funktionsumfang unterscheiden sich in einer Weise, die bei Skalierung wichtig wird.
 
 ## Wise: auf Transparenz aufgebaut
-Echter Mittelmarkt-FX-Kurs. Lokale Routing-Details in 8+ Währungen. Gebühr nur bei Umrechnung sichtbar abgezogen (0,4 bis 0,7 Prozent typisch). Debitkarte gibt zum FX-Kurs ohne Aufschlag aus. Beste Eignung, wenn Sie Zahlungen erhalten und häufig umrechnen.
+Echter Mittelmarkt-FX-Kurs. Lokale Kontodaten in 20 Währungen. Gebühr nur bei Umrechnung sichtbar abgezogen (0,4 bis 0,7 Prozent typisch). Die Debitkarte zahlt zum Mittelkurs, mit einer kleinen Gebühr nur bei nötiger Umrechnung. Beste Eignung, wenn Sie Zahlungen erhalten und häufig umrechnen.
 
 ## Payoneer: für Marktplätze aufgebaut
 Standardgebühr auf Marktplatz-Auszahlungen (Upwork, Fiverr, Amazon usw.). Weniger FX-Transparenz, mit Kursen typischerweise 1 bis 2 Prozent unter dem Mittelmarkt. Lokales US-Empfangskonto für Nicht-US-Verkäufer. Beste Eignung, wenn der Marktplatz mit Payoneer kooperiert.
@@ -664,7 +664,7 @@ Standardgebühr auf Marktplatz-Auszahlungen (Upwork, Fiverr, Amazon usw.). Wenig
 | FX-Spread | 0,4-0,7% | 1-2% |
 | Lokale Routing-Währungen | USD, EUR, GBP, AUD, NZD usw. | Hauptsächlich USD |
 | Marktplatz-Integration | Direkte Auszahlung | Nativ bei vielen |
-| Debitkarte | Mittelmarkt, kein Aufschlag | 1-2% Aufschlag |
+| Debitkarte | Mittelkurs plus kleine Umrechnungsgebühr | 1-2% Aufschlag |
 | Monatsgebühr | Keine | Keine bei Empfang |
 
 ## Wann Payoneer nutzen
@@ -690,7 +690,7 @@ Viele freiberufliche Entwickler nutzen beide: Payoneer für Marktplatz-Auszahlun
     body: `Das Mercor-Onboarding ist für angenommene Kandidaten schneller, als die meisten erwarten, und langsamer, als der Rest hofft. Der realistische Zeitplan für 2026 folgt unten.
 
 ## Tag 0: Bewerbung einreichen
-Einige persönliche Angaben, angegebene Expertise, optionaler LinkedIn- oder GitHub-Link. 20 Minuten.
+Lebenslauf als PDF hochladen, das Bewerbungsformular ausfüllen und ein kurzes KI-Videointerview absolvieren.
 
 ## Tag 1-3: erste automatisierte Prüfung
 Mercor verarbeitet die Bewerbung algorithmisch. Kandidaten mit klar nachweisbarer Expertise in den angegebenen Bereichen werden vorgezogen; der Rest erhält einen längeren Screening-Test.
@@ -699,7 +699,7 @@ Mercor verarbeitet die Bewerbung algorithmisch. Kandidaten mit klar nachweisbare
 Domänenspezifische Übungen (Code-Qualitätsvergleiche, Reasoning-Prompts, schriftliche Begründungen). 45 bis 90 Minuten.
 
 ## Tag 7-14: Prüfung
-Eine Kombination aus LLM-Bewertung und menschlicher Prüfung bei Grenzfällen. Die meisten angenommenen Kandidaten erhalten innerhalb dieses Zeitraums eine Rückmeldung.
+Eine Kombination aus LLM-Bewertung und menschlicher Prüfung bei Grenzfällen. Die Dauer hängt von der Rolle ab; Mercor benachrichtigt Sie, sobald Ihre Bewerbung in die nächste Phase geht.
 
 ## Tag 14-21: bezahlte Probeaufgabe
 Erste bezahlte Aufgabe zum Einstiegssatz für die Spur. Die Leistung hier bestimmt Ihren anfänglichen Reputationswert.
@@ -863,7 +863,7 @@ Wenn Sie eine chronische Erkrankung haben, die laufende Versorgung benötigt, is
     body: `Der Markt für KI-Bewertung hat sich 2026 über Mercor und Scale hinaus ausgedehnt. Drei Plattformen machen den Großteil der bezahlten Expertenbewertungsarbeit aus: Mercor, Tortoise und Outlier (Scale-AI-Marke).
 
 ## Mercor
-Hohe Auswahlhürde. Stundensätze 30 bis 100 USD/h für Software- und technische Spuren. Längere Aufgaben mit Tiefe. Am besten für erfahrene Spezialisten, die Stundensatz über Volumen schätzen.
+Hohe Auswahlhürde. Stundensätze meist 60 bis über 100 USD/h für Software- und technische Spuren. Längere Aufgaben mit Tiefe. Am besten für erfahrene Spezialisten, die Stundensatz über Volumen schätzen.
 
 ## Tortoise
 Neuerer Anbieter, fokussiert auf Premium-Spuren (formales Reasoning, fortgeschrittene Mathematik, wissenschaftliche Bewertung). Kleinerer Arbeitspool, aber hohe Annahmequote für wirklich knappe Profile. Stundensätze 50 bis 150 USD/h für Premium-Spuren.
@@ -875,7 +875,7 @@ Größeres Volumen, niedrigere Annahmehürde. Stundensätze typischerweise 18 bi
 
 | Faktor | Mercor | Tortoise | Outlier |
 |---|---|---|---|
-| Typischer Stundensatz (Dev) | 35-80 USD/h | 50-150 USD/h | 18-45 USD/h |
+| Typischer Stundensatz (Dev) | 60-100+ USD/h | 50-150 USD/h | 18-45 USD/h |
 | Annahmehürde | Hoch | Sehr hoch (nischenabhängig) | Niedrig-mittel |
 | Volumenzuverlässigkeit | Stoßweise | Stoßweise | Stetig |
 | Aufgabenkomplexität | Längere Form | Premium-Nische | Gemischt |

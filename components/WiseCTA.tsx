@@ -12,19 +12,19 @@ const COPY: Record<Locale, WiseCopy> = {
   en: {
     eyebrow: 'Multi-currency banking',
     title: 'Get paid in USD or EUR from anywhere with Wise',
-    body: 'The default account for remote workers earning across borders. Real exchange rate (no FX markup), IBANs in 8+ currencies, no monthly fee. Receive client and employer payments at the mid-market rate, hold balances in any currency, spend with a debit card worldwide.',
+    body: 'The default account for remote workers earning across borders. Real mid-market exchange rate with a small, upfront conversion fee, account details in 20 currencies, no monthly fee. Receive client and employer payments at the mid-market rate, hold balances in any currency, spend with a debit card worldwide.',
     cta: 'Open a free Wise account →',
   },
   fr: {
     eyebrow: 'Banque multi-devises',
     title: 'Soyez payé en USD ou EUR depuis partout avec Wise',
-    body: "Le compte par défaut des travailleurs remote payés à l'international. Taux de change réel (sans marge), IBANs dans 8+ devises, sans frais mensuels. Recevez vos paiements clients et employeurs au taux interbancaire, gardez vos soldes dans la devise voulue, payez par carte partout dans le monde.",
+    body: "Le compte par défaut des travailleurs remote payés à l'international. Taux de change réel avec de petits frais de conversion affichés d'avance, coordonnées bancaires dans 20 devises, sans frais mensuels. Recevez vos paiements clients et employeurs au taux interbancaire, gardez vos soldes dans la devise voulue, payez par carte partout dans le monde.",
     cta: 'Ouvrir un compte Wise gratuit →',
   },
   de: {
     eyebrow: 'Multi-Währungs-Konto',
     title: 'In USD oder EUR von überall mit Wise bezahlt werden',
-    body: 'Das Standardkonto für Remote-Worker mit internationalen Einnahmen. Echter Wechselkurs (kein FX-Aufschlag), IBANs in 8+ Währungen, keine monatliche Gebühr. Empfange Kunden- und Arbeitgeberzahlungen zum Interbankenkurs, halte Salden in beliebiger Währung, zahle weltweit mit Debitkarte.',
+    body: 'Das Standardkonto für Remote-Worker mit internationalen Einnahmen. Echter Wechselkurs mit kleiner, vorab ausgewiesener Umrechnungsgebühr, Kontodaten in 20 Währungen, keine monatliche Gebühr. Empfange Kunden- und Arbeitgeberzahlungen zum Interbankenkurs, halte Salden in beliebiger Währung, zahle weltweit mit Debitkarte.',
     cta: 'Kostenloses Wise-Konto eröffnen →',
   },
 };
