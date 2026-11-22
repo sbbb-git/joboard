@@ -9,8 +9,6 @@ import { tGuide } from '@/lib/guides-i18n';
 import { tGuideBody, tGuideFaqs, hasGuideTranslation } from '@/lib/guides-body-i18n';
 import { NomadBanking } from '@/components/NomadBanking';
 import { NomadEssentials } from '@/components/NomadEssentials';
-import { NomadCTA } from '@/components/NomadCTA';
-import { AiToolsCTA } from '@/components/AiToolsCTA';
 import { RemoteTools } from '@/components/RemoteTools';
 import { EarnWithAi } from '@/components/EarnWithAi';
 import { FiverrCTA } from '@/components/FiverrCTA';
@@ -260,12 +258,7 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
       </header>
       <GuideBody body={body} />
 
-      {AI_KEYWORDS.test(g.title) && (
-        <>
-          <AiToolsCTA context={{ type: 'guide' }} locale={params.lang} />
-          <EarnWithAi locale={params.lang} />
-        </>
-      )}
+      {AI_KEYWORDS.test(g.title) && <EarnWithAi locale={params.lang} />}
       {g.category === 'freelance' && <FiverrCTA locale={params.lang} />}
       {APPSUMO_SLUGS.has(g.slug) && <AppSumoCTA locale={params.lang} />}
       {BEEHIIV_SLUGS.has(g.slug) && <BeehiivCTA locale={params.lang} />}
@@ -274,9 +267,6 @@ export default function GuidePage({ params }: { params: { lang: Locale; slug: st
       {(g.category === 'visa' || g.category === 'lifestyle') && <SafetyWingCTA locale={params.lang} />}
       {g.category === 'tools' && <NordVPNCTA locale={params.lang} />}
       {g.category === 'tools' && <RemoteTools locale={params.lang} />}
-      {(g.category === 'lifestyle' || g.category === 'visa' || g.category === 'tax' || g.category === 'finding' || g.category === 'career') && (
-        <NomadCTA  locale={params.lang} />
-      )}
       {(g.category === 'visa' || g.category === 'tax') && (
         <>
           <NomadEssentials locale={params.lang} />

@@ -44,7 +44,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   add('', 1);
   add('/guides', 0.9);
   add('/glossary', 0.6);
-  add('/network', 0.4);
   add('/disclosure', 0.3);
 
   // Only the locales a guide is actually translated into; the rest render
