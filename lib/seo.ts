@@ -125,11 +125,7 @@ export function organizationJsonLd() {
     description:
       'Practical guides for remote tech workers: earning on talent platforms, getting paid across borders, insurance and tools.',
     foundingDate: '2025',
-    sameAs: [
-      'https://slowmadly.com',
-      'https://ai-by-job.com',
-      'https://github.com/sachabitoun17-ctrl/joboard',
-    ],
+    sameAs: ['https://github.com/sachabitoun17-ctrl/joboard'],
   };
 }
 

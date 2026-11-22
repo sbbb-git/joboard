@@ -2,7 +2,7 @@
 
 > Practical guides for remote tech workers: earning on talent platforms, getting paid across borders, travel insurance and the tools worth using.
 
-slateremote.com publishes long-form guides for people who work remotely in tech. It is free, has no signup, and is published in English, French and German. It is part of a small network with slowmadly.com (slow-travel country guides) and ai-by-job.com (AI tools curated by job role).
+slateremote.com publishes long-form guides for people who work remotely in tech. It is free, has no signup, and is published in English, French and German.
 
 ## Primary indexes
 
@@ -44,11 +44,6 @@ slateremote.com publishes long-form guides for people who work remotely in tech.
 - [Fiverr Pro application checklist for 2026](https://slateremote.com/en/guides/fiverr-pro-application-checklist-2026): The portfolio, profile, and proof points that pass the Fiverr Pro review in 2026.
 - [Receiving Stripe payouts as a non-US developer in 2026](https://slateremote.com/en/guides/how-to-receive-stripe-payouts-as-non-us): How non-US developers can accept Stripe payouts and what the alternatives are in 2026.
 - [Remote tech interview loops in 2026: what changed](https://slateremote.com/en/guides/remote-tech-interview-loop-2026-changes): The current shape of remote technical interviews in 2026 and how the changes affect preparation.
-
-## Sister sites
-
-- [slowmadly.com](https://slowmadly.com): country guides for digital nomads who stay a while
-- [ai-by-job.com](https://ai-by-job.com): the best AI tools for every job, in seven languages
 
 ## Optional
 

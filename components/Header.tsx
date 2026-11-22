@@ -3,7 +3,6 @@ import { localePath, t } from '@/lib/i18n';
 import type { Locale } from '@/lib/types';
 import { LangSwitcher } from './LangSwitcher';
 import { Logo } from './Logo';
-import { SISTER_NOMAD, slowmadlyHomeUrl } from '@/lib/sister-sites';
 
 export function Header({ locale, path }: { locale: Locale; path: string }) {
   return (
@@ -15,31 +14,10 @@ export function Header({ locale, path }: { locale: Locale; path: string }) {
         <nav className="flex items-center gap-0.5 sm:gap-1 text-sm">
           <NavLink href={localePath(locale, 'guides')}>{t(locale, 'nav.guides')}</NavLink>
           <NavLink href={localePath(locale, 'glossary')} hide="sm">{t(locale, 'footer.glossary')}</NavLink>
-          <a
-            href={slowmadlyHomeUrl(locale)}
-            target="_blank"
-            rel="noopener"
-            className="hidden lg:inline-block px-2.5 py-1.5 rounded-md text-graphite hover:text-ink hover:bg-sand transition-colors"
-          >
-            {t(locale, 'nav.travel')} ↗
-          </a>
           <span className="ml-1.5 sm:ml-2 pl-1.5 sm:pl-2 border-l border-line">
             <LangSwitcher current={locale} path={path} />
           </span>
         </nav>
-      </div>
-      {/* Mobile / tablet: Slow travel link surfaces in a secondary row when hidden above */}
-      <div className="lg:hidden border-t border-line/70 bg-bg/70">
-        <div className="mx-auto max-w-6xl px-4 py-1.5 flex justify-end">
-          <a
-            href={slowmadlyHomeUrl(locale)}
-            target="_blank"
-            rel="noopener"
-            className="text-[11px] text-muted hover:text-ink"
-          >
-            {t(locale, 'nav.travel')} · {SISTER_NOMAD.domain} ↗
-          </a>
-        </div>
       </div>
     </header>
   );
